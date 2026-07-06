@@ -7,6 +7,12 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "types": "wrangler types",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration tests/ui",
+    "test:e2e": "node tests/e2e/browser-smoke.mjs",
+    "coverage": "vitest run --coverage",
     "check:links": "node scripts/check-links.mjs",
     "seed:candidates": "node scripts/fetch-candidates.mjs --check",
     "seed:candidates:multi": "node scripts/fetch-multi-candidates.mjs --check",
@@ -45,8 +51,10 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260601.0",
+    "@vitest/coverage-v8": "^2.1.9",
     "puppeteer-core": "^25.3.0",
     "typescript": "^5.6.0",
+    "vitest": "^2.1.9",
     "wrangler": "^4.0.0"
   }
 }

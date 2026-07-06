@@ -43,7 +43,7 @@ interface DueEndpoint {
 
 const AUTH_QUERY_KEYS = ['api_key', 'apikey', 'key', 'token', 'app_id', 'app_key', 'access_token']
 
-function stripAuthParams(url: string): string {
+export function stripAuthParams(url: string): string {
   try {
     const u = new URL(url)
     for (const k of AUTH_QUERY_KEYS) u.searchParams.delete(k)
@@ -85,7 +85,7 @@ const CHALLENGE_MARKERS = ['just a moment', 'challenge-platform', 'attention req
 const SHAPE_MAX_BYTES = 512 * 1024
 
 /** Structural signature: a flat sorted path→type map. Arrays sampled by their first element. */
-function shapeSignature(v: unknown, path = '', out: Record<string, string> = {}): Record<string, string> {
+export function shapeSignature(v: unknown, path = '', out: Record<string, string> = {}): Record<string, string> {
   if (path) out[path] = Array.isArray(v) ? 'array' : v === null ? 'null' : typeof v
   if (Array.isArray(v)) {
     if (v.length) shapeSignature(v[0], `${path}[]`, out)
@@ -98,7 +98,7 @@ function shapeSignature(v: unknown, path = '', out: Record<string, string> = {})
 }
 
 /** FNV-1a over the canonical signature → short hex. Same value ⇒ same shape. */
-function hashSig(sig: Record<string, string>): string {
+export function hashSig(sig: Record<string, string>): string {
   const canon = Object.keys(sig).sort().map((k) => `${k}:${sig[k]}`).join('|')
   let h = 2166136261
   for (let i = 0; i < canon.length; i++) {
@@ -109,7 +109,7 @@ function hashSig(sig: Record<string, string>): string {
 }
 
 /** Human diff between two signatures: "+field:type" added · "~field:old→new" retyped · "−field" removed. */
-function summarizeDiff(oldSig: Record<string, string>, newSig: Record<string, string>): string {
+export function summarizeDiff(oldSig: Record<string, string>, newSig: Record<string, string>): string {
   const ch: string[] = []
   for (const k of Object.keys(newSig)) {
     if (!(k in oldSig)) ch.push(`+${k}:${newSig[k]}`)
@@ -337,14 +337,14 @@ export async function runSweep(env: Env): Promise<{ checked: number }> {
 
 /* ---------- nightly rollup + lifecycle (cron #2) ---------- */
 
-const dayOf = (ts: string) => ts.slice(0, 10)
+export const dayOf = (ts: string) => ts.slice(0, 10)
 const daysAgoIso = (n: number) => new Date(Date.now() - n * 86_400_000).toISOString()
 
 /** Materialize the compact 90-day health series (uptime90 / latency48 / p50 / p95) that loadCatalog
  *  used to compute live per request. Computing it here (nightly) lets the hot read path skip the
  *  90-day checks_daily join entirely — the read-cost fix. Same algorithm loadCatalog used, so the
  *  rendered sparklines/scores are unchanged. `days` are endpoint-day rows, grouped here by calendar day. */
-function buildDaySeries(days: { day: string; up: number; ms: number | null; p95: number | null; n: number }[]): string {
+export function buildDaySeries(days: { day: string; up: number; ms: number | null; p95: number | null; n: number }[]): string {
   const byDay = new Map<string, { up: number[]; avg: number[]; p95: number[] }>()
   for (const d of days) {
     let b = byDay.get(d.day)

@@ -52915,7 +52915,7 @@ export const importedSpecs: ApiSpec[] = [
       },
       {
         "method": "GET",
-        "path": "/editAccountInfo?access_token=d3b25feccb89e508a9114afb82aa421fe2a9712b963b387cc5ad71e58722&amp;short_name=Sandbox&amp;author_name=Anonymous",
+        "path": "/editAccountInfo?access_token=YOUR_ACCESS_TOKEN&amp;short_name=Sandbox&amp;author_name=Anonymous",
         "description": "EditAccountInfo — documented GET route.",
         "monitored": false
       }
@@ -62979,7 +62979,7 @@ export const importedSpecs: ApiSpec[] = [
     "category": "data",
     "docsUrl": "https://opencagedata.com/api",
     "baseUrl": "https://api.opencagedata.com",
-    "sampleEndpoint": "/geocode/v1/json?key=6d0e711d72d74daeb2b0bfd2a5cdfdba&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1",
+    "sampleEndpoint": "/geocode/v1/json?key=YOUR_API_KEY&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1",
     "auth": "apiKey",
     "checkTier": "reachability",
     "https": true,
@@ -63059,7 +63059,7 @@ export const importedSpecs: ApiSpec[] = [
     "endpoints": [
       {
         "method": "GET",
-        "path": "/geocode/v1/json?key=6d0e711d72d74daeb2b0bfd2a5cdfdba&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1",
+        "path": "/geocode/v1/json?key=YOUR_API_KEY&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1",
         "description": "OpenCaged Geocoder (Open Source option) — free tier with API key",
         "monitored": true
       },
@@ -87015,7 +87015,7 @@ export const importedSpecs: ApiSpec[] = [
     "category": "weather",
     "docsUrl": "https://www.wunderground.com/weather/api/",
     "baseUrl": "https://api.weather.com",
-    "sampleEndpoint": "/v3/wx/forecast/daily/5day?apiKey=e1f10a1e78da46f5b10a1e78da96f525&geocode=0%2C0&units=e&language=en-US&format=json",
+    "sampleEndpoint": "/v3/wx/forecast/daily/5day?apiKey=YOUR_API_KEY&geocode=0%2C0&units=e&language=en-US&format=json",
     "auth": "apiKey",
     "checkTier": "reachability",
     "https": true,
@@ -87067,7 +87067,7 @@ export const importedSpecs: ApiSpec[] = [
     "endpoints": [
       {
         "method": "GET",
-        "path": "/v3/wx/forecast/daily/5day?apiKey=e1f10a1e78da46f5b10a1e78da96f525&geocode=0%2C0&units=e&language=en-US&format=json",
+        "path": "/v3/wx/forecast/daily/5day?apiKey=YOUR_API_KEY&geocode=0%2C0&units=e&language=en-US&format=json",
         "description": "Weather Underground API — free-tier JSON endpoint",
         "monitored": true
       },
@@ -98595,7 +98595,7 @@ export const importedSpecs: ApiSpec[] = [
     "category": "social",
     "docsUrl": "https://www.tumblr.com/docs/en/api/v2",
     "baseUrl": "https://api.tumblr.com",
-    "sampleEndpoint": "/v2/blog/david.tumblr.com/info?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4",
+    "sampleEndpoint": "/v2/blog/david.tumblr.com/info?api_key=YOUR_API_KEY",
     "auth": "oauth",
     "checkTier": "reachability",
     "https": true,
@@ -98644,7 +98644,7 @@ export const importedSpecs: ApiSpec[] = [
     "endpoints": [
       {
         "method": "GET",
-        "path": "/v2/blog/david.tumblr.com/info?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4",
+        "path": "/v2/blog/david.tumblr.com/info?api_key=YOUR_API_KEY",
         "description": "Tumblr — public JSON route",
         "monitored": true
       },
