@@ -97,9 +97,6 @@ The interesting engineering is the read/write budget:
 
 Result: storage ~1%, writes ~10%, reads a fraction of the free daily allowances.
 
-## Tech
-
-**Cloudflare Workers** (SSR + JSON/MCP API + scheduled checker) · **D1** (SQLite) · **Hono** JSX server rendering · **wrangler**. Zero external runtime dependencies beyond Hono.
 
 ## Contributing
 
@@ -109,4 +106,4 @@ Know a great keyless API? Suggest it at [`/submit`](https://shipapis.dev/submit)
 
 Code is released under the [MIT License](./LICENSE). The directory metadata is rebuilt from the MIT-licensed [public-apis](https://github.com/public-apis/public-apis) list and other public directories, with **original** descriptions.
 
-<div align="center"><sub>Built on Cloudflare's $0 tier · <a href="https://shipapis.dev">shipapis.dev</a></sub></div>
+<div align="center"><a href="https://shipapis.dev">shipapis.dev</a></div>
