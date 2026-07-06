@@ -153,6 +153,7 @@ export function homeApiListPreview(
 }
 
 export interface ListQuery {
+  q?: string
   category?: string
   auth?: string
   cors?: string

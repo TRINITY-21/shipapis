@@ -1,5 +1,3 @@
-import type { FC } from 'hono/jsx'
-
 import type { Child, FC } from 'hono/jsx'
 
 export const StatBar: FC<{ label: string; n: number; total: number; color: string; href?: string }> = ({

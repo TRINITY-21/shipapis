@@ -4,6 +4,7 @@ import { categoryBySlug, uptimePct, type ApiEntry } from '../../data/seed'
 import { ApiGlyph } from '../components/ApiGlyph'
 import { ScoreRing } from '../components/ScoreRing'
 import { StatusBadge } from '../components/StatusBadge'
+import { UptimeBars } from '../components/UptimeBars'
 import { scoreRingProps } from '../lib/score-ring'
 import { OgShell } from './OgShell'
 

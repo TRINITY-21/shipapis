@@ -1,5 +1,3 @@
-import type { FC } from 'hono/jsx'
-
 import type { Child, FC } from 'hono/jsx'
 import { catalogCounts } from '../../data/catalog'
 import { DEFAULT_DESC, FAVICON, PRIMARY_NAV, SITE, THEME_BOOT } from '../lib/constants'
