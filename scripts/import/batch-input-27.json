@@ -1,0 +1,386 @@
+{
+  "batch": 27,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "Dog Facts",
+      "docsUrl": "https://dukengn.github.io/Dog-facts-API/",
+      "description": "Random dog facts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dog Facts",
+      "docsUrl": "https://kinduff.github.io/dog-api/",
+      "description": "Random facts of Dogs",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "FishWatch",
+      "docsUrl": "https://www.fishwatch.gov/developers",
+      "description": "Information and pictures about individual fish species",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 0
+    },
+    {
+      "name": "HTTP Cat",
+      "docsUrl": "https://http.cat/",
+      "description": "Cat for every HTTP Status",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlaceBear",
+      "docsUrl": "https://placebear.com/",
+      "description": "Placeholder bear pictures",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlaceDog",
+      "docsUrl": "https://place.dog",
+      "description": "Placeholder Dog pictures",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Shibe.Online",
+      "docsUrl": "http://shibe.online/",
+      "description": "Random pictures of Shiba Inu, cats or birds",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 0
+    },
+    {
+      "name": "AnimeFacts",
+      "docsUrl": "https://chandan-02.github.io/anime-facts-rest-api/",
+      "description": "Anime Facts (over 100+)",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "AnimeNewsNetwork",
+      "docsUrl": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "description": "Anime industry news",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Catboy",
+      "docsUrl": "https://catboys.com/api",
+      "description": "Neko images, funny GIFs & more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Studio Ghibli",
+      "docsUrl": "https://ghibliapi.herokuapp.com",
+      "description": "Resources from Studio Ghibli films",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 404
+    },
+    {
+      "name": "Waifu.im",
+      "docsUrl": "https://waifu.im/docs",
+      "description": "Get waifu pictures from an archive of over 4000 images and multiple tags",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "URLhaus",
+      "docsUrl": "https://urlhaus-api.abuse.ch/",
+      "description": "Bulk queries and Download Malware Samples",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anti-Malware",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icon Horse",
+      "docsUrl": "https://icon.horse",
+      "description": "Favicons for any website, with fallbacks",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lordicon",
+      "docsUrl": "https://lordicon.com/",
+      "description": "Icons with predone Animations",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "PHP-Noise",
+      "docsUrl": "https://php-noise.com/",
+      "description": "Noise Background Image Generator",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "xColors",
+      "docsUrl": "https://x-colors.herokuapp.com/",
+      "description": "Generate & convert colors",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 404
+    },
+    {
+      "name": "Penguin Publishing",
+      "docsUrl": "http://www.penguinrandomhouse.biz/webservices/rest/",
+      "description": "Books, book covers and related data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Runyankole Bible",
+      "docsUrl": "https://runyankole-bible-api.vercel.app",
+      "description": "Free REST API for the Runyankore-Rukiga Bible — 66 books, 31106 verses",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Thirukkural",
+      "docsUrl": "https://api-thirukkural.web.app/",
+      "description": "1330 Thirukkural poems and explanation in Tamil and English",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Non-Working Days",
+      "docsUrl": "https://isdayoff.ru",
+      "description": "Simple REST API for checking working, non-working or short days for Russia, CIS, USA and other",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pantry",
+      "docsUrl": "https://getpantry.cloud/",
+      "description": "Free JSON storage for small projects",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "0x",
+      "docsUrl": "https://0x.org/api",
+      "description": "API for querying token and pool stats across various liquidity pools",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 404
+    },
+    {
+      "name": "CoinGecko",
+      "docsUrl": "http://www.coingecko.com/api",
+      "description": "Cryptocurrency Price, Market, and Developer/Social Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Frankfurter",
+      "docsUrl": "https://www.frankfurter.app/docs",
+      "description": "Exchange rates, currency conversion and time series",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "VATComply.com",
+      "docsUrl": "https://www.vatcomply.com/documentation",
+      "description": "Exchange rates, geolocation and VAT number validation",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 404
+    },
+    {
+      "name": "ApicAgent",
+      "docsUrl": "https://www.apicagent.com",
+      "description": "Extract device details from user-agent string",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "CountAPI",
+      "docsUrl": "https://countapi.xyz",
+      "description": "Free and simple counting service. You can use it to track page hits and specific events",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    },
+    {
+      "name": "DownStatus",
+      "docsUrl": "https://isitdownstatus.com",
+      "description": "Real-time status for GitHub, AWS, Discord and 90+ services",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ExtendsClass JSON Storage",
+      "docsUrl": "https://extendsclass.com/json-storage.html",
+      "description": "A simple JSON store API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Httpbin Cloudflare",
+      "docsUrl": "https://cloudflare-quic.com/b/",
+      "description": "A Simple HTTP Request & Response Service with HTTP/3 Support by Cloudflare",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 404
+    },
+    {
+      "name": "Icanhazepoch",
+      "docsUrl": "https://icanhazepoch.com",
+      "description": "Get Epoch time",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icanhazip",
+      "docsUrl": "https://major.io/icanhazip-com-faq/",
+      "description": "IP Address API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Image-Charts",
+      "docsUrl": "https://documentation.image-charts.com/",
+      "description": "Generate charts, QR codes and graph images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ip-fast.com",
+      "docsUrl": "https://ip-fast.com/docs/",
+      "description": "IP address, country and city",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lua Decompiler",
+      "docsUrl": "https://lua-decompiler.ferib.dev/",
+      "description": "Online Lua 5.1 Decompiler",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    },
+    {
+      "name": "Mocky",
+      "docsUrl": "https://designer.mocky.io/",
+      "description": "Mock user defined test JSON for REST API endpoints",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    },
+    {
+      "name": "oyyi",
+      "docsUrl": "https://oyyi.xyz/docs/1.0",
+      "description": "API for Fake Data, image/video conversion, optimization, pdf optimization and thumbnail generation",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    }
+  ]
+}

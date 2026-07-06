@@ -1,0 +1,386 @@
+{
+  "batch": 28,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "QR & Barcode",
+      "docsUrl": "https://solsigs.com/qrapi/",
+      "description": "QR codes and barcodes (Code 128, EAN-13, Data Matrix, PDF417 + more). SVG or PNG output",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 404
+    },
+    {
+      "name": "QR code",
+      "docsUrl": "https://www.qrtag.net/api/",
+      "description": "Create an easy to read QR code and URL shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "QuickChart",
+      "docsUrl": "https://quickchart.io/",
+      "description": "Generate chart and graph images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "RSS feed to JSON",
+      "docsUrl": "https://rss-to-json-serverless-api.vercel.app",
+      "description": "Returns RSS feed in JSON format using feed URL",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Statically",
+      "docsUrl": "https://statically.io/",
+      "description": "A free CDN for developers",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Thunder Client",
+      "docsUrl": "https://www.thunderclient.com/",
+      "description": "API testing tool",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "EVA",
+      "docsUrl": "https://eva.pingutil.com/",
+      "description": "Validate email addresses",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 0
+    },
+    {
+      "name": "mail.gw",
+      "docsUrl": "https://docs.mail.gw",
+      "description": "10 Minute Mail",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fun Fact",
+      "docsUrl": "https://api.aakhilv.me",
+      "description": "A simple HTTPS api that can randomly select and return a fact from the FFA database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Helium",
+      "docsUrl": "https://heliumtrades.com/mcp-page/",
+      "description": "News with media bias scoring, balanced news synthesis, live market data, AI options pricing",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Portfolio Optimizer",
+      "docsUrl": "https://portfoliooptimizer.io/",
+      "description": "Portfolio analysis and optimization",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "BaconMockup",
+      "docsUrl": "https://baconmockup.com/",
+      "description": "Resizable bacon placeholder images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "AmiiboAPI",
+      "docsUrl": "https://amiiboapi.com/",
+      "description": "Nintendo Amiibo Information",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 0
+    },
+    {
+      "name": "Bugsnax",
+      "docsUrl": "https://www.bugsnaxapi.com/",
+      "description": "Get information about Bugsnax",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 0
+    },
+    {
+      "name": "Crafatar",
+      "docsUrl": "https://crafatar.com",
+      "description": "API for Minecraft skins and faces",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 521
+    },
+    {
+      "name": "Cross Universe",
+      "docsUrl": "https://crossuniverse.psychpsyo.com/apiDocs.html",
+      "description": "Cross Universe Card Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fun Facts",
+      "docsUrl": "https://asli-fun-fact-api.herokuapp.com/",
+      "description": "Random Fun Facts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 404
+    },
+    {
+      "name": "FunTranslations",
+      "docsUrl": "https://api.funtranslations.com/",
+      "description": "Translate Text into funny languages",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 403
+    },
+    {
+      "name": "JokeAPI",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "description": "Programming, Miscellaneous and Dark Jokes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Psychonauts",
+      "docsUrl": "https://psychonauts-api.netlify.app/",
+      "description": "Psychonauts World Characters Information and PSI Powers",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "RPS 101",
+      "docsUrl": "https://rps101.pythonanywhere.com/api",
+      "description": "Rock, Paper, Scissors with 101 objects",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 404
+    },
+    {
+      "name": "TCGdex",
+      "docsUrl": "https://www.tcgdex.net/docs",
+      "description": "Multi languages Pokémon TCG Information",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 404
+    },
+    {
+      "name": "bng2latlong",
+      "docsUrl": "https://www.getthedata.com/bng2latlong",
+      "description": "Convert British OSGB36 easting and northing (British National Grid) to WGS84 latitude and longitude",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 403
+    },
+    {
+      "name": "GeographQL",
+      "docsUrl": "https://geographql.netlify.app",
+      "description": "A Country, State, and City GraphQL API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Geokeo",
+      "docsUrl": "https://geokeo.com",
+      "description": "Geokeo geocoding service- with 2500 free api requests daily",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "geoPlugin",
+      "docsUrl": "https://www.geoplugin.com",
+      "description": "IP geolocation and currency conversion",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Indian Pincode",
+      "docsUrl": "https://indianpincode.com/",
+      "description": "Free India PIN code lookup with GPS coordinates, 165k+ post offices, state & district data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "Open Government, Norway",
+      "docsUrl": "https://data.norge.no/dataservices",
+      "description": "Norwegian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Portugal",
+      "docsUrl": "https://dados.gov.pt/en/docapi/",
+      "description": "Portugal Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "PRC Exam Schedule",
+      "docsUrl": "https://api.whenisthenextboardexam.com/docs/",
+      "description": "Unofficial Philippine Professional Regulation Commission's examination schedule",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "US Federal Contracts & Grants",
+      "docsUrl": "https://government-data-api.onrender.com/docs",
+      "description": "US federal contracts, grants, and agency spending data updated daily",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Clinical Trials Directory",
+      "docsUrl": "https://trials.starfile.org/api",
+      "description": "Every clinical trial registered with ClinicalTrials.gov, indexed by condition and sponsor",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 404
+    },
+    {
+      "name": "Covid-19",
+      "docsUrl": "https://covid19api.com/",
+      "description": "Covid 19 spread, infection and recovery",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 0
+    },
+    {
+      "name": "Covid-19 Government Response",
+      "docsUrl": "https://covidtracker.bsg.ox.ac.uk",
+      "description": "Government measures tracker to fight against the Covid-19 pandemic",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 JHU CSSE",
+      "docsUrl": "https://nuttaphat.com/covid19-api/",
+      "description": "Open-source API for exploring Covid19 cases based on JHU CSSE",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "COVID-ID",
+      "docsUrl": "https://data.covid19.go.id/public/api/prov.json",
+      "description": "Indonesian government Covid data per province",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 0
+    },
+    {
+      "name": "Quarantine",
+      "docsUrl": "https://quarantine.country/coronavirus/api/",
+      "description": "Coronavirus API with free COVID-19 live updates",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 0
+    },
+    {
+      "name": "DevITjobs UK",
+      "docsUrl": "https://devitjobs.uk/job_feed.xml",
+      "description": "Jobs with GraphQL",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Jobs",
+      "docsCheck": 200
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "batch": 73,
+  "verified": [
+    {
+      "name": "Conversor IAE CNAE",
+      "slug": "conversor-iae-cnae",
+      "emoji": "🔑",
+      "tagline": "Conversor IAE CNAE — free tier with API key",
+      "description": "Conversor IAE CNAE exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.conversoriaecnae.es/api/v1/docs",
+      "baseUrl": "https://www.conversoriaecnae.es",
+      "sampleEndpoint": "/api/v1/iae/5013///",
+      "latencyMs": 1766,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Missing X-API-Key header"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.conversoriaecnae.es/api/v1/iae/5013\\\\\\"
+    },
+    {
+      "name": "FEC",
+      "slug": "fec",
+      "emoji": "🔑",
+      "tagline": "FEC — free tier with API key",
+      "description": "FEC exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://api.open.fec.gov/developers/",
+      "baseUrl": "https://api.open.fec.gov",
+      "sampleEndpoint": "/v1/legal/search/?api_key={{api_key}}",
+      "latencyMs": 288,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "error": {
+          "code": "API_KEY_INVALID",
+          "message": "An invalid api_key was supplied. Get one at https://api.data.gov/signup/"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.open.fec.gov/v1/legal/search/?api_key={{api_key}}"
+    },
+    {
+      "name": "Cure Cancer With AI",
+      "slug": "cure-cancer-with-ai",
+      "emoji": "🔑",
+      "tagline": "Cure Cancer With AI — free tier with API key",
+      "description": "Cure Cancer With AI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://www.curecancerwithai.com/developers",
+      "baseUrl": "https://www.curecancerwithai.com",
+      "sampleEndpoint": "/api/v1/research?limit=1\\\\\\",
+      "latencyMs": 402,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Missing API key. Provide it as \"Authorization: Bearer <key>\" or \"x-api-key: <key>\"."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.curecancerwithai.com/api/v1/research?limit=1\\\\\\"
+    },
+    {
+      "name": "The Muse",
+      "slug": "the-muse",
+      "emoji": "💼",
+      "tagline": "Job listings with company profiles",
+      "description": "The Muse public jobs API returns paginated openings with company culture metadata. No key on the public read routes.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://www.themuse.com/developers/api/v2",
+      "baseUrl": "https://www.themuse.com",
+      "sampleEndpoint": "/jobs?page=0",
+      "latencyMs": 465,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": 0,
+        "page_count": 20486,
+        "items_per_page": 20,
+        "took": 12,
+        "timed_out": false,
+        "total": 409717,
+        "results": [
+          {
+            "contents": "<p>If you are looking to make an impact on a meaningful scale, come join us as we <b>embrace the Power of One!</b><br> </p>\n\n<p>We strive to be an employer of choice and establish a reputation for being a talent rich organization where Associates can grow their career caring for others. For over a century, we’ve served the health care needs of the people of Memphis and the Mid-South.<br> </p>\n\n<p>Responsible for assisting the Registered Nurse in implementing the plan of care for a group of patients and functioning in a technical role in providing quality patient care.  Models appropriate behavior as exemplified in MLH Mission, Vision and Values.<p><br> </p><p>Working at MLH means carrying the mission forward of caring for our community and impacting the lives of patients in every way through compassion, a deliberate focus on service expectations and a consistent thriving for excellence.<br><br><b>A Brief Overview</b><br>Responsible for assisting the Registered Nurse in implementing the plan of care for a group of patients and functioning in a technical role in providing quality patient care. Models appropriate behavior as exemplified in MLH Mission, Vision and Values.<br><br><br><b>What you will do</b></p><ul><li>Contributes to the nursing assessment by collecting, reporting, and recording objective and subjective data.</li><li>Provides direct care in a safe manner.</li><li>Evaluation of the plan of care on a continuous basis.</li><li>Effectively communicates in writing and orally with patients/families and other health team members.</li><li>Participates in activities designed to improve health care delivery in assigned area.</li></ul><p><br><b>Education/Formal Training Requirements</b></p><p></p><ul><li>Technical Degree or Diploma Nursing - LPN</li></ul><p><br><b>Work Experience Requirements</b></p><p></p><p></p><ul><li>No prior work experience</li></ul><p><br><b>Licenses and Certifications Requirements</b></p><p></p><p></p><ul><li>BASIC LIFE SUPPORT - American Heart Association</li><li>Licensed Practical Nurse - Arkansas - Arkansas State Board of Nursing</li><li>Licensed Practical Nurse - Mississippi - Mississippi Board of Nursing</li><li>Licensed Practical Nurse - Tennessee - Tennessee Board of Nursing</li></ul><p><br><b>Supervision Provided by this Position</b></p><p></p><p></p><ul><li>There are no supervisory or lead responsibilities assigned to this position.</li></ul><p><br><b>Physical Demands</b></p><p></p><p></p><ul><li>The physical activities of this position may include climbing, pushing, standing, hearing, walking, reaching, grasping, kneeling, stooping, and repetitive motion.</li><li>Must have good balance and coordination.</li><li>The physical requirements of this position are: medium work - exerting up to 50 lbs. of force occasionally and/or up to 25 lbs. of force frequently.</li><li>The Associate is required to have close visual acuity including color, depth perception, and field of vision to perform an activity, such as assessing patients, preparing and analyzing data and figures; transcribing; viewing a computer terminal; or extensive reading.</li><li>Frequent invasive and non-invasive patient contact.</li><li>Exposure to patient body fluids as well as exposure to hazardous or poisonous materials.</li><li>Ability to react quickly to emergency situations.</li></ul><p><br>Our Associates are passionate about what they do, the service they provide and the patients they serve. We value family, team and a Power of One culture that requires commitment to the highest standards of care and unity.</p><p></p><p>Shift availability: Days 7a-7p or Nights 7p-7a<br>Full time and Part time opportunities!<br>Rotating Weekend shifts !<br>Night , Evening, and Weekend Shift Differentials!</p><p></p><p></p><p></p><p><i><b>Education: </b></i></p>Technical Degree or Diploma: Nursing - LPN (Required)<p></p><p></p><p><i><b>Work Experience: </b></i></p>No prior work experience<p></p><p></p><p><i><b>Certifications: </b></i></p>BASIC LIFE SUPPORT - American Heart Association, Licensed Practical Nurse - Arkansas - Arkansas State Board of Nursing, Licensed Practical Nurse - Mississippi - Mississippi Board of Nursing, Licensed Practical Nurse - Tennessee - Tennessee Board of Nursing<p></p><p></p><p><br>Boasting one of the South's largest medical centers, Memphis blends a friendly community, a thriving and growing downtown, and a low cost of living. We see each day as a new opportunity to make a difference in the lives of the people in our community.</p></p>",
+            "name": "LPN - Inpatient",
+            "type": "external",
+            "publication_date": "2025-03-06T00:50:37Z",
+            "short_name": "lpn-inpatient-d0df71",
+            "model_type": "jobs",
+            "id": 18113098,
+            "locations": [
+              {
+                "name": "Hernando, MS"
+              }
+            ]
+          },
+          {
+            "contents": "<div><p>SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologies to make this possible, with the ultimate goal of&nbsp;enabling human life on Mars.</p></div>\n\n<p><strong>PCB TECHNICIAN (STARLINK)</strong></p>\n\n<p>SpaceX is leveraging our experience building rockets and spacecraft to deploy Starlink, the world’s largest satellite constellation and most advanced broadband internet system. We provide reliable and fast internet to millions of users worldwide, including populations with little or no connectivity, rural communities, aircraft, watercraft, and places where existing services are unreliable, too expensive, or disconnected by natural disasters. We design, build, test, and operate all parts of the system, thousands of satellites and consumer antennae that allow users to connect within minutes of unboxing. The Starlink team is seeking out the best-in-class professionals to maximize Starlink’s potential for communities and businesses around the globe.</p>\n\n<p>As a PCB Technician, you will be working on the many processes within printed circuit board manufacturing in the Starlink factory. This is a versatile and highly skilled, hands-on manufacturing job that includes operating production equipment, performing quality inspections, performing chemical analysis and additions, and handling chemical materials to meet the goals for output and quality. The ideal candidate is comfortable working in an electro-chemical manufacturing environment and is motivated by Starlink’s mission to provide high speed, low-latency connectivity across the globe.</p>\n\n<p><strong>RESPONSIBILITIES:</strong></p>\n\n<ul>\n<li>Execute startup and shutdown procedures for production equipment</li>\n<li>Monitor process conditions, equipment, and control systems for state-of-the-art PCB manufacturing which may include metal plating lines, copper etching lines, soldermask printers, water treatment systems, plasma etching systems, laser or mechanical drilling machines, and lamination ovens</li>\n<li>Perform necessary interventions to maintain process parameters, including chemical analysis, additions, recipe changes, and machine adjustments</li>\n<li>Perform first-level troubleshooting, provide feedback, and work with maintenance and engineering teams to drive root cause of equipment downtime</li>\n<li>Track schedule and perform preventive maintenance and calibration of equipment and instruments</li>\n<li>Perform dispositions and rework for nonconforming PCBs</li>\n<li>Provide feedback on failure modes and support engineering to drive root cause of yield limiters</li>\n<li>Perform training of production personnel</li>\n<li>Ensure lab equipment is maintained and calibrated</li>\n<li>Maintain inventory of consumables</li>\n<li>Safely handle chemicals and chemical handling equipment&nbsp;(including transport and loading)</li>\n<li>Clean chemical processing equipment, machine parts, and tools</li>\n<li>Collect, segregate, and transport waste from generation points to the hazardous waste storage area</li>\n<li>Recommend improvements to manufacturing processes and work with engineers to develop, implement, and refine processes with a specific focus on reducing cost and downtime and increasing yield</li>\n<li>Read, interpret, and follow technical documents, such as manufacturing work instructions</li>\n<li>Ensure 5S standards are upheld by maintaining a clean and organized work area</li>\n<li>Perform other related duties, as assigned, for the purpose of ensuring an efficient and effective work environment</li>\n</ul>\n\n<p><strong>BASIC QUALIFICATIONS:</strong></p>\n\n<ul>\n<li>High school diploma or equivalency certificate</li>\n<li>6+ months of experience in a hands-on technical field such as automotive, electronics, or other high-volume manufacturing industry, or&nbsp;an associate’s degree in a STEM field</li>\n</ul>\n\n<p><strong>PREFERRED SKILLS AND EXPERIENCE:</strong></p>\n\n<ul>\n<li>2+ years of experience with printed circuit boards (PCBs), engineering laminates, electrochemical processes, and/or microelectronics fabrication (including school projects, clubs, or internships)&nbsp;</li>\n<li>Proficiently use a computer and Microsoft Office suite</li>\n<li>Experience working in a wet lab</li>\n<li>Experience handling flammable, toxic, corrosive, or other hazardous chemicals</li>\n<li>Experience using production and inventory management software such as MES/ERP</li>\n<li>Strong interpersonal, verbal, and written communication skills to work closely with other technicians and cross-functional teams</li>\n<li>Ability to identify and maintain priorities for tasks and projects while staying organized</li>\n<li>Ability to rapidly change roles/responsibilities while working independently in a high-paced, challenging work environment with minimal oversight</li>\n<li>Current or past certification for IPC-A-600, IPC-6012 or equivalent</li>\n</ul>\n\n<p><strong>ADDITIONAL REQUIREMENTS:</strong></p>\n\n<ul>\n<li>Must be open to work all shifts, overtime, and/or weekends as needed</li>\n<li>Must be available for one of the shifts below:\n<ul>\n<li>A-Shift: 5:00 AM - 5:00 PM (Sunday - Tuesday and every other Wednesday)</li>\n<li>B-Shift: 5:00 AM - 5:00 PM (Thursday - Saturday and every other Wednesday)</li>\n<li>C-Shift: 5:00 PM - 5:00 AM (Sunday - Tuesday and every other Wednesday)</li>\n<li>D-Shift: 5:00 PM - 5:00 AM (Thursday - Saturday and every other Wednesday)</li>\n</ul>\n</li>\n<li>Must be able to lift up to 25 lbs. unassisted</li>\n<li>Must be comfortable working in a production environment with extensive use of hazardous chemicals such as acids, alkalis, and solvents</li>\n<li>Standing for long periods of time, climbing up and down ladders, bending, grasping, sitting, pulling, pushing, stooping, and stretching may be required to perform the functions of this position</li>\n<li>Must be able to wear appropriate PPE for lab and electro-chemical manufacturing environment</li>\n<li>Must be comfortable with climbing up and down ladders, grasping, standing, lifting, bending, pulling, pushing, stooping, stretching, carrying, crawling, and maneuvering in tight spaces</li>\n<li>Able to travel for business up to 10%</li>\n</ul>\n\n<div><p><strong>ITAR REQUIREMENTS:</strong></p>\n<ul>\n<li>To conform to U.S. Government export regulations, applicant must be a (i) U.S. citizen or national, (ii) U.S. lawful, permanent resident (aka green card holder), (iii) Refugee under 8 U.S.C. § 1157, or (iv) Asylee under 8 U.S.C. § 1158, or be eligible to obtain the required authorizations from the U.S. Department of State. Learn more about the ITAR <a href=\"https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&amp;sys_id=24d528fddbfc930044f9ff621f961987\" rel=\"noopener noreferrer\">here</a>. &nbsp;</li>\n</ul>\n<p>SpaceX is an Equal Opportunity Employer; employment with SpaceX is governed on the basis of merit, competence and qualifications and will not be influenced in any manner by race, color, religion, gender, national origin/ethnicity, veteran status, disability status, age, sexual orientation, gender identity, marital status, mental or physical disability or any other legally protected status.</p>\n<p>Applicants wishing to view a copy of SpaceX’s Affirmative Action Plan for veterans and individuals with disabilities, or applicants requiring reasonable accommodation to the application/interview process should reach out to&nbsp;<a href=\"mailto:EEOCompliance@spacex.com\" rel=\"noopener noreferrer\">EEOCompliance@spacex.com</a><em>.&nbsp;</em></p></div>",
+            "name": "PCB Technician (Starlink)",
+            "type": "external",
+            "publication_date": "2026-07-01T18:39:43Z",
+            "short_name": "pcb-technician-starlink-1be743",
+            "model_type": "jobs",
+            "id": 21905519,
+            "locations": [
+              {
+                "name": "Lockhart, TX"
+              }
+            ]
+          }
+        ],
+        "aggregations": {}
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://www.themuse.com/api/public/jobs?page=0"
+    },
+    {
+      "name": "SkyBiometry",
+      "slug": "skybiometry",
+      "emoji": "🔑",
+      "tagline": "SkyBiometry — free tier with API key",
+      "description": "SkyBiometry exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://skybiometry.com/documentation/",
+      "baseUrl": "http://api.skybiometry.com",
+      "sampleEndpoint": "/fc/faces/detect.json?api_key=aa754b54b37&amp;api_secret=4b3a4c6d4c&amp;urls=http://tinyurl.com/673cksr",
+      "latencyMs": 303,
+      "corsObserved": true,
+      "httpStatus": 400,
+      "sampleJson": {
+        "status": "failure",
+        "error_code": 201,
+        "error_message": "API_KEY_DOES_NOT_EXIST - aa754b54b37",
+        "operation_id": "5f565eac1f144925bf09f0b2ac62f295"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe http://api.skybiometry.com/fc/faces/detect.json?api_key=aa754b54b37&amp;api_secret=4b3a4c6d4c&amp;urls=http://tinyurl.com/673cksr"
+    },
+    {
+      "name": "Sunor",
+      "slug": "sunor",
+      "emoji": "🔑",
+      "tagline": "Sunor — free tier with API key",
+      "description": "Sunor exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://docs.sunor.cc",
+      "baseUrl": "https://sunor.cc",
+      "sampleEndpoint": "/api/v1/task/%7BtaskId%7D/",
+      "latencyMs": 864,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "code": 401,
+        "message": "Missing x-api-key header"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sunor.cc/api/v1/task/{taskId}\\"
+    },
+    {
+      "name": "NewsAPI",
+      "slug": "newsapi",
+      "emoji": "📰",
+      "tagline": "Headlines from 80k+ sources",
+      "description": "NewsAPI aggregates headlines and articles worldwide. Free developer key at newsapi.org — 100 req/day on free tier.",
+      "sourceCategory": "News",
+      "docsUrl": "https://newsapi.org/",
+      "baseUrl": "https://newsapi.org",
+      "sampleEndpoint": "/top-headlines?country=us&pageSize=1&apiKey=YOUR_API_KEY",
+      "latencyMs": 267,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "error",
+        "code": "apiKeyInvalid",
+        "message": "Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://newsapi.org/v2/top-headlines?country=us&pageSize=1&apiKey=YOUR_API_KEY"
+    },
+    {
+      "name": "Giphy",
+      "slug": "giphy",
+      "emoji": "🔑",
+      "tagline": "Giphy — free tier with API key",
+      "description": "Giphy exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://developers.giphy.com/docs/",
+      "baseUrl": "https://api.giphy.com",
+      "sampleEndpoint": "/v1/stickers/search?api_key={YOUR",
+      "latencyMs": 535,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "data": [],
+        "meta": {
+          "status": 401,
+          "msg": "Unauthorized",
+          "response_id": ""
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.giphy.com/v1/stickers/search?api_key={YOUR"
+    },
+    {
+      "name": "Sirv",
+      "slug": "sirv",
+      "emoji": "🔑",
+      "tagline": "Sirv — free tier with API key",
+      "description": "Sirv exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://apidocs.sirv.com/",
+      "baseUrl": "https://api.sirv.com",
+      "sampleEndpoint": "/v2/account",
+      "latencyMs": 101,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "Missing authentication"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.sirv.com/v2/account"
+    },
+    {
+      "name": "Best Buy",
+      "slug": "best-buy",
+      "emoji": "🔑",
+      "tagline": "Best Buy — free tier with API key",
+      "description": "Best Buy exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://bestbuyapis.github.io/api-documentation/#overview",
+      "baseUrl": "https://api.bestbuy.com",
+      "sampleEndpoint": "/v1/products/8880044.json?show=sku,name,salePrice&amp;apiKey=YourAPIKey",
+      "latencyMs": 164,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "errorCode": "403",
+        "errorMessage": "We were unable to locate your API Key."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.bestbuy.com/v1/products/8880044.json?show=sku,name,salePrice&amp;apiKey=YourAPIKey"
+    },
+    {
+      "name": "Telegram Bot",
+      "slug": "telegram-bot",
+      "emoji": "🔑",
+      "tagline": "Telegram Bot — free tier with API key",
+      "description": "Telegram Bot exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://core.telegram.org/bots/api",
+      "baseUrl": "https://api.telegram.org",
+      "sampleEndpoint": "/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getMe",
+      "latencyMs": 717,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "ok": false,
+        "error_code": 401,
+        "description": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getMe"
+    },
+    {
+      "name": "Mockaroo",
+      "slug": "mockaroo",
+      "emoji": "🔑",
+      "tagline": "Mockaroo — free tier with API key",
+      "description": "Mockaroo exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://www.mockaroo.com/docs",
+      "baseUrl": "https://api.mockaroo.com",
+      "sampleEndpoint": "/api/types?key=(your",
+      "latencyMs": 1042,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Invalid API Key"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.mockaroo.com/api/types?key=(your"
+    },
+    {
+      "name": "Cutt.ly",
+      "slug": "cutt-ly",
+      "emoji": "🔑",
+      "tagline": "Cutt.ly — free tier with API key",
+      "description": "Cutt.ly exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "URL Shorteners",
+      "docsUrl": "https://cutt.ly/api-documentation/cuttly-links-api",
+      "baseUrl": "https://cutt.ly",
+      "sampleEndpoint": "/api/api.php",
+      "latencyMs": 163,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "auth": false,
+        "code": "4",
+        "message": "Invalid API key"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://cutt.ly/api/api.php"
+    },
+    {
+      "name": "MyAnimeList",
+      "slug": "myanimelist",
+      "emoji": "🔑",
+      "tagline": "MyAnimeList — free tier with API key",
+      "description": "MyAnimeList exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://myanimelist.net/clubs.php?cid=13727",
+      "baseUrl": "https://api.myanimelist.net",
+      "sampleEndpoint": "/v2/anime/ranking?ranking_type=all&amp;limit=10",
+      "latencyMs": 733,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "message": "",
+        "error": "forbidden"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.myanimelist.net/v2/anime/ranking?ranking_type=all&amp;limit=10"
+    },
+    {
+      "name": "Buddy",
+      "slug": "buddy",
+      "emoji": "🔑",
+      "tagline": "Buddy — free tier with API key",
+      "description": "Buddy exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Continuous Integration",
+      "docsUrl": "https://buddy.works/docs/api/getting-started/overview",
+      "baseUrl": "https://api.buddy.works",
+      "sampleEndpoint": "/user",
+      "latencyMs": 160,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          {
+            "message": "Wrong authentication data"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.buddy.works/user"
+    },
+    {
+      "name": "Netlify",
+      "slug": "netlify",
+      "emoji": "🔑",
+      "tagline": "Netlify — free tier with API key",
+      "description": "Netlify exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.netlify.com/api/get-started/",
+      "baseUrl": "https://api.netlify.com",
+      "sampleEndpoint": "/api/v1/",
+      "latencyMs": 784,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "code": 401,
+        "message": "Access Denied"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.netlify.com/api/v1/"
+    },
+    {
+      "name": "Zube",
+      "slug": "zube",
+      "emoji": "🔑",
+      "tagline": "Zube — free tier with API key",
+      "description": "Zube exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://zube.io/docs/api",
+      "baseUrl": "https://zube.io",
+      "sampleEndpoint": "/api/projects",
+      "latencyMs": 216,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://zube.io/api/projects"
+    },
+    {
+      "name": "Todoist",
+      "slug": "todoist",
+      "emoji": "🔑",
+      "tagline": "Todoist — free tier with API key",
+      "description": "Todoist exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://developer.todoist.com",
+      "baseUrl": "https://api.todoist.com",
+      "sampleEndpoint": "/api/v1/activities/",
+      "latencyMs": 522,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "error": "Invalid token",
+        "error_code": 401,
+        "error_extra": {
+          "access_type": "none",
+          "event_id": "ecd39b80e13b404f8646dc5581845bec",
+          "retry_after": 3
+        },
+        "error_tag": "AUTH_INVALID_TOKEN",
+        "http_code": 403
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.todoist.com/api/v1/activities\\"
+    },
+    {
+      "name": "Genius",
+      "slug": "genius",
+      "emoji": "🔑",
+      "tagline": "Genius — free tier with API key",
+      "description": "Genius exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://docs.genius.com/",
+      "baseUrl": "https://api.genius.com",
+      "sampleEndpoint": "/apples",
+      "latencyMs": 1116,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "meta": {
+          "status": 403,
+          "message": "Action forbidden for current scope"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.genius.com/apples"
+    },
+    {
+      "name": "SoundCloud",
+      "slug": "soundcloud",
+      "emoji": "🔑",
+      "tagline": "SoundCloud — free tier with API key",
+      "description": "SoundCloud exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://developers.soundcloud.com/docs/api/guide",
+      "baseUrl": "https://api.soundcloud.com",
+      "sampleEndpoint": "/tracks",
+      "latencyMs": 7743,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "code": 401,
+        "message": "",
+        "link": "https://developers.soundcloud.com/docs/api/explorer/open-api",
+        "status": "401 - Unauthorized",
+        "errors": [],
+        "error": null
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.soundcloud.com/tracks"
+    },
+    {
+      "name": "Medium",
+      "slug": "medium",
+      "emoji": "🔑",
+      "tagline": "Medium — free tier with API key",
+      "description": "Medium exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://github.com/Medium/medium-api-docs",
+      "baseUrl": "https://api.medium.com",
+      "sampleEndpoint": "/v1/me",
+      "latencyMs": 1811,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          {
+            "message": "An access token is required.",
+            "code": 6000
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.medium.com/v1/me"
+    },
+    {
+      "name": "Unsplash",
+      "slug": "unsplash",
+      "emoji": "🔑",
+      "tagline": "Unsplash — free tier with API key",
+      "description": "Unsplash exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://unsplash.com/developers",
+      "baseUrl": "https://api.unsplash.com",
+      "sampleEndpoint": "/photos/LBI7cgq3pbM",
+      "latencyMs": 1373,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          "OAuth error: The access token is invalid"
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.unsplash.com/photos/LBI7cgq3pbM"
+    },
+    {
+      "name": "shutterstock",
+      "slug": "shutterstock",
+      "emoji": "🔑",
+      "tagline": "shutterstock — free tier with API key",
+      "description": "shutterstock exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://api-reference.shutterstock.com/",
+      "baseUrl": "https://api.shutterstock.com",
+      "sampleEndpoint": "/v2/images/search&quot",
+      "latencyMs": 138,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "Invalid access token"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.shutterstock.com/v2/images/search&quot"
+    },
+    {
+      "name": "Etsy",
+      "slug": "etsy",
+      "emoji": "🔑",
+      "tagline": "Etsy — free tier with API key",
+      "description": "Etsy exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://www.etsy.com/developers/documentation/getting_started/api_basics",
+      "baseUrl": "https://www.etsy.com",
+      "sampleEndpoint": "/?api_key=DEMO_KEY",
+      "latencyMs": 426,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "url": "https://geo.captcha-delivery.com/captcha/?initialCid=AHrlqAAAAAMAHooCo9BsaP4ALgEDig==&cid=4Why6mlCzMNqXBxbZ~ar5zsq9e1eCHBja_5K3A3TuttVY3Y7Aw9eGTm13dXYSBfrG8jlJXA6PZ2~7UA~Yk3pWm7Pafr4bbzls8~R1DZG~48ZmqTvEnTnAAWZRbwDwK57&referer=https%3A%2F%2Fwww.etsy.com%2F%3Fapi_key%3DDEMO_KEY&hash=D013AA612AB2224D03B2318D0F5B19&t=bv&s=45225&e=fea7f3c3516a5cc2b73044ccc3e904d712e58745dc9b32dfc68087f1b2ae0c42addd7c5620448ed0d54988fa7e063688&b=1635"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.etsy.com/?api_key=DEMO_KEY"
+    },
+    {
+      "name": "Imgur",
+      "slug": "imgur",
+      "emoji": "🔑",
+      "tagline": "Imgur — free tier with API key",
+      "description": "Imgur exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://apidocs.imgur.com/",
+      "baseUrl": "https://api.imgur.com",
+      "sampleEndpoint": "/3/gallery.json",
+      "latencyMs": 207,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "data": {
+          "error": "Authentication required",
+          "request": "/3/gallery.json",
+          "method": "GET"
+        },
+        "success": false,
+        "status": 401
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.imgur.com/3/gallery.json"
+    }
+  ],
+  "skipped": []
+}

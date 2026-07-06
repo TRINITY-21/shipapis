@@ -1,0 +1,988 @@
+{
+  "batch": 58,
+  "verified": [
+    {
+      "name": "CVEDB",
+      "slug": "cvedb",
+      "emoji": "🔌",
+      "tagline": "CVE vulnerability lookup",
+      "description": "Shodan CVEDB provides fast CVE metadata lookups as JSON.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://cvedb.shodan.io",
+      "baseUrl": "https://cvedb.shodan.io",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 1999,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "healthy"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Recherche Entreprises",
+      "slug": "recherche-entreprises",
+      "emoji": "🔌",
+      "tagline": "French company search API",
+      "description": "Open French government API to search companies and associations.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://recherche-entreprises.api.gouv.fr",
+      "baseUrl": "https://recherche-entreprises.api.gouv.fr",
+      "sampleEndpoint": "/health",
+      "latencyMs": 2010,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "DexPaprika",
+      "slug": "dexpaprika",
+      "emoji": "🔌",
+      "tagline": "DEX pool and token data",
+      "description": "Free DEX data across chains — pools, tokens and trades.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.dexpaprika.com",
+      "baseUrl": "https://api.dexpaprika.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 2500,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "up",
+        "details": {
+          "cache": {
+            "status": "up",
+            "timestamp": "2026-07-05T18:29:13.661562212Z"
+          },
+          "database": {
+            "status": "up",
+            "timestamp": "2026-07-05T18:29:18.852933718Z"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "SBB Open Data",
+      "slug": "sbb-open-data",
+      "emoji": "🚆",
+      "tagline": "SBB Open Data — Swiss rail open data",
+      "description": "SBB Open Data exposes swiss rail open data We verified a keyless GET endpoint returning JSON (Transportation). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://data.sbb.ch",
+      "baseUrl": "https://data.sbb.ch",
+      "sampleEndpoint": "/data.json",
+      "latencyMs": 401,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+        "@id": "https://data.sbb.ch/data.json",
+        "@type": "dcat:Catalog",
+        "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+        "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+        "dataset": [
+          {
+            "@type": "dcat:Dataset",
+            "identifier": "anzahl-sbb-bahnhofbenutzer",
+            "title": "Number of SBB station users",
+            "description": "<p></p><p>Anzahl SBB-Bahnhofbenutzer. D.h. Personen, die den Bahnhof frequentieren, nicht gleich Benützer von Transportleistungen.</p><p>Letzter Update: 5.4.2024 mit Daten 2023</p><p></p><p></p><p>Number of SBB station users. I.e. persons using the station do not immediately use transport services.</p><p>Last update per 5.4.2024 with data 2023<br></p><p></p><p></p><p></p>",
+            "modified": "2026-04-23T10:44:59+00:00",
+            "landingPage": "https://data.sbb.ch/explore/dataset/anzahl-sbb-bahnhofbenutzer/",
+            "publisher": {
+              "name": "SBB"
+            },
+            "accessLevel": "public"
+          },
+          {
+            "@type": "dcat:Dataset",
+            "identifier": "aufzugsstammdaten",
+            "title": "Elevator master data",
+            "description": "<p>Master data on SBB lifts and escalators</p>",
+            "modified": "2019-07-08T09:13:16+00:00",
+            "landingPage": "https://data.sbb.ch/explore/dataset/aufzugsstammdaten/",
+            "publisher": {
+              "name": "SBB Infrastruktur"
+            },
+            "accessLevel": "public"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.sbb.ch/data.json"
+    },
+    {
+      "name": "PlaceDog",
+      "slug": "placedog",
+      "emoji": "🔌",
+      "tagline": "Placeholder dog pictures",
+      "description": "Returns health status JSON for the PlaceDog image service.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://place.dog",
+      "baseUrl": "https://place.dog",
+      "sampleEndpoint": "/health",
+      "latencyMs": 2050,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "metrics": {
+          "cpu_usage_percent": 7.7759199142456055,
+          "memory_usage_percent": 53.08916091918945,
+          "total_memory_kb": 10799484928,
+          "used_memory_kb": 5733355520
+        },
+        "status": "healthy",
+        "timestamp": "2026-07-05T18:30:07.329731763+00:00"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Icanhazip",
+      "slug": "icanhazip",
+      "emoji": "🔧",
+      "tagline": "Icanhazip — IP Address API",
+      "description": "Icanhazip exposes iP Address API We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://major.io/icanhazip-com-faq/",
+      "baseUrl": "https://major.io",
+      "sampleEndpoint": "/index.json",
+      "latencyMs": 1137,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "content": "We use Vertex AI at work for accessing Anthropic&rsquo;s models and the opencode setup is quite smooth! Although getting your authentication credentials from Google can be a little tricky, using them with opencode involves setting a few environment variables.\nSetting up Vertex AI Before you point opencode at Vertex AI, you need a few things on the GCP side.\nPrerequisites A GCP project with the Vertex AI API enabled IAM permissions for the Claude models (your account needs the aiplatform.endpoints.predict permission, or a broader role like Vertex AI User) Either a service account key or Application Default Credentials (ADC) Authentication You have two main options here. The easiest for local development is ADC:\ngcloud auth application-default login This stores credentials locally and opencode picks them up automatically.\nIf you&rsquo;re using a service account (common in enterprise setups where your org provisions access), point to the key file:\nexport GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-service-account.json Environment variables Set these in your shell profile or session:\nexport ANTHROPIC_VERTEX_PROJECT_ID=your-gcp-project-id export GOOGLE_CLOUD_PROJECT=your-gcp-project-id export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-service-account.json # if not using ADC You can also set VERTEX_LOCATION if you need a specific region, but the global endpoint is the default. It routes to the nearest available region.\nUsing opencode You don&rsquo;t need to configure opencode at all! It finds the environment variables and takes care of the rest for you.\nYou can type /models, press enter, and you should see the list of available models from Vertex AI. From there, use CTRL-F to select any favorites that you use often.\nTroubleshooting If you don&rsquo;t see any models, double check the environment variables to ensure they are set in your terminal session. You may need to open a new terminal or source your shell profile to pick up the new variables.\nYou can also run opencode models --refresh to force a refresh of the model list from Vertex AI.\n",
+          "permalink": "https://major.io/p/vertex-ai-anthropic-opencode/",
+          "summary": "Opencode makes it easy to use Anthropic&rsquo;s Claude models through  Google&rsquo;s Vertex AI platform.",
+          "title": "Using Anthropic's models via Vertex AI in opencode"
+        },
+        {
+          "content": "Porkbun does exactly what I need and nothing more. I came to them a few years ago with domains scattered across a few different registrars that were quickly becoming too difficult to manage. Their site has minimal upselling, quick renewals, and self-servicing your domains is easy. 🐷\nI&rsquo;m always on the hunt for ways to automate all of my infrastructure, so I set out to build some Porkbun automation. However, many of the python modules for Porkbun only did certain things, such as just DNS or just buying domains. I wanted the whole thing: domain pricing, DNS, DNSSec management. Everything.\nLet&rsquo;s dig into the code. 👨‍💻\nImportant note: None of these projects are affiliated with Porkbun in any way. They&rsquo;re just passion projects from someone who really enjoys using their service! oinker 🐖 My initial project is oinker. It&rsquo;s a simple Python client (async-first, but sync is there, too) that helps you manage all aspects of your Porkbun account in a type-safe and Pythonic way.\nHere&rsquo;s a quick example:\nfrom oinker import AsyncPiglet, ARecord async with AsyncPiglet() as piglet: # List DNS records records = await piglet.dns.list(&#34;example.com&#34;) for record in records: print(f&#34;{record.record_type} {record.name} -&gt; {record.content}&#34;) # Create an A record await piglet.dns.create( &#34;example.com&#34;, ARecord(content=&#34;1.2.3.4&#34;, name=&#34;www&#34;) ) There&rsquo;s a lot more you can do with it! The documentation covers lots of examples and has an extensive set of API reference material, too.\nporkbun-mcp 🤖 LLMs are all around us these days, right? Sometimes I like to talk to Claude via opencode about my DNS records. This gets handy when I&rsquo;m struggling to find out why one of my kubernetes services isn&rsquo;t responding and it&rsquo;s due to a missing DNS record.\nThere&rsquo;s porkbun-mcp for that! You can chat with LLMs about your DNS records to get advice, troubleshoot problems, or just create records on the go.\nCheck the getting started docs to configure porkbun-mcp in your favorite MCP client or LLM tool.\noctodns-porkbun 🐙 Finally, there&rsquo;s octodns-porkbun for those who manage DNS as code with octoDNS. This provider plugin uses oinker under the hood and supports all the record types you&rsquo;d expect.\nIf you&rsquo;re already using octoDNS to manage DNS across multiple providers, this makes it easy to add Porkbun to the mix.\nPull requests welcome! If you find a way to improve upon any of these projects, please let me know! You can always stop by one of the repos to open an issue, fix a bug, or add a feature!\n",
+          "permalink": "https://major.io/p/love-for-porkbun/",
+          "summary": "Porkbun has been a great DNS registrar for me and what better way to show my appreciation than to write some software! ❤️",
+          "title": "Coding love for Porkbun"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://major.io/index.json"
+    },
+    {
+      "name": "IFTTT",
+      "slug": "ifttt",
+      "emoji": "🔧",
+      "tagline": "IFTTT — IFTTT Connect API",
+      "description": "IFTTT exposes iFTTT Connect API We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://platform.ifttt.com/docs/connect_api",
+      "baseUrl": "https://platform.ifttt.com",
+      "sampleEndpoint": "/data.json",
+      "latencyMs": 185,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": "{\"channel\":null}"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://platform.ifttt.com/data.json"
+    },
+    {
+      "name": "ColorMagic",
+      "slug": "colormagic",
+      "emoji": "🎨",
+      "tagline": "ColorMagic — Color Palette Generator",
+      "description": "ColorMagic exposes color Palette Generator We verified a keyless GET endpoint returning JSON (Art & Design). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://colormagic.app/api",
+      "baseUrl": "https://colormagic.app",
+      "sampleEndpoint": "/health",
+      "latencyMs": 3164,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "commit": "d1-local",
+        "timestamp": 1783276731912
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://colormagic.app/health"
+    },
+    {
+      "name": "Logotypes",
+      "slug": "logotypes",
+      "emoji": "🔌",
+      "tagline": "Open-source logo collection API",
+      "description": "Returns logo metadata and URLs for thousands of brands.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://logotypes.dev/",
+      "baseUrl": "https://logotypes.dev",
+      "sampleEndpoint": "/all",
+      "latencyMs": 6522,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "records": {
+          "1password": [
+            {
+              "example_description": "1Password helps you keep your digital life secure by storing passwords, credit card details, and documents in an encrypted vault. Generate strong passwords, access your data from any device, and enjoy peace of mind with 1Password\\'s robust security features.",
+              "example_title": "Secure your digital life",
+              "logo": "https://logotypes.dev/static/logos/1password-glyph-color.svg",
+              "name": "1password",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "1Password helps you keep your digital life secure by storing passwords, credit card details, and documents in an encrypted vault. Generate strong passwords, access your data from any device, and enjoy peace of mind with 1Password\\'s robust security features.",
+              "example_title": "Secure your digital life",
+              "logo": "https://logotypes.dev/static/logos/1password-wordmark-color.svg",
+              "name": "1password",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "abstract": [
+            {
+              "example_description": "Abstract is a design collaboration tool that streamlines the design process. It enables teams to work together on design projects with version control, feedback management, and seamless integrations, enhancing productivity and creativity in the design workflow.",
+              "example_title": "Design collaboration redefined",
+              "logo": "https://logotypes.dev/static/logos/abstract-glyph-color.svg",
+              "name": "Abstract",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Abstract is a design collaboration tool that streamlines the design process. It enables teams to work together on design projects with version control, feedback management, and seamless integrations, enhancing productivity and creativity in the design workflow.",
+              "example_title": "Design collaboration redefined",
+              "logo": "https://logotypes.dev/static/logos/abstract-wordmark-color.svg",
+              "name": "Abstract",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "ada": [
+            {
+              "example_description": "Ada offers AI-powered customer support solutions to automate and optimize customer interactions. With Ada, businesses can provide instant responses, improve customer satisfaction, and scale their support operations efficiently with intelligent chatbots.",
+              "example_title": "AI-powered customer support",
+              "logo": "https://logotypes.dev/static/logos/ada-glyph-color.svg",
+              "name": "Ada",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Ada offers AI-powered customer support solutions to automate and optimize customer interactions. With Ada, businesses can provide instant responses, improve customer satisfaction, and scale their support operations efficiently with intelligent chatbots.",
+              "example_title": "AI-powered customer support",
+              "logo": "https://logotypes.dev/static/logos/ada-wordmark-color.svg",
+              "name": "Ada",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "adidas": [
+            {
+              "example_description": "Adidas combines performance and style in sportswear, providing athletes with high-quality apparel, footwear, and accessories. Whether you\\'re training or competing, Adidas ensures you have the gear to excel and make a statement.",
+              "example_title": "Performance and style in sportswear",
+              "logo": "https://logotypes.dev/static/logos/adidas-wordmark-black.svg",
+              "name": "Adidas",
+              "variant": "wordmark",
+              "version": "black"
+            },
+            {
+              "example_description": "Adidas combines performance and style in sportswear, providing athletes with high-quality apparel, footwear, and accessories. Whether you\\'re training or competing, Adidas ensures you have the gear to excel and make a statement.",
+              "example_title": "Performance and style in sportswear",
+              "logo": "https://logotypes.dev/static/logos/adidas-wordmark-color.svg",
+              "name": "Adidas",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "adobe": [
+            {
+              "example_description": "Adobe delivers creative solutions that empower professionals to design, create, and innovate. From Photoshop to Illustrator, Adobe\\'s suite of tools helps you bring your ideas to life with powerful features and seamless integration.",
+              "example_title": "Creative solutions for professionals",
+              "logo": "https://logotypes.dev/static/logos/adobe-glyph-color.svg",
+              "name": "Adobe",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Adobe delivers creative solutions that empower professionals to design, create, and innovate. From Photoshop to Illustrator, Adobe\\'s suite of tools helps you bring your ideas to life with powerful features and seamless integration.",
+              "example_title": "Creative solutions for professionals",
+              "logo": "https://logotypes.dev/static/logos/adobe-wordmark-color.svg",
+              "name": "Adobe",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "ahrefs": [
+            {
+              "example_description": "Ahrefs provides comprehensive SEO tools to help you analyze and improve your website\\'s performance. With Ahrefs, you can conduct keyword research, track rankings, and analyze backlinks to optimize your SEO strategy effectively.",
+              "example_title": "Unleash SEO insights",
+              "logo": "https://logotypes.dev/static/logos/ahrefs-glyph-color.svg",
+              "name": "Ahrefs",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Ahrefs provides comprehensive SEO tools to help you analyze and improve your website\\'s performance. With Ahrefs, you can conduct keyword research, track rankings, and analyze backlinks to optimize your SEO strategy effectively.",
+              "example_title": "Unleash SEO insights",
+              "logo": "https://logotypes.dev/static/logos/ahrefs-wordmark-color.svg",
+              "name": "Ahrefs",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "airbnb": [
+            {
+              "example_description": "Airbnb connects travelers with unique stays and experiences around the world. From cozy homes to adventurous activities, Airbnb offers a platform to explore and book accommodations and activities that make your travels unforgettable.",
+              "example_title": "Unique stays and experiences",
+              "logo": "https://logotypes.dev/static/logos/airbnb-glyph-color.svg",
+              "name": "Airbnb",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Airbnb connects travelers with unique stays and experiences around the world. From cozy homes to adventurous activities, Airbnb offers a platform to explore and book accommodations and activities that make your travels unforgettable.",
+              "example_title": "Unique stays and experiences",
+              "logo": "https://logotypes.dev/static/logos/airbnb-wordmark-color.svg",
+              "name": "Airbnb",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ],
+          "airtable": [
+            {
+              "example_description": "Airtable offers a flexible and visual approach to database management. Customize your tables, views, and fields to organize and manage data effortlessly. Collaborate with teams and track projects with Airtable\\'s intuitive interface.",
+              "example_title": "Flexible database management",
+              "logo": "https://logotypes.dev/static/logos/airtable-glyph-color.svg",
+              "name": "Airtable",
+              "variant": "glyph",
+              "version": "color"
+            },
+            {
+              "example_description": "Airtable offers a flexible and visual approach to database management. Customize your tables, views, and fields to organize and manage data effortlessly. Collaborate with teams and track projects with Airtable\\'s intuitive interface.",
+              "example_title": "Flexible database management",
+              "logo": "https://logotypes.dev/static/logos/airtable-wordmark-color.svg",
+              "name": "Airtable",
+              "variant": "wordmark",
+              "version": "color"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "DocForge",
+      "slug": "docforge",
+      "emoji": "🔌",
+      "tagline": "DocForge — Convert between Markdown, HTML, CSV, JSON, and YAML for…",
+      "description": "DocForge exposes convert between Markdown, HTML, CSV, JSON, and YAML formats We verified a keyless GET endpoint returning JSON (Documents & Productivity). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://docforge-api.vercel.app",
+      "baseUrl": "https://docforge-api.vercel.app",
+      "sampleEndpoint": "/api",
+      "latencyMs": 310,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "DocForge API",
+        "version": "1.0.0",
+        "status": "ok",
+        "timestamp": "2026-07-05T18:39:11.532Z",
+        "auth": {
+          "description": "API key required. Get one via POST /api/signup",
+          "header": "Authorization: Bearer df_live_xxx",
+          "tiers": {
+            "free": {
+              "requests_per_day": 500,
+              "max_input_bytes": 102400
+            },
+            "pro": {
+              "requests_per_day": 50000,
+              "max_input_bytes": 5242880
+            },
+            "team": {
+              "requests_per_day": 500000,
+              "max_input_bytes": 26214400
+            }
+          }
+        },
+        "endpoints": [
+          {
+            "method": "POST",
+            "path": "/api/signup",
+            "description": "Create a free-tier API key (email required)"
+          },
+          {
+            "method": "POST",
+            "path": "/api/md-to-html",
+            "description": "Convert Markdown to sanitized HTML"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://docforge-api.vercel.app/api"
+    },
+    {
+      "name": "ReportForge",
+      "slug": "reportforge",
+      "emoji": "🔌",
+      "tagline": "ReportForge — Generate styled HTML reports from CSV or JSON data with…",
+      "description": "ReportForge exposes generate styled HTML reports from CSV or JSON data with built-in templates We verified a keyless GET endpoint returning JSON (Documents & Productivity). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://reportforge-api.vercel.app",
+      "baseUrl": "https://reportforge-api.vercel.app",
+      "sampleEndpoint": "/api",
+      "latencyMs": 210,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "ReportForge API",
+        "version": "1.0.0",
+        "status": "ok",
+        "timestamp": "2026-07-05T18:39:13.126Z",
+        "description": "Upload CSV or JSON data, get formatted HTML reports. Print-ready, professional templates.",
+        "auth": {
+          "description": "API key required for paid tiers. Get one via POST /api/signup",
+          "header": "Authorization: Bearer rf_live_xxx",
+          "tiers": {
+            "free": {
+              "reports_per_day": 5,
+              "max_input_bytes": 102400
+            },
+            "starter": {
+              "reports_per_day": 100,
+              "max_input_bytes": 2097152
+            },
+            "business": {
+              "reports_per_day": "unlimited",
+              "max_input_bytes": 10485760
+            }
+          }
+        },
+        "endpoints": [
+          {
+            "method": "POST",
+            "path": "/api/signup",
+            "description": "Create a free-tier API key (email required)"
+          },
+          {
+            "method": "POST",
+            "path": "/api/csv-to-report",
+            "description": "Upload CSV data and get a formatted HTML report"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://reportforge-api.vercel.app/api"
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "🎭",
+      "tagline": "JokeAPI — Jokes in multiple formats",
+      "description": "JokeAPI exposes jokes in multiple formats We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://jokeapi.dev/",
+      "baseUrl": "https://jokeapi.dev",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 110,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "ping": "Pong!",
+        "timestamp": 1783276762005
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://jokeapi.dev/ping"
+    },
+    {
+      "name": "Minecraft ServerHub",
+      "slug": "minecraft-serverhub",
+      "emoji": "🎮",
+      "tagline": "Minecraft ServerHub — Minecraft server status, player counts, MOTD, and live …",
+      "description": "Minecraft ServerHub exposes minecraft server status, player counts, MOTD, and live status badges We verified a keyless GET endpoint returning JSON (Games & Comics). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://minecraft-serverhub.com/developers",
+      "baseUrl": "https://minecraft-serverhub.com",
+      "sampleEndpoint": "/api/ping?host=play.hypixel.net&",
+      "latencyMs": 3161,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "online": true,
+        "players": {
+          "online": 46221,
+          "max": 200000,
+          "sample": []
+        },
+        "version": "Requires MC 1.8 / 1.21",
+        "motd": "                 Hypixel Network [1.8/26.2]\n     SKYBLOCK YEAR 500 RAFFLE X WIN BIG X",
+        "favicon": "data:image/png;base64,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",
+        "ping": 464
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://minecraft-serverhub.com/api/ping?host=play.hypixel.net&#x27"
+    },
+    {
+      "name": "Indian Quotes",
+      "slug": "indian-quotes",
+      "emoji": "🎭",
+      "tagline": "Indian Quotes — Curated quotes from India's most successful entrepreneu…",
+      "description": "Indian Quotes exposes curated quotes from India's most successful entrepreneurs We verified a keyless GET endpoint returning JSON (Personality). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://indian-quotes-api.vercel.app/",
+      "baseUrl": "https://indian-quotes-api.vercel.app",
+      "sampleEndpoint": "/api/quotes/random",
+      "latencyMs": 2563,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 100,
+        "quote": "Don't wait for opportunities to come to you, create your own opportunities.",
+        "tags": [
+          "proactive",
+          "initiative"
+        ],
+        "author_id": 41,
+        "created_at": "2026-07-05T18:35:11.925Z",
+        "author": {
+          "id": 41,
+          "name": "Ratan Tata",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ratan_Tata_2011_%28The_TCS_Story_Launch_-_CII%29_%28cropped%29.jpg/440px-Ratan_Tata_2011_%28The_TCS_Story_Launch_-_CII%29_%28cropped%29.jpg",
+          "url": "https://en.wikipedia.org/wiki/Ratan_Tata",
+          "slug": "ratan_tata",
+          "company": {
+            "id": 51,
+            "name": "Tata Group",
+            "url": "https://www.tata.com/",
+            "slug": "tata",
+            "created_at": "2026-07-05T18:35:11.925Z"
+          },
+          "company_id": 51,
+          "created_at": "2026-07-05T18:35:11.925Z"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://indian-quotes-api.vercel.app/api/quotes/random"
+    },
+    {
+      "name": "Sofiaplan",
+      "slug": "sofiaplan",
+      "emoji": "📊",
+      "tagline": "Sofiaplan — Access to urban research data for the Bulgarian capital…",
+      "description": "Sofiaplan exposes access to urban research data for the Bulgarian capital Sofia We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://sofiaplan.bg/api/",
+      "baseUrl": "https://api.sofiaplan.bg",
+      "sampleEndpoint": "/datasets/218",
+      "latencyMs": 7262,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "id": 1,
+              "buildingid": "5023724",
+              "ecode_settlem": "02659",
+              "ecode_rayon": "24",
+              "nstreetcod": "97173",
+              "nstreetnam": "УЛ.ВАРНА",
+              "nnumberpad": "0059",
+              "nsubnumber": null
+            },
+            "geometry": {
+              "type": "MultiPoint",
+              "coordinates": [
+                [
+                  23.1528489,
+                  42.7125707
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "id": 2,
+              "buildingid": "5174283",
+              "ecode_settlem": "02659",
+              "ecode_rayon": "24",
+              "nstreetcod": "95786",
+              "nstreetnam": "УЛ.МАКСИМ ГОРКИ",
+              "nnumberpad": "0009",
+              "nsubnumber": "А"
+            },
+            "geometry": {
+              "type": "MultiPoint",
+              "coordinates": [
+                [
+                  23.1463692,
+                  42.7108083
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.sofiaplan.bg/datasets/218"
+    },
+    {
+      "name": "Holy Bible API",
+      "slug": "holy-bible-api",
+      "emoji": "📚",
+      "tagline": "Holy Bible API — Free Bible API serving 800+ text translations and 40+ a…",
+      "description": "Holy Bible API exposes free Bible API serving 800+ text translations and 40+ audio translations We verified a keyless GET endpoint returning JSON (Books). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://holy-bible-api.com/docs",
+      "baseUrl": "https://holy-bible-api.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 222,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": "Healthy!",
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://holy-bible-api.com/health"
+    },
+    {
+      "name": "Spoo.me",
+      "slug": "spoo-me",
+      "emoji": "🔗",
+      "tagline": "Spoo.me — Free URL shortener with custom alias, max-clicks, passw…",
+      "description": "Spoo.me exposes free URL shortener with custom alias, max-clicks, password protection and advanced analytics support We verified a keyless GET endpoint returning JSON (URL Shorteners). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "URL Shorteners",
+      "docsUrl": "https://spoo.me/api",
+      "baseUrl": "https://spoo.me",
+      "sampleEndpoint": "/health",
+      "latencyMs": 3801,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "healthy",
+        "version": "2.0.2",
+        "checks": {
+          "mongodb": "ok",
+          "redis": "ok"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://spoo.me/health"
+    },
+    {
+      "name": "Stoplight Elements API Docs",
+      "slug": "stoplight-elements-api-docs",
+      "emoji": "🔧",
+      "tagline": "Stoplight Elements API Docs — Stoplight Elements is an open-source web compone",
+      "description": "Stoplight Elements API Docs exposes stoplight Elements is an open-source web component that renders your OpenAPI description into interactive, try-it API documentation. Drop in one custom element or React component - no key, no backend. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://stoplight.io/open-source/elements",
+      "baseUrl": "https://stoplight.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 397,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "version": "2023.08.0-stable.11525.git-3d57b26"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://stoplight.io/health"
+    },
+    {
+      "name": "Rules of Acquisition",
+      "slug": "rules-of-acquisition",
+      "emoji": "🎬",
+      "tagline": "Rules of Acquisition — Ferengi Rules of Acquisition from Star Trek with episod",
+      "description": "Rules of Acquisition exposes ferengi Rules of Acquisition from Star Trek with episode references We verified a keyless GET endpoint returning JSON (Video). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://rulesofacquisition.herokuapp.com/",
+      "baseUrl": "https://rulesofacquisition.herokuapp.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 506,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://rulesofacquisition.herokuapp.com/health"
+    },
+    {
+      "name": "Image-Charts",
+      "slug": "image-charts",
+      "emoji": "🔧",
+      "tagline": "Image-Charts — Charts, simple as a URL. A safe and fast replacement fo…",
+      "description": "Image-Charts exposes charts, simple as a URL. A safe and fast replacement for Google Image Charts We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://image-charts.com/",
+      "baseUrl": "https://image-charts.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 105,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "6.1.19",
+        "uptime": 1717908.52,
+        "hostname": "image-charts-deployment-f58dff756-ntv55",
+        "loadavg": [
+          0.15,
+          0.09
+        ],
+        "isShutdown": false,
+        "mem_mo": {
+          "total": 4920.68359375,
+          "free": 2941.85546875
+        },
+        "cpu": [
+          {
+            "model": "AMD EPYC 7B13",
+            "speed": 0,
+            "times": {
+              "user": 96099690,
+              "nice": 0,
+              "sys": 24854280,
+              "idle": 1568603970,
+              "irq": 0
+            }
+          },
+          {
+            "model": "AMD EPYC 7B13",
+            "speed": 0,
+            "times": {
+              "user": 96511950,
+              "nice": 0,
+              "sys": 25014120,
+              "idle": 1568910980,
+              "irq": 0
+            }
+          }
+        ],
+        "gitlab": {
+          "tokenConfigured": true,
+          "urlConfigured": true,
+          "tokenValid": true
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://image-charts.com/healthz"
+    },
+    {
+      "name": "Loket.nl API",
+      "slug": "loket-nl-api",
+      "emoji": "🗺",
+      "tagline": "Loket.nl API — <span style=\"color:green\">Is this your first time here?…",
+      "description": "Loket.nl API exposes <span style=\"color:green\">Is this your first time here? Please check out our introduction to Loket (API)</span> The initial loading time of this developer portal may be very long due to the large number of endpoints designs being rendered when loading the page. We are lookin We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.loket.nl/v2",
+      "baseUrl": "https://api.loket.nl",
+      "sampleEndpoint": "/status",
+      "latencyMs": 121,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "LoketApi",
+        "endPoint": null,
+        "running": true,
+        "subSystemStates": [
+          {
+            "name": "AuthorizationService",
+            "endPoint": "http://vm-we-p-app-5.loket3.local/Vsp.AuthorizationService.Api/",
+            "running": true,
+            "subSystemStates": null,
+            "allSystemsRunning": true
+          }
+        ],
+        "allSystemsRunning": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.loket.nl/status"
+    },
+    {
+      "name": "Bill Payment Validator",
+      "slug": "bill-payment-validator",
+      "emoji": "💰",
+      "tagline": "Bill Payment Validator — The Bill Payment Validator service allows RPPS origin",
+      "description": "Bill Payment Validator exposes the Bill Payment Validator service allows RPPS origination (payment sender) customers to identify if a potential RPPS transaction would process successfully before transmitting the formal payment transaction, reducing RPPS payment rejects and costly payment processing exceptions. We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://api.mastercard.com/billpayAPI/v1",
+      "baseUrl": "https://api.mastercard.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 403,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "up"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.mastercard.com/health"
+    },
+    {
+      "name": "AniPub API",
+      "slug": "anipub-api",
+      "emoji": "🍥",
+      "tagline": "AniPub API — AniPub API provides comprehensive metadata on anime, in…",
+      "description": "AniPub API exposes aniPub API provides comprehensive metadata on anime, including streaming links, character details, and MAL integration. It allows users to search, filter, and sort anime data seamlessly through various endpoints. The API is free to use with no authentication required. We verified a keyless GET endpoint returning JSON (Anime). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://api.anipub.xyz/",
+      "baseUrl": "https://anipub.xyz",
+      "sampleEndpoint": "/api/findbyGenre/harem?Page=1%3C/div%3E",
+      "latencyMs": 588,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "currentPage": 1,
+        "wholePage": [
+          {
+            "_id": 51,
+            "Name": "Masamune-kun's Revenge",
+            "ImagePath": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f6226f8bd9467df402717496b7b8d08b.jpg",
+            "MALScore": "7.35",
+            "RatingsNum": 35,
+            "DescripTion": "When Masamune Makabe was a child, he was rejected by a rich, beautiful girl named Aki Adagaki, who gave him the nickname ''Piggy'' for being overweight. Devastated, Masamune put great effort into working out to improve his appearance. Now a handsome yet narcissistic high school student, Masamune is determined to exact revengeâ€”he will have Aki fall madly in love with him and ultimately reject her the next time they meet. To his surprise, Masamune discovers he has transferred into Aki's school. Setting his plan into motion, Masamune first begins to form a relationship with the ''Brutal Princess'' but, despite his efforts, fails miserably at his initial attempts. Shockingly, when Masamune finally progresses towards his vengeance, he receives a mysterious letter addressing him by his old nickname. Unless Masamune discovers the sender's identity, his plan is doomed before it even starts!",
+            "finder": "masamune-kuns-revenge"
+          },
+          {
+            "_id": 52,
+            "Name": "Masamune-kun's Revenge R",
+            "ImagePath": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/174a13011301d3d0a2135f40162b8dee.jpg",
+            "MALScore": "8.11",
+            "RatingsNum": 40,
+            "DescripTion": "With the tumultuous cultural festival behind him, Masamune Makabe continues his efforts to carry out his revenge: to make the \"Cruel Princess\" Aki Adagaki deeply fall for him and then immediately dump her. As his class is going on a trip to Paris, widely known as the City of Love, Masamune has the perfect opportunity to get even for his childhood heartbreak. Before Masamune can impress Aki, the two meet Muriel Besson, a French high school otaku who aspires to create a romantic comedy manga series. Muriel believes Masamune is the ideal model for the protagonist and asks for his help. The boy reluctantly agrees, dragging Aki along to provide inspiration for the love interest's character. But to do so, the two must show Muriel what Japanese love is like. To make matters more complicated, Kanetsugu Gasou is masquerading as Aki's childhood friend, Masamune, to trick and use her. With mix-ups and love rivals galore, Masamune's revenge is proving to be quite the difficult task.",
+            "finder": "masamune-kuns-revenge-r"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://anipub.xyz/api/findbyGenre/harem?Page=1</div>"
+    },
+    {
+      "name": "CEORater API",
+      "slug": "ceorater-api",
+      "emoji": "🩺",
+      "tagline": "CEORater API — The CEORater API provides programmatic access to CEO pe…",
+      "description": "CEORater API exposes the CEORater API provides programmatic access to CEO performance metrics, compensation efficiency, and detailed company data. Users can retrieve information on companies, search for specific data, and access API status and health checks. We verified a keyless GET endpoint returning JSON (Health). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://ceorater-api.onrender.com/docs",
+      "baseUrl": "https://ceorater-api.onrender.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 189,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "state": "ok",
+        "api_version": "1.1.0",
+        "last_loaded": "2026-06-13T00:00:00.574Z",
+        "total": 516,
+        "request_id": "651946ee500898eb"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://ceorater-api.onrender.com/status"
+    },
+    {
+      "name": "Check e-mail or username for a data breach",
+      "slug": "check-e-mail-or-username-for-a-data-breach",
+      "emoji": "🗺",
+      "tagline": "Check e-mail or username for a data breach — LeakCheck is a service that enabl",
+      "description": "Check e-mail or username for a data breach exposes leakCheck is a service that enables users and companies to ascertain whether their credentials have been compromised. By utilising this API, users can ascertain whether their email address or username has been involved in any data breach. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://wiki.leakcheck.io/en/api/public",
+      "baseUrl": "https://wiki.leakcheck.io",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 71,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://wiki.leakcheck.io/healthz"
+    }
+  ],
+  "skipped": []
+}

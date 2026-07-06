@@ -1,0 +1,386 @@
+{
+  "batch": 30,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "Walltime",
+      "docsUrl": "https://walltime.info/api.html",
+      "description": "To retrieve Walltime's market info",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 0
+    },
+    {
+      "name": "Rig Veda",
+      "docsUrl": "https://aninditabasu.github.io/indica/html/rv.html",
+      "description": "Gods and poets, their categories, and the verse meters, with the mandal and sukta number",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Books",
+      "docsCheck": 404
+    },
+    {
+      "name": "Wolne Lektury",
+      "docsUrl": "https://wolnelektury.pl/api/",
+      "description": "API for obtaining information about e-books available on the WolneLektury.pl website",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Books",
+      "docsCheck": 0
+    },
+    {
+      "name": "Domainsdb.info",
+      "docsUrl": "https://domainsdb.info/",
+      "description": "Registered Domain Names Search",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Business",
+      "docsCheck": 200
+    },
+    {
+      "name": "Tenders in Hungary",
+      "docsUrl": "https://tenders.guru/hu/api",
+      "description": "Get data for procurements in Hungary in JSON format",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Business",
+      "docsCheck": 0
+    },
+    {
+      "name": "File.io",
+      "docsUrl": "https://www.file.io",
+      "description": "Super simple file sharing, convenient, anonymous and secure",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "The Null Pointer",
+      "docsUrl": "https://0x0.st",
+      "description": "No-bullshit file hosting and URL shortening service",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "1inch",
+      "docsUrl": "https://1inch.io/api/",
+      "description": "API for querying decentralize exchange",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bitcambio",
+      "docsUrl": "https://nova.bitcambio.com.br/api/v3/docs#a-public",
+      "description": "Get the list of all traded assets in the exchange",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 403
+    },
+    {
+      "name": "BitcoinCharts",
+      "docsUrl": "https://bitcoincharts.com/about/exchanges/",
+      "description": "Financial and Technical Data related to the Bitcoin Network",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 0
+    },
+    {
+      "name": "btcnode.uk",
+      "docsUrl": "https://btcnode.uk",
+      "description": "Bitcoin blockchain data, fees, mempool, SEC insider trades, Reddit sentiment. x402 micropayments for paid endpoints.",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CoinCap",
+      "docsUrl": "https://docs.coincap.io/",
+      "description": "Real time Cryptocurrency prices through a RESTful API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CoinDesk",
+      "docsUrl": "https://old.coindesk.com/coindesk-api/",
+      "description": "CoinDesk's Bitcoin Price Index (BPI) in multiple currencies",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 0
+    },
+    {
+      "name": "CryptingUp",
+      "docsUrl": "https://www.cryptingup.com/apidoc/#introduction",
+      "description": "Cryptocurrency data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CryptoCompare",
+      "docsUrl": "https://www.cryptocompare.com/api#",
+      "description": "Cryptocurrencies Comparison",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 401
+    },
+    {
+      "name": "Cryptonator",
+      "docsUrl": "https://www.cryptonator.com/api/",
+      "description": "Cryptocurrencies Exchange Rates",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 0
+    },
+    {
+      "name": "Localbitcoins",
+      "docsUrl": "https://localbitcoins.com/api-docs/",
+      "description": "P2P platform to buy and sell Bitcoins",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 404
+    },
+    {
+      "name": "MercadoBitcoin",
+      "docsUrl": "https://www.mercadobitcoin.com.br/api-doc/",
+      "description": "Brazilian Cryptocurrency Information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 403
+    },
+    {
+      "name": "Messari",
+      "docsUrl": "https://messari.io/api",
+      "description": "Provides API endpoints for thousands of crypto assets",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 429
+    },
+    {
+      "name": "Solana JSON RPC",
+      "docsUrl": "https://docs.solana.com/developing/clients/jsonrpc-api",
+      "description": "Provides various endpoints to interact with the Solana Blockchain",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "ZMOK",
+      "docsUrl": "https://zmok.io",
+      "description": "Ethereum JSON RPC API and Web3 provider",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bank of Russia",
+      "docsUrl": "https://www.cbr.ru/development/SXML/",
+      "description": "Exchange rates and currency conversion",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Czech National Bank",
+      "docsUrl": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml",
+      "description": "A collection of exchange rates",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "FreeForexAPI",
+      "docsUrl": "https://freeforexapi.com/Home/Api",
+      "description": "Real-time foreign exchange rates for major currency pairs",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 0
+    },
+    {
+      "name": "API Grátis",
+      "docsUrl": "https://apigratis.com.br/",
+      "description": "Multiples services and public APIs",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 429
+    },
+    {
+      "name": "Bored",
+      "docsUrl": "https://www.boredapi.com/",
+      "description": "Find random activities to fight boredom",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    },
+    {
+      "name": "BrewPage",
+      "docsUrl": "https://brewpage.app",
+      "description": "Free hosting for HTML, JSON, key-value, files, multi-file sites with short URLs and TTL retention",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Changelogs.md",
+      "docsUrl": "https://changelogs.md",
+      "description": "Structured changelog metadata from open source projects",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "host-t.com",
+      "docsUrl": "https://host-t.com",
+      "description": "Basic DNS query via HTTP GET request",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "HTTP2.Pro",
+      "docsUrl": "https://http2.pro/doc/api",
+      "description": "Test endpoints for client and server HTTP/2 protocol support",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "IFTTT",
+      "docsUrl": "https://platform.ifttt.com/docs/connect_api",
+      "description": "IFTTT Connect API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "JSON 2 JSONP",
+      "docsUrl": "https://json2jsonp.com/",
+      "description": "Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using client-side JavaScript",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "MicroENV",
+      "docsUrl": "https://microenv.com/",
+      "description": "Fake Rest API for developers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 0
+    },
+    {
+      "name": "QR code",
+      "docsUrl": "http://goqr.me/api/",
+      "description": "Generate and decode / read QR code graphics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Qrcode Monkey",
+      "docsUrl": "https://www.qrcode-monkey.com/qr-code-api-with-logo/",
+      "description": "Integrate custom and unique looking QR codes into your system or workflow",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Indonesia Dictionary",
+      "docsUrl": "https://new-kbbi-api.herokuapp.com/",
+      "description": "Indonesia dictionary many words",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Dictionaries",
+      "docsCheck": 404
+    },
+    {
+      "name": "DropMail",
+      "docsUrl": "https://dropmail.me/api/#live-demo",
+      "description": "GraphQL API for creating and managing ephemeral e-mail inboxes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "Excuser",
+      "docsUrl": "https://excuser.herokuapp.com/",
+      "description": "Get random excuses for various situations",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 404
+    }
+  ]
+}

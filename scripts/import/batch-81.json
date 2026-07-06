@@ -1,0 +1,95 @@
+{
+  "batch": 81,
+  "verified": [
+    {
+      "name": "The IP API",
+      "slug": "the-ip-api",
+      "emoji": "🗺",
+      "tagline": "The IP API — free-tier JSON endpoint",
+      "description": "The IP API offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://theipapi.com",
+      "baseUrl": "https://ipapi.co",
+      "sampleEndpoint": "/8.8.8.8/json/",
+      "latencyMs": 2311,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "network": "8.8.8.0/24",
+        "version": "IPv4",
+        "city": "Mountain View",
+        "region": "California",
+        "region_code": "CA",
+        "country": "US",
+        "country_name": "United States"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Platzi Fake Store",
+      "slug": "platzi-fake-store",
+      "emoji": "🔌",
+      "tagline": "Platzi Fake Store — free-tier JSON endpoint",
+      "description": "Platzi Fake Store offers a free API tier. We verified JSON on a sample GET (Shopping). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://fakeapi.platzi.com/",
+      "baseUrl": "https://api.escuelajs.co",
+      "sampleEndpoint": "/api/v1/products",
+      "latencyMs": 3182,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 15,
+          "title": "My Product 360881",
+          "slug": "my-product-360881",
+          "price": 101,
+          "description": "It's innovative product",
+          "category": {
+            "id": 1,
+            "name": "Updated Category Name",
+            "slug": "updated-category-name",
+            "image": "https://placeimg.com/640/480/any",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T18:00:53.000Z"
+          },
+          "images": [
+            "https://placehold.co/540526x57355"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        },
+        {
+          "id": 16,
+          "title": "Classic White Tee - Timeless Style and Comfort",
+          "slug": "classic-white-tee-timeless-style-and-comfort",
+          "price": 73,
+          "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+          "category": {
+            "id": 1,
+            "name": "Updated Category Name",
+            "slug": "updated-category-name",
+            "image": "https://placeimg.com/640/480/any",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T18:00:53.000Z"
+          },
+          "images": [
+            "https://i.imgur.com/Y54Bt8J.jpeg",
+            "https://i.imgur.com/SZPDSgy.jpeg"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    }
+  ],
+  "skipped": []
+}

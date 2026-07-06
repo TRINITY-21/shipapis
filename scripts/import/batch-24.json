@@ -1,0 +1,1692 @@
+{
+  "batch": 24,
+  "verified": [
+    {
+      "name": "Kitsu",
+      "slug": "kitsu",
+      "emoji": "📺",
+      "tagline": "Anime discovery JSON:API",
+      "description": "Social anime tracker API surface. Many read routes are public.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://kitsu.io/api/edge",
+      "baseUrl": "https://kitsu.io/api/edge",
+      "sampleEndpoint": "/anime/1",
+      "latencyMs": 478,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "id": "1",
+          "type": "anime",
+          "links": {
+            "self": "https://kitsu.io/api/edge/anime/1"
+          },
+          "attributes": {
+            "createdAt": "2013-02-20T16:00:13.609Z",
+            "updatedAt": "2026-07-05T12:00:10.905Z",
+            "slug": "cowboy-bebop",
+            "synopsis": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys\". The ragtag team aboard the spaceship Bebop are two such individuals.\nMellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. \nWell-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after.\n\n(Source: MAL Rewrite)",
+            "description": "In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as \"Cowboys\". The ragtag team aboard the spaceship Bebop are two such individuals.\nMellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little. \nWell-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after.\n\n(Source: MAL Rewrite)",
+            "coverImageTopOffset": 400,
+            "titles": {
+              "en": "Cowboy Bebop",
+              "en_jp": "Cowboy Bebop",
+              "ja_jp": "カウボーイビバップ"
+            },
+            "canonicalTitle": "Cowboy Bebop"
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/genres",
+                "related": "https://kitsu.io/api/edge/anime/1/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/categories",
+                "related": "https://kitsu.io/api/edge/anime/1/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/castings",
+                "related": "https://kitsu.io/api/edge/anime/1/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/installments",
+                "related": "https://kitsu.io/api/edge/anime/1/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/anime/1/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/anime/1/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/anime/1/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/1/relationships/characters",
+                "related": "https://kitsu.io/api/edge/anime/1/characters"
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TWZRD Agent Intel",
+      "slug": "twzrd-agent-intel",
+      "emoji": "⛓",
+      "tagline": "TWZRD Agent Intel — Solana on-chain agent trust scoring via MCP; 4 free too…",
+      "description": "TWZRD Agent Intel exposes solana on-chain agent trust scoring via MCP; 4 free tools to score, resolve and verify AI agent wallets We verified a keyless GET endpoint returning JSON (Blockchain). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Blockchain",
+      "docsUrl": "https://intel.twzrd.xyz",
+      "baseUrl": "https://intel.twzrd.xyz",
+      "sampleEndpoint": "/",
+      "latencyMs": 224,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "service": "TWZRD Agent Intelligence",
+        "description": "Trust + receipt layer agents call before and after paying, on Solana mainnet (x402).",
+        "start_here": "/llms.txt",
+        "discovery": {
+          "llms_txt": "/llms.txt",
+          "openapi": "/openapi.json",
+          "x402": "/.well-known/x402",
+          "receipt_pubkey": "/.well-known/twzrd-receipt-pubkey",
+          "agent_card": "/.well-known/agent-card.json",
+          "mcp_card": "/mcp/agent-intel-mcp-card.json"
+        },
+        "marketplaces": {
+          "smithery": {
+            "server_url": "https://smithery.ai/servers/wzrd/twzrd-agent-intel",
+            "badge_url": "https://smithery.ai/badge/wzrd/twzrd-agent-intel",
+            "transport": "streamable-http"
+          }
+        },
+        "endpoints": {
+          "preflight": {
+            "method": "POST",
+            "path": "/v1/intel/preflight",
+            "price_usdc": 0
+          },
+          "trust": {
+            "method": "GET",
+            "path": "/v1/intel/trust/{pubkey}",
+            "price_usdc": 0.05,
+            "returns": "live trust intel + signed V6 receipt (score_version intel_renorm_v1)"
+          },
+          "example_receipt": {
+            "method": "GET",
+            "path": "/v1/receipts/example",
+            "price_usdc": 0,
+            "returns": "free no-wallet SAMPLE signed receipt to verify offline before spending"
+          },
+          "receipt_verify": {
+            "method": "POST",
+            "path": "/v1/receipts/verify",
+            "price_usdc": 0
+          },
+          "health": {
+            "method": "GET",
+            "path": "/health",
+            "price_usdc": 0
+          }
+        },
+        "quickstart": "Try it free, no wallet: GET /v1/receipts/example -> save twzrd_receipt -> POST /v1/receipts/verify (or npx twzrd-receipt-verifier). Then POST /v1/intel/preflight, pay only if approved via GET /v1/intel/trust/{pubkey}."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://intel.twzrd.xyz/"
+    },
+    {
+      "name": "Econdb",
+      "slug": "econdb",
+      "emoji": "💰",
+      "tagline": "Econdb — Global macroeconomic data",
+      "description": "Econdb exposes global macroeconomic data We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.econdb.com/api/",
+      "baseUrl": "https://www.econdb.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 793,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "sources": "https://www.econdb.com/api/sources/",
+        "datasets": "https://www.econdb.com/api/datasets/",
+        "series": "https://www.econdb.com/api/series/",
+        "maritime/vessels": "https://www.econdb.com/api/maritime/vessels/",
+        "retail/items": "https://www.econdb.com/api/retail/items/"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://www.econdb.com/api"
+    },
+    {
+      "name": "LatLng",
+      "slug": "latlng",
+      "emoji": "🗺",
+      "tagline": "LatLng — Geocoding, reverse geocoding, places, and static maps",
+      "description": "LatLng exposes geocoding, reverse geocoding, places, and static maps We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.latlng.work/docs",
+      "baseUrl": "https://api.latlng.work",
+      "sampleEndpoint": "/api?q=Seattle,WA",
+      "latencyMs": 727,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "R",
+              "osm_id": 237385,
+              "osm_key": "place",
+              "osm_value": "city",
+              "type": "city",
+              "name": "Seattle",
+              "county": "King",
+              "state": "Washington"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -122.330062,
+                47.6038321
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "R",
+              "osm_id": 5282350,
+              "osm_key": "amenity",
+              "osm_value": "university",
+              "type": "house",
+              "name": "Seattle University",
+              "street": "Madison Court",
+              "district": "First Hill"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -122.3187983,
+                47.6095043
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.latlng.work/api?q=Seattle,WA"
+    },
+    {
+      "name": "OpenSanctions",
+      "slug": "opensanctions",
+      "emoji": "📊",
+      "tagline": "OpenSanctions — Data on international sanctions, crime and politically …",
+      "description": "OpenSanctions exposes data on international sanctions, crime and politically exposed persons We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.opensanctions.org/docs/api/",
+      "baseUrl": "https://api.opensanctions.org",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 427,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "OpenSanctions API",
+          "description": "\n## Introduction\n\nThe [OpenSanctions](https://www.opensanctions.org) API allows users to search and query\nthe OpenSanctions [entity graph](https://www.opensanctions.org/docs/entities/). The API\ncan be used to search people, companies and [other types of entities](https://www.opensanctions.org/reference/#schema).\nIn particular, it can be used to check the presence of a specific entity on [sanctions\nlists](https://www.opensanctions.org/datasets/sanctions/) or in the broader\n[OpenSanctions dataset](https://www.opensanctions.org/datasets/).\n\nSee also:\n* [Example code in Python, JS, and more](https://github.com/opensanctions/api-examples#folders-and-files)\n* [OpenSanctions API product page](https://www.opensanctions.org/docs/api/)\n* [Account and usage information](https://www.opensanctions.org/service/account/)\n* [API frequently asked questions](https://www.opensanctions.org/docs/api/faq/)\n\n### Which endpoint should I use?\n\nThe API supports a variety of methods to access and query OpenSanctions data:\n\n* **Entity matching ([/match](#tag/Matching/operation/match_match__dataset__post))**. Use this\n  endpoint if you have a set of people or companies you wish to check against\n  sanctions or PEPs lists. This API supports fuzzy name matching and using additional\n  criteria (e.g. nationality, birth dates, tax identifiers, or addresses) to [score\n  entity matches](https://www.opensanctions.org/matcher/) and avoid false positives.\n\n  [Read the tutorial](https://www.opensanctions.org/docs/api/matching/) for an introduction in how to use the matching API. You will also want to familiarise yourself with the [entity data model](https://www.opensanctions.org/docs/entities/) used by the system and the [data dictionary](https://www.opensanctions.org/reference/) entity\n  types and properties.\n\n* **Text-based search ([/search](#tag/Matching/operation/search_search__dataset__get))**\n  is a useful tool for providing a user-facing search interface, including faceted\n  navigation. The search uses [industry standard string syntax](https://www.opensanctions.org/docs/api/search/)\n  which can be used to perform field-specific searches, wildcard and fuzzy searches. The\n  scores and ranking are generated by the search index and express search relevance, not\n  match quality.\n\n* **Entity fetching ([/entities](#tag/Data-access/operation/fetch_entity_entities__entity_id__get))**.\n  Retrieve the full details about an entity in the database. The full record will include\n  adjacent entities, such as company owners and subsidiaries, family members and associates\n  for PEPs, and detailed records for addresses and identification documents linked to\n  entities. This endpoint can be used to perform incremental traversal of the OpenSanctions\n  graph.\n\n  Read about the [entity data model](https://www.opensanctions.org/docs/entities/) and\n  consult the [data dictionary](https://www.opensanctions.org/reference/) to see all entity\n  types and their respective properties.\n\n* **Statement-based data access ([/statements](#tag/Data-access/operation/statements_statements_get))**\n  allows browsing OpenSanctions data in its most granular form. This can be useful to see\n  what source dataset a particular assertion (e.g. the birth date of a person) is sourced\n  from. Read about the [statement data model](https://www.opensanctions.org/docs/statements/).\n\n* **OpenRefine Reconciliation API ([/reconcile](#tag/Reconciliation))**. A specialised API\n  that lets OpenSanctions data be used by the [OpenRefine](https://openrefine.org/) data\n  cleaning tool. Read [the tutorial](https://www.opensanctions.org/articles/2022-01-10-openrefine-reconciliation/)\n  to understand how this can be used as an investigative tool.\n\n## Authorization and API keys\n\nTo use the OpenSanctions API, you need an API key. Please visit the [API product page](https://www.opensanctions.org/api/) or [contact us](https://www.opensanctions.org/contact/) to learn more. OpenSanctions will issue free API keys to users in academia, non-profit organizations and those working in for-profit journalism.\n\n* [Using API authentication](https://www.opensanctions.org/docs/api/authentication/)\n\n## Dataset scopes\n\nThe API provides a sophisticated mechanism for selecting the scope of the data\nthat sould be queried by a particular request - for example, you can run a name\nagainst all sanctions lists, but not the datasets listing PEPs.\n\nDatasets can be of two types: source datasets - e.g. `us_ofac_sdn` (the US main\nsanctions list) contain only entities from one source. These source datasets are\ngrouped into collections - e.g. [`sanctions`](https://www.opensanctions.org/datasets/sanctions/),\nwhich contains entities from all sanctions lists contained in the database, or\n[`peps`](https://www.opensanctions.org/datasets/peps/), which covers all politically\nexposed persons sourced from various origins. If you are unsure which dataset you\nwant to screen against, use [`default`](https://www.opensanctions.org/datasets/default/) (the full\nOpenSanctions dataset).\n\nThese dataset scopes can be applied to searches and mapping requests by selecting\nthe desired scope in the URL path of the query: `/search/sanctions` will search\nall sanctioned entities, while `/search/us_ofac_sdn` limits the search to only\nthose entities listed on the US list.\n\nPlease note that each indivdual entity (e.g. a sanctioned person) can be linked to\nmultiple datasets because it has been [de-duplicated](https://www.opensanctions.org/docs/identifiers/).\n\n* See also: [List of datasets in OpenSanctions](https://www.opensanctions.org/datasets/)",
+          "termsOfService": "https://www.opensanctions.org/docs/terms",
+          "contact": {
+            "name": "OpenSanctions",
+            "url": "https://www.opensanctions.org/",
+            "email": "info@opensanctions.org"
+          },
+          "version": "yente 5.5.0",
+          "x-logo": {
+            "url": "https://assets.opensanctions.org/images/ura/logo_text_spaced.svg"
+          },
+          "externalDocs": {
+            "description": "Home page",
+            "url": "https://www.opensanctions.org"
+          }
+        },
+        "paths": {
+          "/match/{dataset}": {
+            "post": {
+              "tags": [
+                "Matching"
+              ],
+              "summary": "Query by example matcher",
+              "description": "Match entities based on a complex set of criteria, like name, date of birth\nand nationality of a person. This works by submitting a batch of entities, each\nformatted like those returned by the API.\n\nTutorials:\n* [Using the matching API](https://www.opensanctions.org/docs/api/matching/)\n* [Configuring the scoring system](https://www.opensanctions.org/docs/api/scoring/)\n\nFor example, the following would be valid query examples:\n\n```json\n\"queries\": {\n    \"entity1\": {\n        \"schema\": \"Person\",\n        \"properties\": {\n            \"name\": [\"John Doe\"],\n            \"birthDate\": [\"1975-04-21\"],\n            \"nationality\": [\"us\"]\n        }\n    },\n    \"entity2\": {\n        \"schema\": \"Company\",\n        \"properties\": {\n            \"name\": [\"Brilliant Amazing Limited\"],\n            \"jurisdiction\": [\"hk\"],\n            \"registrationNumber\": [\"84BA99810\"]\n        }\n    }\n}\n```\nThe values for `entity1`, `entity2` can be chosen freely to correlate results\non the client side when the request is returned. The responses will be given\nfor each submitted example like this:\n\n```json\n\"responses\": {\n    \"entity1\": {\n        \"query\": {},\n        \"results\": [...]\n    },\n    \"entity2\": {\n        \"query\": {},\n        \"results\": [...]\n    }\n}\n```\n\nThe precision of the results will be dependent on the amount of detail submitted\nwith each example. The following properties are most helpful for particular types:\n\n* **Person**: ``name``, ``birthDate``, ``nationality``, ``idNumber``, ``address``\n* **Organization**: ``name``, ``country``, ``registrationNumber``, ``address``\n* **Company**: ``name``, ``jurisdiction``, ``registrationNumber``, ``address``,\n  ``incorporationDate``",
+              "operationId": "match_match__dataset__post",
+              "parameters": [
+                {
+                  "name": "dataset",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Data source or collection name to scope the query to.",
+                    "examples": [
+                      "default"
+                    ],
+                    "title": "Dataset"
+                  },
+                  "description": "Data source or collection name to scope the query to."
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 500,
+                    "title": "Number of results to return",
+                    "default": 5
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/EntityMatchQuery"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/EntityMatchResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/search/{dataset}": {
+            "get": {
+              "tags": [
+                "Matching"
+              ],
+              "summary": "Simple entity search",
+              "description": "Search endpoint for matching entities based on a simple piece of text, e.g.\na name. This can be used to implement a simple, user-facing search. For proper\nentity matching, the multi-property matching API should be used instead.\n\nSearch queries can include field-specific fitlers, wildcards and fuzzy searches.\nSee also: [search API documentation](https://www.opensanctions.org/docs/api/search/).",
+              "operationId": "search_search__dataset__get",
+              "parameters": [
+                {
+                  "name": "dataset",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Data source or collection name to scope the query to.",
+                    "examples": [
+                      "default"
+                    ],
+                    "title": "Dataset"
+                  },
+                  "description": "Data source or collection name to scope the query to."
+                },
+                {
+                  "name": "q",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "string",
+                    "title": "Query text",
+                    "default": ""
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/SearchResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/entities/{entity_id}": {
+            "get": {
+              "tags": [
+                "Data access"
+              ],
+              "summary": "Fetch Entity",
+              "description": "Retrieve a single entity by its ID. The entity will be returned in\nfull, with data from all datasets and with nested entities (adjacent\npassport, sanction and associated entities) included. If the entity ID\nhas been merged into a different canonical entity, an HTTP redirect will\nbe triggered.\n\nIntro: [entity data model](https://www.opensanctions.org/docs/entities/).",
+              "operationId": "fetch_entity_entities__entity_id__get",
+              "parameters": [
+                {
+                  "name": "entity_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "ID of the entity to retrieve",
+                    "examples": [
+                      "Q7747"
+                    ],
+                    "title": "Entity Id"
+                  },
+                  "description": "ID of the entity to retrieve"
+                },
+                {
+                  "name": "nested",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "boolean",
+                    "title": "Include adjacent entities (e.g. addresses, family) in response",
+                    "default": true
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/EntityResponse"
+                      }
+                    }
+                  }
+                },
+                "308": {
+                  "description": "The entity was merged into another ID"
+                },
+                "404": {
+                  "description": "Entity not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/entities/{entity_id}/adjacent": {
+            "get": {
+              "tags": [
+                "Data access"
+              ],
+              "summary": "Fetch Adjacent Entities*",
+              "description": "***Beta:** This endpoint is released for wider testing and is not yet recommended\nfor production use. We welcome feedback. Its interface may change without announcement.\n\nRetrieve entities adjacent to a given entity e.g. passports, sanctions, associates.\n\nThis endpoint offers the same information as adjacent entities nested in\n[`/entities/{entity_id}`](#tag/Data-access/operation/fetch_entity_entities__entity_id__get),\nbut offers pagination for cases where the number of results is potentially very large.",
+              "operationId": "Fetch_Adjacent_Entities__entities__entity_id__adjacent_get",
+              "parameters": [
+                {
+                  "name": "entity_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "ID of the entity whose graph context was requested",
+                    "examples": [
+                      "Q7747"
+                    ],
+                    "title": "Entity Id"
+                  },
+                  "description": "ID of the entity whose graph context was requested"
+                },
+                {
+                  "name": "sort",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Sorting criteria",
+                    "default": []
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/EntityAdjacentResponse"
+                      }
+                    }
+                  }
+                },
+                "308": {
+                  "description": "The entity was merged into another ID"
+                },
+                "404": {
+                  "description": "Entity not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/entities/{entity_id}/adjacent/{property_name}": {
+            "get": {
+              "tags": [
+                "Data access"
+              ],
+              "summary": "Fetch Adjacent By Property*",
+              "description": "***Beta:** This endpoint is released for wider testing and is not yet recommended\nfor production use. We welcome feedback. Its interface may change without announcement.\n\nRetrieve entities adjacent to a given entity for a specific property.\n\nThis endpoint offers the same information as adjacent entities nested in\n[`/entities/{entity_id}`](#tag/Data-access/operation/fetch_entity_entities__entity_id__get),\nbut offers pagination for cases where the number of results is potentially very large.",
+              "operationId": "Fetch_Adjacent_by_Property__entities__entity_id__adjacent__property_name__get",
+              "parameters": [
+                {
+                  "name": "entity_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "ID of the entity hose graph context was requested",
+                    "examples": [
+                      "Q7747"
+                    ],
+                    "title": "Entity Id"
+                  },
+                  "description": "ID of the entity hose graph context was requested"
+                },
+                {
+                  "name": "property_name",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Name of the property to fetch adjacent entities for",
+                    "examples": [
+                      "address",
+                      "ownershipOwner"
+                    ],
+                    "title": "Property Name"
+                  },
+                  "description": "Name of the property to fetch adjacent entities for"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/AdjacentResultsResponse"
+                      }
+                    }
+                  }
+                },
+                "308": {
+                  "description": "The entity was merged into another ID"
+                },
+                "404": {
+                  "description": "Entity or property not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/reconcile/{dataset}": {
+            "get": {
+              "tags": [
+                "Reconciliation"
+              ],
+              "summary": "Reconciliation manifest",
+              "description": "Reconciliation API, emulates Google Refine API. This endpoint can be used\nto bulk match entities against the system using an end-user application like\n[OpenRefine](https://openrefine.org). The reconciliation API uses the same\nsearch and matching functions as the matching API and will also produce\nscores that reflect additional properties like country or date of birth, if\nspecified.\n\nTutorial: [Using OpenRefine to match entities in a spreadsheet](https://www.opensanctions.org/articles/2022-01-10-openrefine-reconciliation/).",
+              "operationId": "reconcile_reconcile__dataset__get",
+              "parameters": [
+                {
+                  "name": "dataset",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Data source or collection name to scope the query to.",
+                    "examples": [
+                      "default"
+                    ],
+                    "title": "Dataset"
+                  },
+                  "description": "Data source or collection name to scope the query to."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/FreebaseManifest"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/healthz": {
+            "get": {
+              "tags": [
+                "System information"
+              ],
+              "summary": "Health check",
+              "description": "No-op basic health check. This is used by cluster management systems like\nKubernetes to verify the service is responsive.",
+              "operationId": "healthz_healthz_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/StatusResponse"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Service is not ready",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/readyz": {
+            "get": {
+              "tags": [
+                "System information"
+              ],
+              "summary": "Search index readiness check",
+              "description": "Search index health check. This is used to know if the service has completed\nits index building.",
+              "operationId": "readyz_readyz_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/StatusResponse"
+                      }
+                    }
+                  }
+                },
+                "503": {
+                  "description": "Index is not ready",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ErrorResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "AdjacentResultsResponse": {
+              "properties": {
+                "limit": {
+                  "type": "integer",
+                  "title": "Limit",
+                  "examples": [
+                    20
+                  ]
+                },
+                "offset": {
+                  "type": "integer",
+                  "title": "Offset",
+                  "default": 0,
+                  "examples": [
+                    0
+                  ]
+                },
+                "total": {
+                  "$ref": "#/components/schemas/TotalSpec"
+                },
+                "results": {
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "$ref": "#/components/schemas/EntityResponse"
+                      }
+                    ]
+                  },
+                  "type": "array",
+                  "title": "Results",
+                  "default": [],
+                  "examples": [
+                    [
+                      {
+                        "id": "ds-abc-own-123",
+                        "properties": {
+                          "asset": [
+                            {
+                              "caption": "Company 1 Ltd.",
+                              "id": "NK-1234",
+                              "properties": {
+                                "name": [
+                                  "Company 1 Ltd."
+                                ]
+                              },
+                              "schema": "Comany"
+                            }
+                          ]
+                        },
+                        "schema": "Ownership"
+                      }
+                    ]
+                  ]
+                }
+              },
+              "type": "object",
+              "required": [
+                "limit",
+                "total"
+              ],
+              "title": "AdjacentResultsResponse"
+            },
+            "Algorithm": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name"
+                },
+                "description": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Description"
+                },
+                "features": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/FeatureDoc"
+                  },
+                  "type": "object",
+                  "title": "Features",
+                  "description": "Deprecated, use `docs` instead",
+                  "deprecated": true
+                },
+                "docs": {
+                  "$ref": "#/components/schemas/AlgorithmDocs"
+                }
+              },
+              "type": "object",
+              "required": [
+                "name",
+                "features"
+              ],
+              "title": "Algorithm"
+            },
+            "AlgorithmDocs": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name"
+                },
+                "description": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Description"
+                },
+                "config": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ConfigVar"
+                  },
+                  "type": "object",
+                  "title": "Config"
+                },
+                "features": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/FeatureDoc"
+                  },
+                  "type": "object",
+                  "title": "Features"
+                }
+              },
+              "type": "object",
+              "required": [
+                "name",
+                "config"
+              ],
+              "title": "AlgorithmDocs",
+              "description": "Documentation for a scoring algorithm."
+            },
+            "AlgorithmResponse": {
+              "properties": {
+                "algorithms": {
+                  "items": {
+                    "$ref": "#/components/schemas/Algorithm"
+                  },
+                  "type": "array",
+                  "title": "Algorithms"
+                },
+                "default": {
+                  "type": "string",
+                  "title": "Default"
+                },
+                "best": {
+                  "type": "string",
+                  "title": "Best"
+                }
+              },
+              "type": "object",
+              "required": [
+                "algorithms",
+                "default"
+              ],
+              "title": "AlgorithmResponse"
+            },
+            "ConfigVar": {
+              "properties": {
+                "type": {
+                  "$ref": "#/components/schemas/ConfigVarType",
+                  "default": "float"
+                },
+                "description": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Description"
+                },
+                "default": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "integer"
+                    }
+                  ],
+                  "title": "Default",
+                  "default": 0
+                }
+              },
+              "type": "object",
+              "title": "ConfigVar",
+              "description": "A configuration variable for a scoring algorithm."
+            },
+            "ConfigVarType": {
+              "type": "string",
+              "enum": [
+                "string",
+                "integer"
+              ],
+              "title": "ConfigVarType",
+              "description": "The type of a configuration variable."
+            },
+            "DataCatalogModel": {
+              "properties": {
+                "datasets": {
+                  "items": {
+                    "$ref": "#/components/schemas/YenteDatasetModel"
+                  },
+                  "type": "array",
+                  "title": "Datasets"
+                },
+                "current": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Current"
+                },
+                "outdated": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Outdated"
+                },
+                "index_stale": {
+                  "type": "boolean",
+                  "title": "Index Stale",
+                  "default": false
+                }
+              },
+              "type": "object",
+              "required": [
+                "datasets",
+                "current"
+              ],
+              "title": "DataCatalogModel"
+            },
+            "DataCoverage": {
+              "properties": {
+                "start": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Start"
+                },
+                "end": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "End"
+                },
+                "countries": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Countries",
+                  "default": []
+                },
+                "frequency": {
+                  "type": "string",
+                  "enum": [
+                    "unknown",
+                    "never"
+                  ],
+                  "title": "Frequency",
+                  "default": "unknown"
+                },
+                "schedule": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Schedule"
+                }
+              },
+              "type": "object",
+              "title": "DataCoverage",
+              "description": "Details on the temporal and geographic scope of a dataset."
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "Matching",
+            "description": "Endpoints for conducting a user-facing entity search or matching a local data store against the given dataset.",
+            "externalDocs": {
+              "description": "Data dictionary",
+              "url": "https://opensanctions.org/reference/"
+            }
+          },
+          {
+            "name": "System information",
+            "description": "Service metadata endpoints for health checking and getting the application metadata to be used in client applications."
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.opensanctions.org/openapi.json"
+    },
+    {
+      "name": "Football (Soccer) Videos",
+      "slug": "football-soccer-videos",
+      "emoji": "⚽",
+      "tagline": "Football (Soccer) Videos — Embed codes for goals and highlights from Premier L",
+      "description": "Football (Soccer) Videos exposes embed codes for goals and highlights from Premier League, Bundesliga, Serie A and many more We verified a keyless GET endpoint returning JSON (Sports & Fitness). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://www.scorebat.com/video-api/",
+      "baseUrl": "https://www.scorebat.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 398,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": [],
+        "currentTime": 1783263158,
+        "response": {}
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://www.scorebat.com/api"
+    },
+    {
+      "name": "Oddsmagnet",
+      "slug": "oddsmagnet",
+      "emoji": "⚽",
+      "tagline": "Oddsmagnet — Odds history from multiple UK bookmakers",
+      "description": "Oddsmagnet exposes odds history from multiple UK bookmakers We verified a keyless GET endpoint returning JSON (Sports & Fitness). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://data.oddsmagnet.com",
+      "baseUrl": "https://data.oddsmagnet.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 339,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "page not found 404"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.oddsmagnet.com/api"
+    },
+    {
+      "name": "OpenF1",
+      "slug": "openf1",
+      "emoji": "⚽",
+      "tagline": "OpenF1 — Real-time and historical Formula 1 data including laps,…",
+      "description": "OpenF1 exposes real-time and historical Formula 1 data including laps, car telemetry and positions We verified a keyless GET endpoint returning JSON (Sports & Fitness). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://openf1.org/",
+      "baseUrl": "https://api.github.com",
+      "sampleEndpoint": "/repos/br-g/openf1",
+      "latencyMs": 614,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 697362239,
+        "node_id": "R_kgDOKZDnPw",
+        "name": "openf1",
+        "full_name": "br-g/openf1",
+        "private": false,
+        "owner": {
+          "login": "br-g",
+          "id": 11601165,
+          "node_id": "MDQ6VXNlcjExNjAxMTY1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/11601165?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/br-g",
+          "html_url": "https://github.com/br-g",
+          "followers_url": "https://api.github.com/users/br-g/followers"
+        },
+        "html_url": "https://github.com/br-g/openf1",
+        "description": "OpenF1 API - Real-time and historical Formula 1 data"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.github.com/repos/br-g/openf1"
+    },
+    {
+      "name": "xeno-canto",
+      "slug": "xeno-canto",
+      "emoji": "🐾",
+      "tagline": "xeno-canto — Bird recordings",
+      "description": "xeno-canto exposes bird recordings We verified a keyless GET endpoint returning JSON (Animals). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://xeno-canto.org/explore/api",
+      "baseUrl": "https://xeno-canto.org",
+      "sampleEndpoint": "/api/3/recordings",
+      "latencyMs": 65,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to Xeno-canto API v3! Visit https://xeno-canto.org/explore/api for documentation."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://xeno-canto.org/api/3/recordings"
+    },
+    {
+      "name": "Exchangerate.host",
+      "slug": "exchangerate-host",
+      "emoji": "💱",
+      "tagline": "Exchangerate.host — Free foreign exchange & crypto rates API",
+      "description": "Exchangerate.host exposes free foreign exchange & crypto rates API We verified a keyless GET endpoint returning JSON (Currency Exchange). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://exchangerate.host?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://api.exchangerate.host",
+      "sampleEndpoint": "/symbols",
+      "latencyMs": 755,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "code": 101,
+          "type": "missing_access_key",
+          "info": "You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.exchangerate.host/symbols"
+    },
+    {
+      "name": "Exchangerate.dev",
+      "slug": "exchangerate-dev",
+      "emoji": "💱",
+      "tagline": "Exchangerate.dev — Live & historical FX, 168 pairs back to 1999, Frankfurt…",
+      "description": "Exchangerate.dev exposes live & historical FX, 168 pairs back to 1999, Frankfurter-compatible, free 10k/mo We verified a keyless GET endpoint returning JSON (Currency Exchange). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://exchangerate.dev/docs",
+      "baseUrl": "https://api.exchangerate.dev",
+      "sampleEndpoint": "/v1/latest/USD",
+      "latencyMs": 504,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "result": "success",
+        "base": "USD",
+        "source": "fred_daily",
+        "sources": {
+          "AUD": "live",
+          "BGN": "ecb_daily",
+          "BRL": "ecb_daily",
+          "CAD": "live",
+          "CHF": "live",
+          "CNY": "ecb_daily",
+          "CZK": "ecb_daily",
+          "DKK": "ecb_daily"
+        },
+        "market_session": "weekend",
+        "timestamp": "2026-07-05T14:52:56Z",
+        "data_updated_at": "2026-06-26T00:00:00Z",
+        "rates": {
+          "AUD": 1.4415,
+          "BGN": 1.70842,
+          "BRL": 5.19619,
+          "CAD": 1.42104,
+          "CHF": 0.80358,
+          "CNY": 6.78145,
+          "CZK": 21.1338,
+          "DKK": 6.52918
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.exchangerate.dev/v1/latest/USD"
+    },
+    {
+      "name": "DomainDb Info",
+      "slug": "domaindb-info",
+      "emoji": "🔧",
+      "tagline": "DomainDb Info — Domain name search to find all domains containing parti…",
+      "description": "DomainDb Info exposes domain name search to find all domains containing particular words/phrases/etc We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.domainsdb.info/",
+      "baseUrl": "https://api.domainsdb.info",
+      "sampleEndpoint": "/",
+      "latencyMs": 245,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "DomainsDB API is running.",
+        "status": "OK"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.domainsdb.info/"
+    },
+    {
+      "name": "ReqRes",
+      "slug": "reqres",
+      "emoji": "🔧",
+      "tagline": "ReqRes — A hosted REST-API ready to respond to your AJAX request…",
+      "description": "ReqRes exposes a hosted REST-API ready to respond to your AJAX requests We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://reqres.in/ ",
+      "baseUrl": "https://reqres.in",
+      "sampleEndpoint": "/api",
+      "latencyMs": 139,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "ReqRes API",
+        "version": "1.0.0",
+        "description": "Backend platform for frontend developers, testers, and teams",
+        "documentation": "/docs",
+        "endpoints": {
+          "free": "/api/users",
+          "pro": "/custom-endpoints",
+          "health": "/health"
+        },
+        "features": [
+          "Fake data generation",
+          "Custom endpoints (Pro)"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://reqres.in/api"
+    },
+    {
+      "name": "adresse.data.gouv.fr",
+      "slug": "adresse-data-gouv-fr",
+      "emoji": "🗺",
+      "tagline": "adresse.data.gouv.fr — Address database of France, geocoding and reverse",
+      "description": "adresse.data.gouv.fr exposes address database of France, geocoding and reverse We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://adresse.data.gouv.fr",
+      "baseUrl": "https://api-lannuaire.service-public.fr",
+      "sampleEndpoint": "/api/explore/v2.1/",
+      "latencyMs": 440,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api-lannuaire.service-public.fr/api/explore/v2.1"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://api-lannuaire.service-public.fr/api/explore/v2.1/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api-lannuaire.service-public.fr/api/explore/v2.1\\"
+    },
+    {
+      "name": "Geocode.xyz",
+      "slug": "geocode-xyz",
+      "emoji": "🗺",
+      "tagline": "Geocode.xyz — Provides worldwide forward/reverse geocoding, batch geo…",
+      "description": "Geocode.xyz exposes provides worldwide forward/reverse geocoding, batch geocoding and geoparsing We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://geocode.xyz/api",
+      "baseUrl": "https://geocode.xyz",
+      "sampleEndpoint": "/Hauptstr.,+57632+Berzhausen?json=1&auth=your_api_key",
+      "latencyMs": 289,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "msg": "Authentication token: yourapikey not found.",
+        "longt": "0.00000",
+        "matches": null,
+        "error": {
+          "description": "Authentication token: yourapikey not found.",
+          "code": "003"
+        },
+        "latt": "0.00000"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://geocode.xyz/Hauptstr.,+57632+Berzhausen?json=1&auth=your_api_key"
+    },
+    {
+      "name": "GeoApi",
+      "slug": "geoapi",
+      "emoji": "🗺",
+      "tagline": "GeoApi — French geographical data",
+      "description": "GeoApi exposes french geographical data We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.gouv.fr/api/geoapi.html",
+      "baseUrl": "https://grist.numerique.gouv.fr",
+      "sampleEndpoint": "/api/docs/eVmasNDoXMp1",
+      "latencyMs": 236,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "CRM ouverture",
+        "createdAt": "2024-07-12T15:41:14.978Z",
+        "updatedAt": "2026-07-03T13:46:03.333Z",
+        "id": "eVmasNDoXMp1PQUrtDLxtu",
+        "isPinned": true,
+        "urlId": "eVmasNDoXMp1",
+        "trunkId": null,
+        "type": null
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://grist.numerique.gouv.fr/api/docs/eVmasNDoXMp1"
+    },
+    {
+      "name": "City, Lviv",
+      "slug": "city-lviv",
+      "emoji": "🏛",
+      "tagline": "City, Lviv — Lviv(UA) City Open Data",
+      "description": "City, Lviv exposes lviv(UA) City Open Data We verified a keyless GET endpoint returning JSON (Government). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://opendata.city-adm.lviv.ua/",
+      "baseUrl": "https://opendata.city-adm.lviv.ua",
+      "sampleEndpoint": "/api",
+      "latencyMs": 170,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://opendata.city-adm.lviv.ua/api"
+    },
+    {
+      "name": "Brazil Central Bank Open Data",
+      "slug": "brazil-central-bank-open-data",
+      "emoji": "🏛",
+      "tagline": "Brazil Central Bank Open Data — Brazil Central Bank Open Data",
+      "description": "Brazil Central Bank Open Data exposes brazil Central Bank Open Data We verified a keyless GET endpoint returning JSON (Government). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://dadosabertos.bcb.gov.br/",
+      "baseUrl": "https://dadosabertos.bcb.gov.br",
+      "sampleEndpoint": "/api",
+      "latencyMs": 333,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://dadosabertos.bcb.gov.br/api"
+    },
+    {
+      "name": "Neotimo DGFiP Mirror",
+      "slug": "neotimo-dgfip-mirror",
+      "emoji": "🏛",
+      "tagline": "Neotimo DGFiP Mirror — French DGFiP registry of certified e-invoicing platform",
+      "description": "Neotimo DGFiP Mirror exposes french DGFiP registry of certified e-invoicing platforms (Plateformes Agréées), searchable by SIRET We verified a keyless GET endpoint returning JSON (Government). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://neotimo.com/annuaire-dgfip",
+      "baseUrl": "https://neotimo.com",
+      "sampleEndpoint": "/api/v1/neotimo/annuaire/routing/80438439400016",
+      "latencyMs": 1570,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "query": "80438439400016",
+          "queryType": "siret",
+          "lines": [
+            {
+              "level": "siren",
+              "siren": "804384394",
+              "legalName": "KAPUNKA",
+              "receptionActive": true
+            },
+            {
+              "level": "siret",
+              "siren": "804384394",
+              "siret": "80438439400016",
+              "legalName": "KAPUNKA",
+              "receptionActive": true
+            }
+          ],
+          "source": "neotimo-mirror",
+          "lastSync": "2026-07-05T00:03:07.1700857+00:00",
+          "mirrorStatus": "fresh"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://neotimo.com/api/v1/neotimo/annuaire/routing/80438439400016"
+    },
+    {
+      "name": "Humanitarian Data Exchange",
+      "slug": "humanitarian-data-exchange",
+      "emoji": "🩺",
+      "tagline": "Humanitarian Data Exchange — Humanitarian Data Exchange (HDX) is open platform",
+      "description": "Humanitarian Data Exchange exposes humanitarian Data Exchange (HDX) is open platform for sharing data across crises and organisations We verified a keyless GET endpoint returning JSON (Health). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://data.humdata.org/",
+      "baseUrl": "https://data.humdata.org",
+      "sampleEndpoint": "/api",
+      "latencyMs": 149,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.humdata.org/api"
+    },
+    {
+      "name": "openAFRICA",
+      "slug": "openafrica",
+      "emoji": "📊",
+      "tagline": "openAFRICA — Large datasets repository of African open data",
+      "description": "openAFRICA exposes large datasets repository of African open data We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://africaopendata.org/",
+      "baseUrl": "https://africaopendata.org",
+      "sampleEndpoint": "/api",
+      "latencyMs": 447,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://africaopendata.org/api"
+    },
+    {
+      "name": "Stoicism Quote",
+      "slug": "stoicism-quote",
+      "emoji": "🎭",
+      "tagline": "Stoicism Quote — Quotes about Stoicism",
+      "description": "Stoicism Quote exposes quotes about Stoicism We verified a keyless GET endpoint returning JSON (Personality). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://github.com/tlcheah2/stoic-quote-lambda-public-api",
+      "baseUrl": "https://stoic.tekloon.net",
+      "sampleEndpoint": "/stoic-quote",
+      "latencyMs": 851,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "author": "Marcus Aurelius",
+          "quote": "Why is this so unbearable? Why can’t I endure it? You’ll be embarrassed to answer."
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://stoic.tekloon.net/stoic-quote"
+    },
+    {
+      "name": "PhishStats",
+      "slug": "phishstats",
+      "emoji": "🔐",
+      "tagline": "PhishStats — Phishing database",
+      "description": "PhishStats exposes phishing database We verified a keyless GET endpoint returning JSON (Security). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://phishstats.info/",
+      "baseUrl": "https://api.phishstats.info",
+      "sampleEndpoint": "/api/phishing",
+      "latencyMs": 637,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 11487376,
+          "url": "https://czpatgy-s-school.teachable.com/p/home",
+          "redirect_url": null,
+          "ip": "104.17.82.54",
+          "countrycode": null,
+          "countryname": null,
+          "regioncode": null,
+          "regionname": null
+        },
+        {
+          "id": 11487377,
+          "url": "https://paiment-refuser.dyndns.info/check",
+          "redirect_url": null,
+          "ip": "45.139.104.24",
+          "countrycode": "BG",
+          "countryname": "Bulgaria",
+          "regioncode": null,
+          "regionname": null
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.phishstats.info/api/phishing"
+    }
+  ],
+  "skipped": []
+}

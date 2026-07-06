@@ -1,0 +1,651 @@
+{
+  "batch": 75,
+  "verified": [
+    {
+      "name": "Mubert AI Music API",
+      "slug": "mubert-ai-music-api",
+      "emoji": "🔑",
+      "tagline": "Mubert AI Music API — free tier with API key",
+      "description": "Mubert AI Music API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://landing.mubert.com",
+      "baseUrl": "https://music-api.mubert.com",
+      "sampleEndpoint": "/api/v3/public/tracks",
+      "latencyMs": 1292,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "Unauthenticated",
+        "code": "Unauthenticated"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://music-api.mubert.com/api/v3/public/tracks"
+    },
+    {
+      "name": "FinFeedAPI",
+      "slug": "finfeedapi",
+      "emoji": "🔑",
+      "tagline": "FinFeedAPI — free tier with API key",
+      "description": "FinFeedAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://finfeedapi.com",
+      "baseUrl": "https://finfeedapi.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 4038,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://finfeedapi.com/api/v1"
+    },
+    {
+      "name": "Sentino Personality API",
+      "slug": "sentino-personality-api",
+      "emoji": "🔑",
+      "tagline": "Sentino Personality API — free tier with API key",
+      "description": "Sentino Personality API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://sentino.org/api/",
+      "baseUrl": "https://api.sentino.org",
+      "sampleEndpoint": "/api/inventories",
+      "latencyMs": 240,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "detail": "Authentication credentials were not provided."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.sentino.org/api/inventories"
+    },
+    {
+      "name": "Printify",
+      "slug": "printify",
+      "emoji": "🔑",
+      "tagline": "Printify — free tier with API key",
+      "description": "Printify exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://developers.printify.com/",
+      "baseUrl": "https://api.printify.com",
+      "sampleEndpoint": "/v1/shops.json",
+      "latencyMs": 1699,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Unauthenticated",
+        "request_id": "1783295172@082d1996-d3bd-488e-8cb8-8258fb997b55"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.printify.com/v1/shops.json"
+    },
+    {
+      "name": "Human Design Hub",
+      "slug": "human-design-hub",
+      "emoji": "🔑",
+      "tagline": "Human Design Hub — free tier with API key",
+      "description": "Human Design Hub exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://humandesignhub.app/en/docs",
+      "baseUrl": "https://api.humandesignhub.app",
+      "sampleEndpoint": "/v2/simple-bodygraph",
+      "latencyMs": 5342,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "detail": "API Key is required. Include 'X-API-Key' header."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.humandesignhub.app/v2/simple-bodygraph"
+    },
+    {
+      "name": "Zoom",
+      "slug": "zoom",
+      "emoji": "🔑",
+      "tagline": "Zoom — free tier with API key",
+      "description": "Zoom exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developers.zoom.us/docs/api",
+      "baseUrl": "https://api.zoom.us",
+      "sampleEndpoint": "/v2/users/me",
+      "latencyMs": 1809,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "code": 124,
+        "message": "Invalid access token."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.zoom.us/v2/users/me"
+    },
+    {
+      "name": "CarsXE",
+      "slug": "carsxe",
+      "emoji": "🔑",
+      "tagline": "CarsXE — free tier with API key",
+      "description": "CarsXE exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://api.carsxe.com/",
+      "baseUrl": "https://api.carsxe.com",
+      "sampleEndpoint": "/specs/",
+      "latencyMs": 503,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "success": false,
+        "message": "Missing API key"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.carsxe.com/specs\\"
+    },
+    {
+      "name": "OpenAI API",
+      "slug": "openai-api",
+      "emoji": "🔑",
+      "tagline": "OpenAI API — free tier with API key",
+      "description": "OpenAI API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://platform.openai.com/docs",
+      "baseUrl": "https://api.openai.com",
+      "sampleEndpoint": "/v1/responses",
+      "latencyMs": 2055,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "message": "Missing bearer or basic authentication in header",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": null
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.openai.com/v1/responses"
+    },
+    {
+      "name": "Vercel API",
+      "slug": "vercel-api",
+      "emoji": "🔑",
+      "tagline": "Vercel API — free tier with API key",
+      "description": "Vercel API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://vercel.com/docs/rest-api",
+      "baseUrl": "https://api.vercel.com",
+      "sampleEndpoint": "/v6/deployments?teamId=[teamID",
+      "latencyMs": 927,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "error": {
+          "code": "forbidden",
+          "message": "The request is missing an authentication token",
+          "missingToken": true
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.vercel.com/v6/deployments?teamId=[teamID"
+    },
+    {
+      "name": "Perplexity AI API",
+      "slug": "perplexity-ai-api",
+      "emoji": "🔑",
+      "tagline": "Perplexity AI API — free tier with API key",
+      "description": "Perplexity AI API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://docs.perplexity.ai",
+      "baseUrl": "https://api.perplexity.ai",
+      "sampleEndpoint": "/search",
+      "latencyMs": 671,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "message": "Invalid API key provided. Ensure your API key is correct and active.",
+          "type": "invalid_api_key",
+          "code": 401
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.perplexity.ai/search"
+    },
+    {
+      "name": "BulkSMS JSON REST API",
+      "slug": "bulksms-json-rest-api",
+      "emoji": "🔑",
+      "tagline": "BulkSMS JSON REST API — free tier with API key",
+      "description": "BulkSMS JSON REST API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.bulksms.com/v1",
+      "baseUrl": "https://api.bulksms.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 348,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "type": "https://developer.bulksms.com/json/v1/errors#authentication-failed",
+        "title": "Authentication Failed",
+        "status": 401,
+        "detail": "Full authentication is required to access this resource"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.bulksms.com/"
+    },
+    {
+      "name": "Automata Market Intelligence API",
+      "slug": "automata-market-intelligence-api",
+      "emoji": "🔑",
+      "tagline": "Automata Market Intelligence API — free tier with API key",
+      "description": "Automata Market Intelligence API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.byautomata.io",
+      "baseUrl": "https://api.byautomata.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 520,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "message": "Missing Authentication Token"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.byautomata.io/"
+    },
+    {
+      "name": "Climate FieldView Platform APIs",
+      "slug": "climate-fieldview-platform-apis",
+      "emoji": "🔑",
+      "tagline": "Climate FieldView Platform APIs — free tier with API key",
+      "description": "Climate FieldView Platform APIs exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://platform.climate.com/",
+      "baseUrl": "https://platform.climate.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 617,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "message": "Missing Authentication Token"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://platform.climate.com/"
+    },
+    {
+      "name": "Dev.to",
+      "slug": "dev-to",
+      "emoji": "👩‍💻",
+      "tagline": "Dev community articles feed",
+      "description": "Dev.to public API lists articles, tags and users as JSON. Read endpoints need no key — great for dev-news widgets.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://dev.to/api",
+      "baseUrl": "https://dev.to",
+      "sampleEndpoint": "/articles?per_page=1",
+      "latencyMs": 64,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "type_of": "article",
+          "id": 4036380,
+          "title": "Forward Deployed Engineers and the future of software engineering",
+          "description": "Cover Image: Sierra’s Natalie Meurer at the AI Engineer World’s Fair today.  Natalie Meurer is Head...",
+          "readable_publish_date": "Jul 2",
+          "slug": "forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+          "path": "/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+          "url": "https://dev.to/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll"
+        }
+      ],
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://dev.to/api/articles?per_page=1"
+    },
+    {
+      "name": "NetBox API",
+      "slug": "netbox-api",
+      "emoji": "🔑",
+      "tagline": "NetBox API — free tier with API key",
+      "description": "NetBox API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://demo.netbox.dev/api",
+      "baseUrl": "https://demo.netbox.dev",
+      "sampleEndpoint": "/api",
+      "latencyMs": 456,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "detail": "Authentication credentials were not provided."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://demo.netbox.dev/api"
+    },
+    {
+      "name": "SalesLoft Platform",
+      "slug": "salesloft-platform",
+      "emoji": "🔑",
+      "tagline": "SalesLoft Platform — free tier with API key",
+      "description": "SalesLoft Platform exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.salesloft.com",
+      "baseUrl": "https://api.salesloft.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 319,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "No Bearer Token attached to request, please see documentation at developers.salesloft.com"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.salesloft.com/"
+    },
+    {
+      "name": "MotaWord API",
+      "slug": "motaword-api",
+      "emoji": "🔑",
+      "tagline": "MotaWord API — free tier with API key",
+      "description": "MotaWord API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://api.motaword.com",
+      "baseUrl": "https://api.motaword.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 265,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "InvalidApiClient",
+          "http_code": 401,
+          "message": "Your access token is wrong.",
+          "help": "https://www.motaword.com/developer/support"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.motaword.com/api/v1"
+    },
+    {
+      "name": "GOV.UK Pay API",
+      "slug": "gov-uk-pay-api",
+      "emoji": "🔑",
+      "tagline": "GOV.UK Pay API — free tier with API key",
+      "description": "GOV.UK Pay API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Business",
+      "docsUrl": "https://publicapi.payments.service.gov.uk",
+      "baseUrl": "https://publicapi.payments.service.gov.uk",
+      "sampleEndpoint": "/v1",
+      "latencyMs": 102,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "Unauthorized",
+        "url": "http://publicapi.payments.service.gov.uk:50203/v1",
+        "status": "401"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://publicapi.payments.service.gov.uk/v1"
+    },
+    {
+      "name": "Geocoder REST API",
+      "slug": "geocoder-rest-api",
+      "emoji": "🔑",
+      "tagline": "Geocoder REST API — free tier with API key",
+      "description": "Geocoder REST API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://dpdd.atlassian.net/servicedesk/customer/portal/1/group/7/",
+      "baseUrl": "https://api.media.atlassian.com",
+      "sampleEndpoint": "/file/86797ec5-5561-4467-bd9b-6ecc249a161d/image/cdn?token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzZDgxNzQwZC00NzBiLTRlOTgtOGUyNS05MjdlOWQzZjlkNzgiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpmaWxlOjg2Nzk3ZWM1LTU1NjEtNDQ2Ny1iZDliLTZlY2MyNDlhMTYxZCI6WyJyZWFkIl19LCJleHAiOjE3ODMyOTU5MDUsIm5iZiI6MTc4MzI5NTMwNX0.fLCiVfa-ELfXzWGXHu96fszdpcs3PcUhvjIKtNlP3BM&amp;client=3d81740d-470b-4e98-8e25-927e9d3f9d78&amp;mode=fit&quot;,&quot;logoId&quot;:&quot;86797ec5-5561-4467-bd9b-6ecc249a161d&quot;,&quot;isLogoAvailable&quot;:true,&quot;helpCenterTitle&quot;:&quot;Welcome",
+      "latencyMs": 888,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "ForbiddenError",
+          "title": "This resource requires authorization",
+          "href": "https://dt-api-filestore.ca-central-1.prod.kitt-paas.net#AuthenticationGuide"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.media.atlassian.com/file/86797ec5-5561-4467-bd9b-6ecc249a161d/image/cdn?token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzZDgxNzQwZC00NzBiLTRlOTgtOGUyNS05MjdlOWQzZjlkNzgiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpmaWxlOjg2Nzk3ZWM1LTU1NjEtNDQ2Ny1iZDliLTZlY2MyNDlhMTYxZCI6WyJyZWFkIl19LCJleHAiOjE3ODMyOTU5MDUsIm5iZiI6MTc4MzI5NTMwNX0.fLCiVfa-ELfXzWGXHu96fszdpcs3PcUhvjIKtNlP3BM&amp;client=3d81740d-470b-4e98-8e25-927e9d3f9d78&amp;mode=fit&quot;,&quot;logoId&quot;:&quot;86797ec5-5561-4467-bd9b-6ecc249a161d&quot;,&quot;isLogoAvailable&quot;:true,&quot;helpCenterTitle&quot;:&quot;Welcome"
+    },
+    {
+      "name": "Quip API",
+      "slug": "quip-api",
+      "emoji": "🔑",
+      "tagline": "Quip API — free tier with API key",
+      "description": "Quip API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://quip.com/dev/automation/documentation",
+      "baseUrl": "https://platform.quip.com",
+      "sampleEndpoint": "/2/folders/XaABCAlgycE/link-sharing-settings",
+      "latencyMs": 876,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "application_error",
+        "error_code": 401,
+        "error_description": "Invalid access_token"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://platform.quip.com/2/folders/XaABCAlgycE/link-sharing-settings"
+    },
+    {
+      "name": "Clockify API",
+      "slug": "clockify-api",
+      "emoji": "🔑",
+      "tagline": "Clockify API — free tier with API key",
+      "description": "Clockify API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://clockify.me/developers-api",
+      "baseUrl": "https://api.clockify.me",
+      "sampleEndpoint": "/api/v1/file/image",
+      "latencyMs": 236,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "Multiple or none auth tokens present",
+        "code": 1000
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.clockify.me/api/v1/file/image"
+    },
+    {
+      "name": "ImprovMX API",
+      "slug": "improvmx-api",
+      "emoji": "🔑",
+      "tagline": "ImprovMX API — free tier with API key",
+      "description": "ImprovMX API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://improvmx.com/api",
+      "baseUrl": "https://api.improvmx.com",
+      "sampleEndpoint": "/v3/domains?q=pied",
+      "latencyMs": 2022,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "code": 401,
+        "error": "Authentication required.",
+        "success": false
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.improvmx.com/v3/domains?q=pied"
+    },
+    {
+      "name": "DigitalOcean Spaces API",
+      "slug": "digitalocean-spaces-api",
+      "emoji": "🔑",
+      "tagline": "DigitalOcean Spaces API — free tier with API key",
+      "description": "DigitalOcean Spaces API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.digitalocean.com/products/spaces",
+      "baseUrl": "https://www.digitalocean.com",
+      "sampleEndpoint": "/api/static-content/v1/images?src=%2F_next%2Fstatic%2Fmedia%2Fvessel.1618d05a.svg&amp;width=1080&api_key=DEMO_KEY",
+      "latencyMs": 307,
+      "corsObserved": false,
+      "httpStatus": 400,
+      "sampleJson": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Request did not match schema",
+        "details": [
+          {
+            "keyword": "unrecognized_keys",
+            "instancePath": "/",
+            "schemaPath": "#//unrecognized_keys",
+            "message": "Unrecognized keys: \"amp;width\", \"api_key\"",
+            "params": {
+              "keys": [
+                "amp;width",
+                "api_key"
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.digitalocean.com/api/static-content/v1/images?src=%2F_next%2Fstatic%2Fmedia%2Fvessel.1618d05a.svg&amp;width=1080&api_key=DEMO_KEY"
+    },
+    {
+      "name": "iQualify Management API",
+      "slug": "iqualify-management-api",
+      "emoji": "🔑",
+      "tagline": "iQualify Management API — free tier with API key",
+      "description": "iQualify Management API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Authentication",
+      "docsUrl": "https://api.apis.guru/v2/specs/iqualify.com/v1.json",
+      "baseUrl": "https://api.iqualify.com",
+      "sampleEndpoint": "/v1/offerings/current/n/n",
+      "latencyMs": 1948,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "name": "NotAuthorizedError",
+          "details": "No authorization token was found."
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.iqualify.com/v1/offerings/current\\n\\n"
+    },
+    {
+      "name": "Lemonfox.ai API",
+      "slug": "lemonfox-ai-api",
+      "emoji": "🔑",
+      "tagline": "Lemonfox.ai API — free tier with API key",
+      "description": "Lemonfox.ai API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://www.lemonfox.ai/apis/speech-to-text",
+      "baseUrl": "https://api.lemonfox.ai",
+      "sampleEndpoint": "/v1/audio/transcriptions&",
+      "latencyMs": 622,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": 401,
+        "error": {
+          "message": "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY). You can obtain an API key from https://lemonfox.ai/apis/keys.",
+          "type": "invalid_request_error",
+          "param": null,
+          "code": null
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.lemonfox.ai/v1/audio/transcriptions&#x27"
+    }
+  ],
+  "skipped": []
+}

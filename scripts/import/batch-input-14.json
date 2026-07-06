@@ -1,0 +1,246 @@
+{
+  "batch": 14,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Minecraft Server Status",
+      "docsUrl": "https://api.mcsrvstat.us",
+      "description": "API to get Information about a Minecraft Server",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "MMO Games",
+      "docsUrl": "https://www.mmobomb.com/api",
+      "description": "MMO Games Database, News and Giveaways",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Trivia",
+      "docsUrl": "https://opentdb.com/api_config.php",
+      "description": "Trivia Questions",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlayerDB",
+      "docsUrl": "https://playerdb.co/",
+      "description": "Query Minecraft, Steam and XBox Accounts",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pokémon TCG",
+      "docsUrl": "https://pokemontcg.io",
+      "description": "Pokémon TCG Information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Raider",
+      "docsUrl": "https://raider.io/api",
+      "description": "Provides detailed character and guild rankings for Raiding and Mythic+ content in World of Warcraft",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "RuneScape",
+      "docsUrl": "https://runescape.wiki/w/Application_programming_interface",
+      "description": "RuneScape and OSRS RPGs information",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Sakura CardCaptor",
+      "docsUrl": "https://github.com/JessVel/sakura-card-captor-api",
+      "description": "Sakura CardCaptor Cards Information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Steam",
+      "docsUrl": "https://github.com/Revadike/InternalSteamWebAPI/wiki",
+      "description": "Internal Steam Web API documentation",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "TETR.IO",
+      "docsUrl": "https://tetr.io/about/api/",
+      "description": "TETR.IO Tetra Channel API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Tronald Dump",
+      "docsUrl": "https://www.tronalddump.io/",
+      "description": "The dumbest things Donald Trump has ever said",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Valorant (non-official)",
+      "docsUrl": "https://valorant-api.com",
+      "description": "An extensive API containing data of most Valorant in-game items, assets and more",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Warface (non-official)",
+      "docsUrl": "https://api.wfstats.cf",
+      "description": "Official API proxy with better data structure and more features",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "When is next MCU film",
+      "docsUrl": "https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md",
+      "description": "Upcoming MCU film information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "xkcd",
+      "docsUrl": "https://xkcd.com/json.html",
+      "description": "Retrieve xkcd comics as JSON",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Yu-Gi-Oh!",
+      "docsUrl": "https://db.ygoprodeck.com/api-guide/",
+      "description": "Yu-Gi-Oh! TCG Information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "adresse.data.gouv.fr",
+      "docsUrl": "https://adresse.data.gouv.fr",
+      "description": "Address database of France, geocoding and reverse",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "BdAPIs",
+      "docsUrl": "https://bdapis.com/",
+      "description": "Get divisions, districts, and upazzilas of Bangladesh",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cartes.io",
+      "docsUrl": "https://github.com/M-Media-Group/Cartes.io/wiki/API",
+      "description": "Create maps and markers for anything",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "CitySDK",
+      "docsUrl": "http://www.citysdk.eu/citysdk-toolkit/",
+      "description": "Open APIs for select European cities",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ducks Unlimited",
+      "docsUrl": "https://gis.ducks.org/datasets/du-university-chapters/api",
+      "description": "API explorer that gives a query URL with a JSON response of locations and cities",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "GeoApi",
+      "docsUrl": "https://api.gouv.fr/api/geoapi.html",
+      "description": "French geographical data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Geocode.xyz",
+      "docsUrl": "https://geocode.xyz/api",
+      "description": "Provides worldwide forward/reverse geocoding, batch geocoding and geoparsing",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Graph Countries",
+      "docsUrl": "https://github.com/lennertVanSever/graphcountries",
+      "description": "Country-related data like currencies, languages, flags, regions+subregions and bordering countries",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    }
+  ]
+}

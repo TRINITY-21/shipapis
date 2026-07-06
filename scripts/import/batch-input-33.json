@@ -1,0 +1,386 @@
+{
+  "batch": 33,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "CodeCogs",
+      "docsUrl": "https://editor.codecogs.com/docs/4-LaTeX_rendering.php",
+      "description": "Render LaTeX equations in PNG, GIF, SVG, EMF, PDF, JSON, or download formats with styling options",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ocean Facts",
+      "docsUrl": "https://oceanfacts.herokuapp.com/",
+      "description": "Facts pertaining to the physical science of Oceanography",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 404
+    },
+    {
+      "name": "Purple Air",
+      "docsUrl": "https://www2.purpleair.com/",
+      "description": "Real Time Air Quality Monitoring",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "SpaceX",
+      "docsUrl": "https://api.spacex.land/graphql/",
+      "description": "GraphQL, Company, Ships, launchpad and launch data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "EmailRep",
+      "docsUrl": "https://docs.emailrep.io/",
+      "description": "Email address threat and risk prediction",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 429
+    },
+    {
+      "name": "URLhaus",
+      "docsUrl": "https://urlhaus.abuse.ch/api/",
+      "description": "Database of malicious URLs used for malware distribution",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "aztro",
+      "docsUrl": "https://aztro.sameerkumar.website/",
+      "description": "Daily horoscope info for yesterday, today, and tomorrow",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 404
+    },
+    {
+      "name": "Fuck Off as a Service",
+      "docsUrl": "https://www.foaas.com",
+      "description": "Asks someone to fuck off",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Hashnode",
+      "docsUrl": "https://hashnode.com",
+      "description": "A blogging platform built for developers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Collective",
+      "docsUrl": "https://docs.opencollective.com/help/developers/api",
+      "description": "Get Open Collective data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ergast F1",
+      "docsUrl": "http://ergast.com/mrd/",
+      "description": "F1 data from the beginning of the world championships in 1950",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 0
+    },
+    {
+      "name": "NBA Stats",
+      "docsUrl": "https://any-api.com/nba_com/nba_com/docs/API_Description",
+      "description": "Current and historical NBA Statistics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dicebear Avatars",
+      "docsUrl": "https://avatars.dicebear.com/",
+      "description": "Generate random pixel-art avatars",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "English Random Words",
+      "docsUrl": "https://random-words-api.vercel.app/word",
+      "description": "Generate English Random Words with Pronunciation",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Test Data",
+      "docsCheck": 429
+    },
+    {
+      "name": "Random Data",
+      "docsUrl": "https://random-data-api.com",
+      "description": "Random data generator",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 0
+    },
+    {
+      "name": "RoboHash",
+      "docsUrl": "https://robohash.org/",
+      "description": "Generate random robot/alien avatars",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Spanish random names",
+      "docsUrl": "https://random-names-api.herokuapp.com/public",
+      "description": "Generate spanish names (with gender) randomly",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 404
+    },
+    {
+      "name": "Spanish random words",
+      "docsUrl": "https://palabras-aleatorias-public-api.herokuapp.com",
+      "description": "Generate spanish words randomly",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 404
+    },
+    {
+      "name": "This Person Does not Exist",
+      "docsUrl": "https://thispersondoesnotexist.com",
+      "description": "Generates real-life faces of people who do not exist",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Toolcarton",
+      "docsUrl": "https://testimonialapi.toolcarton.com/",
+      "description": "Generate random testimonial data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 0
+    },
+    {
+      "name": "WhatPulse",
+      "docsUrl": "https://developer.whatpulse.org/#web-api",
+      "description": "Small application that measures your keyboard/mouse usage",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Tracking",
+      "docsCheck": 200
+    },
+    {
+      "name": "ADS-B Exchange",
+      "docsUrl": "https://www.adsbexchange.com/data/",
+      "description": "Access real-time and historical data of any and all airborne aircraft",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "airportsapi",
+      "docsUrl": "https://airport-web.appspot.com/api/docs/",
+      "description": "Get name and website-URL for airports by ICAO code",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "AviationAPI",
+      "docsUrl": "https://docs.aviationapi.com",
+      "description": "FAA Aeronautical Charts and Publications, Airport Information, and Airport Weather",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Transportation",
+      "docsCheck": 0
+    },
+    {
+      "name": "Icelandic APIs",
+      "docsUrl": "http://docs.apis.is/",
+      "description": "Open APIs that deliver services in or regarding Iceland",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenSky Network",
+      "docsUrl": "https://opensky-network.org/apidoc/index.html",
+      "description": "Free real-time ADS-B aviation data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 404
+    },
+    {
+      "name": "TransitLand",
+      "docsUrl": "https://www.transit.land/documentation/datastore/api-endpoints.html",
+      "description": "Transit Aggregation",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Auckland, New Zealand",
+      "docsUrl": "https://dev-portal.at.govt.nz/",
+      "description": "Auckland Transport",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Budapest, Hungary",
+      "docsUrl": "https://bkkfutar.docs.apiary.io",
+      "description": "Budapest public transport API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Czech Republic",
+      "docsUrl": "https://www.chaps.cz/eng/products/idos-internet",
+      "description": "Czech transport API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Finland",
+      "docsUrl": "https://digitransit.fi/en/developers/ ",
+      "description": "Finnish transport API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 403
+    },
+    {
+      "name": "Transport for Hessen, Germany",
+      "docsUrl": "https://opendata.rmv.de/site/start.html",
+      "description": "RMV API (Public Transport in Hessen)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Los Angeles, US",
+      "docsUrl": "https://developer.metro.net/api/",
+      "description": "Data about positions of Metro vehicles in real time and travel their routes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Velib metropolis, Paris, France",
+      "docsUrl": "https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole",
+      "description": "Velib Open Data API",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Transportation",
+      "docsCheck": 403
+    },
+    {
+      "name": "Drivet URL Shortener",
+      "docsUrl": "https://wiki.drivet.xyz/en/url-shortener/add-links",
+      "description": "Shorten a long URL easily and fast",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Free Url Shortener",
+      "docsUrl": "https://ulvis.net/developer.html",
+      "description": "Free URL Shortener offers a powerful API to interact with other sites",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 403
+    },
+    {
+      "name": "Git.io",
+      "docsUrl": "https://github.blog/2011-11-10-git-io-github-url-shortener/",
+      "description": "Git.io URL shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mgnet.me",
+      "docsUrl": "http://mgnet.me/api.html",
+      "description": "Torrent URL shorten API",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    }
+  ]
+}

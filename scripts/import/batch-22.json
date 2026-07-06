@@ -1,0 +1,499 @@
+{
+  "batch": 22,
+  "verified": [
+    {
+      "name": "Transport for The Netherlands",
+      "slug": "transport-for-the-netherlands",
+      "emoji": "🚌",
+      "tagline": "Live Dutch bus, tram, and train departures, nationwide",
+      "description": "OVAPI exposes real-time public-transport data for the whole of the Netherlands, keyed by line and stop. Query lines, stops, and live departure times as plain JSON with no key required. Heads up: the domain's TLS certificate is misconfigured, so it answers cleanly only over plain HTTP.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://github.com/skywave/KV78Turbo-OVAPI/wiki",
+      "baseUrl": "http://v0.ovapi.nl",
+      "sampleEndpoint": "/line/",
+      "latencyMs": 2803,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "NL_5302_1": {
+          "TransportType": "BUS",
+          "DestinationName50": "Amersfoort CS",
+          "DataOwnerCode": "NL",
+          "LinePublicNumber": "302",
+          "LineName": "U-liner Amersfoort - Vianen",
+          "LineDirection": 1
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "HTTPS cert subject does not match host (SSL error); served over HTTP only. Response keyed by line code."
+    },
+    {
+      "name": "Transport for Toronto, Canada",
+      "slug": "transport-for-toronto-canada",
+      "emoji": "🚇",
+      "tagline": "Toronto TTC stops and next-departure times as JSON",
+      "description": "myTTC turns any Toronto Transit Commission station or stop into a tidy JSON feed of routes and upcoming departure times. Append .json to a stop's slug and you get schedules without signing up. Handy for building transit widgets around the TTC network.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://myttc.ca/developers",
+      "baseUrl": "https://myttc.ca",
+      "sampleEndpoint": "/finch_station.json",
+      "latencyMs": 1288,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Finch Station",
+        "uri": "finch_station",
+        "stops": [
+          {
+            "agency": "Toronto Transit Commission",
+            "uri": "finch_station_bishop_entrance",
+            "name": "Finch Station Bishop Entrance",
+            "routes": []
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Auto Body Shop Directory",
+      "slug": "auto-body-shop-directory",
+      "emoji": "🔧",
+      "tagline": "Search 43k+ US auto body and repair shops by city",
+      "description": "AutoBodyShopNear.com publishes a directory of tens of thousands of US collision, repair, and recycler shops. Public GET endpoints page through listings by city, state, or ZIP and return each shop's address and phone. Reuse asks that you credit the source and link back to the shop profile.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://autobodyshopnear.com/developers/body-shop-api",
+      "baseUrl": "https://autobodyshopnear.com/api/v1/public",
+      "sampleEndpoint": "/shops/by-city?city=Houston&state=TX&limit=20&offset=0",
+      "latencyMs": 811,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": 432313,
+              "name": "CHAMPION AUTO PARTS",
+              "category": "Dismantler / Recycler",
+              "city": "Houston",
+              "stateCode": "TX",
+              "postalCode": "77056",
+              "slug": "champion-auto-parts-houston-tx-77056"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Proprietary — attribution + link-back required",
+      "commercialUse": "unclear",
+      "notes": "access-control-allow-origin is hardcoded to http://localhost:4007, so CORS is present but not usable from other origins."
+    },
+    {
+      "name": "Brazilian Vehicles and Prices",
+      "slug": "brazilian-vehicles-and-prices",
+      "emoji": "🚗",
+      "tagline": "Brazil's official FIPE car, bike, and truck price tables",
+      "description": "This community API wraps Brazil's FIPE reference price tables for cars, motorcycles, and trucks. Walk from brands to models to model-years and read the average market price, all as keyless JSON. Great for Brazilian automotive pricing and valuation tools.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://deividfortuna.github.io/fipe/",
+      "baseUrl": "https://parallelum.com.br/fipe/api/v1",
+      "sampleEndpoint": "/carros/marcas",
+      "latencyMs": 1018,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "codigo": "1", "nome": "Acura" },
+        { "codigo": "6", "nome": "Audi" }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data sourced from Fundação Instituto de Pesquisas Econômicas / FIPE)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "NHTSA",
+      "slug": "nhtsa",
+      "emoji": "🚙",
+      "tagline": "Decode US VINs and look up every registered make",
+      "description": "NHTSA's vPIC service is the US government's catalog of vehicle makes, models, and VIN decoding. Fetch all manufacturers or decode a VIN into make, model, and body class straight from federal data. No key, and as a US Government work the data sits in the public domain.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://vpic.nhtsa.dot.gov/api/",
+      "baseUrl": "https://vpic.nhtsa.dot.gov/api",
+      "sampleEndpoint": "/vehicles/GetAllMakes?format=json",
+      "latencyMs": 2144,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Count": 12283,
+        "Message": "Response returned successfully",
+        "SearchCriteria": null,
+        "Results": [
+          { "Make_ID": 12858, "Make_Name": "#1 ALPINE CUSTOMS" }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Public domain (U.S. Government work)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "An API of Ice And Fire",
+      "slug": "an-api-of-ice-and-fire",
+      "emoji": "🐉",
+      "tagline": "Books, characters, and houses from Game of Thrones lore",
+      "description": "An API of Ice and Fire serves structured data on the books, characters, and houses of George R. R. Martin's A Song of Ice and Fire. Every resource is a hyperlinked JSON document you can crawl without a key. A friendly playground for REST and pagination demos.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://anapioficeandfire.com/",
+      "baseUrl": "https://anapioficeandfire.com/api",
+      "sampleEndpoint": "/books/1",
+      "latencyMs": 656,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "url": "https://anapioficeandfire.com/api/books/1",
+        "name": "A Game of Thrones",
+        "isbn": "978-0553103540",
+        "authors": ["George R. R. Martin"],
+        "numberOfPages": 694,
+        "publisher": "Bantam Books",
+        "released": "1996-08-01T00:00:00"
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Ron Swanson Quotes",
+      "slug": "ron-swanson-quotes",
+      "emoji": "🥓",
+      "tagline": "Random Ron Swanson wisdom, one gruff quote at a time",
+      "description": "This tiny service returns random quotes from Parks and Recreation's Ron Swanson as a JSON array. Ask for one or several at once, no key needed. It runs on a free Heroku dyno, so expect the occasional cold-start pause.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api",
+      "baseUrl": "https://ron-swanson-quotes.herokuapp.com",
+      "sampleEndpoint": "/v2/quotes",
+      "latencyMs": 980,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "I’ve had the same haircut since 1978 and I’ve driven the same car since 1991. I’ve used the same wooden comb for three decades. I have one bowl. I still get my milk delivered by horse."
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Hosted on a free Heroku dyno; may cold-start or sleep."
+    },
+    {
+      "name": "Lucifer Quotes",
+      "slug": "lucifer-quotes",
+      "emoji": "😈",
+      "tagline": "Random quotes from the devil himself, as JSON",
+      "description": "A minimal open-source endpoint that hands back random lines from the TV series Lucifer, wrapped as a small JSON array of quote and author. No signup, no key, permissive CORS. Drop-in filler for demos, bots, or quote-of-the-day widgets.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://github.com/shadowoff09/lucifer-quotes",
+      "baseUrl": "https://lucifer-quotes.vercel.app",
+      "sampleEndpoint": "/api/quotes",
+      "latencyMs": 2283,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "quote": "All my time with Dr. Linda has been about exploring the denial that I'm in, but I've overcome that now, I've had an honest-to-Devil epiphany. Now all my problems should just, you know, go away.",
+          "author": "Lucifer Morningstar"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Stranger Things Quotes",
+      "slug": "stranger-things-quotes",
+      "emoji": "🔦",
+      "tagline": "Random Stranger Things quotes with speaker attribution",
+      "description": "This open-source API returns random quotes from Stranger Things, each tagged with the character who said it, as plain JSON. It needs no key and sets open CORS headers, so it works straight from the browser. Nice for lightweight fan projects and coding tutorials.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://github.com/shadowoff09/strangerthings-quotes",
+      "baseUrl": "https://strangerthings-quotes.vercel.app",
+      "sampleEndpoint": "/api/quotes",
+      "latencyMs": 1470,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "quote": "All living organisms develop defense mechanisms against attack. They adapt. They find some way to survive.",
+          "author": "Sam Owens"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Stromberg Quotes",
+      "slug": "stromberg-quotes",
+      "emoji": "💼",
+      "tagline": "Quotes, characters, and episodes from sitcom Stromberg",
+      "description": "The Stromberg API serves quotes, characters, and episode data from the German mockumentary sitcom Stromberg. Endpoints under /api return random or searchable JSON with open CORS and no key. Responses are in German, fitting for the source material.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://www.stromberg-api.de/",
+      "baseUrl": "https://www.stromberg-api.de",
+      "sampleEndpoint": "/api/quotes/random",
+      "latencyMs": 917,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 60,
+        "quote": "Deswegen arbeite ich ja so gern mit Frauen zusammen. Frauen haben gerade für diese Branche ganz hervorragende Eigenschaften.",
+        "slug": "deswegen-arbeite-ich-ja-so-gern-mit-frauen-zusammen-frauen",
+        "character_id": 1,
+        "character": { "id": 1, "name": "Bernd Stromberg", "slug": "bernd-stromberg", "age": 45 }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Endpoints (/api/quotes, /api/characters, /api/episodes) discovered from the site's built-in docs component."
+    },
+    {
+      "name": "SWAPI GraphQL",
+      "slug": "swapi-graphql",
+      "emoji": "🌌",
+      "tagline": "Star Wars films, people, and planets over GraphQL",
+      "description": "A GraphQL wrapper around SWAPI covering Star Wars films, characters, planets, and starships. Send the query as a URL parameter on a GET request and it answers with exactly the fields you asked for, no key required. Useful for learning GraphQL against familiar data.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://graphql.org/swapi-graphql",
+      "baseUrl": "https://swapi-graphql.netlify.app/.netlify/functions",
+      "sampleEndpoint": "/index?query=%7BallFilms%7Bfilms%7Btitle%2CreleaseDate%7D%7D%7D",
+      "latencyMs": 1501,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "allFilms": {
+            "films": [
+              { "title": "A New Hope", "releaseDate": "1977-05-25" },
+              { "title": "The Empire Strikes Back", "releaseDate": "1980-05-17" }
+            ]
+          }
+        }
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "GraphQL endpoint; query passed as a URL-encoded GET parameter (no POST body needed)."
+    },
+    {
+      "name": "ThronesApi",
+      "slug": "thronesapi",
+      "emoji": "⚔️",
+      "tagline": "Game of Thrones characters with portraits, as JSON",
+      "description": "ThronesApi lists Game of Thrones characters along with their house, title, and a hosted portrait image URL. A single keyless GET returns the full roster as JSON. Convenient when you want character art plus metadata in one call.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://thronesapi.com/",
+      "baseUrl": "https://thronesapi.com/api/v2",
+      "sampleEndpoint": "/Characters",
+      "latencyMs": 1165,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 0,
+          "firstName": "Daenerys",
+          "lastName": "Targaryen",
+          "fullName": "Daenerys Targaryen",
+          "title": "Mother of Dragons",
+          "family": "House Targaryen",
+          "imageUrl": "https://thronesapi.com/assets/images/daenerys.jpg"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "AviationWeather",
+      "slug": "aviationweather",
+      "emoji": "🛩️",
+      "tagline": "NOAA METARs, TAFs, and PIREPs in machine-readable JSON",
+      "description": "AviationWeather.gov is NOAA/NWS's official feed of aviation weather: METAR observations, TAF forecasts, and pilot reports. Request a station's latest METAR as JSON with a plain GET and no key. Being US Government data, it is public domain. Note: no CORS header is sent.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.aviationweather.gov/dataserver",
+      "baseUrl": "https://aviationweather.gov/api/data",
+      "sampleEndpoint": "/metar?ids=KJFK&format=json",
+      "latencyMs": 661,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "icaoId": "KJFK",
+          "reportTime": "2026-07-05T10:00:00.000Z",
+          "temp": 24.4,
+          "dewp": 20.6,
+          "wdir": 310,
+          "wspd": 3,
+          "visib": "10+",
+          "rawOb": "METAR KJFK 050951Z 31003KT 10SM FEW095 BKN140 BKN250 24/21 A2993 RMK SLP134"
+        }
+      ],
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished (NWS requests reasonable use)",
+      "dataLicense": "Public domain (U.S. Government / NOAA)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "Hong Kong Observatory",
+      "slug": "hong-kong-observatory",
+      "emoji": "🌦️",
+      "tagline": "Hong Kong weather, warnings, and climate open data",
+      "description": "The Hong Kong Observatory's open-data API returns current weather, rainfall by district, forecasts, and warnings as JSON. A single keyless GET with a dataType parameter pulls the current-conditions report. Data is bilingual (English and Chinese) via a lang switch.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.hko.gov.hk/en/abouthko/opendata_intro.htm",
+      "baseUrl": "https://data.weather.gov.hk/weatherAPI/opendata",
+      "sampleEndpoint": "/weather.php?dataType=rhrread&lang=en",
+      "latencyMs": 5138,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "rainfall": {
+          "data": [
+            { "unit": "mm", "place": "Central & Western District", "max": 0, "main": "FALSE" }
+          ]
+        }
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "HKO open data (see terms of use)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "IPMA",
+      "slug": "ipma",
+      "emoji": "☀️",
+      "tagline": "Portugal's official city weather forecasts as JSON",
+      "description": "IPMA, Portugal's meteorological institute, publishes open weather and climate data including multi-day city forecasts. Fetch a city's daily forecast by its numeric ID as static JSON with no key. Attribution to IPMA is expected when you reuse the data.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://api.ipma.pt/open-data/",
+      "baseUrl": "https://api.ipma.pt/open-data",
+      "sampleEndpoint": "/forecast/meteorology/cities/daily/1110600.json",
+      "latencyMs": 640,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "owner": "IPMA",
+        "country": "PT",
+        "data": [
+          {
+            "precipitaProb": "0.0",
+            "tMin": "25.6",
+            "tMax": "38.7",
+            "predWindDir": "NW",
+            "idWeatherType": 5,
+            "forecastDate": "2026-07-05"
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "IPMA open data (attribution 'Fonte: IPMA' expected)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "RainViewer",
+      "slug": "rainviewer",
+      "emoji": "🌧️",
+      "tagline": "Global weather-radar tile timestamps and map metadata",
+      "description": "RainViewer's public API returns the latest global radar and satellite map frames as a JSON index of timestamps and tile paths. One keyless GET gives you everything needed to animate a precipitation radar layer. Attribution to RainViewer is requested.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.rainviewer.com/api.html",
+      "baseUrl": "https://api.rainviewer.com/public",
+      "sampleEndpoint": "/weather-maps.json",
+      "latencyMs": 623,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.0",
+        "generated": 1783246831,
+        "host": "https://tilecache.rainviewer.com",
+        "radar": {
+          "past": [ { "time": 1783239600, "path": "/v2/radar/fdcd7671376b" } ],
+          "nowcast": []
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (attribution requested)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Meteorologisk Institutt",
+      "slug": "meteorologisk-institutt",
+      "emoji": "🌤️",
+      "tagline": "Norwegian Met Institute global forecasts, free with attribution",
+      "description": "The Norwegian Meteorological Institute's api.met.no provides global point forecasts, including the compact locationforecast used here. Pass latitude and longitude and it returns hourly temperature, wind, and precipitation as JSON. It requires an identifying User-Agent and is licensed under CC BY 4.0 / NLOD.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://api.met.no/weatherapi/documentation",
+      "baseUrl": "https://api.met.no/weatherapi",
+      "sampleEndpoint": "/locationforecast/2.0/compact?lat=59.91&lon=10.75",
+      "latencyMs": 1021,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [10.75, 59.91, 3] },
+        "properties": {
+          "meta": { "updated_at": "2026-07-05T09:28:46Z" },
+          "timeseries": [
+            {
+              "time": "2026-07-05T10:00:00Z",
+              "data": { "instant": { "details": { "air_temperature": 19.2, "wind_speed": 4.2 } } }
+            }
+          ]
+        }
+      },
+      "freeTier": "Free, no key; requires identifying User-Agent",
+      "rateLimit": "Throttled; identify via User-Agent and respect caching headers (per docs)",
+      "dataLicense": "CC BY 4.0 / NLOD (Norwegian Licence for Open Government Data)",
+      "commercialUse": "yes"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Drivet URL Shortener",
+      "reason": "Docs wiki (wiki.drivet.xyz) now 302-redirects to a parked/ad landing domain (ww80.drivet.xyz); service appears defunct and no keyless JSON GET endpoint is available."
+    },
+    {
+      "name": "Git.io",
+      "reason": "Service shut down — git.io returns 'URL shortening service is no longer accepting new links.' (GitHub retired it)."
+    },
+    {
+      "name": "Mgnet.me",
+      "reason": "Piracy-adjacent (torrent/magnet URL shortener); docs served over HTTP with an invalid self-signed TLS certificate."
+    },
+    {
+      "name": "Breaking Bad Quotes",
+      "reason": "Blocked by Vercel Security Checkpoint — returns HTTP 429 with an HTML bot-challenge page instead of JSON (2 attempts)."
+    },
+    {
+      "name": "Game of Thrones Quotes",
+      "reason": "Blocked by Vercel Security Checkpoint — returns HTTP 429 with an HTML bot-challenge page instead of JSON."
+    },
+    {
+      "name": "weather-api",
+      "reason": "Hosted instance is broken: /weather/{city} returns HTTP 404 {\"message\":\"NOT_FOUND\"} on both goweather.herokuapp.com and goweather.xyz (3 attempts)."
+    }
+  ]
+}

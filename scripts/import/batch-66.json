@@ -1,0 +1,648 @@
+{
+  "batch": 66,
+  "verified": [
+    {
+      "name": "NeoWs - (Near Earth Object Web Service)",
+      "slug": "neows-near-earth-object-web-service",
+      "emoji": "🎬",
+      "tagline": "A web service for near earth objects. All the data is from the <a href=\"http://n",
+      "description": "A web service for near earth objects. All the data is from the <a href=\"http://neo.jpl.nasa.gov/\" target=\"_blank\">NASA JPL Asteroid team</a>. \n\n \n\nNeoWs is proud to power AsteroidTracker on <a href=\"https://itunes.apple.com/us/app/asteroid-tracker/id689684901?mt=8\" target=\"_blank\">iOS</a> and <a hre",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "http://www.neowsapp.com/",
+      "baseUrl": "http://www.neowsapp.com",
+      "sampleEndpoint": "/rest/v1/feed",
+      "latencyMs": 1610,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": {
+          "next": "http://www.neowsapp.com/rest/v1/feed?start_date=2026-07-12&end_date=2026-07-19&detailed=false",
+          "previous": "http://www.neowsapp.com/rest/v1/feed?start_date=2026-06-28&end_date=2026-07-05&detailed=false",
+          "self": "http://www.neowsapp.com/rest/v1/feed?start_date=2026-07-05&end_date=2026-07-12&detailed=false"
+        },
+        "element_count": 37,
+        "near_earth_objects": {
+          "2026-07-05": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3388486"
+              },
+              "id": "3388486",
+              "neo_reference_id": "3388486",
+              "name": "(2007 TO74)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3388486",
+              "absolute_magnitude_h": 19.82,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.2887719308,
+                  "estimated_diameter_max": 0.6457136672
+                },
+                "meters": {
+                  "estimated_diameter_min": 288.7719307574,
+                  "estimated_diameter_max": 645.7136671674
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.1794345034,
+                  "estimated_diameter_max": 0.4012277471
+                },
+                "feet": {
+                  "estimated_diameter_min": 947.4145013062,
+                  "estimated_diameter_max": 2118.4832277896
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3565416"
+              },
+              "id": "3565416",
+              "neo_reference_id": "3565416",
+              "name": "(2011 JZ10)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3565416",
+              "absolute_magnitude_h": 22.85,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0715409951,
+                  "estimated_diameter_max": 0.1599705282
+                },
+                "meters": {
+                  "estimated_diameter_min": 71.5409950884,
+                  "estimated_diameter_max": 159.9705281956
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0444534997,
+                  "estimated_diameter_max": 0.0994010471
+                },
+                "feet": {
+                  "estimated_diameter_min": 234.7145583258,
+                  "estimated_diameter_max": 524.8377077252
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-06": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3384113"
+              },
+              "id": "3384113",
+              "neo_reference_id": "3384113",
+              "name": "(2007 RT9)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3384113",
+              "absolute_magnitude_h": 19.08,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.4060270583,
+                  "estimated_diameter_max": 0.907904103
+                },
+                "meters": {
+                  "estimated_diameter_min": 406.0270582797,
+                  "estimated_diameter_max": 907.9041030176
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.2522934392,
+                  "estimated_diameter_max": 0.5641452804
+                },
+                "feet": {
+                  "estimated_diameter_min": 1332.1098138863,
+                  "estimated_diameter_max": 2978.6880973444
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3414391"
+              },
+              "id": "3414391",
+              "neo_reference_id": "3414391",
+              "name": "(2008 MG1)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3414391",
+              "absolute_magnitude_h": 19.85,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.2848098313,
+                  "estimated_diameter_max": 0.6368541435
+                },
+                "meters": {
+                  "estimated_diameter_min": 284.8098313322,
+                  "estimated_diameter_max": 636.8541435189
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.1769725697,
+                  "estimated_diameter_max": 0.395722696
+                },
+                "feet": {
+                  "estimated_diameter_min": 934.4154870278,
+                  "estimated_diameter_max": 2089.4165482227
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-07": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/2240320"
+              },
+              "id": "2240320",
+              "neo_reference_id": "2240320",
+              "name": "240320 (2003 HS42)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2240320",
+              "absolute_magnitude_h": 20.28,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.233644185,
+                  "estimated_diameter_max": 0.5224442801
+                },
+                "meters": {
+                  "estimated_diameter_min": 233.6441849736,
+                  "estimated_diameter_max": 522.4442801486
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.1451797209,
+                  "estimated_diameter_max": 0.3246317248
+                },
+                "feet": {
+                  "estimated_diameter_min": 766.5491878289,
+                  "estimated_diameter_max": 1714.0560920828
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3710914"
+              },
+              "id": "3710914",
+              "neo_reference_id": "3710914",
+              "name": "(2015 DC1)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3710914",
+              "absolute_magnitude_h": 24.8,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0291443905,
+                  "estimated_diameter_max": 0.0651688382
+                },
+                "meters": {
+                  "estimated_diameter_min": 29.1443904535,
+                  "estimated_diameter_max": 65.1688382168
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.018109479,
+                  "estimated_diameter_max": 0.0404940262
+                },
+                "feet": {
+                  "estimated_diameter_min": 95.6180819754,
+                  "estimated_diameter_max": 213.8085311752
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-08": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3624233"
+              },
+              "id": "3624233",
+              "neo_reference_id": "3624233",
+              "name": "(2013 BU2)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3624233",
+              "absolute_magnitude_h": 22.7,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0766575574,
+                  "estimated_diameter_max": 0.1714115092
+                },
+                "meters": {
+                  "estimated_diameter_min": 76.6575573531,
+                  "estimated_diameter_max": 171.4115092306
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0476327831,
+                  "estimated_diameter_max": 0.1065101409
+                },
+                "feet": {
+                  "estimated_diameter_min": 251.5011804664,
+                  "estimated_diameter_max": 562.3737359442
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3781708"
+              },
+              "id": "3781708",
+              "neo_reference_id": "3781708",
+              "name": "(2017 RO17)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3781708",
+              "absolute_magnitude_h": 26.1,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0160160338,
+                  "estimated_diameter_max": 0.0358129403
+                },
+                "meters": {
+                  "estimated_diameter_min": 16.0160337979,
+                  "estimated_diameter_max": 35.8129403019
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0099518989,
+                  "estimated_diameter_max": 0.0222531225
+                },
+                "feet": {
+                  "estimated_diameter_min": 52.5460443254,
+                  "estimated_diameter_max": 117.4965270602
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-09": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/2250680"
+              },
+              "id": "2250680",
+              "neo_reference_id": "2250680",
+              "name": "250680 (2005 QC5)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2250680",
+              "absolute_magnitude_h": 19.63,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.3151773333,
+                  "estimated_diameter_max": 0.7047579421
+                },
+                "meters": {
+                  "estimated_diameter_min": 315.1773332628,
+                  "estimated_diameter_max": 704.7579421428
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.1958420547,
+                  "estimated_diameter_max": 0.4379161473
+                },
+                "feet": {
+                  "estimated_diameter_min": 1034.046402062,
+                  "estimated_diameter_max": 2312.1980468998
+                }
+              },
+              "is_potentially_hazardous_asteroid": true
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/2500136"
+              },
+              "id": "2500136",
+              "neo_reference_id": "2500136",
+              "name": "500136 (2012 CO46)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2500136",
+              "absolute_magnitude_h": 22.85,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0715409951,
+                  "estimated_diameter_max": 0.1599705282
+                },
+                "meters": {
+                  "estimated_diameter_min": 71.5409950884,
+                  "estimated_diameter_max": 159.9705281956
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0444534997,
+                  "estimated_diameter_max": 0.0994010471
+                },
+                "feet": {
+                  "estimated_diameter_min": 234.7145583258,
+                  "estimated_diameter_max": 524.8377077252
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-10": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/2452639"
+              },
+              "id": "2452639",
+              "neo_reference_id": "2452639",
+              "name": "452639 (2005 UY6)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2452639",
+              "absolute_magnitude_h": 18.14,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.6259720997,
+                  "estimated_diameter_max": 1.3997161669
+                },
+                "meters": {
+                  "estimated_diameter_min": 625.9720996596,
+                  "estimated_diameter_max": 1399.716166857
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.3889609095,
+                  "estimated_diameter_max": 0.8697430343
+                },
+                "feet": {
+                  "estimated_diameter_min": 2053.7143034471,
+                  "estimated_diameter_max": 4592.2447888713
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3559843"
+              },
+              "id": "3559843",
+              "neo_reference_id": "3559843",
+              "name": "(2011 EP51)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3559843",
+              "absolute_magnitude_h": 25.2,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0242412481,
+                  "estimated_diameter_max": 0.0542050786
+                },
+                "meters": {
+                  "estimated_diameter_min": 24.2412481101,
+                  "estimated_diameter_max": 54.2050786336
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0150628086,
+                  "estimated_diameter_max": 0.0336814639
+                },
+                "feet": {
+                  "estimated_diameter_min": 79.5316564495,
+                  "estimated_diameter_max": 177.8381901842
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-11": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3365951"
+              },
+              "id": "3365951",
+              "neo_reference_id": "3365951",
+              "name": "(2007 AA2)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3365951",
+              "absolute_magnitude_h": 24.6,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0319561887,
+                  "estimated_diameter_max": 0.0714562102
+                },
+                "meters": {
+                  "estimated_diameter_min": 31.9561886721,
+                  "estimated_diameter_max": 71.4562101727
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0198566489,
+                  "estimated_diameter_max": 0.0444008168
+                },
+                "feet": {
+                  "estimated_diameter_min": 104.8431420431,
+                  "estimated_diameter_max": 234.436392583
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3405616"
+              },
+              "id": "3405616",
+              "neo_reference_id": "3405616",
+              "name": "(2008 EU68)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3405616",
+              "absolute_magnitude_h": 21.9,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.1108038821,
+                  "estimated_diameter_max": 0.2477650126
+                },
+                "meters": {
+                  "estimated_diameter_min": 110.8038821264,
+                  "estimated_diameter_max": 247.7650126055
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.068850319,
+                  "estimated_diameter_max": 0.1539539936
+                },
+                "feet": {
+                  "estimated_diameter_min": 363.5298086356,
+                  "estimated_diameter_max": 812.8773639568
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ],
+          "2026-07-12": [
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/2367943"
+              },
+              "id": "2367943",
+              "neo_reference_id": "2367943",
+              "name": "367943 Duende (2012 DA14)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=2367943",
+              "absolute_magnitude_h": 24.19,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0385971268,
+                  "estimated_diameter_max": 0.0863057993
+                },
+                "meters": {
+                  "estimated_diameter_min": 38.5971267955,
+                  "estimated_diameter_max": 86.3057992509
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0239831353,
+                  "estimated_diameter_max": 0.0536279208
+                },
+                "feet": {
+                  "estimated_diameter_min": 126.6309974757,
+                  "estimated_diameter_max": 283.1555184142
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            },
+            {
+              "links": {
+                "self": "http://www.neowsapp.com/rest/v1/neo/3299721"
+              },
+              "id": "3299721",
+              "neo_reference_id": "3299721",
+              "name": "(2005 VN5)",
+              "nasa_jpl_url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=3299721",
+              "absolute_magnitude_h": 27,
+              "estimated_diameter": {
+                "kilometers": {
+                  "estimated_diameter_min": 0.0105816886,
+                  "estimated_diameter_max": 0.023661375
+                },
+                "meters": {
+                  "estimated_diameter_min": 10.5816885933,
+                  "estimated_diameter_max": 23.6613750114
+                },
+                "miles": {
+                  "estimated_diameter_min": 0.0065751544,
+                  "estimated_diameter_max": 0.0147024923
+                },
+                "feet": {
+                  "estimated_diameter_min": 34.7168272045,
+                  "estimated_diameter_max": 77.6291855923
+                }
+              },
+              "is_potentially_hazardous_asteroid": false
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "See documentation",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "batch-input apimap.dev/entertainment"
+    },
+    {
+      "name": "OpenAPI Generator Online",
+      "slug": "openapi-generator-online",
+      "emoji": "🛠",
+      "tagline": "Online API client and server SDK generator supporting 40+ languages and framewor",
+      "description": "Online API client and server SDK generator supporting 40+ languages and frameworks. Generate client libraries or server stubs from any OpenAPI specification.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://github.com/OpenAPITools/openapi-generator",
+      "baseUrl": "https://api.openapi-generator.tech",
+      "sampleEndpoint": "/api/gen/clients",
+      "latencyMs": 838,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "ada",
+        "android"
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "See documentation",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "batch-input apimap.dev/developer"
+    },
+    {
+      "name": "User Data Scraper",
+      "slug": "user-data-scraper",
+      "emoji": "🔍",
+      "tagline": "This API allows users to scrape and retrieve user data from various online sourc",
+      "description": "This API allows users to scrape and retrieve user data from various online sources. It gathers a wide range of user information including names, addresses, phone numbers, and more, which can be utilized for various applications and analytics.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://leakcheck.net/api/public?check=example",
+      "baseUrl": "https://leakcheck.net/api/public?check=example",
+      "sampleEndpoint": "/",
+      "latencyMs": 1176,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": "Your query contains invalid characters"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "batch-input freepublicapis.com"
+    },
+    {
+      "name": "Bright Sky (DWD)",
+      "slug": "bright-sky",
+      "emoji": "🌤",
+      "tagline": "Open weather API built on German Weather Service (DWD) data covering all of Germ",
+      "description": "Open weather API built on German Weather Service (DWD) data covering all of Germany with no key required.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://brightsky.dev/docs/",
+      "baseUrl": "https://api.brightsky.dev",
+      "sampleEndpoint": "/current_weather?lat=52.5&lon=13.4",
+      "latencyMs": 582,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "weather": {
+          "source_id": 303711,
+          "timestamp": "2026-07-05T21:00:00+00:00",
+          "cloud_cover": 100,
+          "condition": "dry",
+          "dew_point": 11.44,
+          "solar_10": 0,
+          "solar_30": 0,
+          "solar_60": 0
+        },
+        "sources": [
+          {
+            "id": 303711,
+            "dwd_station_id": "00433",
+            "observation_type": "synop",
+            "lat": 52.4676,
+            "lon": 13.402,
+            "height": 47.7,
+            "station_name": "Berlin-Tempelhof",
+            "wmo_station_id": "10384"
+          },
+          {
+            "id": 254907,
+            "dwd_station_id": "03987",
+            "observation_type": "synop",
+            "lat": 52.3813,
+            "lon": 13.0622,
+            "height": 80.9,
+            "station_name": "Potsdam",
+            "wmo_station_id": "10379"
+          }
+        ]
+      },
+      "freeTier": "Unlimited, no key, no credit card",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "batch-input freeapi.watch"
+    },
+    {
+      "name": "GeoIP-db",
+      "slug": "geoip-db",
+      "emoji": "🗺",
+      "tagline": "Free IP geolocation API with no key required, returning country, city, state, la",
+      "description": "Free IP geolocation API with no key required, returning country, city, state, latitude, and longitude for any IP.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://geolocation-db.com/",
+      "baseUrl": "https://geolocation-db.com",
+      "sampleEndpoint": "/json/8.8.8.8",
+      "latencyMs": 670,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "country_code": "US",
+        "country_name": "United States",
+        "city": null,
+        "postal": null,
+        "latitude": 37.751,
+        "longitude": -97.822,
+        "IPv4": "8.8.8.8",
+        "state": null
+      },
+      "freeTier": "Unlimited, no key, no credit card",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "batch-input freeapi.watch"
+    }
+  ],
+  "skipped": []
+}

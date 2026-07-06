@@ -1,0 +1,236 @@
+{
+  "batch": 22,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Transport for The Netherlands",
+      "docsUrl": "https://github.com/skywave/KV78Turbo-OVAPI/wiki",
+      "description": "OVAPI, country-wide public transport",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Toronto, Canada",
+      "docsUrl": "https://myttc.ca/developers",
+      "description": "TTC",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Drivet URL Shortener",
+      "docsUrl": "https://wiki.drivet.xyz/en/url-shortener/add-links",
+      "description": "Shorten a long URL easily and fast",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Git.io",
+      "docsUrl": "https://github.blog/2011-11-10-git-io-github-url-shortener/",
+      "description": "Git.io URL shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mgnet.me",
+      "docsUrl": "http://mgnet.me/api.html",
+      "description": "Torrent URL shorten API",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Auto Body Shop Directory",
+      "docsUrl": "https://autobodyshopnear.com/developers/body-shop-api",
+      "description": "Find auto body shops by ZIP code, city, location, or profile",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Vehicle",
+      "docsCheck": 200
+    },
+    {
+      "name": "Brazilian Vehicles and Prices",
+      "docsUrl": "https://deividfortuna.github.io/fipe/",
+      "description": "Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Vehicle",
+      "docsCheck": 200
+    },
+    {
+      "name": "NHTSA",
+      "docsUrl": "https://vpic.nhtsa.dot.gov/api/",
+      "description": "NHTSA Product Information Catalog and Vehicle Listing",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Vehicle",
+      "docsCheck": 200
+    },
+    {
+      "name": "An API of Ice And Fire",
+      "docsUrl": "https://anapioficeandfire.com/",
+      "description": "Game Of Thrones API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Breaking Bad Quotes",
+      "docsUrl": "https://github.com/shevabam/breaking-bad-quotes",
+      "description": "Some Breaking Bad quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Game of Thrones Quotes",
+      "docsUrl": "https://gameofthronesquotes.xyz/",
+      "description": "Some Game of Thrones quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lucifer Quotes",
+      "docsUrl": "https://github.com/shadowoff09/lucifer-quotes",
+      "description": "Returns Lucifer quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ron Swanson Quotes",
+      "docsUrl": "https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api",
+      "description": "Television",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Stranger Things Quotes",
+      "docsUrl": "https://github.com/shadowoff09/strangerthings-quotes",
+      "description": "Returns Stranger Things quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Stromberg Quotes",
+      "docsUrl": "https://www.stromberg-api.de/",
+      "description": "Returns Stromberg quotes and more",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "SWAPI GraphQL",
+      "docsUrl": "https://graphql.org/swapi-graphql",
+      "description": "Star Wars GraphQL API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "ThronesApi",
+      "docsUrl": "https://thronesapi.com/",
+      "description": "Game Of Thrones Characters Data with imagery",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "AviationWeather",
+      "docsUrl": "https://www.aviationweather.gov/dataserver",
+      "description": "NOAA aviation weather forecasts and observations",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "Hong Kong Obervatory",
+      "docsUrl": "https://www.hko.gov.hk/en/abouthko/opendata_intro.htm",
+      "description": "Provide weather information, earthquake information, and climate data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "IPMA",
+      "docsUrl": "https://api.ipma.pt/open-data/",
+      "description": "Portuguese weather and climate data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "RainViewer",
+      "docsUrl": "https://www.rainviewer.com/api.html",
+      "description": "Radar data collected from different websites across the Internet",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "weather-api",
+      "docsUrl": "https://github.com/robertoduessmann/weather-api",
+      "description": "A RESTful free API to check the weather",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "Meteorologisk Institutt",
+      "docsUrl": "https://api.met.no/weatherapi/documentation",
+      "description": "Weather and climate data",
+      "auth": "userAgent",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    }
+  ]
+}

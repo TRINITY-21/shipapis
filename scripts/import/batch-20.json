@@ -1,0 +1,383 @@
+{
+  "batch": 20,
+  "verified": [
+    {
+      "name": "USGS Earthquake Hazards Program",
+      "slug": "usgs-earthquake-hazards-program",
+      "emoji": "🌎",
+      "tagline": "Real-time global earthquake feeds as GeoJSON",
+      "description": "The USGS FDSN event service streams earthquake catalogs going back decades, filterable by time, place, and magnitude. Ask for GeoJSON and you get tidy Features carrying location, depth, and shake metadata for every quake. No key, wide-open CORS, and it's U.S. government public-domain data.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "baseUrl": "https://earthquake.usgs.gov/fdsnws/event/1",
+      "sampleEndpoint": "/query?format=geojson&limit=1&starttime=2024-01-01&endtime=2024-01-02",
+      "latencyMs": 2902,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "metadata": { "generated": 1783247028000, "title": "USGS Earthquakes", "status": 200, "api": "2.7.0", "limit": 1 },
+        "features": [
+          { "type": "Feature", "properties": { "mag": 0.65, "place": "15 km S of Anza, CA", "time": 1704153354690, "magType": "ml", "type": "earthquake", "title": "M 0.7 - 15 km S of Anza, CA" } }
+        ]
+      },
+      "freeTier": "Free — no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Public domain (U.S. Government work)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "USGS Water Services",
+      "slug": "usgs-water-services",
+      "emoji": "💧",
+      "tagline": "Live streamflow and gauge readings for US waters",
+      "description": "USGS Water Services exposes instantaneous and historical measurements from thousands of stream, lake, and groundwater sites across the United States. Query by site number and parameter code (like 00060 for discharge) and receive WaterML-flavored JSON. Public-domain data with no signup required.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://waterservices.usgs.gov/",
+      "baseUrl": "https://waterservices.usgs.gov/nwis",
+      "sampleEndpoint": "/iv/?format=json&sites=01646500&parameterCd=00060&siteStatus=all",
+      "latencyMs": 2263,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "ns1:timeSeriesResponseType",
+        "declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+        "value": {
+          "queryInfo": { "criteria": { "locationParam": "[ALL:01646500]", "variableParam": "[00060]" } },
+          "timeSeries": ["… discharge readings for USGS site 01646500 (truncated) …"]
+        }
+      },
+      "freeTier": "Free — no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Public domain (U.S. Government work)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "World Bank",
+      "slug": "world-bank",
+      "emoji": "🏦",
+      "tagline": "Development indicators for every country on Earth",
+      "description": "The World Bank's open data API serves thousands of development indicators — GDP, population, health, education — across countries and decades. Endpoints return paginated JSON with a metadata header followed by the data array. Free, keyless, and released under CC BY 4.0.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "baseUrl": "https://api.worldbank.org/v2",
+      "sampleEndpoint": "/country/US?format=json",
+      "latencyMs": 1109,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "page": 1, "pages": 1, "per_page": "50", "total": 1 },
+        [
+          { "id": "USA", "iso2Code": "US", "name": "United States", "region": { "value": "North America" }, "incomeLevel": { "value": "High income" }, "capitalCity": "Washington D.C.", "longitude": "-77.032", "latitude": "38.8895" }
+        ]
+      ],
+      "freeTier": "Free — no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "FilterLists",
+      "slug": "filterlists",
+      "emoji": "🛡️",
+      "tagline": "The directory of adblock and firewall filter lists",
+      "description": "FilterLists catalogs hundreds of filter lists used by ad blockers, firewalls, and hosts files, along with their maintainers, licenses, syntaxes, and languages. The REST endpoint returns the full catalog as JSON so you can build tooling around block-list metadata. Keyless, though it sends no CORS headers.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://filterlists.com",
+      "baseUrl": "https://api.filterlists.com",
+      "sampleEndpoint": "/lists",
+      "latencyMs": 1539,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "id": 1, "name": "AdGuard Japanese filter Plus", "description": "This complements AdGuard Japanese filter and mainly consists of additional generic and specific rules…", "licenseId": 4, "syntaxIds": [4], "languageIds": [73], "tagIds": [2], "maintainerIds": [150] }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Microsoft Security Response Center (MSRC)",
+      "slug": "microsoft-security-response-center-msrc",
+      "emoji": "🔒",
+      "tagline": "Microsoft's security update documents, as CVRF JSON",
+      "description": "The Microsoft Security Response Center API publishes machine-readable security update summaries in the CVRF format. The updates endpoint lists every monthly release with titles, dates, and links to the full vulnerability documents. No key needed — but it quietly returns an empty body unless your client sends a browser-like User-Agent.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://msrc.microsoft.com/report/developer",
+      "baseUrl": "https://api.msrc.microsoft.com",
+      "sampleEndpoint": "/cvrf/v3.0/updates",
+      "latencyMs": 1544,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@odata.context": "https://api.msrc.microsoft.com/$metadata#Updates",
+        "value": [
+          { "ID": "1999-Sep", "Alias": "1999-Sep", "DocumentTitle": "Mariner Release Notes", "Severity": null, "InitialReleaseDate": "1999-09-02T00:00:00Z", "CurrentReleaseDate": "2025-10-01T23:10:48Z", "CvrfUrl": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/1999-Sep" }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Returns an empty 200 body to non-browser User-Agents (WAF); works with a browser-like UA. No CORS headers observed."
+    },
+    {
+      "name": "National Vulnerability Database",
+      "slug": "national-vulnerability-database",
+      "emoji": "🐞",
+      "tagline": "The US government's CVE vulnerability database",
+      "description": "NIST's National Vulnerability Database offers the canonical REST feed for CVE records, complete with descriptions, CVSS scores, and references. Look up a single CVE by ID or page through the whole corpus. Keyless access is capped at five requests per 30 seconds; a free key lifts that ceiling.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://nvd.nist.gov/developers/vulnerabilities",
+      "baseUrl": "https://services.nvd.nist.gov/rest/json",
+      "sampleEndpoint": "/cves/2.0?cveId=CVE-2019-1010218",
+      "latencyMs": 1153,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "resultsPerPage": 1,
+        "startIndex": 0,
+        "totalResults": 1,
+        "format": "NVD_CVE",
+        "version": "2.0",
+        "vulnerabilities": [
+          { "cve": { "id": "CVE-2019-1010218", "sourceIdentifier": "josh@bress.net", "published": "2019-07-22T18:15:10.917", "vulnStatus": "Modified" } }
+        ]
+      },
+      "freeTier": "Free — no key required (free key raises limits)",
+      "rateLimit": "5 requests per rolling 30 seconds without an API key (50 with a free key)",
+      "dataLicense": "Public domain (U.S. Government work)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "UK Police",
+      "slug": "uk-police",
+      "emoji": "🚓",
+      "tagline": "Street-level crime and policing data for England & Wales",
+      "description": "The data.police.uk API opens up street-level crimes, outcomes, stop-and-search records, and neighbourhood boundaries from UK police forces. This endpoint lists which months of data each force has published. Free, keyless, and released under the Open Government Licence.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://data.police.uk/docs/",
+      "baseUrl": "https://data.police.uk/api",
+      "sampleEndpoint": "/crimes-street-dates",
+      "latencyMs": 1053,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "date": "2026-04", "stop-and-search": ["avon-and-somerset", "btp", "cambridgeshire", "…"] },
+        { "date": "2026-03", "stop-and-search": ["avon-and-somerset", "bedfordshire", "…"] }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Licence v3.0",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "HackerNews",
+      "slug": "hackernews",
+      "emoji": "🟧",
+      "tagline": "Read every Hacker News story and comment via Firebase",
+      "description": "Y Combinator's Hacker News exposes its entire item graph — stories, comments, jobs, polls, and users — through a simple Firebase REST API. Fetch any item by ID to get its author, score, timestamp, and child comment IDs. No key, and it even echoes your Origin for CORS.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://github.com/HackerNews/API",
+      "baseUrl": "https://hacker-news.firebaseio.com/v0",
+      "sampleEndpoint": "/item/8863.json",
+      "latencyMs": 676,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "by": "dhouston",
+        "descendants": 71,
+        "id": 8863,
+        "score": 104,
+        "time": 1175714200,
+        "title": "My YC app: Dropbox - Throw away your USB drive",
+        "type": "story",
+        "url": "http://www.getdropbox.com/u/2/screencast.html"
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "City Bikes",
+      "slug": "city-bikes",
+      "emoji": "🚲",
+      "tagline": "Live bike-share stations from 500+ networks worldwide",
+      "description": "CityBikes aggregates real-time bike-sharing data from hundreds of systems across the globe into one consistent API. List every network with its location and operator, then drill into any network for live station availability. Free and keyless with permissive CORS.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://api.citybik.es/v2/",
+      "baseUrl": "https://api.citybik.es/v2",
+      "sampleEndpoint": "/networks",
+      "latencyMs": 1426,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "networks": [
+          { "id": "abu-dhabi-careem-bike", "name": "Abu Dhabi Careem BIKE", "location": { "latitude": 24.4866, "longitude": 54.3728, "city": "Abu Dhabi", "country": "AE" }, "href": "/v2/networks/abu-dhabi-careem-bike", "company": ["Careem"] }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "NHL Records and Stats",
+      "slug": "nhl-records-and-stats",
+      "emoji": "🏒",
+      "tagline": "Unofficial NHL franchise, records, and standings data",
+      "description": "The NHL's public web endpoints (records.nhl.com and api-web.nhle.com) return rich JSON on franchises, standings, schedules, and historical records. This franchise list maps every team past and present to its abbreviations and seasons. Undocumented and unofficial, but keyless and live.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://gitlab.com/dword4/nhlapi",
+      "baseUrl": "https://records.nhl.com/site/api",
+      "sampleEndpoint": "/franchise",
+      "latencyMs": 1206,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          { "id": 1, "firstSeasonId": 19171918, "fullName": "Montréal Canadiens", "lastSeasonId": null, "mostRecentTeamId": 8, "teamAbbrev": "MTL", "teamCommonName": "Canadiens", "teamPlaceName": "Montréal" }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Unofficial, undocumented NHL endpoints (records.nhl.com / api-web.nhle.com). No CORS headers observed."
+    },
+    {
+      "name": "RacingHub",
+      "slug": "racinghub",
+      "emoji": "🏎️",
+      "tagline": "Formula 1 history from 1950 to today, as clean JSON",
+      "description": "RacingHub is an open-source REST API wrapping the F1DB dataset of Formula 1 seasons, drivers, constructors, race results, and standings. Endpoints are paginated JSON — the seasons list summarizes champions and race counts year by year. Free and keyless; an independent project not affiliated with Formula 1.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://racinghub.net/api/v1/docs#/",
+      "baseUrl": "https://racinghub.net/api/v1",
+      "sampleEndpoint": "/seasons",
+      "latencyMs": 720,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          { "year": 2026, "total_races": 22, "total_drivers": 31, "total_constructors": 11, "champion": { "driver_id": "kimi-antonelli", "driver_name": "Andrea Kimi Antonelli", "points": 171.0, "race_wins": 5 }, "constructor_champion": { "constructor_id": "mercedes", "constructor_name": "Mercedes", "points": 302.0 } }
+        ],
+        "page": 1,
+        "total": 77,
+        "total_pages": 77,
+        "has_next": true
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0 (source data from the F1DB project)",
+      "commercialUse": "unclear",
+      "notes": "Independent project, not affiliated with or endorsed by Formula 1."
+    },
+    {
+      "name": "TourneyRadar",
+      "slug": "tourneyradar",
+      "emoji": "♟️",
+      "tagline": "Upcoming chess tournaments from 140+ federations",
+      "description": "TourneyRadar collects upcoming over-the-board chess tournaments from national federations around the world into one JSON feed. Browse events with dates, categories, locations, and geo-coordinates, or search across them. Free, keyless, and CORS-friendly, though it's a community project with no published terms.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://tourneyradar-api.vercel.app",
+      "baseUrl": "https://tourneyradar-api.vercel.app",
+      "sampleEndpoint": "/v1/tournaments",
+      "latencyMs": 1989,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          { "id": "cr_1371843", "name": "IRT Rápido \"MES DE LA MUJER\" del Centro Español - 2026", "category": "Rapid", "location": "Centro Español - San Martín, Santa Fe", "state": "Argentina", "date": "2026-03-24", "lat": -31.6500228, "lng": -60.7076827 }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Bacon Ipsum",
+      "slug": "bacon-ipsum",
+      "emoji": "🥓",
+      "tagline": "Meat-flavored lorem ipsum placeholder text",
+      "description": "Bacon Ipsum generates filler text seasoned with cuts of meat instead of Latin. Ask its JSON API for a number of paragraphs — all-meat or meat-and-filler — and it returns an array of savory placeholder strings. Free and keyless with open CORS.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://baconipsum.com/json-api/",
+      "baseUrl": "https://baconipsum.com/api",
+      "sampleEndpoint": "/?type=meat-and-filler&paras=2&format=json",
+      "latencyMs": 948,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "Tri-tip filet mignon beef esse. Anim velit et mollit jerky ea voluptate. Quis ribeye cow consequat, capicola meatloaf in eu burgdoggen. …"
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Dicebear Avatars",
+      "slug": "dicebear-avatars",
+      "emoji": "🧑‍🎨",
+      "tagline": "Deterministic SVG avatars from any seed string",
+      "description": "DiceBear renders customizable avatars in dozens of styles from a seed you choose, so the same input always yields the same face. The /json endpoint returns the avatar as an SVG string wrapped in JSON, ready to inline. Keyless with open CORS; the sampled Pixel Art style ships under CC0.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://www.dicebear.com/",
+      "baseUrl": "https://api.dicebear.com/9.x",
+      "sampleEndpoint": "/pixel-art/json?seed=Felix",
+      "latencyMs": 688,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" shape-rendering=\"crispEdges\">… pixel-art avatar for seed 'Felix' (truncated) …</svg>"
+      },
+      "freeTier": "Free — no key required (self-hosting advised for heavy use)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "MIT (library); avatar styles vary — sampled Pixel Art is CC0 1.0",
+      "commercialUse": "unclear",
+      "notes": "Old avatars.dicebear.com is deprecated; current API is api.dicebear.com. Licenses differ per avatar style."
+    },
+    {
+      "name": "FakeStoreAPI",
+      "slug": "fakestoreapi",
+      "emoji": "🛒",
+      "tagline": "Fake products, carts, and users for e-commerce demos",
+      "description": "FakeStoreAPI serves realistic-looking but fictional store data — products, categories, carts, and users — for prototyping shopping UIs. Grab a single product to get its title, price, category, image, and rating. Free and keyless with open CORS.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://fakestoreapi.com/",
+      "baseUrl": "https://fakestoreapi.com",
+      "sampleEndpoint": "/products/1",
+      "latencyMs": 578,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest…",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+        "rating": { "rate": 3.9, "count": 120 }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "Escape", "reason": "Hosted endpoint (s.polarspetroll.repl.co) no longer resolves — Replit repl.co hosting was discontinued." },
+    { "name": "Mozilla http scanner", "reason": "Observatory API requires a POST to start a scan; no keyless JSON GET (GET /scan returns 404)." },
+    { "name": "Mozilla tls scanner", "reason": "tls-observatory.services.mozilla.com no longer connects — service decommissioned." },
+    { "name": "PhishStats", "reason": "Site rebuilt on Astro; documented REST endpoint /api/phishing now 404s — no keyless JSON GET found within attempts." },
+    { "name": "URLhaus", "reason": "urlhaus-api.abuse.ch requires an Auth-Key header (401 Unauthorized) — no keyless access." },
+    { "name": "Fuck Off as a Service", "reason": "Profanity-as-a-service — skipped as NSFW per policy." },
+    { "name": "Hashnode", "reason": "GraphQL-only API (POST to /graphql) — no keyless JSON GET endpoint." },
+    { "name": "Open Collective", "reason": "GraphQL-only API (POST to /graphql) — no keyless JSON GET endpoint." },
+    { "name": "NBA Stats", "reason": "stats.nba.com does not respond to server-side requests (connection times out) and requires browser-specific headers." }
+  ]
+}

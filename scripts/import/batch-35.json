@@ -1,0 +1,346 @@
+{
+  "batch": 35,
+  "verified": [
+    {
+      "name": "TVMaze",
+      "slug": "tvmaze",
+      "emoji": "📺",
+      "tagline": "Search TV shows, episodes and cast from a community DB",
+      "description": "TVMaze exposes a keyless REST API for television metadata: show details, episode lists, air schedules, cast and crew. Query by name or ID and get clean JSON back, with no signup on the free tier.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://www.tvmaze.com/api",
+      "baseUrl": "https://api.tvmaze.com",
+      "sampleEndpoint": "/search/shows?q=girls",
+      "latencyMs": 1006,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "score": 0.90090525,
+          "show": {
+            "id": 139,
+            "name": "Girls",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Romance"],
+            "status": "Ended",
+            "premiered": "2012-04-15"
+          }
+        }
+      ],
+      "freeTier": "Free for personal/non-commercial use, no key",
+      "rateLimit": "At least 20 calls per 10 seconds per IP (per docs)",
+      "dataLicense": "CC BY-SA (attribution required, per docs)",
+      "commercialUse": "no"
+    },
+    {
+      "name": "Metro Lisboa",
+      "slug": "metro-lisboa",
+      "emoji": "🚇",
+      "tagline": "Live service status for Lisbon Metro's four colored lines",
+      "description": "Returns the current running status of Lisbon Metro's yellow, blue, green and red lines as simple JSON. It is the same public feed that powers the operator's status page, refreshed in near real time.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://app.metrolisboa.pt/status/getLinhas.php",
+      "baseUrl": "https://app.metrolisboa.pt",
+      "sampleEndpoint": "/status/getLinhas.php",
+      "latencyMs": 1240,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "resposta": {
+          "amarela": " Ok",
+          "azul": " Ok",
+          "verde": " Ok",
+          "vermelha": " Ok",
+          "tipo_msg_am": "0"
+        },
+        "codigo": "200"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The official OAuth API at api.metrolisboa.pt needs a key; this app.metrolisboa.pt status feed is keyless."
+    },
+    {
+      "name": "Transport for Grenoble, France",
+      "slug": "transport-for-grenoble-france",
+      "emoji": "🚊",
+      "tagline": "Grenoble tram and bus routes, stops and times as JSON",
+      "description": "The Metromobilite open-data API serves the SMMAG transit network around Grenoble, France. This keyless endpoint lists every tram and bus route with names, colors and modes; other paths cover stops and real-time arrivals.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html",
+      "baseUrl": "https://data.mobilites-m.fr",
+      "sampleEndpoint": "/api/routers/default/index/routes",
+      "latencyMs": 1982,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "SEM:A",
+          "gtfsId": "SEM:A",
+          "shortName": "A",
+          "longName": "Fontaine La Poya / Le Pont-de-Claix L'Etoile",
+          "color": "3376B8",
+          "textColor": "FFFFFF",
+          "mode": "TRAM",
+          "type": "TRAM"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Transport for Paris, France",
+      "slug": "transport-for-paris-france",
+      "emoji": "🚇",
+      "tagline": "Explore RATP Paris open-data datasets over a JSON API",
+      "description": "RATP publishes Paris transit open data through an OpenDataSoft portal with a fully keyless REST API. Browse the dataset catalog or query records for things like station traffic and air quality, all returned as JSON.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://data.ratp.fr/",
+      "baseUrl": "https://data.ratp.fr",
+      "sampleEndpoint": "/api/explore/v2.1/catalog/datasets?limit=1",
+      "latencyMs": 672,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total_count": 25,
+        "results": [
+          {
+            "dataset_id": "qualite-de-lair-mesuree-dans-la-station-saint-germain-des-pres-de-2024-a-nos-jours-",
+            "dataset_uid": "da_kfcq65",
+            "visibility": "domain"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "OpenDataSoft platform defaults (unpublished here)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Transport for Philadelphia, US",
+      "slug": "transport-for-philadelphia-us",
+      "emoji": "🚆",
+      "tagline": "Real-time SEPTA Philadelphia train positions and delays",
+      "description": "SEPTA's public API reports live regional-rail train locations, destinations, delays and next stops for the Philadelphia area. No key is required; the TrainView endpoint returns an array of every active train as JSON.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www3.septa.org/hackathon/",
+      "baseUrl": "https://www3.septa.org",
+      "sampleEndpoint": "/api/TrainView/index.php",
+      "latencyMs": 1843,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "trainno": "1713",
+          "service": "LOCAL",
+          "dest": "Trenton",
+          "currentstop": "Holmesburg Jct",
+          "nextstop": "Torresdale",
+          "line": "Trenton",
+          "late": 16,
+          "SOURCE": "Jefferson"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Transport for United States",
+      "slug": "transport-for-united-states",
+      "emoji": "🚌",
+      "tagline": "Live bus and transit predictions across US agencies",
+      "description": "The Umo IQ (formerly NextBus) public JSON feed covers dozens of North American transit agencies. Start from the agency list, then drill into routes, stops and real-time vehicle predictions, no key needed.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://retro.umoiq.com/xmlFeedDocs/NextBusXMLFeed.pdf",
+      "baseUrl": "https://retro.umoiq.com",
+      "sampleEndpoint": "/service/publicJSONFeed?command=agencyList",
+      "latencyMs": 1712,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "copyright": "All data copyright agencies listed below and Umo IQ 2026.",
+        "agency": [
+          {
+            "tag": "jhu-apl",
+            "regionTitle": "Maryland",
+            "title": "APL"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Data copyright transit agencies / Umo IQ",
+      "commercialUse": "unclear",
+      "notes": "Docs are for the XML feed; publicJSONFeed returns the same data as JSON."
+    },
+    {
+      "name": "ReSmush.it",
+      "slug": "resmush-it",
+      "emoji": "🗜️",
+      "tagline": "Free image optimization: shrink JPG, PNG and more by URL",
+      "description": "Point reSmush.it at an image URL and it returns a compressed copy plus before/after byte sizes as JSON. It is a keyless optimization service supporting JPG, PNG, GIF, BMP and TIFF with adjustable quality.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://resmush.it/api",
+      "baseUrl": "http://api.resmush.it",
+      "sampleEndpoint": "/ws.php?img=https://www.gstatic.com/webp/gallery/1.jpg&qlty=80",
+      "latencyMs": 372,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "src": "https://www.gstatic.com/webp/gallery/1.jpg",
+        "dest": "http://hel1.static.resmush.it/483d8b9a72d84bff4ca924ba7e487cf1/1.jpg",
+        "src_size": 44891,
+        "dest_size": 43470,
+        "percent": 3,
+        "output": "json",
+        "generator": "reSmush.it rev.3.0.11.20240125"
+      },
+      "freeTier": "Free; per-image size cap applies (see docs)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "N/A — optimization service, not a dataset",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Government, Romania",
+      "slug": "open-government-romania",
+      "emoji": "🇷🇴",
+      "tagline": "Romania's national open-data catalog over the CKAN API",
+      "description": "data.gov.ro is Romania's official open-data portal running on CKAN, so it speaks the standard CKAN Action API. This keyless call lists dataset identifiers; further endpoints return metadata and downloadable resources across government topics.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.gov.ro/",
+      "baseUrl": "https://data.gov.ro",
+      "sampleEndpoint": "/api/3/action/package_list",
+      "latencyMs": 1027,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://data.gov.ro/api/3/action/help_show?name=package_list",
+        "success": true,
+        "result": [
+          "000a8540-6786-436d-ad66-25351e087fc6",
+          "007119c6-e2d3-48c3-8780-3390d79e5112"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Varies by dataset (CKAN portal)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Minor Planet Center",
+      "slug": "minor-planet-center",
+      "emoji": "☄️",
+      "tagline": "Query asteroids by orbit, size and value via Asterank",
+      "description": "Asterank wraps Minor Planet Center and JPL orbital data behind a keyless query API. Send a MongoDB-style filter and get back asteroids with diameter, orbital elements, albedo and Asterank's estimated mining value as JSON.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "http://www.asterank.com/mpc",
+      "baseUrl": "http://www.asterank.com",
+      "sampleEndpoint": "/api/asterank?query=%7B%7D&limit=1",
+      "latencyMs": 854,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "full_name": "1 Ceres",
+          "diameter": 939.4,
+          "albedo": 0.09,
+          "neo": "N",
+          "pha": "N",
+          "per_y": 4.6082017811786,
+          "spkid": 2000001,
+          "id": "a0000001"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data derived from JPL/MPC)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "MLB Records and Stats",
+      "slug": "mlb-records-and-stats",
+      "emoji": "⚾",
+      "tagline": "Official MLB stats: teams, standings, players and games",
+      "description": "MLB's Stats API serves current and historical baseball data, teams, rosters, standings, schedules and box scores, without an API key. Responses are JSON and carry MLB Advanced Media's copyright terms.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://appac.github.io/mlb-data-api-docs/",
+      "baseUrl": "https://statsapi.mlb.com/api/v1",
+      "sampleEndpoint": "/teams?sportId=1",
+      "latencyMs": 965,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "copyright": "Copyright 2026 MLB Advanced Media, L.P.",
+        "teams": [
+          {
+            "id": 133,
+            "name": "Athletics",
+            "teamName": "Athletics",
+            "locationName": "Sacramento",
+            "league": "American League",
+            "division": "American League West",
+            "venue": "Sutter Health Park"
+          }
+        ]
+      },
+      "freeTier": "Free — no key; subject to MLB copyright terms",
+      "rateLimit": "Unpublished",
+      "dataLicense": "MLB Advanced Media copyright (see terms)",
+      "commercialUse": "no",
+      "notes": "The candidate's appac docs wrap the retired lookup-service-prod.mlb.com endpoint (now HTTP 530); the live keyless base is statsapi.mlb.com."
+    },
+    {
+      "name": "Chronicling America",
+      "slug": "chronicling-america",
+      "emoji": "📰",
+      "tagline": "Search millions of digitized historic US newspaper pages",
+      "description": "The Library of Congress serves its Chronicling America collection of historic American newspapers as JSON through the loc.gov API. Search by keyword, place or date to retrieve page-level records with titles, dates and image links.",
+      "sourceCategory": "News",
+      "docsUrl": "https://www.loc.gov/apis/",
+      "baseUrl": "https://www.loc.gov",
+      "sampleEndpoint": "/collections/chronicling-america/?fo=json&c=1&at=results",
+      "latencyMs": 2651,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "title": "The monitor (Omaha, Neb.), July 3, 1915",
+            "date": "1915-07-03",
+            "contributor": ["university of nebraska-lincoln libraries, lincoln, ne"],
+            "subject": ["nebraska", "douglas", "united states", "omaha"],
+            "digitized": true,
+            "language": ["english"]
+          }
+        ]
+      },
+      "freeTier": "Free — public-domain collection data",
+      "rateLimit": "LoC throttles heavy crawling (see LoC API policy)",
+      "dataLicense": "Public domain / no known copyright (Library of Congress)",
+      "commercialUse": "yes",
+      "notes": "The documented chroniclingamerica.loc.gov endpoint returns HTTP 403 to bots; the same collection is served via the loc.gov JSON API used here."
+    }
+  ],
+  "skipped": [
+    { "name": "Makeup", "reason": "makeup-api.herokuapp.com returns HTTP 503 (Heroku free dynos retired; app down)" },
+    { "name": "18F", "reason": "Docs URL 404; API-All-the-X project is dead/archived" },
+    { "name": "Urban Observatory", "reason": "No keyless JSON endpoint found after 3 attempts (paths 404 or return HTML)" },
+    { "name": "Countly", "reason": "Analytics ingestion API requiring an app_key; not a keyless data GET" },
+    { "name": "Forismatic", "reason": "api.forismatic.com returns HTTP 404; endpoint appears dead" },
+    { "name": "Numbers", "reason": "numbersapi.com returns HTTP 404 over http and https; service down" },
+    { "name": "SuredBits", "reason": "Sports API discontinued; host unreachable (docsCheck 0)" },
+    { "name": "Loripsum", "reason": "Returns HTML lorem-ipsum markup, not JSON" },
+    { "name": "Metaphorsum", "reason": "Returns plain-text paragraphs, not JSON" },
+    { "name": "Postmon", "reason": "api.postmon.com.br returns HTTP 503 across attempts; service unavailable" },
+    { "name": "Transport for Atlanta, US", "reason": "MARTA API requires a registered API key" },
+    { "name": "Transport for Denver, US", "reason": "RTD offers only GTFS static (zip) and GTFS-realtime (protobuf); no keyless JSON" },
+    { "name": "Czech Television", "reason": "TV programme feed is XML, not JSON" },
+    { "name": "ODWeather", "reason": "api.oceandrivers.com endpoints return HTTP 404; service abandoned" }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "batch": 21,
+  "verified": [
+    {
+      "name": "ItsThisForThat",
+      "slug": "itsthisforthat",
+      "emoji": "💡",
+      "tagline": "Instant mad-lib startup pitches, one JSON call at a time",
+      "description": "Returns a randomly mashed-up 'X for Y' startup concept as a tiny JSON object with `this` and `that` fields. Perfect filler for demos, placeholder copy, or a laugh in standup. No key, no signup, just hit the endpoint.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://itsthisforthat.com/api.php",
+      "baseUrl": "https://itsthisforthat.com",
+      "sampleEndpoint": "/api.php?json",
+      "latencyMs": 727,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": { "this": "KickStarter", "that": "Cracked iPhone Apps" },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished (docs ask you not to hammer it)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Content-Type is text/javascript but the body is valid JSON when ?json is passed."
+    },
+    {
+      "name": "RandomUser",
+      "slug": "randomuser",
+      "emoji": "🧑",
+      "tagline": "Fake but realistic user profiles for your test fixtures",
+      "description": "Generates lifelike random people with names, addresses, emails, logins, and photo URLs. Handy for seeding databases, mocking UIs, or load-testing forms without touching real PII. Returns clean JSON and supports nationality and field filters.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://randomuser.me",
+      "baseUrl": "https://randomuser.me",
+      "sampleEndpoint": "/api/",
+      "latencyMs": 923,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "gender": "female",
+            "name": { "title": "Miss", "first": "Hilda", "last": "Phillips" },
+            "email": "hilda.phillips@example.com",
+            "login": { "username": "blueleopard165" }
+          }
+        ]
+      },
+      "freeTier": "Free — no key or signup",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (generated data; sample photos governed by UI Faces terms)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "UUID Generator",
+      "slug": "uuid-generator",
+      "emoji": "🆔",
+      "tagline": "Bulk RFC-compliant UUIDs served straight as JSON",
+      "description": "Generates v1/v3/v4/v5 UUIDs on demand and hands them back as a plain JSON array. Point it at /api/generate/v1 for a fresh identifier or request batches for seeding. No account, no key, CORS-friendly.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://www.uuidtools.com/docs",
+      "baseUrl": "https://www.uuidtools.com",
+      "sampleEndpoint": "/api/generate/v1",
+      "latencyMs": 969,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": ["9ca16a40-785b-11f1-8afc-325096b39f47"],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Yes No",
+      "slug": "yes-no",
+      "emoji": "🎱",
+      "tagline": "A coin-flip oracle that answers yes, no, or maybe",
+      "description": "Returns a random yes/no/maybe verdict plus a matching animated GIF, all as JSON. Great for magic-8-ball bots, decision-paralysis jokes, or teaching students to parse an API. Keyless and open to cross-origin requests.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://yesno.wtf/api",
+      "baseUrl": "https://yesno.wtf",
+      "sampleEndpoint": "/api",
+      "latencyMs": 1618,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "answer": "yes",
+        "forced": false,
+        "image": "https://yesno.wtf/assets/yes/3-422e51268d64d78241720a7de52fe121.gif"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "LibreTranslate",
+      "slug": "libretranslate",
+      "emoji": "🌐",
+      "tagline": "Self-hostable machine translation with an open API",
+      "description": "An open-source translation engine whose hosted instance exposes /languages as a keyless JSON GET listing supported language pairs. The actual /translate call on the public host may require an API key or donation. The software is AGPL-3.0 and can be self-hosted for unrestricted use.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://libretranslate.com/docs",
+      "baseUrl": "https://libretranslate.com",
+      "sampleEndpoint": "/languages",
+      "latencyMs": 649,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "code": "en", "name": "English", "targets": ["ar", "az", "bg"] },
+        { "code": "sq", "name": "Albanian", "targets": ["ar", "az", "bg"] }
+      ],
+      "freeTier": "Free — /languages is keyless; hosted /translate may require a key or donation",
+      "rateLimit": "Unpublished (per hosted instance)",
+      "dataLicense": "Unverified (software is AGPL-3.0)",
+      "commercialUse": "unclear",
+      "notes": "Only /languages was verified keyless; /translate needs a POST body and may be gated on the public host."
+    },
+    {
+      "name": "PostalPinCode",
+      "slug": "postalpincode",
+      "emoji": "📮",
+      "tagline": "Look up any Indian PIN code's post offices in JSON",
+      "description": "Resolves a six-digit Indian PIN code into every post office it covers, with district, division, circle, and delivery status. Also supports lookup by post-office name. Returns JSON with no key required.",
+      "sourceCategory": "Tracking",
+      "docsUrl": "http://www.postalpincode.in/Api-Details",
+      "baseUrl": "https://api.postalpincode.in",
+      "sampleEndpoint": "/pincode/110001",
+      "latencyMs": 1715,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "Message": "Number of pincode(s) found:21",
+          "Status": "Success",
+          "PostOffice": [
+            {
+              "Name": "Baroda House",
+              "BranchType": "Sub Post Office",
+              "DeliveryStatus": "Non-Delivery",
+              "District": "Central Delhi",
+              "State": "Delhi",
+              "Pincode": "110001"
+            }
+          ]
+        }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Docs are served over HTTP but the API answers over HTTPS at api.postalpincode.in."
+    },
+    {
+      "name": "REFUGE Restrooms",
+      "slug": "refuge-restrooms",
+      "emoji": "🚻",
+      "tagline": "Crowd-sourced safe, accessible, gender-neutral restrooms",
+      "description": "A community-maintained directory of restrooms that are safe for transgender, intersex, and gender-nonconforming people. Query by page or location to get names, addresses, coordinates, and accessibility flags as JSON. Open source and keyless.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.refugerestrooms.org/api/docs/",
+      "baseUrl": "https://www.refugerestrooms.org/api/v1",
+      "sampleEndpoint": "/restrooms.json?page=1&per_page=1",
+      "latencyMs": 2924,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 135563,
+          "name": "Freddy Gryphon",
+          "street": "204 sw yamhill dr",
+          "city": "Portland",
+          "state": "Or",
+          "accessible": true,
+          "unisex": true,
+          "latitude": 45.5171983,
+          "longitude": -122.6751862
+        }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (project is open source on GitHub)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Transport for Norway",
+      "slug": "transport-for-norway",
+      "emoji": "🚆",
+      "tagline": "Norway-wide stops and journeys from Entur's open data",
+      "description": "Entur's national mobility platform exposes open geocoding and journey planning over Norway's public transport. The geocoder autocomplete resolves place and stop names into coordinates as JSON, no key needed. Entur asks callers to send an ET-Client-Name header to avoid rate limiting.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://developer.entur.org/",
+      "baseUrl": "https://api.entur.io",
+      "sampleEndpoint": "/geocoder/v1/autocomplete?text=Oslo&size=1",
+      "latencyMs": 723,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": { "type": "Point", "coordinates": [10.748128, 59.911076] },
+            "properties": { "id": "NSR:GroupOfStopPlaces:1", "layer": "address", "name": "Oslo", "county": "Oslo" }
+          }
+        ]
+      },
+      "freeTier": "Free — open data, no key; ET-Client-Name header requested",
+      "rateLimit": "Rate-limited for unidentified consumers (no numeric threshold published)",
+      "dataLicense": "Norwegian Licence for Open Government Data (NLOD)",
+      "commercialUse": "yes",
+      "notes": "Verified without any header; NLOD permits commercial reuse."
+    },
+    {
+      "name": "Transport for Spain",
+      "slug": "transport-for-spain",
+      "emoji": "🚉",
+      "tagline": "Renfe rail station data via Spain's open CKAN portal",
+      "description": "Renfe's open-data portal serves railway reference data through a standard CKAN datastore API. The datastore_search endpoint returns station records with codes, names, coordinates, and addresses as JSON, no key required. Data and field names are in Spanish.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://data.renfe.com/api/1/util/snippet/api_info.html?resource_id=a2368cff-1562-4dde-8466-9635ea3a572a",
+      "baseUrl": "https://data.renfe.com/api/3/action",
+      "sampleEndpoint": "/datastore_search?resource_id=a2368cff-1562-4dde-8466-9635ea3a572a&limit=1",
+      "latencyMs": 895,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "records": [
+            {
+              "_id": 1,
+              "CÓDIGO": 54505,
+              "DESCRIPCION": "AEROPUERTO",
+              "LATITUD": 36.6760678,
+              "LONGITUD": -4.4879567,
+              "POBLACION": "Málaga",
+              "PROVINCIA": "Málaga"
+            }
+          ],
+          "total": 23
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Transport for Switzerland",
+      "slug": "transport-for-switzerland",
+      "emoji": "🚃",
+      "tagline": "Swiss train connections and schedules, no key needed",
+      "description": "A friendly wrapper over Swiss public-transport timetables that returns connections, departures, and station lookups as JSON. Ask for a route between two towns and get platforms, times, and live delay data back. Keyless and CORS-enabled; throughput is bounded by the underlying timetable.search.ch limits.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://transport.opendata.ch/",
+      "baseUrl": "https://transport.opendata.ch/v1",
+      "sampleEndpoint": "/connections?from=Zurich&to=Bern&limit=1",
+      "latencyMs": 908,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "connections": [
+          {
+            "from": { "station": { "id": "8503000", "name": "Zürich HB" }, "departure": "2026-07-05T12:32:00+0200", "platform": "32" },
+            "to": { "station": { "name": "Bern" }, "arrival": "2026-07-05T13:28:00+0200" },
+            "duration": "00d00:56:00"
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Bounded by timetable.search.ch limits (no fixed number published)",
+      "dataLicense": "Unverified (powered by Opendata.ch)",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "RoboHash", "reason": "Returns an image (image/png), not JSON — no keyless JSON GET endpoint." },
+    { "name": "This Person Does not Exist", "reason": "Root now serves an HTML landing page; the service returns a generated image, not JSON." },
+    { "name": "WhatPulse", "reason": "Legacy web API is deprecated (returns an XML error pointing to a new API); the current API requires an account/auth." },
+    { "name": "ADS-B Exchange", "reason": "Endpoint responds with {\"NO_AUTH\"} — requires an API key (now RapidAPI-gated)." },
+    { "name": "airportsapi", "reason": "Google App Engine app returns generic 404 for all documented ICAO lookups (KMDW/EDDF/EGLL); API appears defunct." },
+    { "name": "Community Transit", "reason": "Points to Transitland, whose v2 REST API returns 401 Unauthorized — requires an API key." },
+    { "name": "Icelandic APIs", "reason": "apis.is fails TLS verification (incomplete cert chain, unable to get local issuer certificate); not reliably reachable over HTTPS." },
+    { "name": "TransitLand", "reason": "Transitland v2 REST API returns 401 Unauthorized — requires an API key." },
+    { "name": "Transport for Auckland, New Zealand", "reason": "AT API requires an Ocp-Apim-Subscription-Key; no keyless JSON GET available." },
+    { "name": "Transport for Berlin, Germany", "reason": "vbb-rest hosts (v6/v5.vbb.transport.rest) timed out on all 3 attempts — endpoint unreachable." },
+    { "name": "Transport for Budapest, Hungary", "reason": "BKK Futar returns 401 'Invalid API key' — registration at opendata.bkk.hu required." },
+    { "name": "Transport for Czech Republic", "reason": "docsUrl is a commercial product page (CHAPS IDOS); no public keyless JSON API is offered." },
+    { "name": "Transport for Hessen, Germany", "reason": "RMV HAFAS API returns 400 requiring an accessId — needs a key." },
+    { "name": "Transport for Los Angeles, US", "reason": "Legacy api.metro.net endpoints 404 and the new metro-api-v2 endpoint returns 500; no working keyless JSON GET within 3 attempts." }
+  ]
+}

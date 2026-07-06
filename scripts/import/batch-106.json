@@ -1,0 +1,31 @@
+{
+  "batch": 106,
+  "verified": [
+    {
+      "name": "OpenCorporates",
+      "slug": "opencorporates",
+      "emoji": "🔑",
+      "tagline": "OpenCorporates — free tier with API key",
+      "description": "OpenCorporates exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "http://api.opencorporates.com/documentation/API-Reference",
+      "baseUrl": "https://api.opencorporates.com",
+      "sampleEndpoint": "/companies/nl/17087985",
+      "latencyMs": 94,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "message": "Invalid Api Token. Please check your OpenCorporates account"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.opencorporates.com/companies/nl/17087985"
+    }
+  ],
+  "skipped": []
+}

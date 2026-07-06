@@ -1,0 +1,680 @@
+{
+  "batch": 92,
+  "verified": [
+    {
+      "name": "Dog Facts (kinduff)",
+      "slug": "dog-facts-kinduff",
+      "emoji": "🐶",
+      "tagline": "Random dog facts as JSON",
+      "description": "Returns an array of random dog facts. Keyless JSON — a lightweight companion to Dog CEO for fact widgets.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://kinduff.github.io/dog-api/",
+      "baseUrl": "https://dog-api.kinduff.com",
+      "sampleEndpoint": "/api/facts?number=1",
+      "latencyMs": 658,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "facts": [],
+        "success": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "CoinRanking",
+      "slug": "coinranking",
+      "emoji": "🪙",
+      "tagline": "Crypto coin rankings and prices",
+      "description": "CoinRanking v2 API lists coins with market cap and price data. Some routes work without a key at low volume.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.coinranking.com/",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins?limit=1",
+      "latencyMs": 1680,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2129,
+            "totalCoins": 2102701,
+            "totalMarkets": 53004,
+            "totalExchanges": 183,
+            "totalMarketCap": "1102",
+            "total24hVolume": "33715766068"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1260138939070",
+              "price": "62841.71409256661",
+              "listedAt": 1279324800
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 1,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEyNjAxMzg5MzkwNzAsInIiOjEyNjAxMzg5MzkwNzAsInQiOjEsIm8iOiJtYXJrZXRDYXAiLCJkIjoiZGVzYyIsImMiOiJuZXh0IiwicCI6MX0",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "🃏",
+      "tagline": "Jokes with safe-mode flags",
+      "description": "Single or two-part jokes with content flags in the response. ~120 req/min per IP.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "baseUrl": "https://v2.jokeapi.dev",
+      "sampleEndpoint": "/joke/Any?format=json&safe-mode",
+      "latencyMs": 805,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "category": "Pun",
+        "type": "twopart",
+        "setup": "Why should you never talk to pi?",
+        "delivery": "Because it will go on forever.",
+        "flags": {
+          "nsfw": false,
+          "religious": false,
+          "political": false,
+          "racist": false,
+          "sexist": false,
+          "explicit": false
+        },
+        "safe": true,
+        "id": 317
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Studio Ghibli",
+      "slug": "studio-ghibli",
+      "emoji": "🎬",
+      "tagline": "Ghibli films, characters and locations as JSON",
+      "description": "Community JSON API over the Studio Ghibli catalog. List films, fetch by ID, browse people and locations — no key, small responses, good for demos.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://ghibliapi.herokuapp.com",
+      "baseUrl": "https://ghibliapi.vercel.app",
+      "sampleEndpoint": "/films",
+      "latencyMs": 497,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+          "title": "Castle in the Sky",
+          "original_title": "天空の城ラピュタ",
+          "original_title_romanised": "Tenkū no shiro Rapyuta",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/w533_and_h300_bestv2/3cyjYtLWCBE1uvWINHFsFnE8LUK.jpg",
+          "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+          "director": "Hayao Miyazaki"
+        },
+        {
+          "id": "12cfb892-aac0-4c5b-94af-521852e46d6a",
+          "title": "Grave of the Fireflies",
+          "original_title": "火垂るの墓",
+          "original_title_romanised": "Hotaru no haka",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/original/vkZSd0Lp8iCVBGpFH9L7LzLusjS.jpg",
+          "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+          "director": "Isao Takahata"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Httpbingo",
+      "slug": "httpbingo",
+      "emoji": "🔁",
+      "tagline": "HTTP echo service with HTTP/3 (Cloudflare)",
+      "description": "Community httpbin mirror on Cloudflare with QUIC support. /json and /get return request metadata as JSON for client debugging.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://cloudflare-quic.com/b/",
+      "baseUrl": "https://httpbingo.org",
+      "sampleEndpoint": "/json",
+      "latencyMs": 364,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "slideshow": {
+          "author": "Yours Truly",
+          "date": "date of publication",
+          "slides": [
+            {
+              "title": "Wake up to WonderWidgets!",
+              "type": "all"
+            },
+            {
+              "items": [
+                "Why <em>WonderWidgets</em> are great",
+                "Who <em>buys</em> WonderWidgets"
+              ],
+              "title": "Overview",
+              "type": "all"
+            }
+          ],
+          "title": "Sample Slide Show"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "DiceBear",
+      "slug": "dicebear",
+      "emoji": "🎲",
+      "tagline": "Deterministic avatar SVG/JSON",
+      "description": "DiceBear generates avatars from a seed across many styles. JSON routes return image URLs and metadata — no API key.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://avatars.dicebear.com/",
+      "baseUrl": "https://api.dicebear.com",
+      "sampleEndpoint": "/7.x/pixel-art/json?seed=test",
+      "latencyMs": 561,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" shape-rendering=\"crispEdges\"><metadata xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\"><rdf:RDF><rdf:Description><dc:title>Pixel Art</dc:title><dc:creator>DiceBear</dc:creator><dc:source xsi:type=\"dcterms:URI\">https://www.figma.com/community/file/1198754108850888330</dc:source><dcterms:license xsi:type=\"dcterms:URI\">https://creativecommons.org/publicdomain/zero/1.0/</dcterms:license><dc:rights>„Pixel Art” (https://www.figma.com/community/file/1198754108850888330) by „DiceBear”, licensed under „CC0 1.0” (https://creativecommons.org/publicdomain/zero/1.0/)</dc:rights></rdf:Description></rdf:RDF></metadata><mask id=\"viewboxMask\"><rect width=\"16\" height=\"16\" rx=\"0\" ry=\"0\" x=\"0\" y=\"0\" fill=\"#fff\" /></mask><g mask=\"url(#viewboxMask)\"><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H9v1h4v1h1v2H2v-2h1v-1h4v-1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#e0b687\"/><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#fff\" fill-opacity=\".1\"/><path d=\"M6 14H4v1H3v1h4v-1H6v-1ZM12 15h1v1H9v-1h1v-1h2v1Z\" fill=\"#ffeead\"/><path fill=\"#fff\" d=\"M4 5h3v2H4z\"/><path fill=\"#697b94\" d=\"M5 6h1v1H5z\"/><path fill=\"#fff\" d=\"M9 5h3v2H9z\"/><path fill=\"#697b94\" d=\"M10 6h1v1h-1z\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14 5H2v1h1v2h4V7h2v1h4V6h1V5Zm-2 1H9v1h3V6ZM7 7H4V6h3v1Z\" fill=\"#5f705c\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M4 6h3v1H4z\"/><path fill=\"#fff\" fill-opacity=\".2\" d=\"M2 5h1v1H2zM7 5h2v1H7zM13 5h1v1h-1z\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M9 6h3v1H9z\"/><path d=\"M6 9v1h3v1h1v-1H9V9H6Z\" fill=\"#de0f0d\"/><path d=\"M4 2h8v1h1v2h1v6h1v2h-2v-1h-1V5h-1V4H5v1H4v7H3v1H1v-2h1V5h1V3h1V2Z\" fill=\"#603a14\"/></g></svg>",
+        "extra": {
+          "primaryBackgroundColor": "transparent",
+          "secondaryBackgroundColor": "transparent",
+          "backgroundType": "solid",
+          "backgroundRotation": 26,
+          "clothing": "variant15",
+          "eyes": "variant06",
+          "glasses": "light02",
+          "mouth": "sad08"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Harry Potter API",
+      "slug": "harry-potter-api",
+      "emoji": "⚡",
+      "tagline": "Harry Potter characters",
+      "description": "Unofficial character metadata with house and wand info. Fan-hosted; uptime may vary.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://hp-api.herokuapp.com/",
+      "baseUrl": "https://hp-api.onrender.com",
+      "sampleEndpoint": "/api/characters",
+      "latencyMs": 651,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
+          "name": "Harry Potter",
+          "alternate_names": [
+            "The Boy Who Lived",
+            "The Chosen One"
+          ],
+          "species": "human",
+          "gender": "male",
+          "house": "Gryffindor",
+          "dateOfBirth": "31-07-1980",
+          "yearOfBirth": 1980
+        },
+        {
+          "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
+          "name": "Hermione Granger",
+          "alternate_names": [
+            "Hermy",
+            "Know-it-all"
+          ],
+          "species": "human",
+          "gender": "female",
+          "house": "Gryffindor",
+          "dateOfBirth": "19-09-1979",
+          "yearOfBirth": 1979
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Studio Ghibli",
+      "slug": "studio-ghibli",
+      "emoji": "🎬",
+      "tagline": "Ghibli films, characters and locations as JSON",
+      "description": "Community JSON API over the Studio Ghibli catalog. List films, fetch by ID, browse people and locations — no key, small responses, good for demos.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://ghibliapi.herokuapp.com",
+      "baseUrl": "https://ghibliapi.vercel.app",
+      "sampleEndpoint": "/films",
+      "latencyMs": 752,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+          "title": "Castle in the Sky",
+          "original_title": "天空の城ラピュタ",
+          "original_title_romanised": "Tenkū no shiro Rapyuta",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/w533_and_h300_bestv2/3cyjYtLWCBE1uvWINHFsFnE8LUK.jpg",
+          "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+          "director": "Hayao Miyazaki"
+        },
+        {
+          "id": "12cfb892-aac0-4c5b-94af-521852e46d6a",
+          "title": "Grave of the Fireflies",
+          "original_title": "火垂るの墓",
+          "original_title_romanised": "Hotaru no haka",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/original/vkZSd0Lp8iCVBGpFH9L7LzLusjS.jpg",
+          "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+          "director": "Isao Takahata"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Httpbingo",
+      "slug": "httpbingo",
+      "emoji": "🔁",
+      "tagline": "HTTP echo service with HTTP/3 (Cloudflare)",
+      "description": "Community httpbin mirror on Cloudflare with QUIC support. /json and /get return request metadata as JSON for client debugging.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://cloudflare-quic.com/b/",
+      "baseUrl": "https://httpbingo.org",
+      "sampleEndpoint": "/json",
+      "latencyMs": 533,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "slideshow": {
+          "author": "Yours Truly",
+          "date": "date of publication",
+          "slides": [
+            {
+              "title": "Wake up to WonderWidgets!",
+              "type": "all"
+            },
+            {
+              "items": [
+                "Why <em>WonderWidgets</em> are great",
+                "Who <em>buys</em> WonderWidgets"
+              ],
+              "title": "Overview",
+              "type": "all"
+            }
+          ],
+          "title": "Sample Slide Show"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "🃏",
+      "tagline": "Jokes with safe-mode flags",
+      "description": "Single or two-part jokes with content flags in the response. ~120 req/min per IP.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "baseUrl": "https://v2.jokeapi.dev",
+      "sampleEndpoint": "/joke/Any?format=json&safe-mode",
+      "latencyMs": 449,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "category": "Programming",
+        "type": "single",
+        "joke": "\"We messed up the keming again guys.\"",
+        "flags": {
+          "nsfw": false,
+          "religious": false,
+          "political": false,
+          "racist": false,
+          "sexist": false,
+          "explicit": false
+        },
+        "id": 20,
+        "safe": true,
+        "lang": "en"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "DiceBear",
+      "slug": "dicebear",
+      "emoji": "🎲",
+      "tagline": "Deterministic avatar SVG/JSON",
+      "description": "DiceBear generates avatars from a seed across many styles. JSON routes return image URLs and metadata — no API key.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://avatars.dicebear.com/",
+      "baseUrl": "https://api.dicebear.com",
+      "sampleEndpoint": "/7.x/pixel-art/json?seed=test",
+      "latencyMs": 638,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" shape-rendering=\"crispEdges\"><metadata xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\"><rdf:RDF><rdf:Description><dc:title>Pixel Art</dc:title><dc:creator>DiceBear</dc:creator><dc:source xsi:type=\"dcterms:URI\">https://www.figma.com/community/file/1198754108850888330</dc:source><dcterms:license xsi:type=\"dcterms:URI\">https://creativecommons.org/publicdomain/zero/1.0/</dcterms:license><dc:rights>„Pixel Art” (https://www.figma.com/community/file/1198754108850888330) by „DiceBear”, licensed under „CC0 1.0” (https://creativecommons.org/publicdomain/zero/1.0/)</dc:rights></rdf:Description></rdf:RDF></metadata><mask id=\"viewboxMask\"><rect width=\"16\" height=\"16\" rx=\"0\" ry=\"0\" x=\"0\" y=\"0\" fill=\"#fff\" /></mask><g mask=\"url(#viewboxMask)\"><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H9v1h4v1h1v2H2v-2h1v-1h4v-1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#e0b687\"/><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#fff\" fill-opacity=\".1\"/><path d=\"M6 14H4v1H3v1h4v-1H6v-1ZM12 15h1v1H9v-1h1v-1h2v1Z\" fill=\"#ffeead\"/><path fill=\"#fff\" d=\"M4 5h3v2H4z\"/><path fill=\"#697b94\" d=\"M5 6h1v1H5z\"/><path fill=\"#fff\" d=\"M9 5h3v2H9z\"/><path fill=\"#697b94\" d=\"M10 6h1v1h-1z\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14 5H2v1h1v2h4V7h2v1h4V6h1V5Zm-2 1H9v1h3V6ZM7 7H4V6h3v1Z\" fill=\"#5f705c\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M4 6h3v1H4z\"/><path fill=\"#fff\" fill-opacity=\".2\" d=\"M2 5h1v1H2zM7 5h2v1H7zM13 5h1v1h-1z\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M9 6h3v1H9z\"/><path d=\"M6 9v1h3v1h1v-1H9V9H6Z\" fill=\"#de0f0d\"/><path d=\"M4 2h8v1h1v2h1v6h1v2h-2v-1h-1V5h-1V4H5v1H4v7H3v1H1v-2h1V5h1V3h1V2Z\" fill=\"#603a14\"/></g></svg>",
+        "extra": {
+          "primaryBackgroundColor": "transparent",
+          "secondaryBackgroundColor": "transparent",
+          "backgroundType": "solid",
+          "backgroundRotation": 26,
+          "clothing": "variant15",
+          "eyes": "variant06",
+          "glasses": "light02",
+          "mouth": "sad08"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Harry Potter API",
+      "slug": "harry-potter-api",
+      "emoji": "⚡",
+      "tagline": "Harry Potter characters",
+      "description": "Unofficial character metadata with house and wand info. Fan-hosted; uptime may vary.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://hp-api.herokuapp.com/",
+      "baseUrl": "https://hp-api.onrender.com",
+      "sampleEndpoint": "/api/characters",
+      "latencyMs": 313,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
+          "name": "Harry Potter",
+          "alternate_names": [
+            "The Boy Who Lived",
+            "The Chosen One"
+          ],
+          "species": "human",
+          "gender": "male",
+          "house": "Gryffindor",
+          "dateOfBirth": "31-07-1980",
+          "yearOfBirth": 1980
+        },
+        {
+          "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
+          "name": "Hermione Granger",
+          "alternate_names": [
+            "Hermy",
+            "Know-it-all"
+          ],
+          "species": "human",
+          "gender": "female",
+          "house": "Gryffindor",
+          "dateOfBirth": "19-09-1979",
+          "yearOfBirth": 1979
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "STAPI",
+      "slug": "stapi",
+      "emoji": "🖖",
+      "tagline": "Star Trek database API",
+      "description": "Read-only Star Trek characters, species and episodes. Paginated JSON search.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://freetestapi.com/",
+      "baseUrl": "https://stapi.co",
+      "sampleEndpoint": "/api/v1/rest/character/search?pageNumber=0&pageSize=1",
+      "latencyMs": 582,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "pageNumber": 0,
+          "pageSize": 1,
+          "numberOfElements": 1,
+          "totalElements": 7571,
+          "totalPages": 7571,
+          "firstPage": true,
+          "lastPage": false
+        },
+        "sort": {
+          "clauses": []
+        },
+        "characters": [
+          {
+            "uid": "CHMA0000215045",
+            "name": "0413 Theta",
+            "gender": null,
+            "yearOfBirth": null,
+            "monthOfBirth": null,
+            "dayOfBirth": null,
+            "placeOfBirth": null,
+            "yearOfDeath": null
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "STAPI",
+      "slug": "stapi",
+      "emoji": "🖖",
+      "tagline": "Star Trek database API",
+      "description": "Read-only Star Trek characters, species and episodes. Paginated JSON search.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://freetestapi.com/apis/birds",
+      "baseUrl": "https://stapi.co",
+      "sampleEndpoint": "/api/v1/rest/character/search?pageNumber=0&pageSize=1",
+      "latencyMs": 3454,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "pageNumber": 0,
+          "pageSize": 1,
+          "numberOfElements": 1,
+          "totalElements": 7571,
+          "totalPages": 7571,
+          "firstPage": true,
+          "lastPage": false
+        },
+        "sort": {
+          "clauses": []
+        },
+        "characters": [
+          {
+            "uid": "CHMA0000215045",
+            "name": "0413 Theta",
+            "gender": null,
+            "yearOfBirth": null,
+            "monthOfBirth": null,
+            "dayOfBirth": null,
+            "placeOfBirth": null,
+            "yearOfDeath": null
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Jikan",
+      "slug": "jikan",
+      "emoji": "🍥",
+      "tagline": "Unofficial MyAnimeList API",
+      "description": "MAL data without scraping. Respect 3 req/s; cache aggressively.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://docs.api.jikan.moe/",
+      "baseUrl": "https://api.jikan.moe",
+      "sampleEndpoint": "/v4/anime/1",
+      "latencyMs": 453,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "mal_id": 1,
+          "url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
+              "small_image_url": "https://cdn.myanimelist.net/images/anime/4/19644t.jpg",
+              "large_image_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
+            },
+            "webp": {
+              "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.webp",
+              "small_image_url": "https://cdn.myanimelist.net/images/anime/4/19644t.webp",
+              "large_image_url": "https://cdn.myanimelist.net/images/anime/4/19644l.webp"
+            }
+          },
+          "trailer": {
+            "youtube_id": null,
+            "url": null,
+            "embed_url": "https://www.youtube-nocookie.com/embed/gY5nDXOtv_o?enablejsapi=1&wmode=opaque&autoplay=1",
+            "images": {
+              "image_url": null,
+              "small_image_url": null,
+              "medium_image_url": null,
+              "large_image_url": null,
+              "maximum_image_url": null
+            }
+          },
+          "approved": true,
+          "titles": [
+            {
+              "type": "Default",
+              "title": "Cowboy Bebop"
+            },
+            {
+              "type": "Japanese",
+              "title": "カウボーイビバップ"
+            }
+          ],
+          "title": "Cowboy Bebop",
+          "title_english": "Cowboy Bebop"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PubMed E-utilities",
+      "slug": "pubmed-e-utilities",
+      "emoji": "🧬",
+      "tagline": "Search PubMed literature IDs",
+      "description": "NCBI E-utilities expose PubMed, PMC and gene search as JSON with retmode=json. No key at modest rates; include contact email in requests.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/",
+      "baseUrl": "https://eutils.ncbi.nlm.nih.gov",
+      "sampleEndpoint": "/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer&retmode=json&retmax=1",
+      "latencyMs": 669,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "header": {
+          "type": "esearch",
+          "version": "0.3"
+        },
+        "esearchresult": {
+          "count": "5652245",
+          "retmax": "1",
+          "retstart": "0",
+          "idlist": [
+            "42402094"
+          ],
+          "translationset": [
+            {
+              "from": "cancer",
+              "to": "\"cancer's\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+            }
+          ],
+          "querytranslation": "\"cancer s\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TCGdex",
+      "slug": "tcgdex",
+      "emoji": "🃏",
+      "tagline": "Multilingual Pokémon TCG card data",
+      "description": "Open Pokémon TCG database with cards, sets and rarities in many languages. Keyless JSON search and lookup — cache responses in production.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.tcgdex.dev/",
+      "baseUrl": "https://api.tcgdex.net",
+      "sampleEndpoint": "/v2/en/cards?name=pikachu",
+      "latencyMs": 516,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "basep-1",
+          "localId": "1",
+          "name": "Pikachu",
+          "image": "https://assets.tcgdex.net/en/base/basep/1"
+        },
+        {
+          "id": "fut2020-1",
+          "localId": "1",
+          "name": "Pikachu on the Ball",
+          "image": "https://assets.tcgdex.net/en/swsh/fut2020/1"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": []
+}

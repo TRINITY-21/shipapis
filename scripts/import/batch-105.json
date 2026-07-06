@@ -1,0 +1,115 @@
+{
+  "batch": 105,
+  "verified": [
+    {
+      "name": "Comic Vine",
+      "slug": "comic-vine",
+      "emoji": "🦸",
+      "tagline": "Comics, characters and issue database",
+      "description": "Comic Vine API returns characters, issues, volumes and teams as JSON. Free API key after signup at comicvine.gamespot.com.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://comicvine.gamespot.com/api/",
+      "baseUrl": "https://comicvine.gamespot.com",
+      "sampleEndpoint": "/api/characters/?format=json&limit=1",
+      "latencyMs": 346,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Invalid API Key",
+        "limit": 0,
+        "offset": 0,
+        "number_of_page_results": 0,
+        "number_of_total_results": 0,
+        "status_code": 100,
+        "results": []
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "media apiKey probe https://comicvine.gamespot.com/api/characters/?format=json&limit=1"
+    },
+    {
+      "name": "Musixmatch",
+      "slug": "musixmatch",
+      "emoji": "🎤",
+      "tagline": "Lyrics and music metadata",
+      "description": "Musixmatch lyrics API with chart and track search. Free developer tier after signup.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://developer.musixmatch.com/",
+      "baseUrl": "https://api.musixmatch.com",
+      "sampleEndpoint": "/ws/1.1/chart.tracks.get?apikey=YOUR_API_KEY",
+      "latencyMs": 676,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": {
+          "header": {
+            "status_code": 401,
+            "execute_time": 0.036763906478882
+          },
+          "body": []
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "media apiKey probe https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=YOUR_API_KEY"
+    },
+    {
+      "name": "Game Brain",
+      "slug": "game-brain",
+      "emoji": "🎬",
+      "tagline": "Game Brain — free tier with API key",
+      "description": "Search and discover video games with AI",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://gamebrain.co/api",
+      "baseUrl": "https://api.gamebrain.co",
+      "sampleEndpoint": "/v1/games?query=first+person+shooter+from+2025",
+      "latencyMs": 407,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "failure",
+        "code": 401,
+        "message": "Please read https://gamebrain.co/api/docs/authentication"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "media apiKey probe https://api.gamebrain.co/v1/games?query=first+person+shooter+from+2025"
+    },
+    {
+      "name": "Spotify Web API",
+      "slug": "spotify-web-api",
+      "emoji": "🎵",
+      "tagline": "Spotify catalog, playlists and user library",
+      "description": "Official Spotify REST API for tracks, albums, artists and playback. OAuth 2.0 client-credentials or user auth — register at developer.spotify.com.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://developer.spotify.com/documentation/web-api",
+      "baseUrl": "https://api.spotify.com",
+      "sampleEndpoint": "/v1/browse/new-releases?limit=1",
+      "latencyMs": 299,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "status": 401,
+          "message": "No token provided"
+        }
+      },
+      "freeTier": "OAuth app registration — free tier",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "oauth",
+      "notes": "media apiKey probe https://api.spotify.com/v1/browse/new-releases?limit=1"
+    }
+  ],
+  "skipped": []
+}

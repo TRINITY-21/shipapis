@@ -1,0 +1,351 @@
+{
+  "batch": 64,
+  "verified": [
+    {
+      "name": "Free Public APIs API",
+      "slug": "free-public-apis-api",
+      "emoji": "📊",
+      "tagline": "Free Public APIs API — FreePublicAPIs now has a free public API! The Free Publ",
+      "description": "Free Public APIs API exposes freePublicAPIs now has a free public API! The Free Public APIs API provides up-to-date information on every free public API listed on freepublicapis.com. Perfect for developers, students and hobbyists. It is limited to 1000 requests a day, if you need more, feel free to reach out. Also if you build something with this API, make sure to add it as a showcase project here. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms befor",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.freepublicapis.com/api",
+      "baseUrl": "https://www.freepublicapis.com",
+      "sampleEndpoint": "/api/apis/275",
+      "latencyMs": 1073,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 275,
+        "emoji": "🤯",
+        "title": "Free Public APIs API",
+        "description": "FreePublicAPIs now has a free public API! The Free Public APIs API provides up-to-date information on every free public API listed on freepublicapis.com. Perfect for developers, students and hobbyists. It is limited to 1000 requests a day, if you need more, feel free to reach out. Also if you build something with this API, make sure to add it as a showcase project here.",
+        "documentation": "https://www.freepublicapis.com/api",
+        "methods": 5,
+        "health": 80,
+        "source": "https://freepublicapis.com/api"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.freepublicapis.com/api/apis/275"
+    },
+    {
+      "name": "CheapShark API",
+      "slug": "cheapshark-api",
+      "emoji": "📊",
+      "tagline": "CheapShark API — CheapShark is a price comparison website for digital PC…",
+      "description": "CheapShark API exposes cheapShark is a price comparison website for digital PC Games, tracking prices across multiple stores including Steam, GreenManGaming, and Fanatical. The API provides developers with access to CheapShark pricing data to integrate into their own applications or websites. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://apidocs.cheapshark.com/",
+      "baseUrl": "https://apidocs.cheapshark.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 3269,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.3.1",
+        "uptime": 20825240.54,
+        "mem": 0.6501680520884908,
+        "load": [
+          0.86,
+          1.13
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://apidocs.cheapshark.com/status"
+    },
+    {
+      "name": "IPLocate.io",
+      "slug": "iplocate-io",
+      "emoji": "🔧",
+      "tagline": "IPLocate.io — Fast, free, accurate IP geolocation and threat data (pr…",
+      "description": "IPLocate.io exposes fast, free, accurate IP geolocation and threat data (proxy/VPN/hosting detection) API We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.iplocate.io/docs",
+      "baseUrl": "https://iplocate.io",
+      "sampleEndpoint": "/api/lookup/8.8.8.8",
+      "latencyMs": 709,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "country": "United States",
+        "country_code": "US",
+        "is_eu": false,
+        "city": "Mountain View",
+        "continent": "North America",
+        "latitude": 37.38605,
+        "longitude": -122.08385
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://iplocate.io/api/lookup/8.8.8.8"
+    },
+    {
+      "name": "Polish Bank Branches",
+      "slug": "polish-bank-branches",
+      "emoji": "💰",
+      "tagline": "Polish Bank Branches — Polish bank branch lookup by 8-digit clearing number (N",
+      "description": "Polish Bank Branches exposes polish bank branch lookup by 8-digit clearing number (Numer Rozliczeniowy) or full 26-digit IBAN, free, no API key We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://ksefekburczymucha.pl/api/bank/",
+      "baseUrl": "https://ksefekburczymucha.pl",
+      "sampleEndpoint": "/api/bank/10101010",
+      "latencyMs": 2238,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "numer": "10101010",
+        "nazwa_banku": "Narodowy Bank Polski",
+        "nazwa_oddzialu": "Oddział Okręgowy w Warszawie",
+        "miejscowosc": "Warszawa",
+        "ulica": "pl. Powstańców Warszawy 4",
+        "found": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://ksefekburczymucha.pl/api/bank/10101010"
+    },
+    {
+      "name": "Open Food Facts API",
+      "slug": "open-food-facts-api",
+      "emoji": "🍔",
+      "tagline": "Open Food Facts API — Open Food Facts is a free, open database of food produc…",
+      "description": "Open Food Facts API exposes open Food Facts is a free, open database of food products worldwide. Its API turns a barcode into ingredients, nutrition, Nutri-Score, allergens and images, with no API key. We verified a keyless GET endpoint returning JSON (Food & Drink). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "baseUrl": "https://world.openfoodfacts.net",
+      "sampleEndpoint": "/api/v3.6/product/3274080005003.json&quot",
+      "latencyMs": 6251,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "3274080005003",
+        "errors": [],
+        "product": {
+          "_id": "3274080005003",
+          "_keywords": [
+            "and",
+            "beverage"
+          ],
+          "abbreviated_product_name": "CRISTALINE Eau De Source 1.5L",
+          "abbreviated_product_name_fr": "CRISTALINE Eau De Source 1.5L",
+          "abbreviated_product_name_fr_imported": "CRISTALINE Eau De Source 1.5L",
+          "added_countries_tags": [],
+          "additives_n": 0,
+          "additives_original_tags": []
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success",
+        "warnings": []
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://world.openfoodfacts.net/api/v3.6/product/3274080005003.json&quot"
+    },
+    {
+      "name": "WhatIsMyIP API",
+      "slug": "whatismyip-api",
+      "emoji": "🔌",
+      "tagline": "WhatIsMyIP API — Returns IP, geolocation, and WHOIS domain data",
+      "description": "WhatIsMyIP API exposes returns IP, geolocation, and WHOIS domain data We verified a keyless GET endpoint returning JSON (Communication & Identity). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Communication & Identity",
+      "docsUrl": "https://www.whatismyip.net/api/",
+      "baseUrl": "https://www.whatismyip.net",
+      "sampleEndpoint": "/geoip/?ip=46.1.3.138%3C/code%3E%3C/span%3E",
+      "latencyMs": 276,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "46.1.3.138",
+        "hostname": "46-1-3-138.milleni.com.tr",
+        "city": "Karasu",
+        "state": "Sakarya",
+        "country": "TR",
+        "organization": "",
+        "timezone": "Europe/Istanbul",
+        "local_time": "12:19 am"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.whatismyip.net/geoip/?ip=46.1.3.138</code></span>"
+    },
+    {
+      "name": "IPDetails.io API",
+      "slug": "ipdetails-io-api",
+      "emoji": "🔌",
+      "tagline": "IPDetails.io API — Provides IP geolocation, ASN, and threat intelligence d…",
+      "description": "IPDetails.io API exposes provides IP geolocation, ASN, and threat intelligence data We verified a keyless GET endpoint returning JSON (Communication & Identity). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Communication & Identity",
+      "docsUrl": "https://ipdetails.io/",
+      "baseUrl": "https://api.ipdetails.io",
+      "sampleEndpoint": "/?ip=166.117.189.176",
+      "latencyMs": 7107,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "abuse_address": "Kingsport, TN, 37662, US",
+        "abuse_email": "domain_admin@eastman.com",
+        "abuse_name": "Eastman Chemical Company",
+        "abuse_phone": "+1-423-229-1188",
+        "abuser_score": "0 (Very Low)",
+        "city": "",
+        "company": "Eastman Chemical Company",
+        "country_code": "US"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.ipdetails.io/?ip=166.117.189.176"
+    },
+    {
+      "name": "Photon API",
+      "slug": "photon-api",
+      "emoji": "🔌",
+      "tagline": "Photon API — Open source geocoding built on OpenStreetMap",
+      "description": "Photon API exposes open source geocoding built on OpenStreetMap We verified a keyless GET endpoint returning JSON (Location & Maps). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Location & Maps",
+      "docsUrl": "https://photon.komoot.io/",
+      "baseUrl": "https://photon.komoot.io",
+      "sampleEndpoint": "/status",
+      "latencyMs": 104,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "Ok",
+        "import_date": "2026-06-27T22:59:58Z",
+        "version": "1.2.0",
+        "git_commit": "c6dc628a"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://photon.komoot.io/status"
+    },
+    {
+      "name": "WHO Global Health Observatory API",
+      "slug": "who-global-health-observatory-api",
+      "emoji": "🔌",
+      "tagline": "WHO Global Health Observatory API — Global health statistics and indicators",
+      "description": "WHO Global Health Observatory API exposes global health statistics and indicators We verified a keyless GET endpoint returning JSON (Health & Science). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health & Science",
+      "docsUrl": "https://www.who.int/data/gho/info/gho-odata-api",
+      "baseUrl": "https://ghoapi.azureedge.net",
+      "sampleEndpoint": "/api/Dimension",
+      "latencyMs": 6659,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@odata.context": "https://ghoapi.azureedge.net/api/$metadata#DIMENSION",
+        "value": [
+          {
+            "Code": "ADVERTISINGTYPE",
+            "Title": "SUBSTANCE_ABUSE_ADVERTISING_TYPES"
+          },
+          {
+            "Code": "AGEGROUP",
+            "Title": "Age Group"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://ghoapi.azureedge.net/api/Dimension"
+    },
+    {
+      "name": "Open VSX Registry API",
+      "slug": "open-vsx-registry-api",
+      "emoji": "🔌",
+      "tagline": "Open VSX Registry API — VS Code extension metadata and search.",
+      "description": "Open VSX Registry API exposes vS Code extension metadata and search. We verified a keyless GET endpoint returning JSON (Developer Utilities). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Developer Utilities",
+      "docsUrl": "https://open-vsx.org/api",
+      "baseUrl": "https://open-vsx.org",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 329,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "v1",
+        "extensions": {},
+        "verified": false,
+        "access": "restricted"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://open-vsx.org/api/v1"
+    },
+    {
+      "name": "NuGet V3 API",
+      "slug": "nuget-v3-api",
+      "emoji": "🔌",
+      "tagline": "NuGet V3 API — Package metadata and search endpoints",
+      "description": "NuGet V3 API exposes package metadata and search endpoints We verified a keyless GET endpoint returning JSON (Developer Utilities). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Developer Utilities",
+      "docsUrl": "https://learn.microsoft.com/en-us/nuget/api/overview",
+      "baseUrl": "https://api.nuget.org",
+      "sampleEndpoint": "/v3/index.json",
+      "latencyMs": 701,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "3.0.0",
+        "resources": [
+          {
+            "@id": "https://azuresearch-usnc.nuget.org/query",
+            "@type": "SearchQueryService",
+            "comment": "Query endpoint of NuGet Search service (primary)"
+          },
+          {
+            "@id": "https://azuresearch-ussc.nuget.org/query",
+            "@type": "SearchQueryService",
+            "comment": "Query endpoint of NuGet Search service (secondary)"
+          }
+        ],
+        "@context": {
+          "@vocab": "http://schema.nuget.org/services#",
+          "comment": "http://www.w3.org/2000/01/rdf-schema#comment"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.nuget.org/v3/index.json"
+    }
+  ],
+  "skipped": []
+}

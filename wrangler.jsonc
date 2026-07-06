@@ -1,0 +1,29 @@
+{
+  // shipapis.dev — the living API directory. One Worker: static assets + SSR + (later) crons.
+  "name": "shipapis",
+  "main": "src/index.tsx",
+  "compatibility_date": "2026-06-01",
+  // AsyncLocalStorage — request-scoped catalog delivery (src/catalog.ts) without prop-drilling.
+  "compatibility_flags": ["nodejs_als"],
+  "assets": {
+    "directory": "./public"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // Cron #1: 15-min sweep (each endpoint re-tested at most every 90 min — cooldown in the query).
+  // Cron #2: 02:00 UTC rollup + retention + health/lifecycle recompute. 2 of the 5 free crons used.
+  "triggers": {
+    "crons": ["*/15 * * * *", "0 2 * * *"]
+  },
+  // Local dev works as-is (miniflare keys off the name). Before the first REMOTE deploy:
+  // `wrangler d1 create shipapis` and paste the real uuid over the placeholder (migrations/README.md).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "shipapis",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "batch": 7,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Not Human Search",
+      "docsUrl": "https://nothumansearch.ai/openapi.yaml",
+      "description": "AI tool discovery with agentic scoring for 8,600+ tools and MCP servers",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 200
+    },
+    {
+      "name": "TensorFeed",
+      "docsUrl": "https://tensorfeed.ai/developers",
+      "description": "Real-time AI news, model pricing, service status, and agent activity feeds",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 200
+    },
+    {
+      "name": "Radio Browser",
+      "docsUrl": "https://api.radio-browser.info/",
+      "description": "List of internet radio stations",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "Florida Man",
+      "docsUrl": "https://github.com/juliayxhuang/florida-man-api#readme",
+      "description": "Static JSON dataset of 10,000+ Florida Man headlines by date",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "News",
+      "docsCheck": 200
+    },
+    {
+      "name": "Noozra",
+      "docsUrl": "https://noozra.com/api",
+      "description": "Free news headlines from 200+ curated RSS sources",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "News",
+      "docsCheck": 200
+    },
+    {
+      "name": "Spaceflight News",
+      "docsUrl": "https://spaceflightnewsapi.net",
+      "description": "Spaceflight related news 🚀",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "News",
+      "docsCheck": 200
+    },
+    {
+      "name": "Microlink.io",
+      "docsUrl": "https://microlink.io",
+      "description": "Extract structured data from any website",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "ModelPartFinder Error Codes",
+      "docsUrl": "https://modelpartfinder.com/docs/api",
+      "description": "Lookup appliance and equipment error codes by brand and code, with recommended replacement parts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Nobel Prize",
+      "docsUrl": "https://www.nobelprize.org/about/developer-zone-2/",
+      "description": "Open data about nobel prizes and events",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Scholarships",
+      "docsUrl": "https://scholarships.grudged.io",
+      "description": "Free, openly-licensed directory of US scholarships and student aid from official sources",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenSanctions",
+      "docsUrl": "https://www.opensanctions.org/docs/api/",
+      "description": "Data on international sanctions, crime and politically exposed persons",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Statistics of the World",
+      "docsUrl": "https://statisticsoftheworld.com/api-docs",
+      "description": "Economic data for 218 countries — GDP, population, inflation, and 440+ indicators from IMF and World Bank",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Umeå Open Data",
+      "docsUrl": "https://opendata.umea.se/api/",
+      "description": "Open data of the city Umeå in northen Sweden",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Evil Insult Generator",
+      "docsUrl": "https://evilinsult.com/api",
+      "description": "Evil Insults",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "GitHub Contribution Chart Generator",
+      "docsUrl": "https://github-contributions.vercel.app",
+      "description": "Create an image of your GitHub contributions",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "GitHub ReadMe Stats",
+      "docsUrl": "https://github.com/anuraghazra/github-readme-stats",
+      "description": "Add dynamically generated statistics to your GitHub profile ReadMe",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Metabase",
+      "docsUrl": "https://www.metabase.com/",
+      "description": "An open source Business Intelligence server to share data and analytics inside your company",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "kanye.rest",
+      "docsUrl": "https://kanye.rest",
+      "description": "REST API for random Kanye West quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Personality.fyi",
+      "docsUrl": "https://personality.fyi/api",
+      "description": "Free MBTI personality types and OEJTS test scoring",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Zen Quotes",
+      "docsUrl": "https://zenquotes.io/",
+      "description": "Large collection of Zen quotes for inspiration",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Phone Specification",
+      "docsUrl": "https://github.com/azharimm/phone-specs-api",
+      "description": "Rest Api for Phone specifications",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Phone",
+      "docsCheck": 200
+    },
+    {
+      "name": "Launch Library 2",
+      "docsUrl": "https://thespacedevs.com/llapi",
+      "description": "Spaceflight launches and events database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenAlex",
+      "docsUrl": "https://docs.openalex.org/",
+      "description": "Open catalog of scholarly works, authors, institutions, sources, and concepts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Remote Calc",
+      "docsUrl": "https://github.com/elizabethadegbaju/remotecalc",
+      "description": "Decodes base64 encoding and parses it to return a solution to the calculation in JSON",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    }
+  ]
+}

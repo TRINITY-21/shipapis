@@ -1,0 +1,247 @@
+{
+  "batch": 102,
+  "verified": [
+    {
+      "name": "CoinRanking",
+      "slug": "coinranking",
+      "emoji": "🪙",
+      "tagline": "CoinRanking — free-tier JSON endpoint",
+      "description": "CoinRanking offers a free API tier. We verified JSON on a sample GET (Cryptocurrency). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://developers.coinranking.com/api/documentation",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins",
+      "latencyMs": 722,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2133,
+            "totalCoins": 2102848,
+            "totalMarkets": 52704,
+            "totalExchanges": 183,
+            "totalMarketCap": "1105",
+            "total24hVolume": "36392766196"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1281662530785",
+              "price": "63914.95032621191",
+              "listedAt": 1279324800
+            },
+            {
+              "uuid": "razxDUgYGNAdQ",
+              "symbol": "ETH",
+              "name": "Ethereum",
+              "color": "#3C3C3D",
+              "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
+              "marketCap": "217077918903",
+              "price": "1798.7415049725882",
+              "listedAt": 1438905600
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 50,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEzNzU2MzM1ODMsInIiOjEzNzU2MzM1ODMsInQiOjYzMTAxLCJvIjoibWFya2V0Q2FwIiwiZCI6ImRlc2MiLCJjIjoibmV4dCIsInAiOjUwfQ",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "IPWhois",
+      "slug": "ipwhois",
+      "emoji": "🗺",
+      "tagline": "IPWhois — free-tier JSON endpoint",
+      "description": "IPWhois offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipwhois.io",
+      "baseUrl": "http://ipwho.is",
+      "sampleEndpoint": "/8.8.4.4",
+      "latencyMs": 331,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.4.4",
+        "success": true,
+        "type": "IPv4",
+        "continent": "North America",
+        "continent_code": "NA",
+        "country": "United States",
+        "country_code": "US",
+        "region": "California"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "The IP API",
+      "slug": "the-ip-api",
+      "emoji": "🗺",
+      "tagline": "The IP API — free-tier JSON endpoint",
+      "description": "The IP API offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://theipapi.com",
+      "baseUrl": "https://ipapi.co",
+      "sampleEndpoint": "/8.8.8.8/json/",
+      "latencyMs": 572,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "network": "8.8.8.0/24",
+        "version": "IPv4",
+        "city": "Mountain View",
+        "region": "California",
+        "region_code": "CA",
+        "country": "US",
+        "country_name": "United States"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Platzi Fake Store",
+      "slug": "platzi-fake-store",
+      "emoji": "🔌",
+      "tagline": "Platzi Fake Store — free-tier JSON endpoint",
+      "description": "Platzi Fake Store offers a free API tier. We verified JSON on a sample GET (Shopping). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://fakeapi.platzi.com/",
+      "baseUrl": "https://api.escuelajs.co",
+      "sampleEndpoint": "/api/v1/products",
+      "latencyMs": 975,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 1,
+          "title": "Majestic Mountain Graphic T-Shirt",
+          "slug": "majestic-mountain-graphic-t-shirt",
+          "price": 44,
+          "description": "Elevate your wardrobe with this stylish black t-shirt featuring a striking monochrome mountain range graphic. Perfect for those who love the outdoors or want to add a touch of nature-inspired design to their look, this tee is crafted from soft, breathable fabric ensuring all-day comfort. Ideal for casual outings or as a unique gift, this t-shirt is a versatile addition to any collection.",
+          "category": {
+            "id": 1,
+            "name": "Clothes",
+            "slug": "clothes",
+            "image": "https://i.imgur.com/QkIa5tT.jpeg",
+            "creationAt": "2026-07-05T23:21:11.000Z",
+            "updatedAt": "2026-07-05T23:21:11.000Z"
+          },
+          "images": [
+            "https://i.imgur.com/QkIa5tT.jpeg",
+            "https://i.imgur.com/jb5Yu0h.jpeg"
+          ],
+          "creationAt": "2026-07-05T23:21:11.000Z"
+        },
+        {
+          "id": 2,
+          "title": "Classic Red Pullover Hoodie",
+          "slug": "classic-red-pullover-hoodie",
+          "price": 10,
+          "description": "Elevate your casual wardrobe with our Classic Red Pullover Hoodie. Crafted with a soft cotton blend for ultimate comfort, this vibrant red hoodie features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs for a snug fit. The timeless design ensures easy pairing with jeans or joggers for a relaxed yet stylish look, making it a versatile addition to your everyday attire.",
+          "category": {
+            "id": 1,
+            "name": "Clothes",
+            "slug": "clothes",
+            "image": "https://i.imgur.com/QkIa5tT.jpeg",
+            "creationAt": "2026-07-05T23:21:11.000Z",
+            "updatedAt": "2026-07-05T23:21:11.000Z"
+          },
+          "images": [
+            "https://i.imgur.com/1twoaDy.jpeg",
+            "https://i.imgur.com/FDwQgLy.jpeg"
+          ],
+          "creationAt": "2026-07-05T23:21:11.000Z"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "CoinRanking API",
+      "slug": "coinranking-api",
+      "emoji": "💰",
+      "tagline": "CoinRanking API — free-tier JSON endpoint",
+      "description": "CoinRanking API offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://developers.coinranking.com/api/documentation",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins",
+      "latencyMs": 151,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2137,
+            "totalCoins": 2102878,
+            "totalMarkets": 53069,
+            "totalExchanges": 183,
+            "totalMarketCap": "1103",
+            "total24hVolume": "36740843163"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1276522306963",
+              "price": "63658.61362103653",
+              "listedAt": 1279324800
+            },
+            {
+              "uuid": "razxDUgYGNAdQ",
+              "symbol": "ETH",
+              "name": "Ethereum",
+              "color": "#3C3C3D",
+              "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
+              "marketCap": "216052499382",
+              "price": "1790.2447188298659",
+              "listedAt": 1438905600
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 50,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEzNzU0MTY3MTMsInIiOjEzNzU0MTY3MTMsInQiOjYzMTAxLCJvIjoibWFya2V0Q2FwIiwiZCI6ImRlc2MiLCJjIjoibmV4dCIsInAiOjUwfQ",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    }
+  ],
+  "skipped": []
+}

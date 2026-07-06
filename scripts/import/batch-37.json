@@ -1,0 +1,1700 @@
+{
+  "batch": 37,
+  "verified": [
+    {
+      "name": "Extinct Animals API",
+      "slug": "extinct-animals-api",
+      "emoji": "🐾",
+      "tagline": "Extinct Animals API — This API provides information about animals that became…",
+      "description": "Extinct Animals API exposes this API provides information about animals that became extinct in the last 11,650 years, known as the Holocene extinction. It gathers data from Wikipedia and individual animal pages, allowing users to retrieve information about these extinct species, including their names and last recorded sightings. We verified a keyless GET endpoint returning JSON (Animals). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://cheba-apis.vercel.app/",
+      "baseUrl": "https://extinct-api.herokuapp.com",
+      "sampleEndpoint": "/api/v1/animal/",
+      "latencyMs": 857,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": [
+          {
+            "binomialName": "Dysmorodrepanis munroi",
+            "commonName": "Lānaʻi hookbill",
+            "location": "Lanai, Hawaii, United States",
+            "wikiLink": "https://en.wikipedia.org/wiki/L%C4%81na%CA%BBi_hookbill",
+            "lastRecord": "1918",
+            "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Dysmorodrepanis.svg/220px-Dysmorodrepanis.svg.png",
+            "shortDesc": "The Lānaʻi hookbill (Dysmorodrepanis munroi) is an extinct species of Hawaiian honeycreeper. It was endemic to the island of Lānaʻi in Hawaiʻi, and was last seen in the southwestern part of the island. George C. Munro collected the only known specimen of this species in 1913, which is housed in the Bernice P. Bishop Museum in Honolulu, and saw the species only twice more, once in 1916 and for a final time in 1918. No other sightings have been reported. They inhabited montane dry forests dominated by ʻakoko (Euphorbia species) and ōpuhe (Urera glabra). The Lānaʻi hookbill was  monotypic within the genus Dysmorodrepanis and had no known subspecies. Its closest relative is believed to be the ʻōʻū, and some early authors suggested that the Lānaʻi hookbill was merely a deformed ʻōʻū. The Lānaʻi hookbill was a plump, medium-sized bird with greenish olive upperparts and pale whitish yellow underparts. It also had a yellow or white superciliary line and a white chin and throat. The wings also had a distinctive and conspicuous white wing patch. The hookbill's distinguishing characteristic was its heavy, parrotlike bill, which had the mandibles hooking sharply towards each other, leaving a gap between them when the beak was closed."
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://extinct-api.herokuapp.com/api/v1/animal/"
+    },
+    {
+      "name": "FIRST News API",
+      "slug": "first-news-api",
+      "emoji": "📰",
+      "tagline": "FIRST News API — Public query for FIRST News with additional parameters …",
+      "description": "FIRST News API exposes public query for FIRST News with additional parameters for filtering results. No credentials required. We verified a keyless GET endpoint returning JSON (News). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "News",
+      "docsUrl": "https://api.first.org/v1/get-news",
+      "baseUrl": "https://api.first.org",
+      "sampleEndpoint": "/data/v1/news?channel=What%27s+New&amp;limit=3&amp;pretty=true",
+      "latencyMs": 633,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "OK",
+        "status-code": 200,
+        "version": "1.0",
+        "access": "public",
+        "total": 501,
+        "offset": 0,
+        "limit": 100,
+        "data": [
+          {
+            "id": 41240,
+            "title": "When FIRSTCON26 Rode into Denver",
+            "summary": "Well, partner... what a week. This June, 700 cybersecurity professionals saddled up in Denver, Colorado for the 38th Annual FIRST Conference (FIRSTCON26), proving once again that when the global incident response community gets together, great things happen.",
+            "link": "https://www.first.org/blog/20260703-When-FIRSTCON26-Rode-into-Denver",
+            "image": "https://www.first.org/blog/",
+            "published": "Fri, 03 Jul 2026 00:00:00 GMT"
+          },
+          {
+            "id": 41239,
+            "title": "FIRST Concludes FIRSTCON26 Amid Record Surge in Cyber Vulnerabilities",
+            "summary": "Five-day summit highlights AI-driven CVE spikes, breakthrough incident response frameworks, and a major expansion of global capacity-building initiatives",
+            "link": "https://www.first.org/newsroom/releases/20260619",
+            "published": "Fri, 19 Jun 2026 19:00:00 GMT"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.first.org/data/v1/news?channel=What%27s+New&amp;limit=3&amp;pretty=true"
+    },
+    {
+      "name": "Fantasy Role Playing API",
+      "slug": "fantasy-role-playing-api",
+      "emoji": "🔧",
+      "tagline": "Fantasy Role Playing API — Set API allows users to query and generate entities",
+      "description": "Fantasy Role Playing API exposes set API allows users to query and generate entities within a fantasy role-playing world. It supports various actions such as rolling items and characters via HTTP GET requests, making it easily accessible and compatible with JSON, CURL, and CORS. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://set.world",
+      "baseUrl": "https://set.world",
+      "sampleEndpoint": "/api/spec",
+      "latencyMs": 331,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1,
+        "endpoints": [
+          {
+            "method": "GET",
+            "path": "/api",
+            "summary": "health check",
+            "scenario": {
+              "use": "to confirm the world yet lives and answers.",
+              "returns": "a single greeting that the service is present and willing."
+            }
+          },
+          {
+            "method": "GET",
+            "path": "/api/spec",
+            "summary": "this document",
+            "scenario": {
+              "use": "to discover every endpoint and its purpose without reading source.",
+              "returns": "the full surface map of method, path, query, summary, and scenario for each endpoint the world provides."
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://set.world/api/spec"
+    },
+    {
+      "name": "Fake JSON API",
+      "slug": "fake-json-api",
+      "emoji": "🔧",
+      "tagline": "Fake JSON API — This free public API allows developers to easily obtain…",
+      "description": "Fake JSON API exposes this free public API allows developers to easily obtain fake JSON data for testing and development. There is no need for registration, tokens, or authentication, simplifying the process of retrieving dummy data quickly. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://softwium.com/fake-api/",
+      "baseUrl": "https://softwium.com",
+      "sampleEndpoint": "/api/books",
+      "latencyMs": 197,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 1,
+          "title": "Unlocking Android",
+          "isbn": "1933988673",
+          "pageCount": 416,
+          "authors": [
+            "W. Frank Ableson",
+            "Charlie Collins"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Android in Action, Second Edition",
+          "isbn": "1935182722",
+          "pageCount": 592,
+          "authors": [
+            "W. Frank Ableson",
+            "Robi Sen"
+          ]
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://softwium.com/api/books"
+    },
+    {
+      "name": "Fedora Messaging API",
+      "slug": "fedora-messaging-api",
+      "emoji": "💬",
+      "tagline": "Fedora Messaging API — Retrieve historical messages sent via Fedora Messaging ",
+      "description": "Fedora Messaging API exposes retrieve historical messages sent via Fedora Messaging using HTTP GET requests. Query by username, package, message source, topic, etc. We verified a keyless GET endpoint returning JSON (Social). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://apps.fedoraproject.org/datagrepper/",
+      "baseUrl": "https://apps.fedoraproject.org",
+      "sampleEndpoint": "/datagrepper/v2/search",
+      "latencyMs": 892,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "raw_messages": [
+          {
+            "body": {
+              "body": {
+                "action": "in_progress",
+                "workflow_job": {
+                  "id": 85241312589,
+                  "run_id": 28747690243,
+                  "workflow_name": "Deploy Site",
+                  "head_branch": "main",
+                  "run_url": "https://api.github.com/repos/fullsend-ai/fullsend/actions/runs/28747690243",
+                  "run_attempt": 1,
+                  "node_id": "CR_kwDORiZTSM8AAAAT2Mc1TQ",
+                  "head_sha": "8fe8da3ebc89dbae64e76e86203048047f766ab8"
+                },
+                "repository": {
+                  "id": 1176916808,
+                  "node_id": "R_kgDORiZTSA",
+                  "name": "fullsend",
+                  "full_name": "fullsend-ai/fullsend",
+                  "private": false,
+                  "owner": {
+                    "login": "fullsend-ai",
+                    "id": 271249281,
+                    "node_id": "O_kgDOECrvgQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/271249281?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/fullsend-ai",
+                    "html_url": "https://github.com/fullsend-ai",
+                    "followers_url": "https://api.github.com/users/fullsend-ai/followers"
+                  },
+                  "html_url": "https://github.com/fullsend-ai/fullsend",
+                  "description": "Vision for fully autonomous agentic engineering"
+                },
+                "organization": {
+                  "login": "fullsend-ai",
+                  "id": 271249281,
+                  "node_id": "O_kgDOECrvgQ",
+                  "url": "https://api.github.com/orgs/fullsend-ai",
+                  "repos_url": "https://api.github.com/orgs/fullsend-ai/repos",
+                  "events_url": "https://api.github.com/orgs/fullsend-ai/events",
+                  "hooks_url": "https://api.github.com/orgs/fullsend-ai/hooks",
+                  "issues_url": "https://api.github.com/orgs/fullsend-ai/issues"
+                },
+                "enterprise": {
+                  "id": 780,
+                  "slug": "redhat",
+                  "name": "Red Hat",
+                  "node_id": "MDEwOkVudGVycHJpc2U3ODA=",
+                  "avatar_url": "https://avatars.githubusercontent.com/b/780?v=4",
+                  "description": "",
+                  "website_url": "https://www.redhat.com",
+                  "html_url": "https://github.com/enterprises/redhat"
+                },
+                "sender": {
+                  "login": "ggallen",
+                  "id": 6012561,
+                  "node_id": "MDQ6VXNlcjYwMTI1NjE=",
+                  "avatar_url": "https://avatars.githubusercontent.com/u/6012561?v=4",
+                  "gravatar_id": "",
+                  "url": "https://api.github.com/users/ggallen",
+                  "html_url": "https://github.com/ggallen",
+                  "followers_url": "https://api.github.com/users/ggallen/followers"
+                }
+              },
+              "headers": {
+                "user-agent": "GitHub-Hookshot/227665c",
+                "accept": "*/*",
+                "content-type": "application/json",
+                "x-github-delivery": "4d483e80-7890-11f1-8cf9-79f1c1bf1e23",
+                "x-github-event": "workflow_job",
+                "x-github-hook-id": "605937908",
+                "x-github-hook-installation-target-id": "1176916808",
+                "x-github-hook-installation-target-type": "repository"
+              },
+              "agent": null
+            },
+            "headers": {
+              "sent-at": "2026-07-05T16:41:00+00:00",
+              "priority": 0,
+              "fedora_messaging_schema": "webhook_to_fedora_messaging.github.message_v1",
+              "fedora_messaging_severity": 20,
+              "fedora_messaging_schema_package": "webhook_to_fedora_messaging_messages"
+            },
+            "id": "ff55ec2c-a37a-42d8-9ed3-e979be6c3d00",
+            "priority": 0,
+            "queue": null,
+            "topic": "org.fedoraproject.prod.github.workflow_job"
+          },
+          {
+            "body": {
+              "body": {
+                "action": "in_progress",
+                "workflow_run": {
+                  "id": 28747690243,
+                  "name": "Deploy Site",
+                  "node_id": "WFR_kwLORiZTSM8AAAAGsX7xAw",
+                  "head_branch": "main",
+                  "head_sha": "8fe8da3ebc89dbae64e76e86203048047f766ab8",
+                  "path": ".github/workflows/site-deploy.yml",
+                  "display_title": "Deploy Site",
+                  "run_number": 4855
+                },
+                "workflow": {
+                  "id": 261135378,
+                  "node_id": "W_kwDORiZTSM4PkJwS",
+                  "name": "Deploy Site",
+                  "path": ".github/workflows/site-deploy.yml",
+                  "state": "active",
+                  "created_at": "2026-04-15T07:43:29.000Z",
+                  "updated_at": "2026-04-15T07:43:29.000Z",
+                  "url": "https://api.github.com/repos/fullsend-ai/fullsend/actions/workflows/261135378"
+                },
+                "repository": {
+                  "id": 1176916808,
+                  "node_id": "R_kgDORiZTSA",
+                  "name": "fullsend",
+                  "full_name": "fullsend-ai/fullsend",
+                  "private": false,
+                  "owner": {
+                    "login": "fullsend-ai",
+                    "id": 271249281,
+                    "node_id": "O_kgDOECrvgQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/271249281?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/fullsend-ai",
+                    "html_url": "https://github.com/fullsend-ai",
+                    "followers_url": "https://api.github.com/users/fullsend-ai/followers"
+                  },
+                  "html_url": "https://github.com/fullsend-ai/fullsend",
+                  "description": "Vision for fully autonomous agentic engineering"
+                },
+                "organization": {
+                  "login": "fullsend-ai",
+                  "id": 271249281,
+                  "node_id": "O_kgDOECrvgQ",
+                  "url": "https://api.github.com/orgs/fullsend-ai",
+                  "repos_url": "https://api.github.com/orgs/fullsend-ai/repos",
+                  "events_url": "https://api.github.com/orgs/fullsend-ai/events",
+                  "hooks_url": "https://api.github.com/orgs/fullsend-ai/hooks",
+                  "issues_url": "https://api.github.com/orgs/fullsend-ai/issues"
+                },
+                "enterprise": {
+                  "id": 780,
+                  "slug": "redhat",
+                  "name": "Red Hat",
+                  "node_id": "MDEwOkVudGVycHJpc2U3ODA=",
+                  "avatar_url": "https://avatars.githubusercontent.com/b/780?v=4",
+                  "description": "",
+                  "website_url": "https://www.redhat.com",
+                  "html_url": "https://github.com/enterprises/redhat"
+                },
+                "sender": {
+                  "login": "ggallen",
+                  "id": 6012561,
+                  "node_id": "MDQ6VXNlcjYwMTI1NjE=",
+                  "avatar_url": "https://avatars.githubusercontent.com/u/6012561?v=4",
+                  "gravatar_id": "",
+                  "url": "https://api.github.com/users/ggallen",
+                  "html_url": "https://github.com/ggallen",
+                  "followers_url": "https://api.github.com/users/ggallen/followers"
+                }
+              },
+              "headers": {
+                "user-agent": "GitHub-Hookshot/227665c",
+                "accept": "*/*",
+                "content-type": "application/json",
+                "x-github-delivery": "4d3f8bf0-7890-11f1-8e0f-29fa5534927f",
+                "x-github-event": "workflow_run",
+                "x-github-hook-id": "605937908",
+                "x-github-hook-installation-target-id": "1176916808",
+                "x-github-hook-installation-target-type": "repository"
+              },
+              "agent": null
+            },
+            "headers": {
+              "sent-at": "2026-07-05T16:41:00+00:00",
+              "priority": 0,
+              "fedora_messaging_schema": "webhook_to_fedora_messaging.github.message_v1",
+              "fedora_messaging_severity": 20,
+              "fedora_messaging_schema_package": "webhook_to_fedora_messaging_messages"
+            },
+            "id": "168d9555-30fd-4dee-8090-022ff097cc88",
+            "priority": 0,
+            "queue": null,
+            "topic": "org.fedoraproject.prod.github.workflow_run"
+          }
+        ],
+        "total": 157685,
+        "pages": 6308,
+        "count": 25,
+        "arguments": {
+          "start": 1783183262.034005,
+          "delta": 86400,
+          "end": 1783269662.034005,
+          "users": [],
+          "packages": [],
+          "categories": [],
+          "topics": [],
+          "agents": []
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://apps.fedoraproject.org/datagrepper/v2/search"
+    },
+    {
+      "name": "Footer Year Update",
+      "slug": "footer-year-update",
+      "emoji": "📅",
+      "tagline": "Footer Year Update — This API automatically retrieves the current year for w…",
+      "description": "Footer Year Update exposes this API automatically retrieves the current year for website footers, eliminating the need for manual updates each January. Designed for developers, it ensures that the displayed year is accurate and up to date, improving user experience while saving time and resources. We verified a keyless GET endpoint returning JSON (Calendar). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://getfullyear.com",
+      "baseUrl": "https://getfullyear.com",
+      "sampleEndpoint": "/api/year",
+      "latencyMs": 183,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "year": 2026,
+        "sponsored_by": "Apple: expensive shiny rectangle",
+        "year_string": "2026"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://getfullyear.com/api/year"
+    },
+    {
+      "name": "FinSignals API",
+      "slug": "finsignals-api",
+      "emoji": "💬",
+      "tagline": "FinSignals API — The FinSignals API provides a RESTful interface for cla…",
+      "description": "FinSignals API exposes the FinSignals API provides a RESTful interface for classifying financial social posts, including text from platforms like Reddit. It evaluates a post's sentiment, directionality, content quality, and other relevant signals in a structured JSON response. We verified a keyless GET endpoint returning JSON (Social). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://finsignals.ai/docs/",
+      "baseUrl": "https://api.finsignals.ai",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 440,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "FinSignals API",
+          "description": "Reddit post financial sentiment classification.",
+          "version": "2.0.0",
+          "contact": {
+            "url": "https://finsignals.ai/contact/"
+          },
+          "x-logo": {
+            "url": "https://finsignals.ai/wp-content/uploads/2026/03/finsignals_logo.png"
+          }
+        },
+        "paths": {
+          "/api/health": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Health Check",
+              "operationId": "health_check_api_health_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/health": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Health Check",
+              "operationId": "health_check_v1_health_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/classify": {
+            "post": {
+              "tags": [
+                "classify"
+              ],
+              "summary": "Classify Single",
+              "operationId": "classify_single_v1_classify_post",
+              "parameters": [
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SingleClassifyRequest"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ClassifyResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/classify/batch": {
+            "post": {
+              "tags": [
+                "classify"
+              ],
+              "summary": "Classify Batch",
+              "operationId": "classify_batch_v1_classify_batch_post",
+              "parameters": [
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/BatchClassifyRequest"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ClassifyResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/usage": {
+            "get": {
+              "tags": [
+                "usage"
+              ],
+              "summary": "Get Usage",
+              "operationId": "get_usage_v1_usage_get",
+              "parameters": [
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/plan": {
+            "get": {
+              "tags": [
+                "usage"
+              ],
+              "summary": "Get Plan",
+              "operationId": "get_plan_v1_plan_get",
+              "parameters": [
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/sector-rotation": {
+            "get": {
+              "tags": [
+                "sector-rotation"
+              ],
+              "summary": "Get Sector Rotation",
+              "description": "Retrieve the latest daily sector rotation analysis.\n\nReturns both the 1-year and 5-year outlooks, including sector/industry\nrotation data, AI-generated markdown summaries, and historical weekly\nsnapshots. Data is refreshed once per trading day just after midnight ET.\n\n**Cost:** 10 credits per request.",
+              "operationId": "get_sector_rotation_v1_sector_rotation_get",
+              "parameters": [
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RotationResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/internal/rotation/trigger": {
+            "post": {
+              "tags": [
+                "internal"
+              ],
+              "summary": "Trigger Rotation",
+              "description": "Trigger an immediate sector rotation calculation in the background.\n\nProtected by X-Internal-Token (same shared secret as all /internal/* endpoints).\nReturns 202 immediately; the full run (Alpaca + FMP + Claude) completes\nasynchronously and populates the cache when done.",
+              "operationId": "trigger_rotation_internal_rotation_trigger_post",
+              "parameters": [
+                {
+                  "name": "x-internal-token",
+                  "in": "header",
+                  "required": false,
+                  "schema": {
+                    "type": "string",
+                    "default": "",
+                    "title": "X-Internal-Token"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "BatchClassifyRequest": {
+              "properties": {
+                "items": {
+                  "items": {
+                    "$ref": "#/components/schemas/RedditPostInput"
+                  },
+                  "type": "array",
+                  "title": "Items"
+                }
+              },
+              "type": "object",
+              "required": [
+                "items"
+              ],
+              "title": "BatchClassifyRequest"
+            },
+            "ClassificationOutput": {
+              "properties": {
+                "sentiment": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Sentiment"
+                },
+                "quality": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Quality"
+                },
+                "directionality": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Directionality"
+                },
+                "post_type": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Post Type"
+                },
+                "relevance_score": {
+                  "type": "number",
+                  "title": "Relevance Score"
+                },
+                "author_confidence": {
+                  "type": "number",
+                  "title": "Author Confidence"
+                },
+                "sarcasm": {
+                  "type": "boolean",
+                  "title": "Sarcasm"
+                }
+              },
+              "type": "object",
+              "required": [
+                "sentiment",
+                "quality"
+              ],
+              "title": "ClassificationOutput"
+            },
+            "ClassifyResponse": {
+              "properties": {
+                "model_version": {
+                  "type": "string",
+                  "title": "Model Version"
+                },
+                "request_id": {
+                  "type": "string",
+                  "title": "Request Id"
+                },
+                "credits_charged": {
+                  "type": "number",
+                  "title": "Credits Charged"
+                },
+                "endpoint_type": {
+                  "type": "string",
+                  "title": "Endpoint Type"
+                },
+                "endpoint_name": {
+                  "type": "string",
+                  "title": "Endpoint Name"
+                },
+                "outputs": {
+                  "items": {
+                    "$ref": "#/components/schemas/ClassificationOutput"
+                  },
+                  "type": "array",
+                  "title": "Outputs"
+                }
+              },
+              "type": "object",
+              "required": [
+                "model_version",
+                "request_id"
+              ],
+              "title": "ClassifyResponse"
+            },
+            "HTTPValidationError": {
+              "properties": {
+                "detail": {
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  },
+                  "type": "array",
+                  "title": "Detail"
+                }
+              },
+              "type": "object",
+              "title": "HTTPValidationError"
+            },
+            "IndustryRow": {
+              "properties": {
+                "etf": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Etf"
+                },
+                "ret_1w": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 1W"
+                },
+                "ret_1m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 1M"
+                },
+                "ret_3m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 3M"
+                },
+                "ret_6m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 6M"
+                },
+                "ret_9m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 9M"
+                },
+                "ret_12m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ret 12M"
+                },
+                "rs_1m": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Rs 1M"
+                }
+              },
+              "type": "object",
+              "title": "IndustryRow"
+            },
+            "RedditPostInput": {
+              "properties": {
+                "ticker": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "title": "Ticker",
+                  "default": ""
+                },
+                "company_name": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "title": "Company Name",
+                  "default": ""
+                },
+                "title": {
+                  "type": "string",
+                  "maxLength": 1000,
+                  "title": "Title",
+                  "default": ""
+                },
+                "body": {
+                  "type": "string",
+                  "maxLength": 40000,
+                  "title": "Body",
+                  "default": ""
+                }
+              },
+              "type": "object",
+              "title": "RedditPostInput"
+            },
+            "RotationPeriodData": {
+              "properties": {
+                "trading_date": {
+                  "type": "string",
+                  "title": "Trading Date"
+                },
+                "generated_at": {
+                  "type": "string",
+                  "title": "Generated At"
+                },
+                "sector_data": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/SectorRow"
+                  },
+                  "type": "object",
+                  "title": "Sector Data"
+                },
+                "industry_data": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/IndustryRow"
+                  },
+                  "type": "object",
+                  "title": "Industry Data"
+                },
+                "spy_metrics": {
+                  "$ref": "#/components/schemas/SpyMetrics"
+                },
+                "summary_md": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Summary Md"
+                },
+                "weekly_snapshots": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Weekly Snapshots",
+                  "default": []
+                }
+              },
+              "type": "object",
+              "required": [
+                "trading_date",
+                "generated_at"
+              ],
+              "title": "RotationPeriodData",
+              "description": "Data for one analysis period (1y or 5y)."
+            },
+            "RotationResponse": {
+              "properties": {
+                "request_id": {
+                  "type": "string",
+                  "title": "Request Id"
+                },
+                "model_version": {
+                  "type": "string",
+                  "title": "Model Version"
+                },
+                "credits_charged": {
+                  "type": "number",
+                  "title": "Credits Charged"
+                },
+                "endpoint_type": {
+                  "type": "string",
+                  "title": "Endpoint Type"
+                },
+                "endpoint_name": {
+                  "type": "string",
+                  "title": "Endpoint Name"
+                },
+                "trading_date": {
+                  "type": "string",
+                  "title": "Trading Date"
+                },
+                "generated_at": {
+                  "type": "string",
+                  "title": "Generated At"
+                },
+                "outlook_1y": {
+                  "$ref": "#/components/schemas/RotationPeriodData"
+                }
+              },
+              "type": "object",
+              "required": [
+                "request_id",
+                "model_version"
+              ],
+              "title": "RotationResponse"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.finsignals.ai/openapi.json"
+    },
+    {
+      "name": "Free UV Index API",
+      "slug": "free-uv-index-api",
+      "emoji": "🌤",
+      "tagline": "Free UV Index API — Provides real-time UV Index and 5 day Hourly UV Index F…",
+      "description": "Free UV Index API exposes provides real-time UV Index and 5 day Hourly UV Index Forecast globally without API Key. Single endpoint for current UV Index and forecast based on latitude/longitude. We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://currentuvindex.com/api",
+      "baseUrl": "https://currentuvindex.com",
+      "sampleEndpoint": "/api/v1/uvi?latitude=40.6943&longitude=-73.9249",
+      "latencyMs": 208,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "latitude": 40.6943,
+        "longitude": -73.9249,
+        "now": {
+          "time": "2026-07-05T16:00:00Z",
+          "uvi": 6.8
+        },
+        "forecast": [
+          {
+            "time": "2026-07-05T17:00:00Z",
+            "uvi": 6.9
+          },
+          {
+            "time": "2026-07-05T18:00:00Z",
+            "uvi": 4.3
+          }
+        ],
+        "history": [
+          {
+            "time": "2026-07-04T13:00:00Z",
+            "uvi": 3.2
+          },
+          {
+            "time": "2026-07-04T14:00:00Z",
+            "uvi": 5.4
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://currentuvindex.com/api/v1/uvi?latitude=40.6943&longitude=-73.9249"
+    },
+    {
+      "name": "Glax Weather API",
+      "slug": "glax-weather-api",
+      "emoji": "🌤",
+      "tagline": "Glax Weather API — This API provides current weather data for a specified …",
+      "description": "Glax Weather API exposes this API provides current weather data for a specified location, presenting information visually through Glax. Users can retrieve data in JSON or PNG formats and customize their queries with parameters like location, units, and forecast options. We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://dragon.best/api/glax_weather/",
+      "baseUrl": "https://dragon.best",
+      "sampleEndpoint": "/api/glax_weather.json?location=london,uk&amp;units=metric",
+      "latencyMs": 145,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "speed_unit": "km/h",
+        "temperature_unit": "C",
+        "temperature": 28.9,
+        "humidity": 44,
+        "weather": "broken clouds",
+        "icon": "https://dragon.best/media/img/weather/sunny-hot.png",
+        "city": "London",
+        "message": "Weather in London is 28.9 C, 44% Humidity, broken clouds"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://dragon.best/api/glax_weather.json?location=london,uk&amp;units=metric"
+    },
+    {
+      "name": "Global Shark Attack API",
+      "slug": "global-shark-attack-api",
+      "emoji": "🔧",
+      "tagline": "Global Shark Attack API — The Global Shark Attack File (GSAF) API offers acces",
+      "description": "Global Shark Attack API exposes the Global Shark Attack File (GSAF) API offers access to a comprehensive dataset of human-shark interactions, including detailed incident reports categorized by type, such as unprovoked, provoked, boat-related, war-related, and questionable incidents. Users can explore bite patterns, species identification, and circumstances surrounding shark encounters, providing valuable insights for researchers, enthusiasts, and conservationists interested in understanding shark behavior and the r",
+      "sourceCategory": "Development",
+      "docsUrl": "https://public.opendatasoft.com/explore/dataset/global-shark-attack",
+      "baseUrl": "https://public.opendatasoft.com",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 104,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://public.opendatasoft.com/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://public.opendatasoft.com/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://public.opendatasoft.com/api/v2"
+    },
+    {
+      "name": "GitHub REST API",
+      "slug": "github-rest-api",
+      "emoji": "🔧",
+      "tagline": "GitHub REST API — The GitHub REST API allows developers to create integra…",
+      "description": "GitHub REST API exposes the GitHub REST API allows developers to create integrations, retrieve data, and automate workflows on the GitHub platform. It provides access to various functionalities, enabling interaction with repositories, issues, pull requests, and user accounts among others. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.github.com/en/rest",
+      "baseUrl": "https://docs.github.com",
+      "sampleEndpoint": "/api/article?pathname=/en/rest",
+      "latencyMs": 785,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meta": {
+          "title": "GitHub REST API documentation",
+          "intro": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+          "product": "REST API",
+          "breadcrumbs": [
+            {
+              "href": "/en/rest",
+              "title": "REST API"
+            }
+          ],
+          "documentType": "product"
+        },
+        "body": "# GitHub REST API documentation\n\nCreate integrations, retrieve data, and automate your workflows with the GitHub REST API.\n\n## Recommended\n\n* [Quickstart for GitHub REST API](/en/rest/quickstart)\n\n  Learn how to get started with the GitHub REST API.\n\n* [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api)\n\n  Learn how to use the GitHub REST API.\n\n* [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api)\n\n  You can authenticate to the REST API to access more endpoints and have a higher rate limit.\n\n* [Best practices for using the REST API](/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api)\n\n  Follow these best practices when using GitHub's API.\n\n* [Rate limits for the REST API](/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)\n\n  Learn about REST API rate limits, how to avoid exceeding them, and what to do if you do exceed them.\n\n* [Keeping your API credentials secure](/en/rest/authentication/keeping-your-api-credentials-secure)\n\n  Follow these best practices to keep your API credentials and tokens secure.\n\n* [Scripting with the REST API and JavaScript](/en/rest/guides/scripting-with-the-rest-api-and-javascript)\n\n  Write a script using the Octokit.js SDK to interact with the REST API.\n\n* [Troubleshooting the REST API](/en/rest/using-the-rest-api/troubleshooting-the-rest-api)\n\n  Learn how to diagnose and resolve common problems for the REST API.\n\n* [Using pagination in the REST API](/en/rest/using-the-rest-api/using-pagination-in-the-rest-api)\n\n  Learn how to navigate through paginated responses from the REST API.\n\n## Links\n\n### Getting started\n\n* [About the REST API](/en/rest/about-the-rest-api/about-the-rest-api)\n\n  Get oriented to the REST API documentation.\n\n* [Quickstart for GitHub REST API](/en/rest/quickstart)\n\n  Learn how to get started with the GitHub REST API.\n\n## Articles\n\n* [Quickstart for GitHub REST API](/en/rest/quickstart)\n\n  Learn how to get started with the GitHub REST API.\n\n* [About the REST API](/en/rest/about-the-rest-api/about-the-rest-api)\n\n  Get oriented to the REST API documentation.\n\n* [Comparing GitHub's REST API and GraphQL API](/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api)\n\n  Learn about GitHub's APIs to extend and customize your GitHub experience.\n\n* [API Versions](/en/rest/about-the-rest-api/api-versions)\n\n  Learn how to specify which REST API version to use whenever you make a request to the REST API.\n\n* [Breaking changes](/en/rest/about-the-rest-api/breaking-changes)\n\n  Learn about breaking changes that were introduced in each REST API version.\n\n* [About the OpenAPI description for the REST API](/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api)\n\n  The GitHub REST API is fully described in an OpenAPI compliant document.\n\n* [Getting started with the REST API](/en/rest/using-the-rest-api/getting-started-with-the-rest-api)\n\n  Learn how to use the GitHub REST API.\n\n* [Rate limits for the REST API](/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)\n\n  Learn about REST API rate limits, how to avoid exceeding them, and what to do if you do exceed them.\n\n* [Using pagination in the REST API](/en/rest/using-the-rest-api/using-pagination-in-the-rest-api)\n\n  Learn how to navigate through paginated responses from the REST API.\n\n* [Libraries for the REST API](/en/rest/using-the-rest-api/libraries-for-the-rest-api)\n\n  You can use the official Octokit libraries and other third-party libraries to extend and simplify how you use the GitHub API.\n\n* [Best practices for using the REST API](/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api)\n\n  Follow these best practices when using GitHub's API.\n\n* [Troubleshooting the REST API](/en/rest/using-the-rest-api/troubleshooting-the-rest-api)\n\n  Learn how to diagnose and resolve common problems for the REST API.\n\n* [Timezones and the REST API](/en/rest/using-the-rest-api/timezones-and-the-rest-api)\n\n  Some REST API endpoints allow you to specify timezone information with your request.\n\n* [Using CORS and JSONP to make cross-origin requests](/en/rest/using-the-rest-api/using-cors-and-jsonp-to-make-cross-origin-requests)\n\n  You can make API requests across domains using cross-origin resource sharing (CORS) and JSONP callbacks.\n\n* [Issue event types](/en/rest/using-the-rest-api/issue-event-types)\n\n  For the REST APIs for issue events and timeline events, learn about each event type, the triggering action on GitHub, and each event's unique properties.\n\n* [GitHub event types](/en/rest/using-the-rest-api/github-event-types)\n\n  For the GitHub Events API, learn about each event type, the triggering action on GitHub, and each event's unique properties.\n\n* [Authenticating to the REST API](/en/rest/authentication/authenticating-to-the-rest-api)\n\n  You can authenticate to the REST API to access more endpoints and have a higher rate limit.\n\n* [Keeping your API credentials secure](/en/rest/authentication/keeping-your-api-credentials-secure)\n\n  Follow these best practices to keep your API credentials and tokens secure.\n\n* [Endpoints available for GitHub App installation access tokens](/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens)\n\n  Your GitHub App can make requests to the following REST endpoints with an installation access token.\n\n* [Endpoints available for GitHub App user access tokens](/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens)\n\n  Your GitHub App can make requests to the following REST endpoints with a user access token.\n\n* [Endpoints available for fine-grained personal access tokens](/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens)\n\n  Your fine-grained personal access token can make requests to the following REST endpoints.\n\n* [Permissions required for GitHub Apps](/en/rest/authentication/permissions-required-for-github-apps)\n\n  For each permission granted to a GitHub App, these are the REST API endpoints that the app can use.\n\n* [Permissions required for fine-grained personal access tokens](/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens)\n\n  For each permission granted to a fine-grained personal access token, these are the REST API endpoints that the app can use.\n\n* [Scripting with the REST API and JavaScript](/en/rest/guides/scripting-with-the-rest-api-and-javascript)\n\n  Write a script using the Octokit.js SDK to interact with the REST API.\n\n* [Scripting with the REST API and Ruby](/en/rest/guides/scripting-with-the-rest-api-and-ruby)\n\n  Learn how to write a script using the Octokit.rb SDK to interact with the REST API.\n\n* [Discovering resources for a user](/en/rest/guides/discovering-resources-for-a-user)\n\n  Learn how to find the repositories and organizations that your app can access for a user in a reliable way for your authenticated requests to the REST API.\n\n* [Delivering deployments](/en/rest/guides/delivering-deployments)\n\n  Using the Deployments REST API, you can build custom tooling that interacts with your server and a third-party app.\n\n* [Rendering data as graphs](/en/rest/guides/rendering-data-as-graphs)\n\n  Learn how to visualize the programming languages from your repository using the D3.js library and Ruby Octokit.\n\n* [Working with comments](/en/rest/guides/working-with-comments)\n\n  Using the REST API, you can access and manage comments in your pull requests, issues, or commits.\n\n* [Building a CI server](/en/rest/guides/building-a-ci-server)\n\n  Build your own CI system using the Status API.\n\n* [Using the REST API to interact with your Git database](/en/rest/guides/using-the-rest-api-to-interact-with-your-git-database)\n\n  Use the REST API to read and write raw Git objects to your Git database on GitHub and to list and update your references (branch heads and tags).\n\n* [Using the REST API to interact with checks](/en/rest/guides/using-the-rest-api-to-interact-with-checks)\n\n  You can use the REST API to build GitHub Apps that run powerful checks against code changes in a repository. You can create apps that perform continuous integration, code linting, or code scanning services and provide detailed feedback on commits.\n\n* [Encrypting secrets for the REST API](/en/rest/guides/encrypting-secrets-for-the-rest-api)\n\n  In order to create or update a secret with the REST API, you must encrypt the value of the secret.\n\n* [REST API endpoints for GitHub Actions artifacts](/en/rest/actions/artifacts)\n\n  Use the REST API to interact with artifacts in GitHub Actions.\n\n* [REST API endpoints for GitHub Actions cache](/en/rest/actions/cache)\n\n  Use the REST API to interact with the cache for repositories in GitHub Actions.\n\n* [REST API endpoints for Actions concurrency groups](/en/rest/actions/concurrency-groups)\n\n  Use the REST API to view and manage concurrency groups for GitHub Actions workflows.\n\n* [GitHub-hosted runners](/en/rest/actions/hosted-runners)\n\n  Use the REST API to interact with GitHub-hosted runners in GitHub Actions.\n\n* [REST API endpoints for GitHub Actions OIDC](/en/rest/actions/oidc)\n\n  Use the REST API to interact with JWTs for OIDC subject claims in GitHub Actions.\n\n* [REST API endpoints for GitHub Actions permissions](/en/rest/actions/permissions)\n\n  Use the REST API to interact with permissions for GitHub Actions.\n\n* [REST API endpoints for GitHub Actions Secrets](/en/rest/actions/secrets)\n\n  Use the REST API to interact with secrets in GitHub Actions.\n\n* [REST API endpoints for self-hosted runner groups](/en/rest/actions/self-hosted-runner-groups)\n\n  Use the REST API to interact with self-hosted runner groups for GitHub Actions.\n\n* [REST API endpoints for self-hosted runners](/en/rest/actions/self-hosted-runners)\n\n  Use the REST API to interact with self-hosted runners in GitHub Actions.\n\n* [REST API endpoints for GitHub Actions variables](/en/rest/actions/variables)\n\n  Use the REST API to interact with variables in GitHub Actions.\n\n* [REST API endpoints for workflow jobs](/en/rest/actions/workflow-jobs)\n\n  Use the REST API to interact with workflow jobs in GitHub Actions.\n\n* [REST API endpoints for workflow runs](/en/rest/actions/workflow-runs)\n\n  Use the REST API to interact with workflow runs in GitHub Actions.\n\n* [REST API endpoints for workflows](/en/rest/actions/workflows)\n\n  Use the REST API to interact with workflows in GitHub Actions.\n\n* [REST API endpoints for events](/en/rest/activity/events)\n\n  Use the REST API to interact with GitHub events.\n\n* [REST API endpoints for feeds](/en/rest/activity/feeds)\n\n  Use the REST API to interact with GitHub feeds.\n\n* [REST API endpoints for notifications](/en/rest/activity/notifications)\n\n  Use the REST API to manage GitHub notifications.\n\n* [REST API endpoints for starring](/en/rest/activity/starring)\n\n  Use the REST API to bookmark a repository.\n\n* [REST API endpoints for watching](/en/rest/activity/watching)\n\n  Use the REST API to subscribe to notifications for activity in a repository.\n\n* [REST API endpoints for agent tasks](/en/rest/agent-tasks/agent-tasks)\n\n  Use the REST API to start and manage Copilot cloud agent tasks\n\n* [REST API endpoints for agent secrets](/en/rest/agents/secrets)\n\n  Use the REST API to manage secrets for agents.\n\n* [REST API endpoints for variables](/en/rest/agents/variables)\n\n  Use the REST API to manage variables.\n\n* [REST API endpoints for announcement banners](/en/announcement-banners)\n\n  The Announcement Banners API enables you to view, create, and remove an announcement banner for your enterprise or organization.\n\n* [REST API endpoints for GitHub Apps](/en/rest/apps/apps)\n\n  Use the REST API to interact with GitHub Apps\n\n* [REST API endpoints for GitHub App installations](/en/rest/apps/installations)\n\n  Use the REST API to get information about GitHub App installations and perform actions within those installations.\n\n* [REST API endpoints for GitHub Marketplace](/en/rest/apps/marketplace)\n\n  Use the REST API to interact with GitHub Marketplace\n\n* [REST API endpoints for OAuth authorizations](/en/rest/apps/oauth-applications)\n\n  Use the REST API to interact with OAuth apps and OAuth authorizations of GitHub Apps\n\n* [REST API endpoints for GitHub App webhooks](/en/rest/apps/webhooks)\n\n  Use the REST API to interact with webhooks for OAuth apps\n\n* [REST API endpoints for billing](/en/billing)\n\n  Use the REST API to get billing information.\n\n* [Budgets](/en/rest/billing/budgets)\n\n  Use the REST API to get budget information.\n\n* [Cost centers](/en/cost-centers)\n\n  Use the REST API to get cost center information.\n\n* [Billing usage](/en/rest/billing/usage)\n\n  Use the REST API to get billing usage information.\n\n* [Usage reports](/en/usage-reports)\n\n  Use the REST API to create and retrieve usage report exports for an enterprise.\n\n* [REST API endpoints for branches](/en/rest/branches/branches)\n\n  Use the REST API to modify branches and their protection settings.\n\n* [REST API endpoints for protected branches](/en/rest/branches/branch-protection)\n\n  Use the REST API to manage protected branches.\n\n* [REST API endpoints for security campaigns](/en/rest/campaigns/campaigns)\n\n  Use the REST API to create and manage security campaigns for your organization.\n\n* [REST API endpoints for check runs](/en/rest/checks/runs)\n\n  Use the REST API to manage check runs.\n\n* [REST API endpoints for check suites](/en/rest/checks/suites)\n\n  Use the REST API to manage check suites.\n\n* [REST API endpoints for GitHub Classroom](/en/rest/classroom/classroom)\n\n  Use the REST API to interact with GitHub Classroom.\n\n* [REST API endpoints for code quality](/en/rest/code-quality/code-quality)\n\n  Use the REST API to manage a code quality configuration.\n\n* [REST API endpoints for code scanning alert dismissal requests](/en/alert-dismissal-requests)\n\n  Use the REST API to interact with code scanning alert dismissal requests from a repository.\n\n* [REST API endpoints for code scanning](/en/rest/code-scanning/code-scanning)\n\n  Use the REST API to retrieve and update code scanning alerts from a repository.\n\n* [Configurations](/en/rest/code-security/configurations)\n\n  Use the REST API to create and manage security configurations for your organization.\n\n* [REST API endpoints for codes of conduct](/en/rest/codes-of-conduct/codes-of-conduct)\n\n  Use the REST API to get information about codes of conduct.\n\n* [REST API endpoints for Codespaces](/en/rest/codespaces/codespaces)\n\n  Use the REST API to manage GitHub Codespaces.\n\n* [REST API endpoints for Codespaces organizations](/en/rest/codespaces/organizations)\n\n  Use the REST API to manage your organization members codespaces.\n\n* [REST API endpoints for Codespaces organization secrets](/en/rest/codespaces/organization-secrets)\n\n  Use the REST API to manage your organization-level Codespaces secrets.\n\n* [REST API endpoints for Codespaces machines](/en/rest/codespaces/machines)\n\n  Use the REST API to manage availability of machine types for a codespace.\n\n* [REST API endpoints for Codespaces repository secrets](/en/rest/codespaces/repository-secrets)\n\n  Use the REST API to manage secrets for repositories that the user has access to in a codespace.\n\n* [REST API endpoints for Codespaces user secrets](/en/rest/codespaces/secrets)\n\n  Use the REST API manage secrets that the user has access to in a codespace.\n\n* [REST API endpoints for collaborators](/en/rest/collaborators/collaborators)\n\n  Use the REST API to manage collaborators for a repository.\n\n* [REST API endpoints for repository invitations](/en/rest/collaborators/invitations)\n\n  Use the REST API to view and manage invitations to collaborate on a repository.\n\n* [REST API endpoints for commits](/en/rest/commits/commits)\n\n  Use the REST API to interact with commits.\n\n* [REST API endpoints for commit comments](/en/rest/commits/comments)\n\n  Use the REST API to interact with commit comments.\n\n* [REST API endpoints for commit statuses](/en/rest/commits/statuses)\n\n  Use the REST API to interact with commit statuses.\n\n* [REST API endpoints for Copilot cloud agent repository management](/en/rest/copilot/copilot-cloud-agent-management)\n\n  Use the REST API to manage repository-level settings for Copilot cloud agent.\n\n* [REST API endpoints for Copilot cloud agent management](/en/rest/copilot/copilot-coding-agent-management)\n\n  Use the REST API to manage settings for Copilot cloud agent.\n\n* [REST API endpoints for Copilot content exclusion management](/en/rest/copilot/copilot-content-exclusion-management)\n\n  Use the REST API to manage Copilot content exclusion rules.\n\n* [REST API endpoints for Copilot custom agents](/en/copilot-custom-agents)\n\n  Use the REST API to manage Copilot custom agents for your enterprise.\n\n* [REST API endpoints for Copilot usage metrics](/en/rest/copilot/copilot-usage-metrics)\n\n  Use the REST API to view Copilot usage metrics.\n\n* [REST API endpoints for Copilot user management](/en/rest/copilot/copilot-user-management)\n\n  Use the REST API to manage the GitHub Copilot Business subscription for your organization.\n\n* [Copilot Spaces collaborators](/en/rest/copilot-spaces/collaborators)\n\n  Use the REST API to manage collaborators for Copilot Spaces.\n\n* [REST API endpoints for Copilot Spaces](/en/rest/copilot-spaces/copilot-spaces)\n\n  Use the REST API to manage Copilot Spaces and related resources.\n\n* [REST API endpoints for Copilot Spaces resources](/en/rest/copilot-spaces/resources)\n\n  Use the REST API to interact with Copilot Spaces resources.\n\n* [Revocation](/en/rest/credentials/revoke)\n\n  Use the REST API to revoke credentials that you have found exposed on GitHub or elsewhere.\n\n* [REST API endpoints for Dependabot alerts](/en/rest/dependabot/alerts)\n\n  Use the REST API to interact with Dependabot alerts for a repository.\n\n* [REST API endpoints for Dependabot repository access](/en/rest/dependabot/repository-access)\n\n  Use the REST API to manage which repositories Dependabot can access within an organization.\n\n* [REST API endpoints for Dependabot secrets](/en/rest/dependabot/secrets)\n\n  Use the REST API to manage Dependabot secrets for an organization or repository.\n\n* [REST API endpoints for dependency review](/en/rest/dependency-graph/dependency-review)\n\n  Use the REST API to interact with dependency changes.\n\n* [REST API endpoints for dependency submission](/en/rest/dependency-graph/dependency-submission)\n\n  Use the REST API to submit dependencies.\n\n* [REST API endpoints for software bill of materials (SBOM)](/en/rest/dependency-graph/sboms)\n\n  Use the REST API to export the software bill of materials (SBOM) for a repository.\n\n* [REST API endpoints for deploy keys](/en/rest/deploy-keys/deploy-keys)\n\n  Use the REST API to create and manage deploy keys.\n\n* [REST API endpoints for deployment branch policies](/en/rest/deployments/branch-policies)\n\n  Use the REST API to manage custom deployment branch policies.\n\n* [REST API endpoints for deployments](/en/rest/deployments/deployments)\n\n  Use the REST API to create and delete deployments and deployment environments.\n\n* [REST API endpoints for deployment environments](/en/rest/deployments/environments)\n\n  Use the REST API to create, configure, and delete deployment environments.\n\n* [REST API endpoints for protection rules](/en/rest/deployments/protection-rules)\n\n  Use the REST API to create, configure, and delete deployment protection rules.\n\n* [REST API endpoints for deployment statuses](/en/rest/deployments/statuses)\n\n  Use the REST API to manage deployment statuses.\n\n* [REST API endpoints for emojis](/en/rest/emojis/emojis)\n\n  Use the REST API to list and view all the available emojis to use on GitHub.\n\n* [REST API endpoints for GitHub Enterprise administration](/en/enterprise-admin)\n\n  Use the REST API to administer your enterprise.\n\n* [REST API endpoints for enterprise team memberships](/en/rest/enterprise-teams/enterprise-team-members)\n\n  Use the REST API to create and manage membership of enterprise teams in your GitHub enterprise.\n\n* [REST API endpoints for enterprise team organizations](/en/rest/enterprise-teams/enterprise-team-organizations)\n\n  Use the REST API to create and manage organization assignments for enterprise teams in your GitHub enterprise.\n\n* [REST API endpoints for enterprise teams](/en/rest/enterprise-teams/enterprise-teams)\n\n  Use the REST API to create and manage enterprise teams in your GitHub enterprise.\n\n* [REST API endpoints for gists](/en/rest/gists/gists)\n\n  Use the REST API to list, create, update and delete the public gists on GitHub.\n\n* [REST API endpoints for gist comments](/en/rest/gists/comments)\n\n  Use the REST API to view and modify comments on a gist.\n\n* [REST API endpoints for Git blobs](/en/rest/git/blobs)\n\n  Use the REST API to interact with a Git blob (binary large object), the object type used to store the contents of each file in a repository.\n\n* [REST API endpoints for Git commits](/en/rest/git/commits)\n\n  Use the REST API to interact with commit objects in your Git database on GitHub.\n\n* [REST API endpoints for Git references](/en/rest/git/refs)\n\n  Use the REST API to interact with references in your Git database on GitHub\n\n* [REST API endpoints for Git tags](/en/rest/git/tags)\n\n  Use the REST API to interact with tag objects in your Git database on GitHub.\n\n* [REST API endpoints for Git trees](/en/rest/git/trees)\n\n  Use the REST API to interact with tree objects in your Git database on GitHub.\n\n* [REST API endpoints for gitignore](/en/rest/gitignore/gitignore)\n\n  Use the REST API to get `.gitignore` templates that can be used to ignore files and directories.\n\n* [REST API endpoints for organization interactions](/en/rest/interactions/orgs)\n\n  Use the REST API to temporarily restrict which type of user can comment, open issues, or create pull requests in the organization's public repositories.\n\n* [REST API endpoints for repository interactions](/en/rest/interactions/repos)\n\n  Use the REST API to temporarily restrict which type of user can comment, open issues, or create pull requests in a public repository.\n\n* [REST API endpoints for user interactions](/en/rest/interactions/user)\n\n  Use the REST API to temporarily restrict which type of user can comment, open issues, or create pull requests in your public repositories.\n\n* [REST API endpoints for issue assignees](/en/rest/issues/assignees)\n\n  Use the REST API to manage assignees on issues and pull requests.\n\n* [REST API endpoints for issue comments](/en/rest/issues/comments)\n\n  Use the REST API to manage comments on issues and pull requests.\n\n* [REST API endpoints for issue events](/en/rest/issues/events)\n\n  Use the REST API to retrieve events triggered by activity in issues and pull requests.\n\n* [REST API endpoints for issue dependencies](/en/rest/issues/issue-dependencies)\n\n  Use the REST API to view, add, and remove issue dependencies.\n\n* [REST API endpoints for issue field values](/en/rest/issues/issue-field-values)\n\n  Use the REST API to view and manage issue field values for issues.\n\n* [REST API endpoints for issues](/en/rest/issues/issues)\n\n  Use the REST API to manage issues and pull requests.\n\n* [REST API endpoints for labels](/en/rest/issues/labels)\n\n  Use the REST API to manage labels for repositories, issues and pull requests.\n\n* [REST API endpoints for milestones](/en/rest/issues/milestones)\n\n  Use the REST API to manage milestones.\n\n* [REST API endpoints for sub-issues](/en/rest/issues/sub-issues)\n\n  Use the REST API to view, add, remove, and reprioritize sub-issues.\n\n* [REST API endpoints for timeline events](/en/rest/issues/timeline)\n\n  Use the REST API to receive events triggered by timeline activity in issues and pull requests.\n\n* [REST API endpoints for licenses](/en/rest/licenses/licenses)\n\n  Use the REST API to retrieve popular open source licenses and information about a particular project's license file.\n\n* [REST API endpoints for Markdown](/en/rest/markdown/markdown)\n\n  Use the REST API to render a markdown document as an HTML page or as raw text.\n\n* [REST API endpoints for meta data](/en/rest/meta/meta)\n\n  Use the REST API to get meta information about GitHub, including the IP addresses of GitHub services.\n\n* [REST API endpoints for community metrics](/en/rest/metrics/community)\n\n  Use the REST API to retrieve information about your community profile.\n\n* [REST API endpoints for repository statistics](/en/rest/metrics/statistics)\n\n  Use the REST API to fetch the data that GitHub uses for visualizing different types of repository activity.\n\n* [REST API endpoints for repository traffic](/en/rest/metrics/traffic)\n\n  Use the REST API to retrieve information provided in your repository graph.\n\n* [REST API endpoints for organization migrations](/en/rest/migrations/orgs)\n\n  Use the REST API to export one or more repositories so you can move them to  GitHub Enterprise Server.\n\n* [REST API endpoints for source imports](/en/rest/migrations/source-imports)\n\n  Use the REST API to start an import from a Git source repository.\n\n* [REST API endpoints for user migrations](/en/rest/migrations/users)\n\n  Use the REST API to review, backup, or migrate your user data stored on GitHub.\n\n* [REST API endpoints for models catalog](/en/rest/models/catalog)\n\n  Use the REST API to get a list of models available for use, including details like ID, supported input/output modalities, and rate limits.\n\n* [REST API endpoints for model embeddings](/en/rest/models/embeddings)\n\n  Use the REST API to work with embedding requests for models.\n\n* [REST API endpoints for models inference](/en/rest/models/inference)\n\n  Use the REST API to submit a chat completion request to a specified model, with or without organizational attribution.\n\n* [REST API endpoints for OAuth app authorizations](/en/oauth-authorizations)\n\n  Use the REST API to manage the access OAuth apps have to your account.\n\n* [REST API endpoints for API Insights](/en/rest/orgs/api-insights)\n\n  Use the REST API to view statistics for API usage in an organization.\n\n* [REST API endpoints for artifact metadata](/en/rest/orgs/artifact-metadata)\n\n  Use these endpoints to retrieve and manage metadata for artifacts in your organization. Artifact metadata provides information about build artifacts, their provenance, and related details.\n\n* [REST API endpoints for artifact attestations](/en/rest/orgs/attestations)\n\n  Use the REST API to interact with artifact attestations.\n\n* [REST API endpoints for blocking users](/en/rest/orgs/blocking)\n\n  Use the REST API to block and unblock users in an organization.\n\n* [REST API endpoints for organization push rule bypass requests](/en/bypass-requests)\n\n  Use the REST API to manage organization push rule bypass requests.\n\n* [REST API endpoints for custom properties](/en/rest/orgs/custom-properties)\n\n  Use the REST API to create and manage custom properties for an organization.\n\n* [REST API endpoints for an organization's custom property values](/en/custom-properties-for-orgs)\n\n  Use the REST API to manage custom property values for an organization\n\n* [REST API endpoints for custom repository roles](/en/custom-roles)\n\n  Use the REST API to interact with custom repository roles.\n\n* [REST API endpoints for issue fields](/en/rest/orgs/issue-fields)\n\n  Use the REST API to create and manage issue fields for an organization.\n\n* [REST API endpoints for issue types](/en/rest/orgs/issue-types)\n\n  Use the REST API to interact with issue types in an organization.\n\n* [REST API endpoints for organization members](/en/rest/orgs/members)\n\n  Use the REST API to manage memberships in your organization.\n\n* [REST API endpoints for network configurations](/en/rest/orgs/network-configurations)\n\n  REST API endpoints for network configurations\n\n* [REST API endpoints for organization roles](/en/rest/orgs/organization-roles)\n\n  Use the REST API to interact with organization roles.\n\n* [REST API endpoints for organizations](/en/rest/orgs/orgs)\n\n  Use the REST API to interact with organizations.\n\n* [REST API endpoints for outside collaborators](/en/rest/orgs/outside-collaborators)\n\n  Use the REST API to manage outside collaborators.\n\n* [REST API endpoints for personal access tokens](/en/rest/orgs/personal-access-tokens)\n\n  Use the REST API to manage fine-grained personal access tokens.\n\n* [REST API endpoints for rule suites](/en/rest/orgs/rule-suites)\n\n  Use the REST API to manage rule suites for organizations.\n\n* [REST API endpoints for rules](/en/rest/orgs/rules)\n\n  Use the REST API to manage rulesets for organizations. Organization rulesets control how people can interact with selected branches and tags in repositories in an organization.\n\n* [REST API endpoints for security managers](/en/rest/orgs/security-managers)\n\n  Use the REST API to manage security managers in an organization.\n\n* [REST API endpoints for organization webhooks](/en/rest/orgs/webhooks)\n\n  Use the REST API to interact with webhooks in an organization.\n\n* [REST API endpoints for packages](/en/rest/packages/packages)\n\n  Use the REST API to interact with GitHub Packages.\n\n* [REST API endpoints for GitHub Pages](/en/rest/pages/pages)\n\n  Use the REST API to interact with GitHub Pages sites and builds.\n\n* [Organization configurations](/en/rest/private-registries/organization-configurations)\n\n  Use the REST API to manage private registry configurations for organizations.\n\n* [REST API endpoints for draft Project items](/en/rest/projects/drafts)\n\n  Use the REST API to manage draft items in Projects.\n\n* [REST API endpoints for Project fields](/en/rest/projects/fields)\n\n  Use the REST API to manage Project fields\n\n* [REST API endpoints for Project items](/en/rest/projects/items)\n\n  Use the REST API to manage Project items\n\n* [REST API endpoints for Projects](/en/rest/projects/projects)\n\n  Use the REST API to manage Projects\n\n* [REST API endpoints for Project views](/en/rest/projects/views)\n\n  Use the REST API to manage Project views\n\n* [REST API endpoints for pull requests](/en/rest/pulls/pulls)\n\n  Use the REST API to interact with pull requests.\n\n* [REST API endpoints for pull request review comments](/en/rest/pulls/comments)\n\n  Use the REST API to interact with pull request review comments.\n\n* [REST API endpoints for review requests](/en/rest/pulls/review-requests)\n\n  Use the REST API to interact with review requests.\n\n* [REST API endpoints for pull request reviews](/en/rest/pulls/reviews)\n\n  Use the REST API to interact with pull request reviews.\n\n* [REST API endpoints for rate limits](/en/rest/rate-limit/rate-limit)\n\n  Use the REST API to check your current rate limit status.\n\n* [REST API endpoints for reactions](/en/rest/reactions/reactions)\n\n  Use the REST API to interact with reactions on GitHub.\n\n* [REST API endpoints for releases](/en/rest/releases/releases)\n\n  Use the REST API to create, modify, and delete releases.\n\n* [REST API endpoints for release assets](/en/rest/releases/assets)\n\n  Use the REST API to manage release assets.\n\n* [REST API endpoints for repository attestations](/en/rest/repos/attestations)\n\n  Use the REST API to manage repository attestations.\n\n* [REST API endpoints for repository autolinks](/en/rest/repos/autolinks)\n\n  Use the REST API to add autolinks to external resources.\n\n* [REST API endpoints for repository contents](/en/rest/repos/contents)\n\n  Use the REST API to create, modify, and delete Base64 encoded content in a repository.\n\n* [REST API endpoints for custom properties](/en/rest/repos/custom-properties)\n\n  Use the REST API to list the custom properties assigned to a repository by the organization.\n\n* [REST API endpoints for forks](/en/rest/repos/forks)\n\n  Use the REST API to manage repository forks.\n\n* [REST API endpoints for issue types](/en/rest/repos/issue-types)\n\n  Use the REST API to manage issue types for a repository.\n\n* [REST API endpoints for Git LFS](/en/lfs)\n\n  Use the REST API to enable or disable Git Large File Storage (LFS) for a repository.\n\n* [REST API endpoints for repositories](/en/rest/repos/repos)\n\n  Use the REST API to manage repositories on GitHub.\n\n* [REST API endpoints for rule suites](/en/rest/repos/rule-suites)\n\n  Use the REST API to manage rule suites for repositories.\n\n* [REST API endpoints for rules](/en/rest/repos/rules)\n\n  Use the REST API to manage rulesets for repositories. Rulesets control how people can interact with selected branches and tags in a repository.\n\n* [REST API endpoints for repository tags](/en/tags)\n\n  Use the REST API to manage tags for a repository.\n\n* [REST API endpoints for repository webhooks](/en/rest/repos/webhooks)\n\n  Use the REST API to create and manage webhooks for your repositories.\n\n* [REST API endpoints for SCIM](/en/scim)\n\n  Use the REST API to control and manage your GitHub organization members' access with SCIM.\n\n* [REST API endpoints for search](/en/rest/search/search)\n\n  Use the REST API to search for specific items on GitHub.\n\n* [REST API endpoints for push protection bypass requests](/en/delegated-bypass)\n\n  Use the REST API to manage push protection bypass requests for secret scanning.\n\n* [REST API endpoints for secret scanning push protection](/en/rest/secret-scanning/push-protection)\n\n  Use the REST API to manage secret scanning push protection.\n\n* [REST API endpoints for secret scanning](/en/rest/secret-scanning/secret-scanning)\n\n  Use the REST API to retrieve and update secret alerts from a repository.\n\n* [REST API endpoints for global security advisories](/en/rest/security-advisories/global-advisories)\n\n  Use the REST API to view global security advisories.\n\n* [REST API endpoints for repository security advisories](/en/rest/security-advisories/repository-advisories)\n\n  Use the REST API to view and manage repository security advisories.\n\n* [REST API endpoints for external groups](/en/external-groups)\n\n  Use the REST API to view the external identity provider groups that are available to your organization and manage the connection between external groups and teams in your organization.\n\n* [REST API endpoints for team members](/en/rest/teams/members)\n\n  Use the REST API to create and manage membership of teams in your GitHub organization.\n\n* [REST API endpoints for team synchronization](/en/team-sync)\n\n  Use the REST API to manage connections between GitHub teams and external identity provider (IdP) groups.\n\n* [REST API endpoints for teams](/en/rest/teams/teams)\n\n  Use the REST API to create and manage teams in your GitHub organization.\n\n* [REST API endpoints for artifact attestations](/en/rest/users/attestations)\n\n  Use the REST API to manage artifact attestations.\n\n* [REST API endpoints for blocking users](/en/rest/users/blocking)\n\n  Use the REST API to manage blocked users.\n\n* [REST API endpoints for emails](/en/rest/users/emails)\n\n  Use the REST API to manage email addresses of authenticated users.\n\n* [REST API endpoints for followers](/en/rest/users/followers)\n\n  Use the REST API to get information about followers of authenticated users.\n\n* [REST API endpoints for GPG keys](/en/rest/users/gpg-keys)\n\n  Use the REST API to manage GPG keys of authenticated users.\n\n* [REST API endpoints for Git SSH keys](/en/rest/users/keys)\n\n  Use the REST API to manage Git SSH keys of authenticated users.\n\n* [REST API endpoints for social accounts](/en/rest/users/social-accounts)\n\n  Use the REST API to manage social accounts of authenticated users.\n\n* [REST API endpoints for SSH signing keys](/en/rest/users/ssh-signing-keys)\n\n  Use the REST API to manage SSH signing keys of authenticated users.\n\n* [REST API endpoints for users](/en/rest/users/users)\n\n  Use the REST API to get public and private information about authenticated users."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://docs.github.com/api/article?pathname=/en/rest"
+    },
+    {
+      "name": "GeoNet API",
+      "slug": "geonet-api",
+      "emoji": "🔧",
+      "tagline": "GeoNet API — The GeoNet API allows developers to run common network …",
+      "description": "GeoNet API exposes the GeoNet API allows developers to run common network tools from servers located around the world, facilitating the identification of network behavior based on user region. It includes functionalities like GeoPing for latency measurement and GeoDNS for DNS record lookups. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://geonet.shodan.io/",
+      "baseUrl": "https://geonet.shodan.io",
+      "sampleEndpoint": "/api/geoping/yahoo.com",
+      "latencyMs": 2643,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "ip": "98.137.11.164",
+          "is_alive": true,
+          "min_rtt": 69.101,
+          "avg_rtt": 69.505,
+          "max_rtt": 70.065,
+          "rtts": [
+            70.06549835205078,
+            69.10133361816406
+          ],
+          "packets_sent": 3,
+          "packets_received": 3
+        },
+        {
+          "ip": "74.6.231.20",
+          "is_alive": true,
+          "min_rtt": 109.243,
+          "avg_rtt": 109.49,
+          "max_rtt": 109.955,
+          "rtts": [
+            109.9553108215332,
+            109.27081108093262
+          ],
+          "packets_sent": 3,
+          "packets_received": 3
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://geonet.shodan.io/api/geoping/yahoo.com"
+    },
+    {
+      "name": "IBAN Validation API",
+      "slug": "iban-validation-api",
+      "emoji": "💱",
+      "tagline": "IBAN Validation API — This API provides fast and accurate validation for Inte…",
+      "description": "IBAN Validation API exposes this API provides fast and accurate validation for International Bank Account Numbers (IBAN) across 83 countries. It performs checksum verification and returns an instant structured JSON response detailing the validity, country, and format of the IBAN. We verified a keyless GET endpoint returning JSON (Currency Exchange). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://kiprio.com/iban-api/",
+      "baseUrl": "https://kiprio.com",
+      "sampleEndpoint": "/v1/iban/demo?iban=DE89370400440532013000",
+      "latencyMs": 377,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "valid": true,
+        "iban": "DE89370400440532013000",
+        "formatted": "DE89 3704 0044 0532 0130 00",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "check_digits": "89",
+        "bban": "370400440532013000",
+        "length": 22
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://kiprio.com/v1/iban/demo?iban=DE89370400440532013000"
+    },
+    {
+      "name": "Grass Touch API",
+      "slug": "grass-touch-api",
+      "emoji": "💬",
+      "tagline": "Grass Touch API — This API provides information about whether Kim has tou…",
+      "description": "Grass Touch API exposes this API provides information about whether Kim has touched grass or not. It also includes details about the last known status and message regarding Kim's outdoor activity. We verified a keyless GET endpoint returning JSON (Social). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://is-kim-playing-steam.up.railway.app",
+      "baseUrl": "https://is-kim-playing-steam.up.railway.app",
+      "sampleEndpoint": "/",
+      "latencyMs": 2878,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "online": true,
+        "lastSeen": "2026-07-05T16:41:13.969Z",
+        "message": "North Korea's steaming"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://is-kim-playing-steam.up.railway.app/"
+    },
+    {
+      "name": "IP Data API",
+      "slug": "ip-data-api",
+      "emoji": "🗺",
+      "tagline": "IP Data API — ipapi.is provides a comprehensive API for obtaining det…",
+      "description": "IP Data API exposes ipapi.is provides a comprehensive API for obtaining detailed information on IP addresses, including geolocation, hosting provider data, and detection of VPNs, proxies, and abusive behavior. The API is designed for both developers and businesses, offering a user-friendly interface with a generous free tier for basic usage. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipapi.is/",
+      "baseUrl": "https://api.ipapi.is",
+      "sampleEndpoint": "/?q=32.5.140.2",
+      "latencyMs": 277,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "32.5.140.2",
+        "rir": "ARIN",
+        "is_bogon": false,
+        "is_mobile": false,
+        "is_satellite": false,
+        "is_crawler": false,
+        "is_datacenter": false,
+        "is_tor": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.ipapi.is?q=32.5.140.2"
+    },
+    {
+      "name": "IP Address API",
+      "slug": "ip-address-api",
+      "emoji": "🗺",
+      "tagline": "IP Address API — IpQuery is a versatile API that provides essential info…",
+      "description": "IP Address API exposes ipQuery is a versatile API that provides essential information about an IP address, including geolocation data and VPN detection capabilities. It is designed for developers, enabling them to filter and utilize data points critical for enhancing application security and personalization. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipquery.io",
+      "baseUrl": "https://api.ipquery.io",
+      "sampleEndpoint": "/1.1.1.1",
+      "latencyMs": 628,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "1.1.1.1",
+        "isp": {
+          "asn": "AS13335",
+          "org": "Cloudflare, Inc.",
+          "isp": "Cloudflare, Inc."
+        },
+        "location": {
+          "country": "Australia",
+          "country_code": "AU",
+          "city": "Sydney",
+          "state": "New South Wales",
+          "zipcode": "1001",
+          "latitude": -33.85395268142522,
+          "longitude": 151.18466727747452,
+          "timezone": "Australia/Sydney"
+        },
+        "risk": {
+          "is_mobile": false,
+          "is_vpn": false,
+          "is_tor": false,
+          "is_proxy": false,
+          "is_datacenter": true,
+          "risk_score": 0
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.ipquery.io/1.1.1.1"
+    },
+    {
+      "name": "InfraNode Open Data API",
+      "slug": "infranode-open-data-api",
+      "emoji": "🗺",
+      "tagline": "InfraNode Open Data API — InfraNode is a free public REST API that consolidate",
+      "description": "InfraNode Open Data API exposes infraNode is a free public REST API that consolidates open data from German cities, providing a consistent JSON envelope across multiple data sources. It eliminates the need for multiple API keys and allows access to a wide range of data regarding urban environments without advertising or payment barriers. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://infranode.dev",
+      "baseUrl": "https://infranode.dev",
+      "sampleEndpoint": "/api/v1/cities/berlin/weather",
+      "latencyMs": 176,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "city_slug": "berlin",
+          "geo": {
+            "lat": 52.52,
+            "lon": 13.405
+          },
+          "observed_at": "2026-07-05T16:00:00Z",
+          "retrieved_at": "2026-07-05T16:41:16.291746Z",
+          "source": "dwd",
+          "license_id": "geonutzv",
+          "license_tier": "A",
+          "schema_version": 1
+        },
+        "meta": {
+          "correlation_id": "b8eb532688f8421a8ce038f9c31c357d",
+          "source_status": "ok",
+          "cache_status": "HIT"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://infranode.dev/api/v1/cities/berlin/weather"
+    },
+    {
+      "name": "IP Proxy Detection",
+      "slug": "ip-proxy-detection",
+      "emoji": "🔐",
+      "tagline": "IP Proxy Detection — GetIPIntel.net provides a free API that detects proxy, …",
+      "description": "IP Proxy Detection exposes getIPIntel.net provides a free API that detects proxy, VPN, and malicious IP addresses to prevent fraud and abuse on online platforms. It uses advanced algorithms to analyze IP behavior and issue a probability score indicating the likelihood of an IP being fraudulent or abusive. We verified a keyless GET endpoint returning JSON (Security). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://getipintel.net/free-proxy-vpn-tor-detection-api/",
+      "baseUrl": "http://check.getipintel.net",
+      "sampleEndpoint": "/check.php?ip=66.228.119.72&contact=AValidEmailAddress&format=json&flags=m",
+      "latencyMs": 366,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "error",
+        "result": "-6",
+        "message": "You did not provide any contact information with your query or the contact information is invalid. Please provide a valid email address that can send and receive email.",
+        "queryIP": "66.228.119.72",
+        "queryFlags": "m",
+        "queryOFlags": null,
+        "queryFormat": "json",
+        "contact": "AValidEmailAddress"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed http://check.getipintel.net/check.php?ip=66.228.119.72&contact=AValidEmailAddress&format=json&flags=m"
+    },
+    {
+      "name": "Magic 8-Ball API",
+      "slug": "magic-8-ball-api",
+      "emoji": "💬",
+      "tagline": "Magic 8-Ball API — The Magic 8-Ball API provides mystical yes/no responses…",
+      "description": "Magic 8-Ball API exposes the Magic 8-Ball API provides mystical yes/no responses to user questions through a simple, RESTful interface. It allows developers to integrate fortune-telling features into their applications easily, including Discord bots and games, with both random responses and categorized fortunes available. We verified a keyless GET endpoint returning JSON (Social). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://www.eightballapi.com/docs",
+      "baseUrl": "https://www.eightballapi.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 155,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "reading": "It is decidedly so.",
+        "locale": "en"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://www.eightballapi.com/api"
+    },
+    {
+      "name": "NDBC Buoy Data API",
+      "slug": "ndbc-buoy-data-api",
+      "emoji": "🌤",
+      "tagline": "NDBC Buoy Data API — Description: Access real-time buoy readings and informa…",
+      "description": "NDBC Buoy Data API exposes description: Access real-time buoy readings and information from the National Data Buoy Center (NDBC) with this API. Currently under development, it provides essential data for ocean and weather monitoring enthusiasts and professionals. Supports various content types, including JSON, XML, CSV, and HTML. Ideal for integrating buoy data into your applications or research projects. We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms ",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://surftruths.com/api.html",
+      "baseUrl": "https://surftruths.com",
+      "sampleEndpoint": "/api/buoys.json",
+      "latencyMs": 976,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "41001",
+          "name": "EAST HATTERAS - 150 NM East of Cape Hatteras",
+          "latitude": 34.714,
+          "longitude": -72.248,
+          "owner": "NDBC",
+          "url": "https://surftruths.com/api/buoys/41001.json",
+          "buoys_url": "https://surftruths.com/api/buoys.json",
+          "readings_url": "https://surftruths.com/api/buoys/41001/readings.json"
+        },
+        {
+          "id": "41002",
+          "name": "SOUTH HATTERAS - 225 NM South of Cape Hatteras",
+          "latitude": 31.759,
+          "longitude": -74.936,
+          "owner": "NDBC",
+          "url": "https://surftruths.com/api/buoys/41002.json",
+          "buoys_url": "https://surftruths.com/api/buoys.json",
+          "readings_url": "https://surftruths.com/api/buoys/41002/readings.json"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://surftruths.com/api/buoys.json"
+    },
+    {
+      "name": "Nebulum Mars Rovers API",
+      "slug": "nebulum-mars-rovers-api",
+      "emoji": "📷",
+      "tagline": "Nebulum Mars Rovers API — Access real-time photos taken by Mars rovers Perseve",
+      "description": "Nebulum Mars Rovers API exposes access real-time photos taken by Mars rovers Perseverance and Curiosity through NASA missions. Developers can retrieve images based on unique photo IDs, Earth dates, or Martian sols. This API offers efficient access to fascinating Mars exploration data for enthusiasts and researchers. We verified a keyless GET endpoint returning JSON (Photography). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://rovers.nebulum.one/",
+      "baseUrl": "https://rovers.nebulum.one",
+      "sampleEndpoint": "/api/v1/photos/878",
+      "latencyMs": 608,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "photo": {
+          "id": 878,
+          "sol": 4,
+          "camera": {
+            "id": 2,
+            "name": "EDL_RDCAM",
+            "rover_id": 1,
+            "full_name": "Rover Down-Look Camera"
+          },
+          "img_src": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00004/ids/edr/browse/edl/EDE_0004_0667288829_514ECM_N0010052EDLC00004_0020LUJ01_1200.jpg",
+          "earth_date": "2021-02-22",
+          "rover": {
+            "id": 1,
+            "name": "Perseverance",
+            "landing_date": "2021-02-18",
+            "launch_date": null,
+            "status": null,
+            "max_sol": 1909,
+            "max_date": "2026-07-03",
+            "total_photos": 32214
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://rovers.nebulum.one/api/v1/photos/878"
+    },
+    {
+      "name": "Neugeborenen Vornamen Kanton St.Gallen",
+      "slug": "neugeborenen-vornamen-kanton-st-gallen",
+      "emoji": "🏛",
+      "tagline": "Neugeborenen Vornamen Kanton St.Gallen — Provides dataset of newborn first nam",
+      "description": "Neugeborenen Vornamen Kanton St.Gallen exposes provides dataset of newborn first names in the Canton of St.Gallen since 1987, based on official registry data from the Federal Office for Civil Status. Names with less than five occurrences per year are grouped under 'other names' for privacy reasons. We verified a keyless GET endpoint returning JSON (Government). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://daten.sg.ch/explore/dataset/vornamen-der-neugeborenen-kanton-stgallen-seit-1987/api/?disjunctive.geschlecht&disjunctive.geschlecht_label&disjunctive.vorname",
+      "baseUrl": "https://daten.sg.ch",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 100,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://daten.sg.ch/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://daten.sg.ch/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://daten.sg.ch/api/v2"
+    },
+    {
+      "name": "Open-Elevation API",
+      "slug": "open-elevation-api",
+      "emoji": "🗺",
+      "tagline": "Open-Elevation API — Open-Elevation is a free and open-source elevation API …",
+      "description": "Open-Elevation API exposes open-Elevation is a free and open-source elevation API that provides elevation data for geographical points. Users can easily access elevation information over a broad dataset, offering a reliable alternative to commercial elevation services. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.open-elevation.com/",
+      "baseUrl": "https://api.open-elevation.com",
+      "sampleEndpoint": "/api/v1/lookup?locations=41.161758,-8.583933",
+      "latencyMs": 364,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "latitude": 41.161758,
+            "longitude": -8.583933,
+            "elevation": 117
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.open-elevation.com/api/v1/lookup?locations=41.161758,-8.583933"
+    },
+    {
+      "name": "Parkhaus Basel API",
+      "slug": "parkhaus-basel-api",
+      "emoji": "🔧",
+      "tagline": "Parkhaus Basel API — Provides minute-by-minute occupancy data for public par…",
+      "description": "Parkhaus Basel API exposes provides minute-by-minute occupancy data for public parking garages in Basel, Switzerland, sourced from the RSS feed of the Basel parking guidance system. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://data.bs.ch/explore/dataset/100088/information/?disjunctive.title&sort=published",
+      "baseUrl": "https://data.bs.ch",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 76,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://data.bs.ch/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://data.bs.ch/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.bs.ch/api/v2"
+    },
+    {
+      "name": "Parking St.Gallen",
+      "slug": "parking-st-gallen",
+      "emoji": "📊",
+      "tagline": "Parking St.Gallen — Allows searching and downloading parking records in Sta…",
+      "description": "Parking St.Gallen exposes allows searching and downloading parking records in Stadt St.Gallen with various parameters. Data includes parking locations, availability, occupancy, and more. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://daten.stadt.sg.ch/explore/dataset/freie-parkplatze-in-der-stadt-stgallen-pls/api/?disjunctive.phid&disjunctive.phname",
+      "baseUrl": "https://daten.stadt.sg.ch",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 90,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://daten.stadt.sg.ch/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://daten.stadt.sg.ch/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://daten.stadt.sg.ch/api/v2"
+    }
+  ],
+  "skipped": []
+}

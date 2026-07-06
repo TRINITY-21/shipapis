@@ -1,0 +1,318 @@
+{
+  "batch": 45,
+  "verified": [
+    {
+      "name": "Aare.guru API",
+      "slug": "aare-guru-api",
+      "emoji": "🌤",
+      "tagline": "Aare.guru API — Aare.guru API — auto-discovered JSON endpoint",
+      "description": "Aare.guru API exposes aare.guru API — auto-discovered JSON endpoint We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://aareguru.existenz.ch",
+      "baseUrl": "https://aareguru.existenz.ch",
+      "sampleEndpoint": "/today",
+      "latencyMs": 3277,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "aare": 21.3,
+        "text": "Plütterwarm",
+        "time": 1783278600
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://aareguru.existenz.ch/today"
+    },
+    {
+      "name": "LectServe",
+      "slug": "lectserve",
+      "emoji": "📅",
+      "tagline": "LectServe — LectServe — auto-discovered JSON endpoint",
+      "description": "LectServe exposes lectServe — auto-discovered JSON endpoint We verified a keyless GET endpoint returning JSON (Calendar). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "http://www.lectserve.com",
+      "baseUrl": "http://www.lectserve.com",
+      "sampleEndpoint": "/today",
+      "latencyMs": 3784,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "daily": {
+          "yesterday": "2026-07-04",
+          "date_pretty": "5. July 2026",
+          "date": "2026-07-05",
+          "day": "Sunday",
+          "tomorrow": "2026-07-06",
+          "week": "Sunday Closest to July 6",
+          "readings": {
+            "evening": {
+              "second": "Acts 27",
+              "first": "Esther 1"
+            },
+            "morning": {
+              "second": "1 Corinthians 4:18-5 end",
+              "first": "Judges 16"
+            }
+          },
+          "lectionary": "acna-sec"
+        },
+        "sunday": {
+          "type": "Sunday",
+          "services": [
+            {
+              "readings": [
+                "Zechariah 9:9-12",
+                "Psalm 145:1-13; (145:14-21)"
+              ],
+              "name": "Sunday Closest to July 6",
+              "alt": ""
+            }
+          ],
+          "prevSunday": "2026-06-28",
+          "lectionary": "acna",
+          "date": "2026-07-05",
+          "date_pretty": "5. July 2026",
+          "nextSunday": "2026-07-12",
+          "day": "Sunday"
+        },
+        "red_letter": {
+          "prevSunday": "2026-06-28",
+          "services": [
+            {
+              "readings": [
+                "Zechariah 9:9-12",
+                "Psalm 145:1-13; (145:14-21)"
+              ],
+              "name": "Sunday Closest to July 6",
+              "alt": ""
+            }
+          ],
+          "lectionary": "acna",
+          "type": "Sunday",
+          "year": "A",
+          "nextSunday": "2026-07-12",
+          "day": "Sunday",
+          "date": "2026-07-05"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed http://www.lectserve.com/today"
+    },
+    {
+      "name": "Episodate",
+      "slug": "episodate",
+      "emoji": "📺",
+      "tagline": "TV show database with schedules and air dates",
+      "description": "Episodate returns paginated TV series lists, search results and show details with next-episode dates as JSON. Keyless read API — companion to TVMaze for discovery widgets.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://www.episodate.com",
+      "baseUrl": "https://www.episodate.com",
+      "sampleEndpoint": "/api/most-popular?page=1",
+      "latencyMs": 4040,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 29772,
+        "page": 1,
+        "pages": 1489,
+        "tv_shows": [
+          {
+            "id": 35624,
+            "name": "The Flash",
+            "permalink": "the-flash",
+            "start_date": "2014-10-07",
+            "end_date": null,
+            "country": "US",
+            "network": "The CW",
+            "status": "Ended"
+          },
+          {
+            "id": 23455,
+            "name": "Game of Thrones",
+            "permalink": "game-of-thrones",
+            "start_date": "2011-04-17",
+            "end_date": null,
+            "country": "US",
+            "network": "HBO",
+            "status": "Ended"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Deck of Cards",
+      "slug": "deck-of-cards",
+      "emoji": "🃏",
+      "tagline": "Shuffle and draw virtual decks",
+      "description": "Models a physical deck with persistent deck IDs. Perfect for card-game prototypes.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://deckofcardsapi.com/api",
+      "baseUrl": "https://deckofcardsapi.com/api",
+      "sampleEndpoint": "/deck/new/shuffle/?deck_count=1",
+      "latencyMs": 3314,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "deck_id": "z6zbobenf7f5",
+        "remaining": 52,
+        "shuffled": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "7Timer!",
+      "slug": "7timer",
+      "emoji": "🌤",
+      "tagline": "Numeric weather forecast for any lat/lon",
+      "description": "Machine-readable forecasts from a GFS-derived model. No key; legacy host may be HTTP-only.",
+      "sourceCategory": "Weather",
+      "docsUrl": "http://www.7timer.info",
+      "baseUrl": "http://www.7timer.info",
+      "sampleEndpoint": "/bin/api.pl?lon=13.4&lat=52.5&product=civil&output=json",
+      "latencyMs": 1230,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "product": "civil",
+        "init": "2026070512",
+        "dataseries": [
+          {
+            "timepoint": 3,
+            "cloudcover": 8,
+            "lifted_index": 2,
+            "prec_type": "none",
+            "prec_amount": 0,
+            "temp2m": 22,
+            "rh2m": "47%",
+            "wind10m": {
+              "direction": "NW",
+              "speed": 4
+            }
+          },
+          {
+            "timepoint": 6,
+            "cloudcover": 9,
+            "lifted_index": 2,
+            "prec_type": "none",
+            "prec_amount": 0,
+            "temp2m": 20,
+            "rh2m": "53%",
+            "wind10m": {
+              "direction": "NW",
+              "speed": 3
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Adoptium",
+      "slug": "adoptium",
+      "emoji": "🔧",
+      "tagline": "Adoptium — Temurin JDK release metadata",
+      "description": "Adoptium exposes temurin JDK release metadata We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.adoptium.net/v3",
+      "baseUrl": "https://api.adoptium.net",
+      "sampleEndpoint": "/v3/info/release_versions",
+      "latencyMs": 7239,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "versions": [
+          {
+            "build": 5,
+            "major": 28,
+            "minor": 0,
+            "openjdk_version": "28-beta+5-ea",
+            "optional": "ea",
+            "pre": "beta",
+            "security": 0,
+            "semver": "28.0.0-beta+5.0.ea"
+          },
+          {
+            "build": 4,
+            "major": 28,
+            "minor": 0,
+            "openjdk_version": "28-beta+4-ea",
+            "optional": "ea",
+            "pre": "beta",
+            "security": 0,
+            "semver": "28.0.0-beta+4.0.ea"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.adoptium.net/v3/info/release_versions"
+    },
+    {
+      "name": "Zelda",
+      "slug": "zelda",
+      "emoji": "🎮",
+      "tagline": "Zelda — The Legend of Zelda franchise data",
+      "description": "Zelda exposes the Legend of Zelda franchise data We verified a keyless GET endpoint returning JSON (Games & Comics). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.zelda.fanapis.com/docs",
+      "baseUrl": "https://zelda.fanapis.com",
+      "sampleEndpoint": "/api/games?limit=2",
+      "latencyMs": 818,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "count": 2,
+        "data": [
+          {
+            "name": "The Legend of Zelda",
+            "description": "The Legend of Zelda is the first installment of the Zelda series. It centers its plot around a boy named Link, who becomes the central protagonist throughout the series. It came out as early as 1986 for the Famicom in Japan, and was later released in the western world, including Europe and the US in 1987. It has since then been re-released several times, for the Nintendo GameCube as well as the Game Boy Advance. The Japanese version of the game on the Famicom is known as The Hyrule Fantasy: The Legend of Zelda. ",
+            "developer": "Nintendo R&D 4",
+            "publisher": "Nintendo",
+            "released_date": " February 21, 1986",
+            "id": "5f6ce9d805615a85623ec2b7"
+          },
+          {
+            "name": "The Legend of Zelda: A Link to the Past",
+            "description": "One day, a band of evil thieves managed to open the gateway to the Sacred Realm, where the mystical Triforce was hidden. Upon finding the sacred golden relic, the leader of the thieves, Ganondorf, slew his followers and claimed it as his own. Before long, dark power began to flow forth from the Sacred Realm. People were drawn into this darkness, and never heard from again. As a result, the King of Hyrule ordered the seven sages to seal the entrance to the Sacred Realm. A great battle ensued—monsters poured into the Light World from the sacred land and attacked the castle. The Knights of Hyrule defended the sages during the great battle against evil, and, though most of them perished in the struggle, the sages were able to cast their seal, stopping the flow of darkness and trapping the evil king Ganon within. This battle became known as the Imprisoning War. ",
+            "developer": "Nintendo",
+            "publisher": "Nintendo",
+            "released_date": " April 13, 1992",
+            "id": "5f6ce9d805615a85623ec2b8"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://zelda.fanapis.com/api/games?limit=2"
+    }
+  ],
+  "skipped": []
+}

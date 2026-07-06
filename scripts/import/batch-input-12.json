@@ -1,0 +1,246 @@
+{
+  "batch": 12,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "JSON 2 JSONP",
+      "docsUrl": "https://json2jsonp.com/",
+      "description": "Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using client-side JavaScript",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Keyvalue",
+      "docsUrl": "https://keyvalue.immanuel.co/",
+      "description": "Simple key-value storage REST API for quick prototyping",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "License-API",
+      "docsUrl": "https://github.com/cmccandless/license-api/blob/master/README.md",
+      "description": "Unofficial REST API for choosealicense.com",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "MY IP",
+      "docsUrl": "https://www.myip.com/api-docs/",
+      "description": "Get IP address information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "npm Registry",
+      "docsUrl": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
+      "description": "Query information about your favorite Node.js libraries programatically",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "QR code",
+      "docsUrl": "http://goqr.me/api/",
+      "description": "Generate and decode / read QR code graphics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Qrcode Monkey",
+      "docsUrl": "https://www.qrcode-monkey.com/qr-code-api-with-logo/",
+      "description": "Integrate custom and unique looking QR codes into your system or workflow",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ReqRes",
+      "docsUrl": "https://reqres.in/ ",
+      "description": "A hosted REST-API ready to respond to your AJAX requests",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Serialif Color",
+      "docsUrl": "https://color.serialif.com/",
+      "description": "Color conversion, complementary, grayscale and contrasted text",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chinese Text Project",
+      "docsUrl": "https://ctext.org/tools/api",
+      "description": "Online open-access digital library for pre-modern Chinese texts",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Dictionaries",
+      "docsCheck": 200
+    },
+    {
+      "name": "Free Dictionary",
+      "docsUrl": "https://dictionaryapi.dev/",
+      "description": "Definitions, phonetics, pronounciations, parts of speech, examples, synonyms",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Dictionaries",
+      "docsCheck": 200
+    },
+    {
+      "name": "Vector Express v2.0",
+      "docsUrl": "https://vector.express",
+      "description": "Free vector file converting API",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Documents & Productivity",
+      "docsCheck": 200
+    },
+    {
+      "name": "WakaTime",
+      "docsUrl": "https://wakatime.com/developers",
+      "description": "Automated time tracking leaderboards for programmers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Documents & Productivity",
+      "docsCheck": 200
+    },
+    {
+      "name": "DropMail",
+      "docsUrl": "https://dropmail.me/api/#live-demo",
+      "description": "GraphQL API for creating and managing ephemeral e-mail inboxes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "Guerrilla Mail",
+      "docsUrl": "https://www.guerrillamail.com/GuerrillaMailAPI.html",
+      "description": "Disposable temporary Email addresses",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "MailCheck.ai",
+      "docsUrl": "https://www.mailcheck.ai/#documentation",
+      "description": "Prevent users to sign up with temporary email addresses",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "chucknorris.io",
+      "docsUrl": "https://api.chucknorris.io",
+      "description": "JSON API for hand curated Chuck Norris jokes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Imgflip",
+      "docsUrl": "https://imgflip.com/api",
+      "description": "Gets an array of popular memes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Meme Maker",
+      "docsUrl": "https://mememaker.github.io/API/",
+      "description": "REST API for create your own meme",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Memesio",
+      "docsUrl": "https://memesio.com/developers/api",
+      "description": "Meme creation API with templates, editable captions and hosted share links",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "NaMoMemes",
+      "docsUrl": "https://github.com/theIYD/NaMoMemes",
+      "description": "Memes on Narendra Modi",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Random Useless Facts",
+      "docsUrl": "https://uselessfacts.jsph.pl/",
+      "description": "Get useless, but true facts",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Yo Momma Jokes",
+      "docsUrl": "https://github.com/beanboi7/yomomma-apiv2",
+      "description": "REST API for Yo Momma Jokes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "CO2 Offset",
+      "docsUrl": "https://co2offset.io/api.html",
+      "description": "API calculates and validates the carbon footprint",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    }
+  ]
+}

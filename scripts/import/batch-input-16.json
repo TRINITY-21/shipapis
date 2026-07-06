@@ -1,0 +1,246 @@
+{
+  "batch": 16,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Federal Register",
+      "docsUrl": "https://www.federalregister.gov/reader-aids/developer-resources/rest-api",
+      "description": "The Daily Journal of the United States Government",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Interpol Red Notices",
+      "docsUrl": "https://interpol.api.bund.dev/",
+      "description": "Access and search Interpol Red Notices",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Neotimo DGFiP Mirror",
+      "docsUrl": "https://neotimo.com/annuaire-dgfip",
+      "description": "French DGFiP registry of certified e-invoicing platforms (Plateformes Agréées), searchable by SIRET",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, ACT",
+      "docsUrl": "https://www.data.act.gov.au/",
+      "description": "Australian Capital Territory Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Australia",
+      "docsUrl": "https://www.data.gov.au/",
+      "description": "Australian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Austria",
+      "docsUrl": "https://www.data.gv.at/",
+      "description": "Austria Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Belgium",
+      "docsUrl": "https://data.gov.be/",
+      "description": "Belgium Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Cyprus",
+      "docsUrl": "https://data.gov.cy/?language=en",
+      "description": "Cyprus Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Czech Republic",
+      "docsUrl": "https://data.gov.cz/english/",
+      "description": "Czech Republic Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Finland",
+      "docsUrl": "https://www.avoindata.fi/en",
+      "description": "Finland Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Germany",
+      "docsUrl": "https://www.govdata.de/daten/-/details/govdata-metadatenkatalog",
+      "description": "Germany Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Indonesia",
+      "docsUrl": "https://data.go.id/",
+      "description": "Indonesian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Italy",
+      "docsUrl": "https://www.dati.gov.it/",
+      "description": "Italy Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Lithuania",
+      "docsUrl": "https://data.gov.lt/public/api/1",
+      "description": "Lithuania Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Mexico",
+      "docsUrl": "https://www.inegi.org.mx/datos/",
+      "description": "Mexican Statistical Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Netherlands",
+      "docsUrl": "https://data.overheid.nl/en/ondersteuning/data-publiceren/api",
+      "description": "Netherlands Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, New Zealand",
+      "docsUrl": "https://www.data.govt.nz/",
+      "description": "New Zealand Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Queensland Government",
+      "docsUrl": "https://www.data.qld.gov.au/",
+      "description": "Queensland Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Slovakia",
+      "docsUrl": "https://data.gov.sk/en/",
+      "description": "Slovakia Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Slovenia",
+      "docsUrl": "https://podatki.gov.si/",
+      "description": "Slovenia Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, South Australian Government",
+      "docsUrl": "https://data.sa.gov.au/",
+      "description": "South Australian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Spain",
+      "docsUrl": "https://datos.gob.es/en",
+      "description": "Spain Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Sweden",
+      "docsUrl": "https://www.dataportal.se/en/dataservice/91_29789/api-for-the-statistical-database",
+      "description": "Sweden Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Switzerland",
+      "docsUrl": "https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html",
+      "description": "Switzerland Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "batch": 13,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Danish data service Energi",
+      "docsUrl": "https://www.energidataservice.dk/",
+      "description": "Open energy data from Energinet to society",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Luchtmeetnet",
+      "docsUrl": "https://api-docs.luchtmeetnet.nl/",
+      "description": "Predicted and actual air quality components for The Netherlands (RIVM)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "PM2.5 Open Data Portal",
+      "docsUrl": "https://pm25.lass-net.org/#apis",
+      "description": "Open low-cost PM2.5 sensor data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Solematica",
+      "docsUrl": "https://www.solematica.it/sviluppatori",
+      "description": "Compare Italian solar (photovoltaic) installer offers, energy prices (PUN/ARERA) and satellite roof data",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "UK Carbon Intensity",
+      "docsUrl": "https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0",
+      "description": "The Official Carbon Intensity API for Great Britain developed by National Grid",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Website Carbon",
+      "docsUrl": "https://api.websitecarbon.com/",
+      "description": "API to estimate the carbon footprint of loading web pages",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Binlist",
+      "docsUrl": "https://binlist.net/",
+      "description": "Public access to a database of IIN/BIN information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fed Treasury",
+      "docsUrl": "https://fiscaldata.treasury.gov/api-documentation/",
+      "description": "U.S. Department of the Treasury Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Goldprice.dev",
+      "docsUrl": "https://goldprice.dev/docs",
+      "description": "Cross-validated gold, silver & copper spot, futures & 30-year history in 13 currencies",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Razorpay IFSC",
+      "docsUrl": "https://razorpay.com/docs/",
+      "description": "Indian Financial Systems Code (Bank Branch Codes)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "WallstreetBets",
+      "docsUrl": "https://dashboard.nbshare.io/apps/reddit/api/",
+      "description": "WallstreetBets Stock Comments Sentiment Analysis",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coffee",
+      "docsUrl": "https://coffee.alexflipnote.dev/",
+      "description": "Random pictures of coffee",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fruityvice",
+      "docsUrl": "https://www.fruityvice.com",
+      "description": "Data about all kinds of fruit",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Food Facts",
+      "docsUrl": "https://world.openfoodfacts.org/data",
+      "description": "Food Products Database",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "The Report of the Week",
+      "docsUrl": "https://github.com/andyklimczak/TheReportOfTheWeek-API",
+      "description": "Food & Drink Reviews",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "WhiskyHunter",
+      "docsUrl": "https://whiskyhunter.net/api/",
+      "description": "Past online whisky auctions statistical data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Call of Duty Mobile",
+      "docsUrl": "https://callofdutymobile.vercel.app/",
+      "description": "Unofficial API for CODM player data and daily cache claiming",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chess.com",
+      "docsUrl": "https://www.chess.com/news/view/published-data-api",
+      "description": "Chess.com read-only REST API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Comic Vine",
+      "docsUrl": "https://comicvine.gamespot.com/api/documentation",
+      "description": "Comics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Digimon Information",
+      "docsUrl": "https://digimon-api.vercel.app/",
+      "description": "Provides information about digimon creatures",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Digimon TCG",
+      "docsUrl": "https://documenter.getpostman.com/view/14059948/TzecB4fH",
+      "description": "Search for Digimon cards in digimoncard.io",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "GDBrowser",
+      "docsUrl": "https://gdbrowser.com/api",
+      "description": "Easy way to use the Geometry Dash Servers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "GW2Spidy",
+      "docsUrl": "https://github.com/rubensayshi/gw2spidy/wiki",
+      "description": "GW2Spidy API, Items data on the Guild Wars 2 Trade Market",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Hyrule Compendium",
+      "docsUrl": "https://github.com/gadhagod/Hyrule-Compendium-API",
+      "description": "Data on all interactive items from The Legend of Zelda: BOTW",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    }
+  ]
+}

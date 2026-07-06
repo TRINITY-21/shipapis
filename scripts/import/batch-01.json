@@ -1,0 +1,269 @@
+{
+  "batch": 1,
+  "verified": [
+    {
+      "name": "Cat Facts",
+      "slug": "cat-facts",
+      "emoji": "🐱",
+      "tagline": "Random feline trivia served as tidy JSON",
+      "description": "Hit one endpoint and get a random cat fact plus its character length, with no key or signup. It is handy filler for chatbots, loading screens, or an intro-to-REST demo. Responses are tiny, quick, and CORS-friendly.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://catfact.ninja/",
+      "baseUrl": "https://catfact.ninja",
+      "sampleEndpoint": "/fact",
+      "latencyMs": 738,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "fact": "The domestic cat is the only species able to hold its tail vertically while walking. You can also learn about your cat's present state of mind by observing the posture of his tail.",
+        "length": 180
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "HTTP Dog",
+      "slug": "http-dog",
+      "emoji": "🐶",
+      "tagline": "Every HTTP status code described in JSON, with dog pics",
+      "description": "Append a status code plus .json to get a small object with the code, its title, and links to matching dog images in several formats. It is a cousin of HTTP Cat, but this metadata endpoint actually returns JSON. Good for docs, error pages, or a laugh.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://http.dog/",
+      "baseUrl": "https://http.dog",
+      "sampleEndpoint": "/200.json",
+      "latencyMs": 672,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status_code": 200,
+        "title": "OK",
+        "url": "https://http.dog/200",
+        "image": {
+          "jpg": "https://http.dog/200.jpg",
+          "webp": "https://http.dog/200.webp"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "No access-control-allow-origin header was returned, so CORS is absent."
+    },
+    {
+      "name": "RandomDog",
+      "slug": "randomdog",
+      "emoji": "🐕",
+      "tagline": "A random dog media URL wrapped in JSON",
+      "description": "One GET returns the file size and a direct URL to a random dog photo or video. No key, no pagination, just woof. The media can be jpg, png, gif, or mp4, so check the extension before embedding.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://random.dog/woof.json",
+      "baseUrl": "https://random.dog",
+      "sampleEndpoint": "/woof.json",
+      "latencyMs": 993,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "fileSizeBytes": 3531445,
+        "url": "https://random.dog/870afc34-fce8-4e60-8ac9-be529738fa8e.JPG"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Jikan",
+      "slug": "jikan",
+      "emoji": "🍥",
+      "tagline": "Unofficial MyAnimeList data as a keyless REST API",
+      "description": "Jikan mirrors MyAnimeList's public pages into a clean, keyless JSON API covering anime, manga, characters, and more. Query by ID or search and get rich metadata like scores, episode counts, and airing status. Data is cached and read-only; MyAnimeList owns the underlying content.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://jikan.moe",
+      "baseUrl": "https://api.jikan.moe",
+      "sampleEndpoint": "/v4/anime/1",
+      "latencyMs": 636,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "mal_id": 1,
+          "url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+          "title": "Cowboy Bebop",
+          "type": "TV",
+          "episodes": 26,
+          "status": "Finished Airing",
+          "year": 1998,
+          "score": 8.75
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "3 requests/sec, 60 requests/min (per Jikan v4 docs)",
+      "dataLicense": "Unverified (source data from MyAnimeList)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "NekosBest",
+      "slug": "nekosbest",
+      "emoji": "🐈",
+      "tagline": "Anime neko images and roleplay GIFs with artist credits",
+      "description": "Fetch a random anime image or reaction GIF by category, each response carrying the source URL and artist attribution. No key is needed and results are SFW. Categories span neko portraits plus hug, pat, and other roleplay animations.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://docs.nekos.best",
+      "baseUrl": "https://nekos.best",
+      "sampleEndpoint": "/api/v2/neko",
+      "latencyMs": 432,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "artist_name": "よく寝るかれん",
+            "source_url": "https://x.com/yokuneru_x/status/1898312827720675484",
+            "url": "https://nekos.best/api/v2/neko/8a533129-3f4a-494c-860a-492f6f485038.png",
+            "dimensions": { "width": 800, "height": 1200 }
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (images credited to their artists)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Trace Moe",
+      "slug": "trace-moe",
+      "emoji": "🔎",
+      "tagline": "Find the exact anime scene from a screenshot",
+      "description": "Pass an image URL to /search and trace.moe returns the most likely anime, episode, and timestamp, plus preview clip links. It works keyless for casual use under a per-IP quota; an API key raises the limits. Every match includes a similarity score so you can judge confidence.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://soruly.github.io/trace.moe-api/#/",
+      "baseUrl": "https://api.trace.moe",
+      "sampleEndpoint": "/search?url=https%3A%2F%2Fimages.plurk.com%2F32B15UXxymfSMwKGTObY5e.jpg",
+      "latencyMs": 740,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "frameCount": 1691514022,
+        "error": "",
+        "result": [
+          {
+            "anilist": 21034,
+            "filename": "Gochuumon wa Usagi Desuka 2 - 01 (BD 1280x720 x264 AAC).mp4",
+            "episode": 1,
+            "from": 272.1886,
+            "to": 282.6574,
+            "similarity": 0.9922267306084727,
+            "image": "https://api.trace.moe/image/fSQHi8H3mUhzk3e6a8fa6f"
+          }
+        ]
+      },
+      "freeTier": "Free, no key; per-IP search quota applies",
+      "rateLimit": "Concurrency/quota limited per IP (check GET /me)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Anonymous quota/priority is visible at GET /me. The main /search takes the image URL as a query param, so it is a keyless GET."
+    },
+    {
+      "name": "Art Institute of Chicago",
+      "slug": "art-institute-of-chicago",
+      "emoji": "🖼️",
+      "tagline": "Museum collection metadata, mostly CC0, no key",
+      "description": "Browse the Art Institute's collection as JSON: artworks, artists, exhibitions, and IIIF image links. Metadata ships under CC0 (the description field is CC-BY), so it is friendly for apps and research. No key is required, though a contact User-Agent is appreciated.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://api.artic.edu/docs/",
+      "baseUrl": "https://api.artic.edu",
+      "sampleEndpoint": "/api/v1/artworks?limit=1",
+      "latencyMs": 413,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "pagination": { "total": 132133, "limit": 1, "current_page": 1 },
+        "data": [
+          {
+            "id": 252015,
+            "title": "Guided Tour",
+            "main_reference_number": "2019.1190",
+            "date_display": "2010",
+            "artist_display": "Judy Fiskin\nAmerican, born 1945",
+            "place_of_origin": "United States"
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "60 requests/min per IP (per docs)",
+      "dataLicense": "CC0 1.0 for metadata; 'description' field is CC-BY 4.0",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "EmojiHub",
+      "slug": "emojihub",
+      "emoji": "😀",
+      "tagline": "Random or filtered emoji with unicode and HTML codes",
+      "description": "Grab a random emoji or filter by category and group, getting back the name, unicode points, and HTML entity codes as JSON. No key, tiny payloads, and open CORS. It is built from an open-source project, so you can self-host if you prefer.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://github.com/cheatsnake/emojihub",
+      "baseUrl": "https://emojihub.yurace.pro",
+      "sampleEndpoint": "/api/random",
+      "latencyMs": 435,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "svalbard ",
+        "category": "flags",
+        "group": "flags",
+        "htmlCode": ["&#127480;", "&#127471;"],
+        "unicode": ["U+1F1F8", "U+1F1EF"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Bhagavad Gita telugu",
+      "slug": "bhagavad-gita-telugu",
+      "emoji": "📖",
+      "tagline": "Bhagavad Gita verses in Telugu, Odia, English, and Spanish",
+      "description": "Request any chapter and verse to receive the original text, word-by-word synonyms, translation, and an audio link as JSON. Language codes cover Telugu (tel), Odia (odi), English (eng), and Spanish (esp). It is a small keyless FastAPI service that responds quickly.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://gita-api.vercel.app",
+      "baseUrl": "https://gita-api.vercel.app",
+      "sampleEndpoint": "/tel/verse/1/1",
+      "latencyMs": 387,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "chapter_no": 1,
+        "verse_no": 1,
+        "language": "telugu",
+        "chapter_name": "1. అర్జున విషాద యోగము",
+        "verse": "ధృతరాష్ట్ర ఉవాచ । ధర్మ క్షేత్రే కురుక్షేత్రే …",
+        "audio_link": "https://www.holy-bhagavad-gita.org/public/audio/001_001.mp3"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "FastAPI service; OpenAPI spec at /openapi.json. No CORS header observed. Verse strings trimmed with … in the sample."
+    }
+  ],
+  "skipped": [
+    { "name": "Dog Facts (dukengn.github.io)", "reason": "Endpoint is a dead Heroku app (dog-facts-api.herokuapp.com) — returns 404 HTML; free dynos retired." },
+    { "name": "Dog Facts (kinduff.github.io)", "reason": "dog-api.kinduff.com/api/facts returns HTTP 200 but {\"facts\":[],\"success\":false} on repeated tries — backend appears broken/empty, no data observed." },
+    { "name": "HTTP Cat", "reason": "Serves only images (image/jpeg for every status, e.g. /200); no keyless JSON endpoint exists." },
+    { "name": "Movebank", "reason": "Public JSON study endpoint returned HTTP 500; most studies require login and data-license acceptance, so there is no keyless JSON GET." },
+    { "name": "PlaceBear", "reason": "Placeholder image service — /200/300 returns image/jpeg; no JSON endpoint." },
+    { "name": "PlaceDog", "reason": "Placeholder image service — /300/200 returns image/jpeg; no JSON endpoint." },
+    { "name": "AnimeFacts", "reason": "Endpoint is a dead Heroku app (anime-facts-rest-api.herokuapp.com) — returns 404; free dynos retired." },
+    { "name": "AnimeNewsNetwork", "reason": "Encyclopedia API returns text/xml only (api.xml), not JSON." },
+    { "name": "Catboy", "reason": "catboys.com now redirects to an Afternic 'domain for sale' parking page; api.catboys.com fails the TLS handshake (unrecognized_name) — API is dead/unverifiable." },
+    { "name": "Waifu.im", "reason": "api.waifu.im/search returned HTTP 403 (WAF/challenge HTML) to the required probe UA; cannot verify a live JSON response (and content is NSFW-adjacent)." },
+    { "name": "URLhaus", "reason": "urlhaus-api.abuse.ch now requires an Auth-Key — returned HTTP 401 {\"error\":\"Unauthorized\"}; no keyless access." },
+    { "name": "Icon Horse", "reason": "Favicon service — /icon/<domain> returns image/png; no keyless JSON endpoint." },
+    { "name": "Lordicon", "reason": "Animated-icon library website (returns HTML); no keyless JSON REST API." },
+    { "name": "PHP-Noise", "reason": "Noise-image generator — noise.php returns a binary PNG (verified by magic bytes) even with the documented json/hex params; no JSON observed." },
+    { "name": "TWZRD Agent Intel", "reason": "MCP / x402 server for Solana agent scoring, not a plain keyless HTTP JSON GET API; no documented REST endpoint returning JSON without auth." }
+  ]
+}

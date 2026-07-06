@@ -1,0 +1,378 @@
+{
+  "batch": 9,
+  "verified": [
+    {
+      "name": "Final Space",
+      "slug": "final-space",
+      "emoji": "🚀",
+      "tagline": "Characters, episodes and locations from the Final Space cartoon",
+      "description": "A fan-built JSON API cataloguing the animated series Final Space: its characters, episodes, quotes and locations. Each character record carries stats, aliases, abilities and an avatar image URL. No key, open CORS, JSON out of the box.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://finalspaceapi.com/docs/",
+      "baseUrl": "https://finalspaceapi.com/api/v0",
+      "sampleEndpoint": "/character/1",
+      "latencyMs": 329,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "name": "Gary Goodspeed",
+        "status": "Alive",
+        "species": "Human",
+        "gender": "Male",
+        "origin": "Earth",
+        "abilities": ["Piloting", "Marksmanship"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "SWAPI",
+      "slug": "swapi-dev",
+      "emoji": "🛸",
+      "tagline": "Star Wars people, planets, ships and films as tidy JSON",
+      "description": "The classic Star Wars API: query people, planets, starships, vehicles, species and films through simple numbered endpoints. Each resource links to related records so you can crawl the whole galaxy. Keyless, CORS-open, plain JSON.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://swapi.dev/",
+      "baseUrl": "https://swapi.dev/api",
+      "sampleEndpoint": "/people/1/",
+      "latencyMs": 327,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Luke Skywalker",
+        "height": "172",
+        "mass": "77",
+        "hair_color": "blond",
+        "eye_color": "blue",
+        "birth_year": "19BBY",
+        "gender": "male",
+        "homeworld": "https://swapi.dev/api/planets/1/"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "One of two SWAPI entries in this batch (swapi.dev host)."
+    },
+    {
+      "name": "SWAPI",
+      "slug": "swapi-tech",
+      "emoji": "🌌",
+      "tagline": "A maintained Star Wars API with wrapped, ID-based records",
+      "description": "An actively hosted Star Wars data API covering people, planets, films, starships and more. Responses wrap each entity in a result/properties envelope with a description and cross-links. No signup, open CORS, JSON only.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://www.swapi.tech",
+      "baseUrl": "https://www.swapi.tech/api",
+      "sampleEndpoint": "/people/1",
+      "latencyMs": 940,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "ok",
+        "result": {
+          "properties": {
+            "name": "Luke Skywalker",
+            "gender": "male",
+            "height": "172",
+            "birth_year": "19BBY",
+            "homeworld": "https://www.swapi.tech/api/planets/1"
+          },
+          "uid": "1",
+          "description": "A person within the Star Wars universe"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "One of two SWAPI entries in this batch (swapi.tech host)."
+    },
+    {
+      "name": "US Weather",
+      "slug": "us-weather",
+      "emoji": "🌦️",
+      "tagline": "Official US forecasts, alerts and observations from the NWS",
+      "description": "The US National Weather Service's public API: start from a latitude/longitude to resolve the forecast grid point, then pull forecasts, hourly data, active alerts and station observations. Data is US-government public domain. Keyless, though it wants a descriptive User-Agent.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.weather.gov/documentation/services-web-api",
+      "baseUrl": "https://api.weather.gov",
+      "sampleEndpoint": "/points/39.7456,-97.0892",
+      "latencyMs": 458,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cwa": "TOP",
+        "gridId": "TOP",
+        "gridX": 32,
+        "gridY": 81,
+        "forecast": "https://api.weather.gov/gridpoints/TOP/32,81/forecast",
+        "timeZone": "America/Chicago"
+      },
+      "freeTier": "Free (US Government public data)",
+      "rateLimit": "Unpublished (asks for a User-Agent identifying your app)",
+      "dataLicense": "U.S. Government work / public domain",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "wttr.in",
+      "slug": "wttr-in",
+      "emoji": "⛅",
+      "tagline": "Weather as JSON (or ASCII art) for any place on Earth",
+      "description": "The console-friendly weather service, best known for its ASCII terminal output, also speaks JSON via the format=j1 query. One GET returns current conditions plus a multi-day forecast for a named location. No key needed and CORS is wide open.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://wttr.in/:help",
+      "baseUrl": "https://wttr.in",
+      "sampleEndpoint": "/London?format=j1",
+      "latencyMs": 2061,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "current_condition": [
+          {
+            "temp_C": "21",
+            "temp_F": "70",
+            "humidity": "69",
+            "weatherDesc": [{ "value": "Partly cloudy" }],
+            "windspeedKmph": "15",
+            "winddir16Point": "WNW"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished (informal per-IP throttling)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Returns JSON with content-type text/plain; body parses as JSON."
+    },
+    {
+      "name": "openSenseMap",
+      "slug": "opensensemap",
+      "emoji": "🌡️",
+      "tagline": "Live readings from citizen-run senseBox weather stations",
+      "description": "An open-data platform where hobbyist senseBox stations publish environmental measurements — temperature, humidity, particulate matter, UV and more. Fetch a single box to see its sensors and latest values, or query boxes by bounding box. Keyless and CORS-friendly.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://api.opensensemap.org/",
+      "baseUrl": "https://api.opensensemap.org",
+      "sampleEndpoint": "/boxes/57b49f336fab811300b7d727?format=json",
+      "latencyMs": 341,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "_id": "57b49f336fab811300b7d727",
+        "name": "askan.biz",
+        "exposure": "outdoor",
+        "model": "homeWifi",
+        "sensors": [
+          {
+            "title": "UV-Intensität",
+            "unit": "μW/cm²",
+            "sensorType": "VEML6070",
+            "lastMeasurement": { "value": "25.3" }
+          }
+        ]
+      },
+      "freeTier": "Free (open-source citizen-science platform)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open data (license set per senseBox; often public domain)",
+      "commercialUse": "unclear",
+      "notes": "/boxes bounding-box queries can be large; single-box endpoint used for the probe."
+    },
+    {
+      "name": "Cataas",
+      "slug": "cataas",
+      "emoji": "🐱",
+      "tagline": "Cat as a service: random cat pics, gifs and metadata",
+      "description": "Cataas serves endless cat images and gifs, and with ?json=true it hands back a small JSON object describing the cat instead of the raw picture. Each record carries an id, tags, mimetype and a direct URL. No key, open CORS.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://cataas.com/",
+      "baseUrl": "https://cataas.com",
+      "sampleEndpoint": "/cat?json=true",
+      "latencyMs": 702,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "Fy1ZRM362ukJIXkD",
+        "tags": ["worker"],
+        "created_at": "2016-11-22T15:20:31.711Z",
+        "url": "https://cataas.com/cat/Fy1ZRM362ukJIXkD?position=center",
+        "mimetype": "image/jpeg"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "RandomDuck",
+      "slug": "randomduck",
+      "emoji": "🦆",
+      "tagline": "A random duck picture URL on every request",
+      "description": "random-d.uk returns a JSON pointer to a random duck photo or gif each time you hit it. The payload is tiny: a friendly message and the image URL. No API key, though this endpoint did not advertise CORS headers.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://random-d.uk/api",
+      "baseUrl": "https://random-d.uk/api",
+      "sampleEndpoint": "/random",
+      "latencyMs": 1487,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Powered by random-d.uk",
+        "url": "http://random-d.uk/api/545.jpg"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "No access-control-allow-origin header observed on this endpoint."
+    },
+    {
+      "name": "RandomFox",
+      "slug": "randomfox",
+      "emoji": "🦊",
+      "tagline": "One random fox photo URL per call",
+      "description": "randomfox.ca answers each GET with a JSON object holding a random fox image URL and a matching web link. It's about as minimal as an API gets — handy for a quick placeholder image. Keyless with open CORS.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://randomfox.ca/floof/",
+      "baseUrl": "https://randomfox.ca",
+      "sampleEndpoint": "/floof/",
+      "latencyMs": 2166,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "image": "https://randomfox.ca/images/63.jpg",
+        "link": "https://randomfox.ca/?i=63"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "MeowFacts",
+      "slug": "meowfacts",
+      "emoji": "😺",
+      "tagline": "Random cat facts as JSON, one or many at a time",
+      "description": "MeowFacts dishes out random feline trivia, returning a JSON object with a data array of fact strings. A count query parameter controls how many facts you get back. No key required and CORS is open.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://github.com/wh-iterabb-it/meowfacts",
+      "baseUrl": "https://meowfacts.herokuapp.com",
+      "sampleEndpoint": "/?count=1",
+      "latencyMs": 817,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": ["Jaguars are the only big cats that don't roar."]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Runs on a free Heroku-style dyno; responsive at check time but uptime isn't guaranteed."
+    },
+    {
+      "name": "MCU Countdown",
+      "slug": "mcu-countdown",
+      "emoji": "🦸",
+      "tagline": "How many days until the next Marvel release drops",
+      "description": "The engine behind whenisthenextmcufilm.com exposes a JSON endpoint counting down to the next Marvel Cinematic Universe title, with details on the upcoming and following productions. Alternate paths cover Star Wars, DC and the Batman universe. Data is drawn from TMDB; no key needed.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://github.com/DiljotSG/MCU-Countdown",
+      "baseUrl": "https://www.whenisthenextmcufilm.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 689,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "days_until": 24,
+        "id": 969681,
+        "title": "Spider-Man: Brand New Day",
+        "type": "Movie",
+        "release_date": "2026-07-29",
+        "following_production": {
+          "title": "VisionQuest",
+          "release_date": "2026-10-14",
+          "type": "TV Show"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (movie data from TMDB)",
+      "commercialUse": "unclear",
+      "notes": "Movie data sourced from TMDB; TMDB attribution/terms apply. CORS header echoed the request Origin."
+    },
+    {
+      "name": "ProblemsByVin",
+      "slug": "problemsbyvin",
+      "emoji": "🚗",
+      "tagline": "Free NHTSA reliability datasets: failure mileage, recalls, more",
+      "description": "A set of static JSON datasets derived from tens of thousands of NHTSA owner complaints and recalls, covering failure-mileage quartiles, recall gaps, transmission and engine complaint density and more. Files are refreshed weekly and each ships with embedded methodology and licensing. Served as plain keyless JSON under CC BY 4.0.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://problemsbyvin.com/data/",
+      "baseUrl": "https://problemsbyvin.com",
+      "sampleEndpoint": "/data/failure-mileage-distribution.json",
+      "latencyMs": 4425,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "dataset": "failure-mileage-distribution",
+        "title": "Failure-Mileage Distribution",
+        "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+        "columns": ["year", "make", "model", "component_category", "mileage_median"],
+        "rows": [
+          { "year": 2010, "make": "Toyota", "model": "Prius", "component_category": "brakes", "mileage_median": 6000 }
+        ]
+      },
+      "freeTier": "Free (weekly-refreshed static JSON datasets)",
+      "rateLimit": "Unpublished (static JSON files)",
+      "dataLicense": "CC BY 4.0",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "IMDbOT",
+      "slug": "imdbot",
+      "emoji": "🎬",
+      "tagline": "Unofficial keyless IMDb-style movie and series search",
+      "description": "A free, no-key search API that returns IMDb-style records for movies and shows — titles, years, IMDb IDs, cast and poster art — from a simple q query. It is the backend that powers the IMDbOT Telegram bot. Open CORS and JSON responses.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://imdb.iamidiotareyoutoo.com/docs/index.html",
+      "baseUrl": "https://imdb.iamidiotareyoutoo.com",
+      "sampleEndpoint": "/search?q=interstellar",
+      "latencyMs": 1605,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "description": [
+          {
+            "#TITLE": "Interstellar",
+            "#YEAR": 2014,
+            "#IMDB_ID": "tt0816692",
+            "#ACTORS": "Matthew McConaughey, Anne Hathaway",
+            "#IMDB_URL": "https://imdb.com/title/tt0816692"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Unofficial; not affiliated with IMDb. Underlying IMDb data makes commercial reuse legally unclear. Live host found via the IMDbOT repo's homepage (FM-DB API)."
+    }
+  ],
+  "skipped": [
+    { "name": "CleanURI", "reason": "URL shortener is POST-only (GET returns HTTP 405); no keyless representative JSON GET endpoint." },
+    { "name": "GoTiny", "reason": "API host dead — gotiny.cc/api returns Vercel DEPLOYMENT_NOT_FOUND; creation is POST-only regardless." },
+    { "name": "Shrtcode", "reason": "Host dead — api.shrtco.de fails to connect (DNS/connection error, service shut down)." },
+    { "name": "Dune", "reason": "Hosted API unreachable — heroku host returns 'No such app'; render.com host did not respond within timeout." },
+    { "name": "Movie Quote", "reason": "Hosted API dead — movie-quote-api.herokuapp.com returns 'No such app'; no live host documented." },
+    { "name": "Web Series Quotes Generator", "reason": "Serves quote images, not JSON, and its heroku host is dead ('No such app')." },
+    { "name": "Pirate Weather", "reason": "Requires an API key — probe returned HTTP 401 Unauthorized without a registered key." },
+    { "name": "Axolotl", "reason": "Backend host dead — netlify site is docs-only (all endpoint paths 404) and the real backend axoltlapi.herokuapp.com returns 404." },
+    { "name": "Cat Facts", "reason": "Heroku host dead — cat-fact.herokuapp.com returns HTTP 503 Application Error." },
+    { "name": "RescueGroups", "reason": "Requires an API key per its developer guide; no keyless JSON GET endpoint." },
+    { "name": "xeno-canto", "reason": "API v2 removed (returns error); v3 requires an API key (HTTP 401 'Missing or invalid key')." }
+  ]
+}

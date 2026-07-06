@@ -1,0 +1,326 @@
+{
+  "batch": 67,
+  "verified": [],
+  "skipped": [
+    {
+      "name": "Studio Ghibli",
+      "reason": "already in seed"
+    },
+    {
+      "name": "NASA APOD",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library",
+      "reason": "already in seed"
+    },
+    {
+      "name": "REST Countries",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Balldontlie",
+      "reason": "probe failed HTTP 401"
+    },
+    {
+      "name": "Football-Data.org",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TheSportsDB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Food Facts",
+      "reason": "already in seed"
+    },
+    {
+      "name": "7Timer!",
+      "reason": "already in seed"
+    },
+    {
+      "name": "IsDayOff",
+      "reason": "probe failed HTTP 200"
+    },
+    {
+      "name": "Abalin Namedays",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Art Institute of Chicago",
+      "reason": "already in seed"
+    },
+    {
+      "name": "EmojiHub",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Cat Facts",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Dog CEO",
+      "reason": "already in seed"
+    },
+    {
+      "name": "RandomDog",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "SWAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Studio Ghibli",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Currency API (fawazahmed0)",
+      "reason": "already in seed"
+    },
+    {
+      "name": "NBP",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Internet Archive",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open-Meteo",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Notify",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Numbers API",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Chuck Norris API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Kanye REST",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Advice Slip",
+      "reason": "already in seed"
+    },
+    {
+      "name": "icanhazdadjoke",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Official Joke API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "UUID.ink",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Public APIs",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Agify",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Genderize",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Nationalize",
+      "reason": "already in seed"
+    },
+    {
+      "name": "ipapi.co",
+      "reason": "already in seed"
+    },
+    {
+      "name": "ip-api.com",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Deck of Cards",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Trivia DB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "The Color API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TheMealDB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Brewery DB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "World Bank",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Data.gov",
+      "reason": "already in seed"
+    },
+    {
+      "name": "openFDA",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Covid Act Now",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "Sunrise-Sunset",
+      "reason": "already in seed"
+    },
+    {
+      "name": "USGS Earthquakes",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Charge Map",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "Transport API",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "ViaCEP",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Zippopotam",
+      "reason": "already in seed"
+    },
+    {
+      "name": "postcodes.io",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Adoptium",
+      "reason": "already in seed"
+    },
+    {
+      "name": "jsDelivr",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "STAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Rick and Morty API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "SWAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TVMaze",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library Search",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Digimon API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Harry Potter API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Thirukkural",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Bored API",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Catboys",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Nekos.best",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Waifu.im",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "trace.moe",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Jikan",
+      "reason": "already in seed"
+    },
+    {
+      "name": "AnimeChan",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Kitsu",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    }
+  ]
+}

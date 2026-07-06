@@ -1,0 +1,690 @@
+{
+  "batch": 41,
+  "verified": [
+    {
+      "name": "CIE-10 API",
+      "slug": "cie-10-api",
+      "emoji": "🩺",
+      "tagline": "CIE-10 API — The CIE-10 API provides a public JSON endpoint for sear…",
+      "description": "CIE-10 API exposes the CIE-10 API provides a public JSON endpoint for searching CIE-10/ICD-10 codes in Spanish by code or term. It serves as a reference and query service, and does not offer diagnosis, medical advice, or clinical decision support. We verified a keyless GET endpoint returning JSON (Health). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://notasalud.com/api-cie-10",
+      "baseUrl": "https://notasalud.com",
+      "sampleEndpoint": "/api/cie-10/openapi.json",
+      "latencyMs": 234,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "NotaSalud CIE-10 Search API",
+          "version": "1.0.0",
+          "description": "Public JSON endpoint for searching Spanish CIE-10/ICD-10 reference entries on NotaSalud. This API is for code/reference lookup and does not provide diagnosis, treatment advice, or clinical decision support.",
+          "contact": {
+            "name": "NotaSalud",
+            "url": "https://notasalud.com/"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://notasalud.com",
+            "description": "NotaSalud production site"
+          }
+        ],
+        "externalDocs": {
+          "description": "NotaSalud CIE-10 API documentation",
+          "url": "https://notasalud.com/api-cie-10"
+        },
+        "tags": [
+          {
+            "name": "CIE-10",
+            "description": "Spanish ICD/CIE-10 reference search"
+          }
+        ],
+        "paths": {
+          "/buscar/cie-10": {
+            "get": {
+              "tags": [
+                "CIE-10"
+              ],
+              "summary": "Search Spanish CIE-10 entries",
+              "description": "Returns Spanish CIE-10/ICD-10 search/reference results by code or term. If no query is supplied, the endpoint returns top-level entries.",
+              "operationId": "searchCie10",
+              "parameters": [
+                {
+                  "name": "q",
+                  "in": "query",
+                  "required": false,
+                  "description": "Search term or CIE-10 code, for example `diabetes`, `colera`, or `A00`.",
+                  "schema": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "examples": {
+                    "diagnosis": {
+                      "summary": "Diagnosis search",
+                      "value": "diabetes"
+                    },
+                    "code": {
+                      "summary": "Code search",
+                      "value": "A00"
+                    }
+                  }
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "description": "Maximum number of results to return.",
+                  "schema": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100,
+                    "default": 25
+                  },
+                  "example": 3
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Search results",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/CieSearchResponse"
+                      },
+                      "examples": {
+                        "diabetesLimit3": {
+                          "summary": "Search for diabetes, limit 3",
+                          "value": {
+                            "query": "diabetes",
+                            "total": 3,
+                            "results": [
+                              {
+                                "codigo": "E10",
+                                "nombre": "Diabetes mellitus insulinodependiente",
+                                "nivel": 2,
+                                "url": "/cie-10/e10"
+                              },
+                              {
+                                "codigo": "E10-E14",
+                                "nombre": "Diabetes mellitus",
+                                "nivel": 1,
+                                "url": "/cie-10/e10-e14"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "CieSearchResponse": {
+              "type": "object",
+              "required": [
+                "query",
+                "total"
+              ],
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "Echo of the submitted query."
+                },
+                "total": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Number of returned results."
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CieSearchResult"
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
+            "CieSearchResult": {
+              "type": "object",
+              "required": [
+                "codigo",
+                "nombre"
+              ],
+              "properties": {
+                "codigo": {
+                  "type": "string",
+                  "description": "CIE-10 code or code range."
+                },
+                "nombre": {
+                  "type": "string",
+                  "description": "Spanish display name."
+                },
+                "nivel": {
+                  "type": "integer",
+                  "description": "Hierarchy level returned by NotaSalud."
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Relative NotaSalud reference page URL for this code or range."
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://notasalud.com/api/cie-10/openapi.json"
+    },
+    {
+      "name": "Bevwire API",
+      "slug": "bevwire-api",
+      "emoji": "🍔",
+      "tagline": "Bevwire API — The Bevwire API provides access to various beverage-rel…",
+      "description": "Bevwire API exposes the Bevwire API provides access to various beverage-related information, including product details, nutrition facts, and availability. It allows developers to integrate beverage data into their applications seamlessly. We verified a keyless GET endpoint returning JSON (Food & Drink). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://bevwire.com/api-docs",
+      "baseUrl": "https://bevwire.com",
+      "sampleEndpoint": "/api/companies/search?q=milam&amp;limit=3&quot",
+      "latencyMs": 253,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "query": "milam",
+        "companies": [
+          {
+            "slug": "milam-greene-whiskey",
+            "name": "Milam & Greene Whiskey",
+            "articleCount": 3,
+            "articles": [
+              {
+                "title": "Milam & Greene Releases Live Oak Bourbon, Adds to Wildlife Collection",
+                "path": "/spirits/industry-press/milam-greene-releases-live-oak-bourbon-adds-to-wildlife-coll",
+                "url": "https://bevwire.com/spirits/industry-press/milam-greene-releases-live-oak-bourbon-adds-to-wildlife-coll"
+              },
+              {
+                "title": "Milam & Greene Whiskey Wins Texas Festival People’s Choice Gold After Recount",
+                "path": "/spirits/industry-press/milam-greene-whiskey-wins-texas-festival-peoples-choice-gold",
+                "url": "https://bevwire.com/spirits/industry-press/milam-greene-whiskey-wins-texas-festival-peoples-choice-gold"
+              }
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://bevwire.com/api/companies/search?q=milam&amp;limit=3&quot"
+    },
+    {
+      "name": "Berufsbildung Daten Exporte",
+      "slug": "berufsbildung-daten-exporte",
+      "emoji": "🔧",
+      "tagline": "Berufsbildung Daten Exporte — API zur Exportierung von Daten zu Lehrverträgen ",
+      "description": "Berufsbildung Daten Exporte exposes aPI zur Exportierung von Daten zu Lehrverträgen und Abschlüssen der Berufsbildung seit 2017, einschließlich Anzahl der Lehrverträge, neu registrierten Lehrverträgen und Abschlüssen der Qualifikationsverfahren nach Ausbildungsfeldern. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://data.tg.ch/explore/dataset/dek-abb-1/information/",
+      "baseUrl": "https://data.tg.ch",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 129,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://data.tg.ch/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://data.tg.ch/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.tg.ch/api/v2"
+    },
+    {
+      "name": "Catherine Shulman's Quotes",
+      "slug": "catherine-shulman-s-quotes",
+      "emoji": "🎭",
+      "tagline": "Catherine Shulman's Quotes — This API provides access to a collection of quote",
+      "description": "Catherine Shulman's Quotes exposes this API provides access to a collection of quotes by Catherine Shulman. Users can retrieve all quotes, get a random quote, or fetch a specific quote by its ID. We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://shulman-quotes-api.onrender.com/",
+      "baseUrl": "https://shulman-quotes-api.onrender.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 721,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "api": "Екатерина Шульман: цитаты и передачи",
+        "mirrors": {
+          "render": "https://shulman-quotes-api.onrender.com",
+          "vercel": "https://shulmanquotes.vercel.app"
+        },
+        "disclaimer": "Неофициальный образовательный проект. Все права на контент принадлежат авторам.",
+        "author": "https://github.com/l0v3m0n3y",
+        "programs": [
+          "slow-reading",
+          "knowledge-is-power"
+        ],
+        "endpoints": {
+          "quotes": {
+            "/api/quotes": "все цитаты",
+            "/api/quote/random": "случайная цитата",
+            "/api/quote/{id}": "цитата по ID",
+            "/api/search/quotes?q={word}": "поиск по цитатам"
+          },
+          "episodes": {
+            "/api/episodes": "все выпуски всех программ",
+            "/api/episodes/{program}": "все выпуски программы",
+            "/api/episodes/{program}/random": "случайный выпуск программы",
+            "/api/episodes/{program}/{episode_id}": "конкретный выпуск",
+            "/api/search/episodes?q={word}": "поиск по всем выпускам"
+          },
+          "github": {
+            "/api/github/{username}/analytics": "полный политологический анализ",
+            "/api/github/{username}/languages": "простое распределение языков",
+            "/api/github/{username}/card?style=shulman|apple": "SVG-карточка для встраивания"
+          }
+        },
+        "statistics": {
+          "total_quotes": 501,
+          "total_episodes": 446,
+          "episodes_by_program": {
+            "slow-reading": 11,
+            "knowledge-is-power": 10,
+            "status": 399,
+            "zakladka": 26
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://shulman-quotes-api.onrender.com/api"
+    },
+    {
+      "name": "Catherine Schulman Quotes",
+      "slug": "catherine-schulman-quotes",
+      "emoji": "🎭",
+      "tagline": "Catherine Schulman Quotes — This API provides access to a collection of quotes",
+      "description": "Catherine Schulman Quotes exposes this API provides access to a collection of quotes attributed to Catherine Schulman. Users can retrieve all quotes, get a random quote, or search for quotes containing specific words or by unique identifiers. We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://shulmanquotes.vercel.app/",
+      "baseUrl": "https://shulmanquotes.vercel.app",
+      "sampleEndpoint": "/api",
+      "latencyMs": 4570,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "api": "Екатерина Шульман: цитаты и передачи",
+        "mirrors": {
+          "render": "https://shulman-quotes-api.onrender.com",
+          "vercel": "https://shulmanquotes.vercel.app"
+        },
+        "disclaimer": "Неофициальный образовательный проект. Все права на контент принадлежат авторам.",
+        "author": "https://github.com/l0v3m0n3y",
+        "programs": [
+          "slow-reading",
+          "knowledge-is-power"
+        ],
+        "endpoints": {
+          "quotes": {
+            "/api/quotes": "все цитаты",
+            "/api/quote/random": "случайная цитата",
+            "/api/quote/{id}": "цитата по ID",
+            "/api/search/quotes?q={word}": "поиск по цитатам"
+          },
+          "episodes": {
+            "/api/episodes": "все выпуски всех программ",
+            "/api/episodes/{program}": "все выпуски программы",
+            "/api/episodes/{program}/random": "случайный выпуск программы",
+            "/api/episodes/{program}/{episode_id}": "конкретный выпуск",
+            "/api/search/episodes?q={word}": "поиск по всем выпускам"
+          },
+          "github": {
+            "/api/github/{username}/analytics": "полный политологический анализ",
+            "/api/github/{username}/languages": "простое распределение языков",
+            "/api/github/{username}/card?style=shulman|apple": "SVG-карточка для встраивания"
+          }
+        },
+        "statistics": {
+          "total_quotes": 501,
+          "total_episodes": 446,
+          "episodes_by_program": {
+            "slow-reading": 11,
+            "knowledge-is-power": 10,
+            "status": 399,
+            "zakladka": 26
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://shulmanquotes.vercel.app/api"
+    },
+    {
+      "name": "Colombia Public API",
+      "slug": "colombia-public-api",
+      "emoji": "🗺",
+      "tagline": "Colombia Public API — API-Colombia is a public RESTful API that provides acce…",
+      "description": "Colombia Public API exposes aPI-Colombia is a public RESTful API that provides access to a wide range of data about Colombia, including information on departments, regions, and tourist attractions. Users can explore public information without the need for authentication, making it easy to discover diverse aspects of the country. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api-colombia.com/",
+      "baseUrl": "https://api-colombia.com",
+      "sampleEndpoint": "/api/v1/Country/Colombia",
+      "latencyMs": 1201,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "name": "Colombia",
+        "description": "Colombia, oficialmente República de Colombia, es un país de América del Sur con regiones insulares en América del Norte, cerca de la costa caribeña de Nicaragua, así como en el Océano Pacífico. El territorio continental de Colombia limita al norte con el Mar Caribe, al este y noreste con Venezuela, al sureste con Brasil, al sur y suroeste con Ecuador y Perú, al oeste con el Océano Pacífico y al noroeste con Panamá. Colombia está dividida en 32 departamentos y el Distrito Capital de Bogotá, la ciudad más grande del país. Cubre un área de 1.141.748 kilómetros cuadrados (440.831 millas cuadradas) y tiene una población de 52 millones. El patrimonio cultural de Colombia, que incluye lengua, religión, cocina y arte, refleja su historia como colonia española, fusionando elementos culturales traídos por la inmigración de Europa y Medio Oriente, con los traídos por africanos esclavizados, así como con los de los diversos Civilizaciones indígenas anteriores a la colonización. El español es el idioma oficial del estado, aunque el inglés y otros 64 idiomas son idiomas regionales reconocidos.",
+        "stateCapital": "Bogotá",
+        "surface": 1141748,
+        "population": 52235050,
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "timeZone": "UTC-5"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api-colombia.com/api/v1/Country/Colombia"
+    },
+    {
+      "name": "Chocomilk API",
+      "slug": "chocomilk-api",
+      "emoji": "🎵",
+      "tagline": "Chocomilk API — Chocomilk API provides a user-friendly interface for ac…",
+      "description": "Chocomilk API exposes chocomilk API provides a user-friendly interface for accessing various multimedia resources. With features like video downloading, music playback, and image manipulation, developers can easily integrate a rich media experience into their applications. We verified a keyless GET endpoint returning JSON (Music). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://chocomilk.amira.us.kg",
+      "baseUrl": "https://chocomilk.amira.us.kg",
+      "sampleEndpoint": "/",
+      "latencyMs": 942,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "requireAuthkey": false,
+          "disableRoute": {},
+          "tags": [
+            "youtube"
+          ],
+          "name": "search youtube",
+          "description": "search a video from youtube",
+          "method": [
+            "GET",
+            "POST"
+          ],
+          "payload": {
+            "type": [
+              "query",
+              "body"
+            ],
+            "query": {
+              "query": "string"
+            },
+            "body": {
+              "query": "string"
+            }
+          },
+          "path": "/v1/youtube/search"
+        },
+        {
+          "requireAuthkey": false,
+          "disableRoute": {},
+          "tags": [
+            "youtube"
+          ],
+          "name": "play music",
+          "description": "search and play music with high quality",
+          "method": [
+            "GET",
+            "POST"
+          ],
+          "payload": {
+            "type": [
+              "query",
+              "body"
+            ],
+            "query": {
+              "id": "string",
+              "keyword": "string",
+              "limit": "number",
+              "page": "number"
+            },
+            "body": {
+              "id": "string",
+              "keyword": "string",
+              "limit": "number",
+              "page": "number"
+            }
+          },
+          "path": "/v1/youtube/play"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://chocomilk.amira.us.kg/"
+    },
+    {
+      "name": "CryptoLabel API",
+      "slug": "cryptolabel-api",
+      "emoji": "🪙",
+      "tagline": "CryptoLabel API — The CryptoLabel API allows users to resolve blockchain …",
+      "description": "CryptoLabel API exposes the CryptoLabel API allows users to resolve blockchain addresses, identify their types, and retrieve associated labels and metadata. It supports several blockchains including Ethereum, Bitcoin, and Tron, providing detailed information on entities and labels related to the queried address. We verified a keyless GET endpoint returning JSON (Cryptocurrency). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://cryptolabel.io/docs",
+      "baseUrl": "https://cryptolabel.io",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 100,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "CryptoLabel API",
+        "version": "v1",
+        "baseUrl": "https://cryptolabel.io/api/v1",
+        "openapi": "https://cryptolabel.io/api/v1/openapi.json",
+        "endpoints": [
+          {
+            "method": "GET",
+            "path": "/address/{chain}/{address}",
+            "description": "Resolve crypto address labels."
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://cryptolabel.io/api/v1"
+    },
+    {
+      "name": "Data Dragon API",
+      "slug": "data-dragon-api",
+      "emoji": "⚽",
+      "tagline": "Data Dragon API — Data Dragon is a static data API providing information …",
+      "description": "Data Dragon API exposes data Dragon is a static data API providing information and images related to champions, runes, and items in League of Legends. It allows developers to access and download data files, enabling them to integrate game-related information into their applications. We verified a keyless GET endpoint returning JSON (Sports & Fitness). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html",
+      "baseUrl": "https://ddragon.leagueoflegends.com",
+      "sampleEndpoint": "/api/versions.json",
+      "latencyMs": 840,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "16.13.1",
+        "16.12.1"
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://ddragon.leagueoflegends.com/api/versions.json"
+    },
+    {
+      "name": "Digimon API",
+      "slug": "digimon-api",
+      "emoji": "🔧",
+      "tagline": "Digimon API — Free Digimon API using data from official and fan-based…",
+      "description": "Digimon API exposes free Digimon API using data from official and fan-based sources like Wikimon.net. Not affiliated with Bandai. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://digi-api.com/#docs",
+      "baseUrl": "https://digi-api.com",
+      "sampleEndpoint": "/api/v1/digimon/1",
+      "latencyMs": 183,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "name": "Agumon",
+        "xAntibody": false,
+        "images": [
+          {
+            "href": "https://digi-api.com/images/digimon/w/Agumon.png",
+            "transparent": false
+          }
+        ],
+        "levels": [
+          {
+            "id": 4,
+            "level": "Child"
+          }
+        ],
+        "types": [
+          {
+            "id": 1,
+            "type": "Reptile"
+          }
+        ],
+        "attributes": [
+          {
+            "id": 4,
+            "attribute": "Vaccine"
+          }
+        ],
+        "fields": [
+          {
+            "id": 8,
+            "field": "Deep Savers",
+            "image": "https://digi-api.com/images/etc/fields/Deep_Savers.png"
+          },
+          {
+            "id": 5,
+            "field": "Dragon's Roar",
+            "image": "https://digi-api.com/images/etc/fields/Dragon's_Roar.png"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://digi-api.com/api/v1/digimon/1"
+    },
+    {
+      "name": "Demon Slayer API",
+      "slug": "demon-slayer-api",
+      "emoji": "🍥",
+      "tagline": "Demon Slayer API — The Demon Slayer API provides developers with structure…",
+      "description": "Demon Slayer API exposes the Demon Slayer API provides developers with structured data related to the popular anime series, including character details, combat styles, and affiliations. It allows users to access information about characters, such as their age, gender, abilities, and memorable quotes, enhancing the experience for fans and developers alike. We verified a keyless GET endpoint returning JSON (Anime). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://www.demonslayer-api.com/",
+      "baseUrl": "https://www.demonslayer-api.com",
+      "sampleEndpoint": "/api/v1/characters",
+      "latencyMs": 2905,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "pagination": {
+          "totalElements": 45,
+          "elementsOnPage": 5,
+          "currentPage": 1,
+          "totalPages": 9,
+          "previousPage": "",
+          "nextPage": "https://www.demonslayer-api.com/api/v1/characters?page=2"
+        },
+        "content": [
+          {
+            "id": 1,
+            "name": "Tanjiro Kamado",
+            "age": 16,
+            "gender": "Male",
+            "race": "Human",
+            "description": "Is the main protagonist of Demon Slayer. He joined the Demon Slayer Corp to find a remedy to turn his sister, Nezuko Kamado, back into a human and to hunt down and kill demons.",
+            "img": "https://www.demonslayer-api.com/api/v1/characters/images/1.webp",
+            "affiliation_id": 1
+          },
+          {
+            "id": 2,
+            "name": "Nezuko Kamado",
+            "age": 14,
+            "gender": "Female",
+            "race": "Demon",
+            "description": "She is a demon and the younger sister of Tanjiro Kamado and one of the two remaining members of the Kamado family. Formerly a human, she was attacked and transformed into a demon by Muzan Kibutsuji.",
+            "img": "https://www.demonslayer-api.com/api/v1/characters/images/2.webp",
+            "affiliation_id": 1
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://www.demonslayer-api.com/api/v1/characters?"
+    },
+    {
+      "name": "ElonMuskAPI",
+      "slug": "elonmuskapi",
+      "emoji": "📰",
+      "tagline": "ElonMuskAPI — MaaS: Musk as a Service: Get Random News Articles Featu…",
+      "description": "ElonMuskAPI exposes maaS: Musk as a Service: Get Random News Articles Featuring Our Lord and Savior Elon Musk Using This Free Public API! We verified a keyless GET endpoint returning JSON (News). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "News",
+      "docsUrl": "https://elonmu.sh/",
+      "baseUrl": "https://elonmu.sh",
+      "sampleEndpoint": "/api",
+      "latencyMs": 498,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "source": "CBS News",
+        "title": "Elon Musk becomes the world's first trillionaire with SpaceX's IPO",
+        "description": "The SpaceX CEO's fortune on paper now rivals the annual economic output of many countries, according to World Bank data.",
+        "url": "https://www.cbsnews.com/news/elon-musk-spacex-ipo-trillionaire-wealth/",
+        "urlImage": "https://s.yimg.com/lo/mysterio/api/62703B4C4B402974D9EF54CB3A7B96CE957C4102FD760847697F3D2DE9BA8252/subgraphmysterio/resizefill_w1200_h675;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fcbs_news_897%2F2243b26ea00237f06219fb1cc93f5855",
+        "publishDate": "2026-06-12T12:11:49Z"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://elonmu.sh/api"
+    }
+  ],
+  "skipped": []
+}

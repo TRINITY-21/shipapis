@@ -1,0 +1,984 @@
+{
+  "batch": 69,
+  "verified": [
+    {
+      "name": "Roboflow Universe",
+      "slug": "roboflow-universe",
+      "emoji": "🔑",
+      "tagline": "Roboflow Universe — free tier with API key",
+      "description": "Roboflow Universe exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://universe.roboflow.com",
+      "baseUrl": "https://universe.roboflow.com",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 424,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ping": "pong"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://universe.roboflow.com/ping"
+    },
+    {
+      "name": "Transport for Vancouver, Canada",
+      "slug": "transport-for-vancouver-canada",
+      "emoji": "🔑",
+      "tagline": "Transport for Vancouver, Canada — free tier with API key",
+      "description": "Transport for Vancouver, Canada exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://developer.translink.ca/",
+      "baseUrl": "https://getaway.translink.ca",
+      "sampleEndpoint": "/api/sitenav-v3",
+      "latencyMs": 1798,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Error": "Invalid Menu ID"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://getaway.translink.ca/api/sitenav-v3"
+    },
+    {
+      "name": "Banking API",
+      "slug": "banking-api",
+      "emoji": "🔑",
+      "tagline": "Banking API — free tier with API key",
+      "description": "Banking API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://api.codat.io",
+      "baseUrl": "https://api.codat.io",
+      "sampleEndpoint": "/status",
+      "latencyMs": 378,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": "OK",
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.codat.io/status"
+    },
+    {
+      "name": "MailboxValidator Free Email Checker",
+      "slug": "mailboxvalidator-free-email-checker",
+      "emoji": "🔑",
+      "tagline": "MailboxValidator Free Email Checker — free tier with API key",
+      "description": "MailboxValidator Free Email Checker exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.mailboxvalidator.com/",
+      "baseUrl": "https://api.mailboxvalidator.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 1992,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "email_address": "",
+        "domain": "",
+        "is_free": "",
+        "is_syntax": "",
+        "is_domain": "",
+        "is_smtp": "",
+        "is_verified": "",
+        "is_server_down": ""
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.mailboxvalidator.com/"
+    },
+    {
+      "name": "OnSched Consumer API",
+      "slug": "onsched-consumer-api",
+      "emoji": "🔑",
+      "tagline": "OnSched Consumer API — free tier with API key",
+      "description": "OnSched Consumer API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://sandbox-api.onsched.com/",
+      "baseUrl": "https://sandbox-api.onsched.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 212,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": {
+          "message": "You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.",
+          "type": "invalid_request_error"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sandbox-api.onsched.com/api"
+    },
+    {
+      "name": "VA Facilities",
+      "slug": "va-facilities",
+      "emoji": "🔑",
+      "tagline": "VA Facilities — free tier with API key",
+      "description": "VA Facilities exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://sandbox-api.va.gov/services/va_facilities/{version}",
+      "baseUrl": "https://sandbox-api.va.gov",
+      "sampleEndpoint": "/",
+      "latencyMs": 938,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the va.gov API"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sandbox-api.va.gov/"
+    },
+    {
+      "name": "Geocoder REST API",
+      "slug": "geocoder-rest-api",
+      "emoji": "🔑",
+      "tagline": "Geocoder REST API — free tier with API key",
+      "description": "Geocoder REST API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://dpdd.atlassian.net/servicedesk/customer/portal/1/group/7/",
+      "baseUrl": "https://dpdd.atlassian.net",
+      "sampleEndpoint": "/status",
+      "latencyMs": 750,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "state": "RUNNING"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://dpdd.atlassian.net/status"
+    },
+    {
+      "name": "Smappee API",
+      "slug": "smappee-api",
+      "emoji": "🔑",
+      "tagline": "Smappee API — free tier with API key",
+      "description": "Smappee API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://smappee.atlassian.net/wiki/display/DEVAPI/SmappeeDevAPI+Home",
+      "baseUrl": "https://smappee.atlassian.net",
+      "sampleEndpoint": "/status",
+      "latencyMs": 813,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "state": "RUNNING"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://smappee.atlassian.net/status"
+    },
+    {
+      "name": "Nexmo API",
+      "slug": "nexmo-api",
+      "emoji": "🔑",
+      "tagline": "Nexmo API — free tier with API key",
+      "description": "Nexmo API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developer.nexmo.com",
+      "baseUrl": "https://developer.nexmo.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 81,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "OK",
+        "timestamp": "2026-07-05T23:07:30.038Z",
+        "region": "eu-central-1",
+        "cluster": "1vapi-1",
+        "hostname": "gw-sanity-service-7d8465d85d-6vjfp",
+        "requestHeaders": {
+          "host": "developer.nexmo.com",
+          "x-forwarded-for": "46.1.3.138,10.210.45.30",
+          "x-forwarded-proto": "https",
+          "x-forwarded-port": "443",
+          "x-amzn-trace-id": "Root=1-6a4ae3b2-06cedb6a6a08ca971a0572f0",
+          "user-agent": "shipapisbot/1.0 (+https://shipapis.dev/methodology)",
+          "origin": "https://shipapis.dev",
+          "accept": "application/json, text/json, */*"
+        },
+        "requestBody": "",
+        "additionalRandomLoadSizeInKB": "0 KB"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.nexmo.com/health"
+    },
+    {
+      "name": "Agent Hustle API",
+      "slug": "agent-hustle-api",
+      "emoji": "🔑",
+      "tagline": "Agent Hustle API — free tier with API key",
+      "description": "Agent Hustle API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://agent.stakewatch.dev/api",
+      "baseUrl": "https://agent.stakewatch.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 104,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "service": "Agent Hustle"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://agent.stakewatch.dev/health"
+    },
+    {
+      "name": "Open Dog Registry",
+      "slug": "open-dog-registry",
+      "emoji": "🔑",
+      "tagline": "Open Dog Registry — free tier with API key",
+      "description": "Open Dog Registry exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://registry.dog/",
+      "baseUrl": "https://registry.dog",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 3380,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": [
+          {
+            "general": {
+              "name": "Chihuahua",
+              "group": "Companion",
+              "personalityTraits": [
+                "Companionable",
+                "Dignified"
+              ],
+              "shortDescription": "The Chihuahua is a tiny, vivacious companion with a huge personality and captivating charm.",
+              "longDescription": "The Chihuahua is a tiny dog with a huge personality, making it an ideal companion for those who appreciate a vivacious and captivating pet. Weighing around 5 pounds and standing at 7 inches tall, this elegant breed is renowned for its expressive, luminous eyes and characteristic 'apple' head. Chihuahuas are highly loyal and exude a big-dog attitude despite their small size, often displaying a protective instinct that belies their stature.\nThey are adaptable and thrive in city environments, enjoying quality time on their owner's lap. Known for their smooth, straight coats in various colors and patterns, Chihuahuas require minimal grooming but do need training to prevent them from becoming overly dominant. While they are playful and affectionate with their families, their small size makes them unsuitable for rough play with children.\nHighly vocal and alert, Chihuahuas make excellent watchdogs, bringing both joy and companionship to any home. With a lifespan of up to 15 years, these dogs are a long-term commitment, offering endless love and amusement to those who embrace their spirited nature.",
+              "popularity": 5,
+              "height": 7,
+              "weight": 5
+            },
+            "physical": {
+              "size": 1,
+              "lifespan": 4,
+              "droolingFrequency": 1,
+              "coatStyle": "Straight",
+              "coatTexture": "Smooth",
+              "coatLength": 2,
+              "doubleCoat": false
+            },
+            "behavior": {
+              "familyAffection": 4,
+              "childFriendly": 1,
+              "dogSociability": 3,
+              "friendlinessToStrangers": 2,
+              "playfulness": 4,
+              "protectiveInstincts": 4,
+              "adaptability": 4,
+              "barkingFrequency": 5
+            },
+            "care": {
+              "sheddingAmount": 2,
+              "groomingFrequency": 1,
+              "exerciseNeeds": 4,
+              "mentalStimulationNeeds": 3,
+              "trainingDifficulty": 3
+            },
+            "images": {
+              "small": {
+                "indoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/small/indoors.jpg",
+                "outdoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/small/outdoors.jpg",
+                "studio": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/small/studio.jpg"
+              },
+              "large": {
+                "indoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/large/indoors.png",
+                "outdoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/large/outdoors.png",
+                "studio": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/chihuahua/large/studio.png"
+              }
+            },
+            "id": "chihuahua"
+          },
+          {
+            "general": {
+              "name": "Siberian Husky",
+              "group": "Working",
+              "personalityTraits": [
+                "Faithful",
+                "Friendly"
+              ],
+              "shortDescription": "The playful and sociable Siberian Husky is a friendly, medium-sized sled dog with striking eyes.",
+              "longDescription": "The Siberian Husky, a medium-sized working dog, is known for its playful and sociable nature, making it a beloved family companion. Originating as a sled dog, Huskies possess great endurance and a powerful, effortless gait, ideal for pulling light loads over snowy terrains. Their thick double coat, often straight and rough, requires moderate grooming but sheds significantly, especially during seasonal changes.\nWith almond-shaped eyes that can be brown, blue, or even one of each, Huskies convey a mischievous yet friendly expression. Standing about 20 inches tall and weighing around 50 pounds, they are agile and nimble-footed, ready for any adventure. Huskies thrive on mental stimulation and vigorous activity, making them perfect for active households.\nThey are extremely sociable, getting along well with children, strangers, and other dogs. However, their innate friendliness makes them poor watchdogs. Naturally clean with little doggy odor, Huskies are easy to love and hard to resist, capturing hearts with their boundless energy and affectionate demeanor.",
+              "popularity": 5,
+              "height": 20,
+              "weight": 50
+            },
+            "physical": {
+              "size": 3,
+              "lifespan": 3,
+              "droolingFrequency": 1,
+              "coatStyle": "Straight",
+              "coatTexture": "Rough",
+              "coatLength": 3,
+              "doubleCoat": true
+            },
+            "behavior": {
+              "familyAffection": 5,
+              "childFriendly": 5,
+              "dogSociability": 5,
+              "friendlinessToStrangers": 5,
+              "playfulness": 5,
+              "protectiveInstincts": 1,
+              "adaptability": 4,
+              "barkingFrequency": 5
+            },
+            "care": {
+              "sheddingAmount": 4,
+              "groomingFrequency": 2,
+              "exerciseNeeds": 5,
+              "mentalStimulationNeeds": 4,
+              "trainingDifficulty": 3
+            },
+            "images": {
+              "small": {
+                "indoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/small/indoors.jpg",
+                "outdoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/small/outdoors.jpg",
+                "studio": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/small/studio.jpg"
+              },
+              "large": {
+                "indoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/large/indoors.png",
+                "outdoors": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/large/outdoors.png",
+                "studio": "https://raw.githubusercontent.com/chase-manning/open-dog-registry/main/images/siberian-husky/large/studio.png"
+              }
+            },
+            "id": "siberian-husky"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://registry.dog/api/v1"
+    },
+    {
+      "name": "Coinnect",
+      "slug": "coinnect",
+      "emoji": "🔑",
+      "tagline": "Coinnect — free tier with API key",
+      "description": "Coinnect exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://coinnect.bot/docs",
+      "baseUrl": "https://coinnect.bot",
+      "sampleEndpoint": "/health",
+      "latencyMs": 635,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "status": "live",
+        "version": "2026.03.24.2",
+        "exchanges_online": 16,
+        "checked_at": "2026-07-05T23:08:55.740054+00:00"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://coinnect.bot/health"
+    },
+    {
+      "name": "Random Profiles",
+      "slug": "random-profiles",
+      "emoji": "🔑",
+      "tagline": "Random Profiles — free tier with API key",
+      "description": "Random Profiles exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://random-profiles.com",
+      "baseUrl": "https://random-profiles.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1636,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://random-profiles.com/health"
+    },
+    {
+      "name": "PikaSim",
+      "slug": "pikasim",
+      "emoji": "🔑",
+      "tagline": "PikaSim — free tier with API key",
+      "description": "PikaSim exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://pikasim.com/reseller/api-docs",
+      "baseUrl": "https://pikasim.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 500,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "commit": "bbf5f3b",
+        "timestamp": "2026-07-05T23:12:37.906Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://pikasim.com/health"
+    },
+    {
+      "name": "Zhipu AI API",
+      "slug": "zhipu-ai-api",
+      "emoji": "🔑",
+      "tagline": "Zhipu AI API — free tier with API key",
+      "description": "Zhipu AI API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://open.bigmodel.cn/dev/api",
+      "baseUrl": "https://open.bigmodel.cn",
+      "sampleEndpoint": "/api",
+      "latencyMs": 3278,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": 500,
+        "msg": "404 NOT_FOUND",
+        "success": false
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://open.bigmodel.cn/api"
+    },
+    {
+      "name": "Fixer API",
+      "slug": "fixer-api",
+      "emoji": "🔑",
+      "tagline": "Fixer API — free tier with API key",
+      "description": "Fixer API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data & Information",
+      "docsUrl": "https://fixer.io/documentation",
+      "baseUrl": "https://fixer.io",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 307,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://fixer.io/healthz"
+    },
+    {
+      "name": "Lookup.im API",
+      "slug": "lookup-im-api",
+      "emoji": "🔑",
+      "tagline": "Lookup.im API — free tier with API key",
+      "description": "Lookup.im API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Communication & Identity",
+      "docsUrl": "https://lookup.im/",
+      "baseUrl": "https://lookup.im",
+      "sampleEndpoint": "/api.php",
+      "latencyMs": 101,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "error",
+        "message": "Invalid Request"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://lookup.im/api.php"
+    },
+    {
+      "name": "SnapshotAPI",
+      "slug": "snapshotapi",
+      "emoji": "🔑",
+      "tagline": "SnapshotAPI — free tier with API key",
+      "description": "SnapshotAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Developer Utilities",
+      "docsUrl": "https://snapshotapi.in/api/docs",
+      "baseUrl": "https://snapshotapi.in",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1657,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "timestamp": "2026-07-05T23:16:23.814Z",
+        "uptime": 254444,
+        "environment": "production"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://snapshotapi.in/health"
+    },
+    {
+      "name": "ValidEU API",
+      "slug": "valideu-api",
+      "emoji": "🔑",
+      "tagline": "ValidEU API — free tier with API key",
+      "description": "ValidEU API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Legal & Finance",
+      "docsUrl": "https://valid-eu.com/",
+      "baseUrl": "https://valid-eu.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 869,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "ValidEU API",
+        "version": "v1",
+        "description": "European ID validation and verification API - 17 live endpoints across 8 countries",
+        "documentation": "https://valid-eu.com/docs",
+        "openapi_spec": "https://valid-eu.com/api/v1/openapi.yaml",
+        "endpoints": {
+          "eu_wide": {
+            "iban": {
+              "validate": "GET /api/v1/eu/iban/validate/{iban}",
+              "verify": "POST /api/v1/eu/iban/verify",
+              "description": "Validate/verify IBAN (International Bank Account Number)"
+            },
+            "bic": {
+              "validate": "GET /api/v1/eu/bic/validate/{bic}",
+              "verify": "POST /api/v1/eu/bic/verify",
+              "description": "Validate/verify BIC/SWIFT codes"
+            },
+            "vat": {
+              "validate": "GET /api/v1/eu/vat/validate/{vat}",
+              "verify": "POST /api/v1/eu/vat/verify",
+              "description": "Validate/verify EU VAT numbers via VIES (27 countries)"
+            },
+            "eori": {
+              "validate": "GET /api/v1/eu/eori/validate/{eori}",
+              "description": "Validate EORI (EU customs registration)"
+            },
+            "lei": {
+              "validate": "GET /api/v1/eu/lei/validate/{lei}",
+              "verify": "POST /api/v1/eu/lei/verify",
+              "description": "Validate/verify LEI (Legal Entity Identifier)"
+            }
+          },
+          "poland": {
+            "nip": {
+              "validate": "GET /api/v1/pl/nip/validate/{nip}",
+              "verify": "POST /api/v1/pl/nip/verify",
+              "description": "Polish Tax ID (NIP)"
+            },
+            "pesel": {
+              "validate": "GET /api/v1/pl/pesel/validate/{pesel}",
+              "description": "Polish National ID (PESEL) - extracts birth date/gender"
+            },
+            "regon": {
+              "validate": "GET /api/v1/pl/regon/validate/{regon}",
+              "verify": "POST /api/v1/pl/regon/verify",
+              "description": "Polish Business Registry Number (REGON)"
+            },
+            "vat": {
+              "validate": "GET /api/v1/pl/vat/validate/{vat}",
+              "verify": "POST /api/v1/pl/vat/verify",
+              "description": "Polish VAT Number"
+            }
+          },
+          "france": {
+            "siren": {
+              "validate": "GET /api/v1/fr/siren/validate/{siren}",
+              "verify": "POST /api/v1/fr/siren/verify",
+              "description": "French Business ID (SIREN) - 9 digits"
+            },
+            "siret": {
+              "validate": "GET /api/v1/fr/siret/validate/{siret}",
+              "verify": "POST /api/v1/fr/siret/verify",
+              "description": "French Establishment ID (SIRET) - 14 digits"
+            },
+            "nss": {
+              "validate": "GET /api/v1/fr/nss/validate/{nss}",
+              "description": "French Social Security Number (NSS)"
+            },
+            "rna": {
+              "validate": "GET /api/v1/fr/rna/validate/{rna}",
+              "verify": "POST /api/v1/fr/rna/verify",
+              "description": "French Association Registry (RNA)"
+            },
+            "vat": {
+              "validate": "GET /api/v1/fr/vat/validate/{vat}",
+              "verify": "POST /api/v1/fr/vat/verify",
+              "description": "French VAT Number"
+            }
+          },
+          "germany": {
+            "vat": {
+              "validate": "GET /api/v1/de/vat/validate/{vat}",
+              "verify": "POST /api/v1/de/vat/verify",
+              "description": "German VAT Number"
+            }
+          },
+          "italy": {
+            "codice_fiscale": {
+              "validate": "GET /api/v1/it/codice-fiscale/validate/{cf}",
+              "description": "Italian Tax Code (Codice Fiscale)"
+            },
+            "vat": {
+              "validate": "GET /api/v1/it/vat/validate/{vat}",
+              "verify": "POST /api/v1/it/vat/verify",
+              "description": "Italian VAT Number"
+            }
+          },
+          "spain": {
+            "dni": {
+              "validate": "GET /api/v1/es/dni/validate/{dni}",
+              "description": "Spanish National ID (DNI)"
+            },
+            "nie": {
+              "validate": "GET /api/v1/es/nie/validate/{nie}",
+              "description": "Spanish Foreigner ID (NIE)"
+            },
+            "cif": {
+              "validate": "GET /api/v1/es/cif/validate/{cif}",
+              "description": "Spanish Company Tax ID (CIF)"
+            },
+            "nif": {
+              "validate": "GET /api/v1/es/nif/validate/{nif}",
+              "description": "Spanish Tax ID (NIF) - unified format"
+            },
+            "vat": {
+              "validate": "GET /api/v1/es/vat/validate/{vat}",
+              "verify": "POST /api/v1/es/vat/verify",
+              "description": "Spanish VAT Number"
+            }
+          },
+          "netherlands": {
+            "bsn": {
+              "validate": "GET /api/v1/nl/bsn/validate/{bsn}",
+              "description": "Dutch Citizen Service Number (BSN)"
+            },
+            "kvk": {
+              "validate": "GET /api/v1/nl/kvk/validate/{kvk}",
+              "description": "Dutch Chamber of Commerce Number (KVK)"
+            },
+            "vat": {
+              "validate": "GET /api/v1/nl/vat/validate/{vat}",
+              "verify": "POST /api/v1/nl/vat/verify",
+              "description": "Dutch VAT Number"
+            }
+          },
+          "united_kingdom": {
+            "nino": {
+              "validate": "GET /api/v1/gb/nino/validate/{nino}",
+              "description": "UK National Insurance Number (NINO)"
+            },
+            "company": {
+              "validate": "GET /api/v1/gb/company/validate/{number}",
+              "description": "UK Companies House Number (verify disabled - API unreliable)"
+            },
+            "vat": {
+              "validate": "GET /api/v1/gb/vat/validate/{vat}",
+              "verify": "POST /api/v1/gb/vat/verify",
+              "description": "UK VAT Number"
+            }
+          }
+        },
+        "endpoint_types": {
+          "validate": {
+            "description": "Algorithmic validation (format + checksum)",
+            "included_in": "All plans (within monthly quota)",
+            "speed": "Instant (<50ms)"
+          },
+          "verify": {
+            "description": "Live registry check (if available)",
+            "included_in": "Pro & Enterprise plans (within monthly quota)",
+            "speed": "Real-time (200-2000ms)"
+          }
+        },
+        "authentication": {
+          "type": "API Key",
+          "header": "X-API-Key",
+          "get_key": "https://valid-eu.com/#get-started"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://valid-eu.com/api"
+    },
+    {
+      "name": "Registrum API",
+      "slug": "registrum-api",
+      "emoji": "🔑",
+      "tagline": "Registrum API — free tier with API key",
+      "description": "Registrum API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Legal & Finance",
+      "docsUrl": "https://api.registrum.co.uk/",
+      "baseUrl": "https://api.registrum.co.uk",
+      "sampleEndpoint": "/",
+      "latencyMs": 588,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Registrum API",
+        "version": "0.1.0",
+        "docs": "/docs"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.registrum.co.uk/"
+    },
+    {
+      "name": "French Business API",
+      "slug": "french-business-api",
+      "emoji": "🔑",
+      "tagline": "French Business API — free tier with API key",
+      "description": "French Business API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Legal & Finance",
+      "docsUrl": "https://frenchbusinessapi.com/",
+      "baseUrl": "https://frenchbusinessapi.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 343,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "apis": [
+          "/sirene",
+          "/business-days"
+        ],
+        "sirene_db": true,
+        "postal_db": true,
+        "ecb_cache": true,
+        "x402_enabled": true
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://frenchbusinessapi.com/health"
+    },
+    {
+      "name": "Data.parliament.uk API",
+      "slug": "data-parliament-uk-api",
+      "emoji": "🔑",
+      "tagline": "Data.parliament.uk API — free tier with API key",
+      "description": "Data.parliament.uk API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data & Information",
+      "docsUrl": "https://api.parliament.uk/",
+      "baseUrl": "https://api.parliament.uk",
+      "sampleEndpoint": "/odata/",
+      "latencyMs": 1129,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@odata.context": "https://api.parliament.uk/odata/$metadata",
+        "value": [
+          {
+            "name": "TemporalThing",
+            "kind": "EntitySet",
+            "url": "TemporalThing"
+          },
+          {
+            "name": "PastThing",
+            "kind": "EntitySet",
+            "url": "PastThing"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.parliament.uk/odata/"
+    },
+    {
+      "name": "Bitbucket Cloud API",
+      "slug": "bitbucket-cloud-api",
+      "emoji": "🔑",
+      "tagline": "Bitbucket Cloud API — free tier with API key",
+      "description": "Bitbucket Cloud API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Developer Utilities",
+      "docsUrl": "https://developer.atlassian.com/cloud/bitbucket/rest/",
+      "baseUrl": "https://api.bitbucket.org",
+      "sampleEndpoint": "/2.0/repositories/evzijst/dogslow/filehistory/master/README.rst",
+      "latencyMs": 598,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "values": [
+          {
+            "path": "README.rst",
+            "commit": {
+              "hash": "eeffe4f3f0f9a87adf60e91af2c55b33518719ab",
+              "links": {
+                "self": {
+                  "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/commit/eeffe4f3f0f9a87adf60e91af2c55b33518719ab"
+                },
+                "html": {
+                  "href": "https://bitbucket.org/evzijst/dogslow/commits/eeffe4f3f0f9a87adf60e91af2c55b33518719ab"
+                }
+              },
+              "type": "commit"
+            },
+            "type": "commit_file",
+            "attributes": [],
+            "size": 8548,
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/src/eeffe4f3f0f9a87adf60e91af2c55b33518719ab/README.rst"
+              },
+              "meta": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/src/eeffe4f3f0f9a87adf60e91af2c55b33518719ab/README.rst?format=meta"
+              },
+              "history": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/filehistory/eeffe4f3f0f9a87adf60e91af2c55b33518719ab/README.rst"
+              }
+            }
+          },
+          {
+            "path": "README.rst",
+            "commit": {
+              "hash": "7f3cf028bf5f544ec015208a5c0d255a62a6b0be",
+              "links": {
+                "self": {
+                  "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/commit/7f3cf028bf5f544ec015208a5c0d255a62a6b0be"
+                },
+                "html": {
+                  "href": "https://bitbucket.org/evzijst/dogslow/commits/7f3cf028bf5f544ec015208a5c0d255a62a6b0be"
+                }
+              },
+              "type": "commit"
+            },
+            "type": "commit_file",
+            "attributes": [],
+            "size": 8407,
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/src/7f3cf028bf5f544ec015208a5c0d255a62a6b0be/README.rst"
+              },
+              "meta": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/src/7f3cf028bf5f544ec015208a5c0d255a62a6b0be/README.rst?format=meta"
+              },
+              "history": {
+                "href": "https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/filehistory/7f3cf028bf5f544ec015208a5c0d255a62a6b0be/README.rst"
+              }
+            }
+          }
+        ],
+        "pagelen": 50,
+        "page": 1
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.bitbucket.org/2.0/repositories/evzijst/dogslow/filehistory/master/README.rst"
+    },
+    {
+      "name": "Apify",
+      "slug": "apify",
+      "emoji": "🔑",
+      "tagline": "Apify — free tier with API key",
+      "description": "Apify exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Scraping",
+      "docsUrl": "https://docs.apify.com/api/v2",
+      "baseUrl": "https://docs.apify.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 210,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "UP"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.apify.com/health"
+    },
+    {
+      "name": "CIRCL CVE Search",
+      "slug": "circl-cve-search",
+      "emoji": "🔑",
+      "tagline": "CIRCL CVE Search — free tier with API key",
+      "description": "CIRCL CVE Search exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security & Safety",
+      "docsUrl": "https://www.circl.lu/services/cve-search/",
+      "baseUrl": "https://vulnerability.circl.lu",
+      "sampleEndpoint": "/api/browse/microsoft",
+      "latencyMs": 644,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "windows server enterprise edition itanium",
+        "windows server gold x64-datacenter"
+      ],
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://vulnerability.circl.lu/api/browse/microsoft"
+    }
+  ],
+  "skipped": []
+}

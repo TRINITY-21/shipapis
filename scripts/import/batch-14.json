@@ -1,0 +1,539 @@
+{
+  "batch": 14,
+  "verified": [
+    {
+      "name": "Minecraft Server Status",
+      "slug": "minecraft-server-status",
+      "emoji": "⛏️",
+      "tagline": "Ping any Minecraft server for its MOTD, players, and version",
+      "description": "Point it at a server host and it pings live for online status, player counts, MOTD, version, and icon. Supports both Java and Bedrock servers, with per-host caching so repeat lookups stay quick. No key, JSON out, and CORS wide open.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.mcsrvstat.us",
+      "baseUrl": "https://api.mcsrvstat.us",
+      "sampleEndpoint": "/3/hypixel.net",
+      "latencyMs": 1204,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "online": true,
+        "hostname": "mc.hypixel.net",
+        "port": 25565,
+        "version": "Requires MC 1.8 / 1.21",
+        "players": { "online": 31517, "max": 200000 },
+        "protocol": null
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Responses cached per host (~1 min); no published request cap",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "MMO Games",
+      "slug": "mmo-games",
+      "emoji": "🕹️",
+      "tagline": "Browse free-to-play MMO games, news, and giveaways as JSON",
+      "description": "A catalog of free-to-play titles from MMOBomb, filterable by genre and platform, alongside news and active giveaways. Each game entry carries a thumbnail, short blurb, publisher, and store link. Keyless GET, no signup required.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.mmobomb.com/api",
+      "baseUrl": "https://www.mmobomb.com/api1",
+      "sampleEndpoint": "/games",
+      "latencyMs": 909,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 1238,
+          "title": "World of Tanks: HEAT",
+          "short_description": "A free-to-play PvP action game.",
+          "genre": "Shooter",
+          "platform": "PC (Windows)",
+          "publisher": "Wargaming Group Limited",
+          "game_url": "https://www.mmobomb.com/open/world-of-tanks-heat"
+        }
+      ],
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Trivia",
+      "slug": "open-trivia",
+      "emoji": "❓",
+      "tagline": "Pull random trivia questions across categories and difficulties",
+      "description": "Fetch multiple-choice or true/false trivia questions filtered by category, difficulty, and type. Each result ships with the correct answer plus shuffled distractors, ready to drop straight into a quiz. Content is licensed CC BY-SA 4.0.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://opentdb.com/api_config.php",
+      "baseUrl": "https://opentdb.com",
+      "sampleEndpoint": "/api.php?amount=1",
+      "latencyMs": 669,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "response_code": 0,
+        "results": [
+          {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Entertainment: Music",
+            "question": "What is the opening track on Lorde&#039;s Pure Heroine?",
+            "correct_answer": "Tennis Court",
+            "incorrect_answers": ["Team", "Royals", "400 Lux"]
+          }
+        ]
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "One request per IP every 5 seconds (documented)",
+      "dataLicense": "CC BY-SA 4.0",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "PlayerDB",
+      "slug": "playerdb",
+      "emoji": "👤",
+      "tagline": "Resolve Minecraft, Steam, and Xbox player profiles by name or ID",
+      "description": "Look up a player across Minecraft, Steam, or Xbox and get back canonical IDs, avatars, and profile metadata. Handy for turning a username into a stable UUID or grabbing a skin texture. No key needed, JSON response, open CORS.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://playerdb.co/",
+      "baseUrl": "https://playerdb.co/api",
+      "sampleEndpoint": "/player/minecraft/Notch",
+      "latencyMs": 486,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "player.found",
+        "message": "Successfully found player by given ID.",
+        "data": {
+          "player": {
+            "username": "Notch",
+            "id": "069a79f4-44e9-4726-a5be-fca90e38aaf5",
+            "avatar": "https://crafthead.net/avatar/069a79f444e94726a5befca90e38aaf5"
+          }
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Pokémon TCG",
+      "slug": "pokemon-tcg",
+      "emoji": "🃏",
+      "tagline": "Query Pokémon trading-card data — sets, cards, prices, and images",
+      "description": "Search the Pokémon Trading Card Game catalog by card, set, type, and more, with images and market prices attached. It works without a key at a lower rate limit; a free key raises the ceiling. All Pokémon intellectual property belongs to its owners.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://pokemontcg.io",
+      "baseUrl": "https://api.pokemontcg.io/v2",
+      "sampleEndpoint": "/sets?pageSize=1",
+      "latencyMs": 5698,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "base1",
+            "name": "Base",
+            "series": "Base",
+            "printedTotal": 102,
+            "total": 102,
+            "releaseDate": "1999/01/09"
+          }
+        ],
+        "page": 1,
+        "pageSize": 1,
+        "totalCount": 173
+      },
+      "freeTier": "Free; no key ~1,000 req/day & 30/min, free key ~20,000 req/day (documented)",
+      "rateLimit": "Without key: ~30 req/min, 1,000 req/day (documented)",
+      "dataLicense": "Unverified (Pokémon IP)",
+      "commercialUse": "unclear",
+      "notes": "First (cold) probe timed out; a second attempt returned 200 in ~5.7s."
+    },
+    {
+      "name": "Raider",
+      "slug": "raider",
+      "emoji": "⚔️",
+      "tagline": "World of Warcraft Mythic+ and raid rankings for characters & guilds",
+      "description": "Pull WoW character and guild profiles, Mythic+ scores, raid progress, and the current season's affix rotation. Public data is available without a key over plain JSON. The underlying game data is Blizzard's.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://raider.io/api",
+      "baseUrl": "https://raider.io/api/v1",
+      "sampleEndpoint": "/mythic-plus/affixes?region=us&locale=en",
+      "latencyMs": 760,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "region": "us",
+        "title": "Xal'atath's Bargain: Devour, Fortified, Tyrannical, Xal'atath's Guile",
+        "affix_details": [
+          {
+            "id": 160,
+            "name": "Xal'atath's Bargain: Devour",
+            "description": "While in combat, Xal'atath tears open rifts that devour the essence of players.",
+            "wowhead_url": "https://wowhead.com/affix=160"
+          }
+        ]
+      },
+      "freeTier": "Free, no API key for public data",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (Blizzard game data)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "RuneScape",
+      "slug": "runescape",
+      "emoji": "🐉",
+      "tagline": "Official RuneScape Grand Exchange item prices and trends",
+      "description": "Jagex's Grand Exchange catalogue endpoint returns an item's current price, 30/90/180-day trends, image, and category. It answers JSON (despite a text/html content type) with no key required. RuneScape data is © Jagex.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://runescape.wiki/w/Application_programming_interface",
+      "baseUrl": "https://services.runescape.com/m=itemdb_rs/api",
+      "sampleEndpoint": "/catalogue/detail.json?item=4151",
+      "latencyMs": 1322,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "item": {
+          "id": 4151,
+          "name": "Abyssal whip",
+          "type": "Melee weapons - high level",
+          "description": "A weapon from the Abyss.",
+          "members": "true",
+          "current": { "trend": "neutral", "price": "85.3k" }
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (© Jagex)",
+      "commercialUse": "unclear",
+      "notes": "Body is valid JSON but served with a text/html content-type."
+    },
+    {
+      "name": "TETR.IO",
+      "slug": "tetr-io",
+      "emoji": "🧩",
+      "tagline": "Stats and player data from the TETR.IO Tetra Channel API",
+      "description": "The Tetra Channel API exposes TETR.IO's public numbers — global user counts, games played, and per-player records. Responses ship with cache windows the docs ask you to honor. Note the CORS header only allows tetr.io itself, so browser calls from other origins are blocked.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://tetr.io/about/api/",
+      "baseUrl": "https://ch.tetr.io/api",
+      "sampleEndpoint": "/general/stats",
+      "latencyMs": 606,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": {
+          "usercount": 9555999,
+          "totalaccounts": 26133375,
+          "rankedcount": 37945,
+          "gamesplayed": 1041883263
+        },
+        "cache": { "status": "miss" }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Honor server-provided cache expiry (~60s); docs require caching",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "access-control-allow-origin is fixed to https://tetr.io, so cross-origin browser use is blocked."
+    },
+    {
+      "name": "Valorant (non-official)",
+      "slug": "valorant-non-official",
+      "emoji": "🎯",
+      "tagline": "Community API for Valorant agents, weapons, maps, and assets",
+      "description": "A fan-maintained catalog of Valorant in-game content — agents, weapons, skins, maps, sprays — each with artwork and multi-language text. Keyless JSON with wide-open CORS. Not affiliated with Riot; all assets remain Riot's.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://valorant-api.com",
+      "baseUrl": "https://valorant-api.com/v1",
+      "sampleEndpoint": "/agents?isPlayableCharacter=true",
+      "latencyMs": 1134,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": 200,
+        "data": [
+          {
+            "uuid": "e370fa57-4757-3604-3648-499e1f642d3f",
+            "displayName": "Gekko",
+            "developerName": "Aggrobot",
+            "description": "Gekko the Angeleno leads a tight-knit crew of calamitous creatures.",
+            "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png"
+          }
+        ]
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (Riot assets)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "When is next MCU film",
+      "slug": "when-is-next-mcu-film",
+      "emoji": "🎬",
+      "tagline": "Countdown to the next Marvel Cinematic Universe release",
+      "description": "Returns the next MCU movie or show with a days-until countdown, overview, poster, and the following production in the pipeline. Data is sourced from TMDB and served as plain JSON. No key, no signup.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md",
+      "baseUrl": "https://whenisthenextmcufilm.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 4086,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "days_until": 24,
+        "id": 969681,
+        "title": "Spider-Man: Brand New Day",
+        "release_date": "2026-07-29",
+        "type": "Movie",
+        "poster_url": "https://image.tmdb.org/t/p/w500/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg"
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data via TMDB)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "xkcd",
+      "slug": "xkcd",
+      "emoji": "📈",
+      "tagline": "Fetch xkcd comics as JSON — latest or by number",
+      "description": "Grab any xkcd comic's metadata — title, image URL, alt text, and publish date — as a tidy JSON object. Hit info.0.json for the newest strip or /{num}/info.0.json for a specific one. Comics are licensed CC BY-NC, so commercial reuse is not permitted.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://xkcd.com/json.html",
+      "baseUrl": "https://xkcd.com",
+      "sampleEndpoint": "/info.0.json",
+      "latencyMs": 660,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "num": 3267,
+        "title": "Types of Tornado Alert",
+        "img": "https://imgs.xkcd.com/comics/types_of_tornado_alert.png",
+        "alt": "I hate the unearthly sound my phone makes when the weather service issues a tornado harbinger.",
+        "year": "2026",
+        "month": "7",
+        "day": "3"
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY-NC 2.5",
+      "commercialUse": "no"
+    },
+    {
+      "name": "Yu-Gi-Oh!",
+      "slug": "yu-gi-oh",
+      "emoji": "🎴",
+      "tagline": "Search Yu-Gi-Oh! cards with stats, sets, prices, and art",
+      "description": "Query the YGOPRODeck database by card name or filters and get full card details — type, ATK/DEF, archetype, set printings, and market prices. Keyless JSON with permissive CORS. Yu-Gi-Oh! is Konami's property.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://db.ygoprodeck.com/api-guide/",
+      "baseUrl": "https://db.ygoprodeck.com/api/v7",
+      "sampleEndpoint": "/cardinfo.php?name=Dark%20Magician",
+      "latencyMs": 694,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": 46986414,
+            "name": "Dark Magician",
+            "type": "Normal Monster",
+            "race": "Spellcaster",
+            "atk": 2500,
+            "def": 2100,
+            "level": 7,
+            "attribute": "DARK"
+          }
+        ]
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "20 requests per second per IP (documented)",
+      "dataLicense": "Unverified (Konami IP)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "adresse.data.gouv.fr",
+      "slug": "adresse-data-gouv-fr",
+      "emoji": "📮",
+      "tagline": "Geocode and reverse-geocode French addresses (Base Adresse Nationale)",
+      "description": "France's national address geocoder turns a query string into ranked GeoJSON matches with coordinates, postcode, and city — reverse lookups too. It's fast, keyless, and CORS-enabled, documented at 50 requests per second per IP. Data ships under open French licences.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://adresse.data.gouv.fr",
+      "baseUrl": "https://api-adresse.data.gouv.fr",
+      "sampleEndpoint": "/search/?q=8+bd+du+port&limit=1",
+      "latencyMs": 564,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": { "type": "Point", "coordinates": [2.062821, 49.031624] },
+            "properties": {
+              "label": "8 Boulevard du Port 95000 Cergy",
+              "postcode": "95000",
+              "city": "Cergy",
+              "score": 0.4924265550239234
+            }
+          }
+        ]
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "50 requests/second per IP (documented)",
+      "dataLicense": "Licence Ouverte / ODbL (Base Adresse Nationale)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "BdAPIs",
+      "slug": "bdapis",
+      "emoji": "🇧🇩",
+      "tagline": "Divisions, districts, and upazilas of Bangladesh as JSON",
+      "description": "A tidy reference API for Bangladesh's administrative geography — divisions down to districts and upazilas — each with Bangla names and coordinates. Keyless GET with open CORS. Handy for dropdowns and location pickers.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://bdapis.com/",
+      "baseUrl": "https://bdapis.com/api/v1.2",
+      "sampleEndpoint": "/divisions",
+      "latencyMs": 1151,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": { "code": 200, "message": "ok" },
+        "data": [
+          {
+            "division": "Barishal",
+            "divisionbn": "বরিশাল",
+            "coordinates": "22.3811, 90.3372"
+          }
+        ]
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Cartes.io",
+      "slug": "cartes-io",
+      "emoji": "🗺️",
+      "tagline": "Create and read open collaborative maps and markers",
+      "description": "An open-source mapping service where anyone can spin up public maps and drop markers, all reachable over a REST API. Listing maps is a keyless GET — just send Accept: application/json, or you get the web app's HTML instead. CORS is enabled.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://github.com/M-Media-Group/Cartes.io/wiki/API",
+      "baseUrl": "https://cartes.io/api",
+      "sampleEndpoint": "/maps",
+      "latencyMs": 727,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "slug": "56dfcf10-9824-470c-b205-af7401d9e1ec",
+            "title": "Trip to Europe",
+            "privacy": "public",
+            "uuid": "56dfcf10-9824-470c-b205-af7401d9e1ec",
+            "markers_count": 3,
+            "created_at": "2026-06-25T08:54:14+02:00"
+          }
+        ]
+      },
+      "freeTier": "Free, no API key for public read",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (open-source project; user-generated maps)",
+      "commercialUse": "unclear",
+      "notes": "Requires Accept: application/json; otherwise the endpoint returns the SPA HTML."
+    },
+    {
+      "name": "GeoApi",
+      "slug": "geoapi",
+      "emoji": "🇫🇷",
+      "tagline": "French administrative geography — communes, departments, regions",
+      "description": "The French government's Découpage Administratif API resolves communes, departments, and regions by name, code, or postcode, with population and INSEE codes attached. Keyless JSON, CORS-friendly, backed by official open data. Ideal for French address and territory lookups.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.gouv.fr/api/geoapi.html",
+      "baseUrl": "https://geo.api.gouv.fr",
+      "sampleEndpoint": "/communes?nom=Paris&limit=1",
+      "latencyMs": 658,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "nom": "Parisot",
+          "code": "81202",
+          "codeDepartement": "81",
+          "codeRegion": "76",
+          "codesPostaux": ["81310"],
+          "population": 1033
+        }
+      ],
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Licence Ouverte (Etalab; INSEE/IGN data)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "Steam",
+      "slug": "steam",
+      "emoji": "🎮",
+      "tagline": "Undocumented Steam storefront lookups — app details by ID",
+      "description": "Steam's internal storefront endpoint returns rich details for any app by ID: name, type, pricing, free-to-play flag, descriptions, and media. It's undocumented and keyless but IP-rate-limited, so cache and go easy. No CORS header is sent, so use it server-side.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/Revadike/InternalSteamWebAPI/wiki",
+      "baseUrl": "https://store.steampowered.com/api",
+      "sampleEndpoint": "/appdetails?appids=570",
+      "latencyMs": 747,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "570": {
+          "success": true,
+          "data": {
+            "type": "game",
+            "name": "Dota 2",
+            "steam_appid": 570,
+            "is_free": true,
+            "required_age": 0,
+            "short_description": "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes."
+          }
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished (undocumented endpoint; IP rate-limited)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Undocumented internal Steam storefront endpoint; no CORS header."
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Sakura CardCaptor",
+      "reason": "Backing Heroku app (protected-taiga-89091.herokuapp.com) returns 404 — free Heroku dynos were retired, API is dead."
+    },
+    {
+      "name": "Warface (non-official)",
+      "reason": "api.wfstats.cf root returns the site's HTML app, not JSON; no documented keyless JSON endpoint found (freenom .cf domain)."
+    },
+    {
+      "name": "Tronald Dump",
+      "reason": "API host api.tronalddump.io no longer resolves (DNS dead); www.tronalddump.io/random/quote returns 404."
+    },
+    {
+      "name": "Geocode.xyz",
+      "reason": "Anonymous requests are throttled — returns 200 but every field is a 'Throttled! See geocode.xyz/pricing' placeholder, no real geocoding data without a paid token."
+    },
+    {
+      "name": "CitySDK",
+      "reason": "citysdk.eu is a marketing/informational site; no live keyless JSON API endpoint reachable."
+    },
+    {
+      "name": "Ducks Unlimited",
+      "reason": "Dataset page is a JS-rendered ArcGIS Hub UI; no direct keyless JSON query endpoint locatable within the attempt budget."
+    },
+    {
+      "name": "Graph Countries",
+      "reason": "GraphQL host (countries-274616.ew.r.appspot.com) returns 503 — dead App Engine app; also GraphQL requires POST, no keyless JSON GET."
+    }
+  ]
+}

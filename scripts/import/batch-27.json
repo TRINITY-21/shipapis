@@ -1,0 +1,219 @@
+{
+  "batch": 27,
+  "verified": [
+    {
+      "name": "Studio Ghibli",
+      "slug": "studio-ghibli",
+      "emoji": "🎬",
+      "tagline": "Films, characters and places from the Studio Ghibli universe",
+      "description": "A tidy REST catalog of Studio Ghibli's films plus the people, species, vehicles and locations that populate them. Each film record carries titles, a synopsis, director, release year and Rotten Tomatoes score. No key needed; the project moved to Vercel after Heroku's free-tier shutdown.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://ghibliapi.vercel.app",
+      "baseUrl": "https://ghibliapi.vercel.app",
+      "sampleEndpoint": "/films?limit=1",
+      "latencyMs": 585,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+          "title": "Castle in the Sky",
+          "original_title": "天空の城ラピュタ",
+          "director": "Hayao Miyazaki",
+          "producer": "Isao Takahata",
+          "release_date": "1986",
+          "running_time": "124",
+          "rt_score": "95"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Original Heroku host is dead; verified against the Vercel deployment."
+    },
+    {
+      "name": "PHP-Noise",
+      "slug": "php-noise",
+      "emoji": "🌫️",
+      "tagline": "Generate seamless noise-texture backgrounds from a color",
+      "description": "Feed it a hex or RGB color and it returns a procedurally generated noise-texture PNG, optionally as a base64 data URI wrapped in JSON. Useful for CSS backgrounds, placeholder art and subtle grain overlays. Fully keyless with a handful of tuning parameters.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://php-noise.com/",
+      "baseUrl": "https://php-noise.com",
+      "sampleEndpoint": "/noise.php?hex=FF0000&json&base64",
+      "latencyMs": 594,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeCAIAAABCSeBN...(truncated)"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "xColors",
+      "slug": "xcolors",
+      "emoji": "🎨",
+      "tagline": "Generate and convert colors across hex, RGB and HSL",
+      "description": "Ask for a random color and receive it in hex, RGB and HSL at once, or convert a color you already have between those formats. A lightweight helper for palettes, theming and design tooling. Runs keyless on a community-hosted instance after the original Heroku host retired.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://x-colors.yurace.pro",
+      "baseUrl": "https://x-colors.yurace.pro/api",
+      "sampleEndpoint": "/random",
+      "latencyMs": 868,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hex": "#88E116",
+        "rgb": "rgb(136, 225, 22)",
+        "hsl": "hsl(86, 82%, 48%)"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Listed Heroku host is dead; verified against the yurace.pro deployment."
+    },
+    {
+      "name": "CoinGecko",
+      "slug": "coingecko",
+      "emoji": "🦎",
+      "tagline": "Crypto prices, market data and coin metadata, keyless",
+      "description": "One of the broadest public crypto data feeds: live prices, market caps, historical charts and per-coin developer and social stats across thousands of assets. The sample simply asks Bitcoin's price in USD. Keyless calls still work, though CoinGecko now nudges you toward a free Demo key for steadier limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.coingecko.com/reference/introduction",
+      "baseUrl": "https://api.coingecko.com/api/v3",
+      "sampleEndpoint": "/simple/price?ids=bitcoin&vs_currencies=usd",
+      "latencyMs": 558,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "bitcoin": {
+          "usd": 62655
+        }
+      },
+      "freeTier": "Free public endpoints; Demo API key recommended for higher limits",
+      "rateLimit": "Public tier is throttled (exact keyless limit not published)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Frankfurter",
+      "slug": "frankfurter",
+      "emoji": "💱",
+      "tagline": "Free ECB exchange rates, conversion and time series",
+      "description": "Serves foreign-exchange reference rates published by the European Central Bank, with endpoints for the latest rates, historical dates and time series. No key and no signup — just name a base and target currency. Open-source and refreshed on the ECB's working-day schedule.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://www.frankfurter.app/docs",
+      "baseUrl": "https://api.frankfurter.app",
+      "sampleEndpoint": "/latest?base=USD&symbols=EUR",
+      "latencyMs": 2171,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "amount": 1.0,
+        "base": "USD",
+        "date": "2026-07-03",
+        "rates": {
+          "EUR": 0.87352
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished (no stated limits)",
+      "dataLicense": "ECB reference rates (public); API is open-source",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "VATComply.com",
+      "slug": "vatcomply",
+      "emoji": "🧾",
+      "tagline": "Exchange rates, geolocation and EU VAT number checks",
+      "description": "Bundles ECB-sourced currency rates with IP geolocation and EU VAT number validation behind one keyless API. The sampled endpoint returns current rates based on the euro. Handy for invoicing and checkout flows that need lightweight tax and FX helpers.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://www.vatcomply.com/documentation",
+      "baseUrl": "https://api.vatcomply.com",
+      "sampleEndpoint": "/rates",
+      "latencyMs": 461,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "date": "2026-06-25",
+        "base": "EUR",
+        "rates": {
+          "USD": 1.1342,
+          "GBP": 0.86183,
+          "JPY": 183.57
+        }
+      },
+      "freeTier": "Free, no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (ECB-sourced rates)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "DownStatus",
+      "slug": "downstatus",
+      "emoji": "🟢",
+      "tagline": "Real-time up/down status for 90+ popular services",
+      "description": "A keyless JSON feed reporting whether services like Discord, GitHub and Cloudflare are operational, degraded or down, aggregated from user reports. Query one service by slug, list every tracked service, or pull ongoing outages. Each record carries recent report counts and a link to the human-readable status page.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://isitdownstatus.com/en/api-docs",
+      "baseUrl": "https://isitdownstatus.com/api/v1",
+      "sampleEndpoint": "/status/discord",
+      "latencyMs": 2481,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "data": {
+          "slug": "discord",
+          "name": "Discord",
+          "category": "social",
+          "status": "operational",
+          "report_count_24h": 0,
+          "updated_at": "2026-07-05T16:23:55.268Z"
+        }
+      },
+      "freeTier": "Free — no API key (per docs)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "Dog Facts", "reason": "Heroku host (dog-facts-api.herokuapp.com) returns 404 'No such app' — dead." },
+    { "name": "Dog Facts", "reason": "kinduff dog-api returns HTTP 200 but {\"success\":false} with empty facts on repeated tries — backend broken." },
+    { "name": "FishWatch", "reason": "/api/species returns the site's HTML homepage, not JSON — API deprecated." },
+    { "name": "HTTP Cat", "reason": "Returns image/jpeg per status code, not JSON." },
+    { "name": "PlaceBear", "reason": "Placeholder image service — returns JPEG bytes, not JSON." },
+    { "name": "PlaceDog", "reason": "Placeholder image service — returns JPEG bytes, not JSON." },
+    { "name": "Shibe.Online", "reason": "Server returns HTTP/2 PROTOCOL_ERROR / empty reply on all attempts — unreachable." },
+    { "name": "AnimeFacts", "reason": "Heroku host (anime-facts-rest-api.herokuapp.com) returns 404 'No such app' — dead." },
+    { "name": "AnimeNewsNetwork", "reason": "Encyclopedia API returns XML (text/xml), not JSON." },
+    { "name": "Catboy", "reason": "api.catboys.com fails TLS handshake ('unrecognized name') on all attempts — unreachable." },
+    { "name": "Waifu.im", "reason": "Cloudflare bot challenge returns HTTP 403 to non-browser clients — not agent-accessible." },
+    { "name": "URLhaus", "reason": "abuse.ch now requires an Auth-Key header — no keyless access." },
+    { "name": "Icon Horse", "reason": "Returns favicon image bytes, not JSON." },
+    { "name": "Lordicon", "reason": "Animated-icon asset CDN / web component, not a JSON data API." },
+    { "name": "Penguin Publishing", "reason": "penguinrandomhouse.biz webservices require a domain + API key." },
+    { "name": "Runyankole Bible", "reason": "All endpoints return HTTP 500 ('fetch failed' / 'Could not fetch verse count') — backend down." },
+    { "name": "Thirukkural", "reason": "Vercel host returns HTTP 402 'Payment required'; web.app host returns 404." },
+    { "name": "Non-Working Days", "reason": "isdayoff.ru returns plain text '0'/'1', not a JSON document." },
+    { "name": "Pantry", "reason": "Requires creating a pantry (signup) and a pantry ID — no keyless sample GET." },
+    { "name": "0x", "reason": "0x API requires a 0x-api-key header — no keyless access." },
+    { "name": "ApicAgent", "reason": "Both hosts return the HTML homepage / a 308 redirect loop — no working keyless JSON GET." },
+    { "name": "CountAPI", "reason": "Service shut down — api.countapi.xyz does not resolve (DNS failure)." },
+    { "name": "ExtendsClass JSON Storage", "reason": "Requires a POST to create a bin before any GET — no keyless sample GET." },
+    { "name": "Httpbin Cloudflare", "reason": "cloudflare-quic.com /b/ httpbin endpoints return nginx 404 — service removed." },
+    { "name": "Icanhazepoch", "reason": "Redirects to a shutdown notice (major.io 'services going offline') — dead." },
+    { "name": "Icanhazip", "reason": "Returns a plain-text IP address (text/plain), not JSON." },
+    { "name": "Image-Charts", "reason": "Returns chart image bytes (image/png), not JSON." },
+    { "name": "ip-fast.com", "reason": "Returns HTTP 429 'Too many requests' (plain text) on all attempts — rate limited." },
+    { "name": "Lua Decompiler", "reason": "POST-only — decompiles uploaded Lua bytecode, no keyless GET." },
+    { "name": "Mocky", "reason": "Build-your-own mock service — no generic keyless JSON GET sample." },
+    { "name": "oyyi", "reason": "oyyi.xyz no longer resolves (DNS ENOTFOUND) — domain dead." }
+  ]
+}

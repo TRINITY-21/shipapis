@@ -1,0 +1,245 @@
+{
+  "batch": 70,
+  "verified": [
+    {
+      "name": "IBM X-Force Exchange API",
+      "slug": "ibm-x-force-exchange-api",
+      "emoji": "🔑",
+      "tagline": "IBM X-Force Exchange API — free tier with API key",
+      "description": "IBM X-Force Exchange API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security & Safety",
+      "docsUrl": "https://exchange.xforce.ibmcloud.com/doc/",
+      "baseUrl": "https://exchange.xforce.ibmcloud.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 311,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "Operational"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://exchange.xforce.ibmcloud.com/healthz"
+    },
+    {
+      "name": "Octoparse Cloud",
+      "slug": "octoparse-cloud",
+      "emoji": "🔑",
+      "tagline": "Octoparse Cloud — free tier with API key",
+      "description": "Octoparse Cloud exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Scraping",
+      "docsUrl": "https://www.octoparse.com/api",
+      "baseUrl": "https://www.octoparse.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 644,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "error": 403
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.octoparse.com/api/v1"
+    },
+    {
+      "name": "Cerebras Inference API",
+      "slug": "cerebras-inference-api",
+      "emoji": "🔑",
+      "tagline": "Cerebras Inference API — free tier with API key",
+      "description": "Cerebras Inference API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://inference-docs.cerebras.ai/",
+      "baseUrl": "https://api.cerebras.ai",
+      "sampleEndpoint": "/public/v1/models/",
+      "latencyMs": 479,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "object": "list",
+        "data": [
+          {
+            "id": "zai-glm-4.7",
+            "object": "model",
+            "created": 1767744000,
+            "owned_by": "Z.ai",
+            "name": "Z.ai GLM 4.7",
+            "description": "This model delivers strong coding performance with advanced reasoning capabilities, superior tool use, and enhanced real-world performance in agentic coding applications.",
+            "hugging_face_id": "zai-org/GLM-4.7",
+            "pricing": {
+              "prompt": "0.00000225",
+              "completion": "0.00000275"
+            }
+          },
+          {
+            "id": "gemma-4-31b",
+            "object": "model",
+            "created": 0,
+            "owned_by": "Google",
+            "name": "Gemma 4 31B",
+            "description": "This model excels at multimodal reasoning across screenshots, documents, diagrams, and design assets. Ideal for visual agentic workflows, image-aware copilots, and teams migrating from closed multimodal APIs to an open model.",
+            "hugging_face_id": "google/gemma-4-31B",
+            "pricing": {
+              "prompt": "0.00000099",
+              "completion": "0.00000149"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.cerebras.ai/public/v1/models\\"
+    },
+    {
+      "name": "Web of Science API Expanded",
+      "slug": "web-of-science-api-expanded",
+      "emoji": "🔑",
+      "tagline": "Web of Science API Expanded — free tier with API key",
+      "description": "Web of Science API Expanded exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Developer Utilities",
+      "docsUrl": "https://developer.clarivate.com/apis/wos",
+      "baseUrl": "https://developer.clarivate.com",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 314,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "portal",
+        "message": "Up and running",
+        "uptime": 305984,
+        "healthy": true,
+        "pingUrl": "https://developer.clarivate.com//ping",
+        "version": "1.0.0-rc.14",
+        "gitLastCommit": "(no last git commit found - running locally?)",
+        "gitBranch": "(unknown)"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.clarivate.com/ping"
+    },
+    {
+      "name": "OpenCaged Geocoder (Open Source option)",
+      "slug": "opencaged-geocoder-open-source-option",
+      "emoji": "🔑",
+      "tagline": "OpenCaged Geocoder (Open Source option) — free tier with API key",
+      "description": "OpenCaged Geocoder (Open Source option) exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Location & Maps",
+      "docsUrl": "https://opencagedata.com/api",
+      "baseUrl": "https://api.opencagedata.com",
+      "sampleEndpoint": "/geocode/v1/json?key=6d0e711d72d74daeb2b0bfd2a5cdfdba&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1",
+      "latencyMs": 270,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "documentation": "https://opencagedata.com/api",
+        "licenses": [
+          {
+            "name": "see attribution guide",
+            "url": "https://opencagedata.com/credits"
+          }
+        ],
+        "rate": {
+          "limit": 2500,
+          "remaining": 2499,
+          "reset": 1783296000
+        },
+        "results": [
+          {
+            "bounds": {
+              "northeast": {
+                "lat": 51.9527122,
+                "lng": 7.6325209
+              },
+              "southwest": {
+                "lat": 51.9526122,
+                "lng": 7.6324209
+              }
+            },
+            "components": {
+              "ISO_3166-1_alpha-2": "DE",
+              "ISO_3166-1_alpha-3": "DEU",
+              "ISO_3166-2": [
+                "DE-NW"
+              ],
+              "_category": "social",
+              "_normalized_city": "Münster",
+              "_type": "social_facility",
+              "city": "Münster",
+              "city_district": "Münster-Mitte"
+            },
+            "confidence": 9,
+            "distance_from_q": {
+              "meters": 0
+            },
+            "formatted": "Chance e.V., Friedrich-Ebert-Straße 7, 48153 Münster, Deutschland",
+            "geometry": {
+              "lat": 51.9526622,
+              "lng": 7.6324709
+            }
+          }
+        ],
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "stay_informed": {
+          "blog": "https://blog.opencagedata.com",
+          "mastodon": "https://en.osm.town/@opencage"
+        },
+        "thanks": "For using an OpenCage API",
+        "timestamp": {
+          "created_http": "Sun, 05 Jul 2026 23:27:44 GMT",
+          "created_unix": 1783294064
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.opencagedata.com/geocode/v1/json?key=6d0e711d72d74daeb2b0bfd2a5cdfdba&amp;q=52.5432379%2C+13.4142133&amp;pretty=1&amp;no_annotations=1"
+    },
+    {
+      "name": "Fixer",
+      "slug": "fixer",
+      "emoji": "🔑",
+      "tagline": "Fixer — free tier with API key",
+      "description": "Fixer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://fixer.io?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://data.fixer.io",
+      "sampleEndpoint": "/api/latest",
+      "latencyMs": 528,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "code": 101,
+          "type": "missing_access_key",
+          "info": "You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://data.fixer.io/api/latest"
+    }
+  ],
+  "skipped": []
+}

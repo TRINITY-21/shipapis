@@ -1,0 +1,246 @@
+{
+  "batch": 6,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "ipapi.co",
+      "docsUrl": "https://ipapi.co/api/#introduction",
+      "description": "Find IP address location information",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "LatLng",
+      "docsUrl": "https://www.latlng.work/docs",
+      "description": "Geocoding, reverse geocoding, places, and static maps",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pinball Map",
+      "docsUrl": "https://pinballmap.com/api/v1/docs",
+      "description": "A crowdsourced map of public pinball machines",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Postali",
+      "docsUrl": "https://postali.app/api",
+      "description": "Mexico Zip Codes API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Postcodes.io",
+      "docsUrl": "https://postcodes.io",
+      "description": "Postcode lookup & Geolocation for the UK",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "SLF",
+      "docsUrl": "https://github.com/slftool/slftool.github.io/blob/master/API.md",
+      "description": "German city, country, river, database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Brazil",
+      "docsUrl": "https://brasilapi.com.br/",
+      "description": "Community driven API for Brazil Public Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Toronto Open Data",
+      "docsUrl": "https://open.toronto.ca/",
+      "description": "Toronto (CA) City Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "LocalGov.jp",
+      "docsUrl": "https://localgov.jp/",
+      "description": "Japan grants and subsidies (central J-Grants + 1,916 municipalities)",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Norway",
+      "docsUrl": "https://data.norge.no/dataservices",
+      "description": "Norwegian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Poland",
+      "docsUrl": "https://dane.gov.pl/en",
+      "description": "Poland Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenMercantil",
+      "docsUrl": "https://openmercantil.es/api/documentacion",
+      "description": "Spanish company public data and BORME event timelines",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "US Federal Contracts & Grants",
+      "docsUrl": "https://government-data-api.onrender.com/docs",
+      "description": "US federal contracts, grants, and agency spending data updated daily",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19",
+      "docsUrl": "https://github.com/M-Media-Group/Covid-19-API",
+      "description": "Covid 19 cases, deaths and recovery per country",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 Government Response",
+      "docsUrl": "https://covidtracker.bsg.ox.ac.uk",
+      "description": "Government measures tracker to fight against the Covid-19 pandemic",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 JHU CSSE",
+      "docsUrl": "https://nuttaphat.com/covid19-api/",
+      "description": "Open-source API for exploring Covid19 cases based on JHU CSSE",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 Live Data",
+      "docsUrl": "https://github.com/mathdroid/covid-19-api",
+      "description": "Global and countrywise data of Covid 19 daily Summary, confirmed cases, recovered and deaths",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 Philippines",
+      "docsUrl": "https://github.com/Simperfy/Covid-19-API-Philippines-DOH",
+      "description": "Unofficial Covid-19 Web API for Philippines from data collected by DOH",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "LAPIS",
+      "docsUrl": "https://cov-spectrum.ethz.ch/public",
+      "description": "SARS-CoV-2 genomic sequences from public sources",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Longevity World Cup",
+      "docsUrl": "https://longevityworldcup.com/api/data/athletes",
+      "description": "Public biological age competition data with biomarkers and rankings",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Disease",
+      "docsUrl": "https://disease.sh/",
+      "description": "API for Current cases and more stuff about COVID-19 and Influenza",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "AI Dev Jobs",
+      "docsUrl": "https://aidevboard.com/openapi.yaml",
+      "description": "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Jobs",
+      "docsCheck": 200
+    },
+    {
+      "name": "Arbeitnow",
+      "docsUrl": "https://documenter.getpostman.com/view/18545278/UVJbJdKh",
+      "description": "API for Job board aggregator in Europe / Remote",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Jobs",
+      "docsCheck": 200
+    },
+    {
+      "name": "DevITjobs UK",
+      "docsUrl": "https://devitjobs.uk/job_feed.xml",
+      "description": "Jobs with GraphQL",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Jobs",
+      "docsCheck": 200
+    }
+  ]
+}

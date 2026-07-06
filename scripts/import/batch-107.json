@@ -1,0 +1,355 @@
+{
+  "batch": 107,
+  "verified": [
+    {
+      "name": "World News API",
+      "slug": "world-news-api",
+      "emoji": "📰",
+      "tagline": "Global news search in 86+ languages with semantic tagging",
+      "description": "World News API indexes thousands of sources across 210+ countries with semantic entity tags, sentiment, geo filters, and newspaper front pages. Free tier: 50 points/day with an API key from worldnewsapi.com.",
+      "sourceCategory": "News",
+      "docsUrl": "https://worldnewsapi.com/docs",
+      "baseUrl": "https://api.worldnewsapi.com",
+      "sampleEndpoint": "/search-news?text=technology&number=1",
+      "latencyMs": 624,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "failure",
+        "code": 401,
+        "message": "You are not authorized. Please read https://worldnewsapi.com/docs/authentication/"
+      },
+      "freeTier": "Free — 50 API points/day",
+      "rateLimit": "50 points/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.worldnewsapi.com/search-news?text=technology&number=1"
+    },
+    {
+      "name": "NewsData",
+      "slug": "newsdata",
+      "emoji": "📰",
+      "tagline": "Breaking news and historical headlines from global sources",
+      "description": "NewsData.io serves live and archive news with category, language, and country filters. Register for a free API key; responses include title, link, source, and publish time.",
+      "sourceCategory": "News",
+      "docsUrl": "https://newsdata.io/documentation",
+      "baseUrl": "https://newsdata.io",
+      "sampleEndpoint": "/api/1/latest?language=en&size=1",
+      "latencyMs": 526,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "error",
+        "results": {
+          "message": "The API Key is missing. Please sign up to receive your free API key at: https://newsdata.io/register",
+          "code": "Unauthorized"
+        }
+      },
+      "freeTier": "Free tier — 200 credits/day",
+      "rateLimit": "200 credits/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://newsdata.io/api/1/latest?language=en&size=1"
+    },
+    {
+      "name": "TheNews API",
+      "slug": "thenews-api",
+      "emoji": "📰",
+      "tagline": "Aggregated headlines and top stories as JSON",
+      "description": "TheNews API returns headline feeds, top stories, and search results from aggregated publishers. Free registration yields an api_token for REST calls.",
+      "sourceCategory": "News",
+      "docsUrl": "https://www.thenewsapi.com/documentation",
+      "baseUrl": "https://api.thenewsapi.com",
+      "sampleEndpoint": "/v1/news/top?locale=us&limit=1",
+      "latencyMs": 372,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "invalid_api_token",
+          "message": "An invalid API token was supplied."
+        }
+      },
+      "freeTier": "Free tier — token required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.thenewsapi.com/v1/news/top?locale=us&limit=1"
+    },
+    {
+      "name": "MarketAux",
+      "slug": "marketaux",
+      "emoji": "📈",
+      "tagline": "Financial news with tickers, sentiment, and entity tags",
+      "description": "MarketAux streams market-moving headlines with linked stock symbols, sentiment scores, and publisher metadata. Free API token from marketaux.com for limited daily requests.",
+      "sourceCategory": "News",
+      "docsUrl": "https://www.marketaux.com/documentation",
+      "baseUrl": "https://api.marketaux.com",
+      "sampleEndpoint": "/v1/news/all?language=en&limit=1",
+      "latencyMs": 635,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "invalid_api_token",
+          "message": "An invalid API token was supplied."
+        }
+      },
+      "freeTier": "Free tier — token required",
+      "rateLimit": "100 requests/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.marketaux.com/v1/news/all?language=en&limit=1"
+    },
+    {
+      "name": "The Guardian",
+      "slug": "the-guardian",
+      "emoji": "📰",
+      "tagline": "Search Guardian articles, tags, and sections",
+      "description": "The Guardian Open Platform exposes search, tags, and section feeds as JSON. Developer key required (free for non-commercial use); responses include web URL, headline, and body fields.",
+      "sourceCategory": "News",
+      "docsUrl": "https://open-platform.theguardian.com/documentation/",
+      "baseUrl": "https://content.guardianapis.com",
+      "sampleEndpoint": "/search?show-fields=headline&page-size=1&api-key=test",
+      "latencyMs": 506,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "response": {
+          "status": "ok",
+          "userTier": "developer",
+          "total": 2678048,
+          "startIndex": 1,
+          "pageSize": 1,
+          "currentPage": 1,
+          "pages": 2678048,
+          "orderBy": "newest"
+        }
+      },
+      "freeTier": "Free developer key — registration required",
+      "rateLimit": "5000 calls/day (developer tier)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://content.guardianapis.com/search?show-fields=headline&page-size=1&api-key=test"
+    },
+    {
+      "name": "New York Times",
+      "slug": "new-york-times",
+      "emoji": "📰",
+      "tagline": "Article search and metadata from NYT Developer Network",
+      "description": "The New York Times Developer API covers article search, top stories, books, and archive metadata. Register for an API key; most endpoints return JSON with headline, abstract, and URLs.",
+      "sourceCategory": "News",
+      "docsUrl": "https://developer.nytimes.com/",
+      "baseUrl": "https://api.nytimes.com",
+      "sampleEndpoint": "/svc/topstories/v2/home.json",
+      "latencyMs": 307,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "fault": {
+          "faultstring": "Failed to resolve API Key variable request.queryparam.api-key",
+          "detail": {
+            "errorcode": "steps.oauth.v2.FailedToResolveAPIKey"
+          }
+        }
+      },
+      "freeTier": "Free tier — 500 requests/day",
+      "rateLimit": "500 requests/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.nytimes.com/svc/topstories/v2/home.json"
+    },
+    {
+      "name": "APITube",
+      "slug": "apitube",
+      "emoji": "📰",
+      "tagline": "Real-time news from 500k+ sources in 60 languages",
+      "description": "APITube monitors global news outlets with keyword search, source filters, and language tags. API key required; free trial tier available for integration testing.",
+      "sourceCategory": "News",
+      "docsUrl": "https://docs.apitube.io/",
+      "baseUrl": "https://api.apitube.io",
+      "sampleEndpoint": "/v1/news/everything?limit=1",
+      "latencyMs": 302,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "not_ok",
+        "request_id": "cb6503ff-4ec4-4a10-930e-82687da0e49a",
+        "errors": [
+          {
+            "status": 401,
+            "code": "ER0201",
+            "message": "API key is required. Provide it via X-API-Key header or api_key query parameter.",
+            "links": {
+              "about": "https://docs.apitube.io/platform/news-api/http-response-codes"
+            },
+            "timestamp": "2026-07-06T01:11:38.283Z"
+          }
+        ]
+      },
+      "freeTier": "Trial — API key required",
+      "rateLimit": "Plan-dependent",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.apitube.io/v1/news/everything?limit=1"
+    },
+    {
+      "name": "NewsCatcher",
+      "slug": "newscatcher",
+      "emoji": "📰",
+      "tagline": "Search clean news articles by topic, country, or language",
+      "description": "NewsCatcher normalizes articles from thousands of publishers with NLP enrichment — clusters, entities, and deduplication. Free API key for developers with daily request caps.",
+      "sourceCategory": "News",
+      "docsUrl": "https://newscatcherapi.com/docs/",
+      "baseUrl": "https://v3-api.newscatcherapi.com",
+      "sampleEndpoint": "/api/search?q=technology&page_size=1",
+      "latencyMs": 510,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "x-api-token header is missing",
+        "status_code": 401,
+        "status": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://v3-api.newscatcherapi.com/api/search?q=technology&page_size=1"
+    },
+    {
+      "name": "Spoonacular",
+      "slug": "spoonacular",
+      "emoji": "🍽",
+      "tagline": "Recipes, ingredients, meal plans, and nutrition data",
+      "description": "Spoonacular is a comprehensive food API — search recipes, parse ingredients, compute nutrition, and generate meal plans. Free tier with a daily point quota after signup.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://spoonacular.com/food-api/docs",
+      "baseUrl": "https://api.spoonacular.com",
+      "sampleEndpoint": "/recipes/complexSearch?number=1&addRecipeInformation=false",
+      "latencyMs": 304,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "failure",
+        "code": 401,
+        "message": "You are not authorized. Please read https://spoonacular.com/food-api/docs#Authentication"
+      },
+      "freeTier": "Free — 50 points/day",
+      "rateLimit": "50 points/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.spoonacular.com/recipes/complexSearch?number=1&addRecipeInformation=false"
+    },
+    {
+      "name": "Abstract Email Validation",
+      "slug": "abstract-email-validation",
+      "emoji": "✉️",
+      "tagline": "Validate and enrich email addresses",
+      "description": "Abstract API email validation checks deliverability, MX records, and disposable-domain flags. Free tier with API key from abstractapi.com.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.abstractapi.com/email-validation",
+      "baseUrl": "https://emailvalidation.abstractapi.com",
+      "sampleEndpoint": "/v1/?api_key=&email=test@example.com",
+      "latencyMs": 716,
+      "corsObserved": true,
+      "httpStatus": 400,
+      "sampleJson": {
+        "error": {
+          "message": "A validation error occurred.",
+          "code": "validation_error",
+          "details": {
+            "api_key": [
+              "This is a required argument."
+            ]
+          }
+        }
+      },
+      "freeTier": "Free — 100 requests/month",
+      "rateLimit": "100 requests/month on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://emailvalidation.abstractapi.com/v1/?api_key=&email=test@example.com"
+    },
+    {
+      "name": "IPGeolocation",
+      "slug": "ipgeolocation",
+      "emoji": "📍",
+      "tagline": "IP → location, timezone, currency, and security",
+      "description": "IPGeolocation.io resolves IPs to city, country, timezone, and threat signals. Free API key with daily lookup limits for developers.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://ipgeolocation.io/documentation.html",
+      "baseUrl": "https://api.ipgeolocation.io",
+      "sampleEndpoint": "/ipgeo?apiKey=&ip=8.8.8.8",
+      "latencyMs": 334,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "message": "Provided API key is not valid. Contact technical support for assistance at support@ipgeolocation.io"
+      },
+      "freeTier": "Free — 1000 requests/day",
+      "rateLimit": "1000 requests/day on free plan",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "competitor-gap probe https://api.ipgeolocation.io/ipgeo?apiKey=&ip=8.8.8.8"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "GNews",
+      "slug": "gnews",
+      "reason": "already in catalog"
+    },
+    {
+      "name": "NewsAPI.ai",
+      "slug": "newsapi-ai",
+      "reason": "no probe hit"
+    },
+    {
+      "name": "NewsDataHub",
+      "slug": "newsdatahub",
+      "reason": "no probe hit"
+    },
+    {
+      "name": "Finlight",
+      "slug": "finlight",
+      "reason": "no probe hit"
+    },
+    {
+      "name": "Tasty",
+      "slug": "tasty",
+      "reason": "no probe hit"
+    },
+    {
+      "name": "Google Books",
+      "slug": "google-books",
+      "reason": "already in catalog"
+    },
+    {
+      "name": "Open Library Search",
+      "slug": "open-library-search",
+      "reason": "already in catalog"
+    },
+    {
+      "name": "ExchangeRate.host",
+      "slug": "exchangerate-host",
+      "reason": "already in catalog"
+    },
+    {
+      "name": "Fixer",
+      "slug": "fixer",
+      "reason": "already in catalog"
+    }
+  ]
+}

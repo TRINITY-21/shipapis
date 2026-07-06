@@ -1,0 +1,212 @@
+{
+  "batch": 104,
+  "verified": [
+    {
+      "name": "STAPI",
+      "slug": "stapi",
+      "emoji": "🖖",
+      "tagline": "Star Trek database API",
+      "description": "Read-only Star Trek characters, species and episodes. Paginated JSON search.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://freetestapi.com/",
+      "baseUrl": "https://stapi.co",
+      "sampleEndpoint": "/api/v1/rest/character/search?pageNumber=0&pageSize=1",
+      "latencyMs": 191,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "pageNumber": 0,
+          "pageSize": 1,
+          "numberOfElements": 1,
+          "totalElements": 7571,
+          "totalPages": 7571,
+          "firstPage": true,
+          "lastPage": false
+        },
+        "sort": {
+          "clauses": []
+        },
+        "characters": [
+          {
+            "uid": "CHMA0000215045",
+            "name": "0413 Theta",
+            "gender": null,
+            "yearOfBirth": null,
+            "monthOfBirth": null,
+            "dayOfBirth": null,
+            "placeOfBirth": null,
+            "yearOfDeath": null
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Jikan",
+      "slug": "jikan",
+      "emoji": "🍥",
+      "tagline": "Unofficial MyAnimeList API",
+      "description": "MAL data without scraping. Respect 3 req/s; cache aggressively.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://docs.api.jikan.moe/",
+      "baseUrl": "https://api.jikan.moe",
+      "sampleEndpoint": "/v4/anime/1",
+      "latencyMs": 1654,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "mal_id": 1,
+          "url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
+              "small_image_url": "https://cdn.myanimelist.net/images/anime/4/19644t.jpg",
+              "large_image_url": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg"
+            },
+            "webp": {
+              "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.webp",
+              "small_image_url": "https://cdn.myanimelist.net/images/anime/4/19644t.webp",
+              "large_image_url": "https://cdn.myanimelist.net/images/anime/4/19644l.webp"
+            }
+          },
+          "trailer": {
+            "youtube_id": null,
+            "url": null,
+            "embed_url": "https://www.youtube-nocookie.com/embed/gY5nDXOtv_o?enablejsapi=1&wmode=opaque&autoplay=1",
+            "images": {
+              "image_url": null,
+              "small_image_url": null,
+              "medium_image_url": null,
+              "large_image_url": null,
+              "maximum_image_url": null
+            }
+          },
+          "approved": true,
+          "titles": [
+            {
+              "type": "Default",
+              "title": "Cowboy Bebop"
+            },
+            {
+              "type": "Japanese",
+              "title": "カウボーイビバップ"
+            }
+          ],
+          "title": "Cowboy Bebop",
+          "title_english": "Cowboy Bebop"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Dev.to",
+      "slug": "dev-to",
+      "emoji": "👩‍💻",
+      "tagline": "Dev community articles feed",
+      "description": "Dev.to public API lists articles, tags and users as JSON. Read endpoints need no key — great for dev-news widgets.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://dev.to/api/articles",
+      "baseUrl": "https://dev.to",
+      "sampleEndpoint": "/api/articles?per_page=1",
+      "latencyMs": 421,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "type_of": "article",
+          "id": 4036380,
+          "title": "Forward Deployed Engineers and the future of software engineering",
+          "description": "Cover Image: Sierra’s Natalie Meurer at the AI Engineer World’s Fair today.  Natalie Meurer is Head...",
+          "readable_publish_date": "Jul 2",
+          "slug": "forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+          "path": "/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+          "url": "https://dev.to/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PubMed E-utilities",
+      "slug": "pubmed-e-utilities",
+      "emoji": "🧬",
+      "tagline": "Search PubMed literature IDs",
+      "description": "NCBI E-utilities expose PubMed, PMC and gene search as JSON with retmode=json. No key at modest rates; include contact email in requests.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/",
+      "baseUrl": "https://eutils.ncbi.nlm.nih.gov",
+      "sampleEndpoint": "/entrez/eutils/esearch.fcgi?db=pubmed&term=cancer&retmode=json&retmax=1",
+      "latencyMs": 720,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "header": {
+          "type": "esearch",
+          "version": "0.3"
+        },
+        "esearchresult": {
+          "count": "5652259",
+          "retmax": "1",
+          "retstart": "0",
+          "idlist": [
+            "42402247"
+          ],
+          "translationset": [
+            {
+              "from": "cancer",
+              "to": "\"cancer's\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+            }
+          ],
+          "querytranslation": "\"cancer s\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TCGdex",
+      "slug": "tcgdex",
+      "emoji": "🃏",
+      "tagline": "Multilingual Pokémon TCG card data",
+      "description": "Open Pokémon TCG database with cards, sets and rarities in many languages. Keyless JSON search and lookup — cache responses in production.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.tcgdex.dev/",
+      "baseUrl": "https://api.tcgdex.net",
+      "sampleEndpoint": "/v2/en/cards?name=pikachu",
+      "latencyMs": 475,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "basep-1",
+          "localId": "1",
+          "name": "Pikachu",
+          "image": "https://assets.tcgdex.net/en/base/basep/1"
+        },
+        {
+          "id": "fut2020-1",
+          "localId": "1",
+          "name": "Pikachu on the Ball",
+          "image": "https://assets.tcgdex.net/en/swsh/fut2020/1"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": []
+}

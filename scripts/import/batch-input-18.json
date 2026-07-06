@@ -1,0 +1,246 @@
+{
+  "batch": 18,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Verome",
+      "docsUrl": "https://github.com/Kirazul/Verome-API",
+      "description": "Music API for searching, streaming and exploring music data from YouTube Music, YouTube, and Last.fm",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "Inshorts News",
+      "docsUrl": "https://github.com/cyberboysumanjay/Inshorts-News-API",
+      "description": "Provides news from inshorts",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "News",
+      "docsCheck": 200
+    },
+    {
+      "name": "Archive.org",
+      "docsUrl": "https://archive.readme.io/docs",
+      "description": "The Internet Archive",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "BotsArchive",
+      "docsUrl": "https://botsarchive.com/docs.html",
+      "description": "JSON formatted details about Telegram Bots available in database",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Callook.info",
+      "docsUrl": "https://callook.info",
+      "description": "United States ham radio callsigns",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "CollegeScoreCard.ed.gov",
+      "docsUrl": "https://collegescorecard.ed.gov/data/",
+      "description": "Data on higher education institutions in the United States",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "French Address Search",
+      "docsUrl": "https://geo.api.gouv.fr/adresse",
+      "description": "Address search via the French Government",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lowy Asia Power Index",
+      "docsUrl": "https://github.com/0x0is1/lowy-index-api-docs",
+      "description": "Get measure resources and influence to rank the relative power of states in Asia",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Onyx Bazaar",
+      "docsUrl": "https://onyx-actions.onrender.com/bazaar",
+      "description": "Free public leaderboard of x402 paid HTTP services indexed from Coinbase CDP discovery API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Data Minneapolis",
+      "docsUrl": "https://opendata.minneapolismn.gov/",
+      "description": "Spatial (GIS) and non-spatial city data for Minneapolis",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Universities List",
+      "docsUrl": "https://github.com/Hipo/university-domains-list",
+      "description": "University names, countries and domains",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "University of Oslo",
+      "docsUrl": "https://data.uio.no/",
+      "description": "Courses, lecture videos, detailed information for courses etc. for the University of Oslo (Norway)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Voidly",
+      "docsUrl": "https://voidly.ai/api-docs",
+      "description": "Internet censorship measurements, incidents, and ISP-level blocking data across 126 countries",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Wikipedia",
+      "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+      "description": "Mediawiki Encyclopedia",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Datamuse",
+      "docsUrl": "https://www.datamuse.com/api/",
+      "description": "Word-finding query engine",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Drupal.org",
+      "docsUrl": "https://www.drupal.org/drupalorg/docs/api",
+      "description": "Drupal.org",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Shields",
+      "docsUrl": "https://shields.io/",
+      "description": "Concise, consistent, and legible badges in SVG and raster format",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "PatentsView ",
+      "docsUrl": "https://patentsview.org/apis/purpose",
+      "description": "API is intended to explore and visualize trends/patterns across the US innovation landscape",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Patent",
+      "docsCheck": 200
+    },
+    {
+      "name": "USPTO",
+      "docsUrl": "https://www.uspto.gov/learning-and-resources/open-data-and-mobility",
+      "description": "USA patent api services",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Patent",
+      "docsCheck": 200
+    },
+    {
+      "name": "Advice Slip",
+      "docsUrl": "http://api.adviceslip.com/",
+      "description": "Generate random advice slips",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dictum",
+      "docsUrl": "https://github.com/fisenkodv/dictum",
+      "description": "API to get access to the collection of the most inspiring expressions of mankind",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "icanhazdadjoke",
+      "docsUrl": "https://icanhazdadjoke.com/api",
+      "description": "The largest selection of dad jokes on the internet",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Programming Quotes",
+      "docsUrl": "https://github.com/skolakoda/programming-quotes-api",
+      "description": "Programming Quotes API for open source projects",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Quotable Quotes",
+      "docsUrl": "https://github.com/lukePeavey/quotable",
+      "description": "Quotable is a free, open source quotations API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    }
+  ]
+}

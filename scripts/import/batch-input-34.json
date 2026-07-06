@@ -1,0 +1,386 @@
+{
+  "batch": 34,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "owo",
+      "docsUrl": "https://owo.vc/api",
+      "description": "A simple link obfuscator/shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 404
+    },
+    {
+      "name": "Breaking Bad",
+      "docsUrl": "https://breakingbadapi.com/documentation",
+      "description": "Breaking Bad API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 0
+    },
+    {
+      "name": "Catalogopolis",
+      "docsUrl": "https://api.catalogopolis.xyz/docs/",
+      "description": "Doctor Who API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 0
+    },
+    {
+      "name": "Catch The Show",
+      "docsUrl": "https://catchtheshow.herokuapp.com/api/documentation",
+      "description": "REST API for next-episode.net",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 404
+    },
+    {
+      "name": "Game of Thrones Quotes",
+      "docsUrl": "https://gameofthronesquotes.xyz/",
+      "description": "Some Game of Thrones quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Harry Potter Charactes",
+      "docsUrl": "https://hp-api.herokuapp.com/",
+      "description": "Harry Potter Characters Data with with imagery",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 404
+    },
+    {
+      "name": "Motivational Quotes",
+      "docsUrl": "https://nodejs-quoteapp.herokuapp.com/",
+      "description": "Random Motivational Quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 404
+    },
+    {
+      "name": "Stream",
+      "docsUrl": "https://api.stream.cz/graphiql",
+      "description": "Czech internet television, films, series and online videos for free",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Video",
+      "docsCheck": 400
+    },
+    {
+      "name": "Nexchange",
+      "docsUrl": "https://nexchange2.docs.apiary.io/",
+      "description": "Automated cryptocurrency exchange service",
+      "auth": "none",
+      "https": false,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "GrünstromIndex",
+      "docsUrl": "https://gruenstromindex.de/",
+      "description": "Green Power Index for Germany (Grünstromindex/GSI)",
+      "auth": "none",
+      "https": false,
+      "cors": "yes",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "What The Commit",
+      "docsUrl": "http://whatthecommit.com/index.txt",
+      "description": "Random commit message generator",
+      "auth": "none",
+      "https": false,
+      "cors": "yes",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Colormind",
+      "docsUrl": "http://colormind.io/api-access/",
+      "description": "Color scheme generator",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "ColourLovers",
+      "docsUrl": "http://www.colourlovers.com/api",
+      "description": "Get various patterns, palettes and images",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 403
+    },
+    {
+      "name": "Steem",
+      "docsUrl": "https://developers.steem.io/",
+      "description": "Blockchain-based blogging and social media website",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "British National Bibliography",
+      "docsUrl": "http://bnb.data.bl.uk/",
+      "description": "Books",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Books",
+      "docsCheck": 0
+    },
+    {
+      "name": "markerapi",
+      "docsUrl": "https://markerapi.com",
+      "description": "Trademark Search",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Business",
+      "docsCheck": 200
+    },
+    {
+      "name": "Church Calendar",
+      "docsUrl": "http://calapi.inadiutorium.cz/",
+      "description": "Catholic liturgical calendar",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Czech Namedays Calendar",
+      "docsUrl": "https://svatky.adresa.info",
+      "description": "Lookup for a name and returns nameday date",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 402
+    },
+    {
+      "name": "Hebrew Calendar",
+      "docsUrl": "https://www.hebcal.com/home/developer-apis",
+      "description": "Convert between Gregorian and Hebrew, fetch Shabbat and Holiday times, etc",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "LectServe",
+      "docsUrl": "http://www.lectserve.com",
+      "description": "Protestant liturgical calendar",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "PurgoMalum",
+      "docsUrl": "http://www.purgomalum.com",
+      "description": "Content validator against profanity & obscenity",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Data Validation",
+      "docsCheck": 200
+    },
+    {
+      "name": "SHOUTCLOUD",
+      "docsUrl": "http://shoutcloud.io/",
+      "description": "ALL-CAPS AS A SERVICE",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chinese Character Web",
+      "docsUrl": "http://ccdb.hemiola.com/",
+      "description": "Chinese character definitions and pronunciations",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Dictionaries",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chuck Norris Database",
+      "docsUrl": "http://www.icndb.com/api/",
+      "description": "Jokes",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Jservice",
+      "docsUrl": "http://jservice.io",
+      "description": "Jeopardy Question Database",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Magic The Gathering",
+      "docsUrl": "http://magicthegathering.io/",
+      "description": "Magic The Gathering Game Information",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cep.la",
+      "docsUrl": "http://cep.la/",
+      "description": "Brazil RESTful API to find information about streets, zip codes, neighborhoods, cities and states",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "GeoNames",
+      "docsUrl": "http://www.geonames.org/export/web-services.html",
+      "description": "Place names and other geographical data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "PostcodeData.nl",
+      "docsUrl": "http://api.postcodedata.nl/v1/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json",
+      "description": "Provide geolocation data based on postcode for Dutch addresses",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Zippopotam.us",
+      "docsUrl": "http://www.zippopotam.us",
+      "description": "Get information about place such as country, city, state, etc",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "BCLaws",
+      "docsUrl": "https://www.bclaws.gov.bc.ca/civix/template/complete/api/index.html",
+      "description": "Access to the laws of British Columbia",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Gdynia",
+      "docsUrl": "http://otwartedane.gdynia.pl/en/api_doc.html",
+      "description": "Gdynia (PL) City Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Prague Open Data",
+      "docsUrl": "http://opendata.praha.eu/en",
+      "description": "Prague(CZ) City Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Data.parliament.uk",
+      "docsUrl": "https://explore.data.parliament.uk/?learnmore=Members",
+      "description": "Contains live datasets including information about petitions, bills, MP votes, attendance and more",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Food Standards Agency",
+      "docsUrl": "http://ratings.food.gov.uk/open-data/en-GB",
+      "description": "UK food hygiene rating data API",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "INEI",
+      "docsUrl": "http://iinei.inei.gob.pe/microdatos/",
+      "description": "Peruvian Statistical Government Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, Canada",
+      "docsUrl": "http://open.canada.ca/en",
+      "description": "Canadian Government Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Colombia",
+      "docsUrl": "https://www.dane.gov.co/",
+      "description": "Colombia Government Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    }
+  ]
+}

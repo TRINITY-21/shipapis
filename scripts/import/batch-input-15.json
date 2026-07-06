@@ -1,0 +1,246 @@
+{
+  "batch": 15,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "HelloSalut",
+      "docsUrl": "https://fourtonfish.com/project/hellosalut-api/",
+      "description": "Get hello translation following user language",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IBGE",
+      "docsUrl": "https://servicodados.ibge.gov.br/api/docs/",
+      "description": "Aggregate services of IBGE (Brazilian Institute of Geography and Statistics)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IP 2 Country",
+      "docsUrl": "https://ip2country.info",
+      "description": "Map an IP to a country",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IP Address Details",
+      "docsUrl": "https://ipinfo.io/",
+      "description": "Find geolocation with ip address",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IP Vigilante",
+      "docsUrl": "https://www.ipvigilante.com/",
+      "description": "Free IP Geolocation API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IPGEO",
+      "docsUrl": "https://api.techniknews.net/ipgeo/",
+      "description": "Unlimited free IP Address API with useful information",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mexico",
+      "docsUrl": "https://github.com/IcaliaLabs/sepomex",
+      "description": "Mexico RESTful zip codes API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "OnWater",
+      "docsUrl": "https://onwater.io/",
+      "description": "Determine if a lat/lon is on water or land",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Topo Data",
+      "docsUrl": "https://www.opentopodata.org",
+      "description": "Elevation and ocean depth for a latitude and longitude",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "PostalCodes",
+      "docsUrl": "https://postalcodes.info/api",
+      "description": "Postal code search, country exports, and address validation data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Rwanda Locations",
+      "docsUrl": "https://rapidapi.com/victorkarangwa4/api/rwanda",
+      "description": "Rwanda Provences, Districts, Cities, Capital City, Sector, cells, villages and streets",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "ViaCep",
+      "docsUrl": "https://viacep.com.br",
+      "description": "Brazil RESTful zip codes API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ziptastic",
+      "docsUrl": "https://ziptasticapi.com/",
+      "description": "Get the country, state, and city of any US zip-code",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bank Negara Malaysia Open Data",
+      "docsUrl": "https://apikijangportal.bnm.gov.my/",
+      "description": "Malaysia Central Bank Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Brazil Central Bank Open Data",
+      "docsUrl": "https://dadosabertos.bcb.gov.br/",
+      "description": "Brazil Central Bank Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Brazil Receita WS",
+      "docsUrl": "https://www.receitaws.com.br/",
+      "description": "Consult companies by CNPJ for Brazilian companies",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Brazilian Chamber of Deputies Open Data",
+      "docsUrl": "https://dadosabertos.camara.leg.br/swagger/api.html",
+      "description": "Provides legislative information in Apis XML and JSON, as well as files in various formats",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Census.gov",
+      "docsUrl": "https://www.census.gov/data/developers/data-sets.html",
+      "description": "The US Census Bureau provides various APIs and data sets on demographics and businesses",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Gdańsk",
+      "docsUrl": "https://ckan.multimediagdansk.pl/en",
+      "description": "Gdańsk (PL) City Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Helsinki",
+      "docsUrl": "https://hri.fi/en_gb/",
+      "description": "Helsinki(FI) City Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, New York Open Data",
+      "docsUrl": "https://opendata.cityofnewyork.us/",
+      "description": "New York (US) City Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Colorado Information Marketplace",
+      "docsUrl": "https://data.colorado.gov/",
+      "description": "Colorado State Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Data USA",
+      "docsUrl": "https://datausa.io/about/api/",
+      "description": "US Public Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "EPA",
+      "docsUrl": "https://www.epa.gov/developers/data-data-products#apis",
+      "description": "Web services and data sets from the US Environmental Protection Agency",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    }
+  ]
+}

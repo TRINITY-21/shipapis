@@ -1,0 +1,386 @@
+{
+  "batch": 29,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "GraphQL Jobs",
+      "docsUrl": "https://graphql.jobs/docs/api/",
+      "description": "Jobs with GraphQL",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Jobs",
+      "docsCheck": 0
+    },
+    {
+      "name": "EXUDE-API",
+      "docsUrl": "http://uttesh.com/exude-api/",
+      "description": "Used for the primary ways for filtering the stopping, stemming words from the text data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 404
+    },
+    {
+      "name": "OpenVisionAPI",
+      "docsUrl": "https://openvisionapi.com",
+      "description": "Open source computer vision API based on open source models",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 0
+    },
+    {
+      "name": "Graphs for Coronavirus",
+      "docsUrl": "https://corona.dnsforfamily.com/api.txt",
+      "description": "Each Country separately and Worldwide Graphs for Coronavirus. Daily updates",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "News",
+      "docsCheck": 0
+    },
+    {
+      "name": "API Setu",
+      "docsUrl": "https://www.apisetu.gov.in/",
+      "description": "An Indian Government platform that provides a lot of APIS for KYC, business, education & employment",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 403
+    },
+    {
+      "name": "Warnely",
+      "docsUrl": "https://warnely.com/developers",
+      "description": "Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1 spec, CC BY 4.0",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Data",
+      "docsCheck": 404
+    },
+    {
+      "name": "Evil Insult Generator",
+      "docsUrl": "https://evilinsult.com/api",
+      "description": "Evil Insults",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Metabase",
+      "docsUrl": "https://www.metabase.com/",
+      "description": "An open source Business Intelligence server to share data and analytics inside your company",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Inspiration",
+      "docsUrl": "https://inspiration.goprogram.ai/docs/",
+      "description": "Motivational and Inspirational quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 0
+    },
+    {
+      "name": "kimiquotes",
+      "docsUrl": "https://kimiquotes.herokuapp.com/doc",
+      "description": "Team radio and interview quotes by Finnish F1 legend Kimi Räikkönen",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 404
+    },
+    {
+      "name": "quoteclear",
+      "docsUrl": "https://quoteclear.web.app/",
+      "description": "Ever-growing list of James Clear quotes from the 3-2-1 Newsletter",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Personality",
+      "docsCheck": 404
+    },
+    {
+      "name": "GBIF",
+      "docsUrl": "https://www.gbif.org/developer/summary",
+      "description": "Global Biodiversity Information Facility",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 403
+    },
+    {
+      "name": "xMath",
+      "docsUrl": "https://x-math.herokuapp.com/",
+      "description": "Random mathematical expressions",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 404
+    },
+    {
+      "name": "Classify",
+      "docsUrl": "https://classify-web.herokuapp.com/#/api",
+      "description": "Encrypting & decrypting text messages",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 404
+    },
+    {
+      "name": "Hashable",
+      "docsUrl": "https://hashable.space/pages/api/",
+      "description": "A REST API to access high level cryptographic functions and methods",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 0
+    },
+    {
+      "name": "IPLogs",
+      "docsUrl": "https://iplogs.com/docs",
+      "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Virushee",
+      "docsUrl": "https://api.virushee.com/",
+      "description": "Virushee file/data scanning",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 0
+    },
+    {
+      "name": "Doge-Meme",
+      "docsUrl": "https://api.doge-meme.lol/docs",
+      "description": "Top meme posts from r/dogecoin which include 'Meme' flair",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Social",
+      "docsCheck": 0
+    },
+    {
+      "name": "balldontlie",
+      "docsUrl": "https://www.balldontlie.io",
+      "description": "Balldontlie provides access to stats data from the NBA",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Sport List & Data",
+      "docsUrl": "https://developers.decathlon.com/products/sports",
+      "description": "List of and resources related to sports",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 0
+    },
+    {
+      "name": "QuickMocker",
+      "docsUrl": "https://quickmocker.com",
+      "description": "API mocking tool to generate contextual, fake or random data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Test Data",
+      "docsCheck": 0
+    },
+    {
+      "name": "FAA N-Number Registry",
+      "docsUrl": "https://n-number.starfile.org/api",
+      "description": "Every FAA-registered civil aircraft in the United States, lookup by N-number or Mode S hex code",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 404
+    },
+    {
+      "name": "transport.rest",
+      "docsUrl": "https://transport.rest",
+      "description": "Community maintained, developer-friendly public transport API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "CleanURI",
+      "docsUrl": "https://cleanuri.com/docs",
+      "description": "URL shortener service",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Shrtcode",
+      "docsUrl": "https://shrtco.de/docs",
+      "description": "URl Shortener with multiple Domains",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bob's Burgers",
+      "docsUrl": "https://bobs-burgers-api-ui.herokuapp.com",
+      "description": "Bob's Burgers API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 503
+    },
+    {
+      "name": "Owen Wilson Wow",
+      "docsUrl": "https://owen-wilson-wow-api.herokuapp.com",
+      "description": "API for actor Owen Wilson's \"wow\" exclamations in movies",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 404
+    },
+    {
+      "name": "Pirate Weather",
+      "docsUrl": "https://pirateweather.net/en/latest/",
+      "description": "Free weather API with forecast data similar to Dark Sky",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "Axolotl",
+      "docsUrl": "https://theaxolotlapi.netlify.app/",
+      "description": "Collection of axolotl pictures and facts",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cat Facts",
+      "docsUrl": "https://alexwohlbruck.github.io/cat-facts/",
+      "description": "Daily cat facts",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "RescueGroups",
+      "docsUrl": "https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home",
+      "description": "Adoption",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Waifu.pics",
+      "docsUrl": "https://waifu.pics/docs",
+      "description": "Image sharing platform for anime images",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "DummyImage",
+      "docsUrl": "https://dummyimage.com/",
+      "description": "Generate placeholder images with custom size, colors and text",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icons8",
+      "docsUrl": "https://img.icons8.com/",
+      "description": "Icons (find \"search icon\" hyperlink in page)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pixel Encounter",
+      "docsUrl": "https://pixelencounter.com/api",
+      "description": "SVG Icon Generator",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 0
+    },
+    {
+      "name": "Chainlink",
+      "docsUrl": "https://chain.link/developer-resources",
+      "description": "Build hybrid smart contracts with Chainlink",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chainpoint",
+      "docsUrl": "https://tierion.com/chainpoint/",
+      "description": "Chainpoint is a global network for anchoring data to the Bitcoin blockchain",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Helium",
+      "docsUrl": "https://docs.helium.com/api/blockchain/introduction/",
+      "description": "Helium is a global, distributed network of Hotspots that create public, long-range wireless coverage",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    }
+  ]
+}

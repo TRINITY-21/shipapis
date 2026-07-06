@@ -1,0 +1,246 @@
+{
+  "batch": 19,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Quotes on Design",
+      "docsUrl": "https://quotesondesign.com/api/",
+      "description": "Inspirational Quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Stoicism Quote",
+      "docsUrl": "https://github.com/tlcheah2/stoic-quote-lambda-public-api",
+      "description": "Quotes about Stoicism",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "They Said So Quotes",
+      "docsUrl": "https://theysaidso.com/api/",
+      "description": "Quotes Trusted by many fortune brands around the world",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Traitify",
+      "docsUrl": "https://app.traitify.com/developer",
+      "description": "Assess, collect and analyze Personality",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Screenshotlayer",
+      "docsUrl": "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "description": "URL to screenshot",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lorem Picsum",
+      "docsUrl": "https://picsum.photos/",
+      "description": "Images from Unsplash",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlaceKeanu",
+      "docsUrl": "https://placekeanu.com/",
+      "description": "Resizable Keanu Reeves placeholder images with grayscale and young Keanu options",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "Readme typing SVG",
+      "docsUrl": "https://github.com/DenverCoder1/readme-typing-svg",
+      "description": "Customizable typing and deleting text SVG",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "arcsecond.io",
+      "docsUrl": "https://api.arcsecond.io/",
+      "description": "Multiple astronomy data sources",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "CodeCogs",
+      "docsUrl": "https://editor.codecogs.com/docs/4-LaTeX_rendering.php",
+      "description": "Render LaTeX equations in PNG, GIF, SVG, EMF, PDF, JSON, or download formats with styling options",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "iDigBio",
+      "docsUrl": "https://github.com/idigbio/idigbio-search-api/wiki",
+      "description": "Access millions of museum specimens from organizations around the world",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "inspirehep.net",
+      "docsUrl": "https://github.com/inspirehep/rest-api-doc",
+      "description": "High Energy Physics info. system",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "isEven (humor)",
+      "docsUrl": "https://isevenapi.xyz/",
+      "description": "Check if a number is even",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "ISRO",
+      "docsUrl": "https://isro.vercel.app",
+      "description": "ISRO Space Crafts Information",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "ITIS",
+      "docsUrl": "https://www.itis.gov/ws_description.html",
+      "description": "Integrated Taxonomic Information System",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Newton",
+      "docsUrl": "https://newton.vercel.app",
+      "description": "Symbolic and Arithmetic Math Calculator",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Noctua",
+      "docsUrl": "https://api.noctuasky.com/api/v1/swaggerdoc/",
+      "description": "REST API used to access NoctuaSky features",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Science Framework",
+      "docsUrl": "https://developer.osf.io",
+      "description": "Repository and archive for study designs, research materials, data, manuscripts, etc",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Purple Air",
+      "docsUrl": "https://www2.purpleair.com/",
+      "description": "Real Time Air Quality Monitoring",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "SHARE",
+      "docsUrl": "https://share.osf.io/api/v2/",
+      "description": "A free, open, dataset about research and scholarly activities",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "SpaceX",
+      "docsUrl": "https://github.com/r-spacex/SpaceX-API",
+      "description": "Company, vehicle, launchpad and launch data",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "SpaceX",
+      "docsUrl": "https://api.spacex.land/graphql/",
+      "description": "GraphQL, Company, Ships, launchpad and launch data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Times Adder",
+      "docsUrl": "https://github.com/FranP-code/API-Times-Adder",
+      "description": "With this API you can add each of the times introduced in the array sended",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "TLE",
+      "docsUrl": "https://tle.ivanstanojevic.me/#/docs",
+      "description": "Satellite information",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    }
+  ]
+}

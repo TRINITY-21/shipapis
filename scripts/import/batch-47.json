@@ -1,0 +1,397 @@
+{
+  "batch": 47,
+  "verified": [
+    {
+      "name": "Aare.guru API",
+      "slug": "aare-guru-api",
+      "emoji": "🔌",
+      "tagline": "Aare.guru API — auto-discovered JSON endpoint",
+      "description": "Public API for Aare river data including temperature, flow rate, weather forecasts, and more. Non-commercial use allowed with customizable app and version parameters.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://aareguru.existenz.ch",
+      "baseUrl": "https://aareguru.existenz.ch",
+      "sampleEndpoint": "/today",
+      "latencyMs": 1835,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "aare": 21.2,
+        "text": "Ja eh!",
+        "time": 1783279800
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "LectServe",
+      "slug": "lectserve",
+      "emoji": "📅",
+      "tagline": "LectServe — LectServe — auto-discovered JSON endpoint",
+      "description": "LectServe exposes lectServe — auto-discovered JSON endpoint We verified a keyless GET endpoint returning JSON (Calendar). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "http://www.lectserve.com",
+      "baseUrl": "http://www.lectserve.com",
+      "sampleEndpoint": "/today",
+      "latencyMs": 609,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "red_letter": {
+          "services": [
+            {
+              "alt": "",
+              "name": "Sunday Closest to July 6",
+              "readings": [
+                "Zechariah 9:9-12",
+                "Psalm 145:1-13; (145:14-21)"
+              ]
+            }
+          ],
+          "prevSunday": "2026-06-28",
+          "lectionary": "acna",
+          "type": "Sunday",
+          "year": "A",
+          "nextSunday": "2026-07-12",
+          "day": "Sunday",
+          "date_pretty": "5. July 2026"
+        },
+        "daily": {
+          "day": "Sunday",
+          "date": "2026-07-05",
+          "date_pretty": "5. July 2026",
+          "tomorrow": "2026-07-06",
+          "week": "Sunday Closest to July 6",
+          "yesterday": "2026-07-04",
+          "readings": {
+            "morning": {
+              "second": "1 Corinthians 4:18-5 end",
+              "first": "Judges 16"
+            },
+            "evening": {
+              "second": "Acts 27",
+              "first": "Esther 1"
+            }
+          },
+          "lectionary": "acna-sec"
+        },
+        "sunday": {
+          "type": "Sunday",
+          "prevSunday": "2026-06-28",
+          "services": [
+            {
+              "alt": "",
+              "readings": [
+                "Zechariah 9:9-12",
+                "Psalm 145:1-13; (145:14-21)"
+              ],
+              "name": "Sunday Closest to July 6"
+            }
+          ],
+          "lectionary": "acna",
+          "date_pretty": "5. July 2026",
+          "date": "2026-07-05",
+          "day": "Sunday",
+          "nextSunday": "2026-07-12"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed http://www.lectserve.com/today"
+    },
+    {
+      "name": "Episodate",
+      "slug": "episodate",
+      "emoji": "📺",
+      "tagline": "TV show database with schedules and air dates",
+      "description": "Episodate returns paginated TV series lists, search results and show details with next-episode dates as JSON. Keyless read API — companion to TVMaze for discovery widgets.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://www.episodate.com",
+      "baseUrl": "https://www.episodate.com",
+      "sampleEndpoint": "/api/most-popular?page=1",
+      "latencyMs": 2397,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 29772,
+        "page": 1,
+        "pages": 1489,
+        "tv_shows": [
+          {
+            "id": 35624,
+            "name": "The Flash",
+            "permalink": "the-flash",
+            "start_date": "2014-10-07",
+            "end_date": null,
+            "country": "US",
+            "network": "The CW",
+            "status": "Ended"
+          },
+          {
+            "id": 23455,
+            "name": "Game of Thrones",
+            "permalink": "game-of-thrones",
+            "start_date": "2011-04-17",
+            "end_date": null,
+            "country": "US",
+            "network": "HBO",
+            "status": "Ended"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Adoptium",
+      "slug": "adoptium",
+      "emoji": "☕",
+      "tagline": "Temurin JDK release metadata",
+      "description": "Java versions, binaries and checksums for Temurin builds. No auth on read endpoints.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.adoptium.net/v3",
+      "baseUrl": "https://api.adoptium.net/v3",
+      "sampleEndpoint": "/info/release_versions",
+      "latencyMs": 4169,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "versions": [
+          {
+            "build": 5,
+            "major": 28,
+            "minor": 0,
+            "openjdk_version": "28-beta+5-ea",
+            "optional": "ea",
+            "pre": "beta",
+            "security": 0,
+            "semver": "28.0.0-beta+5.0.ea"
+          },
+          {
+            "build": 4,
+            "major": 28,
+            "minor": 0,
+            "openjdk_version": "28-beta+4-ea",
+            "optional": "ea",
+            "pre": "beta",
+            "security": 0,
+            "semver": "28.0.0-beta+4.0.ea"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "7Timer!",
+      "slug": "7timer",
+      "emoji": "🌤",
+      "tagline": "Numeric weather forecast for any lat/lon",
+      "description": "Machine-readable forecasts from a GFS-derived model. No key; legacy host may be HTTP-only.",
+      "sourceCategory": "Weather",
+      "docsUrl": "http://www.7timer.info",
+      "baseUrl": "http://www.7timer.info",
+      "sampleEndpoint": "/bin/api.pl?lon=13.4&lat=52.5&product=civil&output=json",
+      "latencyMs": 732,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "product": "civil",
+        "init": "2026070512",
+        "dataseries": [
+          {
+            "timepoint": 3,
+            "cloudcover": 8,
+            "lifted_index": 2,
+            "prec_type": "none",
+            "prec_amount": 0,
+            "temp2m": 22,
+            "rh2m": "47%",
+            "wind10m": {
+              "direction": "NW",
+              "speed": 4
+            }
+          },
+          {
+            "timepoint": 6,
+            "cloudcover": 9,
+            "lifted_index": 2,
+            "prec_type": "none",
+            "prec_amount": 0,
+            "temp2m": 20,
+            "rh2m": "53%",
+            "wind10m": {
+              "direction": "NW",
+              "speed": 3
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Deck of Cards",
+      "slug": "deck-of-cards",
+      "emoji": "🃏",
+      "tagline": "Shuffle and draw virtual decks",
+      "description": "Models a physical deck with persistent deck IDs. Perfect for card-game prototypes.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://deckofcardsapi.com/api",
+      "baseUrl": "https://deckofcardsapi.com/api",
+      "sampleEndpoint": "/deck/new/shuffle/?deck_count=1",
+      "latencyMs": 6416,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "deck_id": "uvuvz52dc2jr",
+        "remaining": 52,
+        "shuffled": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "HTTPie",
+      "slug": "httpie",
+      "emoji": "🔧",
+      "tagline": "HTTPie — a free command-line HTTP client for the API era",
+      "description": "HTTPie exposes a free command-line HTTP client for the API era We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://httpie.io",
+      "baseUrl": "https://httpie.io",
+      "sampleEndpoint": "/api/feed/json",
+      "latencyMs": 296,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "https://jsonfeed.org/version/1",
+        "title": "HTTPie blog",
+        "home_page_url": "https://httpie.io/blog",
+        "items": [
+          {
+            "id": "https://httpie.io/blog/changelog-0027",
+            "content_html": "Check out what’s new in HTTPie for Web & Desktop 2025.2.0",
+            "url": "https://httpie.io/blog/changelog-0027",
+            "title": "Changelog #0027 — 📤 Export/import, path params, copy as command, and more",
+            "summary": "Check out what’s new in HTTPie for Web & Desktop 2025.2.0",
+            "date_modified": "2025-03-14T00:00:00.000Z",
+            "author": {
+              "name": "Jakub Roztocil",
+              "url": "https://twitter.com/jkbrzt"
+            }
+          },
+          {
+            "id": "https://httpie.io/blog/changelog-0026",
+            "content_html": "Check out what’s new in HTTPie for Web & Desktop 2025.1.0",
+            "url": "https://httpie.io/blog/changelog-0026",
+            "title": "Changelog #0026 — 💇‍♀️️ UI refresh, IDE-like features, enhanced variable system",
+            "summary": "Check out what’s new in HTTPie for Web & Desktop 2025.1.0",
+            "date_modified": "2025-01-20T00:00:00.000Z",
+            "author": {
+              "name": "Jakub Roztocil",
+              "url": "https://twitter.com/jkbrzt"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://httpie.io/api/feed/json"
+    },
+    {
+      "name": "Zelda",
+      "slug": "zelda",
+      "emoji": "🎮",
+      "tagline": "Zelda — The Legend of Zelda franchise data",
+      "description": "Zelda exposes the Legend of Zelda franchise data We verified a keyless GET endpoint returning JSON (Games & Comics). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.zelda.fanapis.com/docs",
+      "baseUrl": "https://zelda.fanapis.com",
+      "sampleEndpoint": "/api/games?limit=2",
+      "latencyMs": 1555,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "count": 2,
+        "data": [
+          {
+            "name": "The Legend of Zelda",
+            "description": "The Legend of Zelda is the first installment of the Zelda series. It centers its plot around a boy named Link, who becomes the central protagonist throughout the series. It came out as early as 1986 for the Famicom in Japan, and was later released in the western world, including Europe and the US in 1987. It has since then been re-released several times, for the Nintendo GameCube as well as the Game Boy Advance. The Japanese version of the game on the Famicom is known as The Hyrule Fantasy: The Legend of Zelda. ",
+            "developer": "Nintendo R&D 4",
+            "publisher": "Nintendo",
+            "released_date": " February 21, 1986",
+            "id": "5f6ce9d805615a85623ec2b7"
+          },
+          {
+            "name": "The Legend of Zelda: A Link to the Past",
+            "description": "One day, a band of evil thieves managed to open the gateway to the Sacred Realm, where the mystical Triforce was hidden. Upon finding the sacred golden relic, the leader of the thieves, Ganondorf, slew his followers and claimed it as his own. Before long, dark power began to flow forth from the Sacred Realm. People were drawn into this darkness, and never heard from again. As a result, the King of Hyrule ordered the seven sages to seal the entrance to the Sacred Realm. A great battle ensued—monsters poured into the Light World from the sacred land and attacked the castle. The Knights of Hyrule defended the sages during the great battle against evil, and, though most of them perished in the struggle, the sages were able to cast their seal, stopping the flow of darkness and trapping the evil king Ganon within. This battle became known as the Imprisoning War. ",
+            "developer": "Nintendo",
+            "publisher": "Nintendo",
+            "released_date": " April 13, 1992",
+            "id": "5f6ce9d805615a85623ec2b8"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://zelda.fanapis.com/api/games?limit=2"
+    },
+    {
+      "name": "BlockCypher",
+      "slug": "blockcypher",
+      "emoji": "🪙",
+      "tagline": "BlockCypher — Blockchain web services API supporting Bitcoin, Ethereu…",
+      "description": "BlockCypher exposes blockchain web services API supporting Bitcoin, Ethereum, Litecoin, and Dogecoin with webhooks and transaction broadcasting. We verified a keyless GET endpoint returning JSON (Cryptocurrency). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.blockcypher.com/dev/bitcoin/",
+      "baseUrl": "https://api.blockcypher.com",
+      "sampleEndpoint": "/v1/btc/main",
+      "latencyMs": 2020,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "BTC.main",
+        "height": 956831,
+        "hash": "00000000000000000001fdc494491e3ef06805b2089c55b34d0258160c09b068",
+        "time": "2026-07-05T20:20:55.71532679Z",
+        "latest_url": "https://api.blockcypher.com/v1/btc/main/blocks/00000000000000000001fdc494491e3ef06805b2089c55b34d0258160c09b068",
+        "previous_hash": "00000000000000000001c8f3736aa1ff393e7c53c6536b8d1951574aee9f8d0a",
+        "previous_url": "https://api.blockcypher.com/v1/btc/main/blocks/00000000000000000001c8f3736aa1ff393e7c53c6536b8d1951574aee9f8d0a",
+        "peer_count": 324
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.blockcypher.com/v1/btc/main"
+    }
+  ],
+  "skipped": []
+}

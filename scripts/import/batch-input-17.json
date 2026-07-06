@@ -1,0 +1,246 @@
+{
+  "batch": 17,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Open Government, UK",
+      "docsUrl": "https://data.gov.uk/",
+      "description": "UK Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, USA",
+      "docsUrl": "https://www.data.gov/",
+      "description": "United States Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Victoria State Government",
+      "docsUrl": "https://www.data.vic.gov.au/",
+      "description": "Victoria State Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, West Australia",
+      "docsUrl": "https://data.wa.gov.au/",
+      "description": "West Australia Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Represent by Open North",
+      "docsUrl": "https://represent.opennorth.ca/",
+      "description": "Find Canadian Government Representatives",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "USAspending.gov",
+      "docsUrl": "https://api.usaspending.gov/",
+      "description": "US federal spending data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coronavirus",
+      "docsUrl": "https://pipedream.com/@pravin/http-api-for-latest-wuhan-coronavirus-data-2019-ncov-p_G6CLVM/readme",
+      "description": "HTTP API for Latest Covid-19 Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coronavirus in the UK",
+      "docsUrl": "https://coronavirus.data.gov.uk/details/developers-guide",
+      "description": "UK Government coronavirus data, including deaths and cases by region",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid Tracking Project",
+      "docsUrl": "https://covidtracking.com/data/api/version-2",
+      "description": "Covid-19  data for the US",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 India",
+      "docsUrl": "https://data.covid19india.org/",
+      "description": "Covid 19 statistics state and district wise about cases, vaccinations, recovery within India",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "COVID-19 Tracker Canada",
+      "docsUrl": "https://api.covid19tracker.ca/docs/1.0/overview",
+      "description": "Details on Covid-19 cases across Canada",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dataflow Kit COVID-19",
+      "docsUrl": "https://covid-19.dataflowkit.com",
+      "description": "COVID-19 live statistics into sites per hour",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Healthcare.gov",
+      "docsUrl": "https://www.healthcare.gov/developers/",
+      "description": "Educational content about the US Health Insurance Marketplace",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "MedlinePlus Genetics",
+      "docsUrl": "https://medlineplus.gov/about/developers/geneticsdatafilesapi/",
+      "description": "Genetic conditions, genes, chromosomes and mtDNA data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "MyVaccination",
+      "docsUrl": "https://documenter.getpostman.com/view/16605343/Tzm8GG7u",
+      "description": "Vaccination data for Malaysia",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "NPPES",
+      "docsUrl": "https://npiregistry.cms.hhs.gov/registry/help-api",
+      "description": "National Plan & Provider Enumeration System, info on healthcare providers registered in US",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Data NHS Scotland",
+      "docsUrl": "https://www.opendata.nhs.scot",
+      "description": "Medical reference data and statistics by Public Health Scotland",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Deepcode",
+      "docsUrl": "https://www.deepcode.ai",
+      "description": "AI for code review",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 200
+    },
+    {
+      "name": "Gaana",
+      "docsUrl": "https://github.com/cyberboysumanjay/GaanaAPI",
+      "description": "API to retrieve song information from Gaana",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "Genrenator",
+      "docsUrl": "https://binaryjazz.us/genrenator-api/",
+      "description": "Music genre generator",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "JioSaavn",
+      "docsUrl": "https://github.com/cyberboysumanjay/JioSaavnAPI",
+      "description": "API to retrieve song information, album meta data and many more from JioSaavn",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lyrics.ovh",
+      "docsUrl": "https://lyricsovh.docs.apiary.io",
+      "description": "Simple API to retrieve the lyrics of a song",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "MusicBrainz",
+      "docsUrl": "https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2",
+      "description": "Music",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    },
+    {
+      "name": "Openwhyd",
+      "docsUrl": "https://openwhyd.github.io/openwhyd/API",
+      "description": "Download curated playlists of streaming tracks (YouTube, SoundCloud, etc...)",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Music",
+      "docsCheck": 200
+    }
+  ]
+}

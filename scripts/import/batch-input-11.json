@@ -1,0 +1,246 @@
+{
+  "batch": 11,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "CryptingUp",
+      "docsUrl": "https://www.cryptingup.com/apidoc/#introduction",
+      "description": "Cryptocurrency data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Gemini",
+      "docsUrl": "https://docs.gemini.com/rest-api/",
+      "description": "Cryptocurrencies Exchange",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mempool",
+      "docsUrl": "https://mempool.space/api",
+      "description": "Bitcoin API Service focusing on the transaction fee",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Solana JSON RPC",
+      "docsUrl": "https://docs.solana.com/developing/clients/jsonrpc-api",
+      "description": "Provides various endpoints to interact with the Solana Blockchain",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "ZMOK",
+      "docsUrl": "https://zmok.io",
+      "description": "Ethereum JSON RPC API and Web3 provider",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Exchangerate.host",
+      "docsUrl": "https://exchangerate.host?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "description": "Free foreign exchange & crypto rates API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bank of Russia",
+      "docsUrl": "https://www.cbr.ru/development/SXML/",
+      "description": "Exchange rates and currency conversion",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Czech National Bank",
+      "docsUrl": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml",
+      "description": "A collection of exchange rates",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Economia.Awesome",
+      "docsUrl": "https://docs.awesomeapi.com.br/api-de-moedas",
+      "description": "Portuguese free currency prices and conversion with no rate limits",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Exchangerate.dev",
+      "docsUrl": "https://exchangerate.dev/docs",
+      "description": "Live & historical FX, 168 pairs back to 1999, Frankfurter-compatible, free 10k/mo",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Postman Echo",
+      "docsUrl": "https://www.postman-echo.com",
+      "description": "Test api server to receive and return value from HTTP method",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Data Validation",
+      "docsCheck": 200
+    },
+    {
+      "name": "APIs.guru",
+      "docsUrl": "https://apis.guru/api-doc/",
+      "description": "Wikipedia for Web APIs, OpenAPI/Swagger specs for public APIs",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "BrewPage",
+      "docsUrl": "https://brewpage.app",
+      "description": "Free hosting for HTML, JSON, key-value, files, multi-file sites with short URLs and TTL retention",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "CDNJS",
+      "docsUrl": "https://api.cdnjs.com/libraries/jquery",
+      "description": "Library info on CDNJS",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Changelogs.md",
+      "docsUrl": "https://changelogs.md",
+      "description": "Structured changelog metadata from open source projects",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ciprand",
+      "docsUrl": "https://github.com/polarspetroll/ciprand",
+      "description": "Secure random string generator",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "DigitalOcean Status",
+      "docsUrl": "https://status.digitalocean.com/api",
+      "description": "Status of all DigitalOcean services",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "DomainDb Info",
+      "docsUrl": "https://api.domainsdb.info/",
+      "description": "Domain name search to find all domains containing particular words/phrases/etc",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "host-t.com",
+      "docsUrl": "https://host-t.com",
+      "description": "Basic DNS query via HTTP GET request",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "HTTP2.Pro",
+      "docsUrl": "https://http2.pro/doc/api",
+      "description": "Test endpoints for client and server HTTP/2 protocol support",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Hipsum",
+      "docsUrl": "https://hipsum.co",
+      "description": "Hipster-themed lorem ipsum generator for placeholder text",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "IFTTT",
+      "docsUrl": "https://platform.ifttt.com/docs/connect_api",
+      "description": "IFTTT Connect API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "IPinfo",
+      "docsUrl": "https://ipinfo.io/developers",
+      "description": "Another simple IP Address API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "isitdownstatus",
+      "docsUrl": "https://isitdownstatus.com",
+      "description": "Check if websites and online services are currently down",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    }
+  ]
+}

@@ -1,0 +1,1375 @@
+{
+  "batch": 63,
+  "verified": [
+    {
+      "name": "PubMed E-utilities",
+      "slug": "pubmed-e-utilities",
+      "emoji": "🧬",
+      "tagline": "Search PubMed literature IDs",
+      "description": "NCBI E-utilities expose PubMed, PMC and gene search as JSON with retmode=json. No key at modest rates; include contact email in requests.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "baseUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "sampleEndpoint": "/esearch.fcgi?db=pubmed&term=cancer&retmode=json&retmax=1",
+      "latencyMs": 2671,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "header": {
+          "type": "esearch",
+          "version": "0.3"
+        },
+        "esearchresult": {
+          "count": "5652245",
+          "retmax": "1",
+          "retstart": "0",
+          "idlist": [
+            "42402094"
+          ],
+          "translationset": [
+            {
+              "from": "cancer",
+              "to": "\"cancer's\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+            }
+          ],
+          "querytranslation": "\"cancer s\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Warnely",
+      "slug": "warnely",
+      "emoji": "📊",
+      "tagline": "Warnely — Composite travel-safety scores for 180 countries (FCDO …",
+      "description": "Warnely exposes composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1 spec, CC BY 4.0 We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://warnely.com/developers",
+      "baseUrl": "https://warnely.com",
+      "sampleEndpoint": "/api/v1/countries",
+      "latencyMs": 1592,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 180,
+        "methodology": "https://warnely.com/guides/methodology",
+        "licence": "CC BY 4.0",
+        "attribution": "Warnely",
+        "countries": [
+          {
+            "iso2": "AF",
+            "iso3": "AFG",
+            "name": "Afghanistan",
+            "region": "Asia",
+            "risk_score": 86,
+            "risk_tier": "Do Not Travel",
+            "flag": "🇦🇫"
+          },
+          {
+            "iso2": "AL",
+            "iso3": "ALB",
+            "name": "Albania",
+            "region": "Europe",
+            "risk_score": 29,
+            "risk_tier": "Exercise Normal Caution",
+            "flag": "🇦🇱"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://warnely.com/api/v1/countries"
+    },
+    {
+      "name": "ValueRay",
+      "slug": "valueray",
+      "emoji": "💰",
+      "tagline": "ValueRay — Technical, quantitative and sentiment data for stocks a…",
+      "description": "ValueRay exposes technical, quantitative and sentiment data for stocks and ETFs, optimized for AI/LLM We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.valueray.com/api",
+      "baseUrl": "https://www.valueray.com",
+      "sampleEndpoint": "/api/v1/symbolSearch?search=apple",
+      "latencyMs": 259,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "suggestions": [
+          {
+            "symbol": "AAPL",
+            "name": "Apple",
+            "exchange": "NASDAQ",
+            "isin": "US0378331005",
+            "url": "/symbol/NASDAQ/AAPL",
+            "source": "fulltext_name"
+          },
+          {
+            "symbol": "APLE",
+            "name": "Apple Hospitality REIT",
+            "exchange": "NYSE",
+            "isin": "US03784Y2000",
+            "url": "/symbol/NYSE/APLE",
+            "source": "fulltext_name"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.valueray.com/api/v1/symbolSearch?search=apple"
+    },
+    {
+      "name": "kimiquotes",
+      "slug": "kimiquotes",
+      "emoji": "🎭",
+      "tagline": "kimiquotes — Team radio and interview quotes by Finnish F1 legend Ki…",
+      "description": "kimiquotes exposes team radio and interview quotes by Finnish F1 legend Kimi Räikkönen We verified a keyless GET endpoint returning JSON (Personality). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://kimiquotes.pages.dev/docs",
+      "baseUrl": "https://kimiquotes.pages.dev",
+      "sampleEndpoint": "/api",
+      "latencyMs": 149,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the API"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://kimiquotes.pages.dev/api"
+    },
+    {
+      "name": "Jobicy",
+      "slug": "jobicy",
+      "emoji": "💼",
+      "tagline": "Jobicy — Remote Jobs API Feed",
+      "description": "Jobicy exposes remote Jobs API Feed We verified a keyless GET endpoint returning JSON (Jobs). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://jobicy.com/jobs-rss-feed",
+      "baseUrl": "https://jobicy.com",
+      "sampleEndpoint": "/api/v2/remote-jobs",
+      "latencyMs": 621,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "apiVersion": "2.2.14",
+        "documentationUrl": "https://jobi.cy/apidocs",
+        "friendlyNotice": "Thanks for using Jobicy API! Please ensure Jobicy is clearly credited with a direct link to the source, and all application buttons redirect to the original job URL provided in this feed. That’s all! You might be building something amazing, we wish you the best of luck!",
+        "jobCount": 100,
+        "lastUpdate": "2026-07-05T12:40:04+00:00",
+        "appliedFilters": {
+          "count": 100
+        },
+        "jobs": [
+          {
+            "id": 145224,
+            "url": "https://jobicy.com/jobs/145224-pensions-project-manager",
+            "jobSlug": "145224-pensions-project-manager",
+            "jobTitle": "Pensions Project Manager",
+            "companyName": "WTW",
+            "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/09/8fd0d917-221.png",
+            "jobIndustry": [
+              "Product &amp; Operations"
+            ],
+            "jobType": [
+              "Full-Time"
+            ]
+          },
+          {
+            "id": 145298,
+            "url": "https://jobicy.com/jobs/145298-staff-product-designer-4",
+            "jobSlug": "145298-staff-product-designer-4",
+            "jobTitle": "Staff Product Designer",
+            "companyName": "Monzo",
+            "companyLogo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/5b4c0ec3-221.jpg",
+            "jobIndustry": [
+              "Creative &amp; Design"
+            ],
+            "jobType": [
+              "Full-Time"
+            ]
+          }
+        ],
+        "success": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://jobicy.com/api/v2/remote-jobs"
+    },
+    {
+      "name": "Parkleitsystem API",
+      "slug": "parkleitsystem-api",
+      "emoji": "🗺",
+      "tagline": "Parkleitsystem API — Provides real-time information on available parking spa…",
+      "description": "Parkleitsystem API exposes provides real-time information on available parking spaces in connected parking garages in cities like Basel, Zurich, Bern, Luzern, St.Gallen, and Zug. Developed by Simon Jenny for the Pebble.Parking-App. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.stadt-zuerich.ch/portal/de/index/ogd/anwendungen/2015/parkleitsystem_api_ch.html",
+      "baseUrl": "https://www.stadt-zuerich.ch",
+      "sampleEndpoint": "/api",
+      "latencyMs": 158,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": [
+              "self"
+            ],
+            "href": "https://www.stadt-zuerich.ch/api.json"
+          },
+          {
+            "rel": [
+              "assets"
+            ],
+            "href": "https://www.stadt-zuerich.ch/api/assets.json"
+          }
+        ],
+        "class": [
+          "core/services"
+        ],
+        "properties": {
+          "name": "api"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.stadt-zuerich.ch/api"
+    },
+    {
+      "name": "Passantenfrequenzen Zürich",
+      "slug": "passantenfrequenzen-z-rich",
+      "emoji": "🔧",
+      "tagline": "Passantenfrequenzen Zürich — Dieses API ermöglicht den Zugriff auf Daten zu Pa",
+      "description": "Passantenfrequenzen Zürich exposes dieses API ermöglicht den Zugriff auf Daten zu Passantenfrequenzen an verschiedenen Standorten in Zürich. Die Messungen werden stündlich aktualisiert und umfassen Informationen über die Anzahl der Passanten, unterteilt nach Zonen, Geschlecht und Laufrichtung sowie Wetterdaten. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen",
+      "baseUrl": "https://ckan-prod.zurich.datopian.com",
+      "sampleEndpoint": "/api/3/action/package_show?id=hystreet_fussgaengerfrequenzen",
+      "latencyMs": 453,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://ckan-prod.zurich.datopian.com/api/3/action/help_show?name=package_show",
+        "success": true,
+        "result": {
+          "author": "Stadtentwicklung, Präsidialdepartement",
+          "author_email": "",
+          "creator_user_id": "39148de7-9d92-45d8-8f5d-fd30f7de6511",
+          "dataQuality": "Siehe dazu «Detailinformationen bezüglich Datenqualität» unter Bemerkungen.\n\t\t",
+          "dataType": [
+            "Datenaggregat"
+          ],
+          "dateFirstPublished": "05.07.2022",
+          "dateLastUpdated": "05.07.2026",
+          "id": "3b2dd8cd-7abc-4db3-b4b3-6c7ae717c8be"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://ckan-prod.zurich.datopian.com/api/3/action/package_show?id=hystreet_fussgaengerfrequenzen"
+    },
+    {
+      "name": "Pokefact API",
+      "slug": "pokefact-api",
+      "emoji": "🎮",
+      "tagline": "Pokefact API — API chooses a random Pokemon fact and displays it to th…",
+      "description": "Pokefact API exposes aPI chooses a random Pokemon fact and displays it to the user. We verified a keyless GET endpoint returning JSON (Games & Comics). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://pokefacts.vercel.app",
+      "baseUrl": "https://pokefacts.vercel.app",
+      "sampleEndpoint": "/",
+      "latencyMs": 1064,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          "Starly, Taillow, and Pikipek are tied with: Spearow, Hoothoot, Ledyba, and Wingull for the lowest base Defense stat of all Flying-type Pokémon. Zubat and Combee for the lowest base Special Attack stat of all Flying-type Pokémon. Wingull and Pidove for the lowest base Special Defense stat of all Flying-type Pokémon."
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://pokefacts.vercel.app/"
+    },
+    {
+      "name": "REST API Beispiele",
+      "slug": "rest-api-beispiele",
+      "emoji": "🔧",
+      "tagline": "REST API Beispiele — Dieses API bietet Beispiele für REST API Aufrufe, insbe…",
+      "description": "REST API Beispiele exposes dieses API bietet Beispiele für REST API Aufrufe, insbesondere für die HTTP Methoden POST, PUT und PATCH. Es dient als Anleitung, um Ressourcen zu erstellen, zu aktualisieren oder zu löschen, wobei ein Beispielservice verwendet wird. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.predic8.de/post-put-patch-beispiel.htm",
+      "baseUrl": "https://api.predic8.de",
+      "sampleEndpoint": "/shop/v2/",
+      "latencyMs": 320,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "description": {
+          "openapi": "https://api.predic8.de/api-docs/fruit-shop-api-v2-2-0",
+          "swagger_ui": "https://api.predic8.de/api-docs/ui/fruit-shop-api-v2-2-0"
+        },
+        "links": {
+          "products_link": "/shop/v2/products",
+          "vendors_link": "/shop/v2/vendors",
+          "orders_link": "/shop/v2/orders",
+          "customer_link": "/shop/v2/customers"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.predic8.de/shop/v2/"
+    },
+    {
+      "name": "RSQ API",
+      "slug": "rsq-api",
+      "emoji": "🔧",
+      "tagline": "RSQ API — Full stack RESTful API for entity lists, single entity …",
+      "description": "RSQ API exposes full stack RESTful API for entity lists, single entity access, and complex query built requests. Public API with versioning and no user authentication. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.unhcr.org/docs/index.html",
+      "baseUrl": "http://api.unhcr.org",
+      "sampleEndpoint": "/rsq/v1/categories",
+      "latencyMs": 183,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "code": "AWR",
+          "name": "Women and Girls-at-Risk"
+        },
+        {
+          "code": "CHL",
+          "name": "Children and Adolescents at Risk"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed http://api.unhcr.org/rsq/v1/categories"
+    },
+    {
+      "name": "RuntimeBuzz Article API",
+      "slug": "runtimebuzz-article-api",
+      "emoji": "📰",
+      "tagline": "RuntimeBuzz Article API — The RuntimeBuzz API allows users to search for artic",
+      "description": "RuntimeBuzz Article API exposes the RuntimeBuzz API allows users to search for articles across various categories such as software, hardware, and AI using specific queries. It returns detailed information including titles, excerpts, and URLs of the articles in a structured JSON format. We verified a keyless GET endpoint returning JSON (News). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "News",
+      "docsUrl": "https://runtimebuzz.com/api-docs",
+      "baseUrl": "https://runtimebuzz.com",
+      "sampleEndpoint": "/api/search?q=cursor&amp;limit=5",
+      "latencyMs": 256,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "query": "cursor",
+        "count": 5,
+        "articles": [
+          {
+            "title": "The end of the subsidized AI coding era",
+            "excerpt": "GitHub Copilot now bills in credits, and the Student tier matches the Free plan on agents. The era of flat-rate AI coding is ending as agent loops eat the margin.",
+            "path": "/ai/editorials/reckoning-us-ai-coding-tools-subsidy-era",
+            "url": "https://runtimebuzz.com/ai/editorials/reckoning-us-ai-coding-tools-subsidy-era"
+          },
+          {
+            "title": "7 Cursor skills I actually use for SEO (and where to find them)",
+            "excerpt": "I stopped relying on Cursor's default SEO advice and started using these seven public SKILL.md packs for audits, AI answer optimization, and technical checks.",
+            "path": "/software/lists/most-useful-cursor-skills-for-seo",
+            "url": "https://runtimebuzz.com/software/lists/most-useful-cursor-skills-for-seo"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://runtimebuzz.com/api/search?q=cursor&amp;limit=5"
+    },
+    {
+      "name": "SLA Uptime Calculator",
+      "slug": "sla-uptime-calculator",
+      "emoji": "🔧",
+      "tagline": "SLA Uptime Calculator — The SLA Uptime Calculator API provides calculations fo",
+      "description": "SLA Uptime Calculator exposes the SLA Uptime Calculator API provides calculations for expected downtime based on specified uptime percentages. It supports both simple and complex calculations, allowing users to input downtime durations and receive corresponding SLA uptime percentages. Additionally, it can calculate acceptable downtime for different days of the week. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://uptime.is/about#api",
+      "baseUrl": "https://get.uptime.is",
+      "sampleEndpoint": "/api?%3Cstrong%3Esla=99.9%3C/strong%3E",
+      "latencyMs": 572,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {},
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://get.uptime.is/api?<strong>sla=99.9</strong>"
+    },
+    {
+      "name": "Remote OK Jobs API",
+      "slug": "remote-ok-jobs-api",
+      "emoji": "💼",
+      "tagline": "Remote OK Jobs API — Remote OK is the #1 remote-only jobs board on the web. …",
+      "description": "Remote OK Jobs API exposes remote OK is the #1 remote-only jobs board on the web. It has over 30,000+ remote job listings, adding new ones every day. With this API, now you can build apps with our data feed which covers 80% of remote jobs on the web. We verified a keyless GET endpoint returning JSON (Jobs). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://www.remoteok.com",
+      "baseUrl": "https://www.remoteok.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 802,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "last_updated": 1783271921,
+          "legal": "API Terms of Service: Please link back (with follow, and without nofollow!) to the URL on Remote OK and mention Remote OK as a source, so we get traffic back from your site. If you do not we'll have to suspend API access.\n\nPlease don't use the Remote OK logo without written permission as it's a registered trademark, please DO use our name Remote OK though."
+        },
+        {
+          "slug": "remote-human-resources-generalist-coberonchronos-1134499",
+          "id": "1134499",
+          "epoch": 1783199436,
+          "date": "2026-07-04T21:10:36+00:00",
+          "company": "CoberonChronos",
+          "company_logo": "",
+          "position": "Human Resources Generalist",
+          "tags": [
+            "design",
+            "hr"
+          ]
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.remoteok.com/api"
+    },
+    {
+      "name": "Shodan EntityDB API",
+      "slug": "shodan-entitydb-api",
+      "emoji": "🔧",
+      "tagline": "Shodan EntityDB API — The Shodan EntityDB API provides fast lookups for busin…",
+      "description": "Shodan EntityDB API exposes the Shodan EntityDB API provides fast lookups for business entities, offering a centralized repository of financial overviews and executive information for entities listed in the US. Access critical financial metrics, analyze performance, and explore leadership teams to make informed investment decisions, conduct industry research, and connect with key decision-makers. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms befor",
+      "sourceCategory": "Development",
+      "docsUrl": "https://entitydb.shodan.io/",
+      "baseUrl": "https://entitydb.shodan.io",
+      "sampleEndpoint": "/api/entities/3",
+      "latencyMs": 641,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "finance_data": [],
+        "entity": {
+          "id": 3,
+          "cik": 1652044,
+          "tickers": [
+            "GOOGL",
+            "GOOG"
+          ],
+          "entity_name": "Alphabet Inc.",
+          "hostname": "www.google.com",
+          "entity_type": "operating",
+          "sic": "7370",
+          "sic_description": "Services-Computer Programming, Data Processing, Etc."
+        },
+        "executives": []
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://entitydb.shodan.io/api/entities/3"
+    },
+    {
+      "name": "Simpsons Character API",
+      "slug": "simpsons-character-api",
+      "emoji": "🔧",
+      "tagline": "Simpsons Character API — The Simpsons Character API provides detailed informat",
+      "description": "Simpsons Character API exposes the Simpsons Character API provides detailed information about characters from The Simpsons universe, including their age, occupation, and famous quotes. It's designed for developers who want to create applications or services related to The Simpsons series. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://thesimpsonsapi.com/",
+      "baseUrl": "https://thesimpsonsapi.com",
+      "sampleEndpoint": "/api/characters/1",
+      "latencyMs": 39,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "age": 39,
+        "birthdate": "1956-05-12",
+        "description": "Homer Jay Simpson (born May 12, 1956) is a man from Springfield and the protagonist of the animated television series The Simpsons. He is a crude, ignorant, and slobbish individual, although he is fundamentally a good person and shows great caring and loyalty to his family, friends and on occasion, to those he barely knows or those he considers his enemies.",
+        "first_appearance_ep_id": 1,
+        "first_appearance_sh_id": 1,
+        "gender": "Male",
+        "name": "Homer Simpson"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://thesimpsonsapi.com/api/characters/1"
+    },
+    {
+      "name": "Strictly Better API",
+      "slug": "strictly-better-api",
+      "emoji": "🔬",
+      "tagline": "Strictly Better API — This API allows users to retrieve and search for obsole…",
+      "description": "Strictly Better API exposes this API allows users to retrieve and search for obsolete cards in JSON format. Users can also find functional reprints and access various endpoints with a limit on the number of results per request. We verified a keyless GET endpoint returning JSON (Science & Math). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://www.strictlybetter.eu/api-guide",
+      "baseUrl": "https://www.strictlybetter.eu",
+      "sampleEndpoint": "/api/obsoletes",
+      "latencyMs": 402,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "current_page": 1,
+        "data": [
+          {
+            "id": 43576,
+            "upvotes": 1,
+            "downvotes": 2,
+            "created_at": "2026-07-05 16:26:01",
+            "updated_at": "2026-07-05 19:50:56",
+            "inferiors": [
+              {
+                "name": "Arc Reactor",
+                "multiverse_id": null,
+                "functional_reprints_id": null
+              }
+            ],
+            "superiors": [
+              {
+                "name": "Thran Dynamo",
+                "multiverse_id": 627879,
+                "functional_reprints_id": null
+              }
+            ],
+            "labels": {
+              "downvoted": false,
+              "less_colors": false,
+              "more_colors": false,
+              "types_differ": false,
+              "strictly_better": true,
+              "subtypes_differ": false,
+              "more_colored_mana": false,
+              "supertypes_differ": false
+            }
+          },
+          {
+            "id": 43575,
+            "upvotes": 1,
+            "downvotes": 0,
+            "created_at": "2026-07-05 15:34:08",
+            "updated_at": "2026-07-05 15:34:08",
+            "inferiors": [
+              {
+                "name": "Succumb to Temptation",
+                "multiverse_id": 414403,
+                "functional_reprints_id": null
+              }
+            ],
+            "superiors": [
+              {
+                "name": "Visions of Villainy",
+                "multiverse_id": null,
+                "functional_reprints_id": null
+              }
+            ],
+            "labels": {
+              "downvoted": false,
+              "less_colors": false,
+              "more_colors": false,
+              "types_differ": false,
+              "strictly_better": true,
+              "subtypes_differ": false,
+              "more_colored_mana": false,
+              "supertypes_differ": false
+            }
+          }
+        ],
+        "first_page_url": "https://www.strictlybetter.eu/api/obsoletes?page=1",
+        "from": 1,
+        "last_page": 523,
+        "last_page_url": "https://www.strictlybetter.eu/api/obsoletes?page=523",
+        "links": [
+          {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+          },
+          {
+            "url": "https://www.strictlybetter.eu/api/obsoletes?page=1",
+            "label": "1",
+            "active": true
+          }
+        ],
+        "next_page_url": "https://www.strictlybetter.eu/api/obsoletes?page=2"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.strictlybetter.eu/api/obsoletes"
+    },
+    {
+      "name": "Sodeom Search API",
+      "slug": "sodeom-search-api",
+      "emoji": "🔧",
+      "tagline": "Sodeom Search API — The Sodeom Search API enables users to perform private …",
+      "description": "Sodeom Search API exposes the Sodeom Search API enables users to perform private searches without any tracking, returning results in a structured JSON format. It supports pagination and allows users to query using specific search terms. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://sodeom.com/apis/search",
+      "baseUrl": "https://sodeom.com",
+      "sampleEndpoint": "/api/search?q=privacy+search&page=1",
+      "latencyMs": 4077,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "answers": [],
+        "category": "general",
+        "corrections": [],
+        "has_next": false,
+        "has_prev": false,
+        "infoboxes": [],
+        "page": 1,
+        "query": "privacy search"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://sodeom.com/api/search?q=privacy+search&page=1"
+    },
+    {
+      "name": "Teehee Joke API",
+      "slug": "teehee-joke-api",
+      "emoji": "🎭",
+      "tagline": "Teehee Joke API — The Teehee.dev API provides a simple way to retrieve ra…",
+      "description": "Teehee Joke API exposes the Teehee.dev API provides a simple way to retrieve random jokes curated by Jesse G. Donat. Users can make a GET request to receive a joke along with its ID, question, answer, and a permalink for reference. We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://teehee.dev/",
+      "baseUrl": "https://teehee.dev",
+      "sampleEndpoint": "/api/joke",
+      "latencyMs": 204,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "repossessed",
+        "question": "What happened to the man who forgot to pay his exorcist?",
+        "answer": "He got repossessed.",
+        "permalink": "https://teehee.dev/api/joke/repossessed",
+        "permalink_html": "https://teehee.dev/joke/repossessed"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://teehee.dev/api/joke"
+    },
+    {
+      "name": "Rejection Reason Generator",
+      "slug": "rejection-reason-generator",
+      "emoji": "🎭",
+      "tagline": "Rejection Reason Generator — This API provides a variety of random rejection a",
+      "description": "Rejection Reason Generator exposes this API provides a variety of random rejection and acceptance reasons, offering a creative and sometimes humorous take on the responses one might receive. Users can easily access specific reasons through various endpoints, making it a fun tool for generating feedback. We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://dbdaas.rajathjaiprakash.com/help",
+      "baseUrl": "https://dbdaas.rajathjaiprakash.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 3143,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "reason": "If I could sing, I'd sing 'I say YESSS' in opera for you.",
+        "type": "yes"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://dbdaas.rajathjaiprakash.com/api"
+    },
+    {
+      "name": "The Office API",
+      "slug": "the-office-api",
+      "emoji": "🎬",
+      "tagline": "The Office API — This API provides access to detailed information regard…",
+      "description": "The Office API exposes this API provides access to detailed information regarding the popular television show 'The Office.' Users can retrieve data about seasons, characters, and episodes, including air dates and descriptions. The API is currently in early development, indicating that features may evolve over time. We verified a keyless GET endpoint returning JSON (Video). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://theofficeapi.dev",
+      "baseUrl": "https://theofficeapi.dev",
+      "sampleEndpoint": "/api",
+      "latencyMs": 1149,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "episodes": "/api/episodes",
+        "seasons": "/api/seasons",
+        "characters": "/api/characters",
+        "character": "/api/character/:id"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://theofficeapi.dev/api"
+    },
+    {
+      "name": "Truth or Dare API",
+      "slug": "truth-or-dare-api",
+      "emoji": "🔧",
+      "tagline": "Truth or Dare API — API for truth, dare, would you rather, never have I eve…",
+      "description": "Truth or Dare API exposes aPI for truth, dare, would you rather, never have I ever, and paranoia questions with different ratings available. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.truthordarebot.xyz/api-docs",
+      "baseUrl": "https://api.truthordarebot.xyz",
+      "sampleEndpoint": "/v1/truth",
+      "latencyMs": 2153,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "translations": {
+          "bn": "আপনার ঘটনাক্রমে কাউকে অপমান করার গল্প কি?",
+          "de": "Was ist Ihre versehentliche Beleidigung jemand Geschichte?",
+          "es": "¿Cuál es tu historia de insultar accidentalmente a alguien?",
+          "fr": "Quelle est votre histoire d'insulte accidentelle à quelqu'un ?",
+          "hi": "आपकी गलती से किसी का अपमान करने की कहानी क्या है?",
+          "tl": "Ano ang iyong aksidenteng nakakainsulto sa isang tao?"
+        },
+        "id": "lb0496s1no7k",
+        "type": "TRUTH",
+        "rating": "PG",
+        "question": "What's your accidentally insulting someone story?",
+        "pack": null
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.truthordarebot.xyz/v1/truth"
+    },
+    {
+      "name": "User Agent Lookup API",
+      "slug": "user-agent-lookup-api",
+      "emoji": "🔧",
+      "tagline": "User Agent Lookup API — This API allows users to parse and retrieve informatio",
+      "description": "User Agent Lookup API exposes this API allows users to parse and retrieve information about user agents for free. It has no limitations or rate limiting, enabling unlimited requests by simply calling the appropriate endpoint with the user agent string. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.useragentlookup.com/",
+      "baseUrl": "https://www.useragentlookup.com",
+      "sampleEndpoint": "/api/user-agent?ua={$}",
+      "latencyMs": 157,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "user_agent": "{$}",
+        "platform": "",
+        "operating_system": "",
+        "is_crawler": false,
+        "is_mobile": false,
+        "type": "desktop browser",
+        "name": "{$}",
+        "version": ""
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.useragentlookup.com/api/user-agent?ua={$}"
+    },
+    {
+      "name": "Visitor Statistics API",
+      "slug": "visitor-statistics-api",
+      "emoji": "🗺",
+      "tagline": "Visitor Statistics API — This API provides access to data regarding visitor ar",
+      "description": "Visitor Statistics API exposes this API provides access to data regarding visitor arrivals in Hong Kong by country and region of residence. Users can retrieve this data in various formats including JSON, CSV, and XLSX for analysis and reporting purposes. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://data.gov.hk/en-data/dataset/hk-censtatd-tablechart-650-80001",
+      "baseUrl": "https://www.censtatd.gov.hk",
+      "sampleEndpoint": "/api/get.php?id=650-80001&amp;lang=en&amp;full_series=1",
+      "latencyMs": 1164,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "header": {
+          "status": {
+            "name": "Fail",
+            "code": 1,
+            "description": "Validation error",
+            "message": [
+              "Lang code is not defined",
+              "Lang code () is not defined"
+            ],
+            "apiHelp": "https://www.censtatd.gov.hk//web_table.html?id=650-80001&api_popup=1"
+          },
+          "count": {
+            "noOfRecords": 0,
+            "started": "2026-07-05T21:16:10+00:00",
+            "finished": "2026-07-05T21:16:10+00:00",
+            "durationSeconds": 0.000401
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://www.censtatd.gov.hk/api/get.php?id=650-80001&amp;lang=en&amp;full_series=1"
+    },
+    {
+      "name": "Wahlumfragen Datenbank API",
+      "slug": "wahlumfragen-datenbank-api",
+      "emoji": "🔧",
+      "tagline": "Wahlumfragen Datenbank API — Die API von DAWUM stellt eine umfassende Datenban",
+      "description": "Wahlumfragen Datenbank API exposes die API von DAWUM stellt eine umfassende Datenbank für Wahlumfragen als JSON-Datei zur Verfügung. Sie ermöglicht den Zugriff auf aktuelle Umfrageergebnisse für verschiedene politische Parteien in Deutschland unter der Lizenz ODC-ODbL. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://dawum.de/API/",
+      "baseUrl": "https://api.dawum.de",
+      "sampleEndpoint": "/newest_surveys.json",
+      "latencyMs": 1307,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Database": {
+          "License": {
+            "Name": "ODC Open Database License",
+            "Shortcut": "ODC-ODbL",
+            "Link": "https://opendatacommons.org/licenses/odbl/1-0/"
+          },
+          "Publisher": "dawum.de",
+          "Author": "Dipl.-Jur. Philipp Guttmann",
+          "Last_Update": "2026-07-05T10:17:24+02:00"
+        },
+        "Parliaments": {
+          "0": {
+            "Shortcut": "Bundestag",
+            "Name": "Bundestag",
+            "Election": "Bundestagswahl"
+          },
+          "1": {
+            "Shortcut": "Baden-Württemberg",
+            "Name": "Landtag von Baden-Württemberg",
+            "Election": "Landtagswahl in Baden-Württemberg"
+          },
+          "2": {
+            "Shortcut": "Bayern",
+            "Name": "Bayerischer Landtag",
+            "Election": "Landtagswahl in Bayern"
+          },
+          "3": {
+            "Shortcut": "Berlin",
+            "Name": "Berliner Abgeordnetenhaus",
+            "Election": "Abgeordnetenhauswahl in Berlin"
+          },
+          "4": {
+            "Shortcut": "Brandenburg",
+            "Name": "Brandenburgischer Landtag",
+            "Election": "Landtagswahl in Brandenburg"
+          },
+          "5": {
+            "Shortcut": "Bremen",
+            "Name": "Bremische Bürgerschaft",
+            "Election": "Bürgerschaftswahl in Bremen"
+          },
+          "6": {
+            "Shortcut": "Hamburg",
+            "Name": "Hamburgische Bürgerschaft",
+            "Election": "Bürgerschaftswahl in Hamburg"
+          },
+          "7": {
+            "Shortcut": "Hessen",
+            "Name": "Hessischer Landtag",
+            "Election": "Landtagswahl in Hessen"
+          }
+        },
+        "Institutes": {
+          "1": {
+            "Name": "Infratest dimap"
+          },
+          "2": {
+            "Name": "Forsa"
+          },
+          "3": {
+            "Name": "Verian (Emnid)"
+          },
+          "4": {
+            "Name": "GMS"
+          },
+          "5": {
+            "Name": "INSA"
+          },
+          "6": {
+            "Name": "Forschungsgruppe Wahlen"
+          },
+          "7": {
+            "Name": "Trend Research Hamburg"
+          },
+          "9": {
+            "Name": "Allensbach"
+          }
+        },
+        "Taskers": {
+          "1": {
+            "Name": "ARD-Morgenmagazin"
+          },
+          "2": {
+            "Name": "Stern / RTL"
+          },
+          "3": {
+            "Name": "BILD am Sonntag"
+          },
+          "4": {
+            "Name": "BILD"
+          },
+          "5": {
+            "Name": "ZDF-Politbarometer"
+          },
+          "6": {
+            "Name": "Frankfurter Allgemeine Zeitung"
+          },
+          "7": {
+            "Name": "GMS"
+          },
+          "10": {
+            "Name": "ARD-Tagesthemen"
+          }
+        },
+        "Methods": {
+          "0": {
+            "Name": "Unbekannt"
+          },
+          "1": {
+            "Name": "Telefonisch"
+          },
+          "2": {
+            "Name": "Persönlich"
+          },
+          "3": {
+            "Name": "Online"
+          },
+          "4": {
+            "Name": "Telefon & Online"
+          },
+          "5": {
+            "Name": "Persönlich & Online"
+          }
+        },
+        "Parties": {
+          "0": {
+            "Shortcut": "Sonstige",
+            "Name": "sonstige Parteien"
+          },
+          "1": {
+            "Shortcut": "CDU/CSU",
+            "Name": "Christlich Demokratische Union / Christlich-Soziale Union"
+          },
+          "2": {
+            "Shortcut": "SPD",
+            "Name": "Sozialdemokratische Partei Deutschlands"
+          },
+          "3": {
+            "Shortcut": "FDP",
+            "Name": "Freie Demokratische Partei"
+          },
+          "4": {
+            "Shortcut": "Grüne",
+            "Name": "Bündnis 90/Die Grünen"
+          },
+          "5": {
+            "Shortcut": "Linke",
+            "Name": "Die Linke"
+          },
+          "6": {
+            "Shortcut": "Piraten",
+            "Name": "Piratenpartei"
+          },
+          "7": {
+            "Shortcut": "AfD",
+            "Name": "Alternative für Deutschland"
+          }
+        },
+        "Surveys": {
+          "422": {
+            "Date": "2017-03-09",
+            "Survey_Period": {
+              "Date_Start": "2017-03-01",
+              "Date_End": "2017-03-08"
+            },
+            "Surveyed_Persons": "1001",
+            "Parliament_ID": "12",
+            "Institute_ID": "2",
+            "Tasker_ID": "29",
+            "Method_ID": "0",
+            "Results": {
+              "0": 5,
+              "2": 33,
+              "3": 4,
+              "4": 5,
+              "5": 13,
+              "7": 6,
+              "101": 34
+            }
+          },
+          "581": {
+            "Date": "2017-07-19",
+            "Survey_Period": {
+              "Date_Start": "2017-07-06",
+              "Date_End": "2017-07-17"
+            },
+            "Surveyed_Persons": "1002",
+            "Parliament_ID": "11",
+            "Institute_ID": "11",
+            "Tasker_ID": "19",
+            "Method_ID": "0",
+            "Results": {
+              "0": 4,
+              "2": 33,
+              "3": 6,
+              "4": 7,
+              "5": 3,
+              "7": 8,
+              "8": 2,
+              "101": 37
+            }
+          },
+          "626": {
+            "Date": "2017-08-30",
+            "Survey_Period": {
+              "Date_Start": "2017-08-18",
+              "Date_End": "2017-08-26"
+            },
+            "Surveyed_Persons": "1003",
+            "Parliament_ID": "9",
+            "Institute_ID": "14",
+            "Tasker_ID": "58",
+            "Method_ID": "0",
+            "Results": {
+              "0": 2,
+              "2": 31,
+              "3": 8,
+              "4": 8,
+              "5": 4,
+              "7": 8,
+              "101": 39
+            }
+          },
+          "902": {
+            "Date": "2018-05-22",
+            "Survey_Period": {
+              "Date_Start": "2018-01-30",
+              "Date_End": "2018-03-08"
+            },
+            "Surveyed_Persons": "1100",
+            "Parliament_ID": "14",
+            "Institute_ID": "23",
+            "Tasker_ID": "71",
+            "Method_ID": "0",
+            "Results": {
+              "0": 3,
+              "2": 16,
+              "3": 6,
+              "4": 5,
+              "5": 20,
+              "7": 15,
+              "101": 35
+            }
+          },
+          "972": {
+            "Date": "2018-08-03",
+            "Survey_Period": {
+              "Date_Start": "2018-06-22",
+              "Date_End": "2018-07-02"
+            },
+            "Surveyed_Persons": "1000",
+            "Parliament_ID": "5",
+            "Institute_ID": "22",
+            "Tasker_ID": "74",
+            "Method_ID": "0",
+            "Results": {
+              "0": 2,
+              "2": 28,
+              "3": 10,
+              "4": 14,
+              "5": 14,
+              "7": 8,
+              "101": 24
+            }
+          },
+          "1007": {
+            "Date": "2018-09-07",
+            "Survey_Period": {
+              "Date_Start": "2018-08-20",
+              "Date_End": "2018-08-28"
+            },
+            "Surveyed_Persons": "703",
+            "Parliament_ID": "13",
+            "Institute_ID": "12",
+            "Tasker_ID": "54",
+            "Method_ID": "0",
+            "Results": {
+              "0": 4.5,
+              "2": 11.4,
+              "3": 5.6,
+              "4": 6.8,
+              "5": 18.6,
+              "7": 23.9,
+              "101": 28.9
+            }
+          },
+          "1165": {
+            "Date": "2019-02-04",
+            "Survey_Period": {
+              "Date_Start": "2019-01-29",
+              "Date_End": "2019-02-01"
+            },
+            "Surveyed_Persons": "1007",
+            "Parliament_ID": "1",
+            "Institute_ID": "2",
+            "Tasker_ID": "63",
+            "Method_ID": "1",
+            "Results": {
+              "0": 7,
+              "2": 9,
+              "3": 9,
+              "4": 33,
+              "5": 6,
+              "7": 13,
+              "101": 23
+            }
+          },
+          "1176": {
+            "Date": "2019-02-11",
+            "Survey_Period": {
+              "Date_Start": "2019-02-01",
+              "Date_End": "2019-02-08"
+            },
+            "Surveyed_Persons": "1005",
+            "Parliament_ID": "11",
+            "Institute_ID": "2",
+            "Tasker_ID": "63",
+            "Method_ID": "1",
+            "Results": {
+              "0": 6,
+              "2": 26,
+              "3": 8,
+              "4": 14,
+              "5": 5,
+              "7": 10,
+              "101": 31
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.dawum.de/newest_surveys.json"
+    },
+    {
+      "name": "Free Dictionary API",
+      "slug": "free-dictionary-api",
+      "emoji": "📊",
+      "tagline": "Free Dictionary API — The Free Dictionary API provides access to dictionary d…",
+      "description": "Free Dictionary API exposes the Free Dictionary API provides access to dictionary data sourced from Wiktionary. It allows users to retrieve definitions, pronunciations, synonyms, antonyms, and translations for words in various languages without requiring an API key. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://freedictionaryapi.com",
+      "baseUrl": "https://freedictionaryapi.com",
+      "sampleEndpoint": "/api/v1/entries/en/hello",
+      "latencyMs": 222,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "word": "hello",
+        "entries": [
+          {
+            "language": {
+              "code": "en",
+              "name": "English"
+            },
+            "partOfSpeech": "interjection",
+            "pronunciations": [
+              {
+                "type": "ipa",
+                "text": "/hɛˈloʊ/",
+                "tags": [
+                  "General American"
+                ]
+              },
+              {
+                "type": "ipa",
+                "text": "/həˈloʊ/",
+                "tags": [
+                  "General American"
+                ]
+              }
+            ],
+            "forms": [
+              {
+                "word": "hallo",
+                "tags": [
+                  "alternative"
+                ]
+              },
+              {
+                "word": "hilloa",
+                "tags": [
+                  "alternative",
+                  "obsolete"
+                ]
+              }
+            ],
+            "senses": [
+              {
+                "definition": "A greeting (salutation) said when meeting someone or acknowledging someone’s arrival or presence.",
+                "tags": [],
+                "examples": [
+                  "Hello, everyone."
+                ],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "subsenses": []
+              },
+              {
+                "definition": "A greeting used when answering the telephone.",
+                "tags": [],
+                "examples": [
+                  "Hello? How may I help you?",
+                  "Hello. This is Marsha. ― Yes, Marsha."
+                ],
+                "quotes": [],
+                "synonyms": [],
+                "antonyms": [],
+                "subsenses": []
+              }
+            ],
+            "synonyms": [
+              "g'day",
+              "hey"
+            ],
+            "antonyms": [
+              "bye",
+              "goodbye"
+            ]
+          },
+          {
+            "language": {
+              "code": "en",
+              "name": "English"
+            },
+            "partOfSpeech": "noun",
+            "pronunciations": [
+              {
+                "type": "ipa",
+                "text": "/hɛˈloʊ/",
+                "tags": [
+                  "General American"
+                ]
+              },
+              {
+                "type": "ipa",
+                "text": "/həˈloʊ/",
+                "tags": [
+                  "General American"
+                ]
+              }
+            ],
+            "forms": [
+              {
+                "word": "hellos",
+                "tags": [
+                  "plural"
+                ]
+              },
+              {
+                "word": "helloes",
+                "tags": [
+                  "plural"
+                ]
+              }
+            ],
+            "senses": [
+              {
+                "definition": "\"Hello!\" or an equivalent greeting.",
+                "tags": [],
+                "examples": [
+                  "They gave each other a quick hello when they met, and went back on their merry ways."
+                ],
+                "quotes": [
+                  {
+                    "text": "In many new buildings, though, neighbors are venturing beyond tight-lipped hellos at the mailbox.",
+                    "reference": "2007 April 29, Stephanie Rosenbloom, “A Beautiful Day in the Neighborhood”, in New York Times:"
+                  }
+                ],
+                "synonyms": [],
+                "antonyms": [],
+                "subsenses": []
+              }
+            ],
+            "synonyms": [
+              "greeting"
+            ],
+            "antonyms": []
+          }
+        ],
+        "source": {
+          "url": "https://en.wiktionary.org/wiki/hello",
+          "license": {
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://freedictionaryapi.com/api/v1/entries/en/hello"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,1420 @@
+{
+  "batch": 56,
+  "verified": [
+    {
+      "name": "VATlayer",
+      "slug": "vatlayer",
+      "emoji": "🔑",
+      "tagline": "VATlayer — free tier with API key",
+      "description": "VATlayer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://vatlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://vatlayer.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 310,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-199-111.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:20:57Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://vatlayer.com/healthz"
+    },
+    {
+      "name": "VALR",
+      "slug": "valr",
+      "emoji": "🔑",
+      "tagline": "VALR — free tier with API key",
+      "description": "VALR exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.valr.com/",
+      "baseUrl": "https://docs.valr.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 478,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.3.1",
+        "uptime": 20813034.18,
+        "mem": 0.5074682554790135,
+        "load": [
+          1.78,
+          1.94
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.valr.com/status"
+    },
+    {
+      "name": "Azure DevOps",
+      "slug": "azure-devops",
+      "emoji": "🔑",
+      "tagline": "Azure DevOps — free tier with API key",
+      "description": "Azure DevOps exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.microsoft.com/en-us/rest/api/azure/devops",
+      "baseUrl": "https://docs.microsoft.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 415,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "alive",
+        "packageVersion": "0.10.0",
+        "buildVersion": "0.4.03468.7969-2e44d5f5",
+        "sourceVersion": "2e44d5f52a4e5024740bddefd92fb18a708745b7",
+        "timestamp": "2026-07-05T18:17:00.013Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.microsoft.com/health"
+    },
+    {
+      "name": "Hunter",
+      "slug": "hunter",
+      "emoji": "🔑",
+      "tagline": "Hunter — free tier with API key",
+      "description": "Hunter exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://hunter.io/api",
+      "baseUrl": "https://hunter.io",
+      "sampleEndpoint": "/status",
+      "latencyMs": 292,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Hunter",
+        "url": "https://status.hunter.io",
+        "status": "operational",
+        "services": [
+          {
+            "name": "application",
+            "status": "operational"
+          },
+          {
+            "name": "api",
+            "status": "operational"
+          }
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://hunter.io/status"
+    },
+    {
+      "name": "Sheetsu",
+      "slug": "sheetsu",
+      "emoji": "🔑",
+      "tagline": "Sheetsu — free tier with API key",
+      "description": "Sheetsu exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://sheetsu.com/",
+      "baseUrl": "https://sheetdb.io",
+      "sampleEndpoint": "/api/v1/58f61be4dda40?limit=10&amp;offset=20&",
+      "latencyMs": 361,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "1",
+          "name": "Tom",
+          "age": "15",
+          "comment": ""
+        },
+        {
+          "id": "2",
+          "name": "Alex",
+          "age": "24",
+          "comment": ""
+        }
+      ],
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sheetdb.io/api/v1/58f61be4dda40?limit=10&amp;offset=20&#039"
+    },
+    {
+      "name": "scrapestack",
+      "slug": "scrapestack",
+      "emoji": "🔑",
+      "tagline": "scrapestack — free tier with API key",
+      "description": "scrapestack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://scrapestack.com/",
+      "baseUrl": "https://scrapestack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 232,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://scrapestack.com/healthz"
+    },
+    {
+      "name": "SiteIntel",
+      "slug": "siteintel",
+      "emoji": "🔑",
+      "tagline": "SiteIntel — free tier with API key",
+      "description": "SiteIntel exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://siteintel.duckdns.org",
+      "baseUrl": "https://siteintel.duckdns.org",
+      "sampleEndpoint": "/health",
+      "latencyMs": 221,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "service": "website-intelligence",
+        "ts": 1783275445722
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://siteintel.duckdns.org/health"
+    },
+    {
+      "name": "apilayer pdflayer",
+      "slug": "apilayer-pdflayer",
+      "emoji": "🔑",
+      "tagline": "apilayer pdflayer — free tier with API key",
+      "description": "apilayer pdflayer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://pdflayer.com",
+      "baseUrl": "https://api.pdflayer.com",
+      "sampleEndpoint": "/api/",
+      "latencyMs": 1060,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "code": 101,
+          "type": "missing_access_key",
+          "info": "You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.pdflayer.com/api/"
+    },
+    {
+      "name": "CloudConvert",
+      "slug": "cloudconvert",
+      "emoji": "🔑",
+      "tagline": "CloudConvert — free tier with API key",
+      "description": "CloudConvert exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://cloudconvert.com/api/v2",
+      "baseUrl": "https://cloudconvert.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 924,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "redirect": "/api/v2"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://cloudconvert.com/api"
+    },
+    {
+      "name": "mailboxlayer",
+      "slug": "mailboxlayer",
+      "emoji": "🔑",
+      "tagline": "mailboxlayer — free tier with API key",
+      "description": "mailboxlayer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://mailboxlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://mailboxlayer.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 324,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://mailboxlayer.com/healthz"
+    },
+    {
+      "name": "TasteDive",
+      "slug": "tastedive",
+      "emoji": "🔑",
+      "tagline": "TasteDive — free tier with API key",
+      "description": "TasteDive exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://tastedive.com/read/api",
+      "baseUrl": "https://tastedive.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 230,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "errors": [
+          {
+            "message": "Unexpected end-of-input, expecting JSON value",
+            "extensions": {
+              "path": "$",
+              "code": "invalid-json"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://tastedive.com/api"
+    },
+    {
+      "name": "Marketstack",
+      "slug": "marketstack",
+      "emoji": "🔑",
+      "tagline": "Marketstack — free tier with API key",
+      "description": "Marketstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://marketstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://marketstack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 202,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://marketstack.com/healthz"
+    },
+    {
+      "name": "PostStack",
+      "slug": "poststack",
+      "emoji": "🔑",
+      "tagline": "PostStack — free tier with API key",
+      "description": "PostStack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://poststack.dev/docs",
+      "baseUrl": "https://poststack.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 3985,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "services": {
+          "redis": "ok",
+          "postgres": "ok"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://poststack.dev/health"
+    },
+    {
+      "name": "Edgrapi",
+      "slug": "edgrapi",
+      "emoji": "🔑",
+      "tagline": "Edgrapi — free tier with API key",
+      "description": "Edgrapi exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://edgrapi.com",
+      "baseUrl": "https://edgrapi.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1733,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "service": "Edgrapi",
+        "source": "SEC EDGAR",
+        "ticker_source": "live",
+        "ticker_count": 10415,
+        "live_edgar": true
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://edgrapi.com/health"
+    },
+    {
+      "name": "Dota 2",
+      "slug": "dota-2",
+      "emoji": "🔑",
+      "tagline": "Dota 2 — free tier with API key",
+      "description": "Dota 2 exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.opendota.com/",
+      "baseUrl": "https://api.opendota.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 4043,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "OpenDota API",
+          "description": "# Introduction\nThe OpenDota API provides Dota 2 related data including advanced match data extracted from match replays.\n\nYou can find data that can be used to convert hero and ability IDs and other information provided by the API from the [dotaconstants](https://github.com/odota/dotaconstants) repository.\n\nYou can use the API without a key, but registering for a key allows increased rate limits and usage. Check out the [API page](https://www.opendota.com/api-keys) to learn more.\n    ",
+          "version": "31.1.0"
+        },
+        "servers": [
+          {
+            "url": "https://api.opendota.com/api"
+          }
+        ],
+        "components": {
+          "securitySchemes": {
+            "api_key": {
+              "type": "apiKey",
+              "name": "api_key",
+              "description": "Use an API key to remove monthly call limits and to receive higher rate limits. [Learn more and get your API key](https://www.opendota.com/api-keys).\n        Usage example: https://api.opendota.com/api/matches/271145478?api_key=YOUR-API-KEY\n        \n        API key can also be sent using the authorization header \"Authorization: Bearer YOUR-API-KEY\"\n        ",
+              "in": "query"
+            }
+          },
+          "schemas": {
+            "BenchmarksResponse": {
+              "title": "BenchmarksResponse",
+              "type": "object",
+              "properties": {
+                "hero_id": {
+                  "description": "The ID value of the hero played",
+                  "type": "integer"
+                },
+                "result": {
+                  "description": "result",
+                  "type": "object",
+                  "properties": {
+                    "gold_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "xp_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "kills_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "last_hits_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "hero_damage_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "hero_healing_per_min": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "tower_damage": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "percentile": {
+                            "description": "percentile",
+                            "type": "number"
+                          },
+                          "value": {
+                            "description": "value",
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "DistributionsResponse": {
+              "title": "DistributionsResponse",
+              "type": "object",
+              "properties": {
+                "ranks": {
+                  "description": "ranks",
+                  "type": "object",
+                  "properties": {
+                    "rows": {
+                      "description": "rows",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "bin": {
+                            "description": "bin",
+                            "type": "integer"
+                          },
+                          "bin_name": {
+                            "description": "bin_name",
+                            "type": "integer"
+                          },
+                          "count": {
+                            "description": "count",
+                            "type": "integer"
+                          },
+                          "cumulative_sum": {
+                            "description": "cumulative_sum",
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    },
+                    "sum": {
+                      "description": "sum",
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "description": "count",
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "HeroDurationsResponse": {
+              "title": "HeroDurationsResponse",
+              "type": "object",
+              "properties": {
+                "duration_bin": {
+                  "description": "Lower bound of number of seconds the match lasted",
+                  "type": "string"
+                },
+                "games_played": {
+                  "description": "Number of games played",
+                  "type": "integer"
+                },
+                "wins": {
+                  "description": "Number of wins",
+                  "type": "integer"
+                }
+              }
+            },
+            "HeroItemPopularityResponse": {
+              "title": "HeroItemPopularityResponse",
+              "type": "object",
+              "properties": {
+                "start_game_items": {
+                  "description": "Items bought before game started",
+                  "type": "object",
+                  "properties": {
+                    "item": {
+                      "description": "Number of item bought",
+                      "type": "integer"
+                    }
+                  }
+                },
+                "early_game_items": {
+                  "description": "Items bought in the first 10 min of the game, with cost at least 700",
+                  "type": "object",
+                  "properties": {
+                    "item": {
+                      "description": "Number of item bought",
+                      "type": "integer"
+                    }
+                  }
+                },
+                "mid_game_items": {
+                  "description": "Items bought between 10 and 25 min of the game, with cost at least 2000",
+                  "type": "object",
+                  "properties": {
+                    "item": {
+                      "description": "Number of item bought",
+                      "type": "integer"
+                    }
+                  }
+                },
+                "late_game_items": {
+                  "description": "Items bought at least 25 min after game started, with cost at least 4000",
+                  "type": "object",
+                  "properties": {
+                    "item": {
+                      "description": "Number of item bought",
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "HeroMatchupsResponse": {
+              "title": "HeroMatchupsResponse",
+              "type": "object",
+              "properties": {
+                "hero_id": {
+                  "description": "The ID value of the hero played",
+                  "type": "integer"
+                },
+                "games_played": {
+                  "description": "Number of games played",
+                  "type": "integer"
+                },
+                "wins": {
+                  "description": "Number of games won",
+                  "type": "integer"
+                }
+              }
+            },
+            "HeroObjectResponse": {
+              "title": "HeroObjectResponse",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The ID value of the hero played",
+                  "type": "integer"
+                },
+                "name": {
+                  "description": "Dota hero command name",
+                  "type": "string",
+                  "example": "npc_dota_hero_antimage"
+                },
+                "localized_name": {
+                  "description": "Hero name",
+                  "type": "string",
+                  "example": "Anti-Mage"
+                },
+                "primary_attr": {
+                  "description": "Hero primary shorthand attribute name, e.g. 'agi'",
+                  "type": "string"
+                },
+                "attack_type": {
+                  "description": "Hero attack type, either 'Melee' or 'Ranged'",
+                  "type": "string"
+                },
+                "roles": {
+                  "type": "array",
+                  "items": {
+                    "description": "A hero's role in the game",
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "HeroStatsResponse": {
+              "title": "HeroStatsResponse",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The ID value of the hero played",
+                  "type": "integer"
+                },
+                "name": {
+                  "description": "Dota hero command name",
+                  "type": "string",
+                  "example": "npc_dota_hero_antimage"
+                },
+                "localized_name": {
+                  "description": "Hero name",
+                  "type": "string",
+                  "example": "Anti-Mage"
+                },
+                "primary_attr": {
+                  "description": "primary_attr",
+                  "type": "string"
+                },
+                "attack_type": {
+                  "description": "attack_type",
+                  "type": "string"
+                },
+                "roles": {
+                  "description": "roles",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "img": {
+                  "description": "img",
+                  "type": "string"
+                },
+                "icon": {
+                  "description": "icon",
+                  "type": "string"
+                }
+              }
+            },
+            "LeagueObjectResponse": {
+              "title": "LeagueObjectResponse",
+              "type": "object",
+              "properties": {
+                "leagueid": {
+                  "description": "leagueid",
+                  "type": "integer"
+                },
+                "ticket": {
+                  "description": "ticket",
+                  "type": "string"
+                },
+                "banner": {
+                  "description": "banner",
+                  "type": "string"
+                },
+                "tier": {
+                  "description": "tier",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "League name",
+                  "type": "string",
+                  "example": "ASUS ROG DreamLeague Season 4"
+                }
+              }
+            }
+          },
+          "parameters": {
+            "heroIdPathParam": {
+              "name": "hero_id",
+              "in": "path",
+              "description": "Hero ID",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "leagueIdPathParam": {
+              "name": "league_id",
+              "in": "path",
+              "description": "League ID",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "matchIdParam": {
+              "name": "match_id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "lessThanMatchIdParam": {
+              "name": "less_than_match_id",
+              "in": "query",
+              "description": "Get matches with a match ID lower than this value",
+              "required": false,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "minRankParam": {
+              "name": "min_rank",
+              "in": "query",
+              "description": "Minimum rank for the matches. Ranks are represented by integers (10-15: Herald, 20-25: Guardian, 30-35: Crusader, 40-45: Archon, 50-55: Legend, 60-65: Ancient, 70-75: Divine, 80: Immortal). Each increment represents an additional star.",
+              "required": false,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "maxRankParam": {
+              "name": "max_rank",
+              "in": "query",
+              "description": "Maximum rank for the matches. Ranks are represented by integers (10-15: Herald, 20-25: Guardian, 30-35: Crusader, 40-45: Archon, 50-55: Legend, 60-65: Ancient, 70-75: Divine, 80: Immortal). Each increment represents an additional star.",
+              "required": false,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "accountIdParam": {
+              "name": "account_id",
+              "in": "path",
+              "description": "Steam32 account ID",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            "fieldParam": {
+              "name": "field",
+              "in": "path",
+              "description": "Field to aggregate on",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "paths": {
+          "/matches/{match_id}": {
+            "get": {
+              "operationId": "get_matches_by_match_id",
+              "summary": "GET /matches/{match_id}",
+              "description": "Match data",
+              "tags": [
+                "matches"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/matchIdParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "$ref": "#/components/schemas/MatchResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}": {
+            "get": {
+              "operationId": "get_players_by_account_id",
+              "summary": "GET /players/{account_id}",
+              "description": "Player data",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PlayersResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/wl": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_wl",
+              "summary": "GET /players/{account_id}/wl",
+              "description": "Win/Loss count",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                },
+                {
+                  "$ref": "#/components/parameters/limitParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PlayerWinLossResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/recentMatches": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_recent_matches",
+              "summary": "GET /players/{account_id}/recentMatches",
+              "description": "Recent matches played (limited number of results)",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "items": {
+                            "$ref": "#/components/schemas/PlayerRecentMatchesResponse"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/matches": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_matches",
+              "summary": "GET /players/{account_id}/matches",
+              "description": "Matches played (full history, and supports column selection)",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                },
+                {
+                  "$ref": "#/components/parameters/limitParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PlayerMatchesResponse"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/heroes": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_heroes",
+              "summary": "GET /players/{account_id}/heroes",
+              "description": "Heroes played",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                },
+                {
+                  "$ref": "#/components/parameters/limitParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PlayerHeroesResponse"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/peers": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_peers",
+              "summary": "GET /players/{account_id}/peers",
+              "description": "Players played with",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                },
+                {
+                  "$ref": "#/components/parameters/limitParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PlayerPeersResponse"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/players/{account_id}/pros": {
+            "get": {
+              "operationId": "get_players_by_account_id_select_pros",
+              "summary": "GET /players/{account_id}/pros",
+              "description": "Pro players played with",
+              "tags": [
+                "players"
+              ],
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/accountIdParam"
+                },
+                {
+                  "$ref": "#/components/parameters/limitParam"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "content": {
+                    "application/json; charset=utf-8": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PlayerProsResponse"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.opendota.com/api"
+    },
+    {
+      "name": "RAWG.io",
+      "slug": "rawg-io",
+      "emoji": "🔑",
+      "tagline": "RAWG.io — free tier with API key",
+      "description": "RAWG.io exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://rawg.io/apidocs",
+      "baseUrl": "https://api.rawg.io",
+      "sampleEndpoint": "/docs/",
+      "latencyMs": 6801,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "swagger": "2.0",
+        "info": {
+          "title": "RAWG Video Games Database API",
+          "description": "\nThe largest open video games database.\n\n### Why build on RAWG\n- More than 350,000 games for 50 platforms including mobiles.\n- Rich metadata: tags, genres, developers, publishers, individual creators, official websites, release dates,\nMetacritic ratings.\n- Where to buy: links to digital distribution services\n- Similar games based on visual similarity.\n- Player activity data: Steam average playtime and RAWG player counts and ratings.\n- Actively developing and constantly getting better by user contribution and our algorithms.\n\n### Terms of Use\n- Free for personal use as long as you attribute RAWG as the source of the data and/or images and add an active\nhyperlink from every page where the data of RAWG is used.\n- Free for commercial use for startups and hobby projects with not more than 100,000 monthly active users or 500,000\npage views per month. If your project is larger than that, email us at [api@rawg.io](mailto:api@rawg.io) for\ncommercial terms.\n- No cloning. It would not be cool if you used our API to launch a clone of RAWG. We know it is not always easy\nto say what is a duplicate and what isn't. Drop us a line at [api@rawg.io](mailto:api@rawg.io) if you are in doubt,\nand we will talk it through.\n- You must include an API key with every request. The key can be obtained at https://rawg.io/apidocs.\nIf you don’t provide it, we may ban your requests.\n\n__[Read more](https://rawg.io/apidocs)__.\n",
+          "version": "v1.0"
+        },
+        "host": "api.rawg.io",
+        "schemes": [
+          "https"
+        ],
+        "basePath": "/api",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "securityDefinitions": {}
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.rawg.io/docs/"
+    },
+    {
+      "name": "ipapi.com",
+      "slug": "ipapi-com",
+      "emoji": "🔑",
+      "tagline": "ipapi.com — free tier with API key",
+      "description": "ipapi.com exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipapi.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://ipapi.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 182,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://ipapi.com/healthz"
+    },
+    {
+      "name": "SuperHeroes",
+      "slug": "superheroes",
+      "emoji": "🔑",
+      "tagline": "SuperHeroes — free tier with API key",
+      "description": "SuperHeroes exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://superheroapi.com",
+      "baseUrl": "https://superheroapi.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 6461,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "response": "error",
+        "error": "access denied"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://superheroapi.com/api/v1"
+    },
+    {
+      "name": "positionstack",
+      "slug": "positionstack",
+      "emoji": "🔑",
+      "tagline": "positionstack — free tier with API key",
+      "description": "positionstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://positionstack.com/",
+      "baseUrl": "https://positionstack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 199,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://positionstack.com/healthz"
+    },
+    {
+      "name": "What3Words",
+      "slug": "what3words",
+      "emoji": "🔑",
+      "tagline": "What3Words — free tier with API key",
+      "description": "What3Words exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://what3words.com",
+      "baseUrl": "https://what3words.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 211,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "OK",
+        "version": "v3.25.0",
+        "application": "what3words-corporate-site"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://what3words.com/status"
+    },
+    {
+      "name": "City, Nantes Open Data",
+      "slug": "city-nantes-open-data",
+      "emoji": "🔑",
+      "tagline": "City, Nantes Open Data — free tier with API key",
+      "description": "City, Nantes Open Data exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.nantesmetropole.fr/pages/home/",
+      "baseUrl": "https://data.nantesmetropole.fr",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 148,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://data.nantesmetropole.fr/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://data.nantesmetropole.fr/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://data.nantesmetropole.fr/api/v2"
+    },
+    {
+      "name": "Findwork",
+      "slug": "findwork",
+      "emoji": "🔑",
+      "tagline": "Findwork — free tier with API key",
+      "description": "Findwork exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://findwork.dev/developers/",
+      "baseUrl": "https://findwork.dev",
+      "sampleEndpoint": "/api",
+      "latencyMs": 196,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "jobs": "https://findwork.dev/api/jobs/"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://findwork.dev/api"
+    },
+    {
+      "name": "Lexigram",
+      "slug": "lexigram",
+      "emoji": "🔑",
+      "tagline": "Lexigram — free tier with API key",
+      "description": "Lexigram exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://docs.lexigram.io/",
+      "baseUrl": "https://docs.lexigram.io",
+      "sampleEndpoint": "/status",
+      "latencyMs": 3086,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.3.1",
+        "uptime": 20811834.85,
+        "mem": 0.44728746860656016,
+        "load": [
+          2.29,
+          2.21
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.lexigram.io/status"
+    },
+    {
+      "name": "GoldBean",
+      "slug": "goldbean",
+      "emoji": "🔑",
+      "tagline": "GoldBean — free tier with API key",
+      "description": "GoldBean exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://goldbean-api.xyz/docs",
+      "baseUrl": "https://goldbean-api.xyz",
+      "sampleEndpoint": "/health",
+      "latencyMs": 247,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "time": 1783275975131,
+        "version": "8.0.0",
+        "baidu": true,
+        "payment": true,
+        "affiliate": true,
+        "note": "Baidu AI focused — 119 empty stubs removed"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://goldbean-api.xyz/health"
+    },
+    {
+      "name": "Keen IO",
+      "slug": "keen-io",
+      "emoji": "🔑",
+      "tagline": "Keen IO — free tier with API key",
+      "description": "Keen IO exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://keen.io/",
+      "baseUrl": "https://keen.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 211,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "UP"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://keen.io/health"
+    }
+  ],
+  "skipped": []
+}

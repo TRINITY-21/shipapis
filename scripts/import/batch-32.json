@@ -1,0 +1,195 @@
+{
+  "batch": 32,
+  "verified": [
+    {
+      "name": "Open Government, Singapore",
+      "slug": "open-government-singapore",
+      "emoji": "🇸🇬",
+      "tagline": "Live Singapore environment, transport and weather data, no key",
+      "description": "Singapore's national open-data platform exposes real-time government feeds such as air temperature, rainfall and traffic, all as plain JSON. No signup or key is needed, and responses are CORS-enabled for browser apps. Handy for dashboards that want fresh readings straight from official sensors.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.gov.sg/developer",
+      "baseUrl": "https://api.data.gov.sg/v1",
+      "sampleEndpoint": "/environment/air-temperature",
+      "latencyMs": 1162,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "metadata": {
+          "stations": [
+            { "id": "S107", "device_id": "S107", "name": "East Coast Parkway", "location": { "latitude": 1.3133, "longitude": 103.962 } }
+          ],
+          "reading_type": "DBT 1M F",
+          "reading_unit": "deg C"
+        },
+        "items": [
+          { "timestamp": "2026-07-06T00:10:00+08:00", "readings": [ { "station_id": "S107", "value": 28.1 } ] }
+        ],
+        "api_info": { "status": "healthy" }
+      },
+      "freeTier": "Free — no API key required; limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Singapore Open Data Licence",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Government, Taiwan",
+      "slug": "open-government-taiwan",
+      "emoji": "🇹🇼",
+      "tagline": "Metadata for Taiwan's national open-data catalog, keyless",
+      "description": "Taiwan's government open-data portal offers a keyless REST API returning JSON metadata for each published dataset, including title, provider, license and update cadence. Fetch a dataset by its numeric id to see how the catalog describes it. Useful for indexing or exploring what Taiwanese agencies have released.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.gov.tw/",
+      "baseUrl": "https://data.gov.tw/api/v2",
+      "sampleEndpoint": "/rest/dataset/6041",
+      "latencyMs": 721,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "",
+        "success": true,
+        "result": {
+          "categoryDataset": "A",
+          "datasetId": 6041,
+          "identifier": "A45000000D-000002",
+          "title": "金融機構基本資料查詢",
+          "type": "rawData",
+          "cost": "free",
+          "license": "1"
+        }
+      },
+      "freeTier": "Free — no API key required; limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Data License, Taiwan (portal code \"1\")",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "iTunes Search",
+      "slug": "itunes-search",
+      "emoji": "🎵",
+      "tagline": "Search Apple's catalog of music, apps, books and podcasts",
+      "description": "Apple's public Search API queries the iTunes and App Store catalog for songs, albums, apps, audiobooks, podcasts and more, returning rich JSON with artwork and store links. No key or signup is needed; you just pass a search term. Apple asks callers to keep request volume modest.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html",
+      "baseUrl": "https://itunes.apple.com",
+      "sampleEndpoint": "/search?term=beatles&limit=1",
+      "latencyMs": 742,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "resultCount": 1,
+        "results": [
+          {
+            "wrapperType": "audiobook",
+            "artistId": 160778930,
+            "collectionId": 1439484338,
+            "artistName": "Bob Spitz",
+            "collectionName": "The Beatles (Abridged)",
+            "artistViewUrl": "https://books.apple.com/us/author/bob-spitz/id160778930?uo=4"
+          }
+        ]
+      },
+      "freeTier": "Free — no API key required",
+      "rateLimit": "Apple suggests keeping to roughly 20 requests/minute",
+      "dataLicense": "Unverified (Apple Media Services / affiliate terms)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Songsterr",
+      "slug": "songsterr",
+      "emoji": "🎸",
+      "tagline": "Search guitar, bass and drum tabs by artist or title",
+      "description": "Songsterr's search endpoint returns JSON listings of songs matching a text pattern, each with a song id, artist, title and the available instrument tracks. No key is required for the search call. Good for looking up whether tabs exist for a given artist before deep-linking into the player.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://www.songsterr.com/a/wa/api/",
+      "baseUrl": "https://www.songsterr.com/api",
+      "sampleEndpoint": "/songs?pattern=coldplay&size=2",
+      "latencyMs": 850,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "songId": 434,
+          "artistId": 38,
+          "artist": "Coldplay",
+          "title": "Yellow",
+          "hasChords": true,
+          "hasPlayer": true,
+          "tracks": [
+            { "instrumentId": 67, "instrument": "Baritone Sax", "views": 4654, "name": "Chris Martin | Lead Vocals", "tuning": [64, 59, 55, 50, 45, 40], "hash": "vocals_h3FrugiA" }
+          ]
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia",
+      "emoji": "📖",
+      "tagline": "Query Wikipedia article text and metadata via MediaWiki",
+      "description": "The MediaWiki Action API powers Wikipedia and returns article content, extracts, links and metadata as JSON with no key needed. This example pulls a plaintext intro extract for a page title. MediaWiki asks callers to send a descriptive User-Agent and be reasonable with request volume.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+      "baseUrl": "https://en.wikipedia.org/w",
+      "sampleEndpoint": "/api.php?action=query&format=json&prop=extracts&exintro&explaintext&titles=API",
+      "latencyMs": 911,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "27697009": {
+              "pageid": 27697009,
+              "ns": 0,
+              "title": "API",
+              "extract": "An application programming interface (API) is a connection between computers or between computer programs. …"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — no API key required",
+      "rateLimit": "No published hard limit; requires a descriptive User-Agent",
+      "dataLicense": "Article text under CC BY-SA 4.0",
+      "commercialUse": "yes"
+    }
+  ],
+  "skipped": [
+    { "name": "Open Government, Ireland", "reason": "CKAN /api/3/action/package_search returns HTTP 429 for the methodology bot User-Agent on repeated tries; only browser UAs get through, so not reliably keyless for agents" },
+    { "name": "Open Government, Lithuania", "reason": "get.data.gov.lt / data.gov.lt API hosts time out or 404; no reachable keyless JSON endpoint" },
+    { "name": "Open Government, Mexico (inegi.org.mx)", "reason": "INEGI BISE statistics API requires a per-user token" },
+    { "name": "Open Government, Mexico (datos.gob.mx)", "reason": "api.datos.gob.mx unreachable — connection times out on all attempts" },
+    { "name": "Open Government, New Zealand", "reason": "catalogue.data.govt.nz CKAN sits behind Imperva bot protection and returns an HTML challenge page, not JSON" },
+    { "name": "Open Government, Peru", "reason": "datosabiertos.gob.pe returns HTTP 403 Forbidden (WAF blocks the request)" },
+    { "name": "Open Government, Saudi Arabia", "reason": "data.gov.sa API unreachable — connection times out" },
+    { "name": "Open Government, Slovakia", "reason": "data.gov.sk /api/3/action path serves the React SPA HTML shell, not a JSON API response" },
+    { "name": "Open Government, USA", "reason": "catalog.data.gov /api/3/action/* returns a gateway HTTP 404 ({\"message\":\"Not Found\"}) for every variant and User-Agent — CKAN API not currently serving" },
+    { "name": "US Presidential Election Data by TogaTech", "reason": "API endpoints under uselection.togatech.org return Apache 404; no keyless JSON endpoint found" },
+    { "name": "Coronavirus", "reason": "Pipedream-hosted COVID relay from the 2020 era; no stable documented keyless JSON URL and data source abandoned" },
+    { "name": "Coronavirus in the UK", "reason": "api.coronavirus.data.gov.uk decommissioned — DNS does not resolve" },
+    { "name": "Covid-19 Datenhub", "reason": "RKI COVID ArcGIS FeatureServer returns error 'Invalid URL' (service removed); COVID hub archived" },
+    { "name": "COVID-19 Tracker Canada", "reason": "api.covid19tracker.ca /summary and /provinces return HTTP 200 but empty text/html bodies — API defunct" },
+    { "name": "COVID-19 Tracker Sri Lanka", "reason": "hpb.health.gov.lk API docs and endpoint return HTTP 404 (Page not found)" },
+    { "name": "Dataflow Kit COVID-19", "reason": "covid-19.dataflowkit.com/v1 redirect loop (HTTP 301, 50+ redirects) — defunct" },
+    { "name": "Deepcode", "reason": "Acquired by Snyk; no public keyless API — requires authentication" },
+    { "name": "Bandsintown", "reason": "All endpoints require an app_id registration parameter" },
+    { "name": "CollegeScoreCard.ed.gov", "reason": "Requires an api.data.gov API key" },
+    { "name": "Open Data Minneapolis", "reason": "ArcGIS Hub portal; no keyless JSON endpoint without a dataset-specific FeatureServer id" },
+    { "name": "Teleport", "reason": "api.teleport.org DNS does not resolve — service shut down" },
+    { "name": "PatentsView", "reason": "Legacy api.patentsview.org now redirects to the USPTO Open Data Portal SPA, which requires an API key; no keyless JSON" },
+    { "name": "USPTO", "reason": "developer.uspto.gov APIs now served through the keyed Open Data Portal SPA; endpoints return the HTML app shell, not JSON" },
+    { "name": "Biriyani As A Service", "reason": "HTTP 503; image-placeholder service, not a JSON API" },
+    { "name": "Quote Garden", "reason": "Hosting suspended — endpoint returns HTTP 503 'Service Suspended'" },
+    { "name": "They Said So Quotes", "reason": "quotes.rest/qod returns HTTP 401 'Not authenticated' — requires an API key" },
+    { "name": "Traitify", "reason": "Requires developer account / OAuth credentials" },
+    { "name": "Vadivelu HTTP Codes", "reason": "Returns images, not JSON" },
+    { "name": "Screenshotlayer", "reason": "Requires an access_key parameter" },
+    { "name": "Imsea", "reason": "imsea.herokuapp.com removed — Heroku returns 'No such app'" },
+    { "name": "PlaceKeanu", "reason": "Returns placeholder images, not JSON" },
+    { "name": "KONTESTS", "reason": "kontests.net times out on all 3 attempts — host unreachable" },
+    { "name": "arXiv", "reason": "Returns Atom XML, not JSON" }
+  ]
+}

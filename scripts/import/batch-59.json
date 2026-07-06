@@ -1,0 +1,468 @@
+{
+  "batch": 59,
+  "verified": [
+    {
+      "name": "Free Jobs API",
+      "slug": "free-jobs-api",
+      "emoji": "🗺",
+      "tagline": "Free Jobs API — The Free Jobs API provides access to a comprehensive da…",
+      "description": "Free Jobs API exposes the Free Jobs API provides access to a comprehensive database of job listings across various industries. It allows users to retrieve job details, including title, location, salary, and requirements, helping candidates find suitable employment opportunities. We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://docs.joinrise.co/",
+      "baseUrl": "https://docs.joinrise.co",
+      "sampleEndpoint": "/status",
+      "latencyMs": 616,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.3.1",
+        "uptime": 17889372.86,
+        "mem": 0.49493353797297446,
+        "load": [
+          1.59,
+          1.66
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://docs.joinrise.co/status"
+    },
+    {
+      "name": "ListLoco API",
+      "slug": "listloco-api",
+      "emoji": "🔧",
+      "tagline": "ListLoco API — The ListLoco API localizes e-commerce product listings …",
+      "description": "ListLoco API exposes the ListLoco API localizes e-commerce product listings into marketplace-compliant and glossary-consistent text, primarily for Amazon. It verifies each listing through a deterministic quality gate to ensure compliance and accuracy in translation, from English to German. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://listloco.hayasaka.app/",
+      "baseUrl": "https://listloco.hayasaka.app",
+      "sampleEndpoint": "/health",
+      "latencyMs": 129,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://listloco.hayasaka.app/health"
+    },
+    {
+      "name": "Phone Number Validator",
+      "slug": "phone-number-validator",
+      "emoji": "🔬",
+      "tagline": "Phone Number Validator — This API validates phone numbers, providing details s",
+      "description": "Phone Number Validator exposes this API validates phone numbers, providing details such as the local and international format. It identifies the country, carrier, and line type for the given number, ensuring accurate communication. We verified a keyless GET endpoint returning JSON (Science & Math). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://api.numlookupapi.com/v1/validate/01613950781?apikey=num_live_Nf2vjeM19tHdi42qQ2LaVVMg2IGk1ReU2BYBKnvm&country_code=BD",
+      "baseUrl": "https://api.numlookupapi.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 192,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "environment": "production",
+        "version": "everapi@6dfb626c",
+        "hostname": "everapi-app-2"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.numlookupapi.com/healthz"
+    },
+    {
+      "name": "Public Time API",
+      "slug": "public-time-api",
+      "emoji": "📅",
+      "tagline": "Public Time API — This API provides the current timestamp in various form…",
+      "description": "Public Time API exposes this API provides the current timestamp in various formats, including text, JSON, and CSS custom properties. It supports different endpoints for specific use cases, such as returning UNIX timestamps or sending periodic updates via Server-Sent Events and WebSockets. We verified a keyless GET endpoint returning JSON (Calendar). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://zenn.dev/siyukatu/articles/public-time-api?locale=en",
+      "baseUrl": "https://zenn.dev",
+      "sampleEndpoint": "/status",
+      "latencyMs": 402,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://zenn.dev/status"
+    },
+    {
+      "name": "eLife Sciences API",
+      "slug": "elife-sciences-api",
+      "emoji": "🔧",
+      "tagline": "eLife Sciences API — The eLife Sciences API provides access to various resou…",
+      "description": "eLife Sciences API exposes the eLife Sciences API provides access to various resources related to scientific articles, annotations, reports, and more. It allows users to retrieve, search, and manage scholarly content, emphasizing open access and public data sharing. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.elifesciences.org/documentation/",
+      "baseUrl": "https://api.elifesciences.org",
+      "sampleEndpoint": "/search",
+      "latencyMs": 223,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 21840,
+        "items": [
+          {
+            "id": "f39cfcf5",
+            "title": "Enabling the Contributor Roles Taxonomy for author contributions",
+            "published": "2017-01-04T10:52:57Z",
+            "type": "blog-article",
+            "updated": "2017-04-26T12:46:06Z",
+            "impactStatement": "We are pleased to announce the introduction of the Contributor Roles Taxonomy (CRediT) for author contributions at eLife."
+          },
+          {
+            "id": "7ccd9e42",
+            "title": "In technology: A summary of the Libero Community Sprint",
+            "published": "2018-09-20T15:11:20Z",
+            "type": "blog-article",
+            "impactStatement": "Paul Shannon, eLife Head of Technology, reports on the outcomes from the Libero Community Sprint held in August 2018."
+          }
+        ],
+        "types": {
+          "correction": 367,
+          "editorial": 38,
+          "expression-concern": 0,
+          "feature": 337,
+          "insight": 1198,
+          "research-advance": 505,
+          "research-article": 14930,
+          "research-communication": 68
+        },
+        "subjects": [
+          {
+            "id": "neuroscience",
+            "name": "Neuroscience",
+            "results": 6576
+          },
+          {
+            "id": "cell-biology",
+            "name": "Cell Biology",
+            "results": 3383
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.elifesciences.org/search"
+    },
+    {
+      "name": "openFDA API",
+      "slug": "openfda-api",
+      "emoji": "🍔",
+      "tagline": "openFDA API — openFDA provides access to a variety of public data rel…",
+      "description": "openFDA API exposes openFDA provides access to a variety of public data related to FDA-regulated products. It offers APIs for searching FDA data for drugs, devices, food, and other relevant categories crucial for healthcare decisions and research. We verified a keyless GET endpoint returning JSON (Food & Drink). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://open.fda.gov/",
+      "baseUrl": "https://open.fda.gov",
+      "sampleEndpoint": "/data.json",
+      "latencyMs": 372,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+        "as_of_date": "Tuesday, August 18, 2015",
+        "dataset": [
+          {
+            "accessLevel": "public",
+            "bureauCode": [
+              "009:10"
+            ],
+            "contactPoint": {
+              "fn": "openFDA",
+              "hasEmail": "mailto:open@fda.hhs.gov"
+            },
+            "description": "This list includes human and pet food subject to recall in the United States since January 2009 related to peanut products distributed by Peanut Corporation of America. ",
+            "distribution": [
+              {
+                "downloadURL": "http://www.accessdata.fda.gov/scripts/peanutbutterrecall/PeanutButterProducts2009.xml",
+                "mediaType": "application/xml",
+                "accessURL": "http://www.accessdata.fda.gov/scripts/peanutbutterrecall/PeanutButterProducts2009.xml",
+                "format": "XML"
+              }
+            ],
+            "accrualPeriodicity": "irregular",
+            "identifier": "5d4b366c-07ca-4358-a783-01aa2fe59684",
+            "keyword": [
+              "recalls"
+            ]
+          },
+          {
+            "accessLevel": "public",
+            "bureauCode": [
+              "009:10"
+            ],
+            "contactPoint": {
+              "fn": "openFDA",
+              "hasEmail": "mailto:open@fda.hhs.gov"
+            },
+            "description": "This list includes food subject to recall in the United States since March 2009 related to pistachios distributed by Setton Pistachio of Terra Bella, Inc. The FDA has completed its inspection of Salmonella contamination in pistachios and pistachio products involved in this recall. ",
+            "distribution": [
+              {
+                "downloadURL": "http://www.accessdata.fda.gov/scripts/pistachiorecall/Pistachio2009.xml",
+                "mediaType": "application/xml",
+                "accessURL": "http://www.accessdata.fda.gov/scripts/pistachiorecall/Pistachio2009.xml",
+                "format": "XML"
+              }
+            ],
+            "accrualPeriodicity": "irregular",
+            "identifier": "8acf8bd4-3c2b-4697-a2be-3d5006fbfc91",
+            "keyword": [
+              "ora"
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://open.fda.gov/data.json"
+    },
+    {
+      "name": "国会会議録検索API",
+      "slug": "api",
+      "emoji": "🔧",
+      "tagline": "国会会議録検索API — 国会会議録検索システムに登録されているデータを検索するためのAPIです。HTTPのGETメソッドを使用して、指…",
+      "description": "国会会議録検索API exposes 国会会議録検索システムに登録されているデータを検索するためのAPIです。HTTPのGETメソッドを使用して、指定された条件で会議録や発言情報をXMLまたはJSON形式で取得できます。検索結果は、会議開催日の新しい順にソートされます。 We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://kokkai.ndl.go.jp/api.html",
+      "baseUrl": "https://kokkai.ndl.go.jp",
+      "sampleEndpoint": "/api/meeting_list?nameOfMeeting=%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD&maximumRecords=100&recordPacking=json",
+      "latencyMs": 3310,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "numberOfRecords": 451,
+        "numberOfReturn": 100,
+        "startRecord": 1,
+        "nextRecordPosition": 101,
+        "meetingRecord": [
+          {
+            "issueID": "122115384X00420260508",
+            "imageKind": "会議録",
+            "searchObject": 0,
+            "session": 221,
+            "nameOfHouse": "参議院",
+            "nameOfMeeting": "災害対策及び東日本大震災復興特別委員会",
+            "issue": "第4号",
+            "date": "2026-05-08"
+          },
+          {
+            "issueID": "122115384X00320260401",
+            "imageKind": "会議録",
+            "searchObject": 0,
+            "session": 221,
+            "nameOfHouse": "参議院",
+            "nameOfMeeting": "災害対策及び東日本大震災復興特別委員会",
+            "issue": "第3号",
+            "date": "2026-04-01"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://kokkai.ndl.go.jp/api/meeting_list?nameOfMeeting=%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD&maximumRecords=100&recordPacking=json"
+    },
+    {
+      "name": "Hindi Quotes",
+      "slug": "hindi-quotes",
+      "emoji": "🔌",
+      "tagline": "Random Hindi quotes",
+      "description": "Returns random Hindi quotes as JSON.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://hindi-quotes.vercel.app/",
+      "baseUrl": "https://hindi-quotes.vercel.app",
+      "sampleEndpoint": "/random",
+      "latencyMs": 410,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "motivational",
+        "quote": "जिस काम में काम करने की हद पार ना हो, वो काम किसी काम का नहीं!"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "OWASP API Security Project",
+      "slug": "owasp-api-security-project",
+      "emoji": "🔌",
+      "tagline": "OWASP API Security Project — Guidance and checks for API security practices",
+      "description": "OWASP API Security Project exposes guidance and checks for API security practices We verified a keyless GET endpoint returning JSON (Security & Safety). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Security & Safety",
+      "docsUrl": "https://owasp.org/www-project-api-security/",
+      "baseUrl": "https://owasp.org",
+      "sampleEndpoint": "/feed.json",
+      "latencyMs": 211,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "OWASP",
+        "description": "OWASP Foundation main site repository",
+        "favicon": "http://owasp.org/assets/images/logos/favicons/apple-touch-icon.png",
+        "language": "en",
+        "home_page_url": "http://owasp.org/",
+        "feed_url": "http://owasp.org/feed.json",
+        "user_comment": "This feed allows you to read the blogs from this site in any feed reader that supports the JSON Feed format."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://owasp.org/feed.json"
+    },
+    {
+      "name": "Bureau of Labor Statistics Public Data API",
+      "slug": "bureau-of-labor-statistics-public-data-api",
+      "emoji": "🔌",
+      "tagline": "Bureau of Labor Statistics Public Data API — Retrieves historical U.S. labor s",
+      "description": "Bureau of Labor Statistics Public Data API exposes retrieves historical U.S. labor statistics time series. We verified a keyless GET endpoint returning JSON (Data & Information). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Data & Information",
+      "docsUrl": "https://www.bls.gov/bls/api_features.htm",
+      "baseUrl": "https://www.bls.gov",
+      "sampleEndpoint": "/data.json",
+      "latencyMs": 206,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "conformsTo": {
+          "@type": "Standard",
+          "title": "DCAT-US 3.0",
+          "identifier": "https://resources.data.gov/dcat-us/3.0.0"
+        },
+        "@type": "dcat:Catalog",
+        "dataset": [
+          {
+            "@type": "dcat:Dataset",
+            "title": "American Time Use Survey",
+            "description": "The American Time Use Survey (ATUS) provides nationally representative estimates of how, where, and with whom Americans spend their time, and is the only federal survey providing data on the full range of nonmarket activities, from childcare to volunteering.\r\n\r\nFor more information visit https://www.bls.gov/tus/",
+            "modified": "2009-06-19T00:00:00Z",
+            "identifier": "DOL-BLS-218",
+            "issued": "2019-06-19T00:00:00Z",
+            "landingPage": {
+              "@type": "Document",
+              "accessURL": "https://www.bls.gov/tus/",
+              "title": "American Time Use Survey"
+            },
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+          },
+          {
+            "@type": "dcat:Dataset",
+            "title": "Business Employment Dynamics",
+            "description": "The Business Employment Dynamics (BED) is a set of statistics generated from the Quarterly Census of Employment and Wages (QCEW) program. These quarterly data series consist of gross job gains and gross job losses statistics from 1992 forward. These data help to provide a picture of the dynamic state of the labor market.\r\n\r\nFor more information and data visit: https://www.bls.gov/bed/",
+            "modified": "2019-01-01T00:00:00Z",
+            "identifier": "DOL-BLS-3115-01",
+            "describedBy": {
+              "accessURL": "http://download.bls.gov/pub/time.series/bd/bd.txt"
+            },
+            "issued": "2019-10-31T00:00:00Z",
+            "landingPage": {
+              "@type": "Document",
+              "accessURL": "https://www.bls.gov/bed/",
+              "title": "Business Employment Dynamics"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://www.bls.gov/data.json"
+    },
+    {
+      "name": "Crawlee",
+      "slug": "crawlee",
+      "emoji": "🔌",
+      "tagline": "Crawlee — Open-source crawling and scraping library.",
+      "description": "Crawlee exposes open-source crawling and scraping library. We verified a keyless GET endpoint returning JSON (Scraping). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Scraping",
+      "docsUrl": "https://crawlee.dev/docs/introduction",
+      "baseUrl": "https://crawlee.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 37,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "UP"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://crawlee.dev/health"
+    },
+    {
+      "name": "numverify",
+      "slug": "numverify",
+      "emoji": "✅",
+      "tagline": "numverify — Phone number validation",
+      "description": "numverify exposes phone number validation We verified a keyless GET endpoint returning JSON (Data Validation). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://numverify.com",
+      "baseUrl": "https://numverify.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 197,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://numverify.com/healthz"
+    },
+    {
+      "name": "What The Commit",
+      "slug": "what-the-commit",
+      "emoji": "🧪",
+      "tagline": "What The Commit — Random commit message generator",
+      "description": "What The Commit exposes random commit message generator We verified a keyless GET endpoint returning JSON (Test Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "http://whatthecommit.com/index.txt",
+      "baseUrl": "http://whatthecommit.com",
+      "sampleEndpoint": "/index.json",
+      "latencyMs": 1755,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hash": "1a21b2bebcd0ecdcdc2bc7b6fae3ce0c",
+        "commit_message": "Fix hard-coded [object Object] string (thanks!)",
+        "permalink": "http://whatthecommit.com/1a21b2bebcd0ecdcdc2bc7b6fae3ce0c"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed http://whatthecommit.com/index.json"
+    }
+  ],
+  "skipped": []
+}

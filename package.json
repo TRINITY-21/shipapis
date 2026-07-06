@@ -1,0 +1,52 @@
+{
+  "name": "shipapis",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "check:links": "node scripts/check-links.mjs",
+    "seed:candidates": "node scripts/fetch-candidates.mjs --check",
+    "seed:candidates:multi": "node scripts/fetch-multi-candidates.mjs --check",
+    "seed:candidates:directories": "node scripts/fetch-directory-sources.mjs",
+    "seed:candidates:free-apis": "node scripts/fetch-free-apis.mjs",
+    "seed:candidates:apimap-entertainment": "node scripts/fetch-apimap-entertainment.mjs",
+    "seed:candidates:apimap": "node scripts/fetch-apimap-gaps.mjs",
+    "seed:candidates:publicapis-io": "node scripts/fetch-publicapis-io.mjs",
+    "seed:candidates:freepublicapis": "node scripts/fetch-freepublicapis.mjs",
+    "seed:candidates:freeapihub": "node scripts/fetch-freeapihub.mjs",
+    "seed:candidates:freeapiwatch": "node scripts/fetch-freeapiwatch.mjs",
+    "seed:verify": "node scripts/auto-verify-batch.mjs",
+    "seed:generate-hints": "node scripts/generate-hints.mjs",
+    "seed:bulk-hints": "node scripts/bulk-verify-hints.mjs",
+    "seed:probe-apikey": "node scripts/probe-apikey-batch.mjs",
+    "seed:probe-apikey:free-apis": "node scripts/probe-apikey-batch.mjs --free-apis --media-priority",
+    "seed:probe-media": "node scripts/probe-media-apikeys.mjs",
+    "seed:probe-all": "node scripts/probe-all-candidates.mjs",
+    "seed:probe-guru": "node scripts/probe-apis-guru.mjs",
+    "seed:assemble": "node scripts/assemble-seed.mjs",
+    "seed:expand-endpoints": "node scripts/expand-endpoints.mjs",
+    "seed:sql": "node scripts/export-seed.ts",
+    "seed:delta": "node scripts/export-catalog-delta.ts",
+    "seed:add": "npm run seed:assemble && npm run seed:expand-endpoints && npm run seed:assemble && npm run seed:delta && npm run db:apply",
+    "db:apply": "wrangler d1 migrations apply shipapis --local",
+    "db:apply:remote": "wrangler d1 migrations apply shipapis --remote",
+    "db:local": "wrangler d1 migrations apply shipapis --local",
+    "db:reset": "rm -rf .wrangler/state/v3/d1 && wrangler d1 migrations apply shipapis --local",
+    "check:sweep": "node scripts/dev-sweep.mjs --rollup",
+    "check:sweep:full": "node scripts/dev-sweep.mjs --rounds 30 --rollup",
+    "check:sweep:catalog": "node scripts/dev-sweep.mjs --until-done --rollup",
+    "metadata:backfill": "node scripts/backfill-metadata.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260601.0",
+    "puppeteer-core": "^25.3.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^4.0.0"
+  }
+}

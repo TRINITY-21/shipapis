@@ -1,0 +1,478 @@
+{
+  "batch": 5,
+  "verified": [
+    {
+      "name": "Disney",
+      "slug": "disney",
+      "emoji": "🏰",
+      "tagline": "Characters, films and park attractions of the Disney universe",
+      "description": "A community-run catalog of Disney characters covering the films, shorts, TV shows and video games they appear in. Query the paginated /character endpoint for names, images and cross-references. No key required and CORS is wide open.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://disneyapi.dev",
+      "baseUrl": "https://api.disneyapi.dev",
+      "sampleEndpoint": "/character?pageSize=1",
+      "latencyMs": 476,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "info": { "count": 1, "totalPages": 9821 },
+        "data": {
+          "_id": 112,
+          "name": "Achilles",
+          "films": ["Hercules (film)"],
+          "videoGames": ["Kingdom Hearts III"],
+          "url": "https://api.disneyapi.dev/characters/112"
+        }
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Community-run; character data sourced from the Disney fan wiki."
+    },
+    {
+      "name": "Open5e",
+      "slug": "open5e",
+      "emoji": "🐉",
+      "tagline": "Open D&D 5e SRD monsters, spells and rules as JSON",
+      "description": "A REST API over the Dungeons & Dragons 5e System Reference Document, serving monsters, spells, classes and magic items. Records are searchable and paginated, so you can pull a single stat block or crawl the whole bestiary. Built on openly licensed SRD content, no key needed.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://open5e.com/",
+      "baseUrl": "https://api.open5e.com",
+      "sampleEndpoint": "/v1/monsters/?limit=1",
+      "latencyMs": 1166,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 3207,
+        "next": "https://api.open5e.com/v1/monsters/?limit=1&page=2",
+        "results": [
+          { "slug": "a-mi-kuk", "desc": "Crimson slime covers this ungainly creature. Its tiny black eyes sit in an abnormally large head..." }
+        ]
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "SRD content under OGL 1.0a; API/site MIT-licensed",
+      "commercialUse": "unclear",
+      "notes": "SRD data is openly licensed; confirm OGL terms before redistribution."
+    },
+    {
+      "name": "FFXIV Collect",
+      "slug": "ffxiv-collect",
+      "emoji": "🏆",
+      "tagline": "Every Final Fantasy XIV mount, minion and collectable",
+      "description": "Tracks the collectables of Final Fantasy XIV: mounts, minions, orchestrion rolls, achievements, hairstyles and more. Endpoints return rich descriptions, rarity data and in-game tooltips. Free and keyless with permissive CORS.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://ffxivcollect.com/",
+      "baseUrl": "https://ffxivcollect.com/api",
+      "sampleEndpoint": "/mounts?limit=1",
+      "latencyMs": 866,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 1,
+        "results": [
+          {
+            "id": 446,
+            "name": "Carbide Grey Warp Loader",
+            "description": "Call into action your carbide grey warp loader, and bulldoze your way through life faster."
+          }
+        ]
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; game content © Square Enix",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "XIVAPI",
+      "slug": "xivapi",
+      "emoji": "⚔️",
+      "tagline": "Final Fantasy XIV game data, servers and lore",
+      "description": "A datamined API exposing Final Fantasy XIV game content: items, quests, recipes and live world/server lists. The keyless /servers endpoint returns current world names as a plain JSON array. An optional free key raises rate limits for heavier use.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://xivapi.com/",
+      "baseUrl": "https://xivapi.com",
+      "sampleEndpoint": "/servers",
+      "latencyMs": 485,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": ["Adamantoise", "Aegis", "Alexander"],
+      "freeTier": "Free; optional free key raises limits",
+      "rateLimit": "Rate-limited; higher limits with a free key (see docs)",
+      "dataLicense": "Unverified; game content © Square Enix",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "FreeToGame",
+      "slug": "freetogame",
+      "emoji": "🎮",
+      "tagline": "Searchable database of free-to-play PC and browser games",
+      "description": "A catalog of free-to-play titles across PC and browser, complete with genres, platforms, publishers and release dates. The /games endpoint returns the full list, and filters let you narrow by category or platform. No signup or key required.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.freetogame.com/api-doc",
+      "baseUrl": "https://www.freetogame.com/api",
+      "sampleEndpoint": "/games",
+      "latencyMs": 700,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 540,
+          "title": "Overwatch",
+          "short_description": "A hero-focused first-person team shooter from Blizzard Entertainment.",
+          "genre": "Shooter",
+          "platform": "PC (Windows)",
+          "release_date": "2022-10-04"
+        }
+      ],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "GamerPower",
+      "slug": "gamerpower",
+      "emoji": "🎁",
+      "tagline": "Live tracker of game giveaways, loot and beta keys",
+      "description": "Aggregates current game giveaways, free DLC, loot drops and beta keys from stores and platforms across the web. Each entry lists worth, platform, instructions and expiry so you know what is still claimable. Keyless JSON with open CORS.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.gamerpower.com/api-read",
+      "baseUrl": "https://www.gamerpower.com/api",
+      "sampleEndpoint": "/giveaways",
+      "latencyMs": 972,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 3703,
+          "title": "Nexus: The Jupiter Incident (GOG) Giveaway",
+          "worth": "$9.99",
+          "description": "Save the galaxy today! Grab Nexus: The Jupiter Incident for free via GOG!"
+        }
+      ],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Geek Jokes",
+      "slug": "geek-jokes",
+      "emoji": "🤓",
+      "tagline": "One random geeky or programming joke per request",
+      "description": "A tiny endpoint that returns a single random nerdy or programming-flavored joke. Ask for plain text, or with ?format=json get a neat JSON object. No key, ideal for a CLI splash screen or a chat bot.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/sameerkumar18/geek-joke-api",
+      "baseUrl": "https://geek-jokes.sameerkumar.website",
+      "sampleEndpoint": "/api?format=json",
+      "latencyMs": 671,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "joke": "An infinite crowd of mathematicians enters a bar. The first one orders a pint... the second one a half pint... the third one a quarter pint..."
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Genshin Impact",
+      "slug": "genshin-impact",
+      "emoji": "⭐",
+      "tagline": "Community data on Genshin Impact characters and lore",
+      "description": "A community project serving Genshin Impact game data: characters, weapons, artifacts, elements and more. The /characters endpoint returns a JSON array of slugs you can drill into for stats and art. Fan-maintained, free and keyless.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://genshin.dev",
+      "baseUrl": "https://genshin.jmp.blue",
+      "sampleEndpoint": "/characters",
+      "latencyMs": 520,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": ["albedo", "alhaitham", "aloy", "amber"],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; community project",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "😂",
+      "tagline": "Filterable jokes with categories and a safe-mode",
+      "description": "Serves programming, pun, spooky and dark jokes with fine-grained category and content filters, including a safe-mode flag that strips anything explicit. Responses come as single-line quips or setup/delivery pairs with clear content flags. Free, keyless and well documented.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "baseUrl": "https://v2.jokeapi.dev",
+      "sampleEndpoint": "/joke/Any?safe-mode",
+      "latencyMs": 460,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "category": "Pun",
+        "type": "single",
+        "joke": "I was reading a great book about an immortal dog the other day. It was impossible to put down.",
+        "id": 235,
+        "safe": true,
+        "lang": "en"
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "120 requests per minute per IP (documented)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Monster Hunter World",
+      "slug": "monster-hunter-world",
+      "emoji": "🦖",
+      "tagline": "Monsters, weapons and items from Monster Hunter: World",
+      "description": "A structured dataset for Monster Hunter: World covering monsters, their elemental weaknesses and rewards, plus weapons, armor and items. The /monsters endpoint returns full records including habitats and drop tables. No key required, CORS enabled.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.mhw-db.com/",
+      "baseUrl": "https://mhw-db.com",
+      "sampleEndpoint": "/monsters",
+      "latencyMs": 1300,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 1,
+          "type": "small",
+          "species": "herbivore",
+          "name": "Aptonoth",
+          "description": "Docile herbivores that graze in packs.",
+          "weaknesses": [{ "element": "fire", "stars": 1 }]
+        }
+      ],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; game content © Capcom",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Rick and Morty",
+      "slug": "rick-and-morty",
+      "emoji": "🛸",
+      "tagline": "Characters, locations and episodes from Rick and Morty",
+      "description": "The full Rick and Morty universe as JSON: characters with status and origin, locations, and episode listings, images included. Fetch a single character by id or page through the whole cast. Free, keyless and CORS-friendly.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://rickandmortyapi.com",
+      "baseUrl": "https://rickandmortyapi.com/api",
+      "sampleEndpoint": "/character/1",
+      "latencyMs": 848,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "name": "Rick Sanchez",
+        "status": "Alive",
+        "species": "Human",
+        "gender": "Male",
+        "origin": { "name": "Earth (C-137)" },
+        "location": { "name": "Citadel of Ricks" }
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; open-source project",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Scryfall",
+      "slug": "scryfall",
+      "emoji": "🃏",
+      "tagline": "Comprehensive Magic: The Gathering card database",
+      "description": "A deep Magic: The Gathering API with every card, set, ruling and high-resolution scan. The /cards/random endpoint hands back a full card object; fuzzy name search and Scryfall-syntax queries are also available. Keyless, though the maintainers ask for a small delay between requests.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://scryfall.com/docs/api",
+      "baseUrl": "https://api.scryfall.com",
+      "sampleEndpoint": "/cards/random",
+      "latencyMs": 931,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "object": "card",
+        "id": "46db3811-db1d-4f69-8143-a93f64d0297b",
+        "name": "Impact Tremors",
+        "released_at": "2023-04-21",
+        "layout": "normal",
+        "highres_image": true
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "~10 requests/second; docs ask for 50-100 ms between requests",
+      "dataLicense": "Card data free to use; MTG content © Wizards of the Coast (see docs)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Universalis",
+      "slug": "universalis",
+      "emoji": "📈",
+      "tagline": "Crowdsourced Final Fantasy XIV market board prices",
+      "description": "A crowdsourced market board aggregator for Final Fantasy XIV, exposing live listings, sale history and per-world price data. The /data-centers endpoint lists every data center and its worlds so you can target the right market. Free and keyless.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://universalis.app/docs/index.html",
+      "baseUrl": "https://universalis.app/api/v2",
+      "sampleEndpoint": "/data-centers",
+      "latencyMs": 1814,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "name": "Elemental", "region": "Japan", "worlds": [45, 49] },
+        { "name": "Aether", "region": "North-America", "worlds": [40, 54] }
+      ],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; crowdsourced data",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Administrative Divisions DB",
+      "slug": "administrative-divisions-db",
+      "emoji": "🗺️",
+      "tagline": "First-level administrative divisions for every country",
+      "description": "A dataset of first-level administrative divisions (states, provinces, counties) keyed by ISO country code. Each request returns a plain JSON array of division names, served as static files over a CDN so there are no rate limits. Fetch by country code, no key needed.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://github.com/kamikazechaser/administrative-divisions-db",
+      "baseUrl": "https://rawcdn.githack.com/kamikazechaser/administrative-divisions-db/master/api",
+      "sampleEndpoint": "/KE.json",
+      "latencyMs": 755,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": ["West Pokot", "Wajir", "Uasin Gishu"],
+      "freeTier": "Free, no API key required (static JSON via CDN)",
+      "rateLimit": "None (static files served over CDN)",
+      "dataLicense": "Unverified (see repo)",
+      "commercialUse": "unclear",
+      "notes": "Not a live server: JSON files served from GitHub via the githack CDN."
+    },
+    {
+      "name": "Country.is",
+      "slug": "country-is",
+      "emoji": "🌍",
+      "tagline": "Look up a visitor's country from their IP, no key",
+      "description": "A minimalist endpoint that resolves the caller's IP address to a two-letter country code. Hit the root URL to geolocate yourself, or pass any IP to look it up. Free, keyless and CORS-enabled for browser use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://country.is/",
+      "baseUrl": "https://api.country.is",
+      "sampleEndpoint": "/",
+      "latencyMs": 1300,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": { "ip": "46.1.3.138", "country": "TR" },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "GeoJS",
+      "slug": "geojs",
+      "emoji": "📍",
+      "tagline": "IP geolocation as JSON, JSONP or plain text",
+      "description": "IP geolocation returning city, region, country, ASN and coordinates for the caller or any address. Output is available as JSON, JSONP or plain text, handy from browsers and shells alike. Free with no key and generous CORS.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.geojs.io/",
+      "baseUrl": "https://get.geojs.io",
+      "sampleEndpoint": "/v1/ip/geo.json",
+      "latencyMs": 1243,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "46.1.3.138",
+        "city": "Istanbul",
+        "region": "Istanbul",
+        "country": "Türkiye",
+        "country_code": "TR",
+        "asn": 34296,
+        "timezone": "Europe/Istanbul"
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished (no enforced limit stated)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "HackMyIP",
+      "slug": "hackmyip",
+      "emoji": "🛡️",
+      "tagline": "Keyless IP geolocation, VPN scoring and breach checks",
+      "description": "A no-signup toolkit API bundling IP geolocation, ISP and ASN data, VPN/proxy scoring, email breach lookups, and DNS/WHOIS queries. The /ip endpoint profiles the caller's address with location, network and privacy details in one JSON payload. Every endpoint is keyless and CORS-enabled.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://hackmyip.com/api",
+      "baseUrl": "https://hackmyip.com/api",
+      "sampleEndpoint": "/ip",
+      "latencyMs": 534,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": {
+          "ip": "46.1.3.138",
+          "location": { "city": "Istanbul", "country": "TR", "country_name": "Türkiye" },
+          "network": { "asn": 34296, "connection_type": "HTTP/2" },
+          "privacy": { "type": "residential", "score": 85 }
+        }
+      },
+      "freeTier": "Completely free — no API key, no signup",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "yes",
+      "notes": "Docs state all endpoints are JSON, CORS-enabled and 'free for any use'."
+    },
+    {
+      "name": "Psychonauts API",
+      "slug": "psychonauts",
+      "emoji": "🧠",
+      "tagline": "Characters and PSI powers from Double Fine's Psychonauts",
+      "description": "A fan tribute API for the cult game Psychonauts, serving its characters and PSI powers as JSON. Filter powers or characters by name, gender or a result limit. Hosted on Vercel, keyless, though it does not send CORS headers.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/thamudi/psychonauts-api/wiki/Endpoints",
+      "baseUrl": "https://psychonauts-api.vercel.app/api",
+      "sampleEndpoint": "/powers?limit=1",
+      "latencyMs": 685,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "_id": "60a8a18f74e598888ff866a9",
+          "name": "marksmanship",
+          "description": "Allows the user to strike things down using their mind.",
+          "img": "https://psychonauts-api.vercel.app/images/api/powers/marksmanship.png"
+        }
+      ],
+      "freeTier": "Free, no API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified; fan tribute, game © Double Fine",
+      "commercialUse": "unclear",
+      "notes": "No CORS headers observed. Real API is at psychonauts-api.vercel.app; the listed netlify docs URL is a separate SPA."
+    }
+  ],
+  "skipped": [
+    {
+      "name": "GraphQL Pokemon",
+      "reason": "GraphQL-only API requiring a POST query body; no keyless simple JSON GET endpoint."
+    },
+    {
+      "name": "PokéAPI (GraphQL)",
+      "reason": "GraphQL-only API requiring a POST query body; no keyless simple JSON GET endpoint."
+    },
+    {
+      "name": "GeographQL",
+      "reason": "GraphQL-only API requiring a POST query body; docs endpoint 404s and no keyless JSON GET exists."
+    },
+    {
+      "name": "Puyo Nexus",
+      "reason": "Hosted API is dead — puyodb-api-deno.herokuapp.com returns 'No such app' (Heroku free tier discontinued)."
+    },
+    {
+      "name": "Geokeo",
+      "reason": "Requires a signup API key; probing with a placeholder key returned wrong geocoding results (Eiffel Tower placed in Ukraine)."
+    },
+    {
+      "name": "geoPlugin",
+      "reason": "No longer free — /json.gp returns HTTP 403 'geoPlugin API is no longer available for free use', paid plan required."
+    }
+  ]
+}

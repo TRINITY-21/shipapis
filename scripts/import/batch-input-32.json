@@ -1,0 +1,386 @@
+{
+  "batch": 32,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "Open Government, Ireland",
+      "docsUrl": "https://data.gov.ie/pages/developers",
+      "description": "Ireland Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 429
+    },
+    {
+      "name": "Open Government, Lithuania",
+      "docsUrl": "https://data.gov.lt/public/api/1",
+      "description": "Lithuania Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Mexico",
+      "docsUrl": "https://www.inegi.org.mx/datos/",
+      "description": "Mexican Statistical Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Mexico",
+      "docsUrl": "https://datos.gob.mx/",
+      "description": "Mexico Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, New Zealand",
+      "docsUrl": "https://www.data.govt.nz/",
+      "description": "New Zealand Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Peru",
+      "docsUrl": "https://www.datosabiertos.gob.pe/",
+      "description": "Peru Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 403
+    },
+    {
+      "name": "Open Government, Saudi Arabia",
+      "docsUrl": "https://data.gov.sa",
+      "description": "Saudi Arabia Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, Singapore",
+      "docsUrl": "https://data.gov.sg/developer",
+      "description": "Singapore Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "Open Government, Slovakia",
+      "docsUrl": "https://data.gov.sk/en/",
+      "description": "Slovakia Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Taiwan",
+      "docsUrl": "https://data.gov.tw/",
+      "description": "Taiwan Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, USA",
+      "docsUrl": "https://www.data.gov/",
+      "description": "United States Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "US Presidential Election Data by TogaTech",
+      "docsUrl": "https://uselection.togatech.org/api/",
+      "description": "Basic candidate data and live electoral vote counts for top two parties in US presidential election",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "Coronavirus",
+      "docsUrl": "https://pipedream.com/@pravin/http-api-for-latest-wuhan-coronavirus-data-2019-ncov-p_G6CLVM/readme",
+      "description": "HTTP API for Latest Covid-19 Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coronavirus in the UK",
+      "docsUrl": "https://coronavirus.data.gov.uk/details/developers-guide",
+      "description": "UK Government coronavirus data, including deaths and cases by region",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Covid-19 Datenhub",
+      "docsUrl": "https://npgeo-corona-npgeo-de.hub.arcgis.com",
+      "description": "Maps, datasets, applications and more in the context of COVID-19",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 404
+    },
+    {
+      "name": "COVID-19 Tracker Canada",
+      "docsUrl": "https://api.covid19tracker.ca/docs/1.0/overview",
+      "description": "Details on Covid-19 cases across Canada",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "COVID-19 Tracker Sri Lanka",
+      "docsUrl": "https://www.hpb.health.gov.lk/en/api-documentation",
+      "description": "Provides situation of the COVID-19 patients reported in Sri Lanka",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 404
+    },
+    {
+      "name": "Dataflow Kit COVID-19",
+      "docsUrl": "https://covid-19.dataflowkit.com",
+      "description": "COVID-19 live statistics into sites per hour",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Deepcode",
+      "docsUrl": "https://www.deepcode.ai",
+      "description": "AI for code review",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Machine Learning",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bandsintown",
+      "docsUrl": "https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0",
+      "description": "Music Events",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 0
+    },
+    {
+      "name": "iTunes Search",
+      "docsUrl": "https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/",
+      "description": "Software products",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 0
+    },
+    {
+      "name": "Songsterr",
+      "docsUrl": "https://www.songsterr.com/a/wa/api/",
+      "description": "Provides guitar, bass and drums tabs and chords",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Music",
+      "docsCheck": 404
+    },
+    {
+      "name": "CollegeScoreCard.ed.gov",
+      "docsUrl": "https://collegescorecard.ed.gov/data/",
+      "description": "Data on higher education institutions in the United States",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Data Minneapolis",
+      "docsUrl": "https://opendata.minneapolismn.gov/",
+      "description": "Spatial (GIS) and non-spatial city data for Minneapolis",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Teleport",
+      "docsUrl": "https://developers.teleport.org/",
+      "description": "Quality of Life Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 0
+    },
+    {
+      "name": "Wikipedia",
+      "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+      "description": "Mediawiki Encyclopedia",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "PatentsView ",
+      "docsUrl": "https://patentsview.org/apis/purpose",
+      "description": "API is intended to explore and visualize trends/patterns across the US innovation landscape",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Patent",
+      "docsCheck": 200
+    },
+    {
+      "name": "USPTO",
+      "docsUrl": "https://www.uspto.gov/learning-and-resources/open-data-and-mobility",
+      "description": "USA patent api services",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Patent",
+      "docsCheck": 200
+    },
+    {
+      "name": "Biriyani As A Service",
+      "docsUrl": "https://biriyani.anoram.com/",
+      "description": "Biriyani images placeholder",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Personality",
+      "docsCheck": 503
+    },
+    {
+      "name": "Quote Garden",
+      "docsUrl": "https://pprathameshmore.github.io/QuoteGarden/",
+      "description": "REST API for more than 5000 famous quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 0
+    },
+    {
+      "name": "They Said So Quotes",
+      "docsUrl": "https://theysaidso.com/api/",
+      "description": "Quotes Trusted by many fortune brands around the world",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Traitify",
+      "docsUrl": "https://app.traitify.com/developer",
+      "description": "Assess, collect and analyze Personality",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 200
+    },
+    {
+      "name": "Vadivelu HTTP Codes",
+      "docsUrl": "https://vadivelu.anoram.com/",
+      "description": "On demand HTTP Codes with images",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Personality",
+      "docsCheck": 0
+    },
+    {
+      "name": "Screenshotlayer",
+      "docsUrl": "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "description": "URL to screenshot",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "Imsea",
+      "docsUrl": "https://imsea.herokuapp.com/",
+      "description": "Free image search",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 404
+    },
+    {
+      "name": "PlaceKeanu",
+      "docsUrl": "https://placekeanu.com/",
+      "description": "Resizable Keanu Reeves placeholder images with grayscale and young Keanu options",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 200
+    },
+    {
+      "name": "KONTESTS",
+      "docsUrl": "https://kontests.net/api",
+      "description": "For upcoming and ongoing competitive coding contests",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Programming",
+      "docsCheck": 0
+    },
+    {
+      "name": "arXiv",
+      "docsUrl": "https://arxiv.org/help/api/user-manual",
+      "description": "Curated research-sharing platform: physics, mathematics, quantitative finance, and economics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 404
+    }
+  ]
+}

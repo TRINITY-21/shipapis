@@ -1,0 +1,1318 @@
+{
+  "batch": 40,
+  "verified": [
+    {
+      "name": "RSS2JSON",
+      "slug": "rss2json",
+      "emoji": "📰",
+      "tagline": "Convert any RSS feed to JSON",
+      "description": "rss2json wraps RSS/Atom feeds into JSON items with title, link, description and pubDate. Free tier allows limited requests without an API key.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://api.rss2json.com/v1",
+      "baseUrl": "https://api.rss2json.com/v1",
+      "sampleEndpoint": "/api.json?rss_url=https://hnrss.org/frontpage",
+      "latencyMs": 389,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "feed": {
+          "url": "https://hnrss.org/frontpage",
+          "title": "Hacker News: Front Page",
+          "link": "https://news.ycombinator.com/",
+          "author": "",
+          "description": "Hacker News RSS",
+          "image": ""
+        },
+        "items": [
+          {
+            "title": "The Plight of the Martian Farmer",
+            "pubDate": "2026-07-05 16:04:23",
+            "link": "https://mceglowski.substack.com/p/the-plight-of-the-martian-farmer",
+            "guid": "https://news.ycombinator.com/item?id=48795303",
+            "author": "zdw",
+            "thumbnail": "",
+            "description": "\n<p>Article URL: <a href=\"https://mceglowski.substack.com/p/the-plight-of-the-martian-farmer\">https://mceglowski.substack.com/p/the-plight-of-the-martian-farmer</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48795303\">https://news.ycombinator.com/item?id=48795303</a></p>\n<p>Points: 8</p>\n<p># Comments: 2</p>\n",
+            "content": "\n<p>Article URL: <a href=\"https://mceglowski.substack.com/p/the-plight-of-the-martian-farmer\">https://mceglowski.substack.com/p/the-plight-of-the-martian-farmer</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48795303\">https://news.ycombinator.com/item?id=48795303</a></p>\n<p>Points: 8</p>\n<p># Comments: 2</p>\n"
+          },
+          {
+            "title": "Autonomous flying umbrella follows and shields users from rain and sunlight",
+            "pubDate": "2026-07-05 15:49:18",
+            "link": "https://www.designboom.com/technology/autonomous-flying-umbrella-follows-users-rain-sunlight-i-build-stuff-01-13-2026/",
+            "guid": "https://news.ycombinator.com/item?id=48795174",
+            "author": "amichail",
+            "thumbnail": "",
+            "description": "\n<p>Article URL: <a href=\"https://www.designboom.com/technology/autonomous-flying-umbrella-follows-users-rain-sunlight-i-build-stuff-01-13-2026/\">https://www.designboom.com/technology/autonomous-flying-umbrella-follows-users-rain-sunlight-i-build-stuff-01-13-2026/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48795174\">https://news.ycombinator.com/item?id=48795174</a></p>\n<p>Points: 13</p>\n<p># Comments: 3</p>\n",
+            "content": "\n<p>Article URL: <a href=\"https://www.designboom.com/technology/autonomous-flying-umbrella-follows-users-rain-sunlight-i-build-stuff-01-13-2026/\">https://www.designboom.com/technology/autonomous-flying-umbrella-follows-users-rain-sunlight-i-build-stuff-01-13-2026/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48795174\">https://news.ycombinator.com/item?id=48795174</a></p>\n<p>Points: 13</p>\n<p># Comments: 3</p>\n"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Discogs",
+      "slug": "discogs",
+      "emoji": "💿",
+      "tagline": "Search releases, artists and labels",
+      "description": "Discogs database API for music collectors. Search and lookup endpoints are keyless at low volume; set a descriptive User-Agent per their developer policy.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://api.discogs.com",
+      "baseUrl": "https://api.discogs.com",
+      "sampleEndpoint": "/database/search?q=nirvana&type=release",
+      "latencyMs": 357,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "pagination": {
+          "page": 1,
+          "pages": 200,
+          "per_page": 50,
+          "items": 15432,
+          "urls": {
+            "last": "https://api.discogs.com/database/search?q=nirvana&type=release&page=200&per_page=50",
+            "next": "https://api.discogs.com/database/search?q=nirvana&type=release&page=2&per_page=50"
+          }
+        },
+        "results": [
+          {
+            "country": "Europe",
+            "year": "2015",
+            "format": [
+              "Vinyl",
+              "LP"
+            ],
+            "label": [
+              "DGC",
+              "Sub Pop"
+            ],
+            "type": "release",
+            "genre": [
+              "Rock"
+            ],
+            "style": [
+              "Grunge",
+              "Alternative Rock"
+            ],
+            "id": 7445961
+          },
+          {
+            "country": "US",
+            "year": "2015",
+            "format": [
+              "Vinyl",
+              "LP"
+            ],
+            "label": [
+              "Geffen Records",
+              "Sub Pop"
+            ],
+            "type": "release",
+            "genre": [
+              "Rock"
+            ],
+            "style": [
+              "Grunge"
+            ],
+            "id": 7802791
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "RubyGems",
+      "slug": "rubygems",
+      "emoji": "💎",
+      "tagline": "Ruby gem metadata",
+      "description": "RubyGems.org serves gem versions, authors and dependencies as JSON. Plain GET with no authentication on public package records.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://rubygems.org/api/v1",
+      "baseUrl": "https://rubygems.org/api/v1",
+      "sampleEndpoint": "/gems/rails.json",
+      "latencyMs": 400,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "rails",
+        "downloads": 760571018,
+        "version": "8.1.3",
+        "version_created_at": "2026-03-24T20:27:42.098Z",
+        "version_downloads": 8532175,
+        "platform": "ruby",
+        "authors": "David Heinemeier Hansson",
+        "info": "Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity. It encourages beautiful code by favoring convention over configuration."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PyPI",
+      "slug": "pypi",
+      "emoji": "🐍",
+      "tagline": "Python package metadata from PyPI",
+      "description": "The public Python Package Index serves full release metadata for any project at /pypi/{name}/json. No token required for reads; CORS-open.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://pypi.org/pypi",
+      "baseUrl": "https://pypi.org/pypi",
+      "sampleEndpoint": "/requests/json",
+      "latencyMs": 500,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "info": {
+          "author": null,
+          "author_email": "Kenneth Reitz <me@kennethreitz.org>",
+          "bugtrack_url": null,
+          "classifiers": [
+            "Development Status :: 5 - Production/Stable",
+            "Environment :: Web Environment"
+          ],
+          "description": "# Requests\n\n[![Version](https://img.shields.io/pypi/v/requests.svg?maxAge=86400)](https://pypi.org/project/requests/)\n[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)\n[![Downloads](https://static.pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)\n[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)\n[![Documentation](https://readthedocs.org/projects/requests/badge/?version=latest)](https://requests.readthedocs.io)\n\n**Requests** is a simple, yet elegant, HTTP library.\n\n```python\n>>> import requests\n>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))\n>>> r.status_code\n200\n>>> r.headers['content-type']\n'application/json; charset=utf8'\n>>> r.encoding\n'utf-8'\n>>> r.text\n'{\"authenticated\": true, ...'\n>>> r.json()\n{'authenticated': True, ...}\n```\n\nRequests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!\n\nRequests is one of the most downloaded Python packages today, pulling in around `300M downloads / week` — according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `4,000,000+` repositories.\n\n## Installing Requests and Supported Versions\n\nRequests is available on PyPI:\n\n```console\n$ python -m pip install requests\n```\n\nRequests officially supports Python 3.10+.\n\n## Supported Features & Best–Practices\n\nRequests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.\n\n- Keep-Alive & Connection Pooling\n- International Domains and URLs\n- Sessions with Cookie Persistence\n- Browser-style TLS/SSL Verification\n- Basic & Digest Authentication\n- Familiar `dict`–like Cookies\n- Automatic Content Decompression and Decoding\n- Multi-part File Uploads\n- SOCKS Proxy Support\n- Connection Timeouts\n- Streaming Downloads\n- Automatic honoring of `.netrc`\n- Chunked HTTP Requests\n\n## Cloning the repository\n\nWhen cloning the Requests repository, you may need to add the `-c\nfetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit timestamp (see\n[this issue](https://github.com/psf/requests/issues/2690) for more background):\n\n```shell\ngit clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git\n```\n\nYou can also apply this setting to your global Git config:\n\n```shell\ngit config --global fetch.fsck.badTimezone ignore\n```\n\n---\n\n[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)\n",
+          "description_content_type": "text/markdown",
+          "docs_url": null,
+          "download_url": null
+        },
+        "last_serial": 37059094,
+        "ownership": {
+          "organization": null,
+          "roles": [
+            {
+              "role": "Owner",
+              "user": "Lukasa"
+            },
+            {
+              "role": "Owner",
+              "user": "graffatcolmingov"
+            }
+          ]
+        },
+        "releases": {
+          "0.0.1": [],
+          "0.10.0": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "62350230421b8c4efad6624518028163329ad0c2df9e58e6b3bee013427bf8f6",
+                "md5": "c90a48af18eb4170dbe4832c1104440c",
+                "sha256": "210a82e678c45d433a4ad1f105974b3102a8ab5198872dc0a3238a8750d4c65e"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.0.tar.gz",
+              "has_sig": false,
+              "md5_digest": "c90a48af18eb4170dbe4832c1104440c",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.1": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "b456ba2d803383ec32d70f8faa7df5eb37ee9b3fc662ff68b7ab01ad9740b83a",
+                "md5": "699147d2143bff95238befa58980b912",
+                "sha256": "da6031575a30c7b65ea99465183468349b3645e6bf5322e49d53f565b27ed2b5"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.1.tar.gz",
+              "has_sig": false,
+              "md5_digest": "699147d2143bff95238befa58980b912",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.2": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "581e6b84552b6553f5beaf7cb0fe15115e7e4673326ed9188ad5338559ee8285",
+                "md5": "47c3cf85a0112d423137b43989663bef",
+                "sha256": "1546ef1e291ae337086369b621096fb0f69f88f6f67f60b1f6b7c18d1ca278e1"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.2.tar.gz",
+              "has_sig": false,
+              "md5_digest": "47c3cf85a0112d423137b43989663bef",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.3": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "014439988315e036b79fe70428273053617266bf20d1363e91082346fae8450d",
+                "md5": "a055af00593f4828c3becd0ccfab503f",
+                "sha256": "8eeb24328304b015cbd59a49670e2738b77034b225b566729ddb19941899e490"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.3.tar.gz",
+              "has_sig": false,
+              "md5_digest": "a055af00593f4828c3becd0ccfab503f",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.4": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "94ac5fa21e435ba8050d14db92ce29763c28196b727d4079dc608d39177fbf9b",
+                "md5": "5e465e9e739bcc9f71935ca4e9706168",
+                "sha256": "2ad4cc51d7595ca6f97373a0d697999e0cbdbbf1ba665d18f0f3dcec12b8be77"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.4.tar.gz",
+              "has_sig": false,
+              "md5_digest": "5e465e9e739bcc9f71935ca4e9706168",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.6": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "b41f8f5430040fcf4391dc5bd324424a569e2e0d96595952b21eb82403602d98",
+                "md5": "c889401445de3cbbac98509208a73b83",
+                "sha256": "31134b4f35951730dcce59f2af334478b68caa5728902a1d6bd5e115ec677d8b"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.6.tar.gz",
+              "has_sig": false,
+              "md5_digest": "c889401445de3cbbac98509208a73b83",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ],
+          "0.10.7": [
+            {
+              "comment_text": "",
+              "digests": {
+                "blake2b_256": "c5cd0597f9c040db24ca6d23cc74faa102554cb0a93bdbffb855d7749547921f",
+                "md5": "a3ac9d431981dcfd592fd0f35c499e4a",
+                "sha256": "80f32a74bed8cf081a3a25512f8725e09ceda217101ea706efced262bb05aec6"
+              },
+              "downloads": -1,
+              "filename": "requests-0.10.7.tar.gz",
+              "has_sig": false,
+              "md5_digest": "a3ac9d431981dcfd592fd0f35c499e4a",
+              "packagetype": "sdist",
+              "python_version": "source"
+            }
+          ]
+        },
+        "urls": [
+          {
+            "comment_text": null,
+            "digests": {
+              "blake2b_256": "a0f4c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a",
+              "md5": "cc4287951c320ff794e5e183c7a91f85",
+              "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+            },
+            "downloads": -1,
+            "filename": "requests-2.34.2-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "cc4287951c320ff794e5e183c7a91f85",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3"
+          },
+          {
+            "comment_text": null,
+            "digests": {
+              "blake2b_256": "acc3e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf",
+              "md5": "611e438d0803e962500225f9807a475e",
+              "sha256": "f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed"
+            },
+            "downloads": -1,
+            "filename": "requests-2.34.2.tar.gz",
+            "has_sig": false,
+            "md5_digest": "611e438d0803e962500225f9807a475e",
+            "packagetype": "sdist",
+            "python_version": "source"
+          }
+        ],
+        "vulnerabilities": []
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "slug": "clinicaltrials-gov",
+      "emoji": "🩺",
+      "tagline": "US clinical trial registry search",
+      "description": "NIH ClinicalTrials.gov v2 API returns structured study records — conditions, interventions, locations and status. Public JSON with no API key on read endpoints.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://clinicaltrials.gov/api/v2",
+      "baseUrl": "https://clinicaltrials.gov/api/v2",
+      "sampleEndpoint": "/studies?query.cond=cancer&pageSize=1",
+      "latencyMs": 706,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "studies": [
+          {
+            "protocolSection": {
+              "identificationModule": {
+                "nctId": "NCT02076503",
+                "orgStudyIdInfo": {
+                  "id": "2013/1513"
+                },
+                "organization": {
+                  "fullName": "St. Olavs Hospital",
+                  "class": "OTHER"
+                },
+                "briefTitle": "Pre-operative PET-MR of High Risk Prostate Cancer Patients for Assessment of Cancer Aggressiveness and Lymph Node Status",
+                "officialTitle": "Pre-operative PET-MR of High Risk Prostate Cancer Patients for Assessment of Cancer Aggressiveness and Lymph Node Status"
+              },
+              "statusModule": {
+                "statusVerifiedDate": "2018-01",
+                "overallStatus": "COMPLETED",
+                "expandedAccessInfo": {
+                  "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                  "date": "2014-04",
+                  "type": "ACTUAL"
+                },
+                "primaryCompletionDateStruct": {
+                  "date": "2015-05",
+                  "type": "ACTUAL"
+                },
+                "completionDateStruct": {
+                  "date": "2015-05",
+                  "type": "ACTUAL"
+                },
+                "studyFirstSubmitDate": "2014-02-10",
+                "studyFirstSubmitQcDate": "2014-02-27"
+              },
+              "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                  "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                  "name": "St. Olavs Hospital",
+                  "class": "OTHER"
+                },
+                "collaborators": [
+                  {
+                    "name": "Norwegian University of Science and Technology",
+                    "class": "OTHER"
+                  },
+                  {
+                    "name": "Norwegian Cancer Society",
+                    "class": "OTHER"
+                  }
+                ]
+              },
+              "oversightModule": {
+                "oversightHasDmc": false,
+                "isFdaRegulatedDrug": false,
+                "isFdaRegulatedDevice": false
+              },
+              "descriptionModule": {
+                "briefSummary": "Prostate cancer is the most frequent cancer in Norwegian men. For optimal treatment, accurate staging of the disease at the time point of diagnosis is important. The objective of this study is to evaluate the diagnostic potential of a combined PET/MR examination for risk assessment and detection of lymph node metastases. The overall aim of the project is to improve the investigators ability to provide individually tailored treatment to prostate cancer patients.\n\nThe study will include 32 men with high-risk prostate cancer, who are eligible for radical prostatectomy. Informed consent is a requirement for inclusion in the study."
+              },
+              "conditionsModule": {
+                "conditions": [
+                  "Prostatic Neoplasms"
+                ],
+                "keywords": [
+                  "Neoplasm Staging",
+                  "Positron-Emission Tomography"
+                ]
+              },
+              "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                  "NA"
+                ],
+                "designInfo": {
+                  "allocation": "NA",
+                  "interventionModel": "SINGLE_GROUP",
+                  "primaryPurpose": "DIAGNOSTIC",
+                  "maskingInfo": {
+                    "masking": "NONE"
+                  }
+                },
+                "enrollmentInfo": {
+                  "count": 28,
+                  "type": "ACTUAL"
+                }
+              },
+              "armsInterventionsModule": {
+                "armGroups": [
+                  {
+                    "label": "PET-MR 18F-FACBC",
+                    "type": "EXPERIMENTAL",
+                    "interventionNames": [
+                      "Procedure: PET-MR 18f-FACBC",
+                      "Procedure: histology (gold standard)"
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "type": "PROCEDURE",
+                    "name": "PET-MR 18f-FACBC",
+                    "armGroupLabels": [
+                      "PET-MR 18F-FACBC"
+                    ]
+                  },
+                  {
+                    "type": "PROCEDURE",
+                    "name": "histology (gold standard)",
+                    "description": "histopathological classification of co-located dissected lymph nodes",
+                    "armGroupLabels": [
+                      "PET-MR 18F-FACBC"
+                    ]
+                  }
+                ]
+              }
+            },
+            "derivedSection": {
+              "miscInfoModule": {
+                "versionHolder": "2026-07-02"
+              },
+              "conditionBrowseModule": {
+                "meshes": [
+                  {
+                    "id": "D011471",
+                    "term": "Prostatic Neoplasms"
+                  }
+                ],
+                "ancestors": [
+                  {
+                    "id": "D005834",
+                    "term": "Genital Neoplasms, Male"
+                  },
+                  {
+                    "id": "D014565",
+                    "term": "Urogenital Neoplasms"
+                  }
+                ]
+              }
+            },
+            "hasResults": false
+          }
+        ],
+        "nextPageToken": "ZVNj7o2Elu8o3lp3D4Czt-numpOQJJxsaQ"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Packagist",
+      "slug": "packagist",
+      "emoji": "🐘",
+      "tagline": "Composer/Packagist package metadata",
+      "description": "Packagist’s p2 JSON metadata feeds Composer. Fetch /p2/{vendor}/{package}.json for version lists and dist URLs — no key on reads.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://repo.packagist.org",
+      "baseUrl": "https://repo.packagist.org",
+      "sampleEndpoint": "/p2/laravel/framework.json",
+      "latencyMs": 774,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "minified": "composer/2.0",
+        "packages": {
+          "laravel/framework": [
+            {
+              "name": "laravel/framework",
+              "description": "The Laravel Framework.",
+              "keywords": [
+                "framework",
+                "laravel"
+              ],
+              "homepage": "https://laravel.com",
+              "version": "v13.18.1",
+              "version_normalized": "13.18.1.0",
+              "license": [
+                "MIT"
+              ],
+              "authors": [
+                {
+                  "name": "Taylor Otwell",
+                  "email": "taylor@laravel.com"
+                }
+              ]
+            },
+            {
+              "version": "v13.18.0",
+              "version_normalized": "13.18.0.0",
+              "source": {
+                "url": "https://github.com/laravel/framework.git",
+                "type": "git",
+                "reference": "138e5806ed7e4e21591948b661119d3810f052cf"
+              },
+              "dist": {
+                "url": "https://api.github.com/repos/laravel/framework/zipball/138e5806ed7e4e21591948b661119d3810f052cf",
+                "type": "zip",
+                "shasum": "",
+                "reference": "138e5806ed7e4e21591948b661119d3810f052cf"
+              },
+              "time": "2026-06-30T12:54:13+00:00",
+              "published-time": "2026-06-30T12:56:10+00:00"
+            }
+          ]
+        },
+        "security-advisories": [
+          {
+            "advisoryId": "PKSA-3r5d-mb8f-1qw9",
+            "affectedVersions": "<12.60.0|>=13.0.0,<=13.9.0"
+          },
+          {
+            "advisoryId": "PKSA-m5cs-t1y6-qpcs",
+            "affectedVersions": "<12.61.1|>=13.0.0,<13.12.0"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Blockchair",
+      "slug": "blockchair",
+      "emoji": "⛓",
+      "tagline": "Bitcoin blockchain statistics",
+      "description": "Blockchair exposes chain stats, blocks and transactions. The /bitcoin/stats route returns network metrics as JSON; higher limits with a free API key.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.blockchair.com",
+      "baseUrl": "https://api.blockchair.com",
+      "sampleEndpoint": "/bitcoin/stats",
+      "latencyMs": 807,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "blocks": 956808,
+          "transactions": 1391245144,
+          "outputs": 3814164909,
+          "circulation": 2005249604497096,
+          "blocks_24h": 135,
+          "transactions_24h": 665030,
+          "difficulty": 133869853540305.4,
+          "volume_24h": 52850750491706
+        },
+        "context": {
+          "code": 200,
+          "source": "A",
+          "state": 956807,
+          "market_price_usd": 62584,
+          "cache": {
+            "live": false,
+            "duration": "Ignore",
+            "since": "2026-07-05 16:55:10",
+            "until": "2026-07-05 16:56:21",
+            "time": 0.0000019073486328125
+          },
+          "api": {
+            "version": "2.0.95-ie",
+            "last_major_update": "2022-11-07 02:00:00",
+            "next_major_update": "2023-11-12 02:00:00",
+            "documentation": "https://blockchair.com/api/docs",
+            "notice": "Try out our new API v.3: https://3xpl.com/data"
+          },
+          "servers": "API4,BTC5",
+          "time": 0.8349261283874512
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Datasette",
+      "slug": "datasette",
+      "emoji": "🗃",
+      "tagline": "Datasette site metadata as JSON",
+      "description": "Datasette publishes SQLite databases as read-only JSON APIs. The project site exposes its own table-of-contents JSON at /content.json — a lightweight health check for the ecosystem.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://datasette.io",
+      "baseUrl": "https://datasette.io",
+      "sampleEndpoint": "/content.json",
+      "latencyMs": 838,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "database": "content",
+        "private": false,
+        "path": "/content",
+        "size": 21413888,
+        "tables": [
+          {
+            "name": "assets",
+            "columns": [
+              "url",
+              "id"
+            ],
+            "primary_keys": [
+              "id"
+            ],
+            "count": 1612,
+            "hidden": false,
+            "fts_table": null,
+            "foreign_keys": {
+              "incoming": [],
+              "outgoing": [
+                {
+                  "other_table": "releases",
+                  "column": "release",
+                  "other_column": "id"
+                },
+                {
+                  "other_table": "users",
+                  "column": "uploader",
+                  "other_column": "id"
+                }
+              ]
+            },
+            "private": false
+          },
+          {
+            "name": "blog_posts",
+            "columns": [
+              "path",
+              "year"
+            ],
+            "primary_keys": [
+              "path"
+            ],
+            "count": 6,
+            "hidden": false,
+            "fts_table": null,
+            "foreign_keys": {
+              "incoming": [],
+              "outgoing": []
+            },
+            "private": false
+          }
+        ],
+        "hidden_count": 20,
+        "views": [
+          {
+            "name": "plugins",
+            "private": false
+          },
+          {
+            "name": "recent_releases",
+            "private": false
+          }
+        ],
+        "queries": [
+          {
+            "title": "Datasette News and Blog",
+            "sql": "with feed_items as (\n  select\n    'tag:datasette.io,' || date as atom_id,\n    'Datasette News: ' || date as atom_title,\n    date || 'T00:00:00-08:00' as atom_updated,\n    'https://datasette.io/news/' || date as atom_link,\n    render_markdown(group_concat(body, char(10) || char(10))) as atom_content_html,\n    'Simon Willison' as atom_author_name,\n    'https://simonwillison.net/' as atom_author_uri,\n    date || 'T00:00:00' as sort_datetime\n  from\n    news\n  group by\n    date\n  union all\n  select\n    'tag:datasette.io,' || trim(path, '/') as atom_id,\n    title as atom_title,\n    replace(datetime_utc, ' ', 'T') || 'Z' as atom_updated,\n    'https://datasette.io' || path as atom_link,\n    html as atom_content_html,\n    author as atom_author_name,\n    author_url as atom_author_uri,\n    datetime_utc as sort_datetime\n  from\n    blog_posts\n)\nselect\n  atom_id,\n  atom_title,\n  atom_updated,\n  atom_link,\n  atom_content_html,\n  atom_author_name,\n  atom_author_uri\nfrom\n  feed_items\norder by\n  sort_datetime desc\nlimit\n  20",
+            "name": "feed",
+            "private": false
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Wikidata",
+      "slug": "wikidata",
+      "emoji": "🧠",
+      "tagline": "Search Wikidata entities as JSON",
+      "description": "MediaWiki action API over Wikidata — search entities, fetch labels and descriptions. No key; send a descriptive User-Agent per Wikimedia policy.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.wikidata.org/w/api.php",
+      "baseUrl": "https://www.wikidata.org/w/api.php",
+      "sampleEndpoint": "/?action=wbsearchentities&search=python&language=en&format=json&limit=1",
+      "latencyMs": 502,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "searchinfo": {
+          "search": "python"
+        },
+        "search": [
+          {
+            "id": "Q28865",
+            "title": "Q28865",
+            "pageid": 32213,
+            "concepturi": "http://www.wikidata.org/entity/Q28865",
+            "repository": "wikidata",
+            "url": "//www.wikidata.org/wiki/Q28865",
+            "display": {
+              "label": {
+                "value": "Python",
+                "language": "en"
+              },
+              "description": {
+                "value": "general-purpose programming language",
+                "language": "en"
+              }
+            },
+            "label": "Python"
+          }
+        ],
+        "search-continue": 1,
+        "success": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Etherscan",
+      "slug": "etherscan",
+      "emoji": "🔷",
+      "tagline": "Ethereum price and chain stats",
+      "description": "Etherscan’s public API returns ETH price and network statistics. Many read endpoints work without a key at modest rate limits; register for higher quotas.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.etherscan.io/api",
+      "baseUrl": "https://api.etherscan.io/api",
+      "sampleEndpoint": "/?module=stats&action=ethprice",
+      "latencyMs": 874,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "0",
+        "message": "NOTOK",
+        "result": "You are using a deprecated V1 endpoint, switch to Etherscan API V2 using https://docs.etherscan.io/v2-migration"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Crates.io",
+      "slug": "crates-io",
+      "emoji": "🦀",
+      "tagline": "Rust crate metadata from crates.io",
+      "description": "crates.io JSON API for Rust package versions, downloads and dependencies. Read endpoints are keyless — ideal for build tools and dependency dashboards.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://crates.io/api/v1",
+      "baseUrl": "https://crates.io/api/v1",
+      "sampleEndpoint": "/crates/serde",
+      "latencyMs": 988,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "crate": {
+          "id": "serde",
+          "name": "serde",
+          "updated_at": "2025-09-27T16:51:35.265429Z",
+          "versions": [
+            1748414,
+            1746112
+          ],
+          "keywords": [
+            "no_std",
+            "serde"
+          ],
+          "categories": [
+            "encoding",
+            "no-std"
+          ],
+          "badges": [],
+          "created_at": "2014-12-05T20:20:39.487502Z"
+        },
+        "versions": [
+          {
+            "id": 1748414,
+            "crate": "serde",
+            "num": "1.0.228",
+            "dl_path": "/api/v1/crates/serde/1.0.228/download",
+            "readme_path": "/api/v1/crates/serde/1.0.228/readme",
+            "updated_at": "2025-09-27T16:51:35.265429Z",
+            "created_at": "2025-09-27T16:51:35.265429Z",
+            "downloads": 324823921
+          },
+          {
+            "id": 1746112,
+            "crate": "serde",
+            "num": "1.0.227",
+            "dl_path": "/api/v1/crates/serde/1.0.227/download",
+            "readme_path": "/api/v1/crates/serde/1.0.227/readme",
+            "updated_at": "2025-09-25T23:43:08.742811Z",
+            "created_at": "2025-09-25T23:43:08.742811Z",
+            "downloads": 1665506
+          }
+        ],
+        "keywords": [
+          {
+            "id": "no_std",
+            "keyword": "no_std",
+            "created_at": "2015-06-20T04:34:42.753830Z",
+            "crates_cnt": 2222
+          },
+          {
+            "id": "serde",
+            "keyword": "serde",
+            "created_at": "2015-08-10T17:10:09.021436Z",
+            "crates_cnt": 1424
+          }
+        ],
+        "categories": [
+          {
+            "id": "encoding",
+            "category": "Encoding",
+            "slug": "encoding",
+            "description": "Encoding and/or decoding data from one data format to another.",
+            "created_at": "2017-01-17T19:13:05.112025Z",
+            "crates_cnt": 5871
+          },
+          {
+            "id": "no-std",
+            "category": "No standard library",
+            "slug": "no-std",
+            "description": "Crates that are able to function without the Rust standard library.",
+            "created_at": "2017-02-10T01:52:09.447906Z",
+            "crates_cnt": 11553
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "DeFi Llama",
+      "slug": "defi-llama",
+      "emoji": "🦙",
+      "tagline": "DeFi protocol TVL rankings",
+      "description": "DeFi Llama aggregates total value locked across chains and protocols. The /protocols list is keyless JSON — useful for crypto dashboards and research.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.llama.fi",
+      "baseUrl": "https://api.llama.fi",
+      "sampleEndpoint": "/protocols",
+      "latencyMs": 2567,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "2269",
+          "name": "Binance CEX",
+          "address": null,
+          "symbol": "BNB",
+          "url": "https://www.binance.com",
+          "description": "Binance is a cryptocurrency exchange which is the largest exchange in the world in terms of daily trading volume of cryptocurrencies",
+          "chain": "Multi-Chain",
+          "logo": "https://icons.llamao.fi/icons/protocols/binance-cex"
+        },
+        {
+          "id": "2272",
+          "name": "OKX",
+          "address": null,
+          "symbol": "-",
+          "url": "https://www.okx.com",
+          "description": "OKX, formerly known as OKEx, is a Seychelles-based cryptocurrency exchange and derivatives exchange that provides a platform for trading various instruments such as spot and derivative",
+          "chain": "Multi-Chain",
+          "logo": "https://icons.llamao.fi/icons/protocols/okx"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Studio Ghibli API",
+      "slug": "studio-ghibli-api",
+      "emoji": "🎭",
+      "tagline": "Studio Ghibli API — The Studio Ghibli API is a free, no-key catalogue of th…",
+      "description": "Studio Ghibli API exposes the Studio Ghibli API is a free, no-key catalogue of the studio's films and their people, locations, species and vehicles - return film details and cross-referenced characters as JSON. We verified a keyless GET endpoint returning JSON (Entertainment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://ghibliapi.dev",
+      "baseUrl": "https://ghibliapi.dev",
+      "sampleEndpoint": "/api",
+      "latencyMs": 82,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": 404
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://ghibliapi.dev/api"
+    },
+    {
+      "name": "News Plugin",
+      "slug": "news-plugin",
+      "emoji": "💰",
+      "tagline": "News Plugin — A plugin that allows the user to obtain and summary lat…",
+      "description": "News Plugin exposes a plugin that allows the user to obtain and summary latest news using ChatGPT. If you do not know the user's username, ask them first before making queries to the plugin. Otherwise, use the username \"global\". We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://staging2.freetv-app.com",
+      "baseUrl": "https://staging2.freetv-app.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 188,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "healthCheck": true
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://staging2.freetv-app.com/"
+    },
+    {
+      "name": "Groundhog Day API",
+      "slug": "groundhog-day-api",
+      "emoji": "🌤",
+      "tagline": "Groundhog Day API — This API returns all of North America’s prognosticating…",
+      "description": "Groundhog Day API exposes this API returns all of North America’s prognosticating animals and their yearly weather predictions. We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://groundhog-day.com/api",
+      "baseUrl": "https://groundhog-day.com",
+      "sampleEndpoint": "/api/v1/",
+      "latencyMs": 207,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Hello! Welcome to the Groundhog Day API: the leading Groundhog Day data source",
+        "_links": {
+          "self": {
+            "href": "https://groundhog-day.com/api/v1/"
+          },
+          "groundhogs": {
+            "href": "https://groundhog-day.com/api/v1/groundhogs"
+          },
+          "groundhog": {
+            "href": "https://groundhog-day.com/api/v1/groundhogs/wiarton-willie"
+          },
+          "predictions": {
+            "href": "https://groundhog-day.com/api/v1/predictions?year=2026"
+          },
+          "spec": {
+            "href": "https://groundhog-day.com/api/v1/spec"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://groundhog-day.com/api/v1/"
+    },
+    {
+      "name": "Ntropy Transaction API v1",
+      "slug": "ntropy-transaction-api-v1",
+      "emoji": "💬",
+      "tagline": "Ntropy Transaction API v1 — Ntropy Transaction API for transaction classificat",
+      "description": "Ntropy Transaction API v1 exposes ntropy Transaction API for transaction classification & management Contact Support: Name: API Support Email: api@ntropy.network We verified a keyless GET endpoint returning JSON (Social). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.ntropy.network",
+      "baseUrl": "https://api.ntropy.network",
+      "sampleEndpoint": "/",
+      "latencyMs": 468,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "updated_at": "1783270619.808051"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.ntropy.network/"
+    },
+    {
+      "name": "Weatherbit - Interactive Swagger UI Documentation",
+      "slug": "weatherbit-interactive-swagger-ui-documentation",
+      "emoji": "🌤",
+      "tagline": "Weatherbit - Interactive Swagger UI Documentation — This an interactive versio",
+      "description": "Weatherbit - Interactive Swagger UI Documentation exposes this an interactive version of the documentation for the Weatherbit API. The base URL for the API is http://api.weatherbit.io/v2.0/ or https://api.weatherbit.io/v2.0/. Below is the Swagger UI documentation for the API. All API requ We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://api.weatherbit.io/v2.0",
+      "baseUrl": "https://api.weatherbit.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 219,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "OK!"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.weatherbit.io/"
+    },
+    {
+      "name": "eNanoMapper database",
+      "slug": "enanomapper-database",
+      "emoji": "🔧",
+      "tagline": "eNanoMapper database — AMBIT REST web services [eNanoMapper profile] with free",
+      "description": "eNanoMapper database exposes aMBIT REST web services [eNanoMapper profile] with free text & faceted search We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://phabricator.ideaconsult.net",
+      "baseUrl": "https://phabricator.ideaconsult.net",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 95,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "result": null,
+        "error_code": "ERR-CONDUIT-CALL",
+        "error_info": "Conduit API method \"v1\" does not exist."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://phabricator.ideaconsult.net/api/v1"
+    },
+    {
+      "name": "Authentication",
+      "slug": "authentication",
+      "emoji": "🔐",
+      "tagline": "Authentication — Personio Authentication API",
+      "description": "Authentication exposes personio Authentication API We verified a keyless GET endpoint returning JSON (Security). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://api.personio.de/v1",
+      "baseUrl": "https://api.personio.de",
+      "sampleEndpoint": "/",
+      "latencyMs": 273,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Personio Public API",
+        "_meta": {
+          "links": {
+            "authentication": {
+              "href": "https://api.personio.de/v1/auth"
+            },
+            "developer-hub": {
+              "href": "https://developer.personio.de"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.personio.de/"
+    },
+    {
+      "name": "Alan Perlis Quotes",
+      "slug": "alan-perlis-quotes",
+      "emoji": "🔬",
+      "tagline": "Alan Perlis Quotes — This API provides random epigrams by Alan Perlis, a not…",
+      "description": "Alan Perlis Quotes exposes this API provides random epigrams by Alan Perlis, a notable figure in computer science. Users can programmatically access a variety of his thought-provoking quotes to enhance their applications or for inspiration. We verified a keyless GET endpoint returning JSON (Science & Math). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://perl.is/",
+      "baseUrl": "https://perl.is",
+      "sampleEndpoint": "/random",
+      "latencyMs": 144,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 29,
+        "quote": "In programming, everything we do is a special case of something more general -- and often we know it too quickly."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://perl.is/random"
+    },
+    {
+      "name": "Automatic Weather Stations",
+      "slug": "automatic-weather-stations",
+      "emoji": "🌤",
+      "tagline": "Automatic Weather Stations — The Automatic Weather Stations API provides acces",
+      "description": "Automatic Weather Stations exposes the Automatic Weather Stations API provides access to data from around 160 automatic measurement stations within the SwissMetNet network. It delivers vital meteorological data including temperature, precipitation, wind speed, and humidity every 10 minutes to support weather forecasting and environmental monitoring. We verified a keyless GET endpoint returning JSON (Weather). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://opendatadocs.meteoswiss.ch/a-data-groundbased/a1-automatic-weather-stations",
+      "baseUrl": "https://data.geo.admin.ch",
+      "sampleEndpoint": "/api/stac/v1/collections/ch.meteoschweiz.ogd-smn",
+      "latencyMs": 332,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "stac_version": "1.0.0",
+        "id": "ch.meteoschweiz.ogd-smn",
+        "title": "Automatic weather stations - Measurement values",
+        "description": "SwissMetNet, the automatic monitoring network of MeteoSwiss, comprises 158 automatic monitoring stations. The data set contains current measurements for each station on temperature, precipitation, wind, pressure, snow, humidity, sunshine duration, and radiation in 10 minutes ('t'), hourly ('h'), daily ('d'), monthly ('m') and yearly ('y') resolutions. There are updated data sets since midnight ('now'), from the current year up to yesterday ('recent') and since the beginning of the measurement in ten-year increments ('historical'). If you need hourly, daily, monthly or yearly values, we strongly recommend that you download the corresponding resolution.",
+        "summaries": {},
+        "extent": {
+          "spatial": {
+            "bbox": [
+              [
+                6.099453,
+                45.843444
+              ]
+            ]
+          },
+          "temporal": {
+            "interval": [
+              [
+                "2026-07-05T04:00:34.744312Z",
+                "2026-07-05T04:00:34.867576Z"
+              ]
+            ]
+          }
+        },
+        "providers": [
+          {
+            "name": "Federal Office of Meteorology and Climatology MeteoSwiss",
+            "roles": [
+              "producer",
+              "licensor"
+            ],
+            "url": "https://www.meteoswiss.admin.ch"
+          }
+        ],
+        "license": "CC-BY"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-smn"
+    },
+    {
+      "name": "Arul's IP API",
+      "slug": "arul-s-ip-api",
+      "emoji": "🗺",
+      "tagline": "Arul's IP API — Get your IP Address using this API",
+      "description": "Arul's IP API exposes get your IP Address using this API We verified a keyless GET endpoint returning JSON (Geocoding). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://aruljohn.com/api/",
+      "baseUrl": "https://api.aruljohn.com",
+      "sampleEndpoint": "/ip/json",
+      "latencyMs": 471,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "46.1.3.138"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.aruljohn.com/ip/json"
+    },
+    {
+      "name": "Autoscrape API",
+      "slug": "autoscrape-api",
+      "emoji": "🔧",
+      "tagline": "Autoscrape API — The Autoscrape API allows users to extract data from we…",
+      "description": "Autoscrape API exposes the Autoscrape API allows users to extract data from webpages by specifying the URL and desired data structure. It automates the process of web scraping, providing a straightforward and efficient interface for retrieving and processing information from various websites. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://autoscrape-api-seven.vercel.app",
+      "baseUrl": "https://autoscrape-api-seven.vercel.app",
+      "sampleEndpoint": "/v1/business-entity/search?query=Tesla&amp;states=NY,TX",
+      "latencyMs": 513,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 25,
+        "results": [
+          {
+            "entityName": "202 TESLA Y LLC",
+            "entityId": "7936221",
+            "state": "NY",
+            "entityType": "DOMESTIC LIMITED LIABILITY COMPANY",
+            "status": "Active",
+            "filingDate": "2026-06-08T00:00:00",
+            "jurisdiction": "New York, United States",
+            "registeredAgent": ""
+          },
+          {
+            "entityName": "210 TESLA LLC",
+            "entityId": "7178321",
+            "state": "NY",
+            "entityType": "DOMESTIC LIMITED LIABILITY COMPANY",
+            "status": "Active",
+            "filingDate": "2023-11-08T00:00:00",
+            "jurisdiction": "New York, United States",
+            "registeredAgent": ""
+          }
+        ],
+        "warnings": [
+          "states was omitted, so the API defaulted to NY. Pass states=NY,TX,... for deterministic multi-state searches; CA requires a keyed source and is not enabled on the no-key pilot."
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://autoscrape-api-seven.vercel.app/v1/business-entity/search?query=Tesla&amp;states=NY,TX"
+    },
+    {
+      "name": "BMI Calculator API",
+      "slug": "bmi-calculator-api",
+      "emoji": "🩺",
+      "tagline": "BMI Calculator API — This API calculates the Body Mass Index (BMI) based on …",
+      "description": "BMI Calculator API exposes this API calculates the Body Mass Index (BMI) based on a user's weight and height. It provides details such as the BMI value and the corresponding health category based on the calculated BMI. We verified a keyless GET endpoint returning JSON (Health). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://bmicalculatorapi.vercel.app/api/",
+      "baseUrl": "https://bmicalculatorapi.vercel.app",
+      "sampleEndpoint": "/api/bmi/87.9/1.75",
+      "latencyMs": 199,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Category": "Overweight",
+        "bmi": 28.702,
+        "height": 1.75,
+        "weight": 87.9
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://bmicalculatorapi.vercel.app/api/bmi/87.9/1.75"
+    },
+    {
+      "name": "Buddha Quotes API",
+      "slug": "buddha-quotes-api",
+      "emoji": "🔧",
+      "tagline": "Buddha Quotes API — This API provides access to a collection of inspiration…",
+      "description": "Buddha Quotes API exposes this API provides access to a collection of inspirational quotes from Buddhist figures including Buddha, Dogen, and Thich Nhat Hanh. Users can retrieve random quotes as well as specific quotes for today, making it a resource for daily wisdom and reflection. We verified a keyless GET endpoint returning JSON (Development). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://buddha-api.com/",
+      "baseUrl": "https://buddha-api.com",
+      "sampleEndpoint": "/api/random",
+      "latencyMs": 216,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "thich_nhat_hanh-7",
+        "text": "You must love in such a way that the person you love feels free.",
+        "byId": "thich_nhat_hanh",
+        "byName": "Thich Nhat Hanh",
+        "byImage": "https://buddha-api.com/img/buddhist/thich_nhat_hanh.png"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://buddha-api.com/api/random"
+    }
+  ],
+  "skipped": []
+}

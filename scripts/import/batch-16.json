@@ -1,0 +1,428 @@
+{
+  "batch": 16,
+  "verified": [
+    {
+      "name": "Federal Register",
+      "slug": "federal-register",
+      "emoji": "📜",
+      "tagline": "Every US federal rule, notice, and proclamation as JSON",
+      "description": "The US government's official daily journal, exposed as a clean REST API. Query proposed rules, final rules, notices, and presidential documents by date, agency, or keyword with no key. Responses are paginated JSON served straight from FederalRegister.gov.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.federalregister.gov/reader-aids/developer-resources/rest-api",
+      "baseUrl": "https://www.federalregister.gov/api/v1",
+      "sampleEndpoint": "/documents.json?per_page=1",
+      "latencyMs": 3049,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "description": "All Documents",
+        "count": 10000,
+        "total_pages": 50,
+        "results": [
+          {
+            "title": "Improvements to Rules on Recoupment of Benefit Overpayments",
+            "type": "Proposed Rule",
+            "document_number": "2026-13639"
+          }
+        ]
+      },
+      "freeTier": "Free — no key or signup required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "US Government work — public domain",
+      "commercialUse": "yes",
+      "notes": "US federal-government works are not subject to copyright."
+    },
+    {
+      "name": "Open Government, Australia",
+      "slug": "open-government-australia",
+      "emoji": "🇦🇺",
+      "tagline": "Australia's national open-data catalogue over CKAN",
+      "description": "The Australian Government's central open-data portal, served through a standard CKAN API. Search 130k+ datasets and their resources with keyword, facet, and paging parameters. Metadata returns as JSON, with licensing set per dataset.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.data.gov.au/",
+      "baseUrl": "https://data.gov.au/data/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1354,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 139812,
+          "results": [
+            {
+              "id": "00602301-ad90-4657-abd9-8025d9bf485a",
+              "name": "native-title-determination-applications-register",
+              "author": "National Native Title Tribunal",
+              "license_title": "Creative Commons Attribution 4.0 International"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (many CC BY 4.0)",
+      "commercialUse": "unclear",
+      "notes": "Standard CKAN action API; licence and reuse terms vary per dataset."
+    },
+    {
+      "name": "Open Government, ACT",
+      "slug": "open-government-act",
+      "emoji": "🏛️",
+      "tagline": "Canberra's open data via a Socrata catalog API",
+      "description": "The Australian Capital Territory's open-data platform, running on Socrata. Its discovery API lists datasets with their IDs, owners, and update times as JSON, and each dataset also carries its own SODA query endpoint. No key is needed to browse the catalog.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.data.act.gov.au/",
+      "baseUrl": "https://data.act.gov.au",
+      "sampleEndpoint": "/api/catalog/v1?domains=data.act.gov.au&search_context=data.act.gov.au&limit=1",
+      "latencyMs": 3788,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "resource": {
+              "name": "Traffic speed camera locations",
+              "id": "426s-vdu4",
+              "type": "dataset",
+              "attribution": "Access Canberra",
+              "updatedAt": "2026-06-11T03:52:58.000Z"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — app token optional (raises limits)",
+      "rateLimit": "Throttled; higher limits with a free Socrata app token",
+      "dataLicense": "Per-dataset",
+      "commercialUse": "unclear",
+      "notes": "Socrata catalog API; without a domain filter the default result set federates across other Socrata sites."
+    },
+    {
+      "name": "Open Government, Finland",
+      "slug": "open-government-finland",
+      "emoji": "🇫🇮",
+      "tagline": "Finland's open-data portal on CKAN",
+      "description": "Finland's national open-data service (Avoindata.fi), backed by CKAN. Search datasets from municipalities and agencies and read their metadata as JSON. Licensing is per dataset, with CC BY 4.0 common.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.avoindata.fi/en",
+      "baseUrl": "https://www.avoindata.fi/data/en/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1867,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 2528,
+          "results": [
+            {
+              "id": "b19b726f-8a77-4bc3-9a2c-c4e0eb379982",
+              "maintainer": "Teuvan kunta",
+              "license_title": "Creative Commons Attribution 4.0"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (many CC BY 4.0)",
+      "commercialUse": "unclear",
+      "notes": "help_show URLs reference avoindata.suomi.fi; the avoindata.fi host serves the same CKAN API."
+    },
+    {
+      "name": "Open Government, Germany",
+      "slug": "open-government-germany",
+      "emoji": "🇩🇪",
+      "tagline": "Germany's federal open-data catalogue over CKAN",
+      "description": "GovData, the German federation's cross-jurisdiction open-data portal, exposed as a CKAN API. Query 130k+ datasets from federal, state, and municipal publishers and get JSON metadata back. Data licenses vary per record.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.govdata.de/daten/-/details/govdata-metadatenkatalog",
+      "baseUrl": "https://www.govdata.de/ckan/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 559,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 131284,
+          "results": [
+            {
+              "id": "b6766a52-7fc8-4d96-8ecf-002ba04ccac1",
+              "name": "iggensbach-baufertigstellungen",
+              "num_resources": 4,
+              "organization": { "name": "open-data-bayern", "title": "open.bydata" }
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset",
+      "commercialUse": "unclear",
+      "notes": "Backend host is ckan.govdata.de; reachable via the www.govdata.de/ckan path."
+    },
+    {
+      "name": "Open Government, Italy",
+      "slug": "open-government-italy",
+      "emoji": "🇮🇹",
+      "tagline": "Italy's national open-data catalogue over CKAN",
+      "description": "Italy's central open-data portal (dati.gov.it) served through CKAN. Search 60k+ datasets and pull their metadata as JSON with the standard package_search action. Many datasets are published under CC BY 4.0.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.dati.gov.it/",
+      "baseUrl": "https://www.dati.gov.it/opendata/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 696,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 65377,
+          "results": [
+            {
+              "id": "83fd03b7-9a6f-43d0-b05f-7b50886d8924",
+              "name": "zone-turistiche-citta-metropolitana-di-firenze",
+              "license_title": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (many CC BY 4.0)",
+      "commercialUse": "unclear",
+      "notes": "No CORS header observed on the API response."
+    },
+    {
+      "name": "Open Government, Netherlands",
+      "slug": "open-government-netherlands",
+      "emoji": "🇳🇱",
+      "tagline": "Dutch government open data via CKAN",
+      "description": "The Netherlands' national open-data register, backed by CKAN. Search 20k+ datasets from Dutch public bodies and read DCAT-style metadata as JSON. Status and authority fields use official government URI vocabularies.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.overheid.nl/en/ondersteuning/data-publiceren/api",
+      "baseUrl": "https://data.overheid.nl/data/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 651,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 20778,
+          "results": [
+            {
+              "dataset_status": "http://data.overheid.nl/status/beschikbaar",
+              "contact_point_name": "Informatieproducten",
+              "author": "Informatieproducten",
+              "num_tags": 1
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset",
+      "commercialUse": "unclear",
+      "notes": "No CORS header observed; backend served via KOOP/DONL CKAN."
+    },
+    {
+      "name": "Open Government, Queensland Government",
+      "slug": "open-government-queensland-government",
+      "emoji": "🌏",
+      "tagline": "Queensland Government open data over CKAN",
+      "description": "The Queensland Government's open-data portal, running CKAN. Search 180k+ datasets and resources spanning state and council publishers, returned as JSON. Many datasets carry Creative Commons Attribution licensing.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.data.qld.gov.au/",
+      "baseUrl": "https://www.data.qld.gov.au/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 2217,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 188828,
+          "results": [
+            {
+              "id": "170171cc-16c1-4f80-a9cd-4d180f3dc26a",
+              "name": "telemetry-sensors-rainfall-and-stream-heights",
+              "isopen": true,
+              "license_title": "Creative Commons Attribution 4.0"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (many CC BY 4.0)",
+      "commercialUse": "unclear",
+      "notes": "Standard CKAN action API."
+    },
+    {
+      "name": "Open Government, South Australian Government",
+      "slug": "open-government-south-australian-government",
+      "emoji": "🗺️",
+      "tagline": "South Australia's open-data portal over CKAN",
+      "description": "The Government of South Australia's open-data catalog, served through CKAN. Query datasets and their resources with keyword and facet parameters and get JSON back. Records include jurisdiction and Creative Commons license fields.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.sa.gov.au/",
+      "baseUrl": "https://data.sa.gov.au/data/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 2780,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 1918,
+          "results": [
+            {
+              "id": "f6d85cea-2e15-4dc3-b5cd-c13f879e4361",
+              "name": "database-update-package-pdf",
+              "jurisdiction": "Government of South Australia",
+              "license_title": "Creative Commons Attribution"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (Creative Commons Attribution common)",
+      "commercialUse": "unclear",
+      "notes": "Standard CKAN action API."
+    },
+    {
+      "name": "Open Government, Switzerland",
+      "slug": "open-government-switzerland",
+      "emoji": "🇨🇭",
+      "tagline": "Switzerland's open-data catalogue over CKAN",
+      "description": "opendata.swiss, the Swiss Confederation's central open-data portal, exposed as a CKAN API. Search 17k+ multilingual datasets (DE/FR/IT/EN) and read their metadata as JSON. Contact points and periodicity use EU publication-office vocabularies.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html",
+      "baseUrl": "https://opendata.swiss/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 705,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 17205,
+          "results": [
+            {
+              "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+              "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+              "contact_points": [ { "name": "Service de géologie, sols et déchets" } ]
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset",
+      "commercialUse": "unclear",
+      "notes": "Multilingual fields; backend host is ckan.opendata.swiss."
+    },
+    {
+      "name": "Open Government, Slovenia",
+      "slug": "open-government-slovenia",
+      "emoji": "🇸🇮",
+      "tagline": "Slovenia's national open-data portal over CKAN",
+      "description": "Slovenia's central open-data catalog (OPSI), backed by CKAN. Search ~9k datasets from Slovenian public bodies and pull their metadata as JSON. Fields are largely in Slovenian, with per-dataset CC licensing.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://podatki.gov.si/",
+      "baseUrl": "https://podatki.gov.si/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1666,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 8966,
+          "results": [
+            {
+              "licence": "Priznanje avtorstva (CC BY 4.0)",
+              "publisher": "MINISTRSTVO ZA NARAVNE VIRE IN PROSTOR, GEODETSKA UPRAVA REPUBLIKE SLOVENIJE",
+              "private": false
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset (CC BY 4.0 common)",
+      "commercialUse": "unclear",
+      "notes": "Input listed CORS as 'no', but the API response returned access-control-allow-origin: *."
+    },
+    {
+      "name": "Open Government, Spain",
+      "slug": "open-government-spain",
+      "emoji": "🇪🇸",
+      "tagline": "Spain's open-data catalogue as a linked-data API",
+      "description": "datos.gob.es, Spain's national open-data initiative, exposes its catalog through a linked-data-api (apidata) that returns JSON. Page through datasets and read DCAT metadata with URI-typed fields. No key required.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://datos.gob.es/en",
+      "baseUrl": "https://datos.gob.es/apidata",
+      "sampleEndpoint": "/catalog/dataset?_pageSize=1&_page=0",
+      "latencyMs": 674,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "format": "linked-data-api",
+        "version": "0.2",
+        "result": {
+          "items": [
+            {
+              "_about": "https://datos.gob.es/catalogo/e05068001-mapas-estrategicos-de-ruido",
+              "accrualPeriodicity": "http://publications.europa.eu/resource/authority/frequency/OP_DATPRO"
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per-dataset",
+      "commercialUse": "unclear",
+      "notes": "Linked-data-api (ELDA); append .json or use Accept for JSON."
+    },
+    {
+      "name": "Open Government, Sweden",
+      "slug": "open-government-sweden",
+      "emoji": "📊",
+      "tagline": "Statistics Sweden's statistical database as JSON",
+      "description": "The PxWeb API behind Statistics Sweden (SCB), the data service documented by Sweden's national data portal. A keyless GET walks the statistical tree, returning subject areas, tables, and — via follow-up queries — the figures themselves as JSON. Ideal for official Swedish statistics.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.dataportal.se/en/dataservice/91_29789/api-for-the-statistical-database",
+      "baseUrl": "https://api.scb.se/OV0104/v1/doris/en",
+      "sampleEndpoint": "/ssd",
+      "latencyMs": 491,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "id": "AA", "type": "l", "text": "General statistics" },
+        { "id": "AM", "type": "l", "text": "Labour market" }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Rate-limited per SCB PxWeb API terms (call-rate and response-size caps)",
+      "dataLicense": "Free reuse with source attribution (SCB terms)",
+      "commercialUse": "yes",
+      "notes": "PxWeb API; drilling into a table then POSTing a query returns the actual values, but the tree browse used here is a plain keyless GET."
+    }
+  ],
+  "skipped": [
+    { "name": "Interpol Red Notices", "reason": "Public endpoint blocked by Akamai edge — HTTP 403 Access Denied for automated clients (2 attempts)." },
+    { "name": "Neotimo DGFiP Mirror", "reason": "Commercial directory web page (HTML), no documented public keyless JSON API." },
+    { "name": "Open Government, Austria", "reason": "www.data.gv.at is a JS SPA; CKAN/JSON API not exposed at standard paths (all return 404 HTML)." },
+    { "name": "Open Government, Belgium", "reason": "Drupal DCAT portal; no keyless JSON REST — CKAN paths 404 and /api is HTML docs." },
+    { "name": "Open Government, Cyprus", "reason": "DKAN/Drupal 11 portal; no keyless JSON endpoint found (CKAN and DKAN metastore paths return 404 HTML)." },
+    { "name": "Open Government, Czech Republic", "reason": "Custom gov portal (not CKAN); only GraphQL/SPARQL requiring query construction — no simple keyless JSON GET." },
+    { "name": "Open Government, Indonesia", "reason": "Satu Data Indonesia API requires a registered API key." },
+    { "name": "Open Government, Lithuania", "reason": "SPINTA JSON API is alive but no keyless HTTP 200 obtained within 3 attempts (model-not-found / timeouts)." },
+    { "name": "Open Government, Mexico", "reason": "INEGI indicators API requires a token; probed endpoint returned a maintenance HTML page." },
+    { "name": "Open Government, New Zealand", "reason": "catalogue.data.govt.nz sits behind an Imperva bot-wall (returns HTML interstitial, not JSON)." },
+    { "name": "Open Government, Slovakia", "reason": "data.gov.sk is a React SPA; catalog CKAN/JSON API not reachable at standard paths." }
+  ]
+}

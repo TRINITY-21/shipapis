@@ -1,0 +1,156 @@
+{
+  "batch": 30,
+  "verified": [
+    {
+      "name": "Wolne Lektury",
+      "slug": "wolne-lektury",
+      "emoji": "📚",
+      "tagline": "Polish free-library books, authors and epochs as JSON",
+      "description": "A keyless catalog API for WolneLektury.pl, Poland's free digital library of public-domain and open-licensed literature. Query books, authors, genres and literary epochs, each returning tidy JSON with cover art, colors and download links. The full book list is a multi-megabyte payload, so lean on the smaller collection endpoints for quick calls.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://wolnelektury.pl/api/",
+      "baseUrl": "https://wolnelektury.pl/api",
+      "sampleEndpoint": "/epochs/?format=json",
+      "latencyMs": 4843,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "url": "https://wolnelektury.pl/katalog/epoka/barok/",
+          "href": "https://wolnelektury.pl/api/epochs/barok/?format=json",
+          "name": "Barok",
+          "slug": "barok"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Works are public domain or on free/Creative Commons licenses (per WolneLektury); API terms not formally stated",
+      "commercialUse": "unclear",
+      "notes": "The unfiltered /books/?format=json response is ~5MB and can exceed short timeouts; smaller endpoints like /epochs/, /genres/ or a single book slug respond quickly."
+    },
+    {
+      "name": "Rig Veda",
+      "slug": "rig-veda",
+      "emoji": "🕉️",
+      "tagline": "Structured metadata for the hymns of the Rig Veda",
+      "description": "Turns the Rig Veda's corpus of Vedic hymns into queryable JSON: which gods are praised, which poets composed the verses, and which metrical patterns they follow. Endpoints slice the material by mandala, deity, poet, meter or category, with an expanded mode for hymn-level detail. It runs on a free Render instance, so the first request after an idle period may cold-start before later calls settle around one second.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://aninditabasu.github.io/indica/topics/api_rv.html",
+      "baseUrl": "https://indica-1hwj.onrender.com/rv/v3",
+      "sampleEndpoint": "/meters",
+      "latencyMs": 1005,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meters": {
+          "Abhisarini": 2,
+          "Anushtup": 281,
+          "Ashti": 6,
+          "Atidhriti": 1,
+          "Atyashti": 28,
+          "Brihati": 91
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Part of the 'indica' project; hosted on Render's free tier — expect a ~30-50s cold start on the first hit after idle, then ~1s responses. CORS echoes the request Origin."
+    },
+    {
+      "name": "Bank of Russia",
+      "slug": "bank-of-russia",
+      "emoji": "🏦",
+      "tagline": "Central Bank of Russia daily FX rates, served as JSON",
+      "description": "A community JSON mirror of the Bank of Russia's official daily exchange-rate fixing, which the central bank itself publishes only as XML/SOAP. A single GET returns every listed currency's ruble value alongside the previous day's rate, making day-over-day deltas trivial. No key, CORS-open, and refreshed each business day around 11:30 Moscow time.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://www.cbr-xml-daily.ru/",
+      "baseUrl": "https://www.cbr-xml-daily.ru",
+      "sampleEndpoint": "/daily_json.js",
+      "latencyMs": 880,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Date": "2026-07-04T11:30:00+03:00",
+        "PreviousDate": "2026-07-03T11:30:00+03:00",
+        "Timestamp": "2026-07-05T19:00:00+03:00",
+        "Valute": {
+          "USD": {
+            "CharCode": "USD",
+            "Nominal": 1,
+            "Name": "Доллар США",
+            "Value": 77.2264,
+            "Previous": 77.9293
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (underlying rates are official Bank of Russia public data)",
+      "commercialUse": "unclear",
+      "notes": "This is the cbr-xml-daily.ru JSON mirror, not an official cbr.ru endpoint; the official Central Bank of Russia service only exposes XML. Despite the .js extension the body is JSON."
+    },
+    {
+      "name": "Excuser",
+      "slug": "excuser",
+      "emoji": "🙈",
+      "tagline": "Random ready-made excuses, tagged by category, as JSON",
+      "description": "A tiny novelty API that hands back a random excuse whenever you need one, sorted into categories like funny, office and family. Each call returns a small JSON array with an id, the excuse text and its category. The original Heroku deployment retired, so it now lives on a Vercel host.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://excuser-three.vercel.app/",
+      "baseUrl": "https://excuser-three.vercel.app",
+      "sampleEndpoint": "/v1/excuse",
+      "latencyMs": 1011,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 502,
+          "excuse": "My car radio was broken, and I couldn't drive if I didn't have music.",
+          "category": "funny"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The listed excuser.herokuapp.com docs host is dead (Heroku free dynos retired); the working API is now served from excuser-three.vercel.app."
+    }
+  ],
+  "skipped": [
+    { "name": "Walltime", "reason": "walltime.info DNS no longer resolves; the S3 market-info feed returns 403 AccessDenied" },
+    { "name": "Domainsdb.info", "reason": "Now returns 401 — anonymous access disabled, an API key is required" },
+    { "name": "Tenders in Hungary", "reason": "tenders.guru refuses TCP connection on 443 (server down)" },
+    { "name": "File.io", "reason": "File-sharing service; only POST upload endpoints, no keyless JSON GET sample" },
+    { "name": "The Null Pointer", "reason": "File/URL host via multipart POST; no keyless JSON GET endpoint" },
+    { "name": "1inch", "reason": "Requires an API key — api.1inch.dev returns 401 Unauthorized" },
+    { "name": "Bitcambio", "reason": "Cloudflare blocks the request (error 1014); no keyless JSON reachable" },
+    { "name": "BitcoinCharts", "reason": "markets.json connection times out repeatedly (>8s, no response)" },
+    { "name": "btcnode.uk", "reason": "Backend node down — btcnode.uk/api/info returns 502; free endpoints unreachable" },
+    { "name": "CoinCap", "reason": "api.coincap.io DNS no longer resolves (v2 API retired; replacement needs a key)" },
+    { "name": "CoinDesk", "reason": "api.coindesk.com DNS gone; the legacy BPI endpoint was discontinued" },
+    { "name": "CryptingUp", "reason": "API host returns an HTML page instead of JSON (endpoint dead)" },
+    { "name": "CryptoCompare", "reason": "min-api.cryptocompare.com now returns 401 — API key required" },
+    { "name": "Cryptonator", "reason": "api.cryptonator.com DNS no longer resolves (service discontinued)" },
+    { "name": "Localbitcoins", "reason": "Service permanently shut down (2023); API no longer exists" },
+    { "name": "MercadoBitcoin", "reason": "Cloudflare returns 403 bot challenge on both the .net ticker and the v4 API" },
+    { "name": "Messari", "reason": "Endpoint returns 404 and the API now requires a key; no keyless JSON GET" },
+    { "name": "Solana JSON RPC", "reason": "JSON-RPC over POST only; a plain GET returns an HTML info page" },
+    { "name": "ZMOK", "reason": "Ethereum JSON-RPC over POST only; no keyless GET returning JSON" },
+    { "name": "Czech National Bank", "reason": "Rates are published only as XML/pipe-delimited text; no JSON endpoint" },
+    { "name": "FreeForexAPI", "reason": "Request times out with 0 bytes received (host unresponsive)" },
+    { "name": "API Grátis", "reason": "Vercel 'Security Checkpoint' returns a 429 HTML challenge; no keyless JSON" },
+    { "name": "Bored", "reason": "www.boredapi.com DNS no longer resolves (original host down)" },
+    { "name": "BrewPage", "reason": "Publishing is POST-based; no documented keyless public JSON GET sample endpoint" },
+    { "name": "Changelogs.md", "reason": "Domain now parked (unrelated page); JSON endpoints return 404" },
+    { "name": "host-t.com", "reason": "Returns plain-text/HTML DNS output (redirects to dnsviahttp.com), not JSON" },
+    { "name": "HTTP2.Pro", "reason": "The /api/v1 endpoint serves an AMP HTML page, not the documented JSON" },
+    { "name": "IFTTT", "reason": "Connect API requires a service key / user OAuth authorization" },
+    { "name": "JSON 2 JSONP", "reason": "Returns JSONP (JavaScript wrapper), not parseable JSON" },
+    { "name": "MicroENV", "reason": "TLS certificate expired on microenv.com; secure connection refused" },
+    { "name": "QR code", "reason": "create-qr-code returns a PNG image; the read-qr-code JSON only ever returns a server-side download error, so no representative response" },
+    { "name": "Qrcode Monkey", "reason": "Custom QR generation is POST with a config body; no keyless JSON GET" },
+    { "name": "Indonesia Dictionary", "reason": "Heroku host is dead (free dynos retired); returns 404" },
+    { "name": "DropMail", "reason": "GraphQL API requires POST queries; no keyless JSON GET endpoint" }
+  ]
+}

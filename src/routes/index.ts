@@ -1,0 +1,5 @@
+export { registerApiV1 } from './api-v1'
+export { registerBadge } from './badge'
+export { registerMcp } from './mcp'
+export { registerOgCard } from './og-card'
+export { registerPages } from './pages'

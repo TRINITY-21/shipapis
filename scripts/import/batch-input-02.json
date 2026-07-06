@@ -1,0 +1,246 @@
+{
+  "batch": 2,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Bible-api",
+      "docsUrl": "https://bible-api.com/",
+      "description": "Free Bible API with multiple languages",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "KDP Intelligence",
+      "docsUrl": "https://kdp-intelligence-api.vercel.app/docs",
+      "description": "KDP niche demand scores, competition analysis and revenue estimates",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Penguin Publishing",
+      "docsUrl": "http://www.penguinrandomhouse.biz/webservices/rest/",
+      "description": "Books, book covers and related data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "PoetryDB",
+      "docsUrl": "https://github.com/thundercomb/poetrydb#readme",
+      "description": "Enables you to get instant data from our vast poetry collection",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Quran",
+      "docsUrl": "https://quran.api-docs.io/",
+      "description": "RESTful Quran API with multiple languages",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Quran Cloud",
+      "docsUrl": "https://alquran.cloud/api",
+      "description": "A RESTful Quran API to retrieve an Ayah, Surah, Juz or the entire Holy Quran",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Quran-api",
+      "docsUrl": "https://github.com/fawazahmed0/quran-api#readme",
+      "description": "Free Quran API Service with 90+ different languages and 400+ translations",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Runyankole Bible",
+      "docsUrl": "https://runyankole-bible-api.vercel.app",
+      "description": "Free REST API for the Runyankore-Rukiga Bible — 66 books, 31106 verses",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Thirukkural",
+      "docsUrl": "https://api-thirukkural.web.app/",
+      "description": "1330 Thirukkural poems and explanation in Tamil and English",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Urantia Papers",
+      "docsUrl": "https://urantia.dev",
+      "description": "Full-text + semantic search across the Urantia Papers, with audio narration, entities, translations",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Wizard World",
+      "docsUrl": "https://wizard-world-api.herokuapp.com/swagger/index.html",
+      "description": "Get information from the Harry Potter universe",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pick an Agency",
+      "docsUrl": "https://www.pickanagency.com/developers",
+      "description": "Search 47,000+ marketing agencies by service, location and rating",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Business",
+      "docsCheck": 200
+    },
+    {
+      "name": "caldays",
+      "docsUrl": "https://caldays.com/api",
+      "description": "Public holidays for 195+ countries",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Namedays Calendar",
+      "docsUrl": "https://nameday.abalin.net",
+      "description": "Provides namedays for multiple countries",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Non-Working Days",
+      "docsUrl": "https://isdayoff.ru",
+      "description": "Simple REST API for checking working, non-working or short days for Russia, CIS, USA and other",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "The Calendar",
+      "docsUrl": "https://the-calendar.net/api/",
+      "description": "Public holidays for US states and 30 countries plus sports and finance calendars as static JSON",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pantry",
+      "docsUrl": "https://getpantry.cloud/",
+      "description": "Free JSON storage for small projects",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "Alpha (Mossland)",
+      "docsUrl": "https://alpha.moss.land/developers",
+      "description": "Korean crypto channel stance + RAG Q&A + canonical entity/topic/event store",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Block Lottos",
+      "docsUrl": "https://blocklottos.com/openapi.json",
+      "description": "On-chain lottery, draw history, jackpot and advertising endpoints",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CoinGecko",
+      "docsUrl": "http://www.coingecko.com/api",
+      "description": "Cryptocurrency Price, Market, and Developer/Social Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coinpaprika",
+      "docsUrl": "https://api.coinpaprika.com",
+      "description": "Cryptocurrencies prices, volume and more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Currency-api",
+      "docsUrl": "https://github.com/fawazahmed0/currency-api#readme",
+      "description": "Free Currency Exchange Rates API with 150+ Currencies & No Rate Limits",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "Frankfurter",
+      "docsUrl": "https://www.frankfurter.app/docs",
+      "description": "Exchange rates, currency conversion and time series",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "National Bank of Poland",
+      "docsUrl": "http://api.nbp.pl/en.html",
+      "description": "A collection of currency exchange rates (data in XML and JSON)",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    }
+  ]
+}

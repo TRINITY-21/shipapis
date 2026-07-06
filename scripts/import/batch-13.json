@@ -1,0 +1,530 @@
+{
+  "batch": 13,
+  "verified": [
+    {
+      "name": "Danish data service Energi",
+      "slug": "danish-data-service-energi",
+      "emoji": "⚡",
+      "tagline": "Live Danish grid prices and emissions, straight from Energinet",
+      "description": "Energinet publishes Denmark's electricity market and grid data as named open datasets you can query directly. Pull day-ahead spot prices, CO2 emissions, consumption and more by dataset name with a simple row limit. No key required, JSON out, CORS enabled.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://www.energidataservice.dk/",
+      "baseUrl": "https://api.energidataservice.dk",
+      "sampleEndpoint": "/dataset/Elspotprices?limit=1",
+      "latencyMs": 525,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 1,
+        "dataset": "Elspotprices",
+        "limit": 1,
+        "records": [
+          { "HourUTC": "2025-09-30T21:00:00", "PriceArea": "DE", "SpotPriceDKK": 690.789978, "SpotPriceEUR": 92.540001 }
+        ]
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The CO2Emis dataset returned an empty body for a default query; Elspotprices reliably returns rows."
+    },
+    {
+      "name": "Luchtmeetnet",
+      "slug": "luchtmeetnet",
+      "emoji": "🌬️",
+      "tagline": "Dutch air-quality readings and forecasts from RIVM stations",
+      "description": "The Netherlands' national air-quality network exposes its measuring stations and pollutant readings over an open API. Page through stations, then fetch measured and forecast values for components like NO2, PM10 and ozone. Keyless JSON with wide-open CORS.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://api-docs.luchtmeetnet.nl/",
+      "baseUrl": "https://api.luchtmeetnet.nl/open_api",
+      "sampleEndpoint": "/stations?page=1",
+      "latencyMs": 507,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "pagination": { "current_page": 1, "next_page": 2, "last_page": 5 },
+        "data": [
+          { "number": "NL49565", "location": "Oude Meer-Aalsmeerderdijk" }
+        ]
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PM2.5 Open Data Portal",
+      "slug": "pm2-5-open-data-portal",
+      "emoji": "😷",
+      "tagline": "Crowd-sourced low-cost PM2.5 sensor readings, refreshed live",
+      "description": "LASS aggregates thousands of community AirBox sensors (heavily in Taiwan) into one open feed. A single GET returns the latest snapshot from every device with timestamps, coordinates and particulate readings. No key needed—use the plain .json feed, since the default download is gzipped.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://pm25.lass-net.org/#apis",
+      "baseUrl": "https://pm25.lass-net.org",
+      "sampleEndpoint": "/data/last-all-airbox.json",
+      "latencyMs": 2506,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "source": "last-all-airbox by IIS-NRL",
+        "num_of_records": 487,
+        "feeds": [
+          { "SiteName": "市立長安國小(2018)", "area": "taipei", "s_d0": 6.0, "s_h0": 64.0, "s_t0": 35.61, "timestamp": "2026-07-05T10:25:45Z", "device_id": "74DA38F7C648" }
+        ]
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The advertised .json.gz endpoint serves gzipped octet-stream; the .json variant returns plain JSON. s_d0 is PM2.5, s_h0 humidity, s_t0 temperature."
+    },
+    {
+      "name": "Solematica",
+      "slug": "solematica",
+      "emoji": "☀️",
+      "tagline": "Compare Italian rooftop-solar installer offers in one call",
+      "description": "Solematica benchmarks photovoltaic packages from major Italian energy operators—price per kW, panels, inverters, batteries and warranties. The public /providers endpoint returns the full comparison as JSON with no key, provided you credit Solematica. Deeper data like energy prices and satellite roof analysis needs paid credits.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://www.solematica.it/sviluppatori",
+      "baseUrl": "https://api.solematica.it/api/v1",
+      "sampleEndpoint": "/providers",
+      "latencyMs": 472,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "providers": [
+          { "slug": "iren", "nome": "Iren", "prezzo_3kw": "da 4.990 €", "pannelli": "Trinasolar / AIKO (fonti terze)", "inverter": "ZCS Azzurro (Zucchetti)", "garanzia": "25 anni pannelli", "sede": "Reggio Emilia" }
+        ]
+      },
+      "freeTier": "Free public /providers endpoint; other endpoints need paid credits",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Docs require visible attribution to Solematica when displaying the data."
+    },
+    {
+      "name": "UK Carbon Intensity",
+      "slug": "uk-carbon-intensity",
+      "emoji": "🌍",
+      "tagline": "How clean is Britain's grid right now? Ask National Grid",
+      "description": "The official Carbon Intensity API for Great Britain reports current and forecast grams of CO2 per kWh, plus a low/moderate/high index. National Grid ESO runs it, it needs no key, and it returns clean JSON with CORS enabled. Documented under a CC BY 4.0 licence.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0",
+      "baseUrl": "https://api.carbonintensity.org.uk",
+      "sampleEndpoint": "/intensity",
+      "latencyMs": 555,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          { "from": "2026-07-05T09:30Z", "to": "2026-07-05T10:00Z", "intensity": { "forecast": 70, "actual": 84, "index": "low" } }
+        ]
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0 (per API docs)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "Website Carbon",
+      "slug": "website-carbon",
+      "emoji": "🌱",
+      "tagline": "Estimate a web page's CO2 footprint from its byte weight",
+      "description": "Website Carbon models the greenhouse-gas emissions of loading a web page. The keyless /data endpoint takes a transfer size and a green-hosting flag and returns grams of CO2, an A–F rating and a 'cleaner than' percentile. The URL-scanning /site endpoint now requires an API token.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://api.websitecarbon.com/",
+      "baseUrl": "https://api.websitecarbon.com",
+      "sampleEndpoint": "/data?bytes=1000000&green=0",
+      "latencyMs": 385,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "bytes": 1000000,
+        "green": false,
+        "gco2e": 0.1042066141963005,
+        "rating": "B",
+        "cleanerThan": 0.8
+      },
+      "freeTier": "Free keyless byte-based /data endpoint",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The /site?url= endpoint returns 401 Unauthorised without a token; only the byte-based /data endpoint is keyless."
+    },
+    {
+      "name": "Binlist",
+      "slug": "binlist",
+      "emoji": "💳",
+      "tagline": "Look up card scheme, type and issuer from a BIN/IIN",
+      "description": "Binlist maps the leading digits of a payment card to its network, type, issuing bank and country. Append the BIN as a path segment with an 'Accept-Version: 3' header and you get tidy JSON back. Free and unauthenticated, though it's rate-limited and fronted by a firewall that rejects requests carrying a browser Origin header.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://binlist.net/",
+      "baseUrl": "https://lookup.binlist.net",
+      "sampleEndpoint": "/45717360",
+      "latencyMs": 403,
+      "corsObserved": null,
+      "httpStatus": 200,
+      "sampleJson": {
+        "scheme": "visa",
+        "type": "debit",
+        "brand": "Visa Classic/Dankort",
+        "country": { "alpha2": "DK", "name": "Denmark", "currency": "DKK" },
+        "bank": { "name": "Jyske Bank A/S" }
+      },
+      "freeTier": "Free — no key (requires 'Accept-Version: 3' header)",
+      "rateLimit": "Rate limited for unauthenticated use; exact limit unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Cloudflare WAF returns 403 when an Origin header is sent, so CORS could not be cleanly observed; the 200 JSON was obtained without an Origin header."
+    },
+    {
+      "name": "Fed Treasury",
+      "slug": "fed-treasury",
+      "emoji": "🏛️",
+      "tagline": "Official U.S. Treasury fiscal data, from debt to FX rates",
+      "description": "The Treasury's Fiscal Data service publishes federal finances—exchange rates, the national debt, interest rates and more—as a filterable JSON API. Select fields, page and sort with query parameters; no key required. It's open U.S. Government data.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://fiscaldata.treasury.gov/api-documentation/",
+      "baseUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service",
+      "sampleEndpoint": "/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate,record_date&page[number]=1&page[size]=1",
+      "latencyMs": 1391,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          { "country_currency_desc": "Afghanistan-Afghani", "exchange_rate": "77.625", "record_date": "2019-12-31" }
+        ],
+        "meta": { "count": 1, "total-count": 18807 }
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open U.S. Government data (public domain)",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "Goldprice.dev",
+      "slug": "goldprice-dev",
+      "emoji": "🥇",
+      "tagline": "Cross-validated gold, silver & copper spot prices in 13 currencies",
+      "description": "Goldprice.dev serves precious-metal spot and futures quotes reconciled across sources, in more than a dozen currencies. The keyless /v1/prices endpoint returns core spot rows; a free account unlocks history, statistics and higher limits. Anonymous calls carry a usage-notice header.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://goldprice.dev/docs",
+      "baseUrl": "https://api.goldprice.dev/v1",
+      "sampleEndpoint": "/prices",
+      "latencyMs": 2146,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "symbols": [
+          { "symbol": "XAU", "quote_currency": "AUD", "unit": "troy_ounce", "contract_type": "spot", "price": "6015.4711128", "is_stale": false, "computed_at": "2026-07-05T10:29:02.163353+00:00" }
+        ]
+      },
+      "freeTier": "Free keyless tier (limited fields); free account lifts caps",
+      "rateLimit": "Anonymous usage caps apply; exact limit unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Razorpay IFSC",
+      "slug": "razorpay-ifsc",
+      "emoji": "🏦",
+      "tagline": "Resolve any Indian bank IFSC code to branch details",
+      "description": "Razorpay's open IFSC service turns an Indian bank branch code into its bank, branch, address, city and supported rails like NEFT, RTGS, IMPS and UPI. Just append the code to the base URL for keyless JSON. CORS is wide open.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://razorpay.com/docs/",
+      "baseUrl": "https://ifsc.razorpay.com",
+      "sampleEndpoint": "/HDFC0000001",
+      "latencyMs": 693,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "BANK": "HDFC Bank",
+        "IFSC": "HDFC0000001",
+        "BRANCH": "TULSIANI CHMBRS - NARIMAN PT",
+        "CITY": "GREATER MUMBAI",
+        "STATE": "MAHARASHTRA",
+        "NEFT": true,
+        "UPI": true,
+        "SWIFT": "HDFCINBB"
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Coffee",
+      "slug": "coffee",
+      "emoji": "☕",
+      "tagline": "A random photo of coffee, every single request",
+      "description": "Part of alexflipnote's playful image APIs, this one does exactly one thing: hand you a random coffee picture. A GET to /random.json returns a JSON object with the image URL. No key, no fuss.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://coffee.alexflipnote.dev/",
+      "baseUrl": "https://coffee.alexflipnote.dev",
+      "sampleEndpoint": "/random.json",
+      "latencyMs": 1068,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "file": "https://coffee.alexflipnote.dev/PsDwEp1-9EY_coffee.jpg"
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Fruityvice",
+      "slug": "fruityvice",
+      "emoji": "🍌",
+      "tagline": "Nutrition and taxonomy facts for common fruits",
+      "description": "Fruityvice answers questions about fruit—family, genus, order and per-serving nutrition like calories, sugar and protein. Query a single fruit by name or pull the whole list. Keyless JSON, no signup.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://www.fruityvice.com",
+      "baseUrl": "https://www.fruityvice.com/api",
+      "sampleEndpoint": "/fruit/banana",
+      "latencyMs": 635,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Banana",
+        "id": 1,
+        "family": "Musaceae",
+        "genus": "Musa",
+        "nutritions": { "calories": 96, "sugar": 17.2, "protein": 1.0 }
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Food Facts",
+      "slug": "open-food-facts",
+      "emoji": "🥫",
+      "tagline": "Open barcode database of the world's packaged foods",
+      "description": "Open Food Facts is a crowd-sourced, ODbL-licensed database of packaged food products from around the globe. Look up any barcode to get product name, brands, Nutri-Score and more as JSON, optionally trimmed to just the fields you request. Free, keyless and commercially usable with attribution.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://world.openfoodfacts.org/data",
+      "baseUrl": "https://world.openfoodfacts.org",
+      "sampleEndpoint": "/api/v2/product/737628064502.json?fields=product_name,brands,nutriscore_grade",
+      "latencyMs": 538,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "0737628064502",
+        "status": 1,
+        "status_verbose": "product found",
+        "product": { "brands": "Simply Asia, Thai Kitchen", "nutriscore_grade": "d", "product_name": "Thai peanut noodle kit" }
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Rate limited per endpoint (see docs)",
+      "dataLicense": "Open Database License (ODbL); images CC BY-SA",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "The Report of the Week",
+      "slug": "the-report-of-the-week",
+      "emoji": "🍔",
+      "tagline": "Every food & drink review from TheReportOfTheWeek, as JSON",
+      "description": "A community-built API cataloguing YouTuber TheReportOfTheWeek's food, drink and 'Running On Empty' reviews. Filter /api/v1/reports by category, rating or date to get products, manufacturers, video codes and scores. Keyless JSON.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://github.com/andyklimczak/TheReportOfTheWeek-API",
+      "baseUrl": "https://www.thereportoftheweekapi.com",
+      "sampleEndpoint": "/api/v1/reports/?min_rating=9&max_rating=10",
+      "latencyMs": 966,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "reports": [
+          { "product": "All-American Smasher Meal", "manufacturer": "Sonic", "category": "Running On Empty", "videoCode": "5JGfGqH5Oyg", "dateReleased": "2026-01-23", "rating": 9.1, "id": "fcb96f7b-505e-47c6-b3fa-b031ea962caf" }
+        ]
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Live routes live under /api/v1/reports/ (OpenAPI at /docs/json); the bare /reviews path 404s."
+    },
+    {
+      "name": "WhiskyHunter",
+      "slug": "whiskyhunter",
+      "emoji": "🥃",
+      "tagline": "Historical stats from online whisky auctions",
+      "description": "WhiskyHunter aggregates results from the world's online whisky auction houses. The auctions_data feed returns daily per-house statistics—mean winning bid, trading volume and lot counts—as a JSON array. No key required.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://whiskyhunter.net/api/",
+      "baseUrl": "https://whiskyhunter.net/api",
+      "sampleEndpoint": "/auctions_data/",
+      "latencyMs": 1941,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "dt": "2024-07-01", "winning_bid_mean": 185.76, "auction_trading_volume": 471278.8, "auction_lots_count": 2537, "auction_name": "Australian Whisky Auctions", "auction_slug": "australian-whisky-auctions" }
+      ],
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Call of Duty Mobile",
+      "slug": "call-of-duty-mobile",
+      "emoji": "🎮",
+      "tagline": "Unofficial CODM player profile lookups by name or UID",
+      "description": "A reverse-engineered API for Call of Duty: Mobile that fetches public player profiles—level, rank, rating and country—by nickname or UID. A GET to /user/{name} returns JSON with no key. Unofficial and community-maintained, so expect occasional gaps.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://callofdutymobile.vercel.app/",
+      "baseUrl": "https://callofdutymobile.vercel.app",
+      "sampleEndpoint": "/user/nickname",
+      "latencyMs": 2731,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "nickname": "nickname",
+        "countryCode": "CA",
+        "shortId": "DXZ86B",
+        "level": { "current": 47 },
+        "rank": { "class": 3, "multiplayerRank": "Rookie III", "rating": 401 }
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Unofficial, reverse-engineered. Root URL 302-redirects to the GitHub repo (Harry260/codm-api); the /user read endpoint is keyless. A separate /claim endpoint performs account actions and was not probed."
+    },
+    {
+      "name": "Chess.com",
+      "slug": "chess-com",
+      "emoji": "♟️",
+      "tagline": "Read-only access to Chess.com players, games and clubs",
+      "description": "Chess.com's Published-Data API exposes public profiles, game archives, clubs, tournaments and leaderboards. Fetch a player by username to get their profile as JSON—no key, CORS enabled. The API prefers serial rather than parallel requests.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.chess.com/news/view/published-data-api",
+      "baseUrl": "https://api.chess.com/pub",
+      "sampleEndpoint": "/player/erik",
+      "latencyMs": 600,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "player_id": 41,
+        "username": "erik",
+        "name": "Erik",
+        "followers": 9944,
+        "country": "https://api.chess.com/pub/country/US",
+        "status": "staff",
+        "league": "Silver"
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Serial requests expected; no fixed cap published",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Digimon Information",
+      "slug": "digimon-information",
+      "emoji": "🦖",
+      "tagline": "Look up Digimon creatures by name or level",
+      "description": "A tiny fan API listing Digimon with their name, evolution level and artwork. Query by name for a single creature or browse the full roster. Keyless JSON with CORS on.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://digimon-api.vercel.app/",
+      "baseUrl": "https://digimon-api.vercel.app/api",
+      "sampleEndpoint": "/digimon/name/agumon",
+      "latencyMs": 1094,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "name": "Agumon", "img": "https://digimon.shadowsmith.com/img/agumon.jpg", "level": "Rookie" }
+      ],
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Digimon TCG",
+      "slug": "digimon-tcg",
+      "emoji": "🃏",
+      "tagline": "Search Digimon Card Game cards from digimoncard.io",
+      "description": "A public search API for the Digimon trading card game. Query by card name to get types, colours, DP, effects, rarity and the sets a card appears in, all as JSON. No key required.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://documenter.getpostman.com/view/14059948/TzecB4fH",
+      "baseUrl": "https://digimoncard.io/api-public",
+      "sampleEndpoint": "/search.php?n=Agumon",
+      "latencyMs": 1106,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "name": "Agumon", "type": "Digimon", "id": "P-009", "color": "Red", "dp": 2000, "attribute": "Vaccine", "stage": "Rookie", "rarity": "p" }
+      ],
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "GDBrowser",
+      "slug": "gdbrowser",
+      "emoji": "🟩",
+      "tagline": "Query Geometry Dash levels and players without the game",
+      "description": "GDBrowser wraps the Geometry Dash servers in a friendly REST API. Ask for a level by ID to get its name, author, difficulty, downloads, song and more as clean JSON—no key, CORS enabled. It's a community proxy, so it depends on the game's servers staying up.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://gdbrowser.com/api",
+      "baseUrl": "https://gdbrowser.com/api",
+      "sampleEndpoint": "/level/128",
+      "latencyMs": 693,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "1st level",
+        "id": "128",
+        "author": "real storm",
+        "difficulty": "Hard",
+        "downloads": 4035096,
+        "likes": 298855,
+        "songName": "Base After Base",
+        "songAuthor": "DJVI"
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Hyrule Compendium",
+      "slug": "hyrule-compendium",
+      "emoji": "🗡️",
+      "tagline": "Data on every item, monster and creature in Zelda: BOTW",
+      "description": "The Hyrule Compendium API serves entries from The Legend of Zelda: Breath of the Wild—monsters, materials, equipment and more—with descriptions, locations, drops and images. Fetch an entry by name for JSON. Fan-made and keyless; it has moved off Heroku to api.hyrule-compendium.com.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/gadhagod/Hyrule-Compendium-API",
+      "baseUrl": "https://api.hyrule-compendium.com",
+      "sampleEndpoint": "/v3/compendium/entry/white-maned_lynel",
+      "latencyMs": 1056,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "name": "white-maned lynel",
+          "category": "monsters",
+          "id": 123,
+          "common_locations": ["Hyrule Field", "Hebra Mountains"],
+          "drops": ["lynel horn", "lynel hoof", "lynel guts"],
+          "dlc": false
+        },
+        "status": 200
+      },
+      "freeTier": "Free — no API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The listed botw-compendium.herokuapp.com host is dead (Heroku 'No such app'); the API now lives at api.hyrule-compendium.com."
+    }
+  ],
+  "skipped": [
+    { "name": "WallstreetBets", "reason": "Endpoint gone — dashboard.nbshare.io now redirects to Tradestie and all reddit/wallstreetbets routes (with or without a date param) return 404." },
+    { "name": "Comic Vine", "reason": "Requires an API key despite the 'auth: none' listing — keyless calls return 401 'Invalid API Key'." },
+    { "name": "GW2Spidy", "reason": "Endpoint dead — www.gw2spidy.com connection times out (8s, tried twice on two endpoints)." }
+  ]
+}

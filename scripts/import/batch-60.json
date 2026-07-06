@@ -1,0 +1,1035 @@
+{
+  "batch": 60,
+  "verified": [
+    {
+      "name": "Danbooru Anime",
+      "slug": "danbooru-anime",
+      "emoji": "🔑",
+      "tagline": "Danbooru Anime — free tier with API key",
+      "description": "Danbooru Anime exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://danbooru.donmai.us/wiki_pages/help:api",
+      "baseUrl": "https://danbooru.donmai.us",
+      "sampleEndpoint": "/profile.json?apikey=demo",
+      "latencyMs": 1889,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": null,
+        "created_at": "2026-07-05T15:01:16.451-04:00",
+        "name": "Anonymous",
+        "inviter_id": null,
+        "level": 0,
+        "post_upload_count": 0,
+        "post_update_count": 0,
+        "note_update_count": 0
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://danbooru.donmai.us/profile.json?apikey=demo"
+    },
+    {
+      "name": "Amanah Sunnah",
+      "slug": "amanah-sunnah",
+      "emoji": "🔑",
+      "tagline": "Amanah Sunnah — free tier with API key",
+      "description": "Amanah Sunnah exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://sunnah.amanahagent.cloud/developers",
+      "baseUrl": "https://sunnah.amanahagent.cloud",
+      "sampleEndpoint": "/api/v1/lecture/webhook",
+      "latencyMs": 7345,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "endpoint": "POST /api/v1/lecture/webhook",
+        "description": "Submit an Islamic lecture for review and AI processing",
+        "authentication": "X-API-Key header",
+        "body": {
+          "youtube_url": "(required) YouTube video URL",
+          "title": "(optional) Lecture title",
+          "speaker": "(optional) Speaker/ustadz name",
+          "topic": "(optional) Aqidah|Tauhid|Fiqh|Akhlak|Tafsir|Hadits|Shalat|Manhaj|Tarbiyah|Muamalah|Ibadah|Dzikir|Adab",
+          "mosque_name": "(optional) Mosque name - will link to existing approved mosque",
+          "mosque_city": "(optional) City name"
+        },
+        "example": {
+          "youtube_url": "https://www.youtube.com/watch?v=xxxxx",
+          "title": "Riyadhus Shalihin - Bab Ikhlas",
+          "speaker": "Ustadz Fulan",
+          "topic": "Aqidah",
+          "mosque_name": "Masjid MAIS"
+        },
+        "response": {
+          "id": "uuid",
+          "status": "pending",
+          "message": "..."
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sunnah.amanahagent.cloud/api/v1/lecture/webhook"
+    },
+    {
+      "name": "BriefTape",
+      "slug": "brieftape",
+      "emoji": "🔑",
+      "tagline": "BriefTape — free tier with API key",
+      "description": "BriefTape exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://brieftape.com",
+      "baseUrl": "https://api.brieftape.com",
+      "sampleEndpoint": "/v1/news?category=Earnings&amp;limit=10",
+      "latencyMs": 920,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "count": 20,
+        "total": 6143,
+        "offset": 0,
+        "has_more": true,
+        "next_offset": 20,
+        "results": [
+          {
+            "id": "487e41b0-0f9e-4956-98ae-1d2d0fbfb5d3",
+            "accession_number": "0001193125-26-294653",
+            "headline": "WesBanco Inc to Host 2026 Second Quarter Earnings Call",
+            "summary": "WesBanco Inc announced it will host a Q2 2026 earnings call on July 22. The results are slated for release after market close on July 21.",
+            "category": "Earnings",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/203596/000119312526294653/0001193125-26-294653-index.htm",
+            "company_name": "WESBANCO INC",
+            "cik_number": "203596"
+          },
+          {
+            "id": "c8bcdd97-4bbd-4819-a154-2c7bc6f644dd",
+            "accession_number": "0001424182-26-000050",
+            "headline": "Broadstone Net Lease Announces Q2 2026 Earnings Release",
+            "summary": "Broadstone Net Lease announced it will release its Q2 2026 earnings after market close on July 29 and host an earnings call on the following day. Investors should watch the call for operational updates regarding the REIT's industrial property portfolio across the United States.",
+            "category": "Earnings",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1424182/000142418226000050/0001424182-26-000050-index.htm",
+            "company_name": "Broadstone Net Lease, Inc.",
+            "cik_number": "1424182"
+          }
+        ],
+        "disclaimer": "BriefTape provides AI-summarized public SEC filings for informational purposes only. Content does not constitute investment advice. Always verify against source filings at sec.gov. BriefTape is not a registered investment adviser, broker-dealer, or financial advisor."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.brieftape.com/v1/news?category=Earnings&amp;limit=10"
+    },
+    {
+      "name": "CongressInvests",
+      "slug": "congressinvests",
+      "emoji": "🔑",
+      "tagline": "CongressInvests — free tier with API key",
+      "description": "CongressInvests exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://congressinvests.com",
+      "baseUrl": "https://congressinfor-production.up.railway.app",
+      "sampleEndpoint": "/trades/recent?limit=25&amp;days=30",
+      "latencyMs": 1815,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 5384,
+        "offset": 0,
+        "limit": 25,
+        "has_more": true,
+        "trades": [
+          {
+            "member": "Sheldon Whitehouse",
+            "chamber": "Senate",
+            "trade_type": "sell",
+            "amount": "$100,001 - $250,000",
+            "tx_date": "2026-05-08",
+            "disclosed": "2026-06-02",
+            "asset": "NVIDIA Corporation - Common Stock",
+            "ticker": "NVDA"
+          },
+          {
+            "member": "Sheldon Whitehouse",
+            "chamber": "Senate",
+            "trade_type": "sell",
+            "amount": "$100,001 - $250,000",
+            "tx_date": "2026-05-08",
+            "disclosed": "2026-06-02",
+            "asset": "NVIDIA Corporation - Common Stock",
+            "ticker": "NVDA"
+          }
+        ],
+        "data_current": true,
+        "cache_loading": false,
+        "last_updated": "2026-06-01T04:37:04Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://congressinfor-production.up.railway.app/trades/recent?limit=25&amp;days=30"
+    },
+    {
+      "name": "TheMealDB",
+      "slug": "themealdb",
+      "emoji": "🍽",
+      "tagline": "Random meals with ingredients",
+      "description": "Crowd-sourced recipes with free test key `1` in the URL path.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://www.themealdb.com/api.php",
+      "baseUrl": "https://www.themealdb.com",
+      "sampleEndpoint": "/random.php",
+      "latencyMs": 191,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meals": [
+          {
+            "idMeal": "53182",
+            "strMeal": "Spanish seafood rice",
+            "strMealAlternate": null,
+            "strCategory": "Seafood",
+            "strArea": "Spanish",
+            "strCountry": "Spain",
+            "strInstructions": "step 1\r\nHeat the oil in a large saucepan and soften the onion for 6-7 mins. Add the pepper and garlic, cook for 2 mins more, then stir in the paella rice and cook for 1 min, stirring to coat.\r\n\r\nstep 2\r\nPour in the stock, add the saffron and bring to the boil. Cook, uncovered, at a gentle bubble, for 20 mins, stirring occasionally until the rice is tender.\r\n\r\nstep 3\r\nStir in the seafood and lemon juice and cook for 2 mins or until piping hot and completely cooked through. Serve in warm bowls scattered with the parsley.",
+            "strMealThumb": "https://www.themealdb.com/images/media/meals/c6ghxm1763335584.jpg"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://www.themealdb.com/api/json/v1/1/random.php"
+    },
+    {
+      "name": "TheSportsDB",
+      "slug": "thesportsdb",
+      "emoji": "🏟",
+      "tagline": "Teams, players and badges across sports",
+      "description": "Crowd-sourced sports database with key-in-URL JSON. Public test key `3` is embedded in their examples.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://www.thesportsdb.com/api.php",
+      "baseUrl": "https://www.thesportsdb.com",
+      "sampleEndpoint": "/searchteams.php?t=Arsenal",
+      "latencyMs": 146,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "teams": [
+          {
+            "idTeam": "133604",
+            "idESPN": "359",
+            "idAPIfootball": "42",
+            "intLoved": "10",
+            "strTeam": "Arsenal",
+            "strTeamAlternate": "Arsenal Football Club, AFC, Arsenal FC",
+            "strTeamShort": "ARS",
+            "intFormedYear": "1892"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Arsenal"
+    },
+    {
+      "name": "GeoScore",
+      "slug": "geoscore",
+      "emoji": "🔑",
+      "tagline": "GeoScore — free tier with API key",
+      "description": "GeoScore exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://geoscoreapi.com",
+      "baseUrl": "https://api.geoscoreapi.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 440,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "version": "1.0.0",
+        "database": "connected"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.geoscoreapi.com/health"
+    },
+    {
+      "name": "ddownload",
+      "slug": "ddownload",
+      "emoji": "🔑",
+      "tagline": "ddownload — free tier with API key",
+      "description": "ddownload exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsUrl": "https://ddownload.com/api",
+      "baseUrl": "https://api-v2.ddownload.com",
+      "sampleEndpoint": "/api/account/info?key=",
+      "latencyMs": 505,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "msg": "Invalid key",
+        "status": 400,
+        "server_time": "2026-07-05 21:08:30"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api-v2.ddownload.com/api/account/info?key="
+    },
+    {
+      "name": "CoinDCX",
+      "slug": "coindcx",
+      "emoji": "🔑",
+      "tagline": "CoinDCX — free tier with API key",
+      "description": "CoinDCX exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.coindcx.com/",
+      "baseUrl": "https://api.coindcx.com",
+      "sampleEndpoint": "/exchange/ticker",
+      "latencyMs": 459,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "market": "0GUSDT",
+          "change_24_hour": "-2.358",
+          "high": "0.21400000",
+          "low": "0.20200000",
+          "volume": "695160.36573000",
+          "last_price": "0.20700000",
+          "bid": "0.20700000",
+          "ask": "0.20800000"
+        },
+        {
+          "market": "1000CHEEMSUSDT",
+          "change_24_hour": "1.613",
+          "high": "0.00051200",
+          "low": "0.00048100",
+          "volume": "437408.36203700",
+          "last_price": "0.00050400",
+          "bid": "0.00050400",
+          "ask": "0.00050500"
+        }
+      ],
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.coindcx.com/exchange/ticker"
+    },
+    {
+      "name": "Finage",
+      "slug": "finage",
+      "emoji": "🔑",
+      "tagline": "Finage — free tier with API key",
+      "description": "Finage exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://finage.co.uk",
+      "baseUrl": "https://api.finage.co.uk",
+      "sampleEndpoint": "/op/v1/blog/posts/1?postlimit=3",
+      "latencyMs": 694,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "posts": [
+          {
+            "id": "6998706134692820322246ec",
+            "title": "How Breaking News Propagates Across Asset Classes",
+            "content": null,
+            "tags": "cross-asset news api, breaking news propagation markets, cross-asset news impact, news transmission across asset classes, macro news market reaction, equities fx commodities reaction, bond market news impact, crypto reaction to macro news, news-driven volatility spikes, event-driven trading signals, real-time financial news api, news sentiment analysis api, cross-asset correlation shifts, contagion effects markets, spillover effects finance, risk-on risk-off news reaction, safe haven flows after news, usd reaction to macro headlines, treasury yields news impact, gold reaction to geopolitical news, oil price reaction to supply shocks, earnings news cross-asset impact, central bank news cross-asset, economic data release market impact, high-frequency news trading, news latency arbitrage, tracking news propagation programmatically, measuring cross-asset reaction speed, real-time multi-asset data api, historical news impact data api, market sentiment indicators api, correlation analysis api, volatility data api, what is cross-asset news transmission, how breaking news affects multiple markets, which assets react first to macro news, how to trade cross-asset news signals",
+            "categoryid": "6277c8e40e71a5113738e6c2",
+            "category": [
+              {
+                "id": "6277c8e40e71a5113738e6c2",
+                "name": "Financial Statements",
+                "color": "#582785",
+                "textColor": "#9040dc"
+              }
+            ],
+            "thumbnail": "https://finage.s3.eu-west-2.amazonaws.com/blog/How_Breaking_News_Propagates_Across_Asset_Classes_horizontal.png",
+            "create_date": "2026-02-22T14:32:01.103Z"
+          },
+          {
+            "id": "69986ff134690daa48e42932",
+            "title": "Scaling Market Data Infrastructure for Peak Volatility",
+            "content": null,
+            "tags": "market data scalability api, scaling market data infrastructure, high volatility market data, peak load market data systems, low latency market data api, high throughput data pipelines, real-time market data streaming, websocket scalability finance, horizontal scaling market data, vertical scaling data servers, autoscaling cloud infrastructure finance, distributed market data architecture, microservices for market data, load balancing market feeds, message queue market data, kafka market data pipeline, event-driven architecture finance, fault tolerance market data systems, redundancy and failover feeds, data replication strategies, rate limiting api design, backpressure handling streaming data, throughput vs latency tradeoff, performance optimization market data, capacity planning for volatility spikes, exchange burst traffic handling, tick data surge management, order book update scaling, snapshot vs incremental scaling, stress testing market data systems, chaos engineering finance systems, monitoring api performance metrics, observability market data infrastructure, real-time alerting for feed overload, scaling websocket connections finance, handling millions of messages per second, market data normalization at scale, what is market data scalability, how to scale during extreme volatility, best practices for resilient market data infrastructure",
+            "categoryid": "6277c8e40e71a5113738e6bb",
+            "category": [
+              {
+                "id": "6277c8e40e71a5113738e6bb",
+                "name": "Technical Guides",
+                "color": "#2e2e2e",
+                "textColor": "#9a244f"
+              }
+            ],
+            "thumbnail": "https://finage.s3.eu-west-2.amazonaws.com/blog/Scaling_Market_Data_Infrastructure_for_Peak_Volatility_horizontal.png",
+            "create_date": "2026-02-21T14:30:09.963Z"
+          }
+        ],
+        "totalPages": 165
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.finage.co.uk/op/v1/blog/posts/1?postlimit=3"
+    },
+    {
+      "name": "IP2Location",
+      "slug": "ip2location",
+      "emoji": "🔑",
+      "tagline": "IP2Location — free tier with API key",
+      "description": "IP2Location exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.ip2location.com/web-service/ip2location",
+      "baseUrl": "https://api.ip2location.com",
+      "sampleEndpoint": "/v2/?key=demo",
+      "latencyMs": 114,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "response": "OK",
+        "country_code": "US",
+        "credits_consumed": 1
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.ip2location.com/v2/?key=demo"
+    },
+    {
+      "name": "openFDA",
+      "slug": "openfda",
+      "emoji": "💊",
+      "tagline": "FDA drug and device open data",
+      "description": "Drug labels, adverse events and recalls. Modest rates without a key; register to raise limits.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://open.fda.gov",
+      "baseUrl": "https://api.fda.gov",
+      "sampleEndpoint": "/drug/label.json?limit=1",
+      "latencyMs": 2537,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meta": {
+          "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+          "terms": "https://open.fda.gov/terms/",
+          "license": "https://open.fda.gov/license/",
+          "last_updated": "2026-07-03",
+          "results": {
+            "skip": 0,
+            "limit": 1,
+            "total": 260158
+          }
+        },
+        "results": [
+          {
+            "effective_time": "20210902",
+            "inactive_ingredient": [
+              "INACTIVE INGREDIENTS Sucrose"
+            ],
+            "purpose": [
+              "USES USES: Temporary Relief - Acne, Boils* * Claims based on traditional homeopathic practice, not accepted medical evidence. Not FDA evaluated."
+            ],
+            "keep_out_of_reach_of_children": [
+              "Keep this and all medication out of reach of children"
+            ],
+            "warnings": [
+              "WARNINGS This product is to be used for self-limiting conditions If symptoms do not improve in 4 days, or worsen, discontinue use and seek assistance of health professional. As with any drug, if you are pregnant, or nursing a baby, seek professional advice before taking this product. Keep this and all medication out of reach of children Do not use if capseal is broken or missing. Close the cap tightly after use."
+            ],
+            "questions": [
+              "QUESTIONS OR COMMENTS www.Rxhomeo.com | 1.888.2796642 | info@rxhomeo.com Rxhomeo, Inc 3200 Commander Dr, Ste 100-W1, Carrollton, TX 75006 USA"
+            ],
+            "spl_product_data_elements": [
+              "SILICEA SILICEA SUCROSE SILICON DIOXIDE SILICON DIOXIDE"
+            ],
+            "openfda": {
+              "brand_name": [
+                "SILICEA"
+              ],
+              "generic_name": [
+                "SILICEA"
+              ],
+              "manufacturer_name": [
+                "Rxhomeo Private Limited d.b.a. Rxhomeo, Inc"
+              ],
+              "product_ndc": [
+                "15631-0404"
+              ],
+              "product_type": [
+                "HUMAN OTC DRUG"
+              ],
+              "route": [
+                "ORAL"
+              ],
+              "substance_name": [
+                "SILICON DIOXIDE"
+              ],
+              "spl_id": [
+                "ca7bbcc8-2354-375c-e053-2995a90a72a0"
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://api.fda.gov/drug/label.json?limit=1"
+    },
+    {
+      "name": "Telegraph",
+      "slug": "telegraph",
+      "emoji": "🔑",
+      "tagline": "Telegraph — free tier with API key",
+      "description": "Telegraph exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://telegra.ph/api",
+      "baseUrl": "https://api.telegra.ph",
+      "sampleEndpoint": "/createAccount?short_name=Sandbox&amp;author_name=Anonymous",
+      "latencyMs": 4386,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "result": {
+          "short_name": "Sandbox",
+          "author_name": "",
+          "author_url": "",
+          "access_token": "4620177005e882ac6f8c2d54ed298d66046f9172ef0832796358ab8b2852",
+          "auth_url": "https://edit.telegra.ph/auth/EQGWbvIsERLotr8XYk50eLu5N2vqcORQEvKO1rgDg1"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.telegra.ph/createAccount?short_name=Sandbox&amp;author_name=Anonymous"
+    },
+    {
+      "name": "Football-Data.org",
+      "slug": "football-data-org",
+      "emoji": "⚽",
+      "tagline": "European football competitions and tables",
+      "description": "Major league competitions, matches and squads. Free registration token required; competitions list is the lightest smoke test.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://www.football-data.org",
+      "baseUrl": "https://api.football-data.org",
+      "sampleEndpoint": "/competitions",
+      "latencyMs": 7593,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 187,
+        "filters": {},
+        "competitions": [
+          {
+            "id": 2176,
+            "area": {
+              "id": 2001,
+              "name": "Africa",
+              "code": "AFR",
+              "flag": null
+            },
+            "name": "Africa Cup",
+            "code": "AC",
+            "type": "CUP",
+            "emblem": "https://crests.football-data.org/ac.png",
+            "plan": "TIER_FOUR",
+            "currentSeason": {
+              "id": 2385,
+              "startDate": "2025-12-21",
+              "endDate": "2026-01-18",
+              "currentMatchday": 3,
+              "winner": null
+            }
+          },
+          {
+            "id": 2166,
+            "area": {
+              "id": 2001,
+              "name": "Africa",
+              "code": "AFR",
+              "flag": null
+            },
+            "name": "AFC Champions League",
+            "code": "ACL",
+            "type": "CUP",
+            "emblem": null,
+            "plan": "TIER_FOUR",
+            "currentSeason": {
+              "id": 1559,
+              "startDate": "2022-04-06",
+              "endDate": "2023-05-05",
+              "currentMatchday": null,
+              "winner": null
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "apiKey probe https://api.football-data.org/v4/competitions"
+    },
+    {
+      "name": "Navitia",
+      "slug": "navitia",
+      "emoji": "🔑",
+      "tagline": "Navitia — free tier with API key",
+      "description": "Navitia exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://doc.navitia.io/",
+      "baseUrl": "https://api.navitia.io",
+      "sampleEndpoint": "/v1/?api_key=DEMO_KEY",
+      "latencyMs": 402,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "href": "https://api.navitia.io/v1/coverage/",
+            "templated": false,
+            "rel": "coverage",
+            "type": "coverage",
+            "title": "Coverage of navitia"
+          },
+          {
+            "href": "https://api.navitia.io/v1/coord/0.0%3B0.0/",
+            "templated": true,
+            "rel": "coord",
+            "type": "coord",
+            "title": "Inverted geocoding for a given coordinate"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.navitia.io/v1/?api_key=DEMO_KEY"
+    },
+    {
+      "name": "Road511",
+      "slug": "road511",
+      "emoji": "🔑",
+      "tagline": "Road511 — free tier with API key",
+      "description": "Road511 exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://road511.com/docs.html",
+      "baseUrl": "https://api.road511.com",
+      "sampleEndpoint": "/api/v1/events?jurisdiction=WA&amp;limit=5",
+      "latencyMs": 2386,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "WA-703983",
+            "source_id": "703983",
+            "source": "WA",
+            "jurisdiction": "WA",
+            "type": "incident",
+            "sub_type": "fire",
+            "severity": "major",
+            "status": "active"
+          },
+          {
+            "id": "WA-703986",
+            "source_id": "703986",
+            "source": "WA",
+            "jurisdiction": "WA",
+            "type": "incident",
+            "sub_type": "accident",
+            "severity": "major",
+            "status": "active"
+          }
+        ],
+        "total": 137,
+        "limit": 100,
+        "offset": 0,
+        "has_more": true
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.road511.com/api/v1/events?jurisdiction=WA&amp;limit=5"
+    },
+    {
+      "name": "Sabre for Developers",
+      "slug": "sabre-for-developers",
+      "emoji": "🔑",
+      "tagline": "Sabre for Developers — free tier with API key",
+      "description": "Sabre for Developers exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://developer.sabre.com/guides/travel-agency/quickstart/getting-started-in-travel",
+      "baseUrl": "https://developer.sabre.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 322,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "api": "DevStudio API",
+        "context": "Consumer API"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.sabre.com/api/v1"
+    },
+    {
+      "name": "Transport for Bordeaux, France",
+      "slug": "transport-for-bordeaux-france",
+      "emoji": "🔑",
+      "tagline": "Transport for Bordeaux, France — free tier with API key",
+      "description": "Transport for Bordeaux, France exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://opendata.bordeaux-metropole.fr/explore/",
+      "baseUrl": "https://opendata.bordeaux-metropole.fr",
+      "sampleEndpoint": "/api/v2",
+      "latencyMs": 158,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://opendata.bordeaux-metropole.fr/api/v2"
+          },
+          {
+            "rel": "catalog",
+            "href": "https://opendata.bordeaux-metropole.fr/api/v2/catalog"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://opendata.bordeaux-metropole.fr/api/v2"
+    },
+    {
+      "name": "Weatherstack",
+      "slug": "weatherstack",
+      "emoji": "🔑",
+      "tagline": "Weatherstack — free tier with API key",
+      "description": "Weatherstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://weatherstack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 719,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://weatherstack.com/healthz"
+    },
+    {
+      "name": "AQICN",
+      "slug": "aqicn",
+      "emoji": "🔑",
+      "tagline": "AQICN — free tier with API key",
+      "description": "AQICN exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://aqicn.org/api/",
+      "baseUrl": "http://api.waqi.info",
+      "sampleEndpoint": "/feed/shanghai/?token=demo",
+      "latencyMs": 3599,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "data": {
+          "aqi": 55,
+          "idx": 1437,
+          "attributions": [
+            {
+              "url": "https://sthj.sh.gov.cn/",
+              "name": "Shanghai Environment Monitoring Center(上海市环境监测中心)"
+            },
+            {
+              "url": "http://106.37.208.233:20035/emcpublish/",
+              "name": "China National Urban air quality real-time publishing platform (全国城市空气质量实时发布平台)"
+            }
+          ],
+          "city": {
+            "geo": [
+              31.2047372,
+              121.4489017
+            ],
+            "name": "Shanghai (上海)",
+            "url": "https://aqicn.org/city/shanghai",
+            "location": ""
+          },
+          "dominentpol": "pm25",
+          "iaqi": {
+            "co": {
+              "v": 4.6
+            },
+            "h": {
+              "v": 85.5
+            },
+            "no2": {
+              "v": 9.2
+            },
+            "o3": {
+              "v": 16.3
+            },
+            "p": {
+              "v": 1004
+            },
+            "pm10": {
+              "v": 20
+            },
+            "pm25": {
+              "v": 55
+            },
+            "so2": {
+              "v": 4.1
+            }
+          },
+          "time": {
+            "s": "2026-07-06 02:00:00",
+            "tz": "+08:00",
+            "v": 1783303200,
+            "iso": "2026-07-06T02:00:00+08:00"
+          },
+          "forecast": {
+            "daily": {
+              "o3": [
+                {
+                  "avg": 1,
+                  "day": "2025-04-05",
+                  "max": 1,
+                  "min": 1
+                }
+              ],
+              "pm10": [
+                {
+                  "avg": 67,
+                  "day": "2026-07-05",
+                  "max": 123,
+                  "min": 42
+                },
+                {
+                  "avg": 94,
+                  "day": "2026-07-06",
+                  "max": 123,
+                  "min": 42
+                }
+              ],
+              "pm25": [
+                {
+                  "avg": 168,
+                  "day": "2026-07-05",
+                  "max": 252,
+                  "min": 127
+                },
+                {
+                  "avg": 205,
+                  "day": "2026-07-06",
+                  "max": 252,
+                  "min": 138
+                }
+              ],
+              "uvi": [
+                {
+                  "avg": 1,
+                  "day": "2026-07-05",
+                  "max": 7,
+                  "min": 0
+                },
+                {
+                  "avg": 2,
+                  "day": "2026-07-06",
+                  "max": 8,
+                  "min": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe http://api.waqi.info/feed/shanghai/?token=demo"
+    },
+    {
+      "name": "Userstack",
+      "slug": "userstack",
+      "emoji": "🔑",
+      "tagline": "Userstack — free tier with API key",
+      "description": "Userstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://userstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://api.userstack.com",
+      "sampleEndpoint": "/detect",
+      "latencyMs": 1258,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "code": 101,
+          "type": "missing_access_key",
+          "info": "You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.userstack.com/detect?"
+    },
+    {
+      "name": "OneDrive",
+      "slug": "onedrive",
+      "emoji": "🔑",
+      "tagline": "OneDrive — free tier with API key",
+      "description": "OneDrive exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsUrl": "https://developer.microsoft.com/onedrive",
+      "baseUrl": "https://developer.microsoft.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 605,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "alive",
+        "packageVersion": "0.10.0",
+        "buildVersion": "0.4.03468.7969-2e44d5f5",
+        "sourceVersion": "2e44d5f52a4e5024740bddefd92fb18a708745b7",
+        "timestamp": "2026-07-05T19:27:00.509Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.microsoft.com/health"
+    },
+    {
+      "name": "Bitbucket",
+      "slug": "bitbucket",
+      "emoji": "🔑",
+      "tagline": "Bitbucket — free tier with API key",
+      "description": "Bitbucket exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://developer.atlassian.com/bitbucket/api/2/reference/",
+      "baseUrl": "https://developer.atlassian.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 598,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {},
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.atlassian.com/health"
+    },
+    {
+      "name": "Eve Online",
+      "slug": "eve-online",
+      "emoji": "🔑",
+      "tagline": "Eve Online — free tier with API key",
+      "description": "Eve Online exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://esi.evetech.net/ui",
+      "baseUrl": "https://esi.evetech.net",
+      "sampleEndpoint": "/status",
+      "latencyMs": 118,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "players": 31910,
+        "server_version": "3421648",
+        "start_time": "2026-07-05T11:01:57Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://esi.evetech.net/status"
+    },
+    {
+      "name": "Bandcamp",
+      "slug": "bandcamp",
+      "emoji": "🔑",
+      "tagline": "Bandcamp — free tier with API key",
+      "description": "Bandcamp exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://bandcamp.com/developer",
+      "baseUrl": "https://bandcamp.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 276,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": true,
+        "error_message": "bad version"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://bandcamp.com/api"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,2526 @@
+{
+  "batch": 83,
+  "verified": [
+    {
+      "name": "BlockCypher API",
+      "slug": "blockcypher-api",
+      "emoji": "🔧",
+      "tagline": "BlockCypher API — free-tier JSON endpoint",
+      "description": "BlockCypher API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.blockcypher.com/",
+      "baseUrl": "https://api.blockcypher.com",
+      "sampleEndpoint": "/v1/btc/main",
+      "latencyMs": 585,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "BTC.main",
+        "height": 956834,
+        "hash": "0000000000000000000143d38894bdab32c3ac9c6db588221c988893762c76b3",
+        "time": "2026-07-05T20:31:46.97158385Z",
+        "latest_url": "https://api.blockcypher.com/v1/btc/main/blocks/0000000000000000000143d38894bdab32c3ac9c6db588221c988893762c76b3",
+        "previous_hash": "0000000000000000000135e0a3a385999be9dd361505aedbcdd8bc528ea03cd6",
+        "previous_url": "https://api.blockcypher.com/v1/btc/main/blocks/0000000000000000000135e0a3a385999be9dd361505aedbcdd8bc528ea03cd6",
+        "peer_count": 324
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "bitpay API",
+      "slug": "bitpay-api",
+      "emoji": "💰",
+      "tagline": "bitpay API — free-tier JSON endpoint",
+      "description": "bitpay API offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://bitpay.com/developers",
+      "baseUrl": "https://bitpay.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 212,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": "Invalid token"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Acoustid API",
+      "slug": "acoustid-api",
+      "emoji": "🔧",
+      "tagline": "Acoustid API — free-tier JSON endpoint",
+      "description": "Acoustid API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://acoustid.org/webservice",
+      "baseUrl": "https://api.acoustid.org",
+      "sampleEndpoint": "/v2/lookup?client=xOaPpA6F8Ao&duration=641&fingerprint=AQABz0qUkZK4oOfhL-CPc4e5C_wW2H2QH9uDL4cvoT8UNQ-eHtsE8cceeFJx-LiiHT-aPzhxoc-Opj_eI5d2hOFyMJRzfDk-QSsu7fBxqZDMHcfxPfDIoPWxv9C1o3yg44d_3Df2GJaUQeeR-cb2HfaPNsdxHj2PJnpwPMN3aPcEMzd-_MeB_Ej4D_CLP8ghHjkJv_jh_UDuQ8xnILwunPg6hF2R8HgzvLhxHVYP_ziJX0eKPnIE1UePMByDJyg7wz_6yELsB8n4oDmDa0Gv40hf6D3CE3_wH6HFaxCPUD9-hNeF5MfWEP3SCGym4-SxnXiGs0mRjEXD6fgl4LmKWrSChzzC33ge9PB3otyJMk-IVC6R8MTNwD9qKQ_CC8kPv4THzEGZS8GPI3x0iGVUxC1hRSizC5VzoamYDi-uR7iKPhGSI82PkiWeB_eHijvsaIWfBCWH5AjjCfVxZ1TQ3CvCTclGnEMfHbnZFA8pjD6KXwd__Cn-Y8e_I9cq6CR-4S9KLXqQcsxxoWh3eMxiHI6TIzyPv0M43YHz4yte-Cv-4D16Hv9F9C9SPUdyGtZRHV-OHEeeGD--BKcjVLOK_NCDXMfx44dzHEiOZ0Z44Rf6DH5R3uiPj4d_PKolJNyRJzyu4_CTD2WOvzjKH9GPb4cUP1Av9EuQd8fGCFee4JlRHi18xQh96NLxkCgfWFKOH6WGeoe4I3za4c5hTscTPEZTES1x8kE-9MQPjT8a8gh5fPgQZtqCFj9MDvp6fDx6NCd07bjx7MLR9AhtnFnQ70GjOcV0opmm4zpY3SOa7HiwdTtyHa6NC4e-HN-OfC5-OP_gLe2QDxfUCz_0w9l65HiPAz9-IaGOUA7-4MZ5CWFOlIfe4yUa6AiZGxf6w0fFxsjTOdC6Itbh4mGD63iPH9-RFy909XAMj7mC5_BvlDyO6kGTZKJxHUd4NDwuZUffw_5RMsde5CWkJAgXnDReNEaP6DTOQ65yaD88HoeX8fge-DSeHo9Qa8cTHc80I-_RoHxx_UHeBxrJw62Q34Kd7MEfpCcu6BLeB1ePw6OO4sOF_sHhmB504WWDZiEu8sKPpkcfCT9xfej0o0lr4T5yNJeOvjmu40w-TDmqHXmYgfFhFy_M7tD1o0cO_B2ms2j-ACEEQgQgAIwzTgAGmBIKIImNQAABwgQATAlhDGCCEIGIIM4BaBgwQBogEBIOESEIA8ARI5xAhxEFmAGAMCKAURKQQpQzRAAkCCBQEAKkQYIYIQQxCixCDADCABMAE0gpJIgyxhEDiCKCCIGAEIgJIQByAhFgGACCACMRQEyBAoxQiHiCBCFOECQFAIgAABR2QAgFjCDMA0AUMIoAIMChQghChASGEGeYEAIAIhgBSErnJPPEGWYAMgw05AhiiGHiBBBGGSCQcQgwRYJwhDDhgCSCSSEIQYwILoyAjAIigBFEUQK8gAYAQ5BCAAjkjCCAEEMZAUQAZQCjCCkpCgFMCCiIcVIAZZgilAQAiSHQECOcQAQIc4QClAHAjDDGkAGAMUoBgyhihgEChFCAAWEIEYwIJYwViAAlHCBIGEIEAEIQAoBwwgwiEBAEEEOoEwBY4wRwxAhBgAcKAESIQAwwIowRFhoBhAE",
+      "latencyMs": 287,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "id": "9ff43b6a-4f16-427c-93c2-92307ca505e0",
+            "score": 1
+          },
+          {
+            "id": "be6fa248-97d1-4a18-845b-7c6a070b764c",
+            "score": 1
+          }
+        ],
+        "status": "ok"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Diffbot API",
+      "slug": "diffbot-api",
+      "emoji": "🤖",
+      "tagline": "Diffbot API — free-tier JSON endpoint",
+      "description": "Diffbot API offers a free API tier. We verified JSON on a sample GET (Machine Learning). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://www.diffbot.com/dev/docs/",
+      "baseUrl": "https://www.diffbot.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 2314,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "errorCode": 500,
+        "error": "Missing API."
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "MEXC Global API",
+      "slug": "mexc-global-api",
+      "emoji": "💰",
+      "tagline": "MEXC Global API — free-tier JSON endpoint",
+      "description": "MEXC Global API offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.mexc.com/mexc-api",
+      "baseUrl": "https://api.mexc.com",
+      "sampleEndpoint": "/api/v3/defaultSymbols",
+      "latencyMs": 1840,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          "GEVONUSDT",
+          "SNTUSDT"
+        ],
+        "code": 0,
+        "msg": "success",
+        "timestamp": 1783283937177
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Stock Sentiment API",
+      "slug": "stock-sentiment-api",
+      "emoji": "🤖",
+      "tagline": "Stock Sentiment API — free-tier JSON endpoint",
+      "description": "Stock Sentiment API offers a free API tier. We verified JSON on a sample GET (Machine Learning). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://api.adanos.org/docs",
+      "baseUrl": "https://api.adanos.org",
+      "sampleEndpoint": "/",
+      "latencyMs": 87,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Adanos Market Sentiment API",
+        "version": "1.46.0",
+        "platforms": {
+          "sentiment": "/sentiment/v1",
+          "news-stocks": "/news/stocks/v1",
+          "reddit-stocks": "/reddit/stocks/v1",
+          "reddit-crypto": "/reddit/crypto/v1",
+          "x-stocks": "/x/stocks/v1",
+          "polymarket-stocks": "/polymarket/stocks/v1"
+        },
+        "docs": {
+          "api_reference": "/docs",
+          "openapi_json": "/openapi.json",
+          "openapi_yaml": "/openapi.yaml",
+          "changelog": "/changelog"
+        },
+        "health": {
+          "news-stocks": "/news/stocks/v1/health",
+          "reddit-stocks": "/reddit/stocks/v1/health",
+          "reddit-crypto": "/reddit/crypto/v1/health",
+          "x-stocks": "/x/stocks/v1/health",
+          "polymarket-stocks": "/polymarket/stocks/v1/health"
+        },
+        "for_agents": {
+          "llms_txt": "https://api.adanos.org/llms.txt",
+          "openapi_json": "https://api.adanos.org/openapi.json"
+        },
+        "downloads": {
+          "releases": "https://github.com/adanos-software/adanos-cli/releases",
+          "pypi": "https://pypi.org/project/adanos-cli/"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "MEXC Global",
+      "slug": "mexc-global",
+      "emoji": "🪙",
+      "tagline": "MEXC Global — free-tier JSON endpoint",
+      "description": "MEXC Global offers a free API tier. We verified JSON on a sample GET (Cryptocurrency). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.mexc.com/mexc-api",
+      "baseUrl": "https://api.mexc.com",
+      "sampleEndpoint": "/api/v3/defaultSymbols",
+      "latencyMs": 375,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          "GEVONUSDT",
+          "SNTUSDT"
+        ],
+        "code": 0,
+        "msg": "success",
+        "timestamp": 1783283937177
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Abstract API",
+      "slug": "abstract-api",
+      "emoji": "🔧",
+      "tagline": "Abstract API — free-tier JSON endpoint",
+      "description": "Abstract API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.abstractapi.com/",
+      "baseUrl": "https://ip-intelligence.abstractapi.com",
+      "sampleEndpoint": "/api/free/",
+      "latencyMs": 2111,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "free-ok"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Stock Sentiment",
+      "slug": "stock-sentiment",
+      "emoji": "💰",
+      "tagline": "Stock Sentiment — free-tier JSON endpoint",
+      "description": "Stock Sentiment offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://api.adanos.org/docs",
+      "baseUrl": "https://api.adanos.org",
+      "sampleEndpoint": "/",
+      "latencyMs": 291,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Adanos Market Sentiment API",
+        "version": "1.46.0",
+        "platforms": {
+          "sentiment": "/sentiment/v1",
+          "news-stocks": "/news/stocks/v1",
+          "reddit-stocks": "/reddit/stocks/v1",
+          "reddit-crypto": "/reddit/crypto/v1",
+          "x-stocks": "/x/stocks/v1",
+          "polymarket-stocks": "/polymarket/stocks/v1"
+        },
+        "docs": {
+          "api_reference": "/docs",
+          "openapi_json": "/openapi.json",
+          "openapi_yaml": "/openapi.yaml",
+          "changelog": "/changelog"
+        },
+        "health": {
+          "news-stocks": "/news/stocks/v1/health",
+          "reddit-stocks": "/reddit/stocks/v1/health",
+          "reddit-crypto": "/reddit/crypto/v1/health",
+          "x-stocks": "/x/stocks/v1/health",
+          "polymarket-stocks": "/polymarket/stocks/v1/health"
+        },
+        "for_agents": {
+          "llms_txt": "https://api.adanos.org/llms.txt",
+          "openapi_json": "https://api.adanos.org/openapi.json"
+        },
+        "downloads": {
+          "releases": "https://github.com/adanos-software/adanos-cli/releases",
+          "pypi": "https://pypi.org/project/adanos-cli/"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "World Trading Data",
+      "slug": "world-trading-data",
+      "emoji": "💰",
+      "tagline": "World Trading Data — free-tier JSON endpoint",
+      "description": "World Trading Data offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.worldtradingdata.com/",
+      "baseUrl": "https://www.worldtradingdata.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 962,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "0": "#################################################################################################################################",
+        "1": "#",
+        "2": "# IMPORTANT - PLEASE UPDATE YOUR API ENDPOINT",
+        "3": "#",
+        "4": "#",
+        "5": "# This API endpoint is deprecated and now has been shut down. ",
+        "6": "# To keep using our free stock market API, please update your integration to use the new marketstack API endpoint.#",
+        "7": "# You will find more information by visiting https://marketstack.com."
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "PandaScore",
+      "slug": "pandascore",
+      "emoji": "🎮",
+      "tagline": "PandaScore — free-tier JSON endpoint",
+      "description": "PandaScore offers a free API tier. We verified JSON on a sample GET (Games & Comics). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.pandascore.co",
+      "baseUrl": "https://api.pandascore.co",
+      "sampleEndpoint": "/",
+      "latencyMs": 525,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.62.19",
+        "doc_url": "https://developers.pandascore.co"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "TCGApi",
+      "slug": "tcgapi",
+      "emoji": "🎮",
+      "tagline": "TCGApi — free-tier JSON endpoint",
+      "description": "TCGApi offers a free API tier. We verified JSON on a sample GET (Games & Comics). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://tcgapi.dev/introduction/",
+      "baseUrl": "https://api.tcgapi.dev",
+      "sampleEndpoint": "/v1/x402/info",
+      "latencyMs": 126,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "x402Version": 1,
+        "enabled": true,
+        "service": "TCG API — Pokemon, Magic, Yu-Gi-Oh, Lorcana card pricing",
+        "description": "Real-time and historical card prices plus full catalog data across 89+ trading card games on TCGPlayer and Cardmarket — Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, One Piece, Flesh and Blood, Riftbound and more. Pay-per-request in USDC on Base or subscribe with an API key.",
+        "homepage": "https://tcgapi.dev",
+        "docs": "https://tcgapi.dev/x402",
+        "network": "base",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "PermisAPI",
+      "slug": "permisapi",
+      "emoji": "🏛",
+      "tagline": "PermisAPI — free-tier JSON endpoint",
+      "description": "PermisAPI offers a free API tier. We verified JSON on a sample GET (Government). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://permisapi.fr",
+      "baseUrl": "https://api.permisapi.fr",
+      "sampleEndpoint": "/.well-known/openapi",
+      "latencyMs": 1087,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "PermisAPI",
+          "description": "API de permis de construire de France. Données Sitadel enrichies (geocoding BAN, SIRENE). Source : SDES, base Sitadel, data.gouv.fr.",
+          "version": "0.1.0"
+        },
+        "paths": {
+          "/": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Redirect to docs",
+              "operationId": "root__get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/.well-known/openapi": {
+            "get": {
+              "tags": [
+                "discovery"
+              ],
+              "summary": "Schéma OpenAPI 3 (autodecouvrabilité standard RFC 8615)",
+              "description": "Retourne le schéma OpenAPI complet de l'API (équivalent à\n/openapi.json mais à un URL bien-connu standard).\n\nPermet aux outils Postman, Insomnia, Swagger UI, et aux crawlers\nd'API de découvrir automatiquement la surface de PermisAPI sans\nconfiguration manuelle. Cohérent avec l'autre URL bien-connu déjà\nexposé : /.well-known/oauth-authorization-server (côté MCP SSE).",
+              "operationId": "well_known_openapi__well_known_openapi_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/health": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Health check (public)",
+              "operationId": "health_health_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/permits": {
+            "get": {
+              "tags": [
+                "permits"
+              ],
+              "summary": "Liste paginee de permis avec filtres",
+              "description": "Recherche paginee de permis.\n\nLes filtres se combinent en AND.\n\nTri : prefixer par `-` pour descendant, sinon ascendant.\nDefault : `-date_reelle_autorisation` (les plus recents en tete).\n\nChamps de tri autorises (cf SORT_WHITELIST) :\n  - `date_reelle_autorisation`\n  - `date_depot`\n  - `an_depot`\n  - `superficie_terrain`\n\nTout autre nom retourne 422 (et NON ignore silencieusement, pour\neviter le piege \"je crois trier mais en fait non\").\n\nFiltre `min_score` (Pro+) : permet de shortlister directement les\npermis avec un Score Opportunite MDB >= N. Cout quota special :\n`limit` unites au lieu de 1, pour refleter le travail equivalent\na N appels /score individuels qui auraient ete necessaires\ncote client. Header `X-RateLimit-Cost` confirme le cout decompte.\n\nFiltre `max_risk` (Pro+) : exclut les permis dont la commune est\nclassee au-dessus du tier specifie (low / moderate / high /\ncritical). Exemple `?max_risk=moderate` ne retourne que les permis\nen zones low ou moderate. Cout quota = limit (anti-abus, equivalent\na N appels /risks). Lookup via colonne materialisee\n`permits.risk_tier` (cf migration 0015 + scripts/materialize_risks.py).\nPermis dont la commune n'est pas encore en cache sont exclus\n(ils seront inclus apres le prochain materialize_risks).\n\nFiltre `plu_zone_type` (Pro+) : prefix de zonage urbanisme PLU\nparmi U / AU / A / N / OTHER. Exemple `?plu_zone_type=U` retourne\nuniquement les permis en zone urbaine constructible. Cout quota =\nlimit (equivalent a N appels /plu).\n\nFiltre `plu_constructible` (Pro+) : booleen. `?plu_constructible=true`\nretourne uniquement les permis ou le verdict heuristique est\nconstructible (zone U ou AU). Pratique combine avec `min_score`\npour shortlister les vraies opportunites MDB. Cout quota = limit.\n\nPermis dont le PLU n'est pas encore en cache sont exclus.",
+              "operationId": "list_permits_v1_permits_get",
+              "parameters": [
+                {
+                  "name": "dep_code",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 5
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "Dep Code"
+                  }
+                },
+                {
+                  "name": "comm_code",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 10
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "Comm Code"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PageResponse_PermitSummary_"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/permits/export": {
+            "get": {
+              "tags": [
+                "permits"
+              ],
+              "summary": "Export bulk CSV (plans Business et +)",
+              "description": "Export streaming d'un sous-ensemble de permis au format CSV.\n\nRéservé aux plans Business+. Colonnes fixes (cf EXPORT_CSV_COLUMNS).\nLa limite par defaut est `plan_gating.export_max_rows(plan)` : 100k\npour Business, 1M pour Enterprise. Le user peut reduire cette limite\nvia `max_rows` mais pas l'augmenter.\n\nStreaming: on généré les lignes au fur et a mesure pour eviter d'OOM\nle processus sur un export de 1M lignes.",
+              "operationId": "export_permits_v1_permits_export_get",
+              "parameters": [
+                {
+                  "name": "dep_code",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 5
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "Dep Code"
+                  }
+                },
+                {
+                  "name": "comm_code",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 10
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "Comm Code"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/permits/near": {
+            "get": {
+              "tags": [
+                "permits"
+              ],
+              "summary": "Permis géocodés dans un rayon (PostGIS ST_DWithin)",
+              "description": "Retourne les permis dans un rayon autour d'un point lat/lng.\n\nUtilise `ST_DWithin(geom::geography, ...)` pour une distance en metres\nprecise (et non en degres). Trie par distance croissante.\n\nPlan gating : si le plan de l'user restreint les départements, on\nfiltre la query par `dep_code IN allowed_deps`. Un Free qui fait un\n`near` centre sur Lyon ne recevra donc rien (puisque Free = Paris\nseul).",
+              "operationId": "permits_near_v1_permits_near_get",
+              "parameters": [
+                {
+                  "name": "lat",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "maximum": 90,
+                    "minimum": -90,
+                    "title": "Lat"
+                  }
+                },
+                {
+                  "name": "lng",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "maximum": 180,
+                    "minimum": -180,
+                    "title": "Lng"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PermitNear"
+                        },
+                        "title": "Response Permits Near V1 Permits Near Get"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/permits/by-cadastre": {
+            "get": {
+              "tags": [
+                "permits"
+              ],
+              "summary": "Permis pour une parcelle cadastrale donnée",
+              "description": "Permis qui referencent la parcelle cadastrale (section + numéro).\n\nFeature réservée aux plans Pro et superieurs (cf pricing landing).",
+              "operationId": "permits_by_cadastre_v1_permits_by_cadastre_get",
+              "parameters": [
+                {
+                  "name": "section",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 10,
+                    "title": "Section"
+                  }
+                },
+                {
+                  "name": "numero",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 20,
+                    "title": "Numero"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PermitSummary"
+                        },
+                        "title": "Response Permits By Cadastre V1 Permits By Cadastre Get"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/permits/{num_pa}": {
+            "get": {
+              "tags": [
+                "permits"
+              ],
+              "summary": "Détail d'un permis par son identifiant Sitadel",
+              "operationId": "get_permit_v1_permits__num_pa__get",
+              "parameters": [
+                {
+                  "name": "num_pa",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 50,
+                    "title": "Num Pa"
+                  }
+                },
+                {
+                  "name": "X-API-Key",
+                  "in": "header",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PermitResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "AlertCreate": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "minLength": 1,
+                  "title": "Name"
+                },
+                "center_lat": {
+                  "type": "number",
+                  "maximum": 90,
+                  "minimum": -90,
+                  "title": "Center Lat"
+                },
+                "center_lng": {
+                  "type": "number",
+                  "maximum": 180,
+                  "minimum": -180,
+                  "title": "Center Lng"
+                },
+                "radius_km": {
+                  "type": "number",
+                  "maximum": 200,
+                  "exclusiveMinimum": 0,
+                  "title": "Radius Km",
+                  "default": 5
+                },
+                "webhook_url": {
+                  "type": "string",
+                  "maxLength": 500,
+                  "minLength": 8,
+                  "title": "Webhook Url"
+                },
+                "permit_types": {
+                  "anyOf": [
+                    {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Permit Types",
+                  "description": "Liste de permit_type a filtrer (ex: ['PC_LOGEMENT']). None = tous."
+                },
+                "min_superficie": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Min Superficie"
+                },
+                "etat_pa": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "maximum": 6,
+                      "minimum": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Etat Pa"
+                }
+              },
+              "type": "object",
+              "required": [
+                "name",
+                "center_lat"
+              ],
+              "title": "AlertCreate",
+              "description": "Payload pour créer une alerte webhook."
+            },
+            "AlertResponse": {
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "title": "Id"
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name"
+                },
+                "center_lat": {
+                  "type": "number",
+                  "title": "Center Lat"
+                },
+                "center_lng": {
+                  "type": "number",
+                  "title": "Center Lng"
+                },
+                "radius_km": {
+                  "type": "number",
+                  "title": "Radius Km"
+                },
+                "webhook_url": {
+                  "type": "string",
+                  "title": "Webhook Url"
+                },
+                "permit_types": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Permit Types"
+                },
+                "min_superficie": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Min Superficie"
+                }
+              },
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "title": "AlertResponse",
+              "description": "Une alerte renvoyee par l'API (sans le secret)."
+            },
+            "AlertUpdate": {
+              "properties": {
+                "name": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 100,
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Name"
+                },
+                "is_active": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Is Active"
+                },
+                "radius_km": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "maximum": 200,
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Radius Km"
+                },
+                "webhook_url": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 500,
+                      "minLength": 8
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Webhook Url"
+                },
+                "permit_types": {
+                  "anyOf": [
+                    {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Permit Types"
+                },
+                "min_superficie": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Min Superficie"
+                },
+                "etat_pa": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "maximum": 6,
+                      "minimum": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Etat Pa"
+                }
+              },
+              "type": "object",
+              "title": "AlertUpdate",
+              "description": "Update partielle d'une alerte existante."
+            },
+            "AlertWithSecret": {
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "title": "Id"
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name"
+                },
+                "center_lat": {
+                  "type": "number",
+                  "title": "Center Lat"
+                },
+                "center_lng": {
+                  "type": "number",
+                  "title": "Center Lng"
+                },
+                "radius_km": {
+                  "type": "number",
+                  "title": "Radius Km"
+                },
+                "webhook_url": {
+                  "type": "string",
+                  "title": "Webhook Url"
+                },
+                "permit_types": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Permit Types"
+                },
+                "min_superficie": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Min Superficie"
+                }
+              },
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "title": "AlertWithSecret",
+              "description": "Retournee UNE SEULE FOIS a la creation (le secret en clair)."
+            },
+            "BrandingByDomainResponse": {
+              "properties": {
+                "domain": {
+                  "type": "string",
+                  "title": "Domain",
+                  "description": "Le domain interroge (echo input)"
+                },
+                "branded": {
+                  "type": "boolean",
+                  "title": "Branded",
+                  "description": "True si un client Enterprise est configure pour ce domain"
+                },
+                "logo_url": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Logo Url"
+                },
+                "primary_color": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Primary Color"
+                },
+                "footer_text": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Footer Text"
+                },
+                "name": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Name"
+                },
+                "secondary_color": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Secondary Color",
+                  "description": "Override var(--accent-secondary)"
+                },
+                "background_color": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Background Color",
+                  "description": "Override var(--bg-branded)"
+                }
+              },
+              "type": "object",
+              "required": [
+                "domain",
+                "branded"
+              ],
+              "title": "BrandingByDomainResponse",
+              "description": "Branding visuel pour un domain donne (V0.4 dashboard brande + V0.6b\npalette 4 couleurs).\n\nTous les champs `null` = pas de branding configure pour ce domain\n(le frontend doit afficher le branding PermisAPI par defaut)."
+            },
+            "BrandingConfigPutBody": {
+              "properties": {
+                "logo_url": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Logo Url",
+                  "description": "URL HTTPS du logo client (PNG ou SVG, ~300x60 px recommande). Affiche dans le header du dashboard brande a la place de 'PermisAPI'."
+                },
+                "primary_color": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Primary Color",
+                  "description": "Couleur primaire au format hex `#RRGGBB` (ex `#FF6B35`). Remplace l'ambre PermisAPI dans le dashboard brande (CTAs, focus)."
+                },
+                "footer_text": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Footer Text",
+                  "description": "Texte du footer (max 500 chars). Remplace le footer PermisAPI par ce texte dans le dashboard brande."
+                },
+                "color_secondary": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Color Secondary",
+                  "description": "Couleur secondaire hex `#RRGGBB` pour CTAs secondaires et accents discrets. Override var(--accent-secondary)."
+                },
+                "color_background": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Color Background",
+                  "description": "Couleur de fond hex `#RRGGBB` pour le dashboard brande. Override var(--bg-branded). Permet de matcher la charte d'une fonciere ou banque (fond clair / neutre vs sombre PermisAPI)."
+                },
+                "color_hover": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Color Hover",
+                  "description": "Couleur hover hex `#RRGGBB` pour les states interactifs. Override var(--accent-hover). Typiquement version plus saturee de la couleur primaire."
+                }
+              },
+              "type": "object",
+              "title": "BrandingConfigPutBody",
+              "description": "Payload pour configurer le branding dashboard (V0.4 + V0.6b palette).\n\nTous les champs sont optionnels et nullable :\n  - `null` (explicite) : reset le champ a sa valeur par defaut PermisAPI\n  - Champ absent du payload : ne modifie pas le champ existant"
+            },
+            "BulkEnrichInputRow": {
+              "properties": {
+                "ref": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "minLength": 1,
+                  "title": "Ref",
+                  "description": "Reference client (echo dans la response, pour mapper)"
+                },
+                "lat": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "maximum": 90,
+                      "minimum": -90
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Lat"
+                },
+                "lng": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "maximum": 180,
+                      "minimum": -180
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Lng"
+                },
+                "adresse": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 255
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Adresse"
+                },
+                "commune": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Commune"
+                },
+                "section": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 10
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Section"
+                },
+                "numero": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 20
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Numero"
+                }
+              },
+              "type": "object",
+              "required": [
+                "ref"
+              ],
+              "title": "BulkEnrichInputRow",
+              "description": "Une ligne d'input. 1 des 3 modes doit etre rempli :\n- mode coordonnees : lat + lng\n- mode adresse : adresse\n- mode cadastre : commune + section + numero"
+            },
+            "BulkEnrichMatch": {
+              "properties": {
+                "num_pa": {
+                  "type": "string",
+                  "title": "Num Pa"
+                },
+                "distance_m": {
+                  "type": "number",
+                  "title": "Distance M"
+                },
+                "permit_type": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Permit Type"
+                },
+                "date_reelle_autorisation": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Date Reelle Autorisation"
+                },
+                "score_mdb": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Score Mdb"
+                },
+                "score_mdb_tier": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Score Mdb Tier"
+                },
+                "risk_score": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Risk Score"
+                },
+                "risk_tier": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Risk Tier"
+                }
+              },
+              "type": "object",
+              "required": [
+                "num_pa",
+                "distance_m"
+              ],
+              "title": "BulkEnrichMatch",
+              "description": "Un permis qui matche une ligne d'input."
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "permits",
+            "description": "Recherche et détail de permis."
+          },
+          {
+            "name": "stats",
+            "description": "Stats agrégées par territoire."
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "The Colony",
+      "slug": "the-colony",
+      "emoji": "💬",
+      "tagline": "The Colony — free-tier JSON endpoint",
+      "description": "The Colony offers a free API tier. We verified JSON on a sample GET (Social). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://thecolony.cc",
+      "baseUrl": "https://thecolony.cc",
+      "sampleEndpoint": "/",
+      "latencyMs": 213,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "site": "The Colony",
+        "description": "AI agent forums, marketplace and social network. Agents and humans participate as equals.",
+        "url": "https://thecolony.cc",
+        "link_rels": {
+          "api": "https://thecolony.cc/api/v1",
+          "openapi": "https://thecolony.cc/api/openapi.json",
+          "mcp": "https://thecolony.cc/mcp",
+          "llms_txt": "https://thecolony.cc/llms.txt",
+          "llms_full_txt": "https://thecolony.cc/llms-full.txt",
+          "agents_txt": "https://thecolony.cc/agents.txt",
+          "skill_md": "https://thecolony.cc/skill.md",
+          "agent_card": "https://thecolony.cc/.well-known/agent.json"
+        },
+        "colonies": [
+          {
+            "name": "findings",
+            "display_name": "Findings",
+            "url": "https://thecolony.cc/c/findings",
+            "member_count": 92
+          },
+          {
+            "name": "general",
+            "display_name": "General",
+            "url": "https://thecolony.cc/c/general",
+            "member_count": 89
+          }
+        ],
+        "recent_posts": [
+          {
+            "id": "5bb93797-320a-4717-a9d8-a5fbde8e17f3",
+            "title": "Every agent economy has a signalling problem. Here is the fix.",
+            "url": "https://thecolony.cc/post/5bb93797-320a-4717-a9d8-a5fbde8e17f3",
+            "post_type": "analysis",
+            "author": "randy-2",
+            "score": 0,
+            "comment_count": 1,
+            "created_at": "2026-07-05T20:28:22.215656+00:00"
+          },
+          {
+            "id": "1167e363-a9f2-4ca5-83c0-ecca2d7ea95c",
+            "title": "Agent Coordination Patterns for 30-Day Cycles (Colony AI)",
+            "url": "https://thecolony.cc/post/1167e363-a9f2-4ca5-83c0-ecca2d7ea95c",
+            "post_type": "discussion",
+            "author": "lukitun-hermes",
+            "score": 2,
+            "comment_count": 2,
+            "created_at": "2026-07-05T18:57:33.514376+00:00"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "CarAPI",
+      "slug": "carapi",
+      "emoji": "🚗",
+      "tagline": "CarAPI — free-tier JSON endpoint",
+      "description": "CarAPI offers a free API tier. We verified JSON on a sample GET (Vehicle). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://carapi.dev/",
+      "baseUrl": "https://api.carapi.dev",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 1339,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "CarAPI.dev - Automotive Data API",
+          "description": "Comprehensive automotive data API providing VIN decoding, vehicle history, stolen vehicle checks, valuations, and more. Access reliable vehicle information for your applications.",
+          "version": "1.0.0",
+          "contact": {
+            "name": "CarAPI.dev Support",
+            "url": "https://carapi.dev",
+            "email": "support@carapi.dev"
+          },
+          "license": {
+            "name": "Proprietary",
+            "url": "https://carapi.dev/terms"
+          },
+          "x-logo": {
+            "url": "https://carapi.dev/favicon.svg"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.carapi.dev/v1",
+            "description": "Production API Server"
+          }
+        ],
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "tags": [
+          {
+            "name": "VIN",
+            "description": "VIN-related operations including decoding and lookup"
+          },
+          {
+            "name": "Vehicle History",
+            "description": "Vehicle history and status checks"
+          }
+        ],
+        "paths": {
+          "/vin-decode/{vin}": {
+            "get": {
+              "operationId": "decodeVin",
+              "summary": "Decode a VIN",
+              "description": "Decode a Vehicle Identification Number (VIN) to retrieve detailed vehicle specifications including make, model, fuel type, transmission, engine power, and registration date.",
+              "tags": [
+                "VIN"
+              ],
+              "parameters": [
+                {
+                  "name": "vin",
+                  "in": "path",
+                  "required": true,
+                  "description": "17-character Vehicle Identification Number (alphanumeric, excluding I, O, Q)",
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+                    "example": "WAUZZZ4F55N052232"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successfully decoded VIN",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/VinDecodeResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid VIN",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "VIN not found in database",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/plate-to-vin/{plateNumber}": {
+            "get": {
+              "operationId": "plateToVin",
+              "summary": "Convert license plate to VIN",
+              "description": "Convert a license plate number to its corresponding Vehicle Identification Number (VIN). Requires a country code. Supported countries: PL, NO, SK, SE, CZ, US. US lookups also require a 2-letter state code, since US plates are only unique per state.",
+              "tags": [
+                "VIN"
+              ],
+              "parameters": [
+                {
+                  "name": "plateNumber",
+                  "in": "path",
+                  "required": true,
+                  "description": "License plate number",
+                  "schema": {
+                    "type": "string",
+                    "example": "WO91287"
+                  }
+                },
+                {
+                  "name": "country",
+                  "in": "query",
+                  "required": true,
+                  "description": "ISO 3166-1 alpha-2 country code. Supported: PL, NO, SK, SE, CZ, US.",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "PL",
+                      "NO"
+                    ],
+                    "example": "PL"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successfully converted plate to VIN",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PlateToVinResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Missing or invalid parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/stolen-check/{vin}": {
+            "get": {
+              "operationId": "stolenCheck",
+              "summary": "Check if vehicle is stolen",
+              "description": "Check if a vehicle has been reported as stolen in multiple European countries (Slovakia, Czech Republic, Slovenia, Hungary, Romania).",
+              "tags": [
+                "Vehicle History"
+              ],
+              "parameters": [
+                {
+                  "name": "vin",
+                  "in": "path",
+                  "required": true,
+                  "description": "17-character Vehicle Identification Number",
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+                    "example": "WAUZZZ4F55N052232"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Stolen status check result",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/StolenCheckResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid VIN",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/inspection/{vin}": {
+            "get": {
+              "operationId": "getInspection",
+              "summary": "Get vehicle inspection history",
+              "description": "Retrieve vehicle inspection data including technical inspection (STK) and emissions test (EK) validity dates. Currently supports Slovakia (SK).",
+              "tags": [
+                "Vehicle History"
+              ],
+              "parameters": [
+                {
+                  "name": "vin",
+                  "in": "path",
+                  "required": true,
+                  "description": "17-character Vehicle Identification Number",
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+                    "example": "WF0DXXGAKDDB43770"
+                  }
+                },
+                {
+                  "name": "country",
+                  "in": "query",
+                  "required": true,
+                  "description": "Country code (currently only SK supported)",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "SK"
+                    ],
+                    "example": "SK"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Vehicle inspection data",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/InspectionResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Inspection data not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/mileage-history/{vin}": {
+            "get": {
+              "operationId": "getMileageHistory",
+              "summary": "Get vehicle mileage history",
+              "description": "Retrieve historical mileage records for a vehicle to detect odometer rollbacks or inconsistencies.",
+              "tags": [
+                "Vehicle History"
+              ],
+              "parameters": [
+                {
+                  "name": "vin",
+                  "in": "path",
+                  "required": true,
+                  "description": "17-character Vehicle Identification Number",
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+                    "example": "JTDKDTB33J1604823"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Mileage history records",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/MileageHistoryResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid VIN",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "No mileage history found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/vehicle-valuation": {
+            "get": {
+              "operationId": "getVehicleValuation",
+              "summary": "Get vehicle valuation",
+              "description": "Get current market valuation for a vehicle based on make, model, year, and country (all required). Supports 24 countries including EU, UK, US, and others. Optional fuel and kw (engine power in kW) filters narrow the valuation to a specific drivetrain variant. Optional mileage (current vehicle mileage in km) refines the valuation. Applied filters are echoed back on the response. Returns 404 when no valuation is available for the supplied configuration.",
+              "tags": [
+                "Valuation"
+              ],
+              "parameters": [
+                {
+                  "name": "make",
+                  "in": "query",
+                  "required": true,
+                  "description": "Vehicle manufacturer name (40 makes supported, case-insensitive)",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "acura",
+                      "alfa-romeo"
+                    ],
+                    "example": "bmw"
+                  }
+                },
+                {
+                  "name": "model",
+                  "in": "query",
+                  "required": true,
+                  "description": "Vehicle model name (case-insensitive)",
+                  "schema": {
+                    "type": "string",
+                    "example": "X6"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Vehicle valuation result",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ValuationResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Missing or invalid parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Valuation not found for specified vehicle",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/payments/{vin}": {
+            "get": {
+              "operationId": "calculatePayments",
+              "summary": "Calculate vehicle loan payments",
+              "description": "Calculate monthly payment schedule for a vehicle loan based on price, down payment, loan term, and interest rate.",
+              "tags": [
+                "Valuation"
+              ],
+              "parameters": [
+                {
+                  "name": "vin",
+                  "in": "path",
+                  "required": true,
+                  "description": "17-character Vehicle Identification Number",
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+                    "example": "WAUZZZ4F55N052232"
+                  }
+                },
+                {
+                  "name": "price",
+                  "in": "query",
+                  "required": true,
+                  "description": "Vehicle price (must be positive)",
+                  "schema": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "example": 25000
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Payment calculation result",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PaymentsResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Missing or invalid parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/listing": {
+            "get": {
+              "operationId": "searchListings",
+              "summary": "Search vehicle listings",
+              "description": "Search current vehicle listings on the market. Filter by make, model, and year with pagination support.",
+              "tags": [
+                "Listings"
+              ],
+              "parameters": [
+                {
+                  "name": "make",
+                  "in": "query",
+                  "required": false,
+                  "description": "Filter by vehicle manufacturer (40 makes supported)",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "acura",
+                      "alfa-romeo"
+                    ],
+                    "example": "toyota"
+                  }
+                },
+                {
+                  "name": "model",
+                  "in": "query",
+                  "required": false,
+                  "description": "Filter by vehicle model",
+                  "schema": {
+                    "type": "string",
+                    "example": "Camry"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "List of vehicle listings",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ListingResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "securitySchemes": {
+            "ApiKeyAuth": {
+              "type": "apiKey",
+              "in": "query",
+              "name": "token",
+              "description": "API token for authentication. Get your token at https://carapi.dev/dashboard"
+            }
+          },
+          "schemas": {
+            "Error": {
+              "type": "object",
+              "required": [
+                "error"
+              ],
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "description": "Error message describing what went wrong",
+                  "example": "Invalid VIN: VIN must be exactly 17 characters long (got 16)."
+                }
+              }
+            },
+            "AccountResponse": {
+              "type": "object",
+              "required": [
+                "plan",
+                "status"
+              ],
+              "properties": {
+                "plan": {
+                  "type": "string",
+                  "description": "Effective plan tier your next request would use (a lapsed paid subscription is reported as the free fallback)",
+                  "example": "starter"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "Plan status",
+                  "example": "active"
+                },
+                "subscriptionStatus": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Underlying Stripe subscription status (null for free plans without a subscription). Authoritative billing signal: a value other than 'active'/'trialing' means the paid subscription has lapsed even though `plan` reports the free fallback.",
+                  "example": "active"
+                },
+                "usage": {
+                  "type": "object",
+                  "required": [
+                    "used",
+                    "limit"
+                  ],
+                  "properties": {
+                    "used": {
+                      "type": "integer",
+                      "description": "Credits used this billing period",
+                      "example": 3421
+                    },
+                    "limit": {
+                      "type": "integer",
+                      "description": "Monthly credit limit (comp overrides applied)",
+                      "example": 10000
+                    },
+                    "remaining": {
+                      "type": "integer",
+                      "description": "Credits remaining (max(0, limit - used))",
+                      "example": 6579
+                    },
+                    "resetDate": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "date-time",
+                      "description": "When the current period ends and usage resets",
+                      "example": "2026-07-01T00:00:00.000Z"
+                    }
+                  }
+                },
+                "rateLimitPerMinute": {
+                  "type": "integer",
+                  "description": "The plan's per-minute rate limit for the paid data endpoints",
+                  "example": 60
+                }
+              }
+            },
+            "EndpointsResponse": {
+              "type": "object",
+              "required": [
+                "endpoints"
+              ],
+              "properties": {
+                "endpoints": {
+                  "type": "array",
+                  "description": "All active endpoints with their per-call credit cost",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "slug",
+                      "name"
+                    ],
+                    "properties": {
+                      "slug": {
+                        "type": "string",
+                        "example": "vin-decode"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "VIN Decode"
+                      },
+                      "category": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "example": "vehicle"
+                      },
+                      "description": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "example": "Decode a 17-character VIN into full vehicle specifications."
+                      },
+                      "creditCost": {
+                        "type": "integer",
+                        "description": "Credits debited per successful call",
+                        "example": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "VinDecodeResponse": {
+              "type": "object",
+              "required": [
+                "vin",
+                "specifications"
+              ],
+              "properties": {
+                "vin": {
+                  "type": "string",
+                  "description": "The decoded VIN (uppercase)",
+                  "example": "WAUZZZ4F55N052232"
+                },
+                "specifications": {
+                  "type": "object",
+                  "properties": {
+                    "make": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Vehicle manufacturer",
+                      "example": "Audi"
+                    },
+                    "model": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Vehicle model",
+                      "example": "A6"
+                    },
+                    "fuel": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Fuel type (petrol, diesel, electric, hybrid)",
+                      "example": "petrol"
+                    },
+                    "transmission": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Transmission type (manual, automatic)",
+                      "example": "manual"
+                    },
+                    "enginePower": {
+                      "type": "integer",
+                      "nullable": true,
+                      "description": "Engine power in kilowatts (kW). Null when unknown.",
+                      "example": 165
+                    },
+                    "enginePowerUnit": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Unit for enginePower. Always \"kW\" when enginePower is present, otherwise null.",
+                      "example": "kW"
+                    },
+                    "bodyStyle": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Vehicle body style. Null when unknown.",
+                      "enum": [
+                        "HATCHBACK",
+                        "CABRIOLET"
+                      ],
+                      "example": "SEDAN"
+                    },
+                    "drivetrain": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Drivetrain type. Null when unknown.",
+                      "enum": [
+                        "FRONT_WHEEL_DRIVE",
+                        "REAR_WHEEL_DRIVE"
+                      ],
+                      "example": "ALL_WHEEL_DRIVE"
+                    }
+                  }
+                },
+                "manufacturer": {
+                  "type": "object",
+                  "nullable": true,
+                  "description": "Manufacturer details derived from the World Manufacturer Identifier (first 3 VIN characters).",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Manufacturer name",
+                      "example": "Audi AG"
+                    },
+                    "region": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Manufacturing region",
+                      "example": "Europe"
+                    },
+                    "country": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Manufacturing country",
+                      "example": "Germany"
+                    }
+                  }
+                },
+                "features": {
+                  "type": "array",
+                  "description": "List of vehicle features. Each feature has a name and a category.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "Feature identifier",
+                        "example": "ADAPTIVE_CRUISE_CONTROL"
+                      },
+                      "category": {
+                        "type": "string",
+                        "nullable": true,
+                        "description": "Feature category",
+                        "enum": [
+                          "SAFETY_SYSTEM",
+                          "ASSISTANCE_SYSTEM"
+                        ],
+                        "example": "ASSISTANCE_SYSTEM"
+                      }
+                    }
+                  },
+                  "example": [
+                    {
+                      "name": "ABS",
+                      "category": "SAFETY_SYSTEM"
+                    },
+                    {
+                      "name": "ADAPTIVE_CRUISE_CONTROL",
+                      "category": "ASSISTANCE_SYSTEM"
+                    }
+                  ]
+                },
+                "plateNumber": {
+                  "type": "object",
+                  "nullable": true,
+                  "properties": {
+                    "country": {
+                      "type": "string",
+                      "nullable": true,
+                      "example": "CZ"
+                    },
+                    "plateNumber": {
+                      "type": "string",
+                      "nullable": true,
+                      "example": "1A2B345"
+                    }
+                  }
+                }
+              }
+            },
+            "PlateToVinResponse": {
+              "type": "object",
+              "required": [
+                "plateNumber",
+                "country"
+              ],
+              "properties": {
+                "plateNumber": {
+                  "type": "string",
+                  "description": "The license plate number",
+                  "example": "WO91287"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "Country code (uppercase)",
+                  "example": "PL"
+                },
+                "state": {
+                  "type": "string",
+                  "description": "2-letter US state code (uppercase). Present only for US lookups.",
+                  "example": "CA"
+                },
+                "vin": {
+                  "type": "string",
+                  "nullable": true,
+                  "description": "The corresponding VIN, or null if not found",
+                  "example": "WAUZZZ4F55N052232"
+                }
+              }
+            },
+            "StolenCheckResponse": {
+              "type": "object",
+              "required": [
+                "vin",
+                "stolen"
+              ],
+              "properties": {
+                "vin": {
+                  "type": "string",
+                  "description": "The checked VIN",
+                  "example": "WAUZZZ4F55N052232"
+                },
+                "stolen": {
+                  "type": "boolean",
+                  "description": "True if vehicle is reported stolen in any checked country",
+                  "example": false
+                },
+                "countries": {
+                  "type": "object",
+                  "description": "Stolen status per country",
+                  "properties": {
+                    "sk": {
+                      "type": "boolean",
+                      "description": "Stolen status in Slovakia"
+                    },
+                    "cz": {
+                      "type": "boolean",
+                      "description": "Stolen status in Czech Republic"
+                    },
+                    "si": {
+                      "type": "boolean",
+                      "description": "Stolen status in Slovenia"
+                    },
+                    "hu": {
+                      "type": "boolean",
+                      "description": "Stolen status in Hungary"
+                    },
+                    "ro": {
+                      "type": "boolean",
+                      "description": "Stolen status in Romania"
+                    }
+                  }
+                }
+              }
+            },
+            "InspectionResponse": {
+              "type": "object",
+              "required": [
+                "vin",
+                "country"
+              ],
+              "properties": {
+                "vin": {
+                  "type": "string",
+                  "example": "WF0DXXGAKDDB43770"
+                },
+                "country": {
+                  "type": "string",
+                  "example": "SK"
+                },
+                "inspection": {
+                  "type": "object",
+                  "properties": {
+                    "stkValidTo": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Technical inspection (STK) validity date",
+                      "example": "2025-06-15"
+                    },
+                    "ekValidTo": {
+                      "type": "string",
+                      "nullable": true,
+                      "description": "Emissions test (EK) validity date",
+                      "example": "2025-06-15"
+                    }
+                  }
+                }
+              }
+            },
+            "MileageHistoryResponse": {
+              "type": "object",
+              "required": [
+                "vin",
+                "totalRecords"
+              ],
+              "properties": {
+                "vin": {
+                  "type": "string",
+                  "example": "JTDKDTB33J1604823"
+                },
+                "totalRecords": {
+                  "type": "integer",
+                  "description": "Total number of mileage records",
+                  "example": 5
+                },
+                "mileageHistory": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "mileage": {
+                        "type": "integer",
+                        "description": "Recorded mileage in kilometers",
+                        "example": 45000
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "description": "Date of mileage record (ISO format)",
+                        "example": "2023-06-15T10:30:00Z"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "externalDocs": {
+          "description": "Full API Documentation",
+          "url": "https://docs.carapi.dev"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    }
+  ],
+  "skipped": []
+}

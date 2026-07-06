@@ -1,0 +1,540 @@
+{
+  "batch": 2,
+  "verified": [
+    {
+      "name": "Bible-api",
+      "slug": "bible-api",
+      "emoji": "📖",
+      "tagline": "Fetch Bible verses as clean JSON, no key required",
+      "description": "Request any verse or passage by reference (like john+3:16) and get back structured JSON with the verse text and translation metadata. It ships with public-domain translations such as the World English Bible. No signup and no key.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://bible-api.com/",
+      "baseUrl": "https://bible-api.com",
+      "sampleEndpoint": "/john+3:16",
+      "latencyMs": 612,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "reference": "John 3:16",
+        "verses": [
+          {
+            "book_id": "JHN",
+            "book_name": "John",
+            "chapter": 3,
+            "verse": 16,
+            "text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life."
+          }
+        ],
+        "translation_id": "web",
+        "translation_name": "World English Bible",
+        "translation_note": "Public Domain"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Public Domain (WEB translation; per translation_note in response)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "KDP Intelligence",
+      "slug": "kdp-intelligence",
+      "emoji": "📚",
+      "tagline": "Kindle niche demand and competition scores via API",
+      "description": "Query keyword-level demand scores, monthly search volume and availability for Kindle Direct Publishing niches. The preview and check endpoints are keyless and free, while deeper competition and revenue data unlocks through x402 USDC micropayments. It runs as a FastAPI service with an OpenAPI spec.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://kdp-intelligence-api.vercel.app/docs",
+      "baseUrl": "https://kdp-intelligence-api.vercel.app",
+      "sampleEndpoint": "/v1/preview/coloring%20book",
+      "latencyMs": 744,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "keyword": "coloring books for adults",
+        "demand_score": 87.3,
+        "monthly_searches": 60500,
+        "available": true,
+        "full_data_cost_usdc": 0.1,
+        "full_data_url": "https://nichedata.dev/v1/niche/coloring+books+for+adults",
+        "api_version": "0.1.0"
+      },
+      "freeTier": "Free preview/check endpoints; full niche data is paid via x402 USDC",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Data endpoints returned no CORS header. Paid endpoints require an X-Payment (x402 USDC) header."
+    },
+    {
+      "name": "PoetryDB",
+      "slug": "poetrydb",
+      "emoji": "🪶",
+      "tagline": "A public-domain poetry database you can query as JSON",
+      "description": "Pull poems by author, title, line count or keyword, or just grab a random one, from a large collection of public-domain verse. Every response is JSON carrying the title, author and full text lines. No key and no auth.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://github.com/thundercomb/poetrydb#readme",
+      "baseUrl": "https://poetrydb.org",
+      "sampleEndpoint": "/random/1",
+      "latencyMs": 833,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "title": "On My Thirty-Third Birthday",
+          "author": "George Gordon, Lord Byron",
+          "lines": [
+            "THROUGH Life's dull road, so dim and dirty,",
+            "I have dragged to three-and-thirty."
+          ],
+          "linecount": "4"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (public-domain poetry; project is MIT-licensed)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Quran",
+      "slug": "quran",
+      "emoji": "☪️",
+      "tagline": "The Quran.com API: chapters, verses and translations",
+      "description": "The Quran.com API exposes chapter and verse metadata, multiple translations, recitations and more as JSON. This sample pulls chapter 1 (Al-Fatihah) with its Arabic and English names and verse count. The public content endpoints are keyless.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://quran.api-docs.io/",
+      "baseUrl": "https://api.quran.com",
+      "sampleEndpoint": "/api/v4/chapters/1",
+      "latencyMs": 595,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "chapter": {
+          "id": 1,
+          "revelation_place": "makkah",
+          "name_simple": "Al-Fatihah",
+          "name_arabic": "الفاتحة",
+          "verses_count": 7,
+          "pages": [1, 1],
+          "translated_name": { "language_name": "english", "name": "The Opener" }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Quran Cloud",
+      "slug": "quran-cloud",
+      "emoji": "🕌",
+      "tagline": "Retrieve any Ayah, Surah or Juz of the Quran as JSON",
+      "description": "AlQuran Cloud serves the full Holy Quran through a REST API: request a single ayah, a whole surah, a juz, or the complete text, in Arabic plus many editions and translations. This sample returns ayah 262 (Al-Baqara 255) with its surah, juz and page context. No key needed.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://alquran.cloud/api",
+      "baseUrl": "https://api.alquran.cloud",
+      "sampleEndpoint": "/v1/ayah/262",
+      "latencyMs": 620,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": 200,
+        "status": "OK",
+        "data": {
+          "number": 262,
+          "numberInSurah": 255,
+          "juz": 3,
+          "page": 42,
+          "surah": {
+            "number": 2,
+            "englishName": "Al-Baqara",
+            "numberOfAyahs": 286,
+            "revelationType": "Medinan"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Long Arabic ayah text omitted from sample for brevity."
+    },
+    {
+      "name": "Quran-api",
+      "slug": "quran-api",
+      "emoji": "📗",
+      "tagline": "Quran text in 90+ languages, served free from a CDN",
+      "description": "Fawaz Ahmed's Quran API delivers the full text and 400+ translations across 90+ languages as static JSON files hosted on the jsDelivr CDN, so it is fast and has no rate limits. Fetch a whole edition, a single chapter, or one verse like this 1:1 sample. No key and no server call.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://github.com/fawazahmed0/quran-api#readme",
+      "baseUrl": "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1",
+      "sampleEndpoint": "/editions/eng-abdelhaleem/1/1.json",
+      "latencyMs": 1481,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "chapter": 1,
+        "verse": 1,
+        "text": "In the name of God, the Lord of Mercy, the Giver of Mercy"
+      },
+      "freeTier": "Free, no key (static CDN JSON files)",
+      "rateLimit": "None (served as static files from jsDelivr CDN)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Urantia Papers",
+      "slug": "urantia-papers",
+      "emoji": "🌌",
+      "tagline": "Full-text and semantic search over the Urantia Papers",
+      "description": "An agent-friendly API for the Urantia Papers, covering 197 papers and 17,000+ paragraphs with full-text and semantic search, structured content, entities and audio URLs. This sample pulls a random paragraph with its paper and section references. The public GET endpoints need no key.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://urantia.dev",
+      "baseUrl": "https://api.urantia.dev",
+      "sampleEndpoint": "/paragraphs/random?maxLength=300",
+      "latencyMs": 5211,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "id": "3:92.7.10",
+          "standardReferenceId": "92:7.10",
+          "paperId": "92",
+          "paperTitle": "The Later Evolution of Religion",
+          "sectionTitle": "The Further Evolution of Religion",
+          "paragraphId": "10",
+          "text": "4. The unfettered progress of the personality in this cosmic path of idealistic spiritual living, realization of sonship with God and never-ending progressive citizenship in the universe."
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Random endpoint was slow (~5s) on first hit; likely a cold start."
+    },
+    {
+      "name": "Wizard World",
+      "slug": "wizard-world",
+      "emoji": "🧙",
+      "tagline": "Spells, elixirs and houses from the Harry Potter world",
+      "description": "A community API for the wizarding world: query spells, elixirs, ingredients, houses and more, all as JSON. This sample lists spells with their incantations, effects and light colour. No key required.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://wizard-world-api.herokuapp.com/swagger/index.html",
+      "baseUrl": "https://wizard-world-api.herokuapp.com",
+      "sampleEndpoint": "/Spells",
+      "latencyMs": 848,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "fbd3cb46-c174-4843-a07e-fd83545dce58",
+          "name": "Opening Charm",
+          "incantation": "Aberto",
+          "effect": "Opens doors",
+          "canBeVerbal": true,
+          "type": "Charm",
+          "light": "Blue",
+          "creator": null
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Hosted on herokuapp.com (legacy free-dyno domain); uptime is best-effort."
+    },
+    {
+      "name": "Pick an Agency",
+      "slug": "pick-an-agency",
+      "emoji": "🏢",
+      "tagline": "Search 47k+ marketing agencies by service and location",
+      "description": "Search a directory of tens of thousands of marketing and PR agencies, filtering by service, location and rating, and get structured agency profiles back as JSON. This sample searches for SEO agencies. The keyless REST endpoints live under /api/v1, alongside an OpenAPI spec and an MCP endpoint.",
+      "sourceCategory": "Business",
+      "docsUrl": "https://www.pickanagency.com/developers",
+      "baseUrl": "https://www.pickanagency.com",
+      "sampleEndpoint": "/api/v1/search?service=SEO",
+      "latencyMs": 1096,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 10,
+        "results": [
+          {
+            "slug": "prlab-b2b-tech-pr-agency-amsterdam",
+            "name": "PRLab | B2B Tech PR Agency",
+            "location": { "city": "Amsterdam", "country": "Netherlands" },
+            "rating": 5,
+            "total_reviews": 46,
+            "services": ["Public Relations", "SEO"]
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Namedays Calendar",
+      "slug": "namedays-calendar",
+      "emoji": "📅",
+      "tagline": "Whose name day is it today, across many countries",
+      "description": "Abalin's Nameday API returns the name days celebrated on a given date across dozens of countries as JSON. Call /V2/today for the current date (UTC by default), or /V2/date with a day and month. The GET endpoints need no key.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://nameday.abalin.net",
+      "baseUrl": "https://nameday.abalin.net/api",
+      "sampleEndpoint": "/V2/today",
+      "latencyMs": 546,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "message": "Namedays for 07-05 timezone UTC",
+        "data": {
+          "at": "Albrecht, Antonius, Letizia",
+          "de": "Albrecht, Kira, Letizia",
+          "dk": "Anshelmus",
+          "es": "Filomena, Filomeno, Zoa",
+          "fi": "Unto",
+          "fr": "Antoine"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The older /api/V1 paths now 404; the current API is /api/V2. Full response covers ~30 countries; trimmed here."
+    },
+    {
+      "name": "The Calendar",
+      "slug": "the-calendar",
+      "emoji": "🗓️",
+      "tagline": "Static-JSON public holidays for US states and 30 countries",
+      "description": "A CORS-open, no-auth API that serves public holidays for US states and 30 countries, plus sports and finance calendars, as plain static JSON files. This sample returns the 2026 US federal holidays, sourced from 5 U.S.C. § 6103. Browse /api/index.json for the full file list.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://the-calendar.net/api/",
+      "baseUrl": "https://the-calendar.net",
+      "sampleEndpoint": "/api/holidays/us-federal/2026.json",
+      "latencyMs": 2094,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "country": "US",
+        "kind": "federal",
+        "year": 2026,
+        "source": "5 U.S.C. § 6103",
+        "holidays": [
+          {
+            "name": "New Year's Day",
+            "date": "2026-01-01",
+            "observed": null,
+            "weekday": "Thursday",
+            "note": null
+          }
+        ]
+      },
+      "freeTier": "Free, no auth (per site)",
+      "rateLimit": "None stated (site advertises no rate limit)",
+      "dataLicense": "Unverified (US federal list per 5 U.S.C. § 6103)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Alpha (Mossland)",
+      "slug": "alpha-mossland",
+      "emoji": "🪙",
+      "tagline": "Korean crypto-channel stance and a canonical entity store",
+      "description": "Mossland's Alpha exposes a canonical store of crypto entities, topics and events as static JSON, plus RAG Q&A and a pulse feed. This sample hits the canonical topics file. The GET endpoints are keyless and CORS-open, though the canonical stores were empty at probe time.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://alpha.moss.land/developers",
+      "baseUrl": "https://alpha.moss.land",
+      "sampleEndpoint": "/api/canonical/topics.json",
+      "latencyMs": 1442,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "v1",
+        "generated_at": "2026-07-05T10:31:04.880Z",
+        "count": 0,
+        "topics": []
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Canonical store returned count:0 (empty) at probe time; endpoint is live and regenerating (generated_at is today). /api/pulse returned 404."
+    },
+    {
+      "name": "Block Lottos",
+      "slug": "block-lottos",
+      "emoji": "🎰",
+      "tagline": "On-chain lottery jackpots, draws and stats as JSON",
+      "description": "A public API for the Block Lottos on-chain lottery: live jackpot amounts, draw history and site stats for its Polygon and Base ledgers, with no key required. This sample reads the current Polygon jackpot. A full OpenAPI spec is served at /openapi.json.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://blocklottos.com/openapi.json",
+      "baseUrl": "https://blocklottos.com",
+      "sampleEndpoint": "/api/lottery/jackpot",
+      "latencyMs": 1397,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "chain": "polygon",
+        "network": "Polygon Mainnet",
+        "jackpot": 0,
+        "jackpot_units": "0",
+        "currency": "POL",
+        "contract": "0x07F62Ff6697eD9b475FEed9dc90a5A157936839c",
+        "jackpot_wei": "0"
+      },
+      "freeTier": "Free, no key (API docs state no key required)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "openapi.json itself has no CORS header, but the data endpoints (jackpot/stats) return access-control-allow-origin: *."
+    },
+    {
+      "name": "CoinGecko",
+      "slug": "coingecko",
+      "emoji": "🦎",
+      "tagline": "Crypto prices, market and developer data, key-optional",
+      "description": "CoinGecko's public API covers prices, market caps, volumes and coin, developer and social metadata for thousands of cryptocurrencies. This sample is the /ping health check. The public endpoints respond without a key (a free Demo key raises the limits).",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.coingecko.com/api",
+      "baseUrl": "https://api.coingecko.com",
+      "sampleEndpoint": "/api/v3/ping",
+      "latencyMs": 590,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": { "gecko_says": "(V3) To the Moon!" },
+      "freeTier": "Free public / Demo tier (key-optional)",
+      "rateLimit": "Unpublished for keyless use",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Coinpaprika",
+      "slug": "coinpaprika",
+      "emoji": "🌶️",
+      "tagline": "Crypto prices, volumes and market overview without a key",
+      "description": "Coinpaprika's REST API serves prices, volumes, market caps and coin metadata for thousands of cryptocurrencies. This sample is the global market overview: total market cap, 24h volume and BTC dominance. The free tier is keyless.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.coinpaprika.com",
+      "baseUrl": "https://api.coinpaprika.com",
+      "sampleEndpoint": "/v1/global",
+      "latencyMs": 534,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "market_cap_usd": 2274604881696,
+        "volume_24h_usd": 79822395231,
+        "bitcoin_dominance_percentage": 55.18,
+        "cryptocurrencies_number": 13049,
+        "last_updated": 1783246946
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Currency-api",
+      "slug": "currency-api",
+      "emoji": "💵",
+      "tagline": "Free exchange rates for 150+ currencies, no rate limits",
+      "description": "Fawaz Ahmed's Currency API publishes daily exchange rates (and crypto rates) for 150+ currencies as static JSON on the jsDelivr CDN, with no key and no rate limits. This sample lists rates against the euro. Fully keyless and CORS-open.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://github.com/fawazahmed0/currency-api#readme",
+      "baseUrl": "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest",
+      "sampleEndpoint": "/v1/currencies/eur.json",
+      "latencyMs": 523,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "date": "2026-07-04",
+        "eur": {
+          "usd": 1.14368084,
+          "gbp": 0.85668125,
+          "jpy": 184.57006692,
+          "inr": 109.21389502
+        }
+      },
+      "freeTier": "Free, no key (static CDN JSON files)",
+      "rateLimit": "None (served as static files from jsDelivr CDN)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Full eur object holds 150+ currency keys; trimmed to four here."
+    },
+    {
+      "name": "Frankfurter",
+      "slug": "frankfurter",
+      "emoji": "💱",
+      "tagline": "ECB exchange rates and currency conversion, keyless",
+      "description": "Frankfurter serves foreign-exchange reference rates published by the European Central Bank, covering latest rates, historical dates and time series, as clean JSON. This sample converts USD to EUR. It is open source and keyless.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://www.frankfurter.app/docs",
+      "baseUrl": "https://api.frankfurter.app",
+      "sampleEndpoint": "/latest?base=USD&symbols=EUR",
+      "latencyMs": 1209,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "amount": 1.0,
+        "base": "USD",
+        "date": "2026-07-03",
+        "rates": { "EUR": 0.87352 }
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (rates sourced from the European Central Bank)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "National Bank of Poland",
+      "slug": "national-bank-of-poland",
+      "emoji": "🏦",
+      "tagline": "Official NBP currency exchange rates in JSON or XML",
+      "description": "The National Bank of Poland's public API publishes official currency exchange rate tables, gold prices and historical archives, available as JSON or XML. This sample returns the current USD mid-rate from table A. No key required.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "http://api.nbp.pl/en.html",
+      "baseUrl": "https://api.nbp.pl",
+      "sampleEndpoint": "/api/exchangerates/rates/a/usd/?format=json",
+      "latencyMs": 620,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "table": "A",
+        "currency": "dolar amerykański",
+        "code": "USD",
+        "rates": [
+          { "no": "127/A/NBP/2026", "effectiveDate": "2026-07-03", "mid": 3.7420 }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Penguin Publishing",
+      "reason": "Endpoint serves HTML, not JSON; the Penguin Random House REST services require a registered domain/key and expose no keyless JSON GET."
+    },
+    {
+      "name": "Runyankole Bible",
+      "reason": "Data endpoints (/api/books, /api/random) time out or return HTTP 500 'TypeError: fetch failed'; only the static landing page responds. Backend unavailable after 3+ attempts."
+    },
+    {
+      "name": "Thirukkural",
+      "reason": "All /api endpoint variants (?num=, ?kural=) return HTTP 404 Firebase 'Page Not Found'; the API function appears undeployed."
+    },
+    {
+      "name": "caldays",
+      "reason": "The advertised API host api.caldays.com does not resolve (DNS failure); caldays.com serves only a marketing SPA with no reachable keyless JSON endpoint."
+    },
+    {
+      "name": "Non-Working Days",
+      "reason": "isdayoff.ru returns plain-text 0/1 with Content-Type text/plain, not a JSON document."
+    },
+    {
+      "name": "Pantry",
+      "reason": "Requires a POST to create a pantry and obtain an ID before any GET; no keyless JSON GET is available."
+    }
+  ]
+}

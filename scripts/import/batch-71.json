@@ -1,0 +1,649 @@
+{
+  "batch": 71,
+  "verified": [
+    {
+      "name": "Tomba email finder",
+      "slug": "tomba-email-finder",
+      "emoji": "🔑",
+      "tagline": "Tomba email finder — free tier with API key",
+      "description": "Tomba email finder exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Business",
+      "docsUrl": "https://tomba.io/api",
+      "baseUrl": "https://api.tomba.io",
+      "sampleEndpoint": "/v1/domain-search?domain=stripe.com&",
+      "latencyMs": 1970,
+      "corsObserved": true,
+      "httpStatus": 400,
+      "sampleJson": {
+        "errors": {
+          "type": "authentication_failed",
+          "message": "No user found for the API supplied. . Sign up at https://tomba.io",
+          "code": 400
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.tomba.io/v1/domain-search?domain=stripe.com&#39"
+    },
+    {
+      "name": "CurrencyScoop",
+      "slug": "currencyscoop",
+      "emoji": "🔑",
+      "tagline": "CurrencyScoop — free tier with API key",
+      "description": "CurrencyScoop exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://currencyscoop.com/api-documentation",
+      "baseUrl": "https://api.currencybeacon.com",
+      "sampleEndpoint": "/v1/latest?api_key=YOUR_KEY&base=USD&symbols=EUR,GBP",
+      "latencyMs": 697,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "meta": {
+          "code": 401,
+          "error_type": "auth failed",
+          "error_detail": "Missing or invalid api credentials. See https://currencybeacon.com/api-documentation for details."
+        },
+        "response": []
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.currencybeacon.com/v1/latest?api_key=YOUR_KEY&base=USD&symbols=EUR,GBP"
+    },
+    {
+      "name": "CurrencyFreaks",
+      "slug": "currencyfreaks",
+      "emoji": "🔑",
+      "tagline": "CurrencyFreaks — free tier with API key",
+      "description": "CurrencyFreaks exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://currencyfreaks.com/",
+      "baseUrl": "https://api.currencyfreaks.com",
+      "sampleEndpoint": "/v2.0/rates/latest?apikey=YOUR_KEY%3C/code%3E%3C/pre%3E%3Cp",
+      "latencyMs": 545,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "timestamp": 1783294186192,
+        "status": 401,
+        "error": "Invalid Api Access Exception",
+        "message": "Provided API key is invalid. [Contact tech. support for assistance at support@currencyfreaks.com]",
+        "path": "/v2.0/rates/latest"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.currencyfreaks.com/v2.0/rates/latest?apikey=YOUR_KEY</code></pre><p"
+    },
+    {
+      "name": "US Autocomplete",
+      "slug": "us-autocomplete",
+      "emoji": "🔑",
+      "tagline": "US Autocomplete — free tier with API key",
+      "description": "US Autocomplete exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://www.smarty.com/docs/cloud/us-autocomplete-pro-api",
+      "baseUrl": "https://us-autocomplete-pro.api.smarty.com",
+      "sampleEndpoint": "/lookup?key=YOUR+EMBEDDED+KEY+HERE\\u0026search=123+mai\\u0026include_only_cities=chicago%2Cil\\u0026include_only_states=mi\\u0026prefer_states=il",
+      "latencyMs": 774,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          {
+            "id": 1611079217,
+            "message": "Authentication required (1611079217)"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://us-autocomplete-pro.api.smarty.com/lookup?key=YOUR+EMBEDDED+KEY+HERE\\u0026search=123+mai\\u0026include_only_cities=chicago%2Cil\\u0026include_only_states=mi\\u0026prefer_states=il"
+    },
+    {
+      "name": "US Street Address",
+      "slug": "us-street-address",
+      "emoji": "🔑",
+      "tagline": "US Street Address — free tier with API key",
+      "description": "US Street Address exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://www.smarty.com/docs/cloud/us-street-api",
+      "baseUrl": "https://us-street.api.smarty.com",
+      "sampleEndpoint": "/street-address?\\n\\tauth-id=YOUR+AUTH-ID+HERE\\u0026amp;\\n\\tauth-token=YOUR+AUTH-TOKEN+HERE\\u0026amp;\\n\\tstreet=1600+amphitheatre+pkwy\\u0026amp;\\n\\tcity=mountain+view\\u0026amp;\\n\\tstate=CA\\u0026amp;\\n\\tcandidates=10",
+      "latencyMs": 863,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          {
+            "id": 1611079217,
+            "message": "Authentication required (1611079217)"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://us-street.api.smarty.com/street-address?\\n\\tauth-id=YOUR+AUTH-ID+HERE\\u0026amp;\\n\\tauth-token=YOUR+AUTH-TOKEN+HERE\\u0026amp;\\n\\tstreet=1600+amphitheatre+pkwy\\u0026amp;\\n\\tcity=mountain+view\\u0026amp;\\n\\tstate=CA\\u0026amp;\\n\\tcandidates=10"
+    },
+    {
+      "name": "Browshot",
+      "slug": "browshot",
+      "emoji": "🔑",
+      "tagline": "Browshot — free tier with API key",
+      "description": "Browshot exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://browshot.com/api/documentation",
+      "baseUrl": "https://api.browshot.com",
+      "sampleEndpoint": "/api/v1/simple",
+      "latencyMs": 985,
+      "corsObserved": false,
+      "httpStatus": 400,
+      "sampleJson": {
+        "error": "Wrong or missing API key"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.browshot.com/api/v1/simple?"
+    },
+    {
+      "name": "Host.io",
+      "slug": "host-io",
+      "emoji": "🔑",
+      "tagline": "Host.io — free tier with API key",
+      "description": "Host.io exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://host.io",
+      "baseUrl": "https://host.io",
+      "sampleEndpoint": "/api/full/facebook.com?token=",
+      "latencyMs": 378,
+      "corsObserved": true,
+      "httpStatus": 400,
+      "sampleJson": {
+        "error": "API Access Token Required"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://host.io/api/full/facebook.com?token="
+    },
+    {
+      "name": "staffSign",
+      "slug": "staffsign",
+      "emoji": "🔑",
+      "tagline": "staffSign — free tier with API key",
+      "description": "staffSign exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://staffsign.de/docs",
+      "baseUrl": "https://www.promotionbasis.de",
+      "sampleEndpoint": "/api/mcp",
+      "latencyMs": 863,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "type": "https://tools.ietf.org/html/rfc2616#section-10",
+        "title": "An error occurred",
+        "status": 401,
+        "detail": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.promotionbasis.de/api/mcp"
+    },
+    {
+      "name": "Anycrap",
+      "slug": "anycrap",
+      "emoji": "🔑",
+      "tagline": "Anycrap — free tier with API key",
+      "description": "Anycrap exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://anycrap.shop/developers",
+      "baseUrl": "https://anycrap.shop",
+      "sampleEndpoint": "/api/v1/products/random",
+      "latencyMs": 358,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "API key required. Get one free at https://anycrap.shop/developers",
+        "code": "UNAUTHORIZED"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://anycrap.shop/api/v1/products/random"
+    },
+    {
+      "name": "RecipeAPI",
+      "slug": "recipeapi",
+      "emoji": "🔑",
+      "tagline": "RecipeAPI — free tier with API key",
+      "description": "RecipeAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://recipeapi.io",
+      "baseUrl": "https://recipeapi.io",
+      "sampleEndpoint": "/api/v1/recipes?search=pasta",
+      "latencyMs": 244,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "UNAUTHENTICATED",
+          "message": "Invalid or missing API key. Pass your key via Authorization: Bearer sk_live_..., X-API-Key header, or ?apikey= query parameter."
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://recipeapi.io/api/v1/recipes?search=pasta"
+    },
+    {
+      "name": "PUBG",
+      "slug": "pubg",
+      "emoji": "🔑",
+      "tagline": "PUBG — free tier with API key",
+      "description": "PUBG exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://developer.pubg.com/",
+      "baseUrl": "https://developer.pubg.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 405,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "title": "Unauthorized"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.pubg.com/api"
+    },
+    {
+      "name": "ApogeoAPI",
+      "slug": "apogeoapi",
+      "emoji": "🔑",
+      "tagline": "ApogeoAPI — free tier with API key",
+      "description": "ApogeoAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://apogeoapi.com",
+      "baseUrl": "https://api.apogeoapi.com",
+      "sampleEndpoint": "/v1/countries/AR",
+      "latencyMs": 234,
+      "corsObserved": false,
+      "httpStatus": 401,
+      "sampleJson": {
+        "statusCode": 401,
+        "message": "API key requerida. Incluir en header: X-API-Key",
+        "error": "Unauthorized",
+        "timestamp": "2026-07-05T23:30:33.856Z",
+        "path": "/v1/countries/AR"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.apogeoapi.com/v1/countries/AR"
+    },
+    {
+      "name": "CountryStateCity",
+      "slug": "countrystatecity",
+      "emoji": "🔑",
+      "tagline": "CountryStateCity — free tier with API key",
+      "description": "CountryStateCity exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://countrystatecity.in/",
+      "baseUrl": "https://api.countrystatecity.in",
+      "sampleEndpoint": "/v1/countries/IN/states",
+      "latencyMs": 1242,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "status": "error",
+        "message": "API key is required"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.countrystatecity.in/v1/countries/IN/states"
+    },
+    {
+      "name": "Geocodify.com",
+      "slug": "geocodify-com",
+      "emoji": "🔑",
+      "tagline": "Geocodify.com — free tier with API key",
+      "description": "Geocodify.com exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://geocodify.com/",
+      "baseUrl": "https://api.geocodify.com",
+      "sampleEndpoint": "/v2/geocode?api_key=your_api_key&q=your_address",
+      "latencyMs": 1399,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "meta": {
+          "code": 401,
+          "error_type": "auth failed",
+          "error_detail": "Missing or invalid api credentials. See https://geocodify.com/api-documentation for details."
+        },
+        "response": []
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.geocodify.com/v2/geocode?api_key=your_api_key&q=your_address"
+    },
+    {
+      "name": "US ZipCode",
+      "slug": "us-zipcode",
+      "emoji": "🔑",
+      "tagline": "US ZipCode — free tier with API key",
+      "description": "US ZipCode exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.smarty.com/docs/cloud/us-zipcode-api",
+      "baseUrl": "https://us-zipcode.api.smarty.com",
+      "sampleEndpoint": "/lookup?\\n\\tauth-id=YOUR+AUTH-ID+HERE\\u0026amp;\\n\\tauth-token=YOUR+AUTH-TOKEN+HERE\\u0026amp;\\n\\tcity=mountain+view\\u0026amp;\\n\\tstate=CA\\u0026amp;\\n\\tzipcode=94035",
+      "latencyMs": 1682,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "errors": [
+          {
+            "id": 1611079217,
+            "message": "Authentication required (1611079217)"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://us-zipcode.api.smarty.com/lookup?\\n\\tauth-id=YOUR+AUTH-ID+HERE\\u0026amp;\\n\\tauth-token=YOUR+AUTH-TOKEN+HERE\\u0026amp;\\n\\tcity=mountain+view\\u0026amp;\\n\\tstate=CA\\u0026amp;\\n\\tzipcode=94035"
+    },
+    {
+      "name": "CPFHub",
+      "slug": "cpfhub",
+      "emoji": "🔑",
+      "tagline": "CPFHub — free tier with API key",
+      "description": "CPFHub exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://cpfhub.io",
+      "baseUrl": "https://api.cpfhub.io",
+      "sampleEndpoint": "/cpf/12345678909&",
+      "latencyMs": 1111,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "success": false,
+        "error": "API Key não fornecida"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.cpfhub.io/cpf/12345678909&#x27"
+    },
+    {
+      "name": "Groq",
+      "slug": "groq",
+      "emoji": "🔑",
+      "tagline": "Groq — free tier with API key",
+      "description": "Groq exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://console.groq.com/docs/quickstart",
+      "baseUrl": "https://api.groq.com",
+      "sampleEndpoint": "/openai/v1/batches",
+      "latencyMs": 248,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "message": "Invalid API Key",
+          "type": "invalid_request_error",
+          "code": "invalid_api_key"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.groq.com/openai/v1/batches"
+    },
+    {
+      "name": "GNews",
+      "slug": "gnews",
+      "emoji": "🔑",
+      "tagline": "GNews — free tier with API key",
+      "description": "GNews exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "News",
+      "docsUrl": "https://gnews.io/",
+      "baseUrl": "https://gnews.io",
+      "sampleEndpoint": "/api/v4/search?q=Apple&amp;lang=en&amp;apikey=API_KEY",
+      "latencyMs": 205,
+      "corsObserved": true,
+      "httpStatus": 400,
+      "sampleJson": {
+        "errors": [
+          "You did not provide an API key."
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://gnews.io/api/v4/search?q=Apple&amp;lang=en&amp;apikey=API_KEY"
+    },
+    {
+      "name": "Complete Criminal Checks",
+      "slug": "complete-criminal-checks",
+      "emoji": "🔑",
+      "tagline": "Complete Criminal Checks — free tier with API key",
+      "description": "Complete Criminal Checks exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://completecriminalchecks.com/Developers",
+      "baseUrl": "https://completecriminalchecks.com",
+      "sampleEndpoint": "/api/search.php?name=John+Doe&amp;feeds=arrest,sex_offender,inmate,most_wanted",
+      "latencyMs": 481,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "success": false,
+        "error": "API key required",
+        "message": "Please provide your API key using X-API-Key header or api_key parameter",
+        "documentation": "https://completecriminalchecks.com/members/docs.php"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://completecriminalchecks.com/api/search.php?name=John+Doe&amp;feeds=arrest,sex_offender,inmate,most_wanted"
+    },
+    {
+      "name": "FingerprintJS Pro",
+      "slug": "fingerprintjs-pro",
+      "emoji": "🔑",
+      "tagline": "FingerprintJS Pro — free tier with API key",
+      "description": "FingerprintJS Pro exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://dev.fingerprintjs.com/docs",
+      "baseUrl": "https://api.fpjs.io",
+      "sampleEndpoint": "/v4/events//",
+      "latencyMs": 705,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "error": {
+          "code": "secret_api_key_required",
+          "message": "secret API key in header is missing or empty"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.fpjs.io/v4/events/\\"
+    },
+    {
+      "name": "xfetch",
+      "slug": "xfetch",
+      "emoji": "🔑",
+      "tagline": "xfetch — free tier with API key",
+      "description": "xfetch exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://xfetch.io",
+      "baseUrl": "https://api.xfetch.io",
+      "sampleEndpoint": "/v1/search/recent?query=$BTC&",
+      "latencyMs": 681,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": {
+          "code": "invalid_api_key",
+          "message": "The API key is invalid.",
+          "request_id": "req_KuPMJ5TZAkEncQ_2"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.xfetch.io/v1/search/recent?query=$BTC&#x27"
+    },
+    {
+      "name": "Ayrshare",
+      "slug": "ayrshare",
+      "emoji": "🔑",
+      "tagline": "Ayrshare — free tier with API key",
+      "description": "Ayrshare exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://www.ayrshare.com",
+      "baseUrl": "https://app.ayrshare.com",
+      "sampleEndpoint": "/api/post///",
+      "latencyMs": 1099,
+      "corsObserved": true,
+      "httpStatus": 403,
+      "sampleJson": {
+        "action": "authorization",
+        "status": "error",
+        "code": 102,
+        "message": "API Key not valid. Please be sure to send a Header Authorization containing 'Bearer API_KEY'. https://www.ayrshare.com/docs/apis/overview#authorization",
+        "details": "Either the 'Bearer' is missing or no API Key was sent in the header."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://app.ayrshare.com/api/post\\\\\\"
+    },
+    {
+      "name": "Randommer",
+      "slug": "randommer",
+      "emoji": "🔑",
+      "tagline": "Randommer — free tier with API key",
+      "description": "Randommer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://randommer.io/randommer-api",
+      "baseUrl": "https://randommer.io",
+      "sampleEndpoint": "/api/Phone/Generate?CountryCode=US&amp;Quantity=2&",
+      "latencyMs": 392,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "title": "Unauthorized",
+        "status": 401
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://randommer.io/api/Phone/Generate?CountryCode=US&amp;Quantity=2&#34"
+    },
+    {
+      "name": "Orizn Visa",
+      "slug": "orizn-visa",
+      "emoji": "🔑",
+      "tagline": "Orizn Visa — free tier with API key",
+      "description": "Orizn Visa exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://visa.orizn.app",
+      "baseUrl": "https://visa.orizn.app",
+      "sampleEndpoint": "/api/v1/visa",
+      "latencyMs": 129,
+      "corsObserved": true,
+      "httpStatus": 401,
+      "sampleJson": {
+        "error": "Missing API key. Get one at https://visa.orizn.app"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://visa.orizn.app/api/v1/visa"
+    },
+    {
+      "name": "UrlBae",
+      "slug": "urlbae",
+      "emoji": "🔑",
+      "tagline": "UrlBae — free tier with API key",
+      "description": "UrlBae exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "URL Shorteners",
+      "docsUrl": "https://urlbae.com/developers",
+      "baseUrl": "https://urlbae.com",
+      "sampleEndpoint": "/api/account",
+      "latencyMs": 216,
+      "corsObserved": false,
+      "httpStatus": 403,
+      "sampleJson": {
+        "error": 1,
+        "message": "A valid API key is required to use this service."
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://urlbae.com/api/account"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,246 @@
+{
+  "batch": 8,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "dead-drop",
+      "docsUrl": "https://api.dead-drop.xyz/api/v1/docs",
+      "description": "Ephemeral zero-knowledge encrypted data sharing",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "IPLogs",
+      "docsUrl": "https://iplogs.com/docs",
+      "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Passwordinator",
+      "docsUrl": "https://github.com/fawazsullia/password-generator/",
+      "description": "Generate random passwords of varying complexities",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "4chan",
+      "docsUrl": "https://github.com/4chan/4chan-API",
+      "description": "Simple image-based bulletin board dedicated to a variety of topics",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bluesky",
+      "docsUrl": "https://docs.bsky.app/",
+      "description": "Decentralized social networking via the AT protocol",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lanyard",
+      "docsUrl": "https://github.com/Phineas/lanyard",
+      "description": "Retrieve your presence on Discord through an HTTP REST API or WebSocket",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "balldontlie",
+      "docsUrl": "https://www.balldontlie.io",
+      "description": "Balldontlie provides access to stats data from the NBA",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "DiscGolf",
+      "docsUrl": "https://discgolfapi.com/docs/",
+      "description": "Structured disc golf course data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Football (Soccer) Videos",
+      "docsUrl": "https://www.scorebat.com/video-api/",
+      "description": "Embed codes for goals and highlights from Premier League, Bundesliga, Serie A and many more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Football Standings",
+      "docsUrl": "https://github.com/azharimm/football-standings-api",
+      "description": "Display football standings e.g epl, la liga, serie a etc. The data is based on espn site",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenF1",
+      "docsUrl": "https://openf1.org/",
+      "description": "Real-time and historical Formula 1 data including laps, car telemetry and positions",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenLigaDB",
+      "docsUrl": "https://www.openligadb.de",
+      "description": "Crowd sourced sports league results",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Padel Snipe",
+      "docsUrl": "https://padelsnipe.com/fr/world/api",
+      "description": "4,000+ mapped padel clubs across 9 European countries with GPS and courts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "SportScore",
+      "docsUrl": "https://sportscore.com/developers/",
+      "description": "Live scores, fixtures, standings and stats for football, basketball, cricket and tennis",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Squiggle",
+      "docsUrl": "https://api.squiggle.com.au",
+      "description": "Fixtures, results and predictions for Australian Football League matches",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "DummyJSON",
+      "docsUrl": "https://dummyjson.com/",
+      "description": "Fake REST API with products, users, posts, comments, todos and more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "FakerAPI",
+      "docsUrl": "https://fakerapi.it/en",
+      "description": "APIs collection to get fake data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "TotalShiftLeft Sandbox",
+      "docsUrl": "https://demo.totalshiftleft.ai/",
+      "description": "Free multi-protocol sandbox: REST, GraphQL & SOAP with OAuth2/JWT auth and OpenAPI 3.0 spec",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Apimetro",
+      "docsUrl": "https://apimetro.dev/swagger/index.html",
+      "description": "Geospatial data for Mexico City public transport system (Metro, Metrobús, Cablebús, RTP, etc.)",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "BC Ferries",
+      "docsUrl": "https://www.bcferriesapi.ca",
+      "description": "Sailing times and capacities for BC Ferries",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "OpenVan",
+      "docsUrl": "https://openvan.camp/docs",
+      "description": "Fuel prices for 121 countries, food cost index & vanlife weather scores for RV travel",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Belgium",
+      "docsUrl": "https://docs.irail.be/",
+      "description": "The iRail API is a third-party API for Belgian public transport by train",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "transport.rest",
+      "docsUrl": "https://transport.rest",
+      "description": "Community maintained, developer-friendly public transport API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "1pt",
+      "docsUrl": "https://github.com/1pt-co/api/blob/main/README.md",
+      "description": "A simple URL shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    }
+  ]
+}

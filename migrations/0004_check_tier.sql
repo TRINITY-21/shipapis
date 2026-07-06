@@ -1,0 +1,3 @@
+-- 0004 — check_tier now created in 0001_init (greenfield installs).
+-- Kept for migration history on DBs that applied an older 0001 without this column.
+-- No-op on fresh installs.

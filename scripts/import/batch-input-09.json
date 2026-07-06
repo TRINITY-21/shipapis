@@ -1,0 +1,246 @@
+{
+  "batch": 9,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "CleanURI",
+      "docsUrl": "https://cleanuri.com/docs",
+      "description": "URL shortener service",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "GoTiny",
+      "docsUrl": "https://github.com/robvanbakel/gotiny-api",
+      "description": "A lightweight URL shortener, focused on ease-of-use for the developer and end-user",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "Shrtcode",
+      "docsUrl": "https://shrtco.de/docs",
+      "description": "URl Shortener with multiple Domains",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "URL Shorteners",
+      "docsCheck": 200
+    },
+    {
+      "name": "ProblemsByVin",
+      "docsUrl": "https://problemsbyvin.com/data/",
+      "description": "Owner complaints, recalls and failure-mileage statistics by vehicle make, model and year",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Vehicle",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dune",
+      "docsUrl": "https://github.com/ywalia01/dune-api",
+      "description": "A simple API which provides you with book, character, movie and quotes JSON data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Final Space",
+      "docsUrl": "https://finalspaceapi.com/docs/",
+      "description": "Final Space API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "IMDbOT",
+      "docsUrl": "https://github.com/SpEcHiDe/IMDbOT",
+      "description": "Unofficial IMDb Movie / Series Information",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "MCU Countdown",
+      "docsUrl": "https://github.com/DiljotSG/MCU-Countdown",
+      "description": "A Countdown to the next MCU Film",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Movie Quote",
+      "docsUrl": "https://github.com/F4R4N/movie-quote/",
+      "description": "Random Movie and Series Quotes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "SWAPI",
+      "docsUrl": "https://swapi.dev/",
+      "description": "All the Star Wars data you've ever wanted",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "SWAPI",
+      "docsUrl": "https://www.swapi.tech",
+      "description": "All things Star Wars",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "Web Series Quotes Generator",
+      "docsUrl": "https://github.com/yogeshwaran01/web-series-quotes",
+      "description": "API generates various Web Series Quote Images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "openSenseMap",
+      "docsUrl": "https://api.opensensemap.org/",
+      "description": "Data from Personal Weather Stations called senseBoxes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "Pirate Weather",
+      "docsUrl": "https://pirateweather.net/en/latest/",
+      "description": "Free weather API with forecast data similar to Dark Sky",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "US Weather",
+      "docsUrl": "https://www.weather.gov/documentation/services-web-api",
+      "description": "US National Weather Service",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "wttr.in",
+      "docsUrl": "https://wttr.in/:help",
+      "description": "Weather in your terminal, supports JSON output",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Weather",
+      "docsCheck": 200
+    },
+    {
+      "name": "Axolotl",
+      "docsUrl": "https://theaxolotlapi.netlify.app/",
+      "description": "Collection of axolotl pictures and facts",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cat Facts",
+      "docsUrl": "https://alexwohlbruck.github.io/cat-facts/",
+      "description": "Daily cat facts",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cataas",
+      "docsUrl": "https://cataas.com/",
+      "description": "Cat as a service (cats pictures and gifs)",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "MeowFacts",
+      "docsUrl": "https://github.com/wh-iterabb-it/meowfacts",
+      "description": "Get random cat facts",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "RandomDuck",
+      "docsUrl": "https://random-d.uk/api",
+      "description": "Random pictures of ducks",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "RandomFox",
+      "docsUrl": "https://randomfox.ca/floof/",
+      "description": "Random pictures of foxes",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "RescueGroups",
+      "docsUrl": "https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home",
+      "description": "Adoption",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "xeno-canto",
+      "docsUrl": "https://xeno-canto.org/explore/api",
+      "description": "Bird recordings",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    }
+  ]
+}

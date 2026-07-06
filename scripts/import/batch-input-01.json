@@ -1,0 +1,246 @@
+{
+  "batch": 1,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Cat Facts",
+      "docsUrl": "https://catfact.ninja/",
+      "description": "Random cat facts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dog Facts",
+      "docsUrl": "https://dukengn.github.io/Dog-facts-API/",
+      "description": "Random dog facts",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dog Facts",
+      "docsUrl": "https://kinduff.github.io/dog-api/",
+      "description": "Random facts of Dogs",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "HTTP Cat",
+      "docsUrl": "https://http.cat/",
+      "description": "Cat for every HTTP Status",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "HTTP Dog",
+      "docsUrl": "https://http.dog/",
+      "description": "Dogs for every HTTP response status code",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "Movebank",
+      "docsUrl": "https://github.com/movebank/movebank-api-doc",
+      "description": "Movement and Migration data of animals",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlaceBear",
+      "docsUrl": "https://placebear.com/",
+      "description": "Placeholder bear pictures",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "PlaceDog",
+      "docsUrl": "https://place.dog",
+      "description": "Placeholder Dog pictures",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "RandomDog",
+      "docsUrl": "https://random.dog/woof.json",
+      "description": "Random pictures of dogs",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Animals",
+      "docsCheck": 200
+    },
+    {
+      "name": "AnimeFacts",
+      "docsUrl": "https://chandan-02.github.io/anime-facts-rest-api/",
+      "description": "Anime Facts (over 100+)",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "AnimeNewsNetwork",
+      "docsUrl": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+      "description": "Anime industry news",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Catboy",
+      "docsUrl": "https://catboys.com/api",
+      "description": "Neko images, funny GIFs & more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Jikan",
+      "docsUrl": "https://jikan.moe",
+      "description": "Unofficial MyAnimeList API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "NekosBest",
+      "docsUrl": "https://docs.nekos.best",
+      "description": "Neko Images & Anime roleplaying GIFs",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Trace Moe",
+      "docsUrl": "https://soruly.github.io/trace.moe-api/#/",
+      "description": "A useful tool to get the exact scene of an anime from a screenshot",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Waifu.im",
+      "docsUrl": "https://waifu.im/docs",
+      "description": "Get waifu pictures from an archive of over 4000 images and multiple tags",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "URLhaus",
+      "docsUrl": "https://urlhaus-api.abuse.ch/",
+      "description": "Bulk queries and Download Malware Samples",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Anti-Malware",
+      "docsCheck": 200
+    },
+    {
+      "name": "Art Institute of Chicago",
+      "docsUrl": "https://api.artic.edu/docs/",
+      "description": "Art",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "EmojiHub",
+      "docsUrl": "https://github.com/cheatsnake/emojihub",
+      "description": "Get emojis by categories and groups",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icon Horse",
+      "docsUrl": "https://icon.horse",
+      "description": "Favicons for any website, with fallbacks",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Lordicon",
+      "docsUrl": "https://lordicon.com/",
+      "description": "Icons with predone Animations",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "PHP-Noise",
+      "docsUrl": "https://php-noise.com/",
+      "description": "Noise Background Image Generator",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "TWZRD Agent Intel",
+      "docsUrl": "https://intel.twzrd.xyz",
+      "description": "Solana on-chain agent trust scoring via MCP; 4 free tools to score, resolve and verify AI agent wallets",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bhagavad Gita telugu",
+      "docsUrl": "https://gita-api.vercel.app",
+      "description": "Bhagavad Gita API in telugu and odia languages",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    }
+  ]
+}

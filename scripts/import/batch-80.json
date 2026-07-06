@@ -1,0 +1,4349 @@
+{
+  "batch": 80,
+  "verified": [
+    {
+      "name": "GeoScore",
+      "slug": "geoscore",
+      "emoji": "📝",
+      "tagline": "GeoScore — free-tier JSON endpoint",
+      "description": "GeoScore offers a free API tier. We verified JSON on a sample GET (Text Analysis). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://geoscoreapi.com",
+      "baseUrl": "https://api.geoscoreapi.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 454,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "version": "1.0.0",
+        "database": "connected"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "CoinRanking",
+      "slug": "coinranking",
+      "emoji": "🪙",
+      "tagline": "CoinRanking — free-tier JSON endpoint",
+      "description": "CoinRanking offers a free API tier. We verified JSON on a sample GET (Cryptocurrency). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://developers.coinranking.com/api/documentation",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins",
+      "latencyMs": 461,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2143,
+            "totalCoins": 2102552,
+            "totalMarkets": 53780,
+            "totalExchanges": 183,
+            "totalMarketCap": "1109",
+            "total24hVolume": "34235265334"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1259020868744",
+              "price": "62786.06363710672",
+              "listedAt": 1279324800
+            },
+            {
+              "uuid": "razxDUgYGNAdQ",
+              "symbol": "ETH",
+              "name": "Ethereum",
+              "color": "#3C3C3D",
+              "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
+              "marketCap": "214851738121",
+              "price": "1780.2950236784056",
+              "listedAt": 1438905600
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 50,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEzNzU0MjMzNDYsInIiOjEzNzU0MjMzNDYsInQiOjYzMTAxLCJvIjoibWFya2V0Q2FwIiwiZCI6ImRlc2MiLCJjIjoibmV4dCIsInAiOjUwfQ",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "OCR.Space",
+      "slug": "ocr-space",
+      "emoji": "🔌",
+      "tagline": "OCR.Space — free-tier JSON endpoint",
+      "description": "OCR.Space offers a free API tier. We verified JSON on a sample GET (Documents & Productivity). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://ocr.space/ocrapi",
+      "baseUrl": "https://api.ocr.space",
+      "sampleEndpoint": "/parse/imageurl?apikey=helloworld&url=https://dl.a9t9.com/ocr/solarcell.jpg",
+      "latencyMs": 2597,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ParsedResults": [
+          {
+            "TextOverlay": {
+              "Lines": [],
+              "HasOverlay": false,
+              "Message": "Text overlay is not provided as it is not requested"
+            },
+            "TextOrientation": "0",
+            "FileParseExitCode": 1,
+            "ParsedText": "Solar cell\r\nArticle Talk\r\nFrom Wikipedia, the free encyclopedia\r\nFor convection cells on the Sun's surface, see Solar granule.\r\nA solar cell or photovoltaic cell (PV cell) is an electronic device that converts the energy of light directly\r\ninto electricity by means Of the photovoltaic effect. [II It is a form Of photoelectric cell, a device whose\r\nelectrical characteristics (such as current, voltage, or resistance) vary when exposed to light. Individual\r\nsolar cell devices are often the electrical building blocks of photovoltaic modules, known colloquially as\r\n\"solar panels\". The common single-junction silicon solar cell can produce a maximum Open-circuit voltage\r\nof approximately 0.5 to 0.6 volts.(2J\r\nPhotovoltaic cells may operate under sunlight or artificial light. In addition to producing energy, they can be\r\nused as a photodetector (for example infrared detectors), detecting light or other electromagnetic radiation\r\nnear the visible range, or measuring light intensity.\r\nRead\r\nEdit\r\n75 languages v\r\nView history Tools v\r\n",
+            "ErrorMessage": "",
+            "ErrorDetails": ""
+          }
+        ],
+        "OCRExitCode": 1,
+        "IsErroredOnProcessing": false,
+        "ProcessingTimeInMilliseconds": "328",
+        "SearchablePDFURL": "Searchable PDF not generated as it was not requested."
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Finage",
+      "slug": "finage",
+      "emoji": "💰",
+      "tagline": "Finage — free-tier JSON endpoint",
+      "description": "Finage offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://finage.co.uk",
+      "baseUrl": "https://api.finage.co.uk",
+      "sampleEndpoint": "/op/v1/notification/publicnotification/homepage-hero",
+      "latencyMs": 110,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "63aebc89021064ecd4f03c54",
+        "location": "homepage-hero",
+        "notificationDTO": {
+          "title": "Finage Vision is Live",
+          "content": "Real-Time AI Market Intelligence",
+          "url": "https://finage.co.uk/queryseed/pulse",
+          "color": "",
+          "textColor": "",
+          "dotColor": ""
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "openrouteservice.org",
+      "slug": "openrouteservice-org",
+      "emoji": "🗺",
+      "tagline": "openrouteservice.org — free-tier JSON endpoint",
+      "description": "openrouteservice.org offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://openrouteservice.org/",
+      "baseUrl": "https://mastodon.social",
+      "sampleEndpoint": "/api/v1/accounts/114201497327006277/statuses?limit=1&exclude_replies=true",
+      "latencyMs": 2331,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "116854928541360199",
+          "created_at": "2026-07-03T07:45:05.531Z",
+          "in_reply_to_id": null,
+          "in_reply_to_account_id": null,
+          "sensitive": false,
+          "spoiler_text": "",
+          "visibility": "public",
+          "language": "en"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Open Government, France",
+      "slug": "open-government-france",
+      "emoji": "🏛",
+      "tagline": "Open Government, France — free-tier JSON endpoint",
+      "description": "Open Government, France offers a free API tier. We verified JSON on a sample GET (Government). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.data.gouv.fr/",
+      "baseUrl": "https://grist.numerique.gouv.fr",
+      "sampleEndpoint": "/api/docs/eVmasNDoXMp1",
+      "latencyMs": 2368,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "CRM ouverture",
+        "createdAt": "2024-07-12T15:41:14.978Z",
+        "updatedAt": "2026-07-03T13:46:03.333Z",
+        "id": "eVmasNDoXMp1PQUrtDLxtu",
+        "isPinned": true,
+        "urlId": "eVmasNDoXMp1",
+        "trunkId": null,
+        "type": null
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "FoodData Central",
+      "slug": "fooddata-central",
+      "emoji": "🩺",
+      "tagline": "FoodData Central — free-tier JSON endpoint",
+      "description": "FoodData Central offers a free API tier. We verified JSON on a sample GET (Health). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://fdc.nal.usda.gov/",
+      "baseUrl": "https://api.nal.usda.gov",
+      "sampleEndpoint": "/fdc/v1/foods/search?query=apple&pageSize=1&api_key=DEMO_KEY",
+      "latencyMs": 4367,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "totalHits": 26835,
+        "currentPage": 1,
+        "totalPages": 26835,
+        "pageList": [
+          1,
+          2
+        ],
+        "foodSearchCriteria": {
+          "query": "apple",
+          "generalSearchInput": "apple",
+          "pageNumber": 1,
+          "numberOfResultsPerPage": 50,
+          "pageSize": 1,
+          "requireAllWords": false
+        },
+        "foods": [
+          {
+            "fdcId": 2117388,
+            "description": "APPLE",
+            "dataType": "Branded",
+            "gtinUpc": "070038322238",
+            "publishedDate": "2021-10-28",
+            "brandOwner": "Associated Wholesale Grocers, Inc.",
+            "brandName": "BEST CHOICE",
+            "ingredients": "FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C)."
+          }
+        ],
+        "aggregations": {
+          "dataType": {
+            "Branded": 26698,
+            "SR Legacy": 89,
+            "Survey (FNDDS)": 42,
+            "Foundation": 6
+          },
+          "nutrients": {}
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Football-Data",
+      "slug": "football-data",
+      "emoji": "⚽",
+      "tagline": "Football-Data — free-tier JSON endpoint",
+      "description": "Football-Data offers a free API tier. We verified JSON on a sample GET (Sports & Fitness). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://www.football-data.org",
+      "baseUrl": "https://api.football-data.org",
+      "sampleEndpoint": "/v4/competitions",
+      "latencyMs": 5143,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 187,
+        "filters": {},
+        "competitions": [
+          {
+            "id": 2166,
+            "area": {
+              "id": 2001,
+              "name": "Africa",
+              "code": "AFR",
+              "flag": null
+            },
+            "name": "AFC Champions League",
+            "code": "ACL",
+            "type": "CUP",
+            "emblem": null,
+            "plan": "TIER_FOUR",
+            "currentSeason": {
+              "id": 1559,
+              "startDate": "2022-04-06",
+              "endDate": "2023-05-05",
+              "currentMatchday": null,
+              "winner": null
+            }
+          },
+          {
+            "id": 2006,
+            "area": {
+              "id": 2001,
+              "name": "Africa",
+              "code": "AFR",
+              "flag": null
+            },
+            "name": "WC Qualification CAF",
+            "code": "QCAF",
+            "type": "CUP",
+            "emblem": null,
+            "plan": "TIER_FOUR",
+            "currentSeason": {
+              "id": 1609,
+              "startDate": "2023-11-15",
+              "endDate": "2025-10-13",
+              "currentMatchday": 10,
+              "winner": null
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "AZ511",
+      "slug": "az511",
+      "emoji": "🚆",
+      "tagline": "AZ511 — free-tier JSON endpoint",
+      "description": "AZ511 offers a free API tier. We verified JSON on a sample GET (Transportation). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.az511.com/developers/doc",
+      "baseUrl": "https://az511.com",
+      "sampleEndpoint": "/api/wzdx",
+      "latencyMs": 4178,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "feed_info": {
+          "update_date": "2026-07-05T19:46:08.7168456+00:00",
+          "publisher": "AZDOT",
+          "version": "4.1",
+          "data_sources": [
+            {
+              "data_source_id": "Tucson",
+              "organization_name": "Tucson",
+              "update_date": "2026-07-05T19:46:08Z"
+            },
+            {
+              "data_source_id": "ERS",
+              "organization_name": "ERS",
+              "update_date": "2026-07-05T19:46:08Z"
+            }
+          ]
+        },
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "359004",
+            "type": "Feature",
+            "properties": {
+              "core_details": {
+                "event_type": "work-zone",
+                "data_source_id": "Tucson",
+                "road_names": [
+                  "TWIN PEAKS ROAD, RATTLESNAKE PASS WIDENING PROJECT"
+                ],
+                "direction": "undefined",
+                "description": "TWIN PEAKS ROAD, RATTLESNAKE PASS WIDENING PROJECT - The speed limit will be reduced for the duration of the project. Watch for message boards in advance of traffic changes.",
+                "update_date": "2024-07-12T18:01:52Z"
+              },
+              "road_event_id": "359004",
+              "is_start_position_verified": false,
+              "is_end_position_verified": false,
+              "start_date": "2024-07-15T07:00:00.000+00:00",
+              "end_date": "2026-08-31T07:00:00Z",
+              "is_start_date_verified": false,
+              "is_end_date_verified": false
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  -111.169412,
+                  32.380865
+                ],
+                [
+                  -111.146903,
+                  32.377459
+                ]
+              ]
+            }
+          },
+          {
+            "id": "267686",
+            "type": "Feature",
+            "properties": {
+              "core_details": {
+                "event_type": "work-zone",
+                "data_source_id": "ERS",
+                "road_names": [
+                  "US-60"
+                ],
+                "direction": "eastbound",
+                "description": "Long term road construction on US-60 Eastbound from SR-177 (MP 227)  to  N Magma Mine Rd (MP 231)   Width Restriction: 12ft Speed Restriction: 45mph  10/22/2024 6:59 AM  to 6/16/2028 5:00 PM  ",
+                "update_date": "2026-07-01T22:20:15Z"
+              },
+              "road_event_id": "267686",
+              "beginning_cross_street": "SR-177 ",
+              "ending_cross_street": " N Magma Mine Rd",
+              "beginning_milepost": 227,
+              "ending_milepost": 231,
+              "is_start_position_verified": false,
+              "is_end_position_verified": false
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  -111.09321,
+                  33.29257
+                ],
+                [
+                  -111.09309,
+                  33.29261
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Navitia",
+      "slug": "navitia",
+      "emoji": "🚆",
+      "tagline": "Navitia — free-tier JSON endpoint",
+      "description": "Navitia offers a free API tier. We verified JSON on a sample GET (Transportation). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://doc.navitia.io/",
+      "baseUrl": "https://api.navitia.io",
+      "sampleEndpoint": "/v1/",
+      "latencyMs": 3574,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": [
+          {
+            "href": "https://api.navitia.io/v1/coverage/",
+            "templated": false,
+            "rel": "coverage",
+            "type": "coverage",
+            "title": "Coverage of navitia"
+          },
+          {
+            "href": "https://api.navitia.io/v1/coord/0.0%3B0.0/",
+            "templated": true,
+            "rel": "coord",
+            "type": "coord",
+            "title": "Inverted geocoding for a given coordinate"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Road511",
+      "slug": "road511",
+      "emoji": "🚆",
+      "tagline": "Road511 — free-tier JSON endpoint",
+      "description": "Road511 offers a free API tier. We verified JSON on a sample GET (Transportation). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://road511.com/docs.html",
+      "baseUrl": "https://api.road511.com",
+      "sampleEndpoint": "/api/v1/events?jurisdiction=WA&amp;limit=5",
+      "latencyMs": 4321,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "WA-703983",
+            "source_id": "703983",
+            "source": "WA",
+            "jurisdiction": "WA",
+            "type": "incident",
+            "sub_type": "fire",
+            "severity": "major",
+            "status": "active"
+          },
+          {
+            "id": "WA-703986",
+            "source_id": "703986",
+            "source": "WA",
+            "jurisdiction": "WA",
+            "type": "incident",
+            "sub_type": "accident",
+            "severity": "major",
+            "status": "active"
+          }
+        ],
+        "total": 137,
+        "limit": 100,
+        "offset": 0,
+        "has_more": true
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Sabre for Developers",
+      "slug": "sabre-for-developers",
+      "emoji": "🚆",
+      "tagline": "Sabre for Developers — free-tier JSON endpoint",
+      "description": "Sabre for Developers offers a free API tier. We verified JSON on a sample GET (Transportation). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://developer.sabre.com/guides/travel-agency/quickstart/getting-started-in-travel",
+      "baseUrl": "https://developer.sabre.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 333,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "api": "DevStudio API",
+        "context": "Consumer API"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Telegraph",
+      "slug": "telegraph",
+      "emoji": "💬",
+      "tagline": "Telegraph — free-tier JSON endpoint",
+      "description": "Telegraph offers a free API tier. We verified JSON on a sample GET (Social). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://telegra.ph/api",
+      "baseUrl": "https://api.telegra.ph",
+      "sampleEndpoint": "/createAccount&token=3",
+      "latencyMs": 7712,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": false,
+        "error": "UNKNOWN_METHOD"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Piloterr",
+      "slug": "piloterr",
+      "emoji": "🔧",
+      "tagline": "Piloterr — free-tier JSON endpoint",
+      "description": "Piloterr offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.piloterr.com/",
+      "baseUrl": "https://www.piloterr.com",
+      "sampleEndpoint": "/api/c15t/",
+      "latencyMs": 4509,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.1.0",
+        "timestamp": "2026-07-05T19:50:00.814Z",
+        "client": {
+          "ip": "172.71.182.0",
+          "acceptLanguage": "*",
+          "userAgent": "shipapisbot/1.0 (+https://shipapis.dev/methodology)",
+          "region": {
+            "countryCode": "TR",
+            "regionCode": null
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "FXMacroData",
+      "slug": "fxmacrodata",
+      "emoji": "💰",
+      "tagline": "FXMacroData — free-tier JSON endpoint",
+      "description": "FXMacroData offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://fxmacrodata.com/",
+      "baseUrl": "https://fxmacrodata.com",
+      "sampleEndpoint": "/api/openapi.json",
+      "latencyMs": 510,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "FX Macrodata API",
+          "description": "...",
+          "version": "1.0.0"
+        },
+        "paths": {
+          "/v1/health": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Ping the API",
+              "description": "Returns a simple OK status to verify the API is running.",
+              "operationId": "ping_v1_health_get",
+              "responses": {
+                "200": {
+                  "description": "Health-check response confirming API availability.",
+                  "content": {
+                    "application/json": {
+                      "schema": {},
+                      "example": {
+                        "status": "ok",
+                        "service": "fxmacrodata-api"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/ping": {
+            "get": {
+              "tags": [
+                "health"
+              ],
+              "summary": "Ping the API",
+              "description": "Returns a simple OK status to verify the API is running.",
+              "operationId": "ping_v1_ping_get",
+              "responses": {
+                "200": {
+                  "description": "Health-check response confirming API availability.",
+                  "content": {
+                    "application/json": {
+                      "schema": {},
+                      "example": {
+                        "status": "ok",
+                        "service": "fxmacrodata-api"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/forex/{base}/{quote}": {
+            "get": {
+              "tags": [
+                "fx_markets"
+              ],
+              "summary": "Get FX spot rates",
+              "description": "Fetches daily FX spot rates between two currencies using official central-bank reference rates.\n\n**Path Parameters:**\n- `base`: Base currency code (e.g., AUD, USD).\n- `quote`: Quote currency code (e.g., USD, EUR).\n\n**Query Parameters:**\n- `start_date`: Optional. Start date YYYY-MM-DD. Defaults to 365 days ago.\n- `end_date`: Optional. End date YYYY-MM-DD. Defaults to today.\n\n- `indicators`: Optional. Comma-separated list of technical indicators to compute from the spot-rate series and include in the response. Pass `all` to include every supported indicator. Supported values: `bollinger_bands`, `ema_12`, `ema_26`, `macd`, `rsi_14`, `sma_20`, `sma_200`, `sma_50`, `all`.\n\n**FX source and derivation metadata:**\n- FX values are served from FXMacroData's Firestore-backed reference-rate store. Canonical USD quote legs are stored first; inverse and cross pairs can be derived from those legs when a requested direct pair is not stored.\n- Responses include `pair_metadata` and row-level `data[].source` with `direct_available`, `inverse_available`, `is_derived`, `derived_from_inverse`, `derived_from_cross`, `derived_from_source_legs`, `derivation_method`, `anchor_currency`, `source_pair`, `source_legs`, and `pair_consistency_check`.\n- Upstream FX source priority is BIS XRU daily USD exchange rates where available, then official national-bank daily sources, explicitly labelled EUR/CAD-derived daily crosses, official USD pegs, BIS monthly averages expanded to business days, IMF IFS monthly rates, and World Bank annual rates. Lower-frequency expansions are labelled with `source_frequency` and `derivation_method`; they are not presented as true daily fixings.\n- `data[].observation_datetime` is the UTC midnight timestamp for the FX reference date. It is an observation-date marker, not a publication timestamp.",
+              "operationId": "forex_v1_forex__base___quote__get",
+              "parameters": [
+                {
+                  "name": "base",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Base currency code",
+                    "examples": [
+                      "AUD"
+                    ],
+                    "title": "Base",
+                    "enum": [
+                      "AUD",
+                      "BRL"
+                    ],
+                    "example": "AUD"
+                  },
+                  "description": "Required path parameter. Base currency code Allowed values: AUD, BRL, CAD, CHF, CNH, CNY, DKK, EUR, GBP, IDR, ILS, JPY, NGN, NOK, NZD, PEN, SEK, THB, USD."
+                },
+                {
+                  "name": "quote",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Quote currency code",
+                    "examples": [
+                      "USD"
+                    ],
+                    "title": "Quote",
+                    "enum": [
+                      "AUD",
+                      "BRL"
+                    ],
+                    "example": "AUD"
+                  },
+                  "description": "Required path parameter. Quote currency code Allowed values: AUD, BRL, CAD, CHF, CNH, CNY, DKK, EUR, GBP, IDR, ILS, JPY, NGN, NOK, NZD, PEN, SEK, THB, USD."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Daily FX spot-rate series with optional computed technical indicators.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ForexResponse"
+                      },
+                      "example": {
+                        "base": "USD",
+                        "quote": "JPY",
+                        "source": "Official central-bank reference rates",
+                        "provenance": {
+                          "publisher": "Official central-bank reference rates",
+                          "storage": "FXMacroData Firestore",
+                          "timestamp_field": "date",
+                          "value_field": "val"
+                        },
+                        "pair_metadata": {
+                          "direct_available": true,
+                          "inverse_available": false,
+                          "derived_from_inverse": false,
+                          "derived_from_cross": false,
+                          "derived_from_source_legs": false,
+                          "is_derived": false,
+                          "derivation_method": "direct_original_pair",
+                          "source_pair": "USD/JPY"
+                        },
+                        "data_quality": {
+                          "source_name": "Official central-bank reference rates",
+                          "source_type": "official",
+                          "is_derived": false,
+                          "datetime_field": "observation_datetime",
+                          "datetime_precision": "date",
+                          "source_legs": [
+                            {
+                              "pair": "USD/JPY",
+                              "source_provider": "BIS XRU",
+                              "source_frequency": "daily"
+                            }
+                          ]
+                        },
+                        "start_date": "2026-06-17",
+                        "end_date": "2026-06-18"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              },
+              "x-parameter-availability": {
+                "base": [
+                  "AUD",
+                  "BRL"
+                ],
+                "quote": [
+                  "AUD",
+                  "BRL"
+                ],
+                "indicators": [
+                  "bollinger_bands",
+                  "ema_12"
+                ]
+              }
+            }
+          },
+          "/v1/data_catalogue/{currency}": {
+            "get": {
+              "tags": [
+                "data_catalogue"
+              ],
+              "summary": "Get Currently Available Macroeconomic Indicators",
+              "description": "Returns the currently available macroeconomic indicators for a specific currency.\n\n    Availability is determined from the Firestore-backed product store rather than\n    the static indicator registry alone, so temporarily unavailable series are\n    excluded until live data is available again. The catalogue is refreshed on a\n    regular schedule.\n\n    This route also replaces the deprecated `/v1/capabilities` and\n    `/v1/coverage_matrix` endpoints. Coverage is included directly on each\n    catalogue entry. To also include the legacy top-level coverage list, call it\n    with `include_coverage=true`. To include capability metadata, call it with\n    `include_capabilities=true`.\n\n    Each entry includes:\n    * **name**: The full descriptive name of the metric.\n    * **unit**: The unit of measurement (e.g., %YoY, Billions of USD).\n    * **frequency**: How often the data is updated (Daily, Monthly, Quarterly).\n    * **source** / **source_url**: The publisher or source family used for the stored series, when available.\n    * **source_series_id** / **source_series_name**: The upstream source identifier and exact source-series label, when available.\n    * **seasonal_adjustment**: Seasonal basis (`SA`, `NSA`, `UNKNOWN`, or `NOT_APPLICABLE`).\n    * **price_basis**: GDP/level price basis (`REAL`, `NOMINAL`, or `UNKNOWN`) when applicable.\n    * **aliases** / **related_indicators**: Optional flat discovery metadata for common alternative names and adjacent indicators.\n    * **standardization_note**: Optional note explaining sign, unit, scope, or cross-currency comparability choices.\n    * **has_official_forecast**: Whether the relevant central bank or statistics agency publishes a preliminary, flash, or advance estimate of this indicator before the main/final data release.\n    * **coverage**: Earliest/latest stored dates, row count, recency status, and coverage quality for that indicator.",
+              "operationId": "get_data_catalogue_v1_data_catalogue__currency__get",
+              "parameters": [
+                {
+                  "name": "currency",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "The 3-letter currency code (e.g., USD, AUD, EUR, GBP, CHF)",
+                    "examples": [
+                      "USD"
+                    ],
+                    "title": "Currency",
+                    "enum": [
+                      "AUD",
+                      "BRL"
+                    ],
+                    "example": "AUD"
+                  },
+                  "description": "Required path parameter. The 3-letter currency code (e.g., USD, AUD, EUR, GBP, CHF) Allowed values: AUD, BRL, CAD, CHF, CNH, CNY, DKK, EUR, GBP, IDR, ILS, JPY, NGN, NOK, NZD, PEN, SEK, THB, USD."
+                },
+                {
+                  "name": "include_capabilities",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "boolean",
+                    "description": "Include currency-scoped endpoint/auth metadata that replaces the deprecated /v1/capabilities response.",
+                    "default": false,
+                    "title": "Include Capabilities"
+                  },
+                  "description": "Optional query parameter. Include currency-scoped endpoint/auth metadata that replaces the deprecated /v1/capabilities response."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Indicator metadata keyed by indicator slug, with optional capability and coverage metadata.",
+                  "content": {
+                    "application/json": {
+                      "schema": {},
+                      "example": {
+                        "gdp": {
+                          "name": "GDP",
+                          "unit": "%QoQ",
+                          "frequency": "Quarterly",
+                          "has_official_forecast": true
+                        },
+                        "inflation": {
+                          "name": "Inflation (CPI)",
+                          "unit": "%YoY",
+                          "frequency": "Monthly",
+                          "has_official_forecast": false
+                        },
+                        "unemployment": {
+                          "name": "Unemployment Rate",
+                          "unit": "%",
+                          "frequency": "Monthly",
+                          "has_official_forecast": false
+                        },
+                        "policy_rate": {
+                          "name": "Policy Interest Rate",
+                          "unit": "%",
+                          "frequency": "Daily",
+                          "has_official_forecast": false
+                        },
+                        "gov_bond_10y": {
+                          "name": "10-Year Government Bond Yield",
+                          "unit": "%",
+                          "frequency": "Daily",
+                          "has_official_forecast": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Currency not found.",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "detail": "Currency 'XYZ' not found."
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              },
+              "x-parameter-availability": {
+                "currency": [
+                  "AUD",
+                  "BRL"
+                ],
+                "indicator": [
+                  "average_hourly_earnings",
+                  "balance_on_goods"
+                ]
+              }
+            }
+          },
+          "/v1/calendar/{currency}": {
+            "get": {
+              "tags": [
+                "calendar"
+              ],
+              "summary": "Get upcoming economic data release dates",
+              "description": "Returns upcoming economic data release dates for a given currency.\n\nRows are served from Firestore-first calendar documents. Announcement rows keep the existing `release` slug mapping to `/v1/announcements/{currency}/{indicator}`, while other domains such as COT may also include additive fields like `domain`, `endpoint_family`, and `endpoint_path`.\n\n**Path Parameters:**\n- `currency`: The 3-letter currency code (e.g., USD).\n\n**Query Parameters:**\n- `indicator`: Optional. Filter to a specific indicator (e.g., gdp, inflation, unemployment, non_farm_payrolls).\n\n- `start_date`: Optional inclusive lower bound, YYYY-MM-DD.\n- `end_date`: Optional inclusive upper bound, YYYY-MM-DD.\n\n**Returns:** List of release rows sorted by announcement time ascending (nearest scheduled release first). Core fields remain `announcement_datetime` and `release`; additive routing metadata may also be present.",
+              "operationId": "get_release_calendar_v1_calendar__currency__get",
+              "parameters": [
+                {
+                  "name": "currency",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Currency",
+                    "enum": [
+                      "AED",
+                      "ARS"
+                    ],
+                    "example": "AED"
+                  },
+                  "description": "Required path parameter. Allowed values: AED, ARS, AUD, BOB, BRL, CAD, CHF, CLP, CNH, CNY, COMM, COP, CZK, DKK, DZD, EGP, EUR, GBP, HKD, HUF, IDR, ILS, INR, JPY, KRW, MAD, MXN, MYR, NGN, NOK, NZD, PEN, PHP, PKR, PLN, RUB, SAR, SEK, SGD, THB, TRY, TWD, USD, UYU, VND, ZAR."
+                },
+                {
+                  "name": "indicator",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "string",
+                    "description": "Filter by indicator name (e.g., gdp, inflation, unemployment)",
+                    "examples": [
+                      "inflation"
+                    ],
+                    "title": "Indicator",
+                    "enum": [
+                      "average_hourly_earnings",
+                      "balance_on_goods"
+                    ],
+                    "example": "average_hourly_earnings"
+                  },
+                  "description": "Optional query parameter. Filter by indicator name (e.g., gdp, inflation, unemployment) Allowed values: average_hourly_earnings, balance_on_goods, balance_on_services, breakeven_inflation_rate, building_approvals, building_permits, business_confidence, capital_account_balance, cb_assets, commodity_price_energy, commodity_price_ex_energy, commodity_price_index, consumer_confidence, core_inflation, core_inflation_median, core_inflation_mom, core_inflation_trim, core_pce, credit_growth, current_account_balance, deposit_rates, durable_goods_orders, employment, exports, financial_account_balance, foreign_reserves, full_time_employment, gdp, gdp_growth_q4_yoy, gdp_growth_qoq_saar, gdp_quarterly, gold_reserves, gov_bond_10y, gov_bond_1y, gov_bond_20y, gov_bond_2y, gov_bond_30y, gov_bond_3y, gov_bond_40y, gov_bond_4y, gov_bond_5y, gov_bond_7y, government_debt, house_price_index, household_credit, housing_starts, imports, inflation, inflation_linked_bond, inflation_mom, initial_jobless_claims, international_assets, international_liabilities, job_openings, m1, m2, m3, monthly_cpi, nairu, net_foreign_asset_position, non_farm_payrolls, part_time_employment, participation_rate, pce, pce_mom, policy_rate, policy_rate_mlf, policy_rate_mro, policy_rate_target_lower, ppi, ppi_mom, primary_income_balance, retail_sales, risk_free_rate, secondary_income_balance, services_balance, sight_deposits, terms_of_trade, trade_balance, trade_weighted_index, trimmed_mean_inflation, unemployment, wage_price_index, wages."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Upcoming release dates for the selected currency and optional indicator filter.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/CalendarResponse"
+                      },
+                      "example": {
+                        "currency": "USD",
+                        "timezone": "America/New_York",
+                        "indicator": "inflation",
+                        "data": [
+                          {
+                            "announcement_datetime": 1773077400,
+                            "announcement_datetime_local": "2026-03-11T08:30:00-04:00",
+                            "release": "inflation"
+                          },
+                          {
+                            "announcement_datetime": 1773682200,
+                            "announcement_datetime_local": "2026-03-18T08:30:00-04:00",
+                            "release": "non_farm_payrolls"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              },
+              "x-parameter-availability": {
+                "currency": [
+                  "AED",
+                  "ARS"
+                ],
+                "indicator": [
+                  "average_hourly_earnings",
+                  "balance_on_goods"
+                ]
+              }
+            }
+          },
+          "/v1/market_sessions": {
+            "get": {
+              "tags": [
+                "fx_markets"
+              ],
+              "summary": "FX market session timetable",
+              "description": "Returns a real-time snapshot of the four major FX trading sessions (Sydney, Tokyo, London, New York) and their overlap windows.\n\nEach session entry shows today's open and close times in UTC, whether the session is currently open, and seconds until it opens or closes.\n\nOverlap windows highlight the highest-liquidity trading periods — in particular the **London / New York** overlap (~13:00–17:00 UTC in winter), which sees the largest volume and tightest spreads on major USD pairs.\n\n**Query Parameters:**\n- `at`: Optional ISO-8601 UTC timestamp (e.g. `2026-03-05T12:00:00Z`). Defaults to the current server time. Useful for scheduling or back-testing decisions.\n\n**No authentication required.**",
+              "operationId": "get_market_sessions_v1_market_sessions_get",
+              "parameters": [
+                {
+                  "name": "at",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "string",
+                    "description": "Optional ISO-8601 UTC timestamp (e.g. 2026-03-05T12:00:00Z)",
+                    "examples": [
+                      "2026-03-05T12:00:00Z"
+                    ],
+                    "title": "At"
+                  },
+                  "description": "Optional query parameter. Optional ISO-8601 UTC timestamp (e.g. 2026-03-05T12:00:00Z)"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Session snapshot including open/close state and overlap windows.",
+                  "content": {
+                    "application/json": {
+                      "schema": {},
+                      "example": {
+                        "now_utc": "2026-03-05T12:00:00Z",
+                        "now_unix": 1741176000,
+                        "is_market_day": true,
+                        "sessions": [
+                          {
+                            "name": "Sydney",
+                            "display_name": "Sydney (Australia / New Zealand)",
+                            "description": "First major session to open after the weekend.",
+                            "currencies": [
+                              "AUD",
+                              "NZD"
+                            ],
+                            "timezone": "Australia/Sydney",
+                            "open_utc": "2026-03-04T23:00:00Z",
+                            "close_utc": "2026-03-05T08:00:00Z",
+                            "open_unix": 1741129200
+                          },
+                          {
+                            "name": "London",
+                            "display_name": "London (United Kingdom / Europe)",
+                            "description": "Largest FX session by volume.",
+                            "currencies": [
+                              "GBP",
+                              "EUR"
+                            ],
+                            "timezone": "Europe/London",
+                            "open_utc": "2026-03-05T08:00:00Z",
+                            "close_utc": "2026-03-05T17:00:00Z",
+                            "open_unix": 1741161600
+                          }
+                        ],
+                        "overlaps": [
+                          {
+                            "name": "London / New York",
+                            "sessions": [
+                              "London",
+                              "New York"
+                            ],
+                            "description": "Most active window of the trading day.",
+                            "priority": "high",
+                            "notable_pairs": [
+                              "EUR/USD",
+                              "GBP/USD"
+                            ],
+                            "start_utc": "2026-03-05T13:00:00Z",
+                            "end_utc": "2026-03-05T17:00:00Z",
+                            "start_unix": 1741179600
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/rate_differentials/{base}/{quote}": {
+            "get": {
+              "tags": [
+                "fx_markets"
+              ],
+              "summary": "Get pair rate differentials",
+              "description": "Returns a store-backed historical differential between the base and quote currency using a shared rate measure. The endpoint aligns the two legs by date intersection and reports the spread in both percentage points and basis points.\n\n**Measures:**\n- Supported values: `auto`, `risk_free_rate`, `gov_bond_2y`, `gov_bond_10y`, `policy_rate`.\n- `auto` prefers `risk_free_rate`, then `gov_bond_2y`, then `policy_rate`.\n\n**Authentication:**\n- Requires a Professional API key via `?api_key=<key>` or `X-API-Key`.",
+              "operationId": "get_rate_differentials_v1_rate_differentials__base___quote__get",
+              "parameters": [
+                {
+                  "name": "base",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Base currency code",
+                    "examples": [
+                      "AUD"
+                    ],
+                    "title": "Base",
+                    "enum": [
+                      "AUD",
+                      "BRL"
+                    ],
+                    "example": "AUD"
+                  },
+                  "description": "Required path parameter. Base currency code Allowed values: AUD, BRL, CAD, CHF, CNH, CNY, DKK, EUR, GBP, IDR, ILS, JPY, NGN, NOK, NZD, PEN, SEK, THB, USD."
+                },
+                {
+                  "name": "quote",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Quote currency code",
+                    "examples": [
+                      "USD"
+                    ],
+                    "title": "Quote",
+                    "enum": [
+                      "AUD",
+                      "BRL"
+                    ],
+                    "example": "AUD"
+                  },
+                  "description": "Required path parameter. Quote currency code Allowed values: AUD, BRL, CAD, CHF, CNH, CNY, DKK, EUR, GBP, IDR, ILS, JPY, NGN, NOK, NZD, PEN, SEK, THB, USD."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateDifferentialResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              },
+              "x-parameter-availability": {
+                "base": [
+                  "AUD",
+                  "BRL"
+                ],
+                "quote": [
+                  "AUD",
+                  "BRL"
+                ],
+                "measure": [
+                  "auto",
+                  "risk_free_rate"
+                ]
+              }
+            }
+          },
+          "/v1/curves/{currency}": {
+            "get": {
+              "tags": [
+                "fx_markets"
+              ],
+              "summary": "Get official curve node snapshot",
+              "description": "Returns the latest stored official-source curve nodes for the requested currency and curve family. The current implementation serves government nominal curve nodes already ingested into the FXMacroData store.\n\n**Curve Families:**\n- Supported values: `government_nominal`.\n\n**Metrics:**\n- Supported values: `spot`.\n\n**Authentication:**\n- Requires a Professional API key via `?api_key=<key>` or `X-API-Key`.",
+              "operationId": "get_curve_snapshot_v1_curves__currency__get",
+              "parameters": [
+                {
+                  "name": "currency",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Currency code",
+                    "examples": [
+                      "GBP"
+                    ],
+                    "title": "Currency",
+                    "enum": [
+                      "ARS",
+                      "AUD"
+                    ],
+                    "example": "ARS"
+                  },
+                  "description": "Required path parameter. Currency code Allowed values: ARS, AUD, BRL, CAD, CHF, CNH, CNY, CZK, DKK, EUR, GBP, HKD, HUF, IDR, ILS, INR, ISK, JPY, MXN, MYR, NGN, NOK, NZD, PEN, PLN, SEK, SGD, THB, TRY, USD, XOF, ZAR."
+                },
+                {
+                  "name": "curve_family",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "string",
+                    "description": "Official curve family to return.",
+                    "examples": [
+                      "government_nominal"
+                    ],
+                    "default": "government_nominal",
+                    "title": "Curve Family",
+                    "enum": [
+                      "government_nominal"
+                    ],
+                    "example": "government_nominal"
+                  },
+                  "description": "Optional query parameter. Official curve family to return. Allowed values: government_nominal."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/CurveSnapshotResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              },
+              "x-parameter-availability": {
+                "currency": [
+                  "ARS",
+                  "AUD"
+                ],
+                "curve_family": [
+                  "government_nominal"
+                ],
+                "metric": [
+                  "spot"
+                ]
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "AnnouncementDataPoint": {
+              "properties": {
+                "announcement_id": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Id"
+                },
+                "date": {
+                  "type": "string",
+                  "title": "Date"
+                },
+                "val": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Val"
+                },
+                "original_val": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Original Val"
+                },
+                "original_unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Original Unit"
+                },
+                "val_mom": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Val Mom"
+                },
+                "announcement_datetime": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Datetime"
+                },
+                "announcement_datetime_local": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Datetime Local"
+                }
+              },
+              "additionalProperties": true,
+              "type": "object",
+              "required": [
+                "date"
+              ],
+              "title": "AnnouncementDataPoint"
+            },
+            "AnnouncementPredictions": {
+              "properties": {
+                "announcement_id": {
+                  "type": "string",
+                  "title": "Announcement Id",
+                  "description": "Stable identifier of the announcement these predictions target, in the form ``{currency}_{indicator}_{date}``.",
+                  "examples": [
+                    "usd_inflation_2026-01-31"
+                  ]
+                },
+                "currency": {
+                  "type": "string",
+                  "title": "Currency"
+                },
+                "indicator": {
+                  "type": "string",
+                  "title": "Indicator"
+                },
+                "date": {
+                  "type": "string",
+                  "title": "Date",
+                  "description": "Reference period date of the forecast, ``YYYY-MM-DD``."
+                },
+                "announcement_datetime": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Datetime",
+                  "description": "Release timestamp of the forecasted announcement, Unix epoch seconds (UTC)."
+                },
+                "announcement_datetime_local": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Datetime Local",
+                  "description": "ISO 8601 release time with timezone offset, rendered in the currency's market timezone."
+                },
+                "announcement_timing": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "past",
+                        "future"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Timing",
+                  "description": "Whether the forecasted announcement is still upcoming (`future`) or already released (`past`)."
+                },
+                "predictions": {
+                  "items": {
+                    "$ref": "#/components/schemas/PredictionItem"
+                  },
+                  "type": "array",
+                  "title": "Predictions",
+                  "description": "List of forecasts for this announcement, one entry per prediction source.  Sorted by ``prediction_source`` for deterministic output."
+                }
+              },
+              "type": "object",
+              "required": [
+                "announcement_id",
+                "currency"
+              ],
+              "title": "AnnouncementPredictions",
+              "description": "All available forecasts targeting a single announcement.\n\n``announcement_id`` matches the value surfaced on the corresponding\nrow in ``/v1/announcements/{currency}/{indicator}``, allowing clients\nto join predictions with realised observations.  ``predictions``\ncontains one sub-entry per source (e.g. central-bank projection,\nIMF WEO, market consensus survey, FXMacroData prediction)."
+            },
+            "AnnouncementResponse": {
+              "properties": {
+                "currency": {
+                  "type": "string",
+                  "title": "Currency"
+                },
+                "indicator": {
+                  "type": "string",
+                  "title": "Indicator"
+                },
+                "name": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Name"
+                },
+                "value_name": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Value Name"
+                },
+                "source": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Source"
+                },
+                "source_url": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Source Url"
+                },
+                "source_series_id": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Source Series Id"
+                },
+                "source_series_name": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Source Series Name"
+                }
+              },
+              "type": "object",
+              "required": [
+                "currency",
+                "indicator"
+              ],
+              "title": "AnnouncementResponse"
+            },
+            "Body_oauth_token_oauth_token_post": {
+              "properties": {
+                "grant_type": {
+                  "type": "string",
+                  "title": "Grant Type",
+                  "examples": [
+                    "authorization_code"
+                  ]
+                },
+                "code": {
+                  "type": "string",
+                  "title": "Code",
+                  "examples": [
+                    "auth_code_from_authorize_endpoint"
+                  ]
+                },
+                "redirect_uri": {
+                  "type": "string",
+                  "title": "Redirect Uri",
+                  "examples": [
+                    "https://claude.ai/api/mcp/auth_callback"
+                  ]
+                },
+                "client_id": {
+                  "type": "string",
+                  "title": "Client Id",
+                  "examples": [
+                    "claude-connector"
+                  ]
+                },
+                "code_verifier": {
+                  "type": "string",
+                  "title": "Code Verifier",
+                  "examples": [
+                    "pkce-verifier-value"
+                  ]
+                },
+                "resource": {
+                  "type": "string",
+                  "title": "Resource",
+                  "description": "Optional protected resource identifier sent by some MCP OAuth clients.",
+                  "examples": [
+                    "https://fxmacrodata.com"
+                  ]
+                },
+                "client_secret": {
+                  "type": "string",
+                  "title": "Client Secret",
+                  "examples": [
+                    "oauth-client-secret"
+                  ]
+                }
+              },
+              "type": "object",
+              "required": [
+                "grant_type",
+                "code"
+              ],
+              "title": "Body_oauth_token_oauth_token_post"
+            },
+            "CBTargetEntry": {
+              "properties": {
+                "effective_from": {
+                  "type": "string",
+                  "title": "Effective From"
+                },
+                "target": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Target"
+                },
+                "lower": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Lower"
+                },
+                "upper": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Upper"
+                },
+                "notes": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Notes"
+                }
+              },
+              "type": "object",
+              "required": [
+                "effective_from"
+              ],
+              "title": "CBTargetEntry",
+              "description": "A single central-bank target entry valid from ``effective_from``."
+            },
+            "CBTargetInfo": {
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "title": "Description"
+                },
+                "source": {
+                  "type": "string",
+                  "title": "Source"
+                },
+                "current": {
+                  "$ref": "#/components/schemas/CBTargetEntry"
+                },
+                "history": {
+                  "items": {
+                    "$ref": "#/components/schemas/CBTargetEntry"
+                  },
+                  "type": "array",
+                  "title": "History"
+                }
+              },
+              "type": "object",
+              "required": [
+                "description",
+                "source"
+              ],
+              "title": "CBTargetInfo",
+              "description": "Central-bank target metadata for an indicator.\n\n``current`` is the entry effective as of the response ``end_date``.\n``history`` contains every known target regime in ascending date order."
+            },
+            "COTDataPoint": {
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "title": "Date"
+                },
+                "announcement_datetime": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Announcement Datetime"
+                }
+              },
+              "additionalProperties": true,
+              "type": "object",
+              "required": [
+                "date"
+              ],
+              "title": "COTDataPoint"
+            },
+            "COTLatestResponse": {
+              "properties": {
+                "currency": {
+                  "type": "string",
+                  "title": "Currency"
+                },
+                "instrument": {
+                  "type": "string",
+                  "title": "Instrument"
+                },
+                "fx_overlay": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Fx Overlay"
+                },
+                "source": {
+                  "type": "string",
+                  "title": "Source"
+                },
+                "latest_available_date": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Latest Available Date"
+                },
+                "latest_available_announcement_datetime": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Latest Available Announcement Datetime"
+                },
+                "expected_next_release": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Expected Next Release"
+                },
+                "expected_next_release_epoch": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Expected Next Release Epoch"
+                }
+              },
+              "additionalProperties": true,
+              "type": "object",
+              "required": [
+                "currency",
+                "instrument"
+              ],
+              "title": "COTLatestResponse"
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "health",
+            "description": "Service health status endpoint."
+          },
+          {
+            "name": "announcements",
+            "description": "Primary product: macroeconomic announcement time series."
+          }
+        ],
+        "servers": [
+          {
+            "url": "/api"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Apiverket",
+      "slug": "apiverket",
+      "emoji": "🏛",
+      "tagline": "Apiverket — free-tier JSON endpoint",
+      "description": "Apiverket offers a free API tier. We verified JSON on a sample GET (Government). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://apiverket.se/docs",
+      "baseUrl": "https://apiverket.se",
+      "sampleEndpoint": "/api",
+      "latencyMs": 261,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Apiverket.se API",
+        "version": "2026-02-15",
+        "description": "Unified REST API for Swedish public data — 280+ endpoints, 45+ government sources",
+        "docs": "https://apiverket.se/docs",
+        "endpoints": {
+          "rates": "/v1/rates",
+          "mortgage_rates": "/v1/rates/mortgage",
+          "reference_rates": "/v1/rates/reference",
+          "currencies": "/v1/currencies",
+          "currency_history": "/v1/currencies/USD_SEK/history?from=2026-01-01&to=2026-01-31",
+          "statistics": "/v1/statistics/industry/:sniCode",
+          "municipalities": "/v1/municipalities/:id/kpi/:kpiId",
+          "municipality_groups": "/v1/municipalities/groups"
+        },
+        "links": {
+          "docs": "/docs",
+          "console": "/console",
+          "dashboard": "/dashboard",
+          "register": "/register",
+          "openapi": "/openapi.json"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "IPWhois",
+      "slug": "ipwhois",
+      "emoji": "🗺",
+      "tagline": "IPWhois — free-tier JSON endpoint",
+      "description": "IPWhois offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipwhois.io",
+      "baseUrl": "http://ipwho.is",
+      "sampleEndpoint": "/8.8.4.4",
+      "latencyMs": 5401,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.4.4",
+        "success": true,
+        "type": "IPv4",
+        "continent": "North America",
+        "continent_code": "NA",
+        "country": "United States",
+        "country_code": "US",
+        "region": "California"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Your Move - Exercise API",
+      "slug": "your-move-exercise-api",
+      "emoji": "⚽",
+      "tagline": "Your Move - Exercise API — free-tier JSON endpoint",
+      "description": "Your Move - Exercise API offers a free API tier. We verified JSON on a sample GET (Sports & Fitness). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://ymove.app/exercise-api",
+      "baseUrl": "https://exercise-api.ymove.app",
+      "sampleEndpoint": "/api/v2/openapi.json",
+      "latencyMs": 4363,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "YMove Fitness API",
+          "version": "2.3.0",
+          "description": "Access 698+ professional exercise videos, a comprehensive food & nutrition database, recipe search, and AI-powered meal plan generation. Features include rate limiting, monthly exercise caps, and video access protection. Video URLs are pre-signed and expire after 48 hours. Always fetch fresh exercise data before displaying videos. Sign up at https://ymove.app/exercise-api/signup for a free trial.",
+          "contact": {
+            "email": "contact@ymove.app",
+            "url": "https://ymove.app/exercise-api"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://exercise-api.ymove.app/api/v2",
+            "description": "Production"
+          }
+        ],
+        "security": [
+          {
+            "ApiKeyHeader": []
+          },
+          {
+            "ApiKeyQuery": []
+          }
+        ],
+        "components": {
+          "securitySchemes": {
+            "ApiKeyHeader": {
+              "type": "apiKey",
+              "in": "header",
+              "name": "X-API-Key"
+            },
+            "ApiKeyQuery": {
+              "type": "apiKey",
+              "in": "query",
+              "name": "api_key"
+            }
+          },
+          "schemas": {
+            "Video": {
+              "type": "object",
+              "required": [
+                "tag",
+                "isPrimary"
+              ],
+              "description": "Video URLs are pre-signed and expire after 48 hours. Do not cache these URLs. Always fetch fresh exercise data before displaying videos.",
+              "properties": {
+                "videoUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Pre-signed CDN URL for MP4 video. Expires after 48 hours."
+                },
+                "videoHlsUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Pre-signed CDN URL for HLS playlist. Expires after 48 hours."
+                },
+                "thumbnailUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Pre-signed CDN URL for thumbnail image. Expires after 48 hours."
+                },
+                "tag": {
+                  "type": "string",
+                  "enum": [
+                    "white-background",
+                    "gym-shot"
+                  ]
+                },
+                "orientation": {
+                  "type": "string",
+                  "enum": [
+                    "landscape",
+                    "portrait"
+                  ],
+                  "description": "Video aspect orientation. Most exercise clips are PORTRAIT (vertical, ~9:16), shot for mobile. Do not assume landscape. Read this field and size your player to a portrait container (e.g. aspect-ratio 9/16) with object-fit: cover so clips fill the frame instead of letterboxing."
+                },
+                "isPrimary": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "Exercise": {
+              "type": "object",
+              "required": [
+                "id",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "instructions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "nullable": true
+                },
+                "importantPoints": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "nullable": true
+                },
+                "muscleGroup": {
+                  "type": "string"
+                },
+                "secondaryMuscles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "nullable": true
+                }
+              },
+              "example": {
+                "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "title": "Barbell Bench Press",
+                "slug": "barbell-bench-press",
+                "description": "A compound chest exercise performed lying on a flat bench.",
+                "instructions": [
+                  "Lie on a flat bench with feet flat on the floor",
+                  "Grip the barbell slightly wider than shoulder width"
+                ],
+                "importantPoints": [
+                  "Keep your back flat on the bench",
+                  "Do not bounce the bar off your chest"
+                ],
+                "muscleGroup": "chest",
+                "secondaryMuscles": [
+                  "triceps",
+                  "shoulders"
+                ]
+              }
+            },
+            "Pagination": {
+              "type": "object",
+              "required": [
+                "page",
+                "pageSize"
+              ],
+              "properties": {
+                "page": {
+                  "type": "integer"
+                },
+                "pageSize": {
+                  "type": "integer"
+                },
+                "total": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                }
+              }
+            },
+            "MuscleGroup": {
+              "type": "object",
+              "properties": {
+                "slug": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "exerciseCount": {
+                  "type": "integer"
+                }
+              }
+            },
+            "WorkoutExercise": {
+              "type": "object",
+              "properties": {
+                "exercise": {
+                  "$ref": "#/components/schemas/Exercise"
+                },
+                "sets": {
+                  "type": "integer"
+                },
+                "reps": {
+                  "type": "string"
+                },
+                "restSeconds": {
+                  "type": "integer"
+                },
+                "order": {
+                  "type": "integer"
+                }
+              }
+            },
+            "Workout": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "muscleGroups": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Muscle groups targeted (expanded from any aliases in the request)."
+                },
+                "muscleGroupsRequested": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "The original muscleGroup values from the request, including any aliases (full_body, upper_body, lower_body)."
+                },
+                "difficulty": {
+                  "type": "string"
+                },
+                "estimatedMinutes": {
+                  "type": "integer",
+                  "description": "Estimated total workout duration, including warmup and cooldown when present."
+                },
+                "exerciseCount": {
+                  "type": "integer"
+                },
+                "exercises": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutExercise"
+                  }
+                },
+                "warmup": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutExercise"
+                  },
+                  "description": "Warmup exercises (bodyweight stretches, mobility, and light cardio) placed at the start of the session. Present unless includeWarmup=false."
+                }
+              }
+            },
+            "ProgramDay": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "muscleGroups": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "exercises": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutExercise"
+                  }
+                },
+                "warmup": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutExercise"
+                  },
+                  "description": "Warmup exercises (bodyweight stretches, mobility, and light cardio) placed at the start of this day. Present unless includeWarmup=false."
+                },
+                "cooldown": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkoutExercise"
+                  },
+                  "description": "Cooldown exercises (bodyweight stretches and mobility) placed at the end of this day. Present unless includeCooldown=false."
+                }
+              }
+            },
+            "Program": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "goal": {
+                  "type": "string"
+                },
+                "difficulty": {
+                  "type": "string"
+                },
+                "daysPerWeek": {
+                  "type": "integer"
+                },
+                "weeks": {
+                  "type": "integer"
+                },
+                "split": {
+                  "type": "string"
+                },
+                "weeklySchedule": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProgramDay"
+                  }
+                },
+                "notes": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "paths": {
+          "/exercises": {
+            "get": {
+              "summary": "List and search exercises",
+              "operationId": "listExercises",
+              "tags": [
+                "Exercises"
+              ],
+              "parameters": [
+                {
+                  "name": "muscleGroup",
+                  "in": "query",
+                  "example": "chest",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "chest",
+                      "back"
+                    ]
+                  },
+                  "description": "Filter by muscle group"
+                },
+                {
+                  "name": "exerciseType",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "strength",
+                      "yoga"
+                    ]
+                  },
+                  "description": "Filter by exercise type"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Paginated list of exercises. When the monthly exercise cap is exceeded, exercises not previously accessed will have video properties (videoUrl, videoHlsUrl, thumbnailUrl, videoDurationSecs, videos) removed entirely. A `_warning` object is included with details. Previously accessed exercises keep their video URLs.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Exercise"
+                            }
+                          },
+                          "pagination": {
+                            "$ref": "#/components/schemas/Pagination"
+                          },
+                          "_warning": {
+                            "$ref": "#/components/schemas/MonthlyCapWarning"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "429": {
+                  "description": "Rate limit exceeded",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateLimitError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/exercises/exercise-types": {
+            "get": {
+              "summary": "List all exercise types with counts",
+              "operationId": "listExerciseTypes",
+              "tags": [
+                "Exercises"
+              ],
+              "responses": {
+                "200": {
+                  "description": "List of exercise types",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/ExerciseType"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/exercises/muscle-groups": {
+            "get": {
+              "summary": "List all muscle groups with exercise counts",
+              "operationId": "listMuscleGroups",
+              "tags": [
+                "Exercises"
+              ],
+              "responses": {
+                "200": {
+                  "description": "List of muscle groups",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/MuscleGroup"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/exercises/{id}": {
+            "get": {
+              "summary": "Get a single exercise by ID or slug",
+              "operationId": "getExercise",
+              "tags": [
+                "Exercises"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  },
+                  "description": "Exercise UUID or slug"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Exercise details. When the monthly exercise cap is exceeded and this exercise was not previously accessed, video properties are removed entirely and a `_warning` is included.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "$ref": "#/components/schemas/Exercise"
+                          },
+                          "_warning": {
+                            "$ref": "#/components/schemas/MonthlyCapWarning"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Exercise not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "429": {
+                  "description": "Rate limit exceeded",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateLimitError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/workouts/generate": {
+            "get": {
+              "summary": "Generate a structured workout",
+              "operationId": "generateWorkout",
+              "tags": [
+                "Workouts"
+              ],
+              "parameters": [
+                {
+                  "name": "muscleGroup",
+                  "in": "query",
+                  "required": true,
+                  "style": "form",
+                  "explode": false,
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "chest",
+                        "back"
+                      ]
+                    }
+                  },
+                  "description": "Target muscle group(s). Accepts a single value, a comma-separated list (e.g. \"chest,back\"), or repeated query keys. Aliases: \"full_body\" (all groups), \"upper_body\" (chest, back, shoulders, biceps, triceps, forearms, core), \"lower_body\" (quads, hamstrings, glutes, calves). Aliases can be combined with specific groups."
+                },
+                {
+                  "name": "equipment",
+                  "in": "query",
+                  "style": "form",
+                  "explode": false,
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "machine",
+                        "barbell"
+                      ]
+                    }
+                  },
+                  "description": "Limit to specific equipment. Accepts a single value, comma-separated list, or repeated keys."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Generated workout. When the monthly exercise cap is exceeded, exercises not previously accessed will have video properties removed entirely. A `_warning` object is included with details.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "$ref": "#/components/schemas/Workout"
+                          },
+                          "_warning": {
+                            "$ref": "#/components/schemas/MonthlyCapWarning"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Missing required parameter",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "429": {
+                  "description": "Rate limit exceeded",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateLimitError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/programs/generate": {
+            "get": {
+              "summary": "Generate a multi-week training program",
+              "operationId": "generateProgram",
+              "tags": [
+                "Programs"
+              ],
+              "parameters": [
+                {
+                  "name": "goal",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "muscle_building",
+                      "weight_loss"
+                    ],
+                    "default": "muscle_building"
+                  },
+                  "description": "Training goal. Sets the set/rep/rest scheme and exercises-per-muscle."
+                },
+                {
+                  "name": "difficulty",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "beginner",
+                      "intermediate"
+                    ],
+                    "default": "intermediate"
+                  },
+                  "description": "Difficulty level. Filters which exercises are selected per muscle: beginner returns beginner-level moves, intermediate returns beginner+intermediate, advanced prefers advanced moves (falling back to intermediate where advanced options are limited). Combine with goal, which controls volume."
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Generated training program. When the monthly exercise cap is exceeded, exercises not previously accessed will have video properties removed entirely. A `_warning` object is included with details.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "$ref": "#/components/schemas/Program"
+                          },
+                          "_warning": {
+                            "$ref": "#/components/schemas/MonthlyCapWarning"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "429": {
+                  "description": "Rate limit exceeded",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateLimitError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/posture/analyze": {
+            "post": {
+              "summary": "Analyze exercise form from video (max 100MB)",
+              "operationId": "analyzePosture",
+              "tags": [
+                "Form Analysis"
+              ],
+              "description": "Upload an exercise video and get AI-powered form analysis. Returns a form score (0-100), detected issues with plain-language fixes, and corrective exercise recommendations.",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "required": [
+                        "video",
+                        "exercise_name"
+                      ],
+                      "properties": {
+                        "video": {
+                          "type": "object",
+                          "required": [
+                            "type",
+                            "data"
+                          ],
+                          "description": "The exercise video to analyze.",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "base64",
+                                "url"
+                              ],
+                              "description": "How the video is provided: base64-encoded data or a public URL."
+                            },
+                            "data": {
+                              "type": "string",
+                              "description": "Base64-encoded video data, or a public URL to the video file."
+                            },
+                            "media_type": {
+                              "type": "string",
+                              "enum": [
+                                "video/mp4",
+                                "video/webm"
+                              ],
+                              "default": "video/mp4"
+                            }
+                          }
+                        },
+                        "exercise_name": {
+                          "type": "string",
+                          "description": "Name of the exercise being performed (e.g. \"barbell squat\", \"deadlift\").",
+                          "minLength": 1,
+                          "maxLength": 200
+                        },
+                        "analysis_type": {
+                          "type": "string",
+                          "enum": [
+                            "standing",
+                            "seated"
+                          ],
+                          "default": "exercise",
+                          "description": "Type of analysis to perform."
+                        },
+                        "custom_instructions": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Optional extra instructions for the analysis (e.g. \"focus on knee alignment\")."
+                        },
+                        "num_frames": {
+                          "type": "integer",
+                          "minimum": 4,
+                          "maximum": 20,
+                          "default": 16,
+                          "description": "Number of frames to extract from the video for analysis."
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "Form analysis result with score, issues, and corrective exercises",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PostureAnalysisResult"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Validation error or analysis failed",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Invalid or missing API key",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "429": {
+                  "description": "Rate limit exceeded",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RateLimitError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/usage": {
+            "get": {
+              "summary": "Check API usage and limits (includes monthly exercise cap)",
+              "operationId": "getUsage",
+              "tags": [
+                "Account"
+              ],
+              "responses": {
+                "200": {
+                  "description": "Current usage data including monthly exercise cap",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "$ref": "#/components/schemas/Usage"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "Exercises",
+            "description": "Browse and search exercise videos. Video URLs are pre-signed and expire after 48 hours."
+          },
+          {
+            "name": "Workouts",
+            "description": "Generate structured workouts"
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Gladia",
+      "slug": "gladia",
+      "emoji": "🔌",
+      "tagline": "Gladia — free-tier JSON endpoint",
+      "description": "Gladia offers a free API tier. We verified JSON on a sample GET (AI). Check provider docs for key requirements and limits.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://docs.gladia.io",
+      "baseUrl": "https://api.gladia.io",
+      "sampleEndpoint": "/openapi.json/",
+      "latencyMs": 4173,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "paths": {
+          "/v2/upload": {
+            "post": {
+              "operationId": "FileController_upload_v2",
+              "parameters": [],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "multipart/form-data": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "audio": {
+                          "type": "string",
+                          "format": "binary",
+                          "description": "The file to be uploaded. This should be an audio or video file."
+                        }
+                      }
+                    }
+                  },
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "audio_url": {
+                          "type": "string",
+                          "description": "The URL of the audio or video file to be uploaded."
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/AudioUploadResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Upload an audio file or provide an audio URL for processing",
+              "tags": [
+                "File Management"
+              ]
+            }
+          },
+          "/v2/pre-recorded": {
+            "post": {
+              "operationId": "PreRecordedController_initPreRecordedJob_v2",
+              "parameters": [],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/InitTranscriptionRequest"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "201": {
+                  "description": "The pre recorded job has been initiated",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/InitPreRecordedTranscriptionResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Something is wrong with the request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/BadRequestErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to initiate a new pre recorded job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "The parameters you gave are incorrect",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnprocessableEntityErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Initiate a new pre recorded job",
+              "tags": [
+                "Pre-recorded V2"
+              ]
+            },
+            "get": {
+              "operationId": "PreRecordedController_getPreRecordedJobs_v2",
+              "parameters": [
+                {
+                  "name": "offset",
+                  "required": false,
+                  "in": "query",
+                  "description": "The starting point for pagination. A value of 0 starts from the first item.",
+                  "schema": {
+                    "minimum": 0,
+                    "default": 0,
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "required": false,
+                  "in": "query",
+                  "description": "The maximum number of items to return. Useful for pagination and controlling data payload size.",
+                  "schema": {
+                    "minimum": 1,
+                    "default": 20,
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "A list of pre recorded jobs matching the parameters.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ListPreRecordedResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access pre recorded jobs",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Get pre recorded jobs based on query parameters",
+              "tags": [
+                "Pre-recorded V2"
+              ]
+            }
+          },
+          "/v2/pre-recorded/{id}": {
+            "get": {
+              "operationId": "PreRecordedController_getPreRecordedJob_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the pre recorded job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The pre recorded job's metadata",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/PreRecordedResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access the pre recorded job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The pre recorded job doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Get the pre recorded job's metadata",
+              "tags": [
+                "Pre-recorded V2"
+              ]
+            },
+            "delete": {
+              "operationId": "PreRecordedController_deletePreRecordedJob_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the pre recorded job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "202": {
+                  "description": "The pre recorded job has been successfully deleted"
+                },
+                "401": {
+                  "description": "You don't have the permissions to delete this pre recorded job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "The pre recorded job is not in a deletable state",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ForbiddenErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The pre recorded job doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Delete the pre recorded job",
+              "tags": [
+                "Pre-recorded V2"
+              ]
+            }
+          },
+          "/v2/pre-recorded/{id}/file": {
+            "get": {
+              "operationId": "PreRecordedController_getAudio_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the pre recorded job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The audio file used for this pre recorded job",
+                  "content": {
+                    "application/octet-stream": {
+                      "schema": {
+                        "type": "string",
+                        "format": "binary",
+                        "example": "<binary>"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access this pre recorded job or its audio file",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The pre recorded job or its audio file doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Download the audio file used for this pre recorded job",
+              "tags": [
+                "Pre-recorded V2"
+              ]
+            }
+          },
+          "/v2/transcription": {
+            "post": {
+              "operationId": "TranscriptionController_initPreRecordedJob_v2",
+              "parameters": [],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/InitTranscriptionRequest"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "201": {
+                  "description": "The transcription job has been initiated",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/InitPreRecordedTranscriptionResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Something is wrong with the request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/BadRequestErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to initiate a new transcription job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "The parameters you gave are incorrect",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnprocessableEntityErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Initiate a new transcription job",
+              "tags": [
+                "Transcription V2"
+              ]
+            },
+            "get": {
+              "operationId": "TranscriptionController_list_v2",
+              "parameters": [
+                {
+                  "name": "offset",
+                  "required": false,
+                  "in": "query",
+                  "description": "The starting point for pagination. A value of 0 starts from the first item.",
+                  "schema": {
+                    "minimum": 0,
+                    "default": 0,
+                    "type": "integer"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "required": false,
+                  "in": "query",
+                  "description": "The maximum number of items to return. Useful for pagination and controlling data payload size.",
+                  "schema": {
+                    "minimum": 1,
+                    "default": 20,
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "A list of transcription jobs matching the parameters.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ListTranscriptionResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access transcription jobs",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Get transcription jobs based on query parameters",
+              "tags": [
+                "Transcription V2"
+              ]
+            }
+          },
+          "/v2/transcription/{id}": {
+            "get": {
+              "operationId": "TranscriptionController_getTranscript_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the transcription job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The transcription job's metadata",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "example": {
+                          "id": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                          "request_id": "G-45463597",
+                          "version": 2,
+                          "kind": "pre-recorded",
+                          "created_at": "2023-12-28T09:04:17.210Z",
+                          "status": "queued",
+                          "file": {
+                            "id": "f0dcZE10-23d8-47f0-a25d-74a6eed88721",
+                            "filename": "split_infinity.wav",
+                            "source": "https://files.gladia.io/example/audio-transcription/split_infinity.wav",
+                            "audio_duration": 20,
+                            "number_of_channels": 1
+                          },
+                          "request_params": {
+                            "audio_url": "https://files.gladia.io/example/audio-transcription/split_infinity.wav",
+                            "subtitles": false,
+                            "diarization": false,
+                            "translation": false,
+                            "summarization": false,
+                            "sentences": false,
+                            "moderation": false,
+                            "named_entity_recognition": false
+                          }
+                        },
+                        "oneOf": [
+                          {
+                            "$ref": "#/components/schemas/PreRecordedResponse"
+                          },
+                          {
+                            "$ref": "#/components/schemas/StreamingResponse"
+                          }
+                        ],
+                        "discriminator": {
+                          "propertyName": "kind",
+                          "mapping": {
+                            "pre-recorded": "#/components/schemas/PreRecordedResponse",
+                            "live": "#/components/schemas/StreamingResponse"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access the transcription job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The transcription job doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Get the transcription job's metadata",
+              "tags": [
+                "Transcription V2"
+              ]
+            },
+            "delete": {
+              "operationId": "TranscriptionController_deleteTranscript_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the transcription job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "202": {
+                  "description": "The transcription job has been successfully deleted"
+                },
+                "401": {
+                  "description": "You don't have the permissions to delete this transcription job",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "The transcription job is not in a deletable state",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ForbiddenErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The transcription job doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Delete the transcription job",
+              "tags": [
+                "Transcription V2"
+              ]
+            }
+          },
+          "/v2/transcription/{id}/file": {
+            "get": {
+              "operationId": "TranscriptionController_getAudio_v2",
+              "parameters": [
+                {
+                  "name": "id",
+                  "required": true,
+                  "in": "path",
+                  "description": "Id of the transcription job",
+                  "schema": {
+                    "example": "45463597-20b7-4af7-b3b3-f5fb778203ab",
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The audio file used for this transcription job",
+                  "content": {
+                    "application/octet-stream": {
+                      "schema": {
+                        "type": "string",
+                        "format": "binary",
+                        "example": "<binary>"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "You don't have the permissions to access this transcription job or its audio file",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UnauthorizedErrorResponse"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "The transcription job or its audio file doesn't exist or has been deleted",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NotFoundErrorResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "summary": "Download the audio file used for this transcription job",
+              "tags": [
+                "Transcription V2"
+              ]
+            }
+          },
+          "/audio/text/audio-transcription": {
+            "post": {
+              "operationId": "AudioToTextController_audioTranscription",
+              "parameters": [],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "multipart/form-data": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "audio": {
+                          "type": "string",
+                          "format": "binary"
+                        },
+                        "audio_url": {
+                          "type": "string",
+                          "default": "https://files.gladia.io/example/audio-transcription/split_infinity.wav"
+                        },
+                        "language_behaviour": {
+                          "type": "string",
+                          "enum": [
+                            "automatic single language",
+                            "automatic multiple languages"
+                          ],
+                          "default": "automatic single language"
+                        },
+                        "language": {
+                          "type": "string",
+                          "enum": [
+                            "afrikaans",
+                            "albanian"
+                          ]
+                        },
+                        "transcription_hint": {
+                          "type": "string"
+                        },
+                        "toggle_diarization": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "diarization_num_speakers": {
+                          "type": "integer"
+                        },
+                        "diarization_min_speakers": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": ""
+                }
+              },
+              "security": [
+                {
+                  "x_gladia_key": []
+                }
+              ],
+              "tags": [
+                "AudioToText",
+                "Transcription V1"
+              ]
+            }
+          }
+        },
+        "info": {
+          "title": "Gladia Control API",
+          "description": "",
+          "version": "1.0",
+          "contact": {}
+        },
+        "tags": [],
+        "servers": [
+          {
+            "url": "https://api.gladia.io/",
+            "description": "Gladia API production URL"
+          }
+        ],
+        "components": {
+          "securitySchemes": {
+            "x_gladia_key": {
+              "type": "apiKey",
+              "in": "header",
+              "name": "x-gladia-key",
+              "description": "Your personal Gladia API key"
+            }
+          },
+          "schemas": {
+            "PreRecordedEventPayload": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Id of the job",
+                  "format": "uuid",
+                  "example": "45463597-20b7-4af7-b3b3-f5fb778203ab"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "LiveEventPayload": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Id of the job",
+                  "format": "uuid",
+                  "example": "45463597-20b7-4af7-b3b3-f5fb778203ab"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "UploadBody": {
+              "type": "object",
+              "properties": {}
+            },
+            "AudioUploadMetadataDTO": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Uploaded audio file ID",
+                  "format": "uuid",
+                  "example": "6c09400e-23d2-4bd2-be55-96a5ececfa3b"
+                },
+                "filename": {
+                  "type": "string",
+                  "description": "Uploaded audio filename",
+                  "example": "short-audio-en-16000.wav"
+                },
+                "source": {
+                  "type": "string",
+                  "description": "Uploaded audio source",
+                  "format": "uri",
+                  "example": "https://files.gladia.io/example/audio-transcription/split_infinity.wav"
+                },
+                "extension": {
+                  "type": "string",
+                  "description": "Uploaded audio detected extension",
+                  "format": "uuid",
+                  "example": "wav"
+                },
+                "size": {
+                  "type": "integer",
+                  "description": "Uploaded audio size",
+                  "example": 365702
+                },
+                "audio_duration": {
+                  "type": "number",
+                  "description": "Uploaded audio duration",
+                  "example": 4.145782
+                },
+                "number_of_channels": {
+                  "type": "integer",
+                  "description": "Uploaded audio channel numbers",
+                  "example": 1
+                }
+              },
+              "required": [
+                "id",
+                "filename"
+              ]
+            },
+            "AudioUploadResponse": {
+              "type": "object",
+              "properties": {
+                "audio_url": {
+                  "type": "string",
+                  "description": "Uploaded audio file Gladia URL",
+                  "format": "uri",
+                  "example": "https://api.gladia.io/file/6c09400e-23d2-4bd2-be55-96a5ececfa3b"
+                },
+                "audio_metadata": {
+                  "description": "Uploaded audio file detected metadata",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/AudioUploadMetadataDTO"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "audio_url",
+                "audio_metadata"
+              ]
+            },
+            "TranscriptionLanguageCodeEnum": {
+              "type": "string",
+              "enum": [
+                "af",
+                "am"
+              ],
+              "description": "Specify the language in which it will be pronounced when sound comparison occurs. Default to transcription language."
+            },
+            "CustomVocabularyEntryDTO": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "description": "The text used to replace in the transcription.",
+                  "example": "Gladia"
+                },
+                "intensity": {
+                  "type": "number",
+                  "description": "The global intensity of the feature.",
+                  "example": 0.5,
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "pronunciations": {
+                  "description": "The pronunciations used in the transcription.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "language": {
+                  "description": "Specify the language in which it will be pronounced when sound comparison occurs. Default to transcription language.",
+                  "example": "en",
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/TranscriptionLanguageCodeEnum"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "value"
+              ]
+            },
+            "CustomVocabularyConfigDTO": {
+              "type": "object",
+              "properties": {
+                "vocabulary": {
+                  "type": "array",
+                  "description": "Specific vocabulary list to feed the transcription model with. Each item can be a string or an object with the following properties: value, intensity, pronunciations, language.",
+                  "example": [
+                    "Westeros",
+                    {
+                      "value": "Stark"
+                    }
+                  ],
+                  "items": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/components/schemas/CustomVocabularyEntryDTO"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  }
+                },
+                "default_intensity": {
+                  "type": "number",
+                  "description": "Default intensity for the custom vocabulary",
+                  "example": 0.5,
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": [
+                "vocabulary"
+              ]
+            }
+          }
+        },
+        "webhooks": {
+          "transcription.created": {
+            "post": {
+              "description": "Sent when a pre-recorded transcription job has been created",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookTranscriptionCreatedPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "transcription.success": {
+            "post": {
+              "description": "Sent when a pre-recorded transcription job is done and its results are available",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookTranscriptionSuccessPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "transcription.error": {
+            "post": {
+              "description": "Sent when an error occurred on a pre-recorded transcription job",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookTranscriptionErrorPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "live.start_session": {
+            "post": {
+              "description": "Sent when a live session has been initiated",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookLiveStartSessionPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "live.start_recording": {
+            "post": {
+              "description": "Sent when we received the first audio chunk of a live session",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookLiveStartRecordingPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "live.end_recording": {
+            "post": {
+              "description": "Sent when the live session recording has ended",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookLiveEndRecordingPayload"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "live.end_session": {
+            "post": {
+              "description": "Sent when the live session post-processing has ended and the results are available",
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/WebhookLiveEndSessionPayload"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "MetalpriceAPI",
+      "slug": "metalpriceapi",
+      "emoji": "💱",
+      "tagline": "MetalpriceAPI — free-tier JSON endpoint",
+      "description": "MetalpriceAPI offers a free API tier. We verified JSON on a sample GET (Currency Exchange). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://metalpriceapi.com",
+      "baseUrl": "https://api.metalpriceapi.com",
+      "sampleEndpoint": "/v1/latest",
+      "latencyMs": 1966,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "statusCode": 101,
+          "message": "User did not supply an API Key"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Sheet2API",
+      "slug": "sheet2api",
+      "emoji": "🔧",
+      "tagline": "Sheet2API — free-tier JSON endpoint",
+      "description": "Sheet2API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://sheet2api.com/",
+      "baseUrl": "https://sheet2api.com",
+      "sampleEndpoint": "/v1/FgI6zV8qT121/characters/",
+      "latencyMs": 486,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "Name": "Bugs Bunny",
+          "Favourite Thing": "Carrots",
+          "Image": "Bugs.png"
+        },
+        {
+          "Name": "Elmer Fudd",
+          "Favourite Thing": "Chasing Rabbits",
+          "Image": "Elmer.png"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "YADG",
+      "slug": "yadg",
+      "emoji": "🔧",
+      "tagline": "YADG — free-tier JSON endpoint",
+      "description": "YADG offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://yadg.cc/api/v2/",
+      "baseUrl": "https://yadg.cc",
+      "sampleEndpoint": "/api/v2/templates/",
+      "latencyMs": 1820,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 10,
+        "next": null,
+        "previous": null,
+        "results": [
+          {
+            "url": "https://yadg.cc/api/v2/templates/1/",
+            "id": 1,
+            "owner": "Slack",
+            "ownedByYou": false,
+            "name": "BBCode (generic)",
+            "nameFormatted": "BBCode (generic)",
+            "code": "[size=4][b]{% set main_artists=data.artists|artistsbytype(\"main\") %}{{ main_artists|wrap(\"%s\",\", \", \" & \") }}{% set featured_artists=data.artists|artistsbytype(\"guest\") %}{% if featured_artists.length > 0 %} feat. {{ featured_artists|wrap(\"%s\",\", \", \" & \") }}{% endif %} – {{ data.title }}[/b][/size]\r\n\r\n{% if data.labelIds.length > 0 %}[b]Label/Cat#:[/b] {% for labelId in data.labelIds %}{{ labelId.label }}{% if labelId.catalogueNrs.length > 0 %} – {{ labelId.catalogueNrs|join(\" or \") }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}\r\n{% endif %}{% if data.releaseEvents.length > 0 %}{% set releaseEvent=data.releaseEvents|first %}{% if releaseEvent.country %}[b]Country:[/b] {{ releaseEvent.country }}\r\n{% endif %}{% if releaseEvent.date %}[b]Year:[/b] {{ releaseEvent.date }}\r\n{% endif %}{% endif %}{% if data.genres.length > 0 %}[b]Genre:[/b] {{ data.genres|join(\", \") }}\r\n{% endif %}{% if data.styles.length > 0  %}[b]Style:[/b] {{ data.styles|join(\", \") }}\r\n{% endif %}{% if data.format %}[b]Format:[/b] {{ data.format }}\r\n{% endif %}\r\n{% if data.discs.length == 1 %}[size=3][b]Tracklist[/b][/size]\r\n{% endif %}{% for disc in data.discs %}{% if data.discs.length > 1 %}{% if not loop.first %}\r\n\r\n{% endif %}[size=3][b]Disc {{ disc.number }}{% if disc.title %}: [i]{{ disc.title }}[/i]{% endif %}[/b]{% if data.discs.length > 1 %}{% set disc_length=0 %}{% for track in disc.tracks %}{% if track.length %}{% set disc_length=disc_length+track.length %}{% endif %}{% endfor %}{% if disc_length > 0 %} ({{ disc_length|formatseconds(true) }}){% endif %}{% endif %}[/size]\r\n{% endif %}{% for track in disc.tracks %}[b]{{ track.number }}{% if track.number|isdigit %}.[/b]{% else %}[/b] –{% endif %}{% set main_track_artists=track.artists|artistsbytype(\"main\") %}{% if main_track_artists.length > 0 %} {{ main_track_artists|wrap(\"%s\",\", \", \" & \") }} –{% endif %} {{ track.title }}{% set feature=track.artists|artistsbytype(\"guest\") %}{% if feature.length > 0 %} (feat. {{ feature|wrap(\"%s\",\", \", \" & \") }}){% endif %}{% if track.length %} [i]({{ track.length|formatseconds(true) }})[/i]{% endif %}{% if not loop.last %}\r\n{% endif %}{% endfor %}{% endfor %}{% set total_length=0 %}{% for disc in data.discs %}{% for track in disc.tracks %}{% if track.length %}{% set total_length=total_length+track.length %}{% endif %}{% endfor %}{% endfor %}{% if total_length > 0 %}\r\n\r\n[b]Total length:[/b] {{ total_length|formatseconds(true) }}{% endif %}{% if data.url %}\r\n\r\nMore information: [url]{{ data.url }}[/url]{% endif %}",
+            "isUtility": false
+          },
+          {
+            "url": "https://yadg.cc/api/v2/templates/776/",
+            "id": 776,
+            "owner": "Slack",
+            "ownedByYou": false,
+            "name": "D3Si",
+            "nameFormatted": "D3Si",
+            "code": "{% set gazelle_url=\"https://d3si.net\" %}[size=5][b]{% set main_artists=data.artists|artistsbytype(\"main\") %}{% if main_artists.length == 1 && main_artists[0].isVarious %}Various Artists{% else %}{{ main_artists|wrap(\"[artist]%s[/artist]\",\", \", \" & \") }}{% endif %}{% set featured_artists=data.artists|artistsbytype(\"guest\") %}{% if featured_artists.length > 0 %} feat. {{ featured_artists|wrap(\"[artist]%s[/artist]\",\", \", \" & \") }}{% endif %} – {{ data.title }}[/b][/size]\r\n\r\n{% if data.labelIds.length > 0 %}[b]Label/Cat#:[/b] {% for labelId in data.labelIds %}[url={{ gazelle_url }}/torrents.php?recordlabel={{ labelId.label|url_encode }}]{{ labelId.label }}[/url]{% if labelId.catalogueNrs.length > 0 %} – {{ labelId.catalogueNrs|join(\" or \") }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}\r\n{% endif %}{% if data.releaseEvents.length > 0 %}{% set releaseEvent=data.releaseEvents|first %}{% if releaseEvent.country %}[b]Country:[/b] {{ releaseEvent.country }}\r\n{% endif %}{% if releaseEvent.date %}[b]Year:[/b] {{ releaseEvent.date }}\r\n{% endif %}{% endif %}{% if data.genres.length > 0 %}[b]Genre:[/b] {% for g in data.genres %}[url={{ gazelle_url }}/torrents.php?taglist={{ g|replace(\"\\s+\",'.','g')|url_encode }}]{{ g }}[/url]{% if not loop.last %}, {% endif %}{% endfor %}\r\n{% endif %}{% if data.styles.length > 0  %}[b]Style:[/b] {% for s in data.styles %}[url={{ gazelle_url }}/torrents.php?taglist={{ s|replace(\"\\s+\",'.','g')|url_encode }}]{{ s }}[/url]{% if not loop.last %}, {% endif %}{% endfor %}\r\n{% endif %}{% if data.format %}[b]Format:[/b] {{ data.format }}\r\n{% endif %}\r\n{% if data.discs.length == 1 %}[size=4][b]Tracklist[/b][/size]\r\n{% endif %}{% for disc in data.discs %}{% if data.discs.length > 1 %}{% if not loop.first %}\r\n\r\n{% endif %}[size=4][b]Disc {{ disc.number }}{% if disc.title %}: [i]{{ disc.title }}[/i]{% endif %}[/b]{% if data.discs.length > 1 %}{% set disc_length=0 %}{% for track in disc.tracks %}{% if track.length %}{% set disc_length=disc_length+track.length %}{% endif %}{% endfor %}{% if disc_length > 0 %} ({{ disc_length|formatseconds(true) }}){% endif %}{% endif %}[/size]\r\n{% endif %}{% for track in disc.tracks %}[b]{{ track.number }}{% if track.number|isdigit %}.[/b]{% else %}[/b] –{% endif %}{% set main_track_artists=track.artists|artistsbytype(\"main\") %}{% if main_track_artists.length > 0 %} {{ main_track_artists|wrap(\"[artist]%s[/artist]\",\", \", \" & \") }} –{% endif %} {{ track.title }}{% set feature=track.artists|artistsbytype(\"guest\") %}{% if feature.length > 0 %} (feat. {{ feature|wrap(\"[artist]%s[/artist]\",\", \", \" & \") }}){% endif %}{% if track.length %} [i]({{ track.length|formatseconds(true) }})[/i]{% endif %}{% if not loop.last %}\r\n{% endif %}{% endfor %}{% endfor %}{% set total_length=0 %}{% for disc in data.discs %}{% for track in disc.tracks %}{% if track.length %}{% set total_length=total_length+track.length %}{% endif %}{% endfor %}{% endfor %}{% if total_length > 0 %}\r\n\r\n[b]Total length:[/b] {{ total_length|formatseconds(true) }}{% endif %}{% if data.url %}\r\n\r\nMore information: [url]{{ data.url }}[/url]{% endif %}",
+            "isUtility": false
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Monday",
+      "slug": "monday",
+      "emoji": "🔌",
+      "tagline": "Monday — free-tier JSON endpoint",
+      "description": "Monday offers a free API tier. We verified JSON on a sample GET (Documents & Productivity). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://developer.monday.com/",
+      "baseUrl": "https://api.monday.com",
+      "sampleEndpoint": "/v2/get_schema",
+      "latencyMs": 2491,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "__schema": {
+            "queryType": {
+              "name": "Query",
+              "kind": "OBJECT"
+            },
+            "mutationType": {
+              "name": "Mutation",
+              "kind": "OBJECT"
+            },
+            "subscriptionType": null,
+            "types": [
+              {
+                "kind": "OBJECT",
+                "name": "Query",
+                "description": "Root query type for the Dependencies service",
+                "fields": [
+                  {
+                    "name": "audit_logs",
+                    "description": "Retrieve audit logs for your Monday account. You can\n    filter logs by event types, user ID, IP address and start and end date.\n    \n    Here is an example audit log query:\n\n    query {\n      audit_logs(\n        user_id: \"1234567890\"\n        events: [\"login\", \"logout\"]\n        ip_address: \"123.123.123.123\"\n        start_time: \"2021-01-01T00:00:00Z\"\n        end_time: \"2021-01-01T23:59:59Z\"\n        limit: 100\n        page: 1\n      ) {\n        logs {\n          timestamp\n          event\n          ip_address\n          user {\n            id\n            name\n            email\n          }\n          activity_metadata\n        }\n        pagination {\n          page\n          page_size\n          has_more_pages\n          next_page_number\n        }\n      }\n    }\n\n    To get the list of all possible event types, you should use the audit_event_catalogue query like this:\n\n    query {\n      audit_event_catalogue {\n        name\n        description\n        metadata_details\n      }\n    }",
+                    "args": [
+                      {
+                        "name": "limit",
+                        "description": "Number of items to get, the default is 25.",
+                        "type": {
+                          "kind": "SCALAR",
+                          "name": "Int",
+                          "ofType": null
+                        },
+                        "defaultValue": "25",
+                        "isDeprecated": false,
+                        "deprecationReason": null
+                      },
+                      {
+                        "name": "page",
+                        "description": "Page number to get, starting at 1.",
+                        "type": {
+                          "kind": "SCALAR",
+                          "name": "Int",
+                          "ofType": null
+                        },
+                        "defaultValue": "1",
+                        "isDeprecated": false,
+                        "deprecationReason": null
+                      }
+                    ],
+                    "type": {
+                      "kind": "OBJECT",
+                      "name": "AuditLogPage",
+                      "ofType": null
+                    },
+                    "isDeprecated": false,
+                    "deprecationReason": null
+                  },
+                  {
+                    "name": "audit_event_catalogue",
+                    "description": "Lists all the audit event types that can be logged and information about them.\n    \n    Example query:\n\n    query {\n      audit_event_catalogue {\n        name\n        description\n        metadata_details\n      }\n    }",
+                    "args": [],
+                    "type": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "OBJECT",
+                          "name": "AuditEventCatalogueEntry",
+                          "ofType": null
+                        }
+                      }
+                    },
+                    "isDeprecated": false,
+                    "deprecationReason": null
+                  }
+                ],
+                "inputFields": null,
+                "interfaces": [],
+                "enumValues": null,
+                "possibleTypes": null
+              },
+              {
+                "kind": "SCALAR",
+                "name": "Int",
+                "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+                "fields": null,
+                "inputFields": null,
+                "interfaces": null,
+                "enumValues": null,
+                "possibleTypes": null
+              }
+            ],
+            "directives": [
+              {
+                "name": "cost",
+                "description": null,
+                "locations": [
+                  "ARGUMENT_DEFINITION",
+                  "ENUM"
+                ],
+                "args": [
+                  {
+                    "name": "weight",
+                    "description": null,
+                    "type": {
+                      "kind": "NON_NULL",
+                      "name": null,
+                      "ofType": {
+                        "kind": "SCALAR",
+                        "name": "Int",
+                        "ofType": null
+                      }
+                    },
+                    "defaultValue": null,
+                    "isDeprecated": false,
+                    "deprecationReason": null
+                  }
+                ]
+              },
+              {
+                "name": "listSize",
+                "description": null,
+                "locations": [
+                  "FIELD_DEFINITION"
+                ],
+                "args": [
+                  {
+                    "name": "assumedSize",
+                    "description": null,
+                    "type": {
+                      "kind": "SCALAR",
+                      "name": "Int",
+                      "ofType": null
+                    },
+                    "defaultValue": null,
+                    "isDeprecated": false,
+                    "deprecationReason": null
+                  },
+                  {
+                    "name": "slicingArguments",
+                    "description": null,
+                    "type": {
+                      "kind": "LIST",
+                      "name": null,
+                      "ofType": {
+                        "kind": "NON_NULL",
+                        "name": null,
+                        "ofType": {
+                          "kind": "SCALAR",
+                          "name": "String",
+                          "ofType": null
+                        }
+                      }
+                    },
+                    "defaultValue": null,
+                    "isDeprecated": false,
+                    "deprecationReason": null
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe",
+      "emoji": "💰",
+      "tagline": "Stripe — free-tier JSON endpoint",
+      "description": "Stripe offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://stripe.com/docs/api",
+      "baseUrl": "https://docs.stripe.com",
+      "sampleEndpoint": "/api/authentication",
+      "latencyMs": 7680,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "article": {
+          "content": {
+            "$$mdtype": "Tag",
+            "name": "Document",
+            "attributes": {},
+            "children": [
+              {
+                "$$mdtype": "Tag",
+                "name": "ApiSection",
+                "attributes": {
+                  "route": "/api/authentication",
+                  "title": "Authentication",
+                  "badges": [],
+                  "anchor": "authentication",
+                  "redirects": [],
+                  "v2": false
+                },
+                "children": [
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "The Stripe API uses ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "Link",
+                        "attributes": {
+                          "href": "/keys"
+                        },
+                        "children": [
+                          "API keys"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Test mode secret keys start with ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "sk_test_",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "$$mdtype": "Tag",
+                "name": "ApiSection",
+                "attributes": {
+                  "route": "/api/errors",
+                  "title": "Errors",
+                  "badges": [],
+                  "anchor": "errors",
+                  "redirects": [],
+                  "v2": false
+                },
+                "children": [
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Stripe uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "2xx",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Some ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "4xx",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "shell_features": {
+            "csat": true,
+            "footer": true,
+            "toc": true,
+            "header": true,
+            "action_bar": true
+          },
+          "format": "markdoc",
+          "intl": {
+            "country": "US",
+            "locale": "en-US",
+            "translated": true,
+            "availableLocales": [
+              {
+                "code": "en-GB",
+                "name": "English (United Kingdom)",
+                "generated": false
+              },
+              {
+                "code": "en-US",
+                "name": "English (United States)",
+                "generated": false
+              }
+            ],
+            "translationPercent": 1,
+            "translationBanner": false,
+            "missingTranslationCount": 0,
+            "missingTranslationKeys": null
+          },
+          "metadata": {
+            "type": "multi-page-reference"
+          },
+          "pages": [
+            {
+              "title": "Main",
+              "prefs": {}
+            }
+          ],
+          "pagePrefs": [],
+          "path": "/api/authentication"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "jobdata API",
+      "slug": "jobdata-api",
+      "emoji": "💼",
+      "tagline": "jobdata API — free-tier JSON endpoint",
+      "description": "jobdata API offers a free API tier. We verified JSON on a sample GET (Jobs). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://jobdataapi.com/",
+      "baseUrl": "https://jobdataapi.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 599,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "jobregions": "https://jobdataapi.com/api/jobregions/",
+        "jobcountries": "https://jobdataapi.com/api/jobcountries/",
+        "jobstates": "https://jobdataapi.com/api/jobstates/",
+        "jobcities": "https://jobdataapi.com/api/jobcities/",
+        "jobtypes": "https://jobdataapi.com/api/jobtypes/",
+        "tags": "https://jobdataapi.com/api/tags/",
+        "jobs": "https://jobdataapi.com/api/jobs/",
+        "jobsexpired": "https://jobdataapi.com/api/jobsexpired/"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    }
+  ],
+  "skipped": []
+}

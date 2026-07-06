@@ -1,0 +1,1085 @@
+{
+  "batch": 78,
+  "verified": [
+    {
+      "name": "NoSQLBooster API",
+      "slug": "nosqlbooster-api",
+      "emoji": "🔌",
+      "tagline": "NoSQLBooster API — auto-discovered JSON endpoint",
+      "description": "MongoDB query and document data services",
+      "sourceCategory": "Data & Information",
+      "docsUrl": "https://www.mongodb.com",
+      "baseUrl": "https://www.mongodb.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 352,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Colormind",
+      "slug": "colormind",
+      "emoji": "🔌",
+      "tagline": "Colormind — auto-discovered JSON endpoint",
+      "description": "Color scheme generator",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "http://colormind.io",
+      "baseUrl": "http://colormind.io",
+      "sampleEndpoint": "/list/",
+      "latencyMs": 472,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "result": [
+          "ui",
+          "default"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "TimeZones iCal Library",
+      "slug": "timezones-ical-library",
+      "emoji": "🔌",
+      "tagline": "TimeZones iCal Library — auto-discovered JSON endpoint",
+      "description": "Database of official time zones and corresponding iCal VTIMEZONE blocks",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://tz.add-to-calendar-technology.com",
+      "baseUrl": "https://tz.add-to-calendar-technology.com",
+      "sampleEndpoint": "/api/zones.json",
+      "latencyMs": 498,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "Africa/Abidjan",
+        "Africa/Accra"
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "AgentDeals",
+      "slug": "agentdeals",
+      "emoji": "🔌",
+      "tagline": "AgentDeals — auto-discovered JSON endpoint",
+      "description": "Search and compare developer free tiers, startup credits, and pricing changes",
+      "sourceCategory": "Development",
+      "docsUrl": "https://agentdeals.dev",
+      "baseUrl": "https://agentdeals.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 570,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "sessions": 10,
+        "stats": {
+          "uptime_seconds": 61416,
+          "total_tool_calls": 0,
+          "tool_calls": {
+            "search_deals": 0,
+            "plan_stack": 0,
+            "compare_vendors": 0,
+            "track_changes": 0,
+            "register_agent": 0,
+            "get_referral_code": 0,
+            "check_balance": 0,
+            "request_payout": 0
+          },
+          "total_api_hits": 9082,
+          "api_hits": {
+            "/search": 4078,
+            "/vendor/:slug": 2204,
+            "/vercel-vs-netlify": 4,
+            "/tenor-alternatives": 10,
+            "/database-free-tier-comparison-2026": 30,
+            "/monitoring-alternatives": 2,
+            "/free-ai-stack": 2,
+            "/gcp-free-tier-2026": 32
+          },
+          "total_sessions": 523,
+          "total_disconnects": 1026,
+          "landing_page_views": 181
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "languagelayer",
+      "slug": "languagelayer",
+      "emoji": "🔌",
+      "tagline": "languagelayer — auto-discovered JSON endpoint",
+      "description": "Language detection",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://languagelayer.com",
+      "baseUrl": "https://languagelayer.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 786,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-199-111.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:20:57Z"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Congressional Stock Brain",
+      "slug": "congressional-stock-brain",
+      "emoji": "🔌",
+      "tagline": "Congressional Stock Brain — auto-discovered JSON endpoint",
+      "description": "AI-powered tool scoring U.S. STOCK Act lawmaker trade disclosures for retail investors",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://congressionalstockbrain.com",
+      "baseUrl": "https://congressionalstockbrain.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 836,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "environment": "prod",
+        "platform_domain": "app.base44.com",
+        "build": {
+          "image_tag": "main-419f0e5",
+          "commit": "419f0e56b897b12759ad083a6b6e2e9eabb0ff43",
+          "built_at": "2026-07-06T01:02:22+03:00"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Screenshotlayer",
+      "slug": "screenshotlayer",
+      "emoji": "🔌",
+      "tagline": "Screenshotlayer — auto-discovered JSON endpoint",
+      "description": "URL to screenshot",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://screenshotlayer.com",
+      "baseUrl": "https://screenshotlayer.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 863,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-199-111.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:20:57Z"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Ducks Unlimited",
+      "slug": "ducks-unlimited",
+      "emoji": "🔌",
+      "tagline": "Ducks Unlimited — auto-discovered JSON endpoint",
+      "description": "API explorer that gives a query URL with a JSON response of locations and cities",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://gis.ducks.org",
+      "baseUrl": "https://gis.ducks.org",
+      "sampleEndpoint": "/api/v3",
+      "latencyMs": 900,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the V3 API. It is currently under construction",
+        "resources": {
+          "datasets": {
+            "routes": {
+              "collection": "https://gis.ducks.org/api/v3/datasets",
+              "object": "https://gis.ducks.org/api/v3/datasets{/:id}"
+            },
+            "parameters": {
+              "query": "search term",
+              "filter": "filter applied to search. Example: 'filter[tags]=airports'",
+              "page[size]": "Number of resources per page. Example: 'page[size]=25' ",
+              "page[number]": "The page number for the resources. Example: 'page[number]=2'"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Municipal Finance API",
+      "slug": "municipal-finance-api",
+      "emoji": "🔌",
+      "tagline": "Municipal Finance API — auto-discovered JSON endpoint",
+      "description": "This API provides access to current and historical financial data from South African municipalities, enabling users to gather insights about municipal finances. It includes data sets covering various ",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://municipaldata.treasury.gov.za",
+      "baseUrl": "https://municipaldata.treasury.gov.za",
+      "sampleEndpoint": "/api",
+      "latencyMs": 1307,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "endpoints": [
+          "https://municipaldata.treasury.gov.za/api/cubes"
+        ],
+        "documentation": "https://municipaldata.treasury.gov.za/docs"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Landing.jobs",
+      "slug": "landing-jobs",
+      "emoji": "🚀",
+      "tagline": "Tech jobs in Europe and remote",
+      "description": "Landing.jobs JSON API lists tech roles with company, location and tags. Public feed for European and remote job aggregators.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://landing.jobs/api/v1",
+      "baseUrl": "https://landing.jobs/api/v1",
+      "sampleEndpoint": "/jobs?limit=1",
+      "latencyMs": 1533,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 19066,
+          "currency_code": "EUR",
+          "expires_at": "2026-09-02",
+          "main_requirements": "<ul><li>6-8 years of experience in software development with Java.</li><li>5+ years working with Spring Boot.</li><li>Experience with SQL.</li><li>Proactively solution oriented (Nothing is lost in the cracks).</li><li>Always on the ball.</li><li>Displays maturity and loyalty to the processes, organization, and decisions.</li><li>Dares and wants to challenge status quo.</li><li>Keeping cool and taking qualified decisions under pressure.</li><li>Able and willing to mentor and teach others.</li><li>Is very adept at managing own time and priorities.</li><li>Collaboration and help-seeking are seen as strength.</li></ul>",
+          "nice_to_have": "<ul><li>Experience with Cloud Native engineering.</li><li>Experience with Kafka.</li><li>Experience with Docker and Kubernetes.</li><li>Test Driven Development (TDD).</li></ul>",
+          "perks": "<ul><li>Permanent contract with Inscale</li><li>14 salaries</li><li>22 days vacation</li><li>Portugal Holidays</li><li>Health insurance</li><li>Flex benefits</li><li>Career plan&nbsp;</li></ul>",
+          "relocation_paid": false,
+          "role_description": "<div>Our client is a Global retail chain that brings Scandinavian design and quality to the world through an extensive range of quality products for sleeping and living. Known for its commitment to simplicity, functionality, and affordability.&nbsp;<br><br></div><div>Teamwork, innovation, and a customer-focused mindset as core values.&nbsp;<br><br></div><div>Our culture is built on Scandinavian roots, emphasizing respect, responsibility, and sustainable practices. We are proud to provide opportunities for career growth in a dynamic and supportive environment. <br><br>The Java team is responsible for a wide range of in-house developed applications. So, you will get the opportunity to work in different business areas and with different technologies. <br><br><strong>Responsibilities<br></strong><br></div><ul><li>Are passionate about IT and software development.</li><li>Are skilled Java developers, who continuously strives to improve their skills.</li><li>Write a clean code and create software architecture that are flexible.</li><li>Are experienced with Java web technologies.</li><li>Write thorough tests of the code and are familiar with test driven development.</li><li>Can drive and facilitate design discussions.</li><li>Have extensive knowledge of distributed systems and concurrency.</li></ul>"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Remotive",
+      "slug": "remotive",
+      "emoji": "🏠",
+      "tagline": "Curated remote job listings",
+      "description": "Remotive publishes remote tech jobs as JSON with title, company, category and URL. Public feed — attribute Remotive when displaying listings.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://remotive.com/api",
+      "baseUrl": "https://remotive.com/api",
+      "sampleEndpoint": "/remote-jobs?limit=1",
+      "latencyMs": 1704,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "00-warning": "Remotive main domain moved to remotive.com ! Please make your API calls on remotive.com/api/remote-jobs instead of remotive.io now ;) Legacy endpoint remotive.io/api/remote-jobs will be terminated in June 2022. Thank you!",
+        "0-legal-notice": "Legal warning - Hey, thanks for using Remotive's API, we appreciate it! Please note that API documentation and access is granted so that developers can share our jobs further. Please do not submit Remotive jobs to third Party websites, including but not limited to: Jooble, Neuvoo, Google Jobs, LinkedIn Jobs. Please link back to the URL found on Remotive AND mention Remotive as a source in order to Remotive to get traffic from your listing. If you don't do that, we'll terminate your API access, sorry! Jobs displayed are delayed by 24 hours, the goal being that jobs are attributed to Remotive on various platforms. Displaying our jobs in order to collect signups/email addresses to show a listing constitutes a breach of our terms of services. We offer a private, paid-for API, please email us at hello(at)remotive(dot)io for more information (starting budget is $5k/mo). Please find out terms of services on https://remotive.com/api-documentation. Please note that there is absolutely no need to request Remotive Job data too frequently. Typically, you only need to GET Remotive job data through this API a couple of times a day (we advise max. 4 times a day). Our data is not changing much faster than that anyway. Note that excessive requests will be blocked. Many thanks (Rodolphe & the Remotive team!)",
+        "job-count": 31,
+        "total-job-count": 31,
+        "jobs": [
+          {
+            "id": 1185979,
+            "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
+            "title": "Freelance Writer",
+            "company_name": "IAPWE",
+            "company_logo": "https://remotive.com/job/1185979/logo",
+            "category": "Writing",
+            "tags": [
+              "REST"
+            ],
+            "job_type": "freelance"
+          },
+          {
+            "id": 1749306,
+            "url": "https://remotive.com/remote-jobs/writing/copywriter-1749306",
+            "title": "Copywriter",
+            "company_name": "Coalition Technologies ",
+            "company_logo": "https://remotive.com/job/1749306/logo",
+            "category": "Writing",
+            "tags": [
+              "accounting",
+              "excel"
+            ],
+            "job_type": "freelance"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "Lobsters",
+      "slug": "lobsters",
+      "emoji": "🦞",
+      "tagline": "Hottest tech links on Lobste.rs",
+      "description": "Lobsters exposes /hottest.json and /newest.json story lists. Compact JSON for computing-focused link aggregators.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://lobste.rs",
+      "baseUrl": "https://lobste.rs",
+      "sampleEndpoint": "/hottest.json",
+      "latencyMs": 1533,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "short_id": "zhizsf",
+          "created_at": "2026-07-05T03:24:06.000-05:00",
+          "title": "If you’re a button, you have one job",
+          "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
+          "score": 55,
+          "flags": 0,
+          "comment_count": 22,
+          "description": ""
+        },
+        {
+          "short_id": "zwz0wh",
+          "created_at": "2026-07-03T09:14:38.000-05:00",
+          "title": "Fourteener Lobsters",
+          "url": "",
+          "score": 389,
+          "flags": 0,
+          "comment_count": 42,
+          "description": "<p>Hey folks,</p>\n<p>Once more around the sun, today is 14 years since Lobsters launched in 2012.</p>\n<p>Like the the <a href=\"https://en.wikipedia.org/wiki/Fourteener\" rel=\"ugc\">American fourteeners</a>, our <a href=\"https://lobste.rs/stats\" rel=\"ugc\">activity charts</a> have been busily sloping upwards.\nWe now have 20,412 users who've submitted 127,589 stories, written 696,054 comments, and cast 4,911,743 votes.\n(I'm happy to run <a href=\"https://lobste.rs/about#queries\" rel=\"ugc\">more complicated queries</a> than <code>count(*)</code>.)</p>\n<p>Previously:\n<a href=\"https://lobste.rs/s/rxmopc/lobsters_is_1_year_old_today\" rel=\"ugc\">2013</a>\n<a href=\"https://lobste.rs/s/9fcuzc/happy_birthday_lobste_rs\" rel=\"ugc\">2016</a>\n<a href=\"https://lobste.rs/s/mazaum/happy_5th_anniversary_lobsters\" rel=\"ugc\">2017</a>\n<a href=\"https://lobste.rs/s/cgtc2w/happy_7th_anniversary_lobsters\" rel=\"ugc\">2019</a>\n<a href=\"https://lobste.rs/s/orrpdv/lobsters_launched_8_years_ago_today\" rel=\"ugc\">2020</a>\n<a href=\"https://lobste.rs/s/idj3tm/lobsters_is_nine_today\" rel=\"ugc\">2021</a>\n<a href=\"https://lobste.rs/s/jclvos/one_decade_lobsters\" rel=\"ugc\">2022</a>\n<a href=\"https://lobste.rs/s/hhoopi/lobsters_is_11_today\" rel=\"ugc\">2023</a>\n<a href=\"https://lobste.rs/s/slfdci/one_dozen_lobsters\" rel=\"ugc\">2024</a>\n<a href=\"https://lobste.rs/s/8we4dn/lucky_13_lobsters\" rel=\"ugc\">2025</a></p>\n<p>Look back at the last year’s <a href=\"https://lobste.rs/top/1y\" rel=\"ugc\">top stories</a>,\nor review your upvoted <a href=\"https://lobste.rs/upvoted/comments\" rel=\"ugc\">comments</a>\nand <a href=\"https://lobste.rs/upvoted/stories\" rel=\"ugc\">stories</a> to share your favorites.</p>\n"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "MyMemory",
+      "slug": "mymemory",
+      "emoji": "🌐",
+      "tagline": "Free machine translation lookup",
+      "description": "MyMemory translation API returns matched text and quality scores from a crowdsourced TM pool. Anonymous tier without a key at low volume.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://api.mymemory.translated.net",
+      "baseUrl": "https://api.mymemory.translated.net",
+      "sampleEndpoint": "/get?q=hello&langpair=en|es",
+      "latencyMs": 1504,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "responseData": {
+          "translatedText": "hola",
+          "match": 1
+        },
+        "quotaFinished": false,
+        "mtLangSupported": null,
+        "responseDetails": "",
+        "responseStatus": 200,
+        "responderId": null,
+        "exception_code": null,
+        "matches": [
+          {
+            "id": "465122494",
+            "segment": "hello",
+            "translation": "hola",
+            "source": "en-GB",
+            "target": "es-ES",
+            "quality": "74",
+            "reference": null,
+            "usage-count": 3
+          },
+          {
+            "id": "437829924865166059",
+            "segment": "hello",
+            "translation": "hello",
+            "source": "en-US",
+            "target": "es-ES",
+            "quality": 74,
+            "reference": null,
+            "usage-count": 2
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "SWAPI.info",
+      "slug": "swapi-info",
+      "emoji": "⭐",
+      "tagline": "Star Wars data with GraphQL-style JSON",
+      "description": "Community Star Wars API with a compact /api index and typed resources. Keyless JSON alternative to swapi.dev for demos and workshops.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://swapi.info",
+      "baseUrl": "https://swapi.info",
+      "sampleEndpoint": "/api",
+      "latencyMs": 612,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "films": "https://swapi.info/api/films",
+        "people": "https://swapi.info/api/people",
+        "planets": "https://swapi.info/api/planets",
+        "species": "https://swapi.info/api/species",
+        "vehicles": "https://swapi.info/api/vehicles",
+        "starships": "https://swapi.info/api/starships"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "ONS",
+      "slug": "ons",
+      "emoji": "📈",
+      "tagline": "UK Office for National Statistics datasets",
+      "description": "ONS beta API lists official UK statistical datasets with metadata and edition links. Public JSON with no API key on read routes.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://api.beta.ons.gov.uk/v1",
+      "baseUrl": "https://api.beta.ons.gov.uk/v1",
+      "sampleEndpoint": "/datasets?limit=1",
+      "latencyMs": 1778,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "items": [
+          {
+            "contacts": [
+              {
+                "email": "qualityoflife@ons.gov.uk",
+                "name": "Will Shufflebottom, Owain Birrell, Pavan Bains and Geeta Kerai",
+                "telephone": "+44 300 0671543"
+              }
+            ],
+            "description": "Seasonally and non seasonally-adjusted quarterly estimates of life satisfaction, feeling that the things done in life are worthwhile, happiness and anxiety in the UK.",
+            "keywords": [
+              "well-being"
+            ],
+            "id": "wellbeing-quarterly",
+            "last_updated": "2023-12-13T09:40:24.204Z",
+            "links": {
+              "editions": {
+                "href": "https://api.beta.ons.gov.uk/v1/datasets/wellbeing-quarterly/editions"
+              },
+              "latest_version": {
+                "href": "https://api.beta.ons.gov.uk/v1/datasets/wellbeing-quarterly/editions/time-series/versions/9",
+                "id": "9"
+              },
+              "self": {
+                "href": "https://api.beta.ons.gov.uk/v1/datasets/wellbeing-quarterly"
+              },
+              "taxonomy": {
+                "href": "https://api.beta.ons.gov.uk/v1/peoplepopulationandcommunity/wellbeing"
+              }
+            },
+            "methodologies": [
+              {
+                "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/personalwellbeingquarterlyestimatestechnicalreport",
+                "title": "Personal well-being quarterly estimates technical report"
+              }
+            ],
+            "national_statistic": false
+          }
+        ],
+        "count": 1,
+        "offset": 0,
+        "limit": 1,
+        "total_count": 337
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "The Trivia API",
+      "slug": "the-trivia-api",
+      "emoji": "❓",
+      "tagline": "Multiple-choice trivia questions",
+      "description": "Quiz questions with categories and difficulty filters. Returns structured JSON arrays — no key on the public questions route.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://the-trivia-api.com/api",
+      "baseUrl": "https://the-trivia-api.com/api",
+      "sampleEndpoint": "/questions?limit=1",
+      "latencyMs": 1420,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "category": "Geography",
+          "id": "6463394f01d576cfac3aa33b",
+          "correctAnswer": "Alaska & Hawaii",
+          "incorrectAnswers": [
+            "Maine & New Hampshire",
+            "Vermont & Massachusetts"
+          ],
+          "question": "Which 2 US states share no land border with other states?",
+          "tags": [
+            "usa",
+            "us_states"
+          ],
+          "type": "Multiple Choice",
+          "difficulty": "easy"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "RhymeBrain",
+      "slug": "rhymebrain",
+      "emoji": "🎵",
+      "tagline": "Rhyme lookup for any word",
+      "description": "RhymeBrain returns rhyme lists and syllable scores as JSON. Simple GET with function= query params — no authentication.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://rhymebrain.com",
+      "baseUrl": "https://rhymebrain.com",
+      "sampleEndpoint": "/talk?function=getRhymes&word=example",
+      "latencyMs": 2025,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "word": "sample",
+          "freq": 24,
+          "score": 300,
+          "flags": "bc",
+          "syllables": "2"
+        },
+        {
+          "word": "trample",
+          "freq": 18,
+          "score": 300,
+          "flags": "bc",
+          "syllables": "2"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none"
+    },
+    {
+      "name": "EmailRep",
+      "slug": "emailrep",
+      "emoji": "🔐",
+      "tagline": "EmailRep — Email address reputation lookup",
+      "description": "EmailRep exposes email address reputation lookup We verified a keyless GET endpoint returning JSON (Security). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://emailrep.io",
+      "baseUrl": "https://emailrep.io",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 190,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "message": "pong"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://emailrep.io/ping"
+    },
+    {
+      "name": "Data.gov",
+      "slug": "data-gov",
+      "emoji": "🏛",
+      "tagline": "Data.gov — US federal open-data catalog search",
+      "description": "Data.gov exposes uS federal open-data catalog search We verified a keyless GET endpoint returning JSON (Government). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://catalog.data.gov/api/3",
+      "baseUrl": "https://catalog.data.gov",
+      "sampleEndpoint": "/search",
+      "latencyMs": 219,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "after": "WzEuMCwyMTY3LCJjNDI4NTBjNS1mOWQ1LTRmNzUtYmY3Ni0wNTFiMjU1YjE0Y2IiXQ==",
+        "results": [
+          {
+            "_score": 1,
+            "_sort": [
+              1,
+              16148
+            ],
+            "dcat": {
+              "@type": "dcat:Dataset",
+              "accessLevel": "public",
+              "bureauCode": [
+                "018:00"
+              ],
+              "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "CRDC Team",
+                "hasEmail": "mailto:odp@ed.gov"
+              },
+              "description": "The 2015-16 tables are based on data collected from all of the nation’s school districts and schools—approximately 17,300 school districts and 96,300 schools. This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students. The Excel file contains data on allegations of harassment or bullying by type of allegations for all states.",
+              "distribution": [
+                {
+                  "@type": "dcat:Distribution",
+                  "description": "The 2015-16 tables are based on data collected from all of the nation’s school districts and schools—approximately 17,300 school districts and 96,300 schools. This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students. The Excel file contains data on allegations of harassment or bullying by type of allegations for all states.",
+                  "downloadURL": "https://civilrightsdata.ed.gov/assets/downloads/2015-2016/Allegations-of-Harassment-or-Bullying.xlsx",
+                  "format": "XLSX",
+                  "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "title": "Allegations of Harassment or Bullying"
+                },
+                {
+                  "@type": "dcat:Distribution",
+                  "description": "The 2015-16 tables are based on data collected from all of the nation’s school districts and schools—approximately 17,300 school districts and 96,300 schools. This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students. The Excel file contains data on allegations of harassment or bullying by type of allegations for all states.",
+                  "downloadURL": "https://civilrightsdata.ed.gov/assets/downloads/2015-2016/Harassment-Bullying-on-basis-of-disability-disciplined.xlsx",
+                  "format": "XLSX",
+                  "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "title": "On Basis of Disability - Disciplined "
+                }
+              ],
+              "identifier": "a6312d29-ef5b-4df4-97ea-5da38ce36a7f",
+              "keyword": [
+                "Elementary-and-secondary",
+                "Language"
+              ]
+            },
+            "description": "The 2015-16 tables are based on data collected from all of the nation’s school districts and schools—approximately 17,300 school districts and 96,300 schools. This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students. The Excel file contains data on allegations of harassment or bullying by type of allegations for all states.",
+            "distribution_titles": [
+              "Allegations of Harassment or Bullying",
+              "On Basis of Disability - Disciplined "
+            ],
+            "harvest_record": "https://catalog.data.gov/harvest_record/c4d2afc2-0d60-4a75-9a68-46c6a3dec87f",
+            "harvest_record_raw": "https://catalog.data.gov/harvest_record/c4d2afc2-0d60-4a75-9a68-46c6a3dec87f/raw",
+            "has_spatial": false
+          },
+          {
+            "_score": 1,
+            "_sort": [
+              1,
+              14689
+            ],
+            "dcat": {
+              "@type": "dcat:Dataset",
+              "accessLevel": "public",
+              "bureauCode": [
+                "018:00"
+              ],
+              "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "CRDC Team",
+                "hasEmail": "mailto:odp@ed.gov"
+              },
+              "description": "The Civil Rights Data Collection, 2017-18 (CRDC 2017-18) is part of the Civil Rights Data Collection (CRDC) program; program data are available beginning with the 2000 collection at https://civilrightsdata.ed.gov/data. CRDC 2017-18 is a cross-sectional survey that collects data on key education and civil rights issues in the nation's public schools, which include student enrollment and educational programs and services, disaggregated by race/ethnicity, sex, limited English proficiency, and disability. LEAs submit administrative records about schools in the district. CRDC 2017-18 is a universe survey. Key statistics produced from CRDC 2017-18 can provide information about critical civil rights issues as well as contextual information on the state of civil rights in the nation, including enrollment demographics, advanced placement, school discipline, and special education services.",
+              "distribution": [
+                {
+                  "@type": "dcat:Distribution",
+                  "description": "A public-use data file containing the entire CRDC year-of-choice data set in CSV format can be downloaded in a zip file.",
+                  "downloadURL": "https://civilrightsdata.ed.gov/assets/ocr/docs/2017-18-crdc-data.zip",
+                  "format": "ZIP",
+                  "mediaType": "application/zip",
+                  "title": "2017-18-crdc-data.zip"
+                }
+              ],
+              "identifier": "dd80845b-924e-40d3-964c-dd4875113f0a",
+              "keyword": [
+                "Elementary-and-secondary",
+                "Language"
+              ]
+            },
+            "description": "The Civil Rights Data Collection, 2017-18 (CRDC 2017-18) is part of the Civil Rights Data Collection (CRDC) program; program data are available beginning with the 2000 collection at https://civilrightsdata.ed.gov/data. CRDC 2017-18 is a cross-sectional survey that collects data on key education and civil rights issues in the nation's public schools, which include student enrollment and educational programs and services, disaggregated by race/ethnicity, sex, limited English proficiency, and disability. LEAs submit administrative records about schools in the district. CRDC 2017-18 is a universe survey. Key statistics produced from CRDC 2017-18 can provide information about critical civil rights issues as well as contextual information on the state of civil rights in the nation, including enrollment demographics, advanced placement, school discipline, and special education services.",
+            "distribution_titles": [
+              "2017-18-crdc-data.zip"
+            ],
+            "harvest_record": "https://catalog.data.gov/harvest_record/98a6ce25-0fc9-4954-af90-b7a5bb742e40",
+            "harvest_record_raw": "https://catalog.data.gov/harvest_record/98a6ce25-0fc9-4954-af90-b7a5bb742e40/raw",
+            "has_spatial": false
+          }
+        ],
+        "sort": "relevance"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://catalog.data.gov/search"
+    },
+    {
+      "name": "btcnode.uk",
+      "slug": "btcnode-uk",
+      "emoji": "🪙",
+      "tagline": "btcnode.uk — Bitcoin blockchain data, fees, mempool, SEC insider tra…",
+      "description": "btcnode.uk exposes bitcoin blockchain data, fees, mempool, SEC insider trades, Reddit sentiment. x402 micropayments for paid endpoints. We verified a keyless GET endpoint returning JSON (Cryptocurrency). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://btcnode.uk",
+      "baseUrl": "https://btcnode.uk",
+      "sampleEndpoint": "/health",
+      "latencyMs": 223,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "wallet": "0x6a66...43fc"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://btcnode.uk/health"
+    },
+    {
+      "name": "ArcGIS Hub - World Countries Generalized",
+      "slug": "arcgis-hub-world-countries-generalized",
+      "emoji": "🗺",
+      "tagline": "ArcGIS Hub - World Countries Generalized — The World Countries Generalized lay",
+      "description": "ArcGIS Hub - World Countries Generalized exposes the World Countries Generalized layer provides a simplified representation of global country boundaries, optimized for performance and visibility at broader scales (1:5,000,000 and beyond). Developed by Esri using data from Garmin International, the CIA World Factbook, and the National Geographic Society, this layer is updated annually to reflect changes in country names and significant borders. Ideal for applications requiring an authoritative, generalized world bas",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/about",
+      "baseUrl": "https://hub.arcgis.com",
+      "sampleEndpoint": "/api/v3",
+      "latencyMs": 163,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the V3 API. It is currently under construction",
+        "resources": {
+          "datasets": {
+            "routes": {
+              "collection": "https://hub.arcgis.com/api/v3/datasets",
+              "object": "https://hub.arcgis.com/api/v3/datasets{/:id}"
+            },
+            "parameters": {
+              "query": "search term",
+              "filter": "filter applied to search. Example: 'filter[tags]=airports'",
+              "page[size]": "Number of resources per page. Example: 'page[size]=25' ",
+              "page[number]": "The page number for the resources. Example: 'page[number]=2'"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://hub.arcgis.com/api/v3"
+    },
+    {
+      "name": "GLEIF LEI API",
+      "slug": "gleif-lei-api",
+      "emoji": "🔌",
+      "tagline": "GLEIF LEI API — Global legal entity identifier lookup and validation",
+      "description": "GLEIF LEI API exposes global legal entity identifier lookup and validation We verified a keyless GET endpoint returning JSON (Legal & Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Legal & Finance",
+      "docsUrl": "https://api.gleif.org/api/v1/lei-records",
+      "baseUrl": "https://api.gleif.org",
+      "sampleEndpoint": "/api/v1/lei-records?page%5Bnumber%5D=1&page%5Bsize%5D=15",
+      "latencyMs": 5454,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meta": {
+          "goldenCopy": {
+            "publishDate": "2026-07-05T16:00:00Z"
+          },
+          "pagination": {
+            "currentPage": 1,
+            "perPage": 15,
+            "from": 1,
+            "to": 15,
+            "total": 3363499,
+            "lastPage": 224234
+          }
+        },
+        "links": {
+          "first": "https://api.gleif.org/api/v1/lei-records?page%5Bnumber%5D=1&page%5Bsize%5D=15",
+          "next": "https://api.gleif.org/api/v1/lei-records?page%5Bnumber%5D=2&page%5Bsize%5D=15",
+          "last": "https://api.gleif.org/api/v1/lei-records?page%5Bnumber%5D=224234&page%5Bsize%5D=15"
+        },
+        "data": [
+          {
+            "type": "lei-records",
+            "id": "984500B4EEF55BD60682",
+            "attributes": {
+              "lei": "984500B4EEF55BD60682",
+              "entity": {
+                "legalName": {
+                  "name": "OVERHALLA TRANSPORT AS",
+                  "language": "no"
+                },
+                "otherNames": [],
+                "transliteratedOtherNames": [],
+                "legalAddress": {
+                  "language": "no",
+                  "addressLines": [
+                    "Skjørlandsvegen 94"
+                  ],
+                  "addressNumber": null,
+                  "addressNumberWithinBuilding": null,
+                  "mailRouting": null,
+                  "city": "OVERHALLA",
+                  "region": null,
+                  "country": "NO"
+                },
+                "headquartersAddress": {
+                  "language": "no",
+                  "addressLines": [
+                    "Skjørlandsvegen 94"
+                  ],
+                  "addressNumber": null,
+                  "addressNumberWithinBuilding": null,
+                  "mailRouting": null,
+                  "city": "OVERHALLA",
+                  "region": null,
+                  "country": "NO"
+                },
+                "registeredAt": {
+                  "id": "RA000472",
+                  "other": null
+                },
+                "registeredAs": "975 347 214",
+                "jurisdiction": "NO"
+              },
+              "registration": {
+                "initialRegistrationDate": "2026-07-05T14:59:29Z",
+                "lastUpdateDate": "2026-07-05T14:59:29Z",
+                "status": "ISSUED",
+                "nextRenewalDate": "2027-07-05T14:59:31Z",
+                "managingLou": "529900T8BM49AURSDO55",
+                "corroborationLevel": "FULLY_CORROBORATED",
+                "validatedAt": {
+                  "id": "RA000472",
+                  "other": null
+                },
+                "validatedAs": "975 347 214"
+              },
+              "bic": null,
+              "mic": null,
+              "ocid": null,
+              "qcc": null,
+              "spglobal": null
+            },
+            "relationships": {
+              "managing-lou": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682/managing-lou"
+                }
+              },
+              "lei-issuer": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682/lei-issuer"
+                }
+              },
+              "field-modifications": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682/field-modifications"
+                }
+              },
+              "direct-parent": {
+                "links": {
+                  "reporting-exception": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682/direct-parent-reporting-exception"
+                }
+              },
+              "ultimate-parent": {
+                "links": {
+                  "reporting-exception": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682/ultimate-parent-reporting-exception"
+                }
+              }
+            },
+            "links": {
+              "self": "https://api.gleif.org/api/v1/lei-records/984500B4EEF55BD60682"
+            }
+          },
+          {
+            "type": "lei-records",
+            "id": "98450075A50C8D3C3658",
+            "attributes": {
+              "lei": "98450075A50C8D3C3658",
+              "entity": {
+                "legalName": {
+                  "name": "OÜ Kasarm",
+                  "language": "et"
+                },
+                "otherNames": [],
+                "transliteratedOtherNames": [],
+                "legalAddress": {
+                  "language": "et",
+                  "addressLines": [
+                    "Pärna tn 9/4-4",
+                    "Kõrveküla"
+                  ],
+                  "addressNumber": null,
+                  "addressNumberWithinBuilding": null,
+                  "mailRouting": null,
+                  "city": "Tartu",
+                  "region": "EE-79",
+                  "country": "EE"
+                },
+                "headquartersAddress": {
+                  "language": "et",
+                  "addressLines": [
+                    "Pärna tn 9/4-4",
+                    "Kõrveküla"
+                  ],
+                  "addressNumber": null,
+                  "addressNumberWithinBuilding": null,
+                  "mailRouting": null,
+                  "city": "Tartu",
+                  "region": "EE-79",
+                  "country": "EE"
+                },
+                "registeredAt": {
+                  "id": "RA000181",
+                  "other": null
+                },
+                "registeredAs": "17520554",
+                "jurisdiction": "EE"
+              },
+              "registration": {
+                "initialRegistrationDate": "2026-07-05T10:34:34Z",
+                "lastUpdateDate": "2026-07-05T10:34:34Z",
+                "status": "ISSUED",
+                "nextRenewalDate": "2027-07-05T10:34:36Z",
+                "managingLou": "529900T8BM49AURSDO55",
+                "corroborationLevel": "FULLY_CORROBORATED",
+                "validatedAt": {
+                  "id": "RA000181",
+                  "other": null
+                },
+                "validatedAs": "17520554"
+              },
+              "bic": null,
+              "mic": null,
+              "ocid": null,
+              "qcc": null,
+              "spglobal": null
+            },
+            "relationships": {
+              "managing-lou": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658/managing-lou"
+                }
+              },
+              "lei-issuer": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658/lei-issuer"
+                }
+              },
+              "field-modifications": {
+                "links": {
+                  "related": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658/field-modifications"
+                }
+              },
+              "direct-parent": {
+                "links": {
+                  "reporting-exception": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658/direct-parent-reporting-exception"
+                }
+              },
+              "ultimate-parent": {
+                "links": {
+                  "reporting-exception": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658/ultimate-parent-reporting-exception"
+                }
+              }
+            },
+            "links": {
+              "self": "https://api.gleif.org/api/v1/lei-records/98450075A50C8D3C3658"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed https://api.gleif.org/api/v1/lei-records?page%5Bnumber%5D=1&page%5Bsize%5D=15"
+    },
+    {
+      "name": "Makeup",
+      "slug": "makeup",
+      "emoji": "🩺",
+      "tagline": "Makeup — Makeup Information",
+      "description": "Makeup exposes makeup Information We verified a keyless GET endpoint returning JSON (Health). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Health",
+      "docsUrl": "http://makeup-api.herokuapp.com/",
+      "baseUrl": "http://makeup-api.herokuapp.com",
+      "sampleEndpoint": "/api/v1/products.json?brand=maybelline",
+      "latencyMs": 985,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 495,
+          "brand": "maybelline",
+          "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+          "price": "14.99",
+          "price_sign": null,
+          "currency": null,
+          "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png",
+          "product_link": "https://well.ca/products/maybelline-face-studio-master_88837.html"
+        },
+        {
+          "id": 488,
+          "brand": "maybelline",
+          "name": "Maybelline Fit Me Bronzer",
+          "price": "10.29",
+          "price_sign": null,
+          "currency": null,
+          "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+          "product_link": "https://well.ca/products/maybelline-fit-me-bronzer_31265.html"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "none",
+      "notes": "Auto-probed http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+    }
+  ],
+  "skipped": []
+}

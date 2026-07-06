@@ -1,0 +1,408 @@
+{
+  "batch": 19,
+  "verified": [
+    {
+      "name": "Quotes on Design",
+      "slug": "quotes-on-design",
+      "emoji": "🎨",
+      "tagline": "Design-world wisdom served from a WordPress API",
+      "description": "Pulls inspirational quotes about design and creativity from the Quotes on Design site's WordPress REST endpoint. Each call returns a post with the author's name and the quote as rendered HTML. No key needed, just refresh for another dose of studio wisdom.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://quotesondesign.com/api/",
+      "baseUrl": "https://quotesondesign.com",
+      "sampleEndpoint": "/wp-json/wp/v2/posts?per_page=1&_fields=title,content,link",
+      "latencyMs": 816,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "link": "https://quotesondesign.com/robert-a-heinlein-2/",
+          "title": { "rendered": "Robert A. Heinlein" },
+          "content": { "rendered": "<p>A human being should be able to change a diaper, plan an invasion... Specialization is for insects.</p>" }
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Backed by the standard WordPress REST API (wp/v2/posts); orderby=rand is not supported, use a plain posts query."
+    },
+    {
+      "name": "Stoicism Quote",
+      "slug": "stoicism-quote",
+      "emoji": "🏛️",
+      "tagline": "One Stoic maxim per request from a public Lambda API",
+      "description": "Returns a single random Stoic quote with its author, drawn from thinkers like Marcus Aurelius. It is backed by an open-source AWS Lambda project and answers plain GET requests with tidy JSON. Handy for calm-inducing widgets and daily-quote bots.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://github.com/tlcheah2/stoic-quote-lambda-public-api",
+      "baseUrl": "https://stoic-quotes.com",
+      "sampleEndpoint": "/api/quote",
+      "latencyMs": 1295,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "text": "Accept the things to which fate binds you, and love the people with whom fate brings you together,but do so with all your heart.",
+        "author": "Marcus Aurelius"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "isEven (humor)",
+      "slug": "iseven-humor",
+      "emoji": "🔢",
+      "tagline": "The API that reveals whether a number is even",
+      "description": "A tongue-in-cheek service that takes a number in the URL path and tells you, in JSON, whether it is even. The free tier even bundles a random text advertisement in every response. Gloriously unnecessary and thoroughly keyless.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://isevenapi.xyz/",
+      "baseUrl": "https://api.isevenapi.xyz",
+      "sampleEndpoint": "/api/iseven/6/",
+      "latencyMs": 1029,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "iseven": true,
+        "ad": "SURGEON WANTED for a new heath clinic opening in SF. No experience needed. Must have own tools. Call 407-555-5400"
+      },
+      "freeTier": "Free tier limited to numbers 0–999,999 with ads (per site's joke pricing)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Parody API; the tiered 'pricing' on the site is a joke."
+    },
+    {
+      "name": "ISRO",
+      "slug": "isro",
+      "emoji": "🛰️",
+      "tagline": "India's spacecraft roster as clean JSON",
+      "description": "Lists spacecraft launched by the Indian Space Research Organisation, each with an id and name. This community-built endpoint wraps ISRO's public data behind a simple, CORS-friendly REST call. No key required to browse the fleet.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://isro.vercel.app",
+      "baseUrl": "https://isro.vercel.app",
+      "sampleEndpoint": "/api/spacecrafts",
+      "latencyMs": 1998,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "spacecrafts": [
+          { "id": 1, "name": "Aryabhata" },
+          { "id": 2, "name": "Bhaskara-I" }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TLE",
+      "slug": "tle",
+      "emoji": "📡",
+      "tagline": "Two-line element sets for orbiting satellites",
+      "description": "Serves NORAD two-line element (TLE) orbital data for satellites by catalog number, including the familiar line1/line2 pair and a timestamp. Query 25544 and you get the ISS's current elements. Ideal for orbit-propagation and satellite-tracking projects.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://tle.ivanstanojevic.me/#/docs",
+      "baseUrl": "https://tle.ivanstanojevic.me",
+      "sampleEndpoint": "/api/tle/25544",
+      "latencyMs": 1873,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@type": "Tle",
+        "satelliteId": 25544,
+        "name": "ISS (ZARYA)",
+        "date": "2026-07-04T19:09:56+00:00",
+        "line1": "1 25544U 98067A   26185.79857271  .00009725  00000+0  18504-3 0  9991",
+        "line2": "2 25544  51.6303 212.9192 0006761 256.1012 103.9224 15.48894567574489"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Lorem Picsum",
+      "slug": "lorem-picsum",
+      "emoji": "🖼️",
+      "tagline": "Placeholder photos, plus a JSON catalog of them",
+      "description": "Best known for serving random placeholder images, Lorem Picsum also exposes a JSON list endpoint describing available photos with author, dimensions, and download URLs. The images themselves come from Unsplash. Great for mocking up galleries without hardcoding assets.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://picsum.photos/",
+      "baseUrl": "https://picsum.photos",
+      "sampleEndpoint": "/v2/list?page=1&limit=2",
+      "latencyMs": 1308,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "0",
+          "author": "Alejandro Escamilla",
+          "width": 5000,
+          "height": 3333,
+          "url": "https://unsplash.com/photos/yC-Yzbqy7PY",
+          "download_url": "https://picsum.photos/id/0/5000/3333"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Images sourced from Unsplash",
+      "commercialUse": "unclear",
+      "notes": "Image endpoints return binary; /v2/list is the JSON catalog used here."
+    },
+    {
+      "name": "inspirehep.net",
+      "slug": "inspirehep-net",
+      "emoji": "⚛️",
+      "tagline": "Search the high-energy-physics literature by API",
+      "description": "INSPIRE is the reference database for high-energy physics, and its REST API lets you query papers, authors, and citations. A literature search returns hit metadata like titles and author affiliations as JSON. Open access to millions of HEP records with no login.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://github.com/inspirehep/rest-api-doc",
+      "baseUrl": "https://inspirehep.net",
+      "sampleEndpoint": "/api/literature?q=title%20higgs&size=1&fields=titles,authors",
+      "latencyMs": 569,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hits": {
+          "total": 24696,
+          "hits": [
+            {
+              "metadata": {
+                "titles": [{ "title": "The Higgs - Higgs Bound State" }],
+                "authors": [{ "full_name": "Cahn, R.N.", "last_name": "Cahn" }]
+              }
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Response includes X-RateLimit-* headers, so throttling is enforced but the numeric policy was not confirmed from docs."
+    },
+    {
+      "name": "iDigBio",
+      "slug": "idigbio",
+      "emoji": "🦴",
+      "tagline": "Search millions of digitized biological specimens",
+      "description": "iDigBio aggregates natural-history specimen records from museums and collections worldwide. Its search API accepts a JSON record-query and returns matching specimens with full Darwin Core fields. A single query can surface hundreds of thousands of catalogued organisms.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://github.com/idigbio/idigbio-search-api/wiki",
+      "baseUrl": "https://search.idigbio.org",
+      "sampleEndpoint": "/v2/search/records?rq=%7B%22genus%22%3A%22acer%22%7D&limit=1",
+      "latencyMs": 5410,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "itemCount": 130353,
+        "lastModified": "2026-04-23T18:06:26.502Z",
+        "items": [
+          {
+            "uuid": "d957ac64-ce51-4d40-801e-670b345aa7b6",
+            "type": "records",
+            "data": {
+              "dwc:recordedBy": "MacGinitie, H.D.",
+              "dwc:occurrenceID": "urn:catalog:UCMP:P:153071"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "First response was slow (~5.4s); rq is a URL-encoded JSON record query."
+    },
+    {
+      "name": "arcsecond.io",
+      "slug": "arcsecond-io",
+      "emoji": "🔭",
+      "tagline": "Astronomical object data from a single endpoint",
+      "description": "Arcsecond.io consolidates astronomy data sources behind one API, resolving object names to coordinates, aliases, and catalog cross-references. Ask for m1 and it returns the Crab Nebula's equatorial position and a stack of alternate designations. Keyless for basic object lookups.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://api.arcsecond.io/",
+      "baseUrl": "https://api.arcsecond.io",
+      "sampleEndpoint": "/objects/m1/",
+      "latencyMs": 848,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "m1",
+        "source": "Simbad",
+        "equatorial_coordinates": {
+          "right_ascension": 83.6324,
+          "declination": 22.0174,
+          "epoch": 2451545.0
+        },
+        "aliases": [{ "name": "4FGL J0534.5+2201i" }]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ITIS",
+      "slug": "itis",
+      "emoji": "🌿",
+      "tagline": "Federal taxonomy: names, authors, and TSNs",
+      "description": "The Integrated Taxonomic Information System is a U.S. government database of scientific names for plants, animals, fungi, and microbes. Its JSON web service matches a search term to taxa, returning each name's author, validity, and taxonomic serial number. Authoritative and free to query.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://www.itis.gov/ws_description.html",
+      "baseUrl": "https://www.itis.gov/ITISWebService/jsonservice",
+      "sampleEndpoint": "/getITISTermsFromScientificName?srchKey=Tardigrada",
+      "latencyMs": 1864,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "class": "gov.usgs.itis.itis_service.data.SvcItisTermList",
+        "itisTerms": [
+          {
+            "author": "(Ehrenberg, 1832)",
+            "nameUsage": "valid",
+            "scientificName": "Rotaria tardigrada",
+            "tsn": "58274"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Served as text/json; no access-control-allow-origin header observed (CORS false). U.S. federal government data source."
+    },
+    {
+      "name": "Newton",
+      "slug": "newton",
+      "emoji": "➗",
+      "tagline": "Symbolic and arithmetic math over HTTP",
+      "description": "Newton solves math expressions passed in the URL path, handling operations like simplify, factor, derive, and integrate. Send it 2^2+2(2) to simplify and it replies with the result 8 in JSON. An open-source calculator you can call from anywhere.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://newton.vercel.app",
+      "baseUrl": "https://newton.vercel.app",
+      "sampleEndpoint": "/api/v2/simplify/2%5E2%2B2%282%29",
+      "latencyMs": 1360,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "operation": "simplify",
+        "expression": "2^2+2(2)",
+        "result": "8"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Noctua",
+      "slug": "noctua",
+      "emoji": "🌌",
+      "tagline": "Resolve star and sky-object names to catalog data",
+      "description": "NoctuaSky's REST API powers a stargazing app and resolves celestial object names to detailed records. Look up Polaris and you get magnitudes, coordinates, spectral type, and a long list of catalog aliases. Useful for planetarium and observing tools.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://api.noctuasky.com/api/v1/swaggerdoc/",
+      "baseUrl": "https://api.noctuasky.com/api/v1",
+      "sampleEndpoint": "/skysources/name/polaris",
+      "latencyMs": 615,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "match": "NAME Polaris",
+        "model": "star",
+        "model_data": {
+          "Vmag": 2.02,
+          "ra": 37.95456067,
+          "de": 89.26410897,
+          "spect_t": "F8Ib"
+        },
+        "names": ["NAME Polaris", "* alf UMi", "HD 8890"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "No access-control-allow-origin header observed (CORS false)."
+    },
+    {
+      "name": "Open Science Framework",
+      "slug": "open-science-framework",
+      "emoji": "🔬",
+      "tagline": "Programmatic access to the Open Science Framework",
+      "description": "The OSF API exposes public research projects, files, and metadata from the Center for Open Science's platform. Listing nodes returns project titles, descriptions, categories, and timestamps as JSON:API documents. A gateway to open study designs, data, and preprints.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://developer.osf.io",
+      "baseUrl": "https://api.osf.io/v2",
+      "sampleEndpoint": "/nodes/?page%5Bsize%5D=1",
+      "latencyMs": 1745,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "5cepz",
+            "type": "nodes",
+            "attributes": {
+              "title": "Patient Advise Leaflets",
+              "description": "QR Codes",
+              "category": "project",
+              "date_created": "2026-07-05T10:14:27.250697"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "JSON:API (application/vnd.api+json); no access-control-allow-origin header observed on this response."
+    },
+    {
+      "name": "SHARE",
+      "slug": "share",
+      "emoji": "📚",
+      "tagline": "An open dataset of scholarly research activity",
+      "description": "SHARE compiles metadata about research outputs and scholarly events from a broad network of sources. Its v2 API lists those harvest sources and exposes the aggregated records as JSON:API. A window into who is publishing and sharing what across academia.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://share.osf.io/api/v2/",
+      "baseUrl": "https://share.osf.io/api/v2",
+      "sampleEndpoint": "/sources/?page%5Bsize%5D=1",
+      "latencyMs": 535,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "type": "Source",
+            "id": "1",
+            "attributes": {
+              "name": "ucsdlibrary",
+              "homePage": "",
+              "longTitle": "UC San Diego Library"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "JSON:API; status endpoint reports version 26.0.0, up."
+    }
+  ],
+  "skipped": [
+    { "name": "They Said So Quotes", "reason": "Free quote-of-the-day endpoint (quotes.rest/qod) now returns 401 'Not authenticated'; requires an API key. The theysaidso.com quote path serves HTML, not JSON." },
+    { "name": "Traitify", "reason": "Requires credentials — /v1/decks returns 401 'Credentials are required'. No keyless JSON GET; personality-assessment API needs signup." },
+    { "name": "Screenshotlayer", "reason": "Requires an access_key (returns error 101 missing_access_key). No keyless endpoint." },
+    { "name": "Purple Air", "reason": "Requires an API key — /v1/sensors returns 403 ApiKeyMissingError." },
+    { "name": "PlaceKeanu", "reason": "Returns an image (image/svg+xml), not JSON. No JSON GET endpoint." },
+    { "name": "Readme typing SVG", "reason": "Returns an SVG image (image/svg+xml), not JSON. It is an image-generation service." },
+    { "name": "CodeCogs", "reason": "LaTeX-to-image renderer; the JSON endpoint returned text/plain 'Invalid option or file does not exist' on 2 attempts and its real output is images, not a JSON data response." },
+    { "name": "SpaceX", "reason": "REST API (api.spacexdata.com/v4) returns HTTP 525 (origin SSL handshake failed) on all 3 attempts — backend is down/unmaintained." },
+    { "name": "SpaceX", "reason": "GraphQL endpoint (api.spacex.land/graphql) now serves a WordPress HTML page; API is gone, and GraphQL would require a POST body anyway." },
+    { "name": "Times Adder", "reason": "Requires a POST with an array body to sum times; no keyless GET endpoint that returns JSON." }
+  ]
+}

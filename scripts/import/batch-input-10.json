@@ -1,0 +1,246 @@
+{
+  "batch": 10,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "AnimeChan",
+      "docsUrl": "https://github.com/RocktimSaikia/anime-chan",
+      "description": "Anime quotes (over 10k+)",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "Waifu.pics",
+      "docsUrl": "https://waifu.pics/docs",
+      "description": "Image sharing platform for anime images",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Anime",
+      "docsCheck": 200
+    },
+    {
+      "name": "DummyImage",
+      "docsUrl": "https://dummyimage.com/",
+      "description": "Generate placeholder images with custom size, colors and text",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icons8",
+      "docsUrl": "https://img.icons8.com/",
+      "description": "Icons (find \"search icon\" hyperlink in page)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Metropolitan Museum of Art",
+      "docsUrl": "https://metmuseum.github.io/",
+      "description": "Met Museum of Art",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Art & Design",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chainlink",
+      "docsUrl": "https://chain.link/developer-resources",
+      "description": "Build hybrid smart contracts with Chainlink",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chainpoint",
+      "docsUrl": "https://tierion.com/chainpoint/",
+      "description": "Chainpoint is a global network for anchoring data to the Bitcoin blockchain",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Helium",
+      "docsUrl": "https://docs.helium.com/api/blockchain/introduction/",
+      "description": "Helium is a global, distributed network of Hotspots that create public, long-range wireless coverage",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Blockchain",
+      "docsCheck": 200
+    },
+    {
+      "name": "Crossref Metadata Search",
+      "docsUrl": "https://github.com/CrossRef/rest-api-doc",
+      "description": "Books & Articles Metadata",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Gutendex",
+      "docsUrl": "https://gutendex.com/",
+      "description": "Web-API for fetching data from Project Gutenberg Books Library",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Books",
+      "docsCheck": 200
+    },
+    {
+      "name": "Domainsdb.info",
+      "docsUrl": "https://domainsdb.info/",
+      "description": "Registered Domain Names Search",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Business",
+      "docsCheck": 200
+    },
+    {
+      "name": "Nager.Date",
+      "docsUrl": "https://date.nager.at",
+      "description": "Public holidays for more than 90 countries",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Non-Working Days",
+      "docsUrl": "https://github.com/gadael/icsdb",
+      "description": "Database of ICS files for non working days",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "Russian Calendar",
+      "docsUrl": "https://github.com/egno/work-calendar",
+      "description": "Check if a date is a Russian holiday or not",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "UK Bank Holidays",
+      "docsUrl": "https://www.gov.uk/bank-holidays.json",
+      "description": "Bank holidays in England and Wales, Scotland and Northern Ireland",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Calendar",
+      "docsCheck": 200
+    },
+    {
+      "name": "File.io",
+      "docsUrl": "https://www.file.io",
+      "description": "Super simple file sharing, convenient, anonymous and secure",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "FileUp",
+      "docsUrl": "https://github.com/RealSinaSnp/FileUp",
+      "description": "Temporary file hosting with upload API, expiration times, and view limits",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "The Null Pointer",
+      "docsUrl": "https://0x0.st",
+      "description": "No-bullshit file hosting and URL shortening service",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cloud Storage & File Sharing",
+      "docsCheck": 200
+    },
+    {
+      "name": "1inch",
+      "docsUrl": "https://1inch.io/api/",
+      "description": "API for querying decentralize exchange",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "btcnode.uk",
+      "docsUrl": "https://btcnode.uk",
+      "description": "Bitcoin blockchain data, fees, mempool, SEC insider trades, Reddit sentiment. x402 micropayments for paid endpoints.",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CoinCap",
+      "docsUrl": "https://docs.coincap.io/",
+      "description": "Real time Cryptocurrency prices through a RESTful API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "Coinlore",
+      "docsUrl": "https://www.coinlore.com/cryptocurrency-data-api",
+      "description": "Cryptocurrencies prices, volume and more",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CoinStats",
+      "docsUrl": "https://documenter.getpostman.com/view/5734027/RzZ6Hzr3?version=latest",
+      "description": "Crypto Tracker",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    },
+    {
+      "name": "CryptAPI",
+      "docsUrl": "https://docs.cryptapi.io/",
+      "description": "Cryptocurrency Payment Processor",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Cryptocurrency",
+      "docsCheck": 200
+    }
+  ]
+}

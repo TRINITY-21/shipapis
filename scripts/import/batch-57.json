@@ -1,0 +1,284 @@
+{
+  "batch": 57,
+  "verified": [
+    {
+      "name": "Mediastack",
+      "slug": "mediastack",
+      "emoji": "🔑",
+      "tagline": "Mediastack — free tier with API key",
+      "description": "Mediastack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "News",
+      "docsUrl": "https://mediastack.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://mediastack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 246,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-199-111.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:20:57Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://mediastack.com/healthz"
+    },
+    {
+      "name": "Kaggle",
+      "slug": "kaggle",
+      "emoji": "🔑",
+      "tagline": "Kaggle — free tier with API key",
+      "description": "Kaggle exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.kaggle.com/docs/api",
+      "baseUrl": "https://www.kaggle.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 194,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the Kaggle API! Documentation is available at https://www.kaggle.com/docs/api"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.kaggle.com/api/v1"
+    },
+    {
+      "name": "FavQs.com",
+      "slug": "favqs-com",
+      "emoji": "🔑",
+      "tagline": "FavQs.com — free tier with API key",
+      "description": "FavQs.com exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://favqs.com/api",
+      "baseUrl": "https://favqs.com",
+      "sampleEndpoint": "/api/qotd",
+      "latencyMs": 879,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "qotd_date": "2026-07-06T00:00:00.000+00:00",
+        "quote": {
+          "id": 11845,
+          "dialogue": false,
+          "private": false,
+          "tags": [
+            "courage"
+          ],
+          "url": "https://favqs.com/quotes/benjamin-franklin/11845-how-few-there-",
+          "favorites_count": 4,
+          "upvotes_count": 1,
+          "downvotes_count": 0
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://favqs.com/api/qotd"
+    },
+    {
+      "name": "Numverify",
+      "slug": "numverify",
+      "emoji": "🔑",
+      "tagline": "Numverify — free tier with API key",
+      "description": "Numverify exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Phone",
+      "docsUrl": "https://numverify.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://numverify.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 376,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://numverify.com/healthz"
+    },
+    {
+      "name": "Wallhaven",
+      "slug": "wallhaven",
+      "emoji": "🔑",
+      "tagline": "Wallhaven — free tier with API key",
+      "description": "Wallhaven exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://wallhaven.cc/help/api",
+      "baseUrl": "https://wallhaven.cc",
+      "sampleEndpoint": "/api/v1/search",
+      "latencyMs": 625,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "mlg2rm",
+            "url": "https://wallhaven.cc/w/mlg2rm",
+            "short_url": "https://whvn.cc/mlg2rm",
+            "views": 16,
+            "favorites": 2,
+            "source": "",
+            "purity": "sfw",
+            "category": "anime"
+          },
+          {
+            "id": "7jermo",
+            "url": "https://wallhaven.cc/w/7jermo",
+            "short_url": "https://whvn.cc/7jermo",
+            "views": 136,
+            "favorites": 10,
+            "source": "",
+            "purity": "sfw",
+            "category": "anime"
+          }
+        ],
+        "meta": {
+          "current_page": 1,
+          "last_page": 20675,
+          "per_page": 24,
+          "total": 496177,
+          "query": null,
+          "seed": null
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://wallhaven.cc/api/v1/search"
+    },
+    {
+      "name": "Domain Intelligence",
+      "slug": "domain-intelligence",
+      "emoji": "🔑",
+      "tagline": "Domain Intelligence — free tier with API key",
+      "description": "Domain Intelligence exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://oti-labs.com/domain-intelligence-api",
+      "baseUrl": "https://oti-labs.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 202,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "service": "domain-intel",
+        "version": "0.2.0",
+        "redis": true
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://oti-labs.com/health"
+    },
+    {
+      "name": "FullHunt",
+      "slug": "fullhunt",
+      "emoji": "🔑",
+      "tagline": "FullHunt — free tier with API key",
+      "description": "FullHunt exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://api-docs.fullhunt.io/#introduction",
+      "baseUrl": "https://api-docs.fullhunt.io",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 220,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "message": "pong",
+        "timestamp": "2026-07-05T18:28:08.951Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api-docs.fullhunt.io/ping"
+    },
+    {
+      "name": "VulDB",
+      "slug": "vuldb",
+      "emoji": "🔑",
+      "tagline": "VulDB — free tier with API key",
+      "description": "VulDB exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://vuldb.com/?doc.api",
+      "baseUrl": "https://vuldb.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 559,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "response": {
+          "version": "3.87",
+          "format": "json",
+          "status": "401",
+          "lang": "en",
+          "error": "API key wrong format (missing)",
+          "querylimitmax": 0,
+          "timestamp": "1783276111",
+          "rtt": 0
+        },
+        "request": {
+          "timestamp": "1783276111",
+          "apikey": "missing"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://vuldb.com/api"
+    },
+    {
+      "name": "BuyWhere",
+      "slug": "buywhere",
+      "emoji": "🔑",
+      "tagline": "BuyWhere — free tier with API key",
+      "description": "BuyWhere exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://buywhere.ai",
+      "baseUrl": "https://buywhere.ai",
+      "sampleEndpoint": "/health",
+      "latencyMs": 676,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "ts": "2026-07-05T18:28:41.257Z",
+        "fix": "BUY-14407-v1"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://buywhere.ai/health"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,836 @@
+{
+  "batch": 61,
+  "verified": [
+    {
+      "name": "Open Government, Greece",
+      "slug": "open-government-greece",
+      "emoji": "🔑",
+      "tagline": "Open Government, Greece — free tier with API key",
+      "description": "Open Government, Greece exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.gov.gr/",
+      "baseUrl": "https://data.gov.gr",
+      "sampleEndpoint": "/api?api_key=DEMO_KEY",
+      "latencyMs": 71,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": 1
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://data.gov.gr/api?api_key=DEMO_KEY"
+    },
+    {
+      "name": "OpenRegistry",
+      "slug": "openregistry",
+      "emoji": "🔑",
+      "tagline": "OpenRegistry — free tier with API key",
+      "description": "OpenRegistry exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://openregistry.sophymarine.com",
+      "baseUrl": "https://openregistry.sophymarine.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 295,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "jurisdictions": [
+          "AU",
+          "BE"
+        ],
+        "jurisdiction_count": 30,
+        "runtime": "cloudflare-workers",
+        "session_kv": "configured"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://openregistry.sophymarine.com/healthz"
+    },
+    {
+      "name": "Yelp",
+      "slug": "yelp",
+      "emoji": "🔑",
+      "tagline": "Yelp — free tier with API key",
+      "description": "Yelp exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.yelp.com/developers/documentation/v3",
+      "baseUrl": "https://www.yelp.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 711,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "host": "yelp-main-main--useast1-58b5bd8cc5-pvcfg",
+        "label": "rc866cbd0c13e7112d2ed304c8075be579958c991-deploy/2026-07-03_PRIVATE_integrate-PR-25085",
+        "version": "c866cbd0c13e7112d2ed304c8075be579958c991",
+        "templates": true
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.yelp.com/status"
+    },
+    {
+      "name": "Cisco Spark",
+      "slug": "cisco-spark",
+      "emoji": "🔑",
+      "tagline": "Cisco Spark — free tier with API key",
+      "description": "Cisco Spark exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developer.ciscospark.com",
+      "baseUrl": "https://developer.ciscospark.com",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 407,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "serviceName": "developer-portal",
+        "serviceVersion": "2.0",
+        "serviceType": "REQUIRED",
+        "serviceState": "online",
+        "message": "Healthy",
+        "lastUpdated": "2026-07-05T19:31:19.170Z",
+        "upstreamServices": [
+          {
+            "serviceName": "Common Identity",
+            "serviceType": "REQUIRED",
+            "serviceState": "online",
+            "statusCode": 200,
+            "message": "Healthy",
+            "lastUpdated": "2026-07-05T19:31:19.067Z",
+            "serviceUrl": "https://idbroker-eu.webex.com/idb/HealthCheck.jsp"
+          },
+          {
+            "serviceName": "Hydra",
+            "serviceType": "REQUIRED",
+            "serviceState": "online",
+            "statusCode": 200,
+            "message": "Healthy",
+            "lastUpdated": "2026-07-05T19:31:19.068Z",
+            "serviceUrl": "https://webexapis.com/v1/ping"
+          }
+        ],
+        "defaultCharset": "UTF-8"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.ciscospark.com/ping"
+    },
+    {
+      "name": "Imgur",
+      "slug": "imgur",
+      "emoji": "🔑",
+      "tagline": "Imgur — free tier with API key",
+      "description": "Imgur exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://apidocs.imgur.com/",
+      "baseUrl": "https://apidocs.imgur.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 6154,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.3.1",
+        "uptime": 3723061.56,
+        "mem": 0.5325801439208618,
+        "load": [
+          1.81,
+          1.78
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://apidocs.imgur.com/status"
+    },
+    {
+      "name": "Slack",
+      "slug": "slack",
+      "emoji": "🔑",
+      "tagline": "Slack — free tier with API key",
+      "description": "Slack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.slack.com/",
+      "baseUrl": "https://api.slack.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 1801,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": false,
+        "error": "unknown_method",
+        "req_method": "v1"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.slack.com/api/v1"
+    },
+    {
+      "name": "apilayer aviationstack",
+      "slug": "apilayer-aviationstack",
+      "emoji": "🔑",
+      "tagline": "apilayer aviationstack — free tier with API key",
+      "description": "apilayer aviationstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://aviationstack.com/",
+      "baseUrl": "https://aviationstack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 272,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-203-56.apilayer.net",
+        "version": "d06ac150",
+        "environment": "production",
+        "deploy_datetime": "2026-07-05T16:00:53Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://aviationstack.com/healthz"
+    },
+    {
+      "name": "Transport for Sweden",
+      "slug": "transport-for-sweden",
+      "emoji": "🔑",
+      "tagline": "Transport for Sweden — free tier with API key",
+      "description": "Transport for Sweden exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.trafiklab.se/api",
+      "baseUrl": "https://developer.trafiklab.se",
+      "sampleEndpoint": "/api/trafiklab-se/incidents?api_key=DEMO_KEY",
+      "latencyMs": 1335,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [],
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.trafiklab.se/api/trafiklab-se/incidents?api_key=DEMO_KEY"
+    },
+    {
+      "name": "HOL Registry Broker",
+      "slug": "hol-registry-broker",
+      "emoji": "🔑",
+      "tagline": "HOL Registry Broker — free tier with API key",
+      "description": "HOL Registry Broker exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://hol.org/docs/registry-broker/",
+      "baseUrl": "https://hol.org",
+      "sampleEndpoint": "/health",
+      "latencyMs": 181,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "alias": "registry-ping-agent",
+        "timestamp": "2026-07-05T19:34:28.346Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://hol.org/health"
+    },
+    {
+      "name": "Bscscan",
+      "slug": "bscscan",
+      "emoji": "🔑",
+      "tagline": "Bscscan — free tier with API key",
+      "description": "Bscscan exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Blockchain",
+      "docsUrl": "https://bscscan.com/apis",
+      "baseUrl": "https://bscscan.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 238,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "0",
+        "message": "NOTOK",
+        "result": "Invalid API URL endpoint, use api.bscscan.com"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://bscscan.com/api"
+    },
+    {
+      "name": "VerifyEd",
+      "slug": "verifyed",
+      "emoji": "🔑",
+      "tagline": "VerifyEd — free tier with API key",
+      "description": "VerifyEd exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "https://verifyed.org/docs",
+      "baseUrl": "https://verifyed.org",
+      "sampleEndpoint": "/api/v1/search?q=springfield+high&amp;country=US&quot",
+      "latencyMs": 1766,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "id": "us-nces-251113002444",
+            "name": "Springfield Central High",
+            "location": "Springfield, MA, US",
+            "address": "1840 Roosevelt Avenue",
+            "city": "Springfield",
+            "state_province": "MA",
+            "country_code": "US",
+            "verification_status": "verified"
+          },
+          {
+            "id": "au-acara-50364",
+            "name": "Springfield Central State High School",
+            "location": "SPRINGFIELD CENTRAL, QLD, AU",
+            "address": null,
+            "city": "SPRINGFIELD CENTRAL",
+            "state_province": "QLD",
+            "country_code": "AU",
+            "verification_status": "verified"
+          }
+        ],
+        "total": 73,
+        "cached": false,
+        "diploma_mill_check": {
+          "is_match": true,
+          "confidence": 0.8,
+          "matched_mill": "University of Sussex at Brantridge",
+          "match_type": "similar",
+          "warning": "Name similar to known diploma mill",
+          "reasons": [
+            "Edit distance similarity 0.18",
+            "Trigram similarity 0.03"
+          ]
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://verifyed.org/api/v1/search?q=springfield+high&amp;country=US&quot"
+    },
+    {
+      "name": "AutoChangelog",
+      "slug": "autochangelog",
+      "emoji": "🔑",
+      "tagline": "AutoChangelog — free tier with API key",
+      "description": "AutoChangelog exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://autochangelog.com",
+      "baseUrl": "https://autochangelog.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 194,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "timestamp": "2026-07-05T19:36:04Z",
+        "checks": {
+          "database": {
+            "status": "ok"
+          },
+          "redis": {
+            "status": "ok"
+          },
+          "sidekiq": {
+            "status": "ok",
+            "processes": 1,
+            "queues": {
+              "mailers": 0,
+              "default": 0,
+              "ai": 0
+            },
+            "enqueued": 0,
+            "retry_size": 0
+          }
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://autochangelog.com/health"
+    },
+    {
+      "name": "Piloterr",
+      "slug": "piloterr",
+      "emoji": "🔑",
+      "tagline": "Piloterr — free tier with API key",
+      "description": "Piloterr exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.piloterr.com/",
+      "baseUrl": "https://www.piloterr.com",
+      "sampleEndpoint": "/api/c15t/",
+      "latencyMs": 1818,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.1.0",
+        "timestamp": "2026-07-05T19:36:37.294Z",
+        "client": {
+          "ip": "172.69.109.0",
+          "acceptLanguage": "*",
+          "userAgent": "shipapisbot/1.0 (+https://shipapis.dev/methodology)",
+          "region": {
+            "countryCode": "TR",
+            "regionCode": null
+          }
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.piloterr.com/api/c15t\\"
+    },
+    {
+      "name": "PageBolt",
+      "slug": "pagebolt",
+      "emoji": "🔑",
+      "tagline": "PageBolt — free tier with API key",
+      "description": "PageBolt exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://pagebolt.dev/",
+      "baseUrl": "https://pagebolt.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1660,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://pagebolt.dev/health"
+    },
+    {
+      "name": "Scrnify",
+      "slug": "scrnify",
+      "emoji": "🔑",
+      "tagline": "Scrnify — free tier with API key",
+      "description": "Scrnify exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://scrnify.com/docs",
+      "baseUrl": "https://scrnify.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 1725,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 6620780,
+        "updatedAt": "2026-07-05T19:36:59.774Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://scrnify.com/api"
+    },
+    {
+      "name": "SEO Score",
+      "slug": "seo-score",
+      "emoji": "🔑",
+      "tagline": "SEO Score — free tier with API key",
+      "description": "SEO Score exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://seoscoreapi.com",
+      "baseUrl": "https://seoscoreapi.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 286,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "timestamp": 1783280230.0504453
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://seoscoreapi.com/health"
+    },
+    {
+      "name": "FXMacroData",
+      "slug": "fxmacrodata",
+      "emoji": "🔑",
+      "tagline": "FXMacroData — free tier with API key",
+      "description": "FXMacroData exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://fxmacrodata.com/",
+      "baseUrl": "https://fxmacrodata.com",
+      "sampleEndpoint": "/api/v1/predictions/usd?indicator=inflation",
+      "latencyMs": 2009,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "currency": "USD",
+        "indicator": "inflation",
+        "start_date": "2026-01-06",
+        "end_date": "2026-10-03",
+        "count": 7,
+        "prediction_count": 11,
+        "data_quality": {
+          "is_official": false,
+          "is_proxy": false,
+          "is_fallback": false,
+          "is_stale": false,
+          "has_announcement_datetime": true,
+          "point_in_time_safe": true,
+          "latest_available_date": "2026-07-31",
+          "source_name": "FXMacroData prediction store and official release calendar"
+        },
+        "data": [
+          {
+            "announcement_id": "usd_inflation_2026-07-31",
+            "currency": "usd",
+            "indicator": "inflation",
+            "date": "2026-07-31",
+            "announcement_datetime": 1786537800,
+            "announcement_datetime_local": "2026-08-12T08:30:00-04:00",
+            "announcement_timing": "future",
+            "predictions": [
+              {
+                "predicted_value": 3.81,
+                "prediction_type": "fxmacrodata",
+                "prediction_source": "fxmacrodata_blended",
+                "prediction_source_label": "FXMacroData Blended Forecast",
+                "generated_at": 1783227736,
+                "confidence": 0.9,
+                "prediction_reason": "Moderately persistent series (stickiness 0.23); anchored 42% to the last actual of 4.2. Blended an external forecast of 3.49 (50%) with a trend/cross-indicator estimate of 3.74827 (40%) and the long-term mean of 2.83333 (10%) → 3.52764. Cross-indicator pressure adds a upward nudge of +0.23. Final prediction: 3.80958."
+              },
+              {
+                "predicted_value": 3.49,
+                "prediction_type": "central_bank_forecast",
+                "prediction_source": "cleveland_fed_nowcast",
+                "prediction_source_label": "Cleveland Fed Inflation Nowcasting",
+                "generated_at": 1783087200,
+                "confidence": 0.85,
+                "prediction_reason": "Federal Reserve Bank of Cleveland daily inflation nowcast."
+              }
+            ]
+          },
+          {
+            "announcement_id": "usd_inflation_2026-06-30",
+            "currency": "usd",
+            "indicator": "inflation",
+            "date": "2026-06-30",
+            "announcement_datetime": 1784032200,
+            "announcement_datetime_local": "2026-07-14T08:30:00-04:00",
+            "announcement_timing": "future",
+            "predictions": [
+              {
+                "predicted_value": 3.9,
+                "prediction_type": "fxmacrodata",
+                "prediction_source": "fxmacrodata_blended",
+                "prediction_source_label": "FXMacroData Blended Forecast",
+                "generated_at": 1783227736,
+                "confidence": 0.9,
+                "prediction_reason": "Moderately persistent series (stickiness 0.23); anchored 42% to the last actual of 4.2. Blended an external forecast of 3.81 (50%) with a trend/cross-indicator estimate of 3.74827 (40%) and the long-term mean of 2.83333 (10%) → 3.68764. Cross-indicator pressure adds a upward nudge of +0.23. Final prediction: 3.90248."
+              },
+              {
+                "predicted_value": 3.92,
+                "prediction_type": "central_bank_forecast",
+                "prediction_source": "cleveland_fed_nowcast",
+                "prediction_source_label": "Cleveland Fed Inflation Nowcasting",
+                "generated_at": 1783087200,
+                "confidence": 0.85,
+                "prediction_reason": "Federal Reserve Bank of Cleveland daily inflation nowcast."
+              }
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://fxmacrodata.com/api/v1/predictions/usd?indicator=inflation"
+    },
+    {
+      "name": "Apiverket",
+      "slug": "apiverket",
+      "emoji": "🔑",
+      "tagline": "Apiverket — free tier with API key",
+      "description": "Apiverket exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://apiverket.se/docs",
+      "baseUrl": "https://apiverket.se",
+      "sampleEndpoint": "/api",
+      "latencyMs": 143,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Apiverket.se API",
+        "version": "2026-02-15",
+        "description": "Unified REST API for Swedish public data — 280+ endpoints, 45+ government sources",
+        "docs": "https://apiverket.se/docs",
+        "endpoints": {
+          "rates": "/v1/rates",
+          "mortgage_rates": "/v1/rates/mortgage",
+          "reference_rates": "/v1/rates/reference",
+          "currencies": "/v1/currencies",
+          "currency_history": "/v1/currencies/USD_SEK/history?from=2026-01-01&to=2026-01-31",
+          "statistics": "/v1/statistics/industry/:sniCode",
+          "municipalities": "/v1/municipalities/:id/kpi/:kpiId",
+          "municipality_groups": "/v1/municipalities/groups"
+        },
+        "links": {
+          "docs": "/docs",
+          "console": "/console",
+          "dashboard": "/dashboard",
+          "register": "/register",
+          "openapi": "/openapi.json"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://apiverket.se/api"
+    },
+    {
+      "name": "Vedika",
+      "slug": "vedika",
+      "emoji": "🔑",
+      "tagline": "Vedika — free tier with API key",
+      "description": "Vedika exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://vedika.io",
+      "baseUrl": "https://vedika.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 284,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "healthy",
+        "timestamp": "2026-07-05T19:40:36.002Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://vedika.io/health"
+    },
+    {
+      "name": "Webex",
+      "slug": "webex",
+      "emoji": "🔑",
+      "tagline": "Webex — free tier with API key",
+      "description": "Webex exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developer.webex.com",
+      "baseUrl": "https://developer.webex.com",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 608,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "serviceName": "developer-portal",
+        "serviceVersion": "2.0",
+        "serviceType": "REQUIRED",
+        "serviceState": "online",
+        "message": "Healthy",
+        "lastUpdated": "2026-07-05T19:41:10.664Z",
+        "upstreamServices": [
+          {
+            "serviceName": "ContentStack",
+            "serviceType": "REQUIRED",
+            "serviceState": "online",
+            "statusCode": 200,
+            "message": "All Systems Operational",
+            "lastUpdated": "2026-07-05T19:41:10.263Z",
+            "serviceUrl": "https://status.contentstack.com/api/v2/status.json"
+          },
+          {
+            "serviceName": "Common Identity",
+            "serviceType": "REQUIRED",
+            "serviceState": "online",
+            "statusCode": 200,
+            "message": "Healthy",
+            "lastUpdated": "2026-07-05T19:41:10.253Z",
+            "serviceUrl": "https://idbroker-eu.webex.com/idb/HealthCheck.jsp"
+          }
+        ],
+        "defaultCharset": "UTF-8"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.webex.com/ping"
+    },
+    {
+      "name": "ArkForge Trust Layer",
+      "slug": "arkforge-trust-layer",
+      "emoji": "🔑",
+      "tagline": "ArkForge Trust Layer — free tier with API key",
+      "description": "ArkForge Trust Layer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://arkforge.fr/trust",
+      "baseUrl": "https://arkforge.fr",
+      "sampleEndpoint": "/health",
+      "latencyMs": 209,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "service": "arkforge"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://arkforge.fr/health"
+    },
+    {
+      "name": "ShotOG",
+      "slug": "shotog",
+      "emoji": "🔑",
+      "tagline": "ShotOG — free tier with API key",
+      "description": "ShotOG exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Photography",
+      "docsUrl": "https://shotog.2214962083.workers.dev/docs",
+      "baseUrl": "https://shotog.2214962083.workers.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 100,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "version": "0.6.0",
+        "name": "shotog"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://shotog.2214962083.workers.dev/health"
+    },
+    {
+      "name": "Trading View",
+      "slug": "trading-view",
+      "emoji": "🔑",
+      "tagline": "Trading View — free tier with API key",
+      "description": "Trading View exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.tradingview.com/rest-api-spec/",
+      "baseUrl": "https://www.tradingview.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 1103,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "study-templates": "https://www.tradingview.com/api/v1/study-templates"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.tradingview.com/api/v1"
+    },
+    {
+      "name": "MetalpriceAPI",
+      "slug": "metalpriceapi",
+      "emoji": "🔑",
+      "tagline": "MetalpriceAPI — free tier with API key",
+      "description": "MetalpriceAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://metalpriceapi.com",
+      "baseUrl": "https://api.metalpriceapi.com",
+      "sampleEndpoint": "/v1/latest",
+      "latencyMs": 1446,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "statusCode": 101,
+          "message": "User did not supply an API Key"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.metalpriceapi.com/v1/latest"
+    },
+    {
+      "name": "Sheet2API",
+      "slug": "sheet2api",
+      "emoji": "🔑",
+      "tagline": "Sheet2API — free tier with API key",
+      "description": "Sheet2API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://sheet2api.com/",
+      "baseUrl": "https://sheet2api.com",
+      "sampleEndpoint": "/v1/FgI6zV8qT121/characters/",
+      "latencyMs": 2674,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "Name": "Bugs Bunny",
+          "Favourite Thing": "Carrots",
+          "Image": "Bugs.png"
+        },
+        {
+          "Name": "Elmer Fudd",
+          "Favourite Thing": "Chasing Rabbits",
+          "Image": "Elmer.png"
+        }
+      ],
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sheet2api.com/v1/FgI6zV8qT121/characters/"
+    }
+  ],
+  "skipped": []
+}

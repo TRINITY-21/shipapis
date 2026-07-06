@@ -1,0 +1,220 @@
+{
+  "batch": 43,
+  "verified": [
+    {
+      "name": "Yahoo Finance Chart",
+      "slug": "yahoo-finance-chart",
+      "emoji": "📈",
+      "tagline": "Unofficial stock OHLCV chart JSON",
+      "description": "Yahoo Finance chart endpoint returns candlestick and quote metadata as JSON. Unofficial and rate-limited — cache aggressively; not affiliated with Yahoo.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://query1.finance.yahoo.com/v8/finance",
+      "baseUrl": "https://query1.finance.yahoo.com/v8/finance",
+      "sampleEndpoint": "/chart/AAPL?interval=1d&range=1d",
+      "latencyMs": 363,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "chart": {
+          "result": [
+            {
+              "meta": {
+                "currency": "USD",
+                "symbol": "AAPL",
+                "exchangeName": "NMS",
+                "fullExchangeName": "NasdaqGS",
+                "instrumentType": "EQUITY",
+                "firstTradeDate": 345479400,
+                "regularMarketTime": 1783022401,
+                "hasPrePostMarketData": true
+              },
+              "timestamp": [
+                1782999000
+              ],
+              "indicators": {
+                "quote": [
+                  {
+                    "volume": [
+                      75352800
+                    ],
+                    "low": [
+                      293.67999267578125
+                    ],
+                    "close": [
+                      308.6300048828125
+                    ],
+                    "open": [
+                      294.1199951171875
+                    ],
+                    "high": [
+                      309.4200134277344
+                    ]
+                  }
+                ],
+                "adjclose": [
+                  {
+                    "adjclose": [
+                      308.6300048828125
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "error": null
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open-Meteo Archive",
+      "slug": "open-meteo-archive",
+      "emoji": "📊",
+      "tagline": "Historical weather reanalysis by coordinate",
+      "description": "Open-Meteo archive API serves historical temperature, precipitation and wind from ERA5 reanalysis. Keyless JSON for climate charts and backtesting.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://archive-api.open-meteo.com/v1",
+      "baseUrl": "https://archive-api.open-meteo.com/v1",
+      "sampleEndpoint": "/archive?latitude=52.5&longitude=13.4&start_date=2024-01-01&end_date=2024-01-07&daily=temperature_2m_max",
+      "latencyMs": 542,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "latitude": 52.47803,
+        "longitude": 13.3829,
+        "generationtime_ms": 0.19693374633789062,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "elevation": 43,
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Random Word API",
+      "slug": "random-word-api",
+      "emoji": "📝",
+      "tagline": "Random English words",
+      "description": "Returns one or more random English words as a JSON array. Keyless utility for word games and test data.",
+      "sourceCategory": "Dictionaries",
+      "docsUrl": "https://random-word-api.herokuapp.com",
+      "baseUrl": "https://random-word-api.herokuapp.com",
+      "sampleEndpoint": "/word",
+      "latencyMs": 451,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        "puttee"
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Kanji API",
+      "slug": "kanji-api",
+      "emoji": "🇯🇵",
+      "tagline": "Kanji readings, strokes and meanings",
+      "description": "Open kanji reference data by character or grade level. Returns on-yomi, kun-yomi, meanings and stroke count as JSON — no key.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://kanjiapi.dev/v1",
+      "baseUrl": "https://kanjiapi.dev/v1",
+      "sampleEndpoint": "/kanji/水",
+      "latencyMs": 240,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "freq_mainichi_shinbun": 223,
+        "grade": 1,
+        "heisig_en": "water",
+        "jlpt": 5,
+        "kanji": "水",
+        "kun_readings": [
+          "みず",
+          "みず-"
+        ],
+        "meanings": [
+          "water"
+        ],
+        "name_readings": [
+          "うず",
+          "ずみ"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "JPL Close Approach",
+      "slug": "jpl-close-approach",
+      "emoji": "☄️",
+      "tagline": "Near-Earth object close-approach data",
+      "description": "NASA JPL Horizons close-approach database as JSON. Filter by date range and body — public domain, no API key.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://ssd-api.jpl.nasa.gov",
+      "baseUrl": "https://ssd-api.jpl.nasa.gov",
+      "sampleEndpoint": "/cad.api?date-min=2026-01-01&limit=1",
+      "latencyMs": 745,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "signature": {
+          "version": "1.5",
+          "source": "NASA/JPL SBDB Close Approach Data API"
+        },
+        "count": 1,
+        "total": 962,
+        "fields": [
+          "des",
+          "orbit_id"
+        ],
+        "data": [
+          [
+            "2025 YL4",
+            "4"
+          ]
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Dog Facts (kinduff)",
+      "slug": "dog-facts-kinduff",
+      "emoji": "🐶",
+      "tagline": "Random dog facts as JSON",
+      "description": "Returns an array of random dog facts. Keyless JSON — a lightweight companion to Dog CEO for fact widgets.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://dog-api.kinduff.com/api",
+      "baseUrl": "https://dog-api.kinduff.com/api",
+      "sampleEndpoint": "/facts?number=1",
+      "latencyMs": 285,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "facts": [],
+        "success": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": []
+}

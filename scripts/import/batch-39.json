@@ -1,0 +1,85 @@
+{
+  "batch": 39,
+  "verified": [
+    {
+      "name": "IP Geolocation API",
+      "slug": "ip-geolocation-api",
+      "emoji": "📊",
+      "tagline": "IP Geolocation API — The IP2Location API provides a RESTful interface for de…",
+      "description": "IP Geolocation API exposes the IP2Location API provides a RESTful interface for determining the geographical location of users based on their IP addresses in real time. It supports both IPv4 and IPv6 lookups, returning detailed information such as country, city, and coordinates without requiring an API key for up to 500 queries daily. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.ip2location.io/ip2location-documentation",
+      "baseUrl": "https://api.ip2location.io",
+      "sampleEndpoint": "/?ip=8.8.8.8",
+      "latencyMs": 523,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "country_code": "US",
+        "country_name": "United States of America",
+        "region_name": "California",
+        "city_name": "Mountain View",
+        "latitude": 37.38605,
+        "longitude": -122.08385,
+        "zip_code": "94035"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.ip2location.io/?ip=8.8.8.8"
+    },
+    {
+      "name": "OpenSky Network API",
+      "slug": "opensky-network-api",
+      "emoji": "📊",
+      "tagline": "OpenSky Network API — Retrieve state vectors, flights, and tracks for the who…",
+      "description": "OpenSky Network API exposes retrieve state vectors, flights, and tracks for the whole network, a particular sensor, or a specific aircraft. Rate limits apply for certain API calls, and restrictions vary for anonymous and OpenSky users. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://openskynetwork.github.io/opensky-api/rest.html",
+      "baseUrl": "https://opensky-network.org",
+      "sampleEndpoint": "/api/states/all?lamin=45.8389&amp;lomin=5.9962&amp;lamax=47.8229&amp;lomax=10.5226",
+      "latencyMs": 218,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "time": 1783269726,
+        "states": null
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://opensky-network.org/api/states/all?lamin=45.8389&amp;lomin=5.9962&amp;lamax=47.8229&amp;lomax=10.5226"
+    },
+    {
+      "name": "UUID Generator API",
+      "slug": "uuid-generator-api",
+      "emoji": "📊",
+      "tagline": "UUID Generator API — This API provides a fast and free method for generating…",
+      "description": "UUID Generator API exposes this API provides a fast and free method for generating UUIDs, supporting various versions including v1, v3, v4, v5, v6, and time-ordered v7. It allows bulk UUID generation with options for namespace and formatting, ideal for developers and websites. We verified a keyless GET endpoint returning JSON (Open Data). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://toolkitvault.com/uuid-generator/uuid-api-docs",
+      "baseUrl": "https://toolkitvault.com",
+      "sampleEndpoint": "/api/uuid-generator/v4",
+      "latencyMs": 421,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "v4",
+        "count": 1,
+        "maxPerCall": 200,
+        "uuids": [
+          "3b2ea391-b60c-4ca5-8a1e-f75dfd72ff2e"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://toolkitvault.com/api/uuid-generator/v4"
+    }
+  ],
+  "skipped": []
+}

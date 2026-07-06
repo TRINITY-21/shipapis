@@ -1,0 +1,466 @@
+{
+  "batch": 18,
+  "verified": [
+    {
+      "name": "Verome",
+      "slug": "verome",
+      "emoji": "🎵",
+      "tagline": "Search music, charts, lyrics and radio via YouTube Music",
+      "description": "Verome is a keyless Deno-hosted API that bundles music search, charts, trending tracks, synced lyrics and radio mixes sourced from YouTube Music, YouTube and Last.fm. Hit /api/search with a query and it returns structured artist, song and album results as JSON. Because it proxies third-party services, treat uptime and data rights as those platforms' own.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://github.com/Kirazul/Verome-API",
+      "baseUrl": "https://verome-api.deno.dev",
+      "sampleEndpoint": "/api/search?q=daft%20punk",
+      "latencyMs": 1024,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "query": "daft punk",
+        "results": [
+          {
+            "title": "Daft Punk",
+            "browseId": "UCRr1xG_2WIDs18a6cIiCxeA",
+            "resultType": "artist",
+            "isTopResult": true,
+            "subtitle": "Artist • 121M monthly audience"
+          }
+        ],
+        "continuationToken": null
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Community instance on Deno Deploy; proxies YouTube Music / YouTube / Last.fm data."
+    },
+    {
+      "name": "Archive.org",
+      "slug": "archive-org",
+      "emoji": "📚",
+      "tagline": "Metadata and file listings for Internet Archive items",
+      "description": "The Internet Archive's metadata endpoint returns everything it knows about an item: its files, formats, checksums, servers and descriptive fields, all as JSON. Just append an item identifier to /metadata/ — no key, no signup. Handy for building on top of the Archive's books, audio, video and web collections.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://archive.readme.io/docs",
+      "baseUrl": "https://archive.org",
+      "sampleEndpoint": "/metadata/nasa",
+      "latencyMs": 2456,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "created": 1782843816,
+        "d1": "ia601607.us.archive.org",
+        "d2": "ia801607.us.archive.org",
+        "dir": "/6/items/nasa",
+        "files": [
+          { "name": "__ia_thumb.jpg", "source": "original", "size": "5399", "format": "JPEG Thumb" }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (rights vary per item)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "BotsArchive",
+      "slug": "botsarchive",
+      "emoji": "🤖",
+      "tagline": "Look up Telegram bots by username in a curated catalog",
+      "description": "BotsArchive maintains a hand-curated database of Telegram bots and exposes their details through a small PHP API. Query /getBotID.php with a bot's username and it returns the bot's ID, category, tags, star rating and description as JSON. No key is required for the public lookups.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://botsarchive.com/docs.html",
+      "baseUrl": "https://api.botsarchive.com",
+      "sampleEndpoint": "/getBotID.php?username=@vote",
+      "latencyMs": 1198,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": 1,
+        "id": 1,
+        "result": {
+          "id": 1,
+          "name": "Votebot",
+          "username": "@vote",
+          "category": ["poll"],
+          "stars": 989,
+          "votes": 248
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "API host is api.botsarchive.com (the docs domain's /api.php returns 404)."
+    },
+    {
+      "name": "Callook.info",
+      "slug": "callook-info",
+      "emoji": "📻",
+      "tagline": "Look up US ham radio callsigns and licensee details",
+      "description": "Callook turns any United States amateur-radio callsign into structured JSON: license class, trustee, mailing address, grid square and lat/long. Append /json to a callsign and you're done — no key needed. The data traces back to the FCC's public ULS licensing records.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://callook.info",
+      "baseUrl": "https://callook.info",
+      "sampleEndpoint": "/w1aw/json",
+      "latencyMs": 541,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "VALID",
+        "type": "CLUB",
+        "current": { "callsign": "W1AW", "operClass": "" },
+        "trustee": { "callsign": "NA2AA", "name": "Minster, David A" },
+        "name": "ARRL HQ OPERATORS CLUB",
+        "location": { "latitude": "41.714707", "longitude": "-72.728411", "gridsquare": "FN31pr" }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data from public FCC ULS records)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "French Address Search",
+      "slug": "french-address-search",
+      "emoji": "🏠",
+      "tagline": "Geocode French addresses via the government's BAN",
+      "description": "France's official Base Adresse Nationale search endpoint geocodes a free-text address into GeoJSON, complete with coordinates, a match score and normalized address parts. Pass ?q= with any street and it answers instantly, keyless. It's the same open service that underpins many French public-sector maps.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://geo.api.gouv.fr/adresse",
+      "baseUrl": "https://api-adresse.data.gouv.fr",
+      "sampleEndpoint": "/search/?q=8+bd+du+port&limit=1",
+      "latencyMs": 415,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": { "type": "Point", "coordinates": [2.062821, 49.031624] },
+            "properties": {
+              "label": "8 Boulevard du Port 95000 Cergy",
+              "postcode": "95000",
+              "city": "Cergy",
+              "context": "95, Val-d'Oise, Île-de-France"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — French government open API",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Lowy Asia Power Index",
+      "slug": "lowy-asia-power-index",
+      "emoji": "🌏",
+      "tagline": "Rankings of state power across Asia, as JSON",
+      "description": "The Lowy Institute's Asia Power Index scores and ranks countries on their comprehensive power across the region, and these endpoints surface the underlying data as JSON. Fetch /data/{year}.json (2018 onward) for per-country scores, ranks and year-on-year trends. The data is the Lowy Institute's own research, exposed here through a community-written API guide.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://github.com/0x0is1/lowy-index-api-docs",
+      "baseUrl": "https://power.lowyinstitute.org",
+      "sampleEndpoint": "/data/2023.json",
+      "latencyMs": 3425,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "year": 2023, "score": 30.93, "rank": 6, "trend": 0.1132, "pretrend": 0.0037, "m": 0, "c": "AU" }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (Lowy Institute research)",
+      "commercialUse": "unclear",
+      "notes": "Fields are terse: c = ISO country code. Docs list /countries.json but it now 404s; /data/{year}.json and /world.json work."
+    },
+    {
+      "name": "Onyx Bazaar",
+      "slug": "onyx-bazaar",
+      "emoji": "🏷️",
+      "tagline": "Leaderboard of paid x402 HTTP services on-chain",
+      "description": "Onyx Bazaar is a public leaderboard of x402 pay-per-call HTTP services, indexed from Coinbase's CDP discovery API and refreshed roughly every 15 minutes. The /bazaar.json endpoint returns ranked rows carrying each service's URL, price, network and 30-day call and payer counts. Keyless, CORS-friendly JSON.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://onyx-actions.onrender.com/bazaar",
+      "baseUrl": "https://onyx-actions.onrender.com",
+      "sampleEndpoint": "/bazaar.json",
+      "latencyMs": 814,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "view": "volume",
+        "rows": [
+          {
+            "resource": "https://x402.twit.sh/tweets/search",
+            "domain": "x402.twit.sh",
+            "price": "$0.006000",
+            "network": "Base",
+            "calls_30d": 32311,
+            "payers_30d": 31,
+            "last_called": "2026-07-05T05:56:35.875Z"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The /bazaar page is HTML; the JSON lives at /bazaar.json."
+    },
+    {
+      "name": "Universities List",
+      "slug": "universities-list",
+      "emoji": "🎓",
+      "tagline": "Search universities by name, country and domain",
+      "description": "This community dataset (Hipolabs) lets you search universities worldwide and get back their names, countries, web pages and email domains as JSON. Filter with ?name= and/or ?country= — no key, no signup. Note the public host is HTTP-only; there is no working HTTPS endpoint.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://github.com/Hipo/university-domains-list",
+      "baseUrl": "http://universities.hipolabs.com",
+      "sampleEndpoint": "/search?name=middle&limit=1",
+      "latencyMs": 514,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "name": "Middlesex University - London",
+          "country": "United Kingdom",
+          "alpha_two_code": "GB",
+          "domains": ["mdx.ac.uk"],
+          "web_pages": ["https://www.mdx.ac.uk/"],
+          "state-province": null
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "HTTP-only — port 443 refuses connections, so no HTTPS despite the listing."
+    },
+    {
+      "name": "University of Oslo",
+      "slug": "university-of-oslo",
+      "emoji": "🏫",
+      "tagline": "Open course and study-programme data from UiO",
+      "description": "The University of Oslo publishes its study information as open JSON APIs — courses, semesters, schedules, exams and programmes. Ask /studies/v1/course/{code} for a course's fundamentals, all keyless. Descriptive fields often come back in Norwegian.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://data.uio.no/",
+      "baseUrl": "https://data.uio.no",
+      "sampleEndpoint": "/studies/v1/course/EXPHIL03",
+      "latencyMs": 582,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "info": {
+          "code": "EXPHIL03",
+          "lang": "no",
+          "name": "Examen philosophicum",
+          "status": "current-version",
+          "type": "course",
+          "url": "https://www.uio.no/studier/emner/hf/ifikk/EXPHIL03/index.html"
+        },
+        "metadata": { "count": 1, "status": "OK", "total": 1 }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Also exposes /org/v1 and /syllabus/v1; the /studies/v1/ index itself is HTML documentation."
+    },
+    {
+      "name": "Voidly",
+      "slug": "voidly",
+      "emoji": "🚫",
+      "tagline": "Live internet-censorship measurements across 215 countries",
+      "description": "Voidly aggregates network measurements into a live picture of internet censorship: which domains are blocked, where, and how deeply. The keyless /v1/measurement/summary gives a one-call global snapshot, while /data/censorship-index.json ships the full ranked dataset with Schema.org markup. The index is published under CC BY 4.0, so credit Voidly if you use it.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://voidly.ai/api-docs",
+      "baseUrl": "https://api.voidly.ai",
+      "sampleEndpoint": "/v1/measurement/summary",
+      "latencyMs": 1143,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "category_coverage_pct": 69.9,
+        "confirmed_block_pairs": 4936,
+        "countries_measured": 215,
+        "countries_with_confirmed_blocks": 23,
+        "deepest_censor": { "country": "IR", "domains_blocked": 798 },
+        "domains_measured": 5872,
+        "most_blocked_category": { "code": "GMB", "countries": 12 },
+        "schema": "voidly-censorship-summary/v1"
+      },
+      "freeTier": "Free (keyless data endpoints; Hydra ML endpoints need a key)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0",
+      "commercialUse": "yes",
+      "notes": "License and attribution request come from the dataset's own license field; listing said cors:no but responses send access-control-allow-origin: *."
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia",
+      "emoji": "📖",
+      "tagline": "Query Wikipedia articles through the MediaWiki API",
+      "description": "The MediaWiki Action API is the machine door into Wikipedia: query page metadata, content, links and search as JSON. This sample uses action=query for a page's basic info — no key required, though Wikimedia asks you to send a descriptive User-Agent and be gentle. Article content is licensed CC BY-SA.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+      "baseUrl": "https://en.wikipedia.org/w",
+      "sampleEndpoint": "/api.php?action=query&format=json&titles=Cat&prop=info",
+      "latencyMs": 750,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "6678": {
+              "pageid": 6678,
+              "title": "Cat",
+              "pagelanguage": "en",
+              "touched": "2026-07-04T11:16:45Z",
+              "lastrevid": 1361847377,
+              "length": 172161
+            }
+          }
+        }
+      },
+      "freeTier": "Free — Wikimedia API etiquette applies",
+      "rateLimit": "Unpublished (follow Wikimedia etiquette; send a descriptive User-Agent)",
+      "dataLicense": "CC BY-SA 4.0 (article content)",
+      "commercialUse": "yes",
+      "notes": "CORS is enabled per-request via an origin param; the plain call sends no access-control-allow-origin header."
+    },
+    {
+      "name": "Datamuse",
+      "slug": "datamuse",
+      "emoji": "🔤",
+      "tagline": "A word-finding engine for rhymes, synonyms and more",
+      "description": "Datamuse answers word queries: give it constraints like 'rhymes with blue' or 'means almost the same as X' and it returns ranked word suggestions as JSON. The /words endpoint takes parameters such as rel_rhy, ml and sp, all keyless. Great for writing tools, word games and autocomplete.",
+      "sourceCategory": "Open Source Projects",
+      "docsUrl": "https://www.datamuse.com/api/",
+      "baseUrl": "https://api.datamuse.com",
+      "sampleEndpoint": "/words?rel_rhy=blue&max=2",
+      "latencyMs": 491,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        { "word": "slew", "score": 41039, "numSyllables": 1 },
+        { "word": "subdue", "score": 31034, "numSyllables": 2 }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "CORS header echoes the request Origin rather than sending '*'."
+    },
+    {
+      "name": "Drupal.org",
+      "slug": "drupal-org",
+      "emoji": "💧",
+      "tagline": "Read Drupal.org projects, issues and users as JSON",
+      "description": "Drupal.org exposes its own content through a read-only Services API, returning nodes — issues, projects, users and more — as paginated JSON. Hit /api-d7/node.json to page through the data; no key is needed for reads. Useful for dashboards over the Drupal ecosystem.",
+      "sourceCategory": "Open Source Projects",
+      "docsUrl": "https://www.drupal.org/drupalorg/docs/api",
+      "baseUrl": "https://www.drupal.org/api-d7",
+      "sampleEndpoint": "/node.json?limit=1",
+      "latencyMs": 1347,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "self": "https://www.drupal.org/api-d7/node?limit=1",
+        "last": "https://www.drupal.org/api-d7/node?limit=1&page=2198237",
+        "list": [
+          {
+            "nid": 15,
+            "type": "project_issue",
+            "title": "sunflower.theme: incorrect \"teaser\" / \"read more\" handling",
+            "url": "https://www.drupal.org/project/drupal/issues/15"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Shields",
+      "slug": "shields",
+      "emoji": "🛡️",
+      "tagline": "Badge data (and SVG), now available as JSON too",
+      "description": "Shields.io is the badge factory behind millions of READMEs. Beyond the usual SVG, appending .json to a /badge/ path returns the badge's label, message and color as structured JSON. It's free and keyless; very heavy users are asked to self-host.",
+      "sourceCategory": "Open Source Projects",
+      "docsUrl": "https://shields.io/",
+      "baseUrl": "https://img.shields.io",
+      "sampleEndpoint": "/badge/test-passing-green.json",
+      "latencyMs": 799,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "label": "test",
+        "message": "passing",
+        "color": "green",
+        "link": [],
+        "name": "test",
+        "value": "passing"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Primarily an SVG/raster badge service; the .json suffix returns the badge fields as JSON."
+    },
+    {
+      "name": "Advice Slip",
+      "slug": "advice-slip",
+      "emoji": "💡",
+      "tagline": "Random one-line life advice, served as JSON",
+      "description": "The Advice Slip API dishes out random pieces of advice, one slip at a time. Call /advice and you get a JSON object with an id and a single line of (often tongue-in-cheek) wisdom. No key, no signup, just advice.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://api.adviceslip.com/",
+      "baseUrl": "https://api.adviceslip.com",
+      "sampleEndpoint": "/advice",
+      "latencyMs": 439,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "slip": { "id": 108, "advice": "Don't ever name files or folders using the word \"Final\"." }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "icanhazdadjoke",
+      "slug": "icanhazdadjoke",
+      "emoji": "😄",
+      "tagline": "The internet's biggest pile of dad jokes, as JSON",
+      "description": "icanhazdadjoke serves random dad jokes from a large collection. Send an Accept: application/json header to the root URL and it returns a joke plus its id as JSON (otherwise you get plain text or HTML). Keyless and delightfully groan-worthy.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://icanhazdadjoke.com/api",
+      "baseUrl": "https://icanhazdadjoke.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 1214,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "bMus4MZDAlb",
+        "joke": "Why does Waldo only wear stripes? Because he doesn't want to be spotted.",
+        "status": 200
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Requires an 'Accept: application/json' header — the default response is text/HTML."
+    }
+  ],
+  "skipped": [
+    { "name": "Inshorts News", "reason": "Hosted endpoint (inshorts.deta.dev) no longer resolves and the old inshortsapi.vercel.app returns 402 deployment-disabled; only a self-hostable Python scraper remains, no live keyless JSON GET." },
+    { "name": "CollegeScoreCard.ed.gov", "reason": "Requires an api.data.gov API key; keyless request returns HTTP 403 API_KEY_MISSING." },
+    { "name": "Open Data Minneapolis", "reason": "Only site-wide keyless JSON endpoint is the full DCAT-US catalog feed (multi-MB); it exceeds the 8s probe with no small representative GET available without per-dataset ArcGIS service URLs." },
+    { "name": "PatentsView", "reason": "Legacy query API retired; api.patentsview.org now serves the Open Data Portal SPA (HTML) and the replacement Search API requires an API key." },
+    { "name": "USPTO", "reason": "Data APIs migrated to the keyed Open Data Portal; developer.uspto.gov endpoints return the portal SPA/HTML or 503 and assignment-api.uspto.gov no longer resolves — no keyless JSON GET found." },
+    { "name": "Dictum", "reason": "Project migrated to quoterism.com, whose API now requires an X-API-Key header; no keyless GET remains." },
+    { "name": "Programming Quotes", "reason": "Hosted service programming-quotes-api.azurewebsites.net no longer resolves (NXDOMAIN); the API is dead." },
+    { "name": "Quotable Quotes", "reason": "api.quotable.io no longer resolves (DNS NXDOMAIN); the hosted service has shut down." }
+  ]
+}

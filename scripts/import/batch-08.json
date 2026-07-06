@@ -1,0 +1,484 @@
+{
+  "batch": 8,
+  "verified": [
+    {
+      "name": "dead-drop",
+      "slug": "dead-drop",
+      "emoji": "🔐",
+      "tagline": "Ephemeral zero-knowledge encrypted drops over a keyless API",
+      "description": "dead-drop hands out self-destructing, client-encrypted data drops that the server never sees in plaintext. Keyless GET routes mint random drop names and report health, while creating or reading a drop runs through its documented terms-gated flow. Handy for one-time secret handoffs between machines or people.",
+      "sourceCategory": "Security",
+      "docsUrl": "https://api.dead-drop.xyz/api/v1/docs",
+      "baseUrl": "https://api.dead-drop.xyz/api/v1",
+      "sampleEndpoint": "/drops/generate-name",
+      "latencyMs": 1333,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "chip-uphill-petticoat-skyrocket",
+        "id": "cbea5022726ae2a970dca5b7523bec9d4e194368059fcf3df34e09e14f263467"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Zero-knowledge ephemeral drops; verified via keyless GET /drops/generate-name (creating/reading a drop uses POST plus a terms flag)."
+    },
+    {
+      "name": "Bluesky",
+      "slug": "bluesky",
+      "emoji": "🦋",
+      "tagline": "Read public AT Protocol social data with no key or login",
+      "description": "Bluesky's public AppView exposes profiles, posts, feeds and follows over plain XRPC calls. Read-only lookups such as fetching a profile work with no key, no login and open CORS. Write actions and private data still require an authenticated session.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://docs.bsky.app/",
+      "baseUrl": "https://public.api.bsky.app",
+      "sampleEndpoint": "/xrpc/app.bsky.actor.getProfile?actor=bsky.app",
+      "latencyMs": 805,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "did": "did:plc:z72i7hdynmk6r22z27h6tvur",
+        "handle": "bsky.app",
+        "displayName": "Bluesky",
+        "description": "official Bluesky account (check username👆)",
+        "createdAt": "2023-04-12T04:53:57.057Z",
+        "indexedAt": "2025-10-27T21:05:26.152Z"
+      },
+      "freeTier": "Free — public AppView, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Unauthenticated public.api.bsky.app AppView; write/private methods require an auth session."
+    },
+    {
+      "name": "Lanyard",
+      "slug": "lanyard",
+      "emoji": "🎮",
+      "tagline": "Expose a Discord user's live presence as JSON or WebSocket",
+      "description": "Lanyard mirrors a Discord member's real-time presence, status and activities into a simple REST and WebSocket feed. Any user tracked by the public Lanyard bot can be read by their Discord ID with no key. To track your own account you first join the Lanyard Discord server.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://github.com/Phineas/lanyard",
+      "baseUrl": "https://api.lanyard.rest",
+      "sampleEndpoint": "/v1/users/94490510688792576",
+      "latencyMs": 606,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "discord_user": { "username": "phin", "display_name": "Phineas", "id": "94490510688792576" },
+          "discord_status": "dnd",
+          "activities": [],
+          "listening_to_spotify": false
+        },
+        "success": true
+      },
+      "freeTier": "Free — no key; user must be tracked by the Lanyard Discord bot",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Sample ID is the maintainer's (Phineas); arbitrary users must opt in via the Lanyard Discord."
+    },
+    {
+      "name": "DiscGolf",
+      "slug": "discgolf",
+      "emoji": "🥏",
+      "tagline": "Structured disc golf course data with coordinates and layouts",
+      "description": "DiscGolfAPI serves a curated catalog of disc golf courses with coordinates, layouts, operational status and confidence scoring. Public course endpoints return JSON with no API key, tagged with attribution and licensing metadata. Filter by country and page through the listings to feed maps or apps.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://discgolfapi.com/docs/",
+      "baseUrl": "https://io.discgolfapi.com/v1",
+      "sampleEndpoint": "/courses?country=GB&limit=2",
+      "latencyMs": 1269,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "schema_version": "1.0.0",
+        "attribution": "Course data supplied by DiscGolfAPI.",
+        "license": "Free to use with attribution.",
+        "count": 2,
+        "courses": [
+          {
+            "id": "crs_ackers_adventure",
+            "name": "Ackers Adventure",
+            "country_code": "GB",
+            "region_code": "ENG",
+            "operational_status": "open",
+            "confidence_score": 0.65
+          }
+        ]
+      },
+      "freeTier": "Free — public endpoints, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Free to use with attribution (per response metadata)",
+      "commercialUse": "unclear",
+      "notes": "Response carries attribution_required=true and a licence URL; hosted at io.discgolfapi.com (marketing site is discgolfapi.com)."
+    },
+    {
+      "name": "OpenF1",
+      "slug": "openf1",
+      "emoji": "🏎️",
+      "tagline": "Open Formula 1 telemetry, laps, sessions and positions as JSON",
+      "description": "OpenF1 publishes Formula 1 data, from session schedules and lap times to car telemetry and driver positions. Historical queries are open and keyless, returning tidy JSON arrays you can filter by year, session or driver. Live real-time access may require a free account.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://openf1.org/",
+      "baseUrl": "https://api.openf1.org/v1",
+      "sampleEndpoint": "/sessions?year=2023&session_name=Sprint",
+      "latencyMs": 334,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "session_key": 9069,
+        "session_type": "Race",
+        "session_name": "Sprint",
+        "date_start": "2023-04-29T13:30:00+00:00",
+        "circuit_short_name": "Baku",
+        "country_name": "Azerbaijan",
+        "location": "Baku",
+        "year": 2023
+      },
+      "freeTier": "Free & open (historical); real-time may require a free account",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Verified against a keyless historical /sessions query."
+    },
+    {
+      "name": "OpenLigaDB",
+      "slug": "openligadb",
+      "emoji": "⚽",
+      "tagline": "Crowd-sourced football league fixtures and results, no key",
+      "description": "OpenLigaDB is a community-maintained store of football match data, centered on the German Bundesliga but covering other competitions too. Grab matchdays, fixtures, results and team info as JSON with no key. The data is contributed and moderated by volunteers.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://www.openligadb.de",
+      "baseUrl": "https://api.openligadb.de",
+      "sampleEndpoint": "/getmatchdata/bl1/2023/1",
+      "latencyMs": 501,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "matchID": 66630,
+        "matchDateTime": "2023-08-18T20:30:00",
+        "leagueName": "1. Fußball-Bundesliga 2023/2024",
+        "team1": { "teamId": 134, "teamName": "SV Werder Bremen", "shortName": "Bremen" },
+        "team2": { "teamId": 40, "teamName": "FC Bayern München", "shortName": "Bayern" }
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Crowd-sourced/community data; sample is one match from the returned array."
+    },
+    {
+      "name": "Padel Snipe",
+      "slug": "padel-snipe",
+      "emoji": "🎾",
+      "tagline": "Thousands of mapped padel clubs across Europe, CC-BY licensed",
+      "description": "Padel Snipe publishes a geolocated dataset of padel clubs across several European countries plus a few beyond. One keyless GET returns every club with coordinates, court counts and booking platform, cached daily at the edge. The data ships under CC-BY 4.0, so commercial reuse is fine with attribution.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://padelsnipe.com/fr/world/api",
+      "baseUrl": "https://padelsnipe.com/api",
+      "sampleEndpoint": "/world/clubs",
+      "latencyMs": 5214,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "license": "CC-BY-4.0",
+        "attribution": "Padel Snipe — https://padelsnipe.com/world",
+        "count": 3788,
+        "countries": ["BE", "DE", "ES", "FR", "GB", "IT", "NL", "PT", "QA", "SE", "US"],
+        "clubs": [
+          {
+            "id": "22eb0f22-ac90-4a2f-a946-2b2ab75aabd9",
+            "name": "Polisportiva Curiel Pontassieve",
+            "platform": "playtomic",
+            "country": "IT",
+            "city": "Pontassieve",
+            "courts": { "total": 2, "indoor": 0, "outdoor": 2 }
+          }
+        ]
+      },
+      "freeTier": "Free — no auth",
+      "rateLimit": "Fair use — no hard limit stated",
+      "dataLicense": "CC-BY 4.0",
+      "commercialUse": "yes",
+      "notes": "Response declares CC-BY-4.0 with required attribution; 24h edge cache (single large payload, ~5s)."
+    },
+    {
+      "name": "SportScore",
+      "slug": "sportscore",
+      "emoji": "🏟️",
+      "tagline": "Live scores and fixtures for several sports, keyless widget API",
+      "description": "SportScore's widget API returns live scores, fixtures and results for football and other sports as JSON. The attribution tier needs no key and sends open CORS headers, in exchange for a visible 'Powered by SportScore' credit. Good for embedding recent matches without a signup.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://sportscore.com/developers/",
+      "baseUrl": "https://sportscore.com/api/widget",
+      "sampleEndpoint": "/matches/?sport=football&limit=2",
+      "latencyMs": 1066,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "sport": "football",
+        "count": 2,
+        "matches": [
+          {
+            "home": "Louisville City FC",
+            "away": "Hartford Athletic",
+            "home_score": 1,
+            "away_score": 0,
+            "status": "finished",
+            "competition": "USL Championship",
+            "time": "2026-07-05T00:00:00+00:00"
+          }
+        ]
+      },
+      "freeTier": "Free — no key (attribution tier)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Docs require a visible 'Powered by SportScore' credit; keyless widget endpoints under /api/widget."
+    },
+    {
+      "name": "Squiggle",
+      "slug": "squiggle",
+      "emoji": "🏉",
+      "tagline": "AFL fixtures, results and tipping-model predictions as JSON",
+      "description": "Squiggle aggregates Australian Football League fixtures, results and crowd-sourced model predictions into one JSON API. It is keyless but expects a descriptive User-Agent and blocks in-browser cross-origin calls, so use it server-side. A single query parameter selects teams, games or tips.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://api.squiggle.com.au",
+      "baseUrl": "https://api.squiggle.com.au",
+      "sampleEndpoint": "/?q=teams",
+      "latencyMs": 655,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "teams": [
+          { "name": "Adelaide", "debut": 1991, "id": 1, "retirement": 9999, "abbrev": "ADE" }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Rejects browser Origin headers (403 forbidden_origin) — verified server-side without Origin; use with a descriptive User-Agent. corsObserved false."
+    },
+    {
+      "name": "DummyJSON",
+      "slug": "dummyjson",
+      "emoji": "🧪",
+      "tagline": "Realistic fake REST data: products, users, carts, posts, todos",
+      "description": "DummyJSON is a mock REST API stocked with believable products, users, carts, posts, comments and todos. Every resource is keyless and returns richly structured JSON, ideal for prototyping and front-end demos. Write endpoints simulate changes without persisting anything.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://dummyjson.com/",
+      "baseUrl": "https://dummyjson.com",
+      "sampleEndpoint": "/products/1",
+      "latencyMs": 496,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "title": "Essence Mascara Lash Princess",
+        "category": "beauty",
+        "price": 9.99,
+        "rating": 2.56,
+        "stock": 99,
+        "brand": "Essence",
+        "sku": "BEA-ESS-ESS-001"
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Mock data; write endpoints are simulated and not persisted. CORS echoed our origin."
+    },
+    {
+      "name": "FakerAPI",
+      "slug": "fakerapi",
+      "emoji": "🎭",
+      "tagline": "Generate fake people, addresses, products and more as JSON",
+      "description": "FakerAPI spins up synthetic datasets, people, addresses, companies, images, credit cards and more, on demand. Pick a resource and a quantity and it returns keyless JSON with localizable, seedable fake data. Useful for filling test databases and UI mockups.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://fakerapi.it/en",
+      "baseUrl": "https://fakerapi.it/api/v2",
+      "sampleEndpoint": "/persons?_quantity=1",
+      "latencyMs": 844,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "OK",
+        "code": 200,
+        "total": 1,
+        "data": [
+          {
+            "id": 1,
+            "firstname": "Johnpaul",
+            "lastname": "Bergnaum",
+            "email": "spinka.trevion@mckenzie.com",
+            "birthday": "1944-03-31",
+            "gender": "other"
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Verified against the v2 endpoint."
+    },
+    {
+      "name": "TotalShiftLeft Sandbox",
+      "slug": "totalshiftleft-sandbox",
+      "emoji": "🧰",
+      "tagline": "Open REST/GraphQL/SOAP sandbox with optional OAuth2 and JWT",
+      "description": "TotalShiftLeft is a multi-protocol testing sandbox exposing the same data over REST, GraphQL and SOAP. CRUD works without credentials, though you can layer on JWT, API key or OAuth2 to rehearse auth flows. The store starts empty, so its collections return valid but data-free responses until you seed them.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://demo.totalshiftleft.ai/",
+      "baseUrl": "https://demo.totalshiftleft.ai/api/v1",
+      "sampleEndpoint": "/users",
+      "latencyMs": 330,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": [],
+        "pagination": { "total": 0, "page": 1, "limit": 10, "pages": 0, "hasNext": false, "hasPrev": false }
+      },
+      "freeTier": "Free — open sandbox, auth optional",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Sandbox store returns empty collections until you POST data (both /users and /products were empty); no access-control-allow-origin header observed."
+    },
+    {
+      "name": "Apimetro",
+      "slug": "apimetro",
+      "emoji": "🚇",
+      "tagline": "Mexico City transit geodata: metro lines, stations and GeoJSON",
+      "description": "Apimetro maps Mexico City's public transport, Metro, Metrobús, Cablebús, RTP and more, into structured geospatial JSON. Keyless endpoints return lines, stations, ridership analytics and GeoJSON geometry, using Spanish field names. All routes hang off the /movilidad base path.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://apimetro.dev/swagger/index.html",
+      "baseUrl": "https://apimetro.dev/movilidad",
+      "sampleEndpoint": "/metro/linea",
+      "latencyMs": 893,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "linea_id": 301,
+        "route_gtfs": "B_CMX020L12",
+        "nombre": "Metro Línea L12",
+        "num_comercial": "L12",
+        "sistema": "METRO",
+        "color_esp": "B99E51",
+        "tam_km": 24.0285920400801,
+        "existe": true
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "basePath is /movilidad; {sistema} path segment e.g. 'metro'; large GeoJSON geometry blobs trimmed from the sample."
+    },
+    {
+      "name": "BC Ferries",
+      "slug": "bc-ferries",
+      "emoji": "⛴️",
+      "tagline": "Unofficial live BC Ferries sailing times and vessel capacity",
+      "description": "This community API scrapes BC Ferries' current conditions into clean JSON keyed by terminal pairs. Each route lists upcoming sailings with departure and arrival times plus real-time deck fill percentages. It is unofficial and keyless, best treated as a convenience mirror rather than a guarantee.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.bcferriesapi.ca",
+      "baseUrl": "https://www.bcferriesapi.ca",
+      "sampleEndpoint": "/api/",
+      "latencyMs": 1435,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "BOW": {
+          "HSB": {
+            "sailingDuration": "",
+            "sailings": [
+              { "time": "5:15 am", "arrivalTime": "5:35 am", "isCancelled": false, "fill": 0, "carFill": 0, "oversizeFill": 0 }
+            ]
+          }
+        }
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Unofficial community API mirroring BC Ferries current conditions; root /api/ returns all routes keyed by terminal codes."
+    },
+    {
+      "name": "OpenVan",
+      "slug": "openvan",
+      "emoji": "🚐",
+      "tagline": "Vanlife data: fuel prices, currency rates and travel geo info",
+      "description": "OpenVan bundles road-trip data, per-country fuel prices, currency rates and geolocation, behind a cheerful keyless API. Endpoints return structured JSON with open CORS, plus a /honk test route for good measure. Aimed at RV and vanlife apps that need fuel and cost signals worldwide.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://openvan.camp/docs",
+      "baseUrl": "https://openvan.camp/api",
+      "sampleEndpoint": "/fuel/prices",
+      "latencyMs": 657,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": {
+          "AD": {
+            "country_code": "AD",
+            "country_name": "Andorra",
+            "currency": "EUR",
+            "unit": "liter",
+            "prices": { "gasoline": 1.4994, "diesel": 1.4718, "gasoline_premium": 1.5611 }
+          }
+        }
+      },
+      "freeTier": "Free — no auth",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Also exposes /currency/rates, /geo and a /honk test route."
+    },
+    {
+      "name": "Transport for Belgium",
+      "slug": "transport-for-belgium",
+      "emoji": "🚆",
+      "tagline": "Belgian rail stations, schedules and live departures as JSON",
+      "description": "iRail is a long-running third-party API for Belgian train travel, covering stations, connections, timetables and live board data. Add ?format=json to get keyless JSON; the project asks callers to send a descriptive User-Agent and use it fairly. It is community-run and independent of the national operator.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://docs.irail.be/",
+      "baseUrl": "https://api.irail.be",
+      "sampleEndpoint": "/stations/?format=json",
+      "latencyMs": 686,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "1.4",
+        "timestamp": "1783247001",
+        "station": [
+          {
+            "id": "BE.NMBS.008400319",
+            "name": "'s Hertogenbosch",
+            "locationX": "5.294278",
+            "locationY": "51.69042",
+            "standardname": "'s Hertogenbosch"
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Append ?format=json; docs request a descriptive User-Agent and fair use. CORS echoed our origin."
+    }
+  ],
+  "skipped": [
+    { "name": "IPLogs", "reason": "Only a POST endpoint (POST /v1/check with JSON body); no keyless JSON GET exists." },
+    { "name": "Passwordinator", "reason": "Hosted deployment (passwordinator.onrender.com) returns 404 on all routes; README notes the endpoint may be down. Defunct." },
+    { "name": "4chan", "reason": "NSFW-adjacent — the board hosts adult content; excluded from a clean directory per NSFW skip rule (API itself is live)." },
+    { "name": "balldontlie", "reason": "Now requires an API key — GET returned 401 Unauthorized." },
+    { "name": "Football (Soccer) Videos", "reason": "Only keyless feed (scorebat video-api/v3) is deprecated and no longer updated (frozen data); the current API requires signup/token (403)." },
+    { "name": "Football Standings", "reason": "Hosted API host is offline — api-football-standings.azharimm.site and .dev both NXDOMAIN." },
+    { "name": "transport.rest", "reason": "Endpoints unreachable within attempts — v6.db/vbb/bvg hosts connection-timed-out (8s) and flixbus host NXDOMAIN; could not observe a live response." },
+    { "name": "1pt", "reason": "API host defunct — api.1pt.co NXDOMAIN and documented csclub fallback paths 404; only endpoint is a write anyway." }
+  ]
+}

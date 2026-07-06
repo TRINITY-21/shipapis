@@ -1,0 +1,246 @@
+{
+  "batch": 5,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Disney",
+      "docsUrl": "https://disneyapi.dev",
+      "description": "Information of Disney characters",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dungeons and Dragons (Alternate)",
+      "docsUrl": "https://open5e.com/",
+      "description": "Includes all monsters and spells from the SRD (System Reference Document) as well as a search API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "FFXIV Collect",
+      "docsUrl": "https://ffxivcollect.com/",
+      "description": "Final Fantasy XIV data on collectables",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Final Fantasy XIV",
+      "docsUrl": "https://xivapi.com/",
+      "description": "Final Fantasy XIV Game data API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "FreeToGame",
+      "docsUrl": "https://www.freetogame.com/api-doc",
+      "description": "Free-To-Play Games Database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "GamerPower",
+      "docsUrl": "https://www.gamerpower.com/api-read",
+      "description": "Game Giveaways Tracker",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Geek-Jokes",
+      "docsUrl": "https://github.com/sameerkumar18/geek-joke-api",
+      "description": "Fetch a random geeky/programming related joke for use in all sorts of applications",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Genshin Impact",
+      "docsUrl": "https://genshin.dev",
+      "description": "Genshin Impact game data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "GraphQL Pokemon",
+      "docsUrl": "https://github.com/favware/graphql-pokemon",
+      "description": "GraphQL powered Pokemon API. Supports generations 1 through 8",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "JokeAPI",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "description": "Programming, Miscellaneous and Dark Jokes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Monster Hunter World",
+      "docsUrl": "https://docs.mhw-db.com/",
+      "description": "Monster Hunter World data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "PokéAPI (GraphQL)",
+      "docsUrl": "https://github.com/mazipan/graphql-pokeapi",
+      "description": "The Unofficial GraphQL for PokeAPI",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Psychonauts",
+      "docsUrl": "https://psychonauts-api.netlify.app/",
+      "description": "Psychonauts World Characters Information and PSI Powers",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Puyo Nexus",
+      "docsUrl": "https://github.com/deltadex7/puyodb-api-deno",
+      "description": "Puyo Puyo information from Puyo Nexus Wiki",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Rick and Morty",
+      "docsUrl": "https://rickandmortyapi.com",
+      "description": "All the Rick and Morty information, including images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Scryfall",
+      "docsUrl": "https://scryfall.com/docs/api",
+      "description": "Magic: The Gathering database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Universalis",
+      "docsUrl": "https://universalis.app/docs/index.html",
+      "description": "Final Fantasy XIV market board data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "administrative-divisons-db",
+      "docsUrl": "https://github.com/kamikazechaser/administrative-divisions-db",
+      "description": "Get all administrative divisions of a country",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Country",
+      "docsUrl": "http://country.is/",
+      "description": "Get your visitor's country from their IP",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "GeographQL",
+      "docsUrl": "https://geographql.netlify.app",
+      "description": "A Country, State, and City GraphQL API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "GeoJS",
+      "docsUrl": "https://www.geojs.io/",
+      "description": "IP geolocation with ChatOps integration",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Geokeo",
+      "docsUrl": "https://geokeo.com",
+      "description": "Geokeo geocoding service- with 2500 free api requests daily",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "geoPlugin",
+      "docsUrl": "https://www.geoplugin.com",
+      "description": "IP geolocation and currency conversion",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "HackMyIP",
+      "docsUrl": "https://hackmyip.com/api",
+      "description": "IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    }
+  ]
+}

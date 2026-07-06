@@ -1,0 +1,26 @@
+{
+  "name": "@shipapis/failover",
+  "version": "0.1.0",
+  "description": "Client-side API failover driven by shipapis.dev live health data — call the healthiest free API first, fall over automatically. Zero dependencies, not a proxy.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "demo": "node demo.ts"
+  },
+  "keywords": ["api", "failover", "fallback", "health", "resilience", "uptime", "shipapis", "free-api"],
+  "homepage": "https://shipapis.dev",
+  "repository": { "type": "git", "url": "https://github.com/shipapis/shipapis", "directory": "packages/failover" },
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

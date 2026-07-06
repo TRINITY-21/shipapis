@@ -1,0 +1,246 @@
+{
+  "batch": 20,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "USGS Earthquake Hazards Program",
+      "docsUrl": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "description": "Earthquakes data real-time",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "USGS Water Services",
+      "docsUrl": "https://waterservices.usgs.gov/",
+      "description": "Water quality and level info for rivers and lakes",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "World Bank",
+      "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "description": "World Data",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Escape",
+      "docsUrl": "https://github.com/polarspetroll/EscapeAPI",
+      "description": "An API for escaping different kind of queries",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "FilterLists",
+      "docsUrl": "https://filterlists.com",
+      "description": "Lists of filters for adblockers and firewalls",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Microsoft Security Response Center (MSRC)",
+      "docsUrl": "https://msrc.microsoft.com/report/developer",
+      "description": "Programmatic interfaces to engage with the Microsoft Security Response Center (MSRC)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mozilla http scanner",
+      "docsUrl": "https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md",
+      "description": "Mozilla observatory http scanner",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Mozilla tls scanner",
+      "docsUrl": "https://github.com/mozilla/tls-observatory#api-endpoints",
+      "description": "Mozilla observatory tls scanner",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "National Vulnerability Database",
+      "docsUrl": "https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog",
+      "description": "U.S. National Vulnerability Database",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "PhishStats",
+      "docsUrl": "https://phishstats.info/",
+      "description": "Phishing database",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "UK Police",
+      "docsUrl": "https://data.police.uk/docs/",
+      "description": "UK Police data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "URLhaus",
+      "docsUrl": "https://urlhaus.abuse.ch/api/",
+      "description": "Database of malicious URLs used for malware distribution",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Security",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fuck Off as a Service",
+      "docsUrl": "https://www.foaas.com",
+      "description": "Asks someone to fuck off",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "HackerNews",
+      "docsUrl": "https://github.com/HackerNews/API",
+      "description": "Social news for CS and entrepreneurship",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Hashnode",
+      "docsUrl": "https://hashnode.com",
+      "description": "A blogging platform built for developers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Collective",
+      "docsUrl": "https://docs.opencollective.com/help/developers/api",
+      "description": "Get Open Collective data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Social",
+      "docsCheck": 200
+    },
+    {
+      "name": "City Bikes",
+      "docsUrl": "https://api.citybik.es/v2/",
+      "description": "City Bikes around the world",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "NBA Stats",
+      "docsUrl": "https://any-api.com/nba_com/nba_com/docs/API_Description",
+      "description": "Current and historical NBA Statistics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "NHL Records and Stats",
+      "docsUrl": "https://gitlab.com/dword4/nhlapi",
+      "description": "NHL historical data and statistics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "RacingHub",
+      "docsUrl": "https://racinghub.net/api/v1/docs#/",
+      "description": "Formula 1 historical data and statistics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "TourneyRadar",
+      "docsUrl": "https://tourneyradar-api.vercel.app",
+      "description": "Upcoming chess tournaments from 140+ national federations worldwide",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "Bacon Ipsum",
+      "docsUrl": "https://baconipsum.com/json-api/",
+      "description": "A Meatier Lorem Ipsum Generator",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Dicebear Avatars",
+      "docsUrl": "https://avatars.dicebear.com/",
+      "description": "Generate random pixel-art avatars",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "FakeStoreAPI",
+      "docsUrl": "https://fakestoreapi.com/",
+      "description": "Fake store rest API for your e-commerce or shopping website prototype",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    }
+  ]
+}

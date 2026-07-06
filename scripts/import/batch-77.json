@@ -1,0 +1,4047 @@
+{
+  "batch": 77,
+  "verified": [
+    {
+      "name": "Dog Facts (kinduff)",
+      "slug": "dog-facts-kinduff",
+      "emoji": "🐶",
+      "tagline": "Random dog facts as JSON",
+      "description": "Returns an array of random dog facts. Keyless JSON — a lightweight companion to Dog CEO for fact widgets.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://kinduff.github.io/dog-api/",
+      "baseUrl": "https://dog-api.kinduff.com",
+      "sampleEndpoint": "/api/facts?number=1",
+      "latencyMs": 5447,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "facts": [],
+        "success": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Nekosia API",
+      "slug": "nekosia-api",
+      "emoji": "🍥",
+      "tagline": "Nekosia API — keyless JSON API",
+      "description": "Nekosia API. Anime API with cute random images",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://nekosia.cat",
+      "baseUrl": "https://api.nekosia.cat",
+      "sampleEndpoint": "/",
+      "latencyMs": 4188,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": 200,
+        "success": true,
+        "version": "1.2.6-rc.8+20260622",
+        "documentation": "https://nekosia.cat/documentation",
+        "contact": "support@nekosia.cat",
+        "apis": [
+          1
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "CoinRanking",
+      "slug": "coinranking",
+      "emoji": "🪙",
+      "tagline": "Crypto coin rankings and prices",
+      "description": "CoinRanking v2 API lists coins with market cap and price data. Some routes work without a key at low volume.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.coinranking.com/",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins?limit=1",
+      "latencyMs": 264,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2139,
+            "totalCoins": 2102499,
+            "totalMarkets": 54008,
+            "totalExchanges": 183,
+            "totalMarketCap": "1108",
+            "total24hVolume": "34315549693"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1258281235396",
+              "price": "62749.257120874034",
+              "listedAt": 1279324800
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 1,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEyNTgyODEyMzUzOTYsInIiOjEyNTgyODEyMzUzOTYsInQiOjEsIm8iOiJtYXJrZXRDYXAiLCJkIjoiZGVzYyIsImMiOiJuZXh0IiwicCI6MX0",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "OOPSpam",
+      "slug": "oopspam",
+      "emoji": "🔧",
+      "tagline": "OOPSpam — keyless JSON API",
+      "description": "OOPSpam. Multiple spam filtering service",
+      "sourceCategory": "Development",
+      "docsUrl": "https://oopspam.com/",
+      "baseUrl": "https://api.oopspam.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 375,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Image to Link",
+      "slug": "image-to-link",
+      "emoji": "🔧",
+      "tagline": "Image to Link — keyless JSON API",
+      "description": "Image to Link. Generate link from image(Integration developer utility APIs)",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.contentful.com/developers/docs/references/images-api/",
+      "baseUrl": "https://api.contentful.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 597,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "sys": {
+          "id": "welcome"
+        },
+        "message": "Read the docs: https://www.contentful.com/developers/docs/references/content-management-api/"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "🃏",
+      "tagline": "Jokes with safe-mode flags",
+      "description": "Single or two-part jokes with content flags in the response. ~120 req/min per IP.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://sv443.net/jokeapi/v2/",
+      "baseUrl": "https://v2.jokeapi.dev",
+      "sampleEndpoint": "/joke/Any?format=json&safe-mode",
+      "latencyMs": 678,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "category": "Programming",
+        "type": "single",
+        "joke": "\"Can I tell you a TCP joke?\"\n\"Please tell me a TCP joke.\"\n\"OK, I'll tell you a TCP joke.\"",
+        "flags": {
+          "nsfw": false,
+          "religious": false,
+          "political": false,
+          "racist": false,
+          "sexist": false,
+          "explicit": false
+        },
+        "id": 56,
+        "safe": true,
+        "lang": "en"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Japan Neighborhoods",
+      "slug": "japan-neighborhoods",
+      "emoji": "🏛",
+      "tagline": "Japan Neighborhoods — keyless JSON API",
+      "description": "Japan Neighborhoods. Tokyo neighborhood crime statistics, safety scores, and station data (5,078 areas, 2018-2024)",
+      "sourceCategory": "Government",
+      "docsUrl": "https://japanneighborhoods.com/developers",
+      "baseUrl": "https://japanneighborhoods.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 67,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "Japan Neighborhoods API",
+          "description": "Free REST API for Tokyo neighborhood crime statistics. 5,078 neighborhoods, 7 years of data (2018-2024), 37 crime categories. Sourced from Tokyo Metropolitan Police Department open data.",
+          "version": "1.0.0",
+          "license": {
+            "name": "CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          "contact": {
+            "name": "Japan Neighborhoods",
+            "url": "https://japanneighborhoods.com/developers"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://japanneighborhoods.com/api/v1"
+          }
+        ],
+        "paths": {
+          "/wards": {
+            "get": {
+              "summary": "List all wards",
+              "description": "Returns all 49 Tokyo wards/cities with 2024 crime summaries.",
+              "operationId": "getWards",
+              "responses": {
+                "200": {
+                  "description": "List of wards with crime data",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/components/schemas/Ward"
+                            }
+                          },
+                          "meta": {
+                            "$ref": "#/components/schemas/Meta"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/wards/{slug}": {
+            "get": {
+              "summary": "Get ward detail",
+              "description": "Returns ward detail with all neighborhoods and crime data.",
+              "operationId": "getWard",
+              "parameters": [
+                {
+                  "name": "slug",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  },
+                  "example": "shibuya"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Ward detail with neighborhoods"
+                },
+                "404": {
+                  "description": "Ward not found"
+                }
+              }
+            }
+          },
+          "/neighborhoods/{ward}/{neighborhood}": {
+            "get": {
+              "summary": "Get neighborhood detail",
+              "description": "Full neighborhood detail: 7-year crime history, breakdown, safety grade, nearest stations.",
+              "operationId": "getNeighborhood",
+              "parameters": [
+                {
+                  "name": "ward",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  },
+                  "example": "shibuya"
+                },
+                {
+                  "name": "neighborhood",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  },
+                  "example": "jingumae-1"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Neighborhood detail with crime history and stations"
+                },
+                "404": {
+                  "description": "Neighborhood not found"
+                }
+              }
+            }
+          },
+          "/rankings/safest": {
+            "get": {
+              "summary": "Safest neighborhoods ranking",
+              "description": "Top 50 safest neighborhoods in Tokyo (2024).",
+              "operationId": "getSafestRankings",
+              "responses": {
+                "200": {
+                  "description": "Ranked list of safest neighborhoods"
+                }
+              }
+            }
+          },
+          "/crime/trends": {
+            "get": {
+              "summary": "City-wide crime trends",
+              "description": "Annual crime trends for Tokyo 23 special wards (2018-2024) with category breakdowns.",
+              "operationId": "getCrimeTrends",
+              "responses": {
+                "200": {
+                  "description": "Annual trends and 2024 breakdown"
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "Ward": {
+              "type": "object",
+              "properties": {
+                "slug": {
+                  "type": "string"
+                },
+                "name_en": {
+                  "type": "string"
+                },
+                "name_ja": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "total_crimes_2024": {
+                  "type": "integer"
+                },
+                "neighborhood_count": {
+                  "type": "integer"
+                },
+                "avg_crime_rate_per_1000": {
+                  "type": "number"
+                }
+              }
+            },
+            "Meta": {
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "integer"
+                },
+                "year": {
+                  "type": "integer"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "license": {
+                  "type": "string"
+                },
+                "attribution": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Deckaura Horoscope",
+      "slug": "deckaura-horoscope",
+      "emoji": "🎭",
+      "tagline": "Deckaura Horoscope — keyless JSON API",
+      "description": "Deckaura Horoscope. Daily horoscope readings for all 12 zodiac signs (overview, love, career, lucky number) updated daily at 00:00 UTC",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://horoscope.deckaura.com",
+      "baseUrl": "https://horoscope.deckaura.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 188,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "Deckaura Daily Horoscope API",
+          "description": "Free, no-auth daily horoscope API for all 12 zodiac signs. Returns a general overview, love and career guidance, a lucky number, a lucky color and a 1-5 rating, refreshed daily at midnight UTC. Maintained by Deckaura (https://deckaura.com).",
+          "version": "1.0.0",
+          "termsOfService": "https://deckaura.com/pages/terms-of-service",
+          "contact": {
+            "name": "Deckaura",
+            "url": "https://deckaura.com",
+            "email": "hello@deckaura.com"
+          },
+          "license": {
+            "name": "CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          "x-logo": {
+            "url": "https://deckaura.com/favicon.ico"
+          }
+        },
+        "externalDocs": {
+          "description": "API docs & more free tools",
+          "url": "https://horoscope.deckaura.com/api"
+        },
+        "servers": [
+          {
+            "url": "https://horoscope.deckaura.com",
+            "description": "Production"
+          }
+        ],
+        "tags": [
+          {
+            "name": "horoscope",
+            "description": "Daily zodiac horoscopes"
+          }
+        ],
+        "paths": {
+          "/api/daily/{sign}": {
+            "get": {
+              "tags": [
+                "horoscope"
+              ],
+              "summary": "Daily horoscope for one zodiac sign",
+              "description": "Returns today's horoscope for the given zodiac sign.",
+              "operationId": "getDailyHoroscope",
+              "parameters": [
+                {
+                  "name": "sign",
+                  "in": "path",
+                  "required": true,
+                  "description": "Lowercase English zodiac sign.",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "aries",
+                      "taurus"
+                    ]
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Daily horoscope",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DailyHoroscope"
+                      },
+                      "example": {
+                        "sign": "Leo",
+                        "symbol": "♌",
+                        "date": "2026-07-01",
+                        "overview": "Today brings fresh energy for Leo. Trust your instincts and stay open to new possibilities.",
+                        "love": "Connection deepens with those who matter most.",
+                        "career": "A productive day awaits if you stay focused on priorities.",
+                        "lucky_number": 49,
+                        "lucky_color": "Gold"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid zodiac sign",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/daily": {
+            "get": {
+              "tags": [
+                "horoscope"
+              ],
+              "summary": "Daily horoscopes for all 12 signs",
+              "operationId": "getAllDailyHoroscopes",
+              "responses": {
+                "200": {
+                  "description": "All signs",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/AllHoroscopes"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "DailyHoroscope": {
+              "type": "object",
+              "properties": {
+                "sign": {
+                  "type": "string",
+                  "example": "Leo"
+                },
+                "symbol": {
+                  "type": "string",
+                  "example": "♌"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date",
+                  "example": "2026-07-01"
+                },
+                "overview": {
+                  "type": "string"
+                },
+                "love": {
+                  "type": "string"
+                },
+                "career": {
+                  "type": "string"
+                },
+                "lucky_number": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 99,
+                  "example": 49
+                },
+                "lucky_color": {
+                  "type": "string",
+                  "example": "Gold"
+                }
+              }
+            },
+            "AllHoroscopes": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "horoscopes": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/DailyHoroscope"
+                  }
+                },
+                "source": {
+                  "type": "string",
+                  "example": "Deckaura"
+                }
+              }
+            },
+            "Error": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "Invalid sign"
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "STAPI",
+      "slug": "stapi",
+      "emoji": "🖖",
+      "tagline": "Star Trek database API",
+      "description": "Read-only Star Trek characters, species and episodes. Paginated JSON search.",
+      "sourceCategory": "Video",
+      "docsUrl": "http://stapi.co",
+      "baseUrl": "https://stapi.co",
+      "sampleEndpoint": "/api/v1/rest/character/search?pageNumber=0&pageSize=1",
+      "latencyMs": 403,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "pageNumber": 0,
+          "pageSize": 1,
+          "numberOfElements": 1,
+          "totalElements": 7571,
+          "totalPages": 7571,
+          "firstPage": true,
+          "lastPage": false
+        },
+        "sort": {
+          "clauses": []
+        },
+        "characters": [
+          {
+            "uid": "CHMA0000215045",
+            "name": "0413 Theta",
+            "gender": null,
+            "yearOfBirth": null,
+            "monthOfBirth": null,
+            "dayOfBirth": null,
+            "placeOfBirth": null,
+            "yearOfDeath": null
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Studio Ghibli",
+      "slug": "studio-ghibli",
+      "emoji": "🎬",
+      "tagline": "Ghibli films, characters and locations as JSON",
+      "description": "Community JSON API over the Studio Ghibli catalog. List films, fetch by ID, browse people and locations — no key, small responses, good for demos.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://ghibliapi.herokuapp.com",
+      "baseUrl": "https://ghibliapi.vercel.app",
+      "sampleEndpoint": "/films",
+      "latencyMs": 443,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+          "title": "Castle in the Sky",
+          "original_title": "天空の城ラピュタ",
+          "original_title_romanised": "Tenkū no shiro Rapyuta",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/w533_and_h300_bestv2/3cyjYtLWCBE1uvWINHFsFnE8LUK.jpg",
+          "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+          "director": "Hayao Miyazaki"
+        },
+        {
+          "id": "12cfb892-aac0-4c5b-94af-521852e46d6a",
+          "title": "Grave of the Fireflies",
+          "original_title": "火垂るの墓",
+          "original_title_romanised": "Hotaru no haka",
+          "image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg",
+          "movie_banner": "https://image.tmdb.org/t/p/original/vkZSd0Lp8iCVBGpFH9L7LzLusjS.jpg",
+          "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+          "director": "Isao Takahata"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Httpbingo",
+      "slug": "httpbingo",
+      "emoji": "🔁",
+      "tagline": "HTTP echo service with HTTP/3 (Cloudflare)",
+      "description": "Community httpbin mirror on Cloudflare with QUIC support. /json and /get return request metadata as JSON for client debugging.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://cloudflare-quic.com/b/",
+      "baseUrl": "https://httpbingo.org",
+      "sampleEndpoint": "/json",
+      "latencyMs": 588,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "slideshow": {
+          "author": "Yours Truly",
+          "date": "date of publication",
+          "slides": [
+            {
+              "title": "Wake up to WonderWidgets!",
+              "type": "all"
+            },
+            {
+              "items": [
+                "Why <em>WonderWidgets</em> are great",
+                "Who <em>buys</em> WonderWidgets"
+              ],
+              "title": "Overview",
+              "type": "all"
+            }
+          ],
+          "title": "Sample Slide Show"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "0x",
+      "slug": "0x",
+      "emoji": "🪙",
+      "tagline": "0x — keyless JSON API",
+      "description": "0x. API for querying token and pool stats across various liquidity pools",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://0x.org/api",
+      "baseUrl": "https://api.0x.org",
+      "sampleEndpoint": "/",
+      "latencyMs": 630,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "This is the root of the 0x API. Visit https://0x.org/docs/ for documentation."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "DiceBear",
+      "slug": "dicebear",
+      "emoji": "🎲",
+      "tagline": "Deterministic avatar SVG/JSON",
+      "description": "DiceBear generates avatars from a seed across many styles. JSON routes return image URLs and metadata — no API key.",
+      "sourceCategory": "Test Data",
+      "docsUrl": "https://avatars.dicebear.com/",
+      "baseUrl": "https://api.dicebear.com",
+      "sampleEndpoint": "/7.x/pixel-art/json?seed=test",
+      "latencyMs": 477,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" fill=\"none\" shape-rendering=\"crispEdges\"><metadata xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\"><rdf:RDF><rdf:Description><dc:title>Pixel Art</dc:title><dc:creator>DiceBear</dc:creator><dc:source xsi:type=\"dcterms:URI\">https://www.figma.com/community/file/1198754108850888330</dc:source><dcterms:license xsi:type=\"dcterms:URI\">https://creativecommons.org/publicdomain/zero/1.0/</dcterms:license><dc:rights>„Pixel Art” (https://www.figma.com/community/file/1198754108850888330) by „DiceBear”, licensed under „CC0 1.0” (https://creativecommons.org/publicdomain/zero/1.0/)</dc:rights></rdf:Description></rdf:RDF></metadata><mask id=\"viewboxMask\"><rect width=\"16\" height=\"16\" rx=\"0\" ry=\"0\" x=\"0\" y=\"0\" fill=\"#fff\" /></mask><g mask=\"url(#viewboxMask)\"><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H9v1h4v1h1v2H2v-2h1v-1h4v-1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#e0b687\"/><path d=\"M4 2h8v1h1v3h1v2h-1v3h-1v1H4v-1H3V8H2V6h1V3h1V2Z\" fill=\"#fff\" fill-opacity=\".1\"/><path d=\"M6 14H4v1H3v1h4v-1H6v-1ZM12 15h1v1H9v-1h1v-1h2v1Z\" fill=\"#ffeead\"/><path fill=\"#fff\" d=\"M4 5h3v2H4z\"/><path fill=\"#697b94\" d=\"M5 6h1v1H5z\"/><path fill=\"#fff\" d=\"M9 5h3v2H9z\"/><path fill=\"#697b94\" d=\"M10 6h1v1h-1z\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14 5H2v1h1v2h4V7h2v1h4V6h1V5Zm-2 1H9v1h3V6ZM7 7H4V6h3v1Z\" fill=\"#5f705c\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M4 6h3v1H4z\"/><path fill=\"#fff\" fill-opacity=\".2\" d=\"M2 5h1v1H2zM7 5h2v1H7zM13 5h1v1h-1z\"/><path fill=\"#fff\" fill-opacity=\".3\" d=\"M9 6h3v1H9z\"/><path d=\"M6 9v1h3v1h1v-1H9V9H6Z\" fill=\"#de0f0d\"/><path d=\"M4 2h8v1h1v2h1v6h1v2h-2v-1h-1V5h-1V4H5v1H4v7H3v1H1v-2h1V5h1V3h1V2Z\" fill=\"#603a14\"/></g></svg>",
+        "extra": {
+          "primaryBackgroundColor": "transparent",
+          "secondaryBackgroundColor": "transparent",
+          "backgroundType": "solid",
+          "backgroundRotation": 26,
+          "clothing": "variant15",
+          "eyes": "variant06",
+          "glasses": "light02",
+          "mouth": "sad08"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Harry Potter API",
+      "slug": "harry-potter-api",
+      "emoji": "⚡",
+      "tagline": "Harry Potter characters",
+      "description": "Unofficial character metadata with house and wand info. Fan-hosted; uptime may vary.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://hp-api.herokuapp.com/",
+      "baseUrl": "https://hp-api.onrender.com",
+      "sampleEndpoint": "/api/characters",
+      "latencyMs": 370,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
+          "name": "Harry Potter",
+          "alternate_names": [
+            "The Boy Who Lived",
+            "The Chosen One"
+          ],
+          "species": "human",
+          "gender": "male",
+          "house": "Gryffindor",
+          "dateOfBirth": "31-07-1980",
+          "yearOfBirth": 1980
+        },
+        {
+          "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
+          "name": "Hermione Granger",
+          "alternate_names": [
+            "Hermy",
+            "Know-it-all"
+          ],
+          "species": "human",
+          "gender": "female",
+          "house": "Gryffindor",
+          "dateOfBirth": "19-09-1979",
+          "yearOfBirth": 1979
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "LCBO",
+      "slug": "lcbo",
+      "emoji": "🍔",
+      "tagline": "LCBO — keyless JSON API",
+      "description": "LCBO. Alcohol",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://lcbo.dev/",
+      "baseUrl": "https://api.lcbo.dev",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1920,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "healthy",
+        "timestamp": "2026-07-05T18:59:58.062Z",
+        "version": "1.0.0"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ArgentinaDatos",
+      "slug": "argentinadatos",
+      "emoji": "📊",
+      "tagline": "ArgentinaDatos — keyless JSON API",
+      "description": "ArgentinaDatos. Unofficial Argentinian data API",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://argentinadatos.com/",
+      "baseUrl": "https://argentinadatos.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 94,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.0",
+        "info": {
+          "title": "ArgentinaDatos API",
+          "version": "1.0.0",
+          "description": "API pública, **no oficial**, desarrollada en [EsJS](https://es.js.org?ref=argentinadatos.com) que brinda información actualizada sobre diferentes datos de Argentina.\n\n<br/>¿Encontraste útil esta API? **¡Dejá tu ⭐ en [GitHub](https://github.com/enzonotario/esjs-argentina-datos-api)!**"
+        },
+        "servers": [
+          {
+            "url": "https://api.argentinadatos.com",
+            "description": "Servidor principal"
+          }
+        ],
+        "paths": {
+          "/v1/feriados/{año}": {
+            "get": {
+              "summary": "Feriados",
+              "tags": [
+                "Eventos"
+              ],
+              "description": "Devuelve los feriados del año indicado (o del año actual si no se especifica).",
+              "parameters": [
+                {
+                  "name": "año",
+                  "in": "path",
+                  "description": "Año de consulta",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "minimum": 2016,
+                    "maximum": 2026
+                  },
+                  "example": 2026
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Devuelve los feriados del año actual",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Feriado"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-feriados",
+              "x-data-source": [
+                "[La Nación](https://www.lanacion.com.ar/feriados/)"
+              ]
+            }
+          },
+          "/v1/feriados-bancarios/{año}": {
+            "get": {
+              "summary": "Feriados bancarios",
+              "tags": [
+                "Eventos"
+              ],
+              "description": "Devuelve los feriados bancarios del año indicado (o del año actual si no se especifica).",
+              "parameters": [
+                {
+                  "name": "año",
+                  "in": "path",
+                  "description": "Año de consulta",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "minimum": 2011,
+                    "maximum": 2026
+                  },
+                  "example": 2026
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Devuelve los feriados bancarios del año indicado",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/FeriadoBancario"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-feriados-bancarios",
+              "x-data-source": [
+                "[BCRA](https://www.bcra.gob.ar/consulta-feriados-bancarios/)"
+              ]
+            }
+          },
+          "/v1/cotizaciones/dolares": {
+            "get": {
+              "summary": "Dólares",
+              "tags": [
+                "Cotizaciones históricas"
+              ],
+              "description": "Devuelve las cotizaciones de todas las casas de cambio.",
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de cotizaciones del dólar",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Cotizacion"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-cotizaciones-dolares",
+              "x-data-source": [
+                "[DolarApi](https://dolarapi.com)"
+              ]
+            }
+          },
+          "/v1/cotizaciones/dolares/{casa}": {
+            "get": {
+              "summary": "Dólares por casa",
+              "tags": [
+                "Cotizaciones históricas"
+              ],
+              "description": "Devuelve las cotizaciones del dólar de la casa de cambio especificada.",
+              "parameters": [
+                {
+                  "name": "casa",
+                  "in": "path",
+                  "description": "Casa de cambio",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "oficial",
+                      "blue"
+                    ]
+                  },
+                  "example": "blue"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de cotizaciones del dólar",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Cotizacion"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-cotizaciones-dolares-casa",
+              "x-data-source": [
+                "[DolarApi](https://dolarapi.com)"
+              ]
+            }
+          },
+          "/v1/cotizaciones/dolares/{casa}/{fecha}": {
+            "get": {
+              "summary": "Dólar por casa y fecha",
+              "tags": [
+                "Cotizaciones históricas"
+              ],
+              "description": "Devuelve la cotización del dólar de la casa de cambio especificada en la fecha indicada (en formato `YYYY/MM/DD`).",
+              "parameters": [
+                {
+                  "name": "casa",
+                  "in": "path",
+                  "description": "Casa de cambio",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "oficial",
+                      "blue"
+                    ]
+                  },
+                  "example": "blue"
+                },
+                {
+                  "name": "fecha",
+                  "in": "path",
+                  "description": "Fecha de consulta",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "example": "2024/01/01"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de cotizaciones del dólar",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Cotizacion"
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-cotizaciones-dolares-casa-fecha",
+              "x-data-source": [
+                "[DolarApi](https://dolarapi.com)"
+              ]
+            }
+          },
+          "/v1/eventos/presidenciales": {
+            "get": {
+              "summary": "Eventos presidenciales",
+              "tags": [
+                "Eventos"
+              ],
+              "description": "Devuelve los eventos presidenciales.",
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de eventos presidenciales",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/EventoPresidencial"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-eventos-presidenciales",
+              "x-data-source": [
+                "[Wikipedia](https://es.wikipedia.org/wiki/Anexo:Presidentes_de_la_Naci%C3%B3n_Argentina)"
+              ]
+            }
+          },
+          "/v1/finanzas/indices/inflacion": {
+            "get": {
+              "summary": "Índices de inflación",
+              "tags": [
+                "Finanzas",
+                "Índices"
+              ],
+              "description": "Devuelve los índices de inflación mensuales.",
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de índices de inflación",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/IndiceInflacion"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-finanzas-indices-inflacion",
+              "x-sidebar-title": "Inflación mensual",
+              "x-data-source": [
+                "[BCRA](https://bcra.gob.ar/)"
+              ]
+            }
+          },
+          "/v1/finanzas/indices/inflacionInteranual": {
+            "get": {
+              "summary": "Índices de inflación interanuales",
+              "tags": [
+                "Finanzas",
+                "Índices"
+              ],
+              "description": "Devuelve los índices de inflación interanuales.",
+              "responses": {
+                "200": {
+                  "description": "Devuelve una lista de índices de inflación",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/IndiceInflacion"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "operationId": "get-finanzas-indices-inflacion-interanual",
+              "x-sidebar-title": "Inflación interanual",
+              "x-data-source": [
+                "[BCRA](https://bcra.gob.ar/)"
+              ]
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "LetraCapitalizable": {
+              "title": "LetraCapitalizable",
+              "type": "object",
+              "properties": {
+                "ticker": {
+                  "type": "string",
+                  "description": "Código del instrumento (ej: S31G5, T17O5)"
+                },
+                "fechaEmision": {
+                  "type": "string",
+                  "description": "Fecha de emisión original (ISO 8601)"
+                },
+                "fechaVencimiento": {
+                  "type": "string",
+                  "description": "Fecha de vencimiento (ISO 8601)"
+                },
+                "tem": {
+                  "type": "number",
+                  "description": "Tasa Efectiva Mensual (%)"
+                },
+                "vpv": {
+                  "type": "number",
+                  "description": "Valor de Pago al Vencimiento por cada $100 de valor nominal"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "ticker": "S31G5",
+                  "fechaEmision": "2024-06-14",
+                  "fechaVencimiento": "2025-08-31",
+                  "tem": 3.75,
+                  "vpv": 118.45612
+                }
+              }
+            },
+            "BonoSoberanoCer": {
+              "title": "BonoSoberanoCer",
+              "type": "object",
+              "required": [
+                "ticker",
+                "precioArs"
+              ],
+              "properties": {
+                "ticker": {
+                  "type": "string",
+                  "description": "Código del bono (ej. TZX26, TX26)"
+                },
+                "precioArs": {
+                  "type": "number",
+                  "description": "Precio de cotización en pesos argentinos"
+                },
+                "tirPorcentaje": {
+                  "type": "number",
+                  "description": "Tasa interna de retorno (TIR) en porcentaje"
+                },
+                "fechaVencimiento": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "Fecha de vencimiento (ISO 8601, solo fecha: yyyy-MM-dd)"
+                },
+                "volumen": {
+                  "type": "number",
+                  "description": "Volumen nominal negociado, si la fuente lo publica"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "ticker": "TZX26",
+                  "precioArs": 379.3,
+                  "tirPorcentaje": -8.55,
+                  "fechaVencimiento": "2026-06-30",
+                  "volumen": 7197806107
+                }
+              }
+            },
+            "BonosCer": {
+              "title": "BonosCer",
+              "type": "object",
+              "required": [
+                "fechaActualizacion",
+                "bonos"
+              ],
+              "properties": {
+                "fechaActualizacion": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Instante en que se generó el recurso (UTC, ISO 8601 con sufijo Z)"
+                },
+                "bonos": {
+                  "type": "array",
+                  "description": "Filas de la grilla soberanos CER",
+                  "items": {
+                    "$ref": "#/components/schemas/BonoSoberanoCer"
+                  }
+                },
+                "errorExtraccion": {
+                  "type": "string",
+                  "description": "Solo si falló la extracción: mensaje de error"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "fechaActualizacion": "2026-05-04T19:02:59.767Z",
+                  "bonos": [
+                    {
+                      "ticker": "TZX26",
+                      "precioArs": 379.3,
+                      "tirPorcentaje": -8.55,
+                      "fechaVencimiento": "2026-06-30",
+                      "volumen": 7197806107
+                    }
+                  ]
+                }
+              }
+            },
+            "Feriado": {
+              "title": "Feriado",
+              "type": "object",
+              "properties": {
+                "fecha": {
+                  "type": "string"
+                },
+                "tipo": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "fecha": "2020-01-01",
+                  "tipo": "Inamovible",
+                  "motivo": "Año Nuevo"
+                }
+              }
+            },
+            "FeriadoBancario": {
+              "title": "FeriadoBancario",
+              "type": "object",
+              "properties": {
+                "fecha": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "fecha": "2026-01-01",
+                  "nombre": "Año nuevo"
+                }
+              }
+            },
+            "Estado": {
+              "title": "Estado",
+              "type": "object",
+              "properties": {
+                "estado": {
+                  "type": "string"
+                },
+                "aleatorio": {
+                  "type": "integer"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "estado": "Disponible",
+                  "aleatorio": 1234
+                }
+              }
+            },
+            "Cotizacion": {
+              "title": "Cotizacion",
+              "type": "object",
+              "properties": {
+                "moneda": {
+                  "type": "string"
+                },
+                "casa": {
+                  "type": "string"
+                },
+                "fecha": {
+                  "type": "string"
+                },
+                "compra": {
+                  "type": "number"
+                },
+                "venta": {
+                  "type": "number"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "compra": 123.45,
+                  "venta": 123.45
+                }
+              }
+            },
+            "EventoPresidencial": {
+              "title": "EventoPresidencial",
+              "type": "object",
+              "properties": {
+                "fecha": {
+                  "type": "string"
+                },
+                "tipo": {
+                  "type": "string"
+                },
+                "evento": {
+                  "type": "string"
+                }
+              },
+              "x-examples": {
+                "Example 1": {
+                  "fecha": "2020-01-01",
+                  "evento": "Año Nuevo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Satellite Passes",
+      "slug": "satellite-passes",
+      "emoji": "🔬",
+      "tagline": "Satellite Passes — keyless JSON API",
+      "description": "Satellite Passes. Find satellite passes",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://sat.terrestre.ar",
+      "baseUrl": "https://sat.terrestre.ar",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 302,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "Satellite Passes API",
+          "description": "Query next passes for a given satellite above you.",
+          "version": "0.1.0"
+        },
+        "servers": [
+          {
+            "url": "https://sat.terrestre.ar/"
+          },
+          {
+            "url": "http://0.0.0.0:8000/"
+          }
+        ],
+        "paths": {
+          "/passes/{norad_id}": {
+            "get": {
+              "tags": [
+                "Satellite Passes"
+              ],
+              "parameters": [
+                {
+                  "name": "norad_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 999999999
+                  }
+                },
+                {
+                  "name": "lat",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/SatellitePass"
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "anyOf": [
+                          {
+                            "$ref": "#/components/schemas/ValidationError"
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "error": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "error"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "default": {
+                  "description": "Unexpected error"
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "SatellitePass": {
+              "type": "object",
+              "properties": {
+                "rise": {
+                  "$ref": "#/components/schemas/Event"
+                },
+                "culmination": {
+                  "$ref": "#/components/schemas/Event"
+                },
+                "set": {
+                  "$ref": "#/components/schemas/Event"
+                },
+                "visible": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "visible"
+              ]
+            },
+            "Event": {
+              "type": "object",
+              "title": "Event",
+              "required": [
+                "alt",
+                "az"
+              ],
+              "properties": {
+                "alt": {
+                  "type": "string",
+                  "title": "Altitude",
+                  "description": "Altitude above the horizon. In degrees."
+                },
+                "az": {
+                  "type": "string",
+                  "title": "Azimuth",
+                  "description": "The angle between the satellite and the North. In degrees."
+                },
+                "az_octant": {
+                  "type": "string",
+                  "title": "Azimuth octant",
+                  "enum": [
+                    "N",
+                    "NE"
+                  ]
+                },
+                "utc_datetime": {
+                  "type": "string",
+                  "title": "UTC date-time",
+                  "format": "date-time"
+                },
+                "utc_timestamp": {
+                  "type": "integer",
+                  "title": "UTC timestamp",
+                  "minimum": 0
+                },
+                "is_sunlit": {
+                  "type": "boolean",
+                  "title": "Is sunlit",
+                  "description": "If satellite is being illuminated by the sun."
+                },
+                "visible": {
+                  "type": "boolean",
+                  "title": "Visible",
+                  "description": "If the satellite will be probably visible, considering the sun is near the horizon, and the observer is at night."
+                }
+              }
+            },
+            "ValidationError": {
+              "type": "object",
+              "properties": {
+                "lat": {
+                  "$ref": "#/components/schemas/FieldError"
+                },
+                "lon": {
+                  "$ref": "#/components/schemas/FieldError"
+                },
+                "limit": {
+                  "$ref": "#/components/schemas/FieldError"
+                },
+                "days": {
+                  "$ref": "#/components/schemas/FieldError"
+                },
+                "visible_only": {
+                  "$ref": "#/components/schemas/FieldError"
+                }
+              }
+            },
+            "FieldError": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Bootprint",
+      "slug": "bootprint",
+      "emoji": "🔬",
+      "tagline": "Bootprint — keyless JSON API",
+      "description": "Bootprint. Random facts and images of space",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://bootprint.space/",
+      "baseUrl": "https://api.bootprint.space",
+      "sampleEndpoint": "/",
+      "latencyMs": 4164,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "API is online."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "The Color API",
+      "slug": "the-color-api",
+      "emoji": "🎨",
+      "tagline": "Hex to name, HSL, palettes",
+      "description": "Color conversion and human-readable names. JSON, SVG or HTML output formats.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://www.thecolorapi.com/",
+      "baseUrl": "https://www.thecolorapi.com",
+      "sampleEndpoint": "/id?hex=24B1E0",
+      "latencyMs": 2419,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hex": {
+          "value": "#24B1E0",
+          "clean": "24B1E0"
+        },
+        "rgb": {
+          "fraction": {
+            "r": 0.1411764705882353,
+            "g": 0.6941176470588235,
+            "b": 0.8784313725490196
+          },
+          "r": 36,
+          "g": 177,
+          "b": 224,
+          "value": "rgb(36, 177, 224)"
+        },
+        "hsl": {
+          "fraction": {
+            "h": 0.5416666666666666,
+            "s": 0.752,
+            "l": 0.5098039215686274
+          },
+          "h": 195,
+          "s": 75,
+          "l": 51,
+          "value": "hsl(195, 75%, 51%)"
+        },
+        "hsv": {
+          "fraction": {
+            "h": 0.5416666666666666,
+            "s": 0.8392857142857143,
+            "v": 0.8784313725490196
+          },
+          "value": "hsv(195, 84%, 88%)",
+          "h": 195,
+          "s": 84,
+          "v": 88
+        },
+        "name": {
+          "value": "Cerulean",
+          "closest_named_hex": "#1DACD6",
+          "exact_match_name": false,
+          "distance": 356
+        },
+        "cmyk": {
+          "fraction": {
+            "c": 0.8392857142857143,
+            "m": 0.20982142857142858,
+            "y": 0,
+            "k": 0.1215686274509804
+          },
+          "value": "cmyk(84, 21, 0, 12)",
+          "c": 84,
+          "m": 21,
+          "y": 0,
+          "k": 12
+        },
+        "XYZ": {
+          "fraction": {
+            "X": 0.46499450980392154,
+            "Y": 0.5898698039215686,
+            "Z": 0.9204125490196079
+          },
+          "value": "XYZ(46, 59, 92)",
+          "X": 46,
+          "Y": 59,
+          "Z": 92
+        },
+        "image": {
+          "bare": "https://www.thecolorapi.com/id?format=svg&named=false&hex=24B1E0",
+          "named": "https://www.thecolorapi.com/id?format=svg&hex=24B1E0"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "CompanyData.com",
+      "slug": "companydata-com",
+      "emoji": "💼",
+      "tagline": "CompanyData.com — keyless JSON API",
+      "description": "CompanyData.com. Connect your software to real-time company data from official trade",
+      "sourceCategory": "Business",
+      "docsUrl": "https://companydata.com",
+      "baseUrl": "https://companydata.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 84,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "CompanyData API",
+          "version": "1.0.0",
+          "description": "CompanyData API: search and export companies, plus lookup helpers for exact location names.\n\n**Authentication**: send your API key in the `x-api-key` header on every request.\n**Rate limit**: 50 requests per second (default). **Monthly quota**: 100,000 requests unless agreed otherwise with support.\n\nHuman-readable documentation: https://companydata.com/api-docs/ (see also returned-fields and pagination guides on the docs site).",
+          "contact": {
+            "name": "CompanyData",
+            "url": "https://companydata.com/api-docs/"
+          },
+          "license": {
+            "name": "Commercial",
+            "url": "https://companydata.com/business-data-api/"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://app.companydata.com",
+            "description": "Production"
+          }
+        ],
+        "tags": [
+          {
+            "name": "Company",
+            "description": "Company search and export"
+          },
+          {
+            "name": "Lookup",
+            "description": "Autocomplete helpers for city, province, region, and country names"
+          }
+        ],
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "paths": {
+          "/api/company/search": {
+            "get": {
+              "operationId": "companySearch",
+              "tags": [
+                "Company"
+              ],
+              "summary": "Company search",
+              "description": "Search companies by name, address, and filters. Returns a lightweight default field set; additional search fields may be available per agreement with support. Uses **standard pagination only** (no scroll). Search defaults: pageSize 25 (max 50), maximum **50 total records** retrievable across pages.",
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/page"
+                },
+                {
+                  "$ref": "#/components/parameters/pageSize"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Standard pagination response. Records are under data.records; totalCount reflects the full result set size.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/StandardCompanyListResponse"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "$ref": "#/components/responses/Unauthorized"
+                }
+              }
+            }
+          },
+          "/api/company/export": {
+            "get": {
+              "operationId": "companyExport",
+              "tags": [
+                "Company"
+              ],
+              "summary": "Company export",
+              "description": "Export companies with the field set included in your subscription. Supports **standard pagination** (max 10,000 records) or **scroll pagination** (unlimited; scroll context expires after 8 minutes). Pass `export=true` as shown in the docs.",
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/page"
+                },
+                {
+                  "$ref": "#/components/parameters/pageSize"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Either standard pagination (data.records) or scroll pagination (data as array). Inspect useScroll / scrollId usage to interpret the shape.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/components/schemas/StandardCompanyListResponse"
+                          },
+                          {
+                            "$ref": "#/components/schemas/ScrollCompanyExportResponse"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "$ref": "#/components/responses/Unauthorized"
+                }
+              }
+            }
+          },
+          "/api/cities": {
+            "get": {
+              "operationId": "lookupCities",
+              "tags": [
+                "Lookup"
+              ],
+              "summary": "Look up city names",
+              "description": "Returns exact cityName values to use with company search/export (cityName requires an exact database value).",
+              "parameters": [
+                {
+                  "$ref": "#/components/parameters/lookupSearch"
+                },
+                {
+                  "$ref": "#/components/parameters/lookupCountries"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "List of matching cities.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "data"
+                        ],
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "description": "Matching city entries with exact names for use in API filters.",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "cityName",
+                                "countryCode"
+                              ],
+                              "properties": {
+                                "cityName": {
+                                  "type": "string",
+                                  "description": "City name as stored in the database (use verbatim in cityName filter)."
+                                },
+                                "countryCode": {
+                                  "type": "string",
+                                  "description": "ISO 2-letter country code for this city entry."
+                                }
+                              }
+                            }
+                          },
+                          "total": {
+                            "type": "integer",
+                            "description": "Number of matching lookup results returned in this response."
+                          },
+                          "limit": {
+                            "type": "integer",
+                            "description": "Effective limit applied to this lookup request (requested or default)."
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "$ref": "#/components/responses/Unauthorized"
+                }
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Hoppscotch",
+      "slug": "hoppscotch",
+      "emoji": "🔧",
+      "tagline": "Hoppscotch — keyless JSON API",
+      "description": "Hoppscotch. A lightweight, fast, and customizable app for testing and designing APIs. A free, fast, and beautiful",
+      "sourceCategory": "Development",
+      "docsUrl": "https://hoppscotch.io/",
+      "baseUrl": "https://api.hoppscotch.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 1580,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "info": {
+          "database": {
+            "status": "up"
+          },
+          "redis": {
+            "status": "up"
+          }
+        },
+        "error": {},
+        "details": {
+          "database": {
+            "status": "up"
+          },
+          "redis": {
+            "status": "up"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "FastApi Simple Calculator",
+      "slug": "fastapi-simple-calculator",
+      "emoji": "🔌",
+      "tagline": "FastApi Simple Calculator — keyless JSON API",
+      "description": "FastApi Simple Calculator. Math, Stadistics, Conversions, Currency and more",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://fastapi-calculadora.onrender.com/",
+      "baseUrl": "https://fastapi-calculadora.onrender.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 564,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "Api Calculadora Simple",
+          "summary": "Api de Calculadora simple desarrollada con FastApi 🚀",
+          "description": "\n## ⚓ Listado de Funcionalidades\n### 🤓 Cálculo Básico\n- Sumar\n- Restar\n- Multiplicar\n- Dividir\n- Módulo\n- Raíz n-ésima \n- Potenciación\n- Logaritmo\n\n### 🤖 Conversión\n- Ángulo\n- Área\n- Datos\n- Longitud\n- Masa\n- Velocidad\n- Sistema Numérico (BIN, DEC, HEX, OCT)\n- Temperatura\n- Tiempo\n- Volumen\n- Divisas (+160 divisas en tiempo real la tasa de cambio)\n\n### 💥 Trigonometría\n- Seno\n- Coseno\n- Tangente\n- Cotangente\n- Secante\n- Cosecante\n\n### 🎓 Calculadora\n- Evaluación y Cálculo de expresiones\n- Descuento\n- IMC\n\n### 📈 Estadística\n- Media\n- Mediana\n- Multi-Moda\n- Desviación Estándar de la población\n- Desviación Estándar de la muestra\n- Varianza de la población\n- Varianza de la muestra\n- Correlación\n- Covarianza\n\n### 🎈 Otros\n- Constantes\n",
+          "contact": {
+            "name": "Eduardo González",
+            "url": "https://github.com/EduardoProfe666",
+            "email": "eduardoglez64377@gmail.com"
+          },
+          "license": {
+            "name": "MIT License",
+            "url": "https://opensource.org/license/mit/"
+          },
+          "version": "1.0.2"
+        },
+        "paths": {
+          "/calculo-basico/sumar/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite sumar 2 números (num1 + num2)",
+              "operationId": "sumar_calculo_basico_sumar__get",
+              "parameters": [
+                {
+                  "name": "num1",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num1"
+                  }
+                },
+                {
+                  "name": "num2",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num2"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/restar/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite restar 2 números (num1 - num2)",
+              "operationId": "restar_calculo_basico_restar__get",
+              "parameters": [
+                {
+                  "name": "num1",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num1"
+                  }
+                },
+                {
+                  "name": "num2",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num2"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/multiplicar/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite multiplicar 2 números (num1 * num2)",
+              "operationId": "multiplicar_calculo_basico_multiplicar__get",
+              "parameters": [
+                {
+                  "name": "num1",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num1"
+                  }
+                },
+                {
+                  "name": "num2",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num2"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/dividir/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite dividir 2 números (num1 / num2)",
+              "operationId": "dividir_calculo_basico_dividir__get",
+              "parameters": [
+                {
+                  "name": "num1",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num1"
+                  }
+                },
+                {
+                  "name": "num2",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num2"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/modulo/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite calcular el módulo dados 2 números (num1 % num2)",
+              "operationId": "modulo_calculo_basico_modulo__get",
+              "parameters": [
+                {
+                  "name": "num1",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num1"
+                  }
+                },
+                {
+                  "name": "num2",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Num2"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/raiz/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite calcular la raíz n-ésima de un número (radicando ^ 1/radical)",
+              "operationId": "raiz_calculo_basico_raiz__get",
+              "parameters": [
+                {
+                  "name": "radicando",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Radicando"
+                  }
+                },
+                {
+                  "name": "radical",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Radical"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/potenciacion/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite calcular la potenciación n-ésima de un número (base ^ exponente)",
+              "operationId": "potenciacion_calculo_basico_potenciacion__get",
+              "parameters": [
+                {
+                  "name": "base",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Base"
+                  }
+                },
+                {
+                  "name": "exponente",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Exponente"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/calculo-basico/logaritmo/": {
+            "get": {
+              "tags": [
+                "Cálculo Básico"
+              ],
+              "summary": "Permite calcular el logaritmo n-ésimo de un número (logbase argumento)",
+              "operationId": "logaritmo_calculo_basico_logaritmo__get",
+              "parameters": [
+                {
+                  "name": "base",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Base"
+                  }
+                },
+                {
+                  "name": "argumento",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "number",
+                    "title": "Argumento"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ResultadoFloat"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "Body_correlacion_estadisticas_correlacion__post": {
+              "properties": {
+                "x": {
+                  "$ref": "#/components/schemas/EstadisticaDato"
+                },
+                "y": {
+                  "$ref": "#/components/schemas/EstadisticaDato"
+                }
+              },
+              "type": "object",
+              "required": [
+                "x",
+                "y"
+              ],
+              "title": "Body_correlacion_estadisticas_correlacion__post"
+            },
+            "Body_covarianza_estadisticas_covarianza__post": {
+              "properties": {
+                "x": {
+                  "$ref": "#/components/schemas/EstadisticaDato"
+                },
+                "y": {
+                  "$ref": "#/components/schemas/EstadisticaDato"
+                }
+              },
+              "type": "object",
+              "required": [
+                "x",
+                "y"
+              ],
+              "title": "Body_covarianza_estadisticas_covarianza__post"
+            },
+            "Body_root_email_post": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name"
+                },
+                "email": {
+                  "type": "string",
+                  "title": "Email"
+                },
+                "message": {
+                  "type": "string",
+                  "title": "Message"
+                }
+              },
+              "type": "object",
+              "required": [
+                "name",
+                "email"
+              ],
+              "title": "Body_root_email_post"
+            },
+            "DatosDescuentoFinal": {
+              "properties": {
+                "precio_final": {
+                  "type": "number",
+                  "title": "Precio Final"
+                },
+                "ahorro": {
+                  "type": "number",
+                  "title": "Ahorro"
+                }
+              },
+              "type": "object",
+              "required": [
+                "precio_final",
+                "ahorro"
+              ],
+              "title": "DatosDescuentoFinal"
+            },
+            "DatosDescuentoInicio": {
+              "properties": {
+                "precio_original": {
+                  "type": "number",
+                  "minimum": 0,
+                  "title": "Precio Original"
+                },
+                "descuento_porciento": {
+                  "type": "number",
+                  "minimum": 0,
+                  "title": "Descuento Porciento"
+                }
+              },
+              "type": "object",
+              "required": [
+                "precio_original",
+                "descuento_porciento"
+              ],
+              "title": "DatosDescuentoInicio"
+            },
+            "EstadisticaDato": {
+              "properties": {
+                "lista": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array",
+                  "title": "Lista"
+                }
+              },
+              "type": "object",
+              "required": [
+                "lista"
+              ],
+              "title": "EstadisticaDato"
+            },
+            "Expresion": {
+              "properties": {
+                "expr": {
+                  "type": "string",
+                  "title": "Expr"
+                }
+              },
+              "type": "object",
+              "required": [
+                "expr"
+              ],
+              "title": "Expresion"
+            },
+            "HTTPValidationError": {
+              "properties": {
+                "detail": {
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  },
+                  "type": "array",
+                  "title": "Detail"
+                }
+              },
+              "type": "object",
+              "title": "HTTPValidationError"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Official Joke API",
+      "slug": "official-joke-api",
+      "emoji": "🃏",
+      "tagline": "Setup/punchline jokes",
+      "description": "Two-part jokes plus themed routes like /random_programming_joke. Small predictable JSON.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://official-joke-api.appspot.com/",
+      "baseUrl": "https://official-joke-api.appspot.com",
+      "sampleEndpoint": "/random_joke",
+      "latencyMs": 2349,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "general",
+        "setup": "How do you get a baby alien to sleep?",
+        "punchline": "You rocket.",
+        "id": 124
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Atlas Academy",
+      "slug": "atlas-academy",
+      "emoji": "🎮",
+      "tagline": "Atlas Academy — keyless JSON API",
+      "description": "Atlas Academy. API for Fate/Grand Order game data",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.atlasacademy.io/docs",
+      "baseUrl": "https://api.atlasacademy.io",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 993,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "FGO game data API",
+          "description": "Provide raw and nicely bundled FGO game data.\n\n### Static export files\n\n#### Full data export files\n\nPre-generated full nice data that can be served instantly:\n- NA data:\n  - [NA Servant](/export/NA/nice_servant.json)\n  - [NA Servant with lore](/export/NA/nice_servant_lore.json)\n  - [NA Craft Essence](/export/NA/nice_equip.json)\n  - [NA Craft Essence with lore](/export/NA/nice_equip_lore.json)\n  - [NA War](/export/NA/nice_war.json)\n  - [NA Event](/export/NA/nice_event.json)\n  - [NA Command Code](/export/NA/nice_command_code.json)\n  - [NA Material](/export/NA/nice_item.json)\n  - [NA Mystic Code](/export/NA/nice_mystic_code.json)\n  - [NA Item](/export/NA/nice_item.json)\n  - [NA Master Mission](/export/NA/nice_master_mission.json)\n  - [NA Illustrator](/export/NA/nice_illustrator.json)\n  - [NA Voice Actor](/export/NA/nice_cv.json)\n  - [NA BGM](/export/NA/nice_bgm.json)\n  - [NA Asset Storage](/export/NA/asset_storage.json)\n- JP data:\n  - [JP Servant](/export/JP/nice_servant.json),\n  [JP Servant with English names](/export/JP/nice_servant_lang_en.json)\n  - [JP Servant with lore](/export/JP/nice_servant_lore.json),\n  [JP Servant with English names and lore](/export/JP/nice_servant_lore_lang_en.json)\n  - [JP Craft Essence](/export/JP/nice_equip.json),\n  [JP Craft Essence with English names](/export/JP/nice_equip_lang_en.json)\n  - [JP Craft Essence with lore](/export/JP/nice_equip_lore.json),\n  [JP Craft Essence with lore and English names](/export/JP/nice_equip_lore_lang_en.json)\n  - [JP War](/export/JP/nice_war.json),\n  [JP War with English names](/export/JP/nice_war_lang_en.json)\n  - [JP Event](/export/JP/nice_event.json),\n  [JP Event with English names](/export/JP/nice_event_lang_en.json)\n  - [JP Command Code](/export/JP/nice_command_code.json),\n  [JP Command Code with English names](/export/JP/nice_command_code_lang_en.json)\n  - [JP Mystic Code](/export/JP/nice_mystic_code.json),\n  [JP Mystic Code with English names](/export/JP/nice_mystic_code_lang_en.json)\n  - [JP Material](/export/JP/nice_item.json),\n  [JP Material with English names](/export/JP/nice_item_lang_en.json)\n  - [JP Master Mission](/export/JP/nice_master_mission.json)\n  - [JP Illustrator](/export/JP/nice_illustrator.json)\n  [JP Illustrator with English names](/export/JP/nice_illustrator_lang_en.json)\n  - [JP Voice Actor](/export/JP/nice_cv.json)\n  [JP Voice Actor with English names](/export/JP/nice_cv_lang_en.json)\n  - [JP BGM](/export/JP/nice_bgm.json),\n  [JP BGM](/export/JP/nice_bgm_lang_en.json)\n  - [JP Asset Storage](/export/JP/asset_storage.json)\n- Both regions (The data is the same for both NA and JP endpoints):\n  - [All enums](/export/JP/nice_enums.json)\n  - [Trait mapping](/export/JP/nice_trait.json)\n\n#### Trimmed-down data export files\n\nPre-generated, trimmed-down, lightweight basic data that can be used for indexing purposes:\n- NA data:\n  - [NA servant](/export/NA/basic_servant.json)\n  - [NA CE](/export/NA/basic_equip.json)\n  - [NA svt](/export/NA/basic_svt.json)\n  - [NA Command Code](/export/NA/basic_command_code.json)\n  - [NA Mystic Code](/export/NA/basic_mystic_code.json)\n  - [NA War](/export/NA/basic_war.json)\n  - [NA Event](/export/NA/basic_event.json)\n- JP data:\n  - [JP servant](/export/JP/basic_servant.json),\n  [JP servant with English names](/export/JP/basic_servant_lang_en.json)\n  - [JP CE](/export/JP/basic_equip.json),\n  [JP CE with English names](/export/JP/basic_equip_lang_en.json)\n  - [JP svt](/export/JP/basic_svt.json),\n  [JP svt with English names](/export/JP/basic_svt_lang_en.json)\n  - [JP Command Code](/export/JP/basic_command_code.json),\n  [JP Command Code with English names](/export/JP/basic_command_code_lang_en.json)\n  - [JP Mystic Code](/export/JP/basic_mystic_code.json),\n  [JP Mystic Code with English names](/export/JP/basic_mystic_code_lang_en.json)\n  - [JP War](/export/JP/basic_war.json),\n  [JP War with English names](/export/JP/basic_war_lang_en.json)\n  - [JP Event](/export/JP/basic_event.json),\n  [JP Event with English name](/export/JP/basic_event_lang_en.json)\n\n\n### API Usage\n\nIt's recommended to use the static export files or search with the `/basic` endpoints\nand fetch nice or raw data as needed.\nA big search with nice or raw data will take a while to respond.\n\nThere are many export files in the \"Export files\" section above.\nMake sure you check them out before querying the API.\nChances are what you need is already there.\nFeel free to contact me if you would like to see an export file that is not currently available.\n\n### Miscellaneous info\n\nThe current data version can be found [here](/info).\n\nAPI's changelog can be found [here](https://github.com/atlasacademy/fgo-game-data-api/blob/master/CHANGELOG.md).\n\nTo discuss more about the API, you can go to the [Atlas Academy Discord](https://atlasacademy.io/discord/).\nBug reports and feature requests are welcome.\nSource code of the API is available on [GitHub](https://github.com/atlasacademy/fgo-game-data-api).\n\nAvailable documentation styles: [RapiDoc](/rapidoc), [Swagger UI](/docs), [Redoc](/redoc).\n\n### Static Constants\n\nHere are the static files that can be used for damage calculation.\nChange `JP` to `NA` in the URL if you are looking for NA constants.\nMapping of the damage formula to the API can be found\n[here](https://github.com/atlasacademy/fgo-game-data-docs/tree/master/battle):\n- [Attribute Affinity](/export/JP/NiceAttributeRelation.json)\n- [Class Attack Rate](/export/JP/NiceClassAttackRate.json)\n- [Class Affinity](/export/JP/NiceClassRelation.json)\n- [Card Details](/export/JP/NiceCard.json)\n- [Constants](/export/JP/NiceConstant.json)\n- [Buff Action info](/export/JP/NiceBuffList.ActionList.json)\n- [Master Level info](/export/JP/NiceUserLevel.json)\n- [Palingenesis QP cost](/export/JP/NiceSvtGrailCost.json)\n",
+          "version": "6.0.0",
+          "x-server-commit-hash": "f596a7",
+          "x-server-commit-timestamp": 1782911475
+        },
+        "servers": [
+          {
+            "url": "https://api.atlasacademy.io/"
+          }
+        ],
+        "paths": {
+          "/nice/{region}/servant/search": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Find and get servant data",
+              "description": "Search and return the list of matched servant entities.\n\n- **name**: servant name. Searching JP data using English name works too.\n- **excludeCollectionNo**: int, defaults to 0. Won't return records with the specified `collectionNo`.\n- **type**: servant type, defaults to `[normal, heroine, enemyCollectionDetail]`.\nSee the `NiceSvtType` enum for the options.\n- **flag**: svt flag. See the `NiceSvtFlag` enum for the options.\n- **rarity**: rarity of the servant.\n- **className**: an item in the `className` enum, defaults to `PLAYABLE_CLASS_LIST`.\nSee the `className` detail in the Nice Servant response.\n- **gender**: `female`, `male` or `unknown`.\n- **attribute**: `human`, `sky`, `earth`, `star` or `beast`.\n- **trait**: an integer or an item in the `trait` enum. See the traits detail in the Nice Servant response.\n- **notTrait**: an integer or an item in the `trait` enum. The result entities won't have any of the traits\nin the list.\n- **voiceCondSvt**: servant `collectionNo` or servant `ID`. Will find the servants that\nhave voice lines directed to the given servants.\n- **profileContains**: string. Will search the servant's profile comments for the string.\n\nAt least one of `name`, `type`, `rarity`, `className`, `gender`, `attribute`,\n`trait` or `voiceCondSvt` is required for the query.\n- **lang**: returns English servant names if querying JP data. Doesn't do anything if querying NA data.\n- **lore**: Add profile info to the response",
+              "operationId": "find_servant_nice__region__servant_search_get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "lore",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "Lore"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Servant Entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/NiceServant"
+                        },
+                        "title": "Response Find Servant Nice  Region  Servant Search Get"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Insufficient query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Response too big",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/servant/{servant_id}": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Get servant data",
+              "description": "Get servant info from ID\n\nIf the given ID is a servants's collectionNo, the corresponding servant data is returned.\nOtherwise, it will look up the actual ID field.\n\n\n- **lang**: returns English servant names if querying JP data. Doesn't do anything if querying NA data.\n- **lore**: Add profile info to the response\n\n\nPreprocessed data:\n- [NA servant](/export/NA/nice_servant.json), [NA Servant with lore](/export/NA/nice_servant_lore.json)\n- [JP servant](/export/JP/nice_servant.json), [JP Servant with lore](/export/JP/nice_servant_lore.json)",
+              "operationId": "get_servant_nice__region__servant__servant_id__get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "servant_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Servant Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Servant Entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NiceServant"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Item not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/equip/search": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Find and get CE data",
+              "description": "Search and return the list of matched equip entities.\n\n- **name**: in English if you are searching NA data and in Japanese if you are searching JP data.\n- **illustrator**: Illustrator name. Exact match required.\n- **excludeCollectionNo**: int, defaults to 0. Won't return records with the specified `collectionNo`.\n- **type**: servant type, defaults to `[servantEquip]`. See the `NiceSvtType` for the options.\n- **flag**: svt flag. See the `NiceSvtFlag` enum for the options.\n- **rarity**: `rarity` of the CE.\n\nAt least one of `name`, `type`, `flag` or `rarity` is required for the query.\n- **lore**: Add profile info to the response",
+              "operationId": "find_equip_nice__region__equip_search_get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "lore",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "Lore"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Equip Entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/NiceEquip"
+                        },
+                        "title": "Response Find Equip Nice  Region  Equip Search Get"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Insufficient query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Response too big",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/equip/{equip_id}": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Get CE data",
+              "description": "Get CE info from ID\n\nIf the given ID is a CE's collectionNo, the corresponding CE data is returned.\nOtherwise, it will look up the actual ID field.\n\n\n- **lore**: Add profile info to the response\n\n\nPreprocessed data:\n- [NA CE](/export/NA/nice_equip.json), [NA CE with lore](/export/NA/nice_equip_lore.json)\n- [JP CE](/export/JP/nice_equip.json), [JP CE with lore](/export/JP/nice_equip_lore.json)",
+              "operationId": "get_equip_nice__region__equip__equip_id__get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "equip_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Equip Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "CE Entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NiceEquip"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Item not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/svt/search": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Find and get servant data",
+              "description": "Search and return the list of matched servant entities.\n\n- **name**: servant name. Searching JP data using English name works too.\n- **illustrator**: Illustrator name. Exact match required.\n- **cv**: Voice actor name. Exact match required.\n- **excludeCollectionNo**: int. Won't return records with the specified `collectionNo`.\n- **type**: servant type. See the `NiceSvtType` enum for the options.\n- **flag**: svt flag. See the `NiceSvtFlag` enum for the options.\n- **rarity**: `rarity` of the svt object.\n- **className**: an item in the `className` enum. See the `className` detail in the Nice Servant response.\n- **gender**: `female`, `male` or `unknown`.\n- **attribute**: `human`, `sky`, `earth`, `star` or `beast`.\n- **trait**: an integer or an item in the `trait` enum. See the traits detail in the Nice Servant response.\n- **notTrait**: an integer or an item in the `trait` enum. The result entities won't have any of the traits\nin the list.\n- **voiceCondValue**: servant `collectionNo` or servant `ID`. Will find the servants that\nhave voice lines directed to the given servants.\n- **profileContains**: string. Will search the servant's profile comments for the string.\n\nAt least one of `name`, `type`, `rarity`, `className`, `gender`, `attribute`\n`trait` or `voiceCondSvt` is required for the query.\n- **lang**: returns English servant names if querying JP data. Doesn't do anything if querying NA data.\n- **lore**: Add profile info to the response",
+              "operationId": "find_svt_nice__region__svt_search_get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "lore",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "Lore"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Nice Servant Entities",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/NiceServant"
+                        },
+                        "title": "Response Find Svt Nice  Region  Svt Search Get"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Insufficient query",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Response too big",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/svt/{svt_id}": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Get svt data",
+              "description": "Get svt info from ID\n\nOnly use actual IDs for lookup. Does not convert from collectionNo.\nThe endpoint is not limited to servants or equips ids.",
+              "operationId": "get_svt_nice__region__svt__svt_id__get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "svt_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Svt Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Servant Entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NiceServant"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Item not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/MC/{mc_id}": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Get Mystic Code data",
+              "description": "Get nice Mystic Code info from ID\n\nPreprocessed data:\n- [NA Mystic Code](/export/NA/nice_mystic_code.json)\n- [JP Mystic Code](/export/JP/nice_mystic_code.json)",
+              "operationId": "get_mystic_code_nice__region__MC__mc_id__get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "mc_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Mc Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Mystic Code entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NiceMysticCode"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Item not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/nice/{region}/CC/{cc_id}": {
+            "get": {
+              "tags": [
+                "nice"
+              ],
+              "summary": "Get Command Code data",
+              "description": "Get nice Command Code info from ID\n\nPreprocessed data:\n- [NA Command Code](/export/NA/nice_command_code.json)\n- [JP Command Code](/export/JP/nice_command_code.json)\n- [JP Command Code with English names](/export/JP/nice_command_code_lang_en.json)",
+              "operationId": "get_command_code_nice__region__CC__cc_id__get",
+              "parameters": [
+                {
+                  "name": "region",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/components/schemas/Region"
+                  }
+                },
+                {
+                  "name": "cc_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer",
+                    "title": "Cc Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Command Code entity",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/NiceCommandCode"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Item not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal server error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/DetailMessage"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "AiCollection": {
+              "properties": {
+                "mainAis": {
+                  "items": {
+                    "$ref": "#/components/schemas/AiEntity"
+                  },
+                  "type": "array",
+                  "title": "Mainais"
+                },
+                "relatedAis": {
+                  "items": {
+                    "$ref": "#/components/schemas/AiEntity"
+                  },
+                  "type": "array",
+                  "title": "Relatedais"
+                },
+                "relatedQuests": {
+                  "items": {
+                    "$ref": "#/components/schemas/StageLink"
+                  },
+                  "type": "array",
+                  "title": "Relatedquests"
+                }
+              },
+              "type": "object",
+              "required": [
+                "mainAis",
+                "relatedAis"
+              ],
+              "title": "AiCollection"
+            },
+            "AiEntity": {
+              "properties": {
+                "mstAi": {
+                  "$ref": "#/components/schemas/MstAi"
+                },
+                "mstAiAct": {
+                  "$ref": "#/components/schemas/MstAiAct"
+                },
+                "parentAis": {
+                  "additionalProperties": {
+                    "items": {
+                      "type": "integer"
+                    },
+                    "type": "array"
+                  },
+                  "propertyNames": {
+                    "$ref": "#/components/schemas/AiType"
+                  },
+                  "type": "object",
+                  "title": "Parentais"
+                }
+              },
+              "type": "object",
+              "required": [
+                "mstAi",
+                "mstAiAct"
+              ],
+              "title": "AiEntity"
+            },
+            "AiTiming": {
+              "type": "string",
+              "enum": [
+                "dead",
+                "turnEnemyStart"
+              ],
+              "title": "AiTiming",
+              "description": "Field AI timing Enum"
+            },
+            "AiType": {
+              "type": "string",
+              "enum": [
+                "svt",
+                "field"
+              ],
+              "title": "AiType",
+              "description": "AI Type: where the AI is used"
+            },
+            "AscensionAdd": {
+              "properties": {
+                "attribute": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_Attribute_"
+                },
+                "individuality": {
+                  "$ref": "#/components/schemas/AscensionAddEntryTrait",
+                  "title": "Individuality changes",
+                  "description": "Some servants add or remove traits as they ascend."
+                },
+                "voicePrefix": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_int_",
+                  "title": "Voice prefix changes",
+                  "description": "Some servants change voice lines as they ascennd."
+                },
+                "overWriteServantName": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_str_",
+                  "title": "Servant name changes"
+                },
+                "originalOverWriteServantName": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_str_"
+                },
+                "overWriteServantBattleName": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_str_",
+                  "title": "Servant battle name changes"
+                },
+                "originalOverWriteServantBattleName": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_str_"
+                },
+                "overWriteTDName": {
+                  "$ref": "#/components/schemas/AscensionAddEntry_str_",
+                  "title": "NP name changes"
+                }
+              },
+              "type": "object",
+              "required": [
+                "attribute",
+                "individuality"
+              ],
+              "title": "AscensionAdd"
+            },
+            "AscensionAddEntryCommonRelease": {
+              "properties": {
+                "ascension": {
+                  "additionalProperties": {
+                    "items": {
+                      "$ref": "#/components/schemas/NiceCommonRelease"
+                    },
+                    "type": "array"
+                  },
+                  "type": "object",
+                  "title": "Ascension changes",
+                  "description": "Mapping <Ascension level, Ascension level data>."
+                },
+                "costume": {
+                  "additionalProperties": {
+                    "items": {
+                      "$ref": "#/components/schemas/NiceCommonRelease"
+                    },
+                    "type": "array"
+                  },
+                  "type": "object",
+                  "title": "Costume changes",
+                  "description": "Mapping <Costume ID, Costume data>."
+                }
+              },
+              "type": "object",
+              "required": [
+                "ascension",
+                "costume"
+              ],
+              "title": "AscensionAddEntryCommonRelease"
+            },
+            "AscensionAddEntryTrait": {
+              "properties": {
+                "ascension": {
+                  "additionalProperties": {
+                    "items": {
+                      "$ref": "#/components/schemas/NiceTrait"
+                    },
+                    "type": "array"
+                  },
+                  "type": "object",
+                  "title": "Ascension changes",
+                  "description": "Mapping <Ascension level, Ascension level data>."
+                },
+                "costume": {
+                  "additionalProperties": {
+                    "items": {
+                      "$ref": "#/components/schemas/NiceTrait"
+                    },
+                    "type": "array"
+                  },
+                  "type": "object",
+                  "title": "Costume changes",
+                  "description": "Mapping <Costume ID, Costume data>."
+                }
+              },
+              "type": "object",
+              "required": [
+                "ascension",
+                "costume"
+              ],
+              "title": "AscensionAddEntryTrait"
+            },
+            "AscensionAddEntry_Attribute_": {
+              "properties": {
+                "ascension": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/Attribute"
+                  },
+                  "type": "object",
+                  "title": "Ascension changes",
+                  "description": "Mapping <Ascension level, Ascension level data>."
+                },
+                "costume": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/Attribute"
+                  },
+                  "type": "object",
+                  "title": "Costume changes",
+                  "description": "Mapping <Costume ID, Costume data>."
+                }
+              },
+              "type": "object",
+              "required": [
+                "ascension",
+                "costume"
+              ],
+              "title": "AscensionAddEntry[Attribute]"
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "nice",
+            "description": "Nicely human-readable bundled data."
+          },
+          {
+            "name": "basic",
+            "description": "Minimal nice data for indexing"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Wynncraft",
+      "slug": "wynncraft",
+      "emoji": "🎮",
+      "tagline": "Wynncraft — keyless JSON API",
+      "description": "Wynncraft. Wynncraft Information",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.wynncraft.com/",
+      "baseUrl": "https://docs.wynncraft.com",
+      "sampleEndpoint": "/openapi.json",
+      "latencyMs": 105,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "Modules",
+          "version": "1.0.0"
+        },
+        "paths": {
+          "/player": {
+            "get": {
+              "operationId": "list-online-players",
+              "summary": "List online players",
+              "description": "<Note>\nThis endpoint is cached for <Badge intent=\"success\" minimal>30 seconds</Badge> in the <Badge intent=\"warning\" minimal>USER</Badge> cache source.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n\n<Warning>\nOnline player list is subject to [Access Rules](/privacy), which can hide some players from the list. Rely on the field `total` to have the accurate player count.\n</Warning>",
+              "tags": [
+                "player"
+              ],
+              "parameters": [
+                {
+                  "name": "identifier",
+                  "in": "query",
+                  "description": "Switches player descriptor between either their username or their uuid.",
+                  "required": false,
+                  "schema": {
+                    "$ref": "#/components/schemas/PlayerGetParametersIdentifier"
+                  }
+                },
+                {
+                  "name": "server",
+                  "in": "query",
+                  "description": "Filter online players to a specific world such as `WC1` or `1`.",
+                  "required": false,
+                  "schema": {
+                    "$ref": "#/components/schemas/PlayerGetParametersServer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Online player summary.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/OnlinePlayerList"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/player/whoami": {
+            "get": {
+              "operationId": "get-player-identity",
+              "summary": "Who Am I",
+              "description": "<Note>\nThis endpoint is not cached.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n\n<Warning>\nTry it will not return usable data for this route. It depends on authentication and IP-aware context, so test it against the live API outside the docs.\n</Warning>\n\nData returned here depends on the accounts you used to join Wynncraft. Those accounts represent who we think you are and are used for account-aware features such as store auto-login and map live position viewing.",
+              "tags": [
+                "player"
+              ],
+              "responses": {
+                "200": {
+                  "description": "Identity mapping keyed by player UUID.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "$ref": "#/components/schemas/PlayerIdentity"
+                        }
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "No eligible online identity could be resolved.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/player/{username}": {
+            "get": {
+              "operationId": "get-player",
+              "summary": "Get player profile",
+              "description": "<Note>\nThis endpoint is cached for <Badge intent=\"success\" minimal>2 minutes</Badge> in the <Badge intent=\"warning\" minimal>USER</Badge> cache source.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n\n<Warning>\nPlayer stats are subject to [Access Rules](/privacy), which can hide some of the stats. Check the `restrictions` object to see which access rules affected the response.\n</Warning>\n<Info>\nIt is recommended to request players by UUID. Username lookups can return `300 MultipleObjectsReturned` with a multi-selector response when more than one player matches the query.\n</Info>\n`previousRanking` is stored daily based on player activity. Subtracting `previousRanking` from the current ranking gives the player's leaderboard progression.\n\n<Info>\nUse `fullResult` to include full character data. The `characters` object uses the same structure as [GET /player/{username}/characters/{uuid}](api:GET/player/{username}/characters/{uuid}).\n</Info>",
+              "tags": [
+                "player"
+              ],
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "Username or UUID accepted by the player route.",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "fullResult",
+                  "in": "query",
+                  "description": "Presence-based flag that expands responses. Send it without a value as `?fullResult`. Using `?fullResult=true` or `?fullResult=false` is not accepted.",
+                  "required": false,
+                  "schema": {
+                    "$ref": "#/components/schemas/PlayerUsernameGetParametersFullResult"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Player profile.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Player"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "No matching player was found.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Player payload construction failed.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/player/{username}/characters": {
+            "get": {
+              "operationId": "list-player-characters",
+              "summary": "List a player's characters",
+              "description": "<Note>\nThis endpoint is cached for <Badge intent=\"success\" minimal>2 minutes</Badge> in the <Badge intent=\"warning\" minimal>USER</Badge> cache source.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n\n<Warning>\nThis response can be restricted by player [Access Rules](/privacy).\n</Warning>\n<Info>\nIt is recommended to request players by UUID. Username lookups can return `300 MultipleObjectsReturned` with a multi-selector response when more than one player matches the query.\n</Info>\n\nReturns the player's characters keyed by character UUID.",
+              "tags": [
+                "player"
+              ],
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "Username or UUID accepted by the player route.",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Character map keyed by character UUID.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "$ref": "#/components/schemas/LightCharacter"
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "The player has no characters.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Character list visibility is restricted.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "No matching player was found.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Player payload construction failed.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/player/{username}/characters/{uuid}": {
+            "get": {
+              "operationId": "get-player-character",
+              "summary": "Get detailed character data",
+              "description": "<Note>\nThis endpoint is cached for <Badge intent=\"success\" minimal>2 minutes</Badge> in the <Badge intent=\"warning\" minimal>USER</Badge> cache source.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n\n<Warning>\nCharacter data is subject to [Access Rules](/privacy), which can hide some stats. Check the `restrictions` object to see which access rules affected the response. You can also check the `removedStat` field to check when the character skeleton customization affect the response.\n</Warning>\n<Info>\nIt is recommended to request players by UUID. Username lookups can return `300 MultipleObjectsReturned` with a multi-selector response when more than one player matches the query.\n</Info>\n\nReturns the full stat payload for a single character.",
+              "tags": [
+                "player"
+              ],
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "Username or UUID accepted by the player route.",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "uuid",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Character detail.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Character"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Unknown character UUID.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Character data visibility is restricted.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "No matching player was found.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Player payload construction failed.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/player/{username}/characters/{uuid}/abilities": {
+            "get": {
+              "operationId": "get-player-character-abilities",
+              "summary": "Get character ability map",
+              "description": "<Note>\nThis endpoint is cached for <Badge intent=\"warning\" minimal>10 minutes</Badge> in the <Badge intent=\"warning\" minimal>USER</Badge> cache source.   See [Caching](/welcome#caching). <Indent></Indent> This endpoint belongs to the <Badge intent=\"warning\" minimal>PLAYER</Badge> rate-limit bucket. See [Throttling and Rate Limits](/welcome#throttling-and-rate-limits).\n</Note>\n<Warning>\nAbility Tree is subject to [Access Rules](/privacy), which can make it unavailable.\n</Warning>\n<Info>\nIt is recommended to request players by UUID. Username lookups can return `300 MultipleObjectsReturned` with a multi-selector response when more than one player matches the query.\n</Info>\nThis endpoint only lists abilities the player has enabled and performs pathfinding on the fly.\n\nTo render a full in-game style ability tree, combine this response with:\n- [GET /ability/tree/{tree}](api:GET/ability/tree/{tree})\n- [GET /ability/map/{tree}](api:GET/ability/map/{tree}) ",
+              "tags": [
+                "player"
+              ],
+              "parameters": [
+                {
+                  "name": "username",
+                  "in": "path",
+                  "description": "Username or UUID accepted by the player route.",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "uuid",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Ability tree nodes grouped by page.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/AbilityMapPages"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Unknown character UUID.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "403": {
+                  "description": "Ability tree visibility is restricted.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "No matching player was found.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "The character ability tree could not be rendered.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/oauth/me": {
+            "get": {
+              "operationId": "get-oauth-identity",
+              "summary": "Get OAuth2 identity",
+              "description": "<Warning>\nTry it will not return usable data for this route. It depends on a live OAuth2 authentication context outside the docs.\n</Warning>\n\n<Info>\nGet started with OAuth by reading [our guide](/oauth2/creating-an-application).\n</Info>\n\nThis endpoint returns the authenticated OAuth2 application context and the linked player profiles available to the authorized user.\n\n<Info>\nThe `profiles` object contains the player profiles that belong to the authorizing user. Access-rule bypass through OAuth2 only applies to those linked profiles when the user granted permission for it.\n</Info>",
+              "tags": [
+                "oAuth2"
+              ],
+              "responses": {
+                "200": {
+                  "description": "OAuth2 application context and linked profiles.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/OAuthMeResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/oauth/token": {
+            "post": {
+              "operationId": "exchange-oauth-token",
+              "summary": "Exchange OAuth2 token",
+              "description": "<Warning>\nThis endpoint expects `application/x-www-form-urlencoded`.\n</Warning>\n<Warning>\nTry it will not return usable data for this route. It depends on a live OAuth2 authentication context outside the docs.\n</Warning>\n<Info>\nGet started with OAuth by reading [our guide](/oauth2/creating-an-application).\n</Info>\n<Info>\nOnly the `authorization_code` grant type is supported. Authorization codes are one-time use and expire after 5 minutes.\n</Info>\n\nPKCE is supported for both Private and Public applications but Public applications must send `code_verifier` and must not send `client_secret`.\n\nPrivate applications must send `client_secret`.\n\nOnly `S256` PKCE is supported.",
+              "tags": [
+                "oAuth2"
+              ],
+              "responses": {
+                "200": {
+                  "description": "OAuth2 access token exchange result.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/OAuthTokenResponse"
+                      }
+                    }
+                  }
+                }
+              },
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/OAuthTokenExchangeRequest"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.wynncraft.com/v3",
+            "description": "The Wynncraft Public API"
+          }
+        ],
+        "components": {
+          "schemas": {
+            "PlayerGetParametersIdentifier": {
+              "type": "string",
+              "enum": [
+                "username",
+                "uuid"
+              ],
+              "title": "PlayerGetParametersIdentifier"
+            },
+            "PlayerGetParametersServer": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
+              "title": "PlayerGetParametersServer"
+            },
+            "OnlinePlayerListPlayers": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "format": "server"
+                }
+              },
+              "title": "OnlinePlayerListPlayers"
+            },
+            "OnlinePlayerList": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "integer"
+                },
+                "players": {
+                  "$ref": "#/components/schemas/OnlinePlayerListPlayers"
+                }
+              },
+              "required": [
+                "total",
+                "players"
+              ],
+              "title": "OnlinePlayerList"
+            },
+            "LegacyRankColour": {
+              "type": "object",
+              "properties": {
+                "main": {
+                  "type": "string"
+                },
+                "sub": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "main",
+                "sub"
+              ],
+              "title": "LegacyRankColour"
+            },
+            "PlayerIdentity": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string"
+                },
+                "online": {
+                  "type": "boolean"
+                },
+                "nickname": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rank": {
+                  "type": "string"
+                },
+                "supportRank": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "shortenedRank": {
+                  "type": "string"
+                },
+                "legacyRankColour": {
+                  "$ref": "#/components/schemas/LegacyRankColour"
+                },
+                "rankBadge": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "username",
+                "online"
+              ],
+              "title": "PlayerIdentity"
+            },
+            "Error": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "error",
+                "detail"
+              ],
+              "title": "Error"
+            },
+            "PlayerUsernameGetParametersFullResult": {
+              "type": "string",
+              "enum": [
+                ""
+              ],
+              "title": "PlayerUsernameGetParametersFullResult"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": []
+}

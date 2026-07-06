@@ -1,0 +1,269 @@
+{
+  "batch": 3,
+  "verified": [
+    {
+      "name": "paralelo.bo",
+      "slug": "paralelo-bo",
+      "emoji": "💱",
+      "tagline": "Live Bolivia parallel USD/BOB rate, refreshed every minute",
+      "description": "Returns the current parallel-market exchange rate between US dollars and Bolivianos, aggregated from peer-to-peer sources. Each response carries buy, sell, median, and spread figures alongside an ISO timestamp. A plain-text variant at /rate.txt suits shell pipelines.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://paralelo.bo/api",
+      "baseUrl": "https://paralelo.bo/api/v1",
+      "sampleEndpoint": "/rate",
+      "latencyMs": 1340,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "timestamp": "2026-07-05T10:12:47.856Z",
+        "buy": 10.04,
+        "sell": 9.97,
+        "median": 10,
+        "spreadPct": -0.7124,
+        "sourceCount": 2,
+        "methodologyVersion": "ec2-backend"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished (60s cache stated)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "OpenAPI spec at /api/openapi.json; plain-text rate also at /api/v1/rate.txt."
+    },
+    {
+      "name": "24 Pull Requests",
+      "slug": "24-pull-requests",
+      "emoji": "🎁",
+      "tagline": "Suggested open-source projects for December contribution sprints",
+      "description": "A community project that nudges developers to send pull requests throughout December. The JSON API exposes suggested projects, participating users, and organisations. Each project entry links a GitHub repo with its primary language.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://24pullrequests.com/api",
+      "baseUrl": "https://24pullrequests.com",
+      "sampleEndpoint": "/projects.json",
+      "latencyMs": 905,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "description": "Examples and server integrations for generating the Swagger API Specification, which enables easy access to your REST API",
+          "github_url": "https://github.com/swagger-api/swagger-core",
+          "main_language": "Java"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "No CORS header observed. Per-user/org endpoints (e.g. /users/{name}.json) 404 for unregistered names; /projects.json is stable."
+    },
+    {
+      "name": "Beeceptor",
+      "slug": "beeceptor",
+      "emoji": "🐝",
+      "tagline": "Free echo endpoint that mirrors your HTTP request back as JSON",
+      "description": "Beeceptor's open echo host reflects whatever request you send it, reporting the method, path, headers, and parsed query params as JSON. Handy for debugging clients or webhooks with no signup. The wider Beeceptor product for custom mock servers does require an account.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://beeceptor.com/",
+      "baseUrl": "https://echo.free.beeceptor.com",
+      "sampleEndpoint": "/sample?foo=bar",
+      "latencyMs": 962,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "method": "GET",
+        "protocol": "https",
+        "host": "echo.free.beeceptor.com",
+        "path": "/sample?foo=bar",
+        "ip": "46.1.3.138",
+        "parsedQueryParams": { "foo": "bar" }
+      },
+      "freeTier": "Free public echo host, no signup",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Verified the keyless echo.free.beeceptor.com host; the mock-server builder on beeceptor.com is a separate signup product."
+    },
+    {
+      "name": "Genderize.io",
+      "slug": "genderize-io",
+      "emoji": "🧑",
+      "tagline": "Guess likely gender from a first name, with a confidence score",
+      "description": "Send a first name and get back a predicted gender plus a probability and the sample size behind it. No key is needed for light use, and response headers report your remaining quota. Part of the same family as Nationalize.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://genderize.io",
+      "baseUrl": "https://api.genderize.io",
+      "sampleEndpoint": "/?name=luc",
+      "latencyMs": 675,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 114766,
+        "name": "luc",
+        "gender": "male",
+        "probability": 0.99
+      },
+      "freeTier": "Keyless usage limited (x-rate-limit-limit: 25 observed); 2,500 names/mo with a free key",
+      "rateLimit": "Keyless cap 25 per x-rate-limit-limit header; remaining/reset exposed in response headers",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Rate-limit headers (x-rate-limit-limit/-remaining/-reset) observed on the live response."
+    },
+    {
+      "name": "Httpbin",
+      "slug": "httpbin",
+      "emoji": "🔁",
+      "tagline": "Echo service for inspecting HTTP requests and responses",
+      "description": "A long-running testing endpoint that reflects request details, headers, and origin back as JSON. Useful for checking exactly what your HTTP client sends. The /get route returns a tidy summary of the incoming call.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://httpbin.org/",
+      "baseUrl": "https://httpbin.org",
+      "sampleEndpoint": "/get",
+      "latencyMs": 1361,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "args": {},
+        "headers": {
+          "Host": "httpbin.org",
+          "Origin": "https://shipapis.dev",
+          "User-Agent": "shipapisbot/1.0 (+https://shipapis.dev/methodology)"
+        },
+        "origin": "46.1.3.138",
+        "url": "https://httpbin.org/get"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Open-source project. Returned 503 then a timeout before succeeding on the third attempt; the host is intermittently flaky."
+    },
+    {
+      "name": "jsDelivr",
+      "slug": "jsdelivr",
+      "emoji": "📦",
+      "tagline": "Package versions and CDN download stats as JSON",
+      "description": "Query metadata for any npm or GitHub package served by the jsDelivr CDN, including version lists and resolved dist-tags. A companion stats API reports download counts. No key required.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://github.com/jsdelivr/data.jsdelivr.com",
+      "baseUrl": "https://data.jsdelivr.com/v1",
+      "sampleEndpoint": "/packages/npm/jquery",
+      "latencyMs": 451,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "npm",
+        "name": "jquery",
+        "tags": { "latest": "4.0.0", "beta": "4.0.0-rc.2" },
+        "versions": [
+          {
+            "version": "4.0.0",
+            "links": {
+              "self": "https://data.jsdelivr.com/v1/packages/npm/jquery@4.0.0"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Terms landing page links out to separate docs not quoting explicit commercial terms; kept conservative."
+    },
+    {
+      "name": "JSONPlaceholder",
+      "slug": "jsonplaceholder",
+      "emoji": "🧩",
+      "tagline": "Instant fake REST data for prototyping and demos",
+      "description": "A zero-setup REST endpoint serving invented posts, todos, users, and comments as JSON. Reads return canned data, while writes are accepted but never persisted. Ideal for wiring up a frontend before a real backend exists.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://jsonplaceholder.typicode.com",
+      "baseUrl": "https://jsonplaceholder.typicode.com",
+      "sampleEndpoint": "/todos/1",
+      "latencyMs": 397,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Data is fictional placeholder content; write operations are simulated, not stored."
+    },
+    {
+      "name": "Nationalize.io",
+      "slug": "nationalize-io",
+      "emoji": "🌍",
+      "tagline": "Predict likely nationalities behind a first name",
+      "description": "Give it a first name and it returns a ranked list of country codes with probabilities. Works keyless for small volumes, with quota reported via response headers. Shares infrastructure with Genderize.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://nationalize.io",
+      "baseUrl": "https://api.nationalize.io",
+      "sampleEndpoint": "/?name=michael",
+      "latencyMs": 729,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 2540137,
+        "name": "michael",
+        "country": [
+          { "probability": 0.271268, "country_id": "US" },
+          { "probability": 0.100369, "country_id": "DE" }
+        ]
+      },
+      "freeTier": "Keyless usage limited (x-rate-limit-limit: 25 observed); 2,500 names/mo with a free key",
+      "rateLimit": "Keyless cap 25 per x-rate-limit-limit header; remaining/reset exposed in response headers",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Same provider as Genderize; country array truncated to 2 of 5 entries."
+    },
+    {
+      "name": "NetworkCalc",
+      "slug": "networkcalc",
+      "emoji": "🧮",
+      "tagline": "DNS lookups, subnet math, and network tools over JSON",
+      "description": "A keyless API covering DNS record lookups, IP and subnet calculations, and related networking utilities. The DNS endpoint returns A, MX, NS, TXT and other records in a single JSON payload. Separate account-only endpoints exist, but the core tools need no auth.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://networkcalc.com/api/docs",
+      "baseUrl": "https://networkcalc.com/api",
+      "sampleEndpoint": "/dns/lookup/google.com",
+      "latencyMs": 658,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "OK",
+        "hostname": "google.com",
+        "records": {
+          "A": [{ "address": "142.250.72.14", "ttl": 7 }],
+          "MX": [{ "exchange": "smtp.google.com", "priority": 10 }],
+          "NS": [{ "nameserver": "ns1.google.com" }]
+        }
+      },
+      "freeTier": "Free public API, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Public endpoints (DNS, IP/subnet) are keyless; account APIs require authorization. Records object trimmed."
+    }
+  ],
+  "skipped": [
+    { "name": "ApicAgent", "reason": "API host api.apicagent.com returns a 308 redirect loop to itself and times out; no JSON response over 3 attempts." },
+    { "name": "Cloudflare Trace", "reason": "No keyless JSON 200: /cdn-cgi/trace endpoints return text/plain, and the JSON meta endpoint (speed.cloudflare.com/meta) returns 403 with an empty body." },
+    { "name": "CORS Proxy", "reason": "Only hosted instance in the repo is a dead Heroku free-tier app and requires a POST body; no keyless JSON GET." },
+    { "name": "DownStatus", "reason": "isitdownstatus.com serves an HTML page with no documented public JSON API endpoint." },
+    { "name": "ExtendsClass JSON Storage", "reason": "Reading a JSON bin requires an id from a prior POST-created store; no keyless sample GET returning JSON." },
+    { "name": "Icanhazepoch", "reason": "Service shut down — the endpoint redirects to a major.io notice about the icanhaz extras going offline." },
+    { "name": "Icanhazip", "reason": "Returns plain-text IP (content-type text/plain), not JSON." },
+    { "name": "Image-Charts", "reason": "Renders chart/QR images (PNG/SVG), not JSON responses." },
+    { "name": "ip-fast.com", "reason": "?format=json returns an HTML page with a JS/JWT redirect challenge (anti-bot); no direct JSON without executing JavaScript." },
+    { "name": "Kroki", "reason": "Renders diagrams as images/SVG from text input, not JSON responses." },
+    { "name": "QR code", "reason": "qrtag.net returns QR-code images, not JSON responses." },
+    { "name": "QuickChart", "reason": "Generates chart/graph images; no keyless GET endpoint returning JSON." },
+    { "name": "RSS feed to JSON", "reason": "Vercel deployment is dead (404 on /api); the domain now redirects to unrelated casino spam content." },
+    { "name": "Sonar", "reason": "Project Sonar API host sonar.omnisint.io no longer resolves (DNS failure); service discontinued." },
+    { "name": "Statically", "reason": "File-serving CDN (images, JS, CSS from GitHub/npm), not a JSON data API." }
+  ]
+}

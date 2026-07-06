@@ -1,0 +1,1497 @@
+{
+  "batch": 26,
+  "verified": [
+    {
+      "name": "TheCocktailDB",
+      "slug": "thecocktaildb",
+      "emoji": "🍸",
+      "tagline": "Cocktail recipes, ingredients and glassware",
+      "description": "TheCocktailDB is a crowd-sourced drinks database with the free test key `1` embedded in the URL path. Pull a random cocktail, search by name, or filter by ingredient — every response is JSON with measures, instructions and thumbnail images. Sister project to TheMealDB.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://www.thecocktaildb.com/api/json/v1/1",
+      "baseUrl": "https://www.thecocktaildb.com/api/json/v1/1",
+      "sampleEndpoint": "/random.php",
+      "latencyMs": 791,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "drinks": [
+          {
+            "idDrink": "11053",
+            "strDrink": "Arise My Love",
+            "strDrinkAlternate": null,
+            "strTags": null,
+            "strVideo": null,
+            "strCategory": "Ordinary Drink",
+            "strIBA": null,
+            "strAlcoholic": "Alcoholic"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "D&D 5e API",
+      "slug": "d-d-5e-api",
+      "emoji": "🐉",
+      "tagline": "Dungeons & Dragons 5e spells, monsters and classes",
+      "description": "The D&D 5e API serves the System Reference Document as linked JSON: spells, monsters, classes, equipment and rules. No key, permissive CORS, and stable resource URLs — the go-to backend for character builders and homebrew tools.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.dnd5eapi.co/api",
+      "baseUrl": "https://www.dnd5eapi.co/api",
+      "sampleEndpoint": "/spells/fireball",
+      "latencyMs": 1450,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "index": "fireball",
+        "name": "Fireball",
+        "desc": [
+          "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.",
+          "The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+        ],
+        "higher_level": [
+          "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+        ],
+        "range": "150 feet",
+        "components": [
+          "V",
+          "S"
+        ],
+        "material": "A tiny ball of bat guano and sulfur.",
+        "ritual": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Magic: The Gathering",
+      "slug": "magic-the-gathering",
+      "emoji": "🪄",
+      "tagline": "Magic: The Gathering cards, sets and types",
+      "description": "The magicthegathering.io API exposes every MTG card with mana cost, rulings, set and multiverse IDs. Paginated JSON, no authentication, and generous rate limits for hobby projects. Useful for deck builders and card-price companions.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.magicthegathering.io/v1",
+      "baseUrl": "https://api.magicthegathering.io/v1",
+      "sampleEndpoint": "/cards?name=Opt&pageSize=1",
+      "latencyMs": 730,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cards": [
+          {
+            "name": "Ornithopter",
+            "manaCost": "{0}",
+            "cmc": 0,
+            "type": "Artifact Creature — Thopter",
+            "types": [
+              "Artifact",
+              "Creature"
+            ],
+            "subtypes": [
+              "Thopter"
+            ],
+            "rarity": "Uncommon",
+            "set": "10E"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "iTunes Search",
+      "slug": "itunes-search",
+      "emoji": "🎵",
+      "tagline": "Search Apple Music, iTunes, App Store and podcasts",
+      "description": "Apple's public iTunes Search API returns music, apps, movies, books and podcasts as JSON with artwork URLs and preview links. No key required; keep requests modest per Apple's guidance. Widely used for music metadata and podcast directories.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://itunes.apple.com",
+      "baseUrl": "https://itunes.apple.com",
+      "sampleEndpoint": "/search?term=beatles&limit=1",
+      "latencyMs": 531,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "resultCount": 1,
+        "results": [
+          {
+            "wrapperType": "audiobook",
+            "artistId": 160778930,
+            "collectionId": 1439484338,
+            "artistName": "Bob Spitz",
+            "collectionName": "The Beatles (Abridged)",
+            "collectionCensoredName": "The Beatles (Abridged)",
+            "artistViewUrl": "https://books.apple.com/us/author/bob-spitz/id160778930?uo=4",
+            "collectionViewUrl": "https://books.apple.com/us/audiobook/the-beatles-abridged/id1439484338?uo=4"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Deezer",
+      "slug": "deezer",
+      "emoji": "🎧",
+      "tagline": "Music catalog — tracks, albums, artists and previews",
+      "description": "Deezer's public API returns track, album and artist metadata with 30-second preview URLs. Search and object-lookup routes need no key; OAuth is only for user playlists. CORS is closed, so call it server-side. Great for music-discovery UIs.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://api.deezer.com",
+      "baseUrl": "https://api.deezer.com",
+      "sampleEndpoint": "/search?q=eminem&limit=1",
+      "latencyMs": 510,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": 916424,
+            "readable": true,
+            "title": "Without Me",
+            "title_short": "Without Me",
+            "title_version": "",
+            "isrc": "USIR10211038",
+            "link": "https://www.deezer.com/track/916424",
+            "duration": 290
+          }
+        ],
+        "total": 209,
+        "next": "https://api.deezer.com/search?q=eminem&limit=1&index=1"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Urban Dictionary",
+      "slug": "urban-dictionary",
+      "emoji": "📖",
+      "tagline": "Crowd-sourced slang definitions and examples",
+      "description": "The unofficial-but-stable Urban Dictionary API returns definitions, usage examples and up/down votes for any term. Keyless JSON; note that content is user-submitted and may be NSFW, so filter before showing to general audiences.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://api.urbandictionary.com/v0",
+      "baseUrl": "https://api.urbandictionary.com/v0",
+      "sampleEndpoint": "/define?term=api",
+      "latencyMs": 639,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "list": [
+          {
+            "author": "Nathanmx",
+            "current_vote": "",
+            "defid": 689981,
+            "definition": "API = application programming interface\r\n\r\nAn API is a series of functions that programs can use to make the operating system do their dirty work. Using [Windows] APIs, for example, a program can open [windows], files, and message boxes--as well as perform more complicated tasks--by passing a single instruction. [Windows] has several classes of APIs that deal with telephony, messaging, and other issues.",
+            "example": "[Windows] uses an api called the Win32 API.  You can [access] many command [via] the command prompt. Start >> Run >> Type in \"command\" or \"cmd\"",
+            "permalink": "https://www.urbandictionary.com/define.php?term=API&defid=689981",
+            "thumbs_down": 0,
+            "thumbs_up": 0
+          },
+          {
+            "author": "Tyler Menezes",
+            "current_vote": "",
+            "defid": 2650554,
+            "definition": "Adaptive [Pie] Interface. Used by various sites to interact with their [pie] servers. Urban Dictionary, for example, has created APIs so that developers with no [pie] servers of their own my serve pies to customers at low rates.",
+            "example": "$[urb] = new Urban::API;\r\n$[urb]->ServePie('me');\r\n$[urb]->ThankYou();\r\n$bill = $urn->I'llTakeTheBill;\r\ntry{\r\n$bill->pay();\r\n}or{\r\nRUNAWAY();\r\n}",
+            "permalink": "https://www.urbandictionary.com/define.php?term=API&defid=2650554",
+            "thumbs_down": 0,
+            "thumbs_up": 0
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TimeAPI.io",
+      "slug": "timeapi-io",
+      "emoji": "🕐",
+      "tagline": "Current time, time-zone and conversion by zone",
+      "description": "TimeAPI.io returns the current date-time for any IANA time zone plus conversion, day-of-week and DST helpers. Free and keyless JSON — a modern option for scheduling apps that need reliable time-zone math without bundling tzdata.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://timeapi.io/api",
+      "baseUrl": "https://timeapi.io/api",
+      "sampleEndpoint": "/Time/current/zone?timeZone=UTC",
+      "latencyMs": 427,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "year": 2026,
+        "month": 7,
+        "day": 5,
+        "hour": 15,
+        "minute": 37,
+        "seconds": 25,
+        "milliSeconds": 327,
+        "dateTime": "2026-07-05T15:37:25.3273451"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Binance",
+      "slug": "binance",
+      "emoji": "📈",
+      "tagline": "Live crypto spot prices and market data",
+      "description": "Binance's public market-data endpoints return spot prices, order books and klines without an API key (keys are only for trading). The /ticker/price route is the lightest quote check. Respect the weight-based rate limits in production.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.binance.com/api/v3",
+      "baseUrl": "https://api.binance.com/api/v3",
+      "sampleEndpoint": "/ticker/price?symbol=BTCUSDT",
+      "latencyMs": 624,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "symbol": "BTCUSDT",
+        "price": "62834.45000000"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Coinbase",
+      "slug": "coinbase",
+      "emoji": "🪙",
+      "tagline": "Crypto and fiat exchange rates from Coinbase",
+      "description": "Coinbase's public v2 endpoints return exchange rates, spot/buy/sell prices and currency lists with no authentication. Pass any base currency to /exchange-rates for a full cross-rate map. Ideal for lightweight crypto tickers and converters.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.coinbase.com/v2",
+      "baseUrl": "https://api.coinbase.com/v2",
+      "sampleEndpoint": "/exchange-rates?currency=BTC",
+      "latencyMs": 444,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "currency": "BTC",
+          "rates": {
+            "00": "16399121.881394959641624516",
+            "1INCH": "875099.720829489625627842",
+            "2Z": "877054.080491894913559387",
+            "A8": "11587520.568290730958865651",
+            "AAVE": "706.2146892655367232",
+            "ABT": "301016.738609112709305355",
+            "ACH": "13962622.914349276972223886",
+            "ACS": "489181527.669524551832730566"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Kraken",
+      "slug": "kraken",
+      "emoji": "🐙",
+      "tagline": "Public crypto ticker, order book and OHLC data",
+      "description": "Kraken's public REST endpoints expose ticker, depth, spread and OHLC data keyless (auth is trading-only). Responses wrap payloads in an {error, result} envelope. A solid, well-documented source for crypto price feeds.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://api.kraken.com/0/public",
+      "baseUrl": "https://api.kraken.com/0/public",
+      "sampleEndpoint": "/Ticker?pair=XBTUSD",
+      "latencyMs": 156,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": [],
+        "result": {
+          "XXBTZUSD": {
+            "a": [
+              "62784.60000",
+              "6"
+            ],
+            "b": [
+              "62784.50000",
+              "1"
+            ],
+            "c": [
+              "62800.00000",
+              "0.00031965"
+            ],
+            "v": [
+              "424.99883968",
+              "1150.49594080"
+            ],
+            "p": [
+              "62722.62802",
+              "62972.24126"
+            ],
+            "t": [
+              18278,
+              32925
+            ],
+            "l": [
+              "62393.30000",
+              "62393.30000"
+            ],
+            "h": [
+              "63085.40000",
+              "63443.40000"
+            ]
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Blockchain.info",
+      "slug": "blockchain-info",
+      "emoji": "🔗",
+      "tagline": "Bitcoin price across dozens of fiat currencies",
+      "description": "Blockchain.info's /ticker returns the current BTC price — 15-minute delayed plus buy/sell — across 30+ fiat currencies as JSON. Keyless and long-lived; the wider Blockchain Data API also exposes blocks and transactions for on-chain explorers.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://blockchain.info",
+      "baseUrl": "https://blockchain.info",
+      "sampleEndpoint": "/ticker",
+      "latencyMs": 213,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ARS": {
+          "15m": 93466680.96,
+          "last": 93466680.96,
+          "buy": 93466680.96,
+          "sell": 93466680.96,
+          "symbol": "ARS"
+        },
+        "AUD": {
+          "15m": 90468.27,
+          "last": 90468.27,
+          "buy": 90468.27,
+          "sell": 90468.27,
+          "symbol": "AUD"
+        },
+        "BRL": {
+          "15m": 325630.82,
+          "last": 325630.82,
+          "buy": 325630.82,
+          "sell": 325630.82,
+          "symbol": "BRL"
+        },
+        "CAD": {
+          "15m": 89177.23,
+          "last": 89177.23,
+          "buy": 89177.23,
+          "sell": 89177.23,
+          "symbol": "CAD"
+        },
+        "CHF": {
+          "15m": 50306.27,
+          "last": 50306.27,
+          "buy": 50306.27,
+          "sell": 50306.27,
+          "symbol": "CHF"
+        },
+        "CLP": {
+          "15m": 58131606.78,
+          "last": 58131606.78,
+          "buy": 58131606.78,
+          "sell": 58131606.78,
+          "symbol": "CLP"
+        },
+        "CNY": {
+          "15m": 426074.92,
+          "last": 426074.92,
+          "buy": 426074.92,
+          "sell": 426074.92,
+          "symbol": "CNY"
+        },
+        "CZK": {
+          "15m": 1327952.25,
+          "last": 1327952.25,
+          "buy": 1327952.25,
+          "sell": 1327952.25,
+          "symbol": "CZK"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "BigDataCloud Geocode",
+      "slug": "bigdatacloud-geocode",
+      "emoji": "📌",
+      "tagline": "Client-side reverse geocoding — no key",
+      "description": "BigDataCloud's reverse-geocode-client endpoint turns latitude/longitude into locality, city and country without an API key (it is free for client-side use). Returns localized place names and the admin hierarchy — handy for \"where am I\" features and location labels.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.bigdatacloud.net/data",
+      "baseUrl": "https://api.bigdatacloud.net/data",
+      "sampleEndpoint": "/reverse-geocode-client?latitude=51.5&longitude=-0.1",
+      "latencyMs": 390,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "latitude": 51.5,
+        "lookupSource": "coordinates",
+        "longitude": -0.1,
+        "localityLanguageRequested": "en",
+        "continent": "Europe",
+        "continentCode": "EU",
+        "countryName": "United Kingdom of Great Britain and Northern Ireland (the)",
+        "countryCode": "GB"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ipwho.is",
+      "slug": "ipwho-is",
+      "emoji": "🌐",
+      "tagline": "IP geolocation with connection and timezone data",
+      "description": "ipwho.is resolves any IPv4/IPv6 (or the caller IP at the root path) to country, city, coordinates, timezone, currency and ASN. Free, keyless JSON with a `success` flag and generous limits — a drop-in for the many keyed IP-lookup services.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://ipwho.is",
+      "baseUrl": "https://ipwho.is",
+      "sampleEndpoint": "/8.8.8.8",
+      "latencyMs": 446,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "success": true,
+        "type": "IPv4",
+        "continent": "North America",
+        "continent_code": "NA",
+        "country": "United States",
+        "country_code": "US",
+        "region": "California"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Elden Ring API",
+      "slug": "elden-ring-api",
+      "emoji": "⚔️",
+      "tagline": "Elden Ring items, bosses, weapons and NPCs",
+      "description": "A community Elden Ring database exposing bosses, weapons, armor, spells, classes and NPCs as paginated JSON. No key; responses carry a count/total envelope for easy paging. Popular for build planners and wiki mirrors.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://eldenring.fanapis.com/api",
+      "baseUrl": "https://eldenring.fanapis.com/api",
+      "sampleEndpoint": "/classes?limit=1",
+      "latencyMs": 230,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "count": 1,
+        "total": 14,
+        "data": [
+          {
+            "id": "17f69d71826l0i32gkm3ndn3kywxqj",
+            "name": "Hero",
+            "image": "https://eldenring.fanapis.com/images/classes/17f69d71826l0i32gkm3ndn3kywxqj.png",
+            "description": "A stalwart Hero, at home with a battleaxe, descended from a badlands chieftain",
+            "stats": {
+              "level": "7",
+              "vigor": "14",
+              "mind": "9",
+              "endurance": "12",
+              "strength": "16",
+              "dexterity": "9",
+              "intelligence": "7",
+              "faith": "8"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "SampleAPIs",
+      "slug": "sampleapis",
+      "emoji": "🧪",
+      "tagline": "Ready-made mock datasets for prototyping",
+      "description": "SampleAPIs serves themed fake datasets — coffee, cocktails, movies, cars, football and more — as static JSON arrays. No key, CORS-open, and perfect for wiring up a frontend before the real backend exists.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.sampleapis.com",
+      "baseUrl": "https://api.sampleapis.com",
+      "sampleEndpoint": "/coffee/hot",
+      "latencyMs": 702,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "title": "Latte",
+          "description": "Som den mest populära kaffedrycken där ute består latte av en skvätt espresso och ångad mjölk med bara en gnutta skum. Den kan beställas utan smak eller med smak av allt från vanilj till pumpa kryddor.",
+          "ingredients": [
+            "Espresso",
+            "Ångad mjölk"
+          ],
+          "image": "https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhdHRlfGVufDB8fDB8fHww",
+          "id": 2
+        },
+        {
+          "title": "Caramel Latte",
+          "description": "Om du gillar latte med en speciell smak kan karamell latte vara det bästa alternativet för att ge dig en upplevelse av den naturliga sötman och krämigheten hos ångad mjölk och karamell.",
+          "ingredients": [
+            "Espresso",
+            "Ångad mjölk"
+          ],
+          "image": "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "id": 3
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Affirmations.dev",
+      "slug": "affirmations-dev",
+      "emoji": "💪",
+      "tagline": "Random positive affirmation as tiny JSON",
+      "description": "affirmations.dev returns a single uplifting affirmation per request in a one-field JSON body. No key, CORS-open, and about as simple as an API gets — a friendly hello-world fetch or a daily-motivation widget.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://www.affirmations.dev",
+      "baseUrl": "https://www.affirmations.dev",
+      "sampleEndpoint": "/",
+      "latencyMs": 718,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "affirmation": "Nothing is impossible. The word itself says 'I’m possible!'"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "FBI Wanted",
+      "slug": "fbi-wanted",
+      "emoji": "🕵️",
+      "tagline": "FBI Most Wanted list as structured JSON",
+      "description": "The FBI's public Wanted API returns current cases — fugitives, missing persons and seeking-information notices — with photos, descriptions, subjects and field offices. No key; paginate with page/pageSize. Official US government open data.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://api.fbi.gov",
+      "baseUrl": "https://api.fbi.gov",
+      "sampleEndpoint": "/wanted/v1/list",
+      "latencyMs": 120,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 1199,
+        "items": [
+          {
+            "files": [
+              {
+                "url": "https://www.fbi.gov/wanted/seeking-info/patrick-carlow-sr/download.pdf",
+                "name": "English"
+              }
+            ],
+            "age_range": null,
+            "uid": "cdb8134918884264bee2a5c1296c3750",
+            "weight": null,
+            "occupations": null,
+            "field_offices": [
+              "minneapolis"
+            ],
+            "locations": null,
+            "reward_text": "The FBI is offering a reward of up to $25,000 for information leading to the arrest and conviction of the individual(s) responsible for the death of Patrick Carlow, Sr."
+          },
+          {
+            "files": [
+              {
+                "url": "https://www.fbi.gov/wanted/additional/alberto-perez-elias/download.pdf",
+                "name": "English"
+              }
+            ],
+            "age_range": null,
+            "uid": "3992cf07e26848bab7fd7b6bb58f60a2",
+            "weight": "150 pounds",
+            "occupations": null,
+            "field_offices": [
+              "tampa"
+            ],
+            "locations": null,
+            "reward_text": null
+          }
+        ],
+        "page": 1
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TheAudioDB",
+      "slug": "theaudiodb",
+      "emoji": "🎶",
+      "tagline": "Artist, album and track metadata with artwork",
+      "description": "TheAudioDB is a community music-metadata database with the free test key `2` in the path. Search artists, list albums and tracks, and pull banners, logos and biographies. Sister site to TheSportsDB and TheMealDB.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://www.theaudiodb.com/api/v1/json/2",
+      "baseUrl": "https://www.theaudiodb.com/api/v1/json/2",
+      "sampleEndpoint": "/search.php?s=coldplay",
+      "latencyMs": 319,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "artists": [
+          {
+            "idArtist": "111239",
+            "strArtist": "Coldplay",
+            "strArtistStripped": null,
+            "strArtistAlternate": "",
+            "strLabel": "Parlophone",
+            "idLabel": "45114",
+            "intFormedYear": "1996",
+            "intBornYear": "1996"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ExchangeRate-API (open)",
+      "slug": "exchangerate-api-open",
+      "emoji": "💱",
+      "tagline": "Daily fiat exchange rates — open, no key",
+      "description": "The open ExchangeRate-API endpoint returns daily-updated fiat rates for 160+ currencies with no key or signup. One GET on /latest/{base} yields the full cross-rate table plus next-update timestamps. Good for converters that can tolerate daily granularity.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://open.er-api.com/v6",
+      "baseUrl": "https://open.er-api.com/v6",
+      "sampleEndpoint": "/latest/USD",
+      "latencyMs": 249,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "result": "success",
+        "provider": "https://www.exchangerate-api.com",
+        "documentation": "https://www.exchangerate-api.com/docs/free",
+        "terms_of_use": "https://www.exchangerate-api.com/terms",
+        "time_last_update_unix": 1783209751,
+        "time_last_update_utc": "Sun, 05 Jul 2026 00:02:31 +0000",
+        "time_next_update_unix": 1783297501,
+        "time_next_update_utc": "Mon, 06 Jul 2026 00:25:01 +0000"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "wger Workout",
+      "slug": "wger-workout",
+      "emoji": "🏋️",
+      "tagline": "Open exercise and nutrition database",
+      "description": "wger is an open-source workout manager whose REST API exposes exercises, muscles, equipment and ingredients. Read endpoints are public and keyless (append format=json); a token is only needed to write to a user account. Great for fitness-app prototypes.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://wger.de/api/v2",
+      "baseUrl": "https://wger.de/api/v2",
+      "sampleEndpoint": "/exercise/?format=json&limit=1",
+      "latencyMs": 297,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 818,
+        "next": "https://wger.de/api/v2/exercise/?format=json&limit=1&offset=1",
+        "previous": null,
+        "results": [
+          {
+            "id": 9,
+            "uuid": "1b020b3a-3732-4c7e-92fd-a0cec90ed69b",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:39:48.517525+01:00",
+            "category": 10,
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+              10
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Zenodo",
+      "slug": "zenodo",
+      "emoji": "🔬",
+      "tagline": "Search open research datasets and publications",
+      "description": "Zenodo (run by CERN) hosts open datasets, papers and software with DOIs. Its API searches and fetches records with metadata, files and citation info — keyless for read access, though a token raises rate limits. A front door to open-science outputs.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://zenodo.org/api",
+      "baseUrl": "https://zenodo.org/api",
+      "sampleEndpoint": "/records?size=1",
+      "latencyMs": 1331,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hits": {
+          "hits": [
+            {
+              "created": "2026-07-05T15:36:21.675487+00:00",
+              "modified": "2026-07-05T15:36:22.036973+00:00",
+              "id": 21207429,
+              "conceptrecid": "21207253",
+              "doi": "10.5281/zenodo.21207429",
+              "conceptdoi": "10.5281/zenodo.21207253",
+              "doi_url": "https://doi.org/10.5281/zenodo.21207429",
+              "metadata": {
+                "title": "Mendelian Randomization Predicts Drug-Target Success Only for Abundance-Modulating Mechanisms: A Pre-Registered, Outcome-Blind Evaluation",
+                "doi": "10.5281/zenodo.21207429",
+                "publication_date": "2026-07-05",
+                "description": "<p>Mendelian randomization (MR) using cis-protein quantitative trait loci (pQTLs) is widely used to prioritize drug targets, yet its predictive validity has never been evaluated with respect to the mechanism by which a drug acts on its target. We present a pre-registered, outcome-blind evaluation of a frozen, zero-parameter cis-pQTL MR classifier against 195 Phase III drug-target pairs across 24 diseases, drawn from UKB-PPP and EpiGraphDB instruments matched to Open Targets. Of these, 138 pairs (71%) had evaluable MR results; 57 were missing due to instrument-GWAS panel incompatibility.</p>\n<p>Our primary finding is a pre-registered mechanism dissociation: MR is uninformative for activity-blocking drug targets (balanced accuracy [BA] = 0.511, 90% CI [0.456, 0.576]; n = 76), confirming a priori that a genetic instrument for protein abundance cannot detect drugs that inhibit protein function without changing protein level. For abundance-modulating targets, MR trends positive (BA = 0.590, 90% CI [0.496, 0.691]; n = 59) but the confidence interval includes chance, and missingness disproportionately depletes successes from the analyzed set. A continuous ROC analysis provides the strongest pooled evidence of discrimination (AUC = 0.595, permutation p = 0.038). Leave-one-disease-out analysis confirms no single disease drives the result (BA range [0.538, 0.584]). The pooled BA of 0.559 ([0.503, 0.617]) barely clears chance and drops to 0.533 under worst-plausible missingness assumptions.</p>\n<p>The contribution is the dissociation itself: MR-based target validation has a definable domain of validity set by drug mechanism, and the boundary between informative and uninformative strata is a structural property of the genetic instrument. Within the abundance domain, a significant MR result is a positive prioritization signal (PPV = 0.56); outside it, MR is silent by construction.</p>",
+                "access_right": "open",
+                "creators": [
+                  {
+                    "name": "Tower, Elliot",
+                    "affiliation": null,
+                    "orcid": "0000-0001-7004-8884"
+                  }
+                ],
+                "keywords": [
+                  "drug target validation",
+                  "cis-pQTL"
+                ],
+                "resource_type": {
+                  "title": "Preprint",
+                  "type": "publication",
+                  "subtype": "preprint"
+                }
+              }
+            }
+          ],
+          "total": 6861368
+        },
+        "aggregations": {
+          "publication_date": {
+            "buckets": [
+              {
+                "key": "2000",
+                "doc_count": 11710,
+                "label": "2000",
+                "is_selected": false
+              },
+              {
+                "key": "2001",
+                "doc_count": 14210,
+                "label": "2001",
+                "is_selected": false
+              }
+            ],
+            "label": "Publication date"
+          },
+          "access_status": {
+            "buckets": [
+              {
+                "key": "open",
+                "doc_count": 6619459,
+                "label": "Open",
+                "is_selected": false
+              },
+              {
+                "key": "restricted",
+                "doc_count": 231900,
+                "label": "Restricted",
+                "is_selected": false
+              }
+            ],
+            "label": "Access status"
+          },
+          "resource_type": {
+            "buckets": [
+              {
+                "key": "publication",
+                "doc_count": 4482400,
+                "label": "Publication",
+                "is_selected": false,
+                "inner": {
+                  "buckets": [
+                    {
+                      "key": "publication-article",
+                      "doc_count": 2377756,
+                      "label": "Journal article",
+                      "is_selected": false
+                    },
+                    {
+                      "key": "publication-taxonomictreatment",
+                      "doc_count": 707031,
+                      "label": "Taxonomic treatment",
+                      "is_selected": false
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "image",
+                "doc_count": 1221110,
+                "label": "Image",
+                "is_selected": false,
+                "inner": {
+                  "buckets": [
+                    {
+                      "key": "image-figure",
+                      "doc_count": 834446,
+                      "label": "Figure",
+                      "is_selected": false
+                    },
+                    {
+                      "key": "image-photo",
+                      "doc_count": 363620,
+                      "label": "Photo",
+                      "is_selected": false
+                    }
+                  ]
+                }
+              }
+            ],
+            "label": "Resource types"
+          },
+          "subject": {
+            "buckets": [
+              {
+                "key": "Biodiversity",
+                "doc_count": 2149642,
+                "label": "Biodiversity",
+                "is_selected": false
+              },
+              {
+                "key": "Taxonomy",
+                "doc_count": 1814489,
+                "label": "Taxonomy",
+                "is_selected": false
+              }
+            ],
+            "label": "Subjects"
+          },
+          "file_type": {
+            "buckets": [
+              {
+                "key": "pdf",
+                "doc_count": 3633389,
+                "label": "PDF",
+                "is_selected": false
+              },
+              {
+                "key": "png",
+                "doc_count": 760182,
+                "label": "PNG",
+                "is_selected": false
+              }
+            ],
+            "label": "File type"
+          }
+        },
+        "links": {
+          "self": "https://zenodo.org/api/records?page=1&size=1&sort=newest",
+          "next": "https://zenodo.org/api/records?page=2&size=1&sort=newest"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "GBIF",
+      "slug": "gbif",
+      "emoji": "🦋",
+      "tagline": "Global biodiversity — species and occurrences",
+      "description": "The Global Biodiversity Information Facility API serves taxonomic names, species records and billions of occurrence points contributed by museums and researchers worldwide. Keyless JSON with rich filtering — the standard source for biodiversity and mapping tools.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://api.gbif.org/v1",
+      "baseUrl": "https://api.gbif.org/v1",
+      "sampleEndpoint": "/species?q=Puma&limit=1",
+      "latencyMs": 424,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "offset": 0,
+        "limit": 1,
+        "endOfRecords": false,
+        "results": [
+          {
+            "key": 0,
+            "nubKey": 0,
+            "nameKey": 130332213,
+            "taxonID": "gbif:0",
+            "sourceTaxonKey": 0,
+            "kingdom": "incertae sedis",
+            "kingdomKey": 0,
+            "datasetKey": "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "iNaturalist",
+      "slug": "inaturalist",
+      "emoji": "🐾",
+      "tagline": "Species, observations and photos from iNaturalist",
+      "description": "iNaturalist's API exposes crowd-sourced wildlife observations, taxa and identification photos. Read endpoints are public and keyless (OAuth only for posting). Filter by taxon, place or user — ideal for nature-ID apps and citizen-science dashboards.",
+      "sourceCategory": "Animals",
+      "docsUrl": "https://api.inaturalist.org/v1",
+      "baseUrl": "https://api.inaturalist.org/v1",
+      "sampleEndpoint": "/taxa?q=fox&per_page=1",
+      "latencyMs": 997,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total_results": 623,
+        "page": 1,
+        "per_page": 1,
+        "results": [
+          {
+            "id": 42043,
+            "rank": "family",
+            "rank_level": 30,
+            "iconic_taxon_id": 40151,
+            "ancestor_ids": [
+              48460,
+              1
+            ],
+            "is_active": true,
+            "name": "Canidae",
+            "parent_id": 41573
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Platzi Fake Store",
+      "slug": "platzi-fake-store",
+      "emoji": "🛒",
+      "tagline": "Fake e-commerce API — products, users, auth",
+      "description": "The Platzi Fake Store API provides realistic e-commerce data — products, categories, users and JWT auth — with full CRUD for practice. Keyless and CORS-open; changes reset periodically. A step up from read-only mock APIs for building shop demos.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.escuelajs.co/api/v1",
+      "baseUrl": "https://api.escuelajs.co/api/v1",
+      "sampleEndpoint": "/products?limit=1",
+      "latencyMs": 930,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 15,
+          "title": "My Product 177579",
+          "slug": "my-product-177579",
+          "price": 101,
+          "description": "It's innovative product",
+          "category": {
+            "id": 1,
+            "name": "Electronic Updated",
+            "slug": "electronic-updated",
+            "image": "https://placeimg.com/640/480/electronics",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T15:26:13.000Z"
+          },
+          "images": [
+            "https://placehold.co/16732x4531"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        },
+        {
+          "id": 16,
+          "title": "Classic White Tee - Timeless Style and Comfort",
+          "slug": "classic-white-tee-timeless-style-and-comfort",
+          "price": 73,
+          "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+          "category": {
+            "id": 1,
+            "name": "Electronic Updated",
+            "slug": "electronic-updated",
+            "image": "https://placeimg.com/640/480/electronics",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T15:26:13.000Z"
+          },
+          "images": [
+            "https://i.imgur.com/Y54Bt8J.jpeg",
+            "https://i.imgur.com/SZPDSgy.jpeg"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "restful-api.dev",
+      "slug": "restful-api-dev",
+      "emoji": "🧰",
+      "tagline": "Free CRUD sandbox for objects — no signup",
+      "description": "restful-api.dev is a free hosted REST sandbox: GET a list of sample objects and POST/PUT/DELETE your own for testing HTTP clients. No key or signup, JSON throughout. Handy for tutorials, Postman demos and integration tests.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.restful-api.dev",
+      "baseUrl": "https://api.restful-api.dev",
+      "sampleEndpoint": "/objects",
+      "latencyMs": 534,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "1",
+          "name": "Google Pixel 6 Pro",
+          "data": {
+            "color": "Cloudy White",
+            "capacity": "128 GB"
+          }
+        },
+        {
+          "id": "2",
+          "name": "Apple iPhone 12 Mini, 256GB, Blue",
+          "data": null
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Lichess",
+      "slug": "lichess",
+      "emoji": "♟️",
+      "tagline": "Open chess data — players, games and puzzles",
+      "description": "Lichess exposes profiles, ratings, game exports (PGN/JSON) and tournaments through a public API. Many read endpoints need no token (one raises rate limits and unlocks account routes). The go-to open alternative to Chess.com for chess tooling.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://lichess.org/api",
+      "baseUrl": "https://lichess.org/api",
+      "sampleEndpoint": "/user/thibault",
+      "latencyMs": 205,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "thibault",
+        "username": "thibault",
+        "perfs": {
+          "ultraBullet": {
+            "games": 3,
+            "rating": 1688,
+            "rd": 359,
+            "prog": 0,
+            "prov": true
+          },
+          "bullet": {
+            "games": 7482,
+            "rating": 1785,
+            "rd": 92,
+            "prog": 12
+          },
+          "blitz": {
+            "games": 11625,
+            "rating": 1760,
+            "rd": 51,
+            "prog": -31
+          },
+          "rapid": {
+            "games": 912,
+            "rating": 1814,
+            "rd": 58,
+            "prog": -74
+          },
+          "classical": {
+            "games": 25,
+            "rating": 1858,
+            "rd": 244,
+            "prog": 48,
+            "prov": true
+          },
+          "correspondence": {
+            "games": 377,
+            "rating": 1942,
+            "rd": 169,
+            "prog": -12,
+            "prov": true
+          },
+          "chess960": {
+            "games": 348,
+            "rating": 1551,
+            "rd": 267,
+            "prog": 61,
+            "prov": true
+          },
+          "kingOfTheHill": {
+            "games": 94,
+            "rating": 1744,
+            "rd": 287,
+            "prog": 14,
+            "prov": true
+          }
+        },
+        "flair": "nature.seedling",
+        "patron": true,
+        "patronColor": 10,
+        "verified": true,
+        "createdAt": 1290415680000
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Studio Ghibli",
+      "reason": "already in seed"
+    },
+    {
+      "name": "NASA APOD",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library",
+      "reason": "already in seed"
+    },
+    {
+      "name": "REST Countries",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Balldontlie",
+      "reason": "probe failed HTTP 401"
+    },
+    {
+      "name": "Football-Data.org",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TheSportsDB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Food Facts",
+      "reason": "already in seed"
+    },
+    {
+      "name": "7Timer!",
+      "reason": "already in seed"
+    },
+    {
+      "name": "IsDayOff",
+      "reason": "probe failed HTTP 200"
+    },
+    {
+      "name": "Abalin Namedays",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Art Institute of Chicago",
+      "reason": "already in seed"
+    },
+    {
+      "name": "EmojiHub",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Cat Facts",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Dog CEO",
+      "reason": "already in seed"
+    },
+    {
+      "name": "RandomDog",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "SWAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Studio Ghibli",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Currency API (fawazahmed0)",
+      "reason": "already in seed"
+    },
+    {
+      "name": "NBP",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Internet Archive",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open-Meteo",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Notify",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Numbers API",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Chuck Norris API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Kanye REST",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Advice Slip",
+      "reason": "already in seed"
+    },
+    {
+      "name": "icanhazdadjoke",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Official Joke API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "UUID.ink",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Public APIs",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Agify",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Genderize",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Nationalize",
+      "reason": "already in seed"
+    },
+    {
+      "name": "ipapi.co",
+      "reason": "already in seed"
+    },
+    {
+      "name": "ip-api.com",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Deck of Cards",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Trivia DB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "The Color API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TheMealDB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Brewery DB",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "World Bank",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Data.gov",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "openFDA",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Covid Act Now",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "Sunrise-Sunset",
+      "reason": "already in seed"
+    },
+    {
+      "name": "USGS Earthquakes",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Charge Map",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "Transport API",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "ViaCEP",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Zippopotam",
+      "reason": "already in seed"
+    },
+    {
+      "name": "postcodes.io",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Adoptium",
+      "reason": "already in seed"
+    },
+    {
+      "name": "jsDelivr",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "STAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Rick and Morty API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "SWAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "TVMaze",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Open Library Search",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Digimon API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Harry Potter API",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Thirukkural",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Bored API",
+      "reason": "probe failed HTTP err TypeError: fetch failed"
+    },
+    {
+      "name": "Catboys",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Nekos.best",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Waifu.im",
+      "reason": "probe failed HTTP 403"
+    },
+    {
+      "name": "trace.moe",
+      "reason": "already in seed"
+    },
+    {
+      "name": "Jikan",
+      "reason": "already in seed"
+    },
+    {
+      "name": "AnimeChan",
+      "reason": "probe failed HTTP 404"
+    },
+    {
+      "name": "Kitsu",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    },
+    {
+      "name": "PokéAPI",
+      "reason": "already in seed"
+    }
+  ]
+}

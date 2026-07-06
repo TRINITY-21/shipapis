@@ -1,0 +1,366 @@
+{
+  "batch": 12,
+  "verified": [
+    {
+      "name": "MY IP",
+      "slug": "my-ip",
+      "emoji": "📍",
+      "tagline": "Your public IP plus country, in three JSON fields.",
+      "description": "A no-frills lookup that echoes back the caller's public IP address along with the country name and two-letter code. One GET, no key, no query params required. Handy for quick geo-gating or debugging what address the world actually sees.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://www.myip.com/api-docs/",
+      "baseUrl": "https://api.myip.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 548,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": { "ip": "46.1.3.138", "country": "Turkey", "cc": "TR" },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "npm Registry",
+      "slug": "npm-registry",
+      "emoji": "📦",
+      "tagline": "Read the metadata behind any published npm package.",
+      "description": "The public npm registry answers plain GET requests for any package name and returns its full document: versions, dist-tags, maintainers, dependencies and more. No token is needed for reads and responses are CORS-open. Great for build tools, dashboards, or just checking the latest release of a library.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
+      "baseUrl": "https://registry.npmjs.org",
+      "sampleEndpoint": "/express",
+      "latencyMs": 2863,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "_id": "express",
+        "name": "express",
+        "dist-tags": { "latest": "5.2.1", "latest-4": "4.22.2" },
+        "description": "Fast, unopinionated, minimalist web framework",
+        "license": "MIT",
+        "homepage": "https://expressjs.com/"
+      },
+      "freeTier": "Free (public registry)",
+      "rateLimit": "Unpublished (bulk scraping discouraged)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Free Dictionary",
+      "slug": "free-dictionary",
+      "emoji": "📖",
+      "tagline": "English word definitions, phonetics and audio as JSON.",
+      "description": "Pass a word on the URL and get back an array of entries with definitions, parts of speech, example sentences, synonyms and pronunciation audio links. Keyless and CORS-friendly, drawn from open dictionary data. Individual entries carry their own source licenses (CC BY-SA 4.0 shows up on some).",
+      "sourceCategory": "Dictionaries",
+      "docsUrl": "https://dictionaryapi.dev/",
+      "baseUrl": "https://api.dictionaryapi.dev/api/v2",
+      "sampleEndpoint": "/entries/en/hello",
+      "latencyMs": 812,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "word": "hello",
+        "meanings_partOfSpeech": "noun",
+        "firstDefinition": "\"Hello!\" or an equivalent greeting."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Content under source licenses (CC BY-SA 4.0 seen on entries)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "chucknorris.io",
+      "slug": "chucknorris-io",
+      "emoji": "🥋",
+      "tagline": "Hand-curated Chuck Norris facts, one JSON joke at a time.",
+      "description": "Hit the random endpoint for a single curated Chuck Norris joke returned as tidy JSON with an id, the text, and a shareable URL. Category filtering and free-text search are also on offer. No key, CORS enabled, absurdity guaranteed.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://api.chucknorris.io",
+      "baseUrl": "https://api.chucknorris.io",
+      "sampleEndpoint": "/jokes/random",
+      "latencyMs": 835,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "wsuGu4LHT_uWUrqT9L8jFg",
+        "value": "After drinking 5 cups of coffee, Chuck Norris stepped behind a tree and pissed so hard he knocked a Cessna 172 out of the air in mid flight.",
+        "url": "https://api.chucknorris.io/jokes/wsuGu4LHT_uWUrqT9L8jFg",
+        "categories": []
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Imgflip",
+      "slug": "imgflip",
+      "emoji": "😂",
+      "tagline": "The most popular meme templates as JSON.",
+      "description": "The get_memes endpoint returns Imgflip's current top ~100 meme templates with names, image URLs, dimensions and caption counts. It's fully keyless and CORS-open; actually rendering a captioned meme requires a free Imgflip account. Useful for meme pickers and template galleries.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://imgflip.com/api",
+      "baseUrl": "https://api.imgflip.com",
+      "sampleEndpoint": "/get_memes",
+      "latencyMs": 907,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "data": {
+          "memes": [
+            {
+              "id": "181913649",
+              "name": "Drake Hotline Bling",
+              "url": "https://i.imgflip.com/30b1gx.jpg",
+              "width": 1200,
+              "height": 1200,
+              "box_count": 2
+            }
+          ]
+        }
+      },
+      "freeTier": "Free (get_memes is public; captioning needs a free account)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "get_memes is the only fully keyless endpoint; caption/rendering endpoints need a free account."
+    },
+    {
+      "name": "Random Useless Facts",
+      "slug": "random-useless-facts",
+      "emoji": "🤓",
+      "tagline": "A true-but-pointless fact whenever you ask.",
+      "description": "Returns a single random trivia fact as JSON, complete with source attribution and a permalink. English and German are supported via a language parameter. Keyless, CORS-open, and cheerfully unnecessary.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://uselessfacts.jsph.pl/",
+      "baseUrl": "https://uselessfacts.jsph.pl/api/v2",
+      "sampleEndpoint": "/facts/random",
+      "latencyMs": 928,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": "06ebc654e87e8fc4630233516161234f",
+        "text": "There are over 58 million dogs in the US",
+        "source": "djtech.net",
+        "language": "en"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "MailCheck.ai",
+      "slug": "mailcheck-ai",
+      "emoji": "🛡️",
+      "tagline": "Flag disposable and throwaway email domains.",
+      "description": "Give it a domain and it reports whether that domain is disposable, whether it resolves MX records, and related signals like SPF and DMARC posture. Aimed at stopping temporary-inbox signups before they happen. Keyless for basic use and CORS-open.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://www.mailcheck.ai/#documentation",
+      "baseUrl": "https://api.mailcheck.ai",
+      "sampleEndpoint": "/domain/mailinator.com",
+      "latencyMs": 1382,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "domain": "mailinator.com",
+        "mx": true,
+        "disposable": true,
+        "public_domain": false,
+        "did_you_mean": null
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Guerrilla Mail",
+      "slug": "guerrilla-mail",
+      "emoji": "📨",
+      "tagline": "Spin up a throwaway inbox over a plain GET.",
+      "description": "The AJAX API hands you a fresh disposable email address and a session token, then lets you poll that inbox for incoming messages. No account or key is needed to grab an address. Useful for exercising signup and verification flows in tests.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://www.guerrillamail.com/GuerrillaMailAPI.html",
+      "baseUrl": "https://api.guerrillamail.com",
+      "sampleEndpoint": "/ajax.php?f=get_email_address",
+      "latencyMs": 1041,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "email_addr": "vldzpjyi@guerrillamailblock.com",
+        "email_timestamp": 1783247013,
+        "alias": "xtemjl+4pwntxolwm6tk",
+        "sid_token": "tsfvijqkfnf51co0bg0d5n6cd7"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Address is ephemeral; the returned sid_token ties follow-up inbox polls to the session."
+    },
+    {
+      "name": "Serialif Color",
+      "slug": "serialif-color",
+      "emoji": "🎨",
+      "tagline": "Break a hex color into names, rgb and helpers.",
+      "description": "Send a hex value on the path and receive a structured breakdown of that color: keyword name plus hex and rgb compositions. The service also documents complementary, grayscale and contrasting-text variants. Pure JSON, no key required.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://color.serialif.com/",
+      "baseUrl": "https://color.serialif.com",
+      "sampleEndpoint": "/ff0000",
+      "latencyMs": 436,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "base": { "keyword": "red", "hex": "#ff0000", "rgb": "rgb(255, 0, 0)" }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Chinese Text Project",
+      "slug": "chinese-text-project",
+      "emoji": "📜",
+      "tagline": "Full text of classical Chinese works, as JSON.",
+      "description": "An open-access API into a large digital library of pre-modern Chinese texts. Request a work by its URN and receive the passage text plus its title as JSON. Basic access is keyless, and a free API key raises the limits; great for scholarship and language projects.",
+      "sourceCategory": "Dictionaries",
+      "docsUrl": "https://ctext.org/tools/api",
+      "baseUrl": "https://api.ctext.org",
+      "sampleEndpoint": "/gettext?urn=ctp:analects/xue-er",
+      "latencyMs": 1092,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "title": "學而",
+        "fulltext_first": "子曰：「學而時習之，不亦說乎？有朋自遠方來，不亦樂乎？人不知而不慍，不亦君子乎？」",
+        "fulltext_count": 16
+      },
+      "freeTier": "Free (higher limits with a free API key)",
+      "rateLimit": "Fair-use; raised with an API key",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Response echoed the request Origin in access-control-allow-origin."
+    },
+    {
+      "name": "Vector Express v2.0",
+      "slug": "vector-express-v2-0",
+      "emoji": "📐",
+      "tagline": "Discover free vector-format conversion paths.",
+      "description": "A free API for converting between vector formats such as SVG, DXF, DWG, EPS and PDF. The public convert endpoint lists every available converter with its input and output formats, so you can plan a route before uploading a file. Keyless to browse.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://vector.express",
+      "baseUrl": "https://vector.express/api/v2",
+      "sampleEndpoint": "/public/convert/",
+      "latencyMs": 976,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "converters": [
+          { "name": "cad", "inputFormats": ["svg"], "outputFormats": ["dxf", "dwg"] },
+          { "name": "cad2svg", "inputFormats": ["dxf", "dwg"], "outputFormats": ["svg"] }
+        ]
+      },
+      "freeTier": "Free",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "WakaTime",
+      "slug": "wakatime",
+      "emoji": "⏱️",
+      "tagline": "Public coding stats and the languages WakaTime tracks.",
+      "description": "WakaTime powers automated time-tracking for programmers. A handful of endpoints are public and keyless, including the global leaderboard and this catalog of every programming language it recognizes, with colors and file extensions. Personal dashboards and detailed stats require an API key or OAuth.",
+      "sourceCategory": "Documents & Productivity",
+      "docsUrl": "https://wakatime.com/developers",
+      "baseUrl": "https://wakatime.com/api/v1",
+      "sampleEndpoint": "/program_languages?page=1",
+      "latencyMs": 2824,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "3180b7d4-3064-46f8-9eba-92ea218b5c58",
+            "name": "1C Enterprise",
+            "color": "#814CCC",
+            "extensions": [".bsl", ".os"]
+          }
+        ],
+        "total": 866
+      },
+      "freeTier": "Free public endpoints; personal data needs API key/OAuth",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The public /leaders leaderboard also works but is large and slow (timed out mid-download); program_languages returns a complete keyless JSON response."
+    },
+    {
+      "name": "Keyvalue",
+      "slug": "keyvalue",
+      "emoji": "🗝️",
+      "tagline": "A throwaway key-value store for quick prototypes.",
+      "description": "Provision a storage bucket with a single GET, then store and fetch string values by key over simple REST calls. There are no accounts and no keys to manage, which makes it handy for hackday demos and glue code. Not meant for anything you need to keep.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://keyvalue.immanuel.co/",
+      "baseUrl": "https://keyvalue.immanuel.co/api/KeyVal",
+      "sampleEndpoint": "/GetAppKey",
+      "latencyMs": 1131,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": "da5kltjk",
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "GetAppKey provisions a new bucket per call and returns its id as a JSON string; the documented api.keyvalue.immanuel.co host no longer resolves, so the base is keyvalue.immanuel.co."
+    },
+    {
+      "name": "Memesio",
+      "slug": "memesio",
+      "emoji": "😹",
+      "tagline": "Meme-generation API with captions and share links.",
+      "description": "A meme-creation service offering templates, AI caption helpers and hosted share links, pitched at apps and agents. Most generation endpoints require an API key, but some metadata reads respond without one. This entry probes the keyless caption tone-preset catalog.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://memesio.com/developers/api",
+      "baseUrl": "https://memesio.com/api",
+      "sampleEndpoint": "/ai/captions/tone-presets",
+      "latencyMs": 323,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "presets_first": {
+          "id": "brand-default-corporate-safe",
+          "name": "corporate-safe",
+          "locale": "en",
+          "voiceRules": ["brand-safe phrasing only", "avoid sarcasm toward customers"],
+          "blockedTerms": ["nsfw", "toxic"]
+        }
+      },
+      "freeTier": "Public metadata endpoints keyless; generation needs an API key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "OpenAPI at /api/openapi shows meme/caption generation gated behind API keys; tone-presets responds keyless."
+    }
+  ],
+  "skipped": [
+    { "name": "JSON 2 JSONP", "reason": "Converter service returns JSONP (a JavaScript callback wrapper), not parseable JSON; without a callback param it serves its HTML homepage. No keyless JSON GET." },
+    { "name": "License-API", "reason": "Hosted app (licenseapi.herokuapp.com per README) is dead — Heroku free tier shutdown returns 404 'No such app'." },
+    { "name": "QR code", "reason": "goqr.me generation returns a PNG image, not JSON; the read-qr-code decode-by-URL endpoint returns a 'download error (could not establish connection)' JSON payload for multiple image hosts. No keyless JSON GET yields real data." },
+    { "name": "Qrcode Monkey", "reason": "The /qr/custom endpoint returns a PNG image (content-type image/png), not JSON. No keyless JSON GET." },
+    { "name": "ReqRes", "reason": "Now requires an x-api-key header — probe returned HTTP 401 missing_api_key. Fails the keyless requirement." },
+    { "name": "DropMail", "reason": "GraphQL API served over POST to /api/graphql/<token>; no keyless JSON GET endpoint." },
+    { "name": "Meme Maker", "reason": "Hosted API (alpha-meme-maker.herokuapp.com per docs) is dead — Heroku free tier shutdown returns 404 'No such app'." },
+    { "name": "NaMoMemes", "reason": "Hosted API (namo-memes.herokuapp.com per README) is dead — Heroku free tier shutdown returns 404 'No such app'." },
+    { "name": "Yo Momma Jokes", "reason": "Hosted API (yomomma-api.herokuapp.com per README) is dead — Heroku free tier shutdown returns 404 'No such app'." },
+    { "name": "CO2 Offset", "reason": "docsUrl (co2offset.io/api.html) now serves a 'SusScope2' framework documentation book (STROMDAO GmbH); no live keyless JSON GET API endpoint documented or found." }
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "batch": 62,
+  "verified": [
+    {
+      "name": "AZ511",
+      "slug": "az511",
+      "emoji": "🔑",
+      "tagline": "AZ511 — free tier with API key",
+      "description": "AZ511 exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Transportation",
+      "docsUrl": "https://www.az511.com/developers/doc",
+      "baseUrl": "https://az511.com",
+      "sampleEndpoint": "/api/wzdx?api_key=DEMO_KEY",
+      "latencyMs": 4538,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "feed_info": {
+          "update_date": "2026-07-05T20:20:16.7380064+00:00",
+          "publisher": "AZDOT",
+          "version": "4.1",
+          "data_sources": [
+            {
+              "data_source_id": "Tucson",
+              "organization_name": "Tucson",
+              "update_date": "2026-07-05T20:20:16Z"
+            },
+            {
+              "data_source_id": "ERS",
+              "organization_name": "ERS",
+              "update_date": "2026-07-05T20:20:16Z"
+            }
+          ]
+        },
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "359004",
+            "type": "Feature",
+            "properties": {
+              "core_details": {
+                "event_type": "work-zone",
+                "data_source_id": "Tucson",
+                "road_names": [
+                  "TWIN PEAKS ROAD, RATTLESNAKE PASS WIDENING PROJECT"
+                ],
+                "direction": "undefined",
+                "description": "TWIN PEAKS ROAD, RATTLESNAKE PASS WIDENING PROJECT - The speed limit will be reduced for the duration of the project. Watch for message boards in advance of traffic changes.",
+                "update_date": "2024-07-12T18:01:52Z"
+              },
+              "road_event_id": "359004",
+              "is_start_position_verified": false,
+              "is_end_position_verified": false,
+              "start_date": "2024-07-15T07:00:00.000+00:00",
+              "end_date": "2026-08-31T07:00:00Z",
+              "is_start_date_verified": false,
+              "is_end_date_verified": false
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  -111.169412,
+                  32.380865
+                ],
+                [
+                  -111.146903,
+                  32.377459
+                ]
+              ]
+            }
+          },
+          {
+            "id": "267686",
+            "type": "Feature",
+            "properties": {
+              "core_details": {
+                "event_type": "work-zone",
+                "data_source_id": "ERS",
+                "road_names": [
+                  "US-60"
+                ],
+                "direction": "eastbound",
+                "description": "Long term road construction on US-60 Eastbound from SR-177 (MP 227)  to  N Magma Mine Rd (MP 231)   Width Restriction: 12ft Speed Restriction: 45mph  10/22/2024 6:59 AM  to 6/16/2028 5:00 PM  ",
+                "update_date": "2026-07-01T22:20:15Z"
+              },
+              "road_event_id": "267686",
+              "beginning_cross_street": "SR-177 ",
+              "ending_cross_street": " N Magma Mine Rd",
+              "beginning_milepost": 227,
+              "ending_milepost": 231,
+              "is_start_position_verified": false,
+              "is_end_position_verified": false
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  -111.09321,
+                  33.29257
+                ],
+                [
+                  -111.09309,
+                  33.29261
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://az511.com/api/wzdx?api_key=DEMO_KEY"
+    },
+    {
+      "name": "Gazette Data, UK",
+      "slug": "gazette-data-uk",
+      "emoji": "🔑",
+      "tagline": "Gazette Data, UK — free tier with API key",
+      "description": "Gazette Data, UK exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.thegazette.co.uk/data",
+      "baseUrl": "https://www.thegazette.co.uk",
+      "sampleEndpoint": "/status",
+      "latencyMs": 1141,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "up"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.thegazette.co.uk/status"
+    },
+    {
+      "name": "Eden",
+      "slug": "eden",
+      "emoji": "🔑",
+      "tagline": "Eden — free tier with API key",
+      "description": "Eden exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://www.edenai.co/",
+      "baseUrl": "https://api.edenai.run",
+      "sampleEndpoint": "/v2/user/auth/intercom/token?anon_id=${anonId}`",
+      "latencyMs": 555,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiJHthbm9uSWR9YCIsImV4cCI6MTc4MzI4Njc0NX0.vjv7vcytbLCbi2FFK9twoGl9lDZto42rhaEfnMj9GIY",
+        "expires_at": 1783286745
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.edenai.run/v2/user/auth/intercom/token?anon_id=${anonId}`"
+    },
+    {
+      "name": "ScreenshotOne.com",
+      "slug": "screenshotone-com",
+      "emoji": "🔑",
+      "tagline": "ScreenshotOne.com — free tier with API key",
+      "description": "ScreenshotOne.com exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://screenshotone.com/",
+      "baseUrl": "https://dash.screenshotone.com",
+      "sampleEndpoint": "/api/authenticated",
+      "latencyMs": 636,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "authenticated": false
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://dash.screenshotone.com/api/authenticated"
+    },
+    {
+      "name": "OKEx",
+      "slug": "okex",
+      "emoji": "🔑",
+      "tagline": "OKEx — free tier with API key",
+      "description": "OKEx exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://okx.com/okx-api",
+      "baseUrl": "https://www.okx.com",
+      "sampleEndpoint": "/api/v5/public/instruments?instType=SPOT",
+      "latencyMs": 439,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "0",
+        "data": [
+          {
+            "alias": "",
+            "auctionEndTime": "",
+            "baseCcy": "USDT",
+            "category": "1",
+            "contTdSwTime": "",
+            "ctMult": "",
+            "ctType": "",
+            "ctVal": ""
+          },
+          {
+            "alias": "",
+            "auctionEndTime": "",
+            "baseCcy": "USDC",
+            "category": "1",
+            "contTdSwTime": "",
+            "ctMult": "",
+            "ctType": "",
+            "ctVal": ""
+          }
+        ],
+        "msg": ""
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.okx.com/api/v5/public/instruments?instType=SPOT"
+    },
+    {
+      "name": "Scrapfly",
+      "slug": "scrapfly",
+      "emoji": "🔑",
+      "tagline": "Scrapfly — free tier with API key",
+      "description": "Scrapfly exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://scrapfly.io",
+      "baseUrl": "https://scrapfly.io",
+      "sampleEndpoint": "/status",
+      "latencyMs": 678,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "id": "wrrs2tdds4xc",
+          "name": "Scrapfly",
+          "url": "https://scrapfly.statuspage.io",
+          "time_zone": "Europe/Paris",
+          "updated_at": "2026-07-05T20:30:11.219+02:00"
+        },
+        "status": {
+          "indicator": "none",
+          "description": "All Systems Operational"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://scrapfly.io/status"
+    },
+    {
+      "name": "YADG",
+      "slug": "yadg",
+      "emoji": "🔑",
+      "tagline": "YADG — free tier with API key",
+      "description": "YADG exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://yadg.cc/api/v2/",
+      "baseUrl": "https://yadg.cc",
+      "sampleEndpoint": "/api/v2/",
+      "latencyMs": 99,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "templates": "https://yadg.cc/api/v2/templates/",
+        "query": "https://yadg.cc/api/v2/query/",
+        "scrapers": "https://yadg.cc/api/v2/scrapers/"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://yadg.cc/api/v2/"
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe",
+      "emoji": "🔑",
+      "tagline": "Stripe — free tier with API key",
+      "description": "Stripe exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://stripe.com/docs/api",
+      "baseUrl": "https://docs.stripe.com",
+      "sampleEndpoint": "/api/authentication",
+      "latencyMs": 1245,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "article": {
+          "content": {
+            "$$mdtype": "Tag",
+            "name": "Document",
+            "attributes": {},
+            "children": [
+              {
+                "$$mdtype": "Tag",
+                "name": "ApiSection",
+                "attributes": {
+                  "route": "/api/authentication",
+                  "title": "Authentication",
+                  "badges": [],
+                  "anchor": "authentication",
+                  "redirects": [],
+                  "v2": false
+                },
+                "children": [
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "The Stripe API uses ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "Link",
+                        "attributes": {
+                          "href": "/keys"
+                        },
+                        "children": [
+                          "API keys"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Test mode secret keys start with ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "sk_test_",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "$$mdtype": "Tag",
+                "name": "ApiSection",
+                "attributes": {
+                  "route": "/api/errors",
+                  "title": "Errors",
+                  "badges": [],
+                  "anchor": "errors",
+                  "redirects": [],
+                  "v2": false
+                },
+                "children": [
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Stripe uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "2xx",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "$$mdtype": "Tag",
+                    "name": "Paragraph",
+                    "attributes": {},
+                    "children": [
+                      "Some ",
+                      {
+                        "$$mdtype": "Tag",
+                        "name": "InlineCode",
+                        "attributes": {
+                          "content": "4xx",
+                          "$$markdoc:type": "node"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "shell_features": {
+            "csat": true,
+            "footer": true,
+            "toc": true,
+            "header": true,
+            "action_bar": true
+          },
+          "format": "markdoc",
+          "intl": {
+            "country": "US",
+            "locale": "en-US",
+            "translated": true,
+            "availableLocales": [
+              {
+                "code": "en-GB",
+                "name": "English (United Kingdom)",
+                "generated": false
+              },
+              {
+                "code": "en-US",
+                "name": "English (United States)",
+                "generated": false
+              }
+            ],
+            "translationPercent": 1,
+            "translationBanner": false,
+            "missingTranslationCount": 0,
+            "missingTranslationKeys": null
+          },
+          "metadata": {
+            "type": "multi-page-reference"
+          },
+          "pages": [
+            {
+              "title": "Main",
+              "prefs": {}
+            }
+          ],
+          "pagePrefs": [],
+          "path": "/api/authentication"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.stripe.com/api/authentication"
+    },
+    {
+      "name": "jobdata API",
+      "slug": "jobdata-api",
+      "emoji": "🔑",
+      "tagline": "jobdata API — free tier with API key",
+      "description": "jobdata API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://jobdataapi.com/",
+      "baseUrl": "https://jobdataapi.com",
+      "sampleEndpoint": "/api",
+      "latencyMs": 160,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "jobregions": "https://jobdataapi.com/api/jobregions/",
+        "jobcountries": "https://jobdataapi.com/api/jobcountries/",
+        "jobstates": "https://jobdataapi.com/api/jobstates/",
+        "jobcities": "https://jobdataapi.com/api/jobcities/",
+        "jobtypes": "https://jobdataapi.com/api/jobtypes/",
+        "tags": "https://jobdataapi.com/api/tags/",
+        "jobs": "https://jobdataapi.com/api/jobs/",
+        "jobsexpired": "https://jobdataapi.com/api/jobsexpired/"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://jobdataapi.com/api"
+    },
+    {
+      "name": "HasData: Structured Web Data APIs",
+      "slug": "hasdata-structured-web-data-apis",
+      "emoji": "🔑",
+      "tagline": "HasData: Structured Web Data APIs — free tier with API key",
+      "description": "HasData: Structured Web Data APIs exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "News",
+      "docsUrl": "https://hasdata.com",
+      "baseUrl": "https://api.hasdata.com",
+      "sampleEndpoint": "/apis-preview/1",
+      "latencyMs": 1341,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "api_category_id": 1,
+        "title": "Google SERP API",
+        "slug": "google-serp",
+        "logo_url": "https://scrape-it.cloud/assets/rms/google.svg",
+        "description": "The Google SERP API provides real-time access to structured Google search results, offering no blocks or CAPTCHAs.",
+        "price": 10,
+        "created_at": "2024-02-19T20:46:10.850+00:00"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.hasdata.com/apis-preview/1"
+    },
+    {
+      "name": "TwitterApi.IO",
+      "slug": "twitterapi-io",
+      "emoji": "🔑",
+      "tagline": "TwitterApi.IO — free tier with API key",
+      "description": "TwitterApi.IO exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://twitterapi.io",
+      "baseUrl": "https://api.twitterapi.io",
+      "sampleEndpoint": "/backend/user/log_affiliate_click?referral_code=${refCode}&chrome_uid=${chromeUid}`",
+      "latencyMs": 501,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.twitterapi.io/backend/user/log_affiliate_click?referral_code=${refCode}&chrome_uid=${chromeUid}`"
+    },
+    {
+      "name": "X (Twitter) API",
+      "slug": "x-twitter-api",
+      "emoji": "🔑",
+      "tagline": "X (Twitter) API — free tier with API key",
+      "description": "X (Twitter) API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developer.twitter.com/en/docs/twitter-api",
+      "baseUrl": "https://console.x.com",
+      "sampleEndpoint": "/api/credits/pricing",
+      "latencyMs": 675,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "eventTypePricing": {
+          "ProfileUpdate": 0.005,
+          "Like": 0.001,
+          "Follow": 0.01,
+          "OwnedRead": 0.001,
+          "Community": 0.005,
+          "Space": 0.005,
+          "Post": 0.005,
+          "DirectMessage": 0.01
+        },
+        "requestTypePricing": {
+          "DmInteractionCreate": 0.015,
+          "InteractionDelete": 0.01,
+          "ContentCreateWithUrl": 0.2,
+          "MediaMetadata": 0.005,
+          "PrivacyUpdate": 0.01,
+          "ListManage": 0.005,
+          "ContentManage": 0.005,
+          "Bookmark": 0.005
+        },
+        "defaultCost": 0
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://console.x.com/api/credits/pricing"
+    },
+    {
+      "name": "Vonage (Nexmo) API",
+      "slug": "vonage-nexmo-api",
+      "emoji": "🔑",
+      "tagline": "Vonage (Nexmo) API — free tier with API key",
+      "description": "Vonage (Nexmo) API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://developer.vonage.com/en/api",
+      "baseUrl": "https://developer.vonage.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 233,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "OK",
+        "timestamp": "2026-07-05T20:33:39.858Z",
+        "region": "eu-central-1",
+        "cluster": "1vapi-1",
+        "hostname": "gw-sanity-service-7d8465d85d-ld8sk",
+        "requestHeaders": {
+          "host": "developer.vonage.com",
+          "x-forwarded-for": "46.1.3.138,10.210.45.30",
+          "x-forwarded-proto": "https",
+          "x-forwarded-port": "443",
+          "x-amzn-trace-id": "Root=1-6a4abfa3-14caab4b2da85fb13933eef6",
+          "user-agent": "shipapisbot/1.0 (+https://shipapis.dev/methodology)",
+          "origin": "https://shipapis.dev",
+          "accept": "application/json, text/json, */*"
+        },
+        "requestBody": "",
+        "additionalRandomLoadSizeInKB": "0 KB"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://developer.vonage.com/health"
+    },
+    {
+      "name": "Plaid API",
+      "slug": "plaid-api",
+      "emoji": "🔑",
+      "tagline": "Plaid API — free tier with API key",
+      "description": "Plaid API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://plaid.com/docs/api/",
+      "baseUrl": "https://status.plaid.com",
+      "sampleEndpoint": "/api/v2/status.json",
+      "latencyMs": 1006,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "id": "01KJ72XDYEXAHDV9SPTMB7YS2Y",
+          "name": "Plaid",
+          "url": "https://status.plaid.com/",
+          "updated_at": "2026-05-05T16:04:16Z"
+        },
+        "status": {
+          "description": "All Systems Operational",
+          "indicator": "none"
+        }
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://status.plaid.com/api/v2/status.json"
+    },
+    {
+      "name": "Adyen Checkout API",
+      "slug": "adyen-checkout-api",
+      "emoji": "🔑",
+      "tagline": "Adyen Checkout API — free tier with API key",
+      "description": "Adyen Checkout API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Business",
+      "docsUrl": "https://docs.adyen.com/api-explorer/",
+      "baseUrl": "https://docs.adyen.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 303,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://docs.adyen.com/health"
+    },
+    {
+      "name": "ElevenLabs API Documentation",
+      "slug": "elevenlabs-api-documentation",
+      "emoji": "🔑",
+      "tagline": "ElevenLabs API Documentation — free tier with API key",
+      "description": "ElevenLabs API Documentation exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://api.elevenlabs.io/",
+      "baseUrl": "https://api.elevenlabs.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 297,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.elevenlabs.io/health"
+    },
+    {
+      "name": "Bufferapp",
+      "slug": "bufferapp",
+      "emoji": "🔑",
+      "tagline": "Bufferapp — free tier with API key",
+      "description": "Bufferapp exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.bufferapp.com/1/",
+      "baseUrl": "https://api.bufferapp.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 1045,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "awesome"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.bufferapp.com/"
+    },
+    {
+      "name": "ClickSend REST API v3",
+      "slug": "clicksend-rest-api-v3",
+      "emoji": "🔑",
+      "tagline": "ClickSend REST API v3 — free tier with API key",
+      "description": "ClickSend REST API v3 exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://rest.clicksend.com/v3",
+      "baseUrl": "https://rest.clicksend.com",
+      "sampleEndpoint": "/v3",
+      "latencyMs": 583,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "http_code": 200,
+        "response_code": "SUCCESS",
+        "response_msg": "Welcome to ClickSend API v3.",
+        "data": null
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://rest.clicksend.com/v3"
+    },
+    {
+      "name": "Geneea Natural Language Processing",
+      "slug": "geneea-natural-language-processing",
+      "emoji": "🔑",
+      "tagline": "Geneea Natural Language Processing — free tier with API key",
+      "description": "Geneea Natural Language Processing exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Authentication",
+      "docsUrl": "https://api.geneea.com/",
+      "baseUrl": "https://api.geneea.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 175,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": "ready",
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.geneea.com/status"
+    },
+    {
+      "name": "PandaScore REST API for All Videogames",
+      "slug": "pandascore-rest-api-for-all-videogames",
+      "emoji": "🔑",
+      "tagline": "PandaScore REST API for All Videogames — free tier with API key",
+      "description": "PandaScore REST API for All Videogames exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://api.pandascore.co/",
+      "baseUrl": "https://api.pandascore.co",
+      "sampleEndpoint": "/",
+      "latencyMs": 280,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.62.19",
+        "doc_url": "https://developers.pandascore.co"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.pandascore.co/"
+    },
+    {
+      "name": "Pendo Feedback API",
+      "slug": "pendo-feedback-api",
+      "emoji": "🔑",
+      "tagline": "Pendo Feedback API — free tier with API key",
+      "description": "Pendo Feedback API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.feedback.eu.pendo.io",
+      "baseUrl": "https://api.feedback.eu.pendo.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 476,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "OK"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.feedback.eu.pendo.io/"
+    },
+    {
+      "name": "Shotstack",
+      "slug": "shotstack",
+      "emoji": "🔑",
+      "tagline": "Shotstack — free tier with API key",
+      "description": "Shotstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.shotstack.io/{version}",
+      "baseUrl": "https://api.shotstack.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 1398,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "message": "OK",
+        "response": "You reached the Shotstack API! Be sure to call a valid resource. API Reference Docs: https://shotstack.io/docs/api/"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.shotstack.io/"
+    },
+    {
+      "name": "Storm Glass Marine Weather",
+      "slug": "storm-glass-marine-weather",
+      "emoji": "🔑",
+      "tagline": "Storm Glass Marine Weather — free tier with API key",
+      "description": "Storm Glass Marine Weather exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://api.stormglass.io/",
+      "baseUrl": "https://api.stormglass.io",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 182,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "foo": true,
+        "mongo": true,
+        "pong": true,
+        "psql": true,
+        "redis": true
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.stormglass.io/ping"
+    },
+    {
+      "name": "Telnyx API",
+      "slug": "telnyx-api",
+      "emoji": "🔑",
+      "tagline": "Telnyx API — free tier with API key",
+      "description": "Telnyx API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.telnyx.com/v2",
+      "baseUrl": "https://api.telnyx.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 233,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "version": "20260702060147-9928891",
+        "commit_sha": "992889123dbb522a621275e62dffd7fa364fbbec",
+        "hostname": "edge-compute-gateway-58fcf8fc49-k7lj7",
+        "environment": "prod",
+        "uptime": "69 hours 5 minutes",
+        "started": "2026-07-02T23:31:04Z"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.telnyx.com/health"
+    },
+    {
+      "name": "The SMS Works API",
+      "slug": "the-sms-works-api",
+      "emoji": "🔑",
+      "tagline": "The SMS Works API — free tier with API key",
+      "description": "The SMS Works API exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.thesmsworks.co.uk/v1",
+      "baseUrl": "https://api.thesmsworks.co.uk",
+      "sampleEndpoint": "/",
+      "latencyMs": 623,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "The SMS Works is up!"
+      },
+      "freeTier": "Free tier — API key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.thesmsworks.co.uk/"
+    }
+  ],
+  "skipped": []
+}

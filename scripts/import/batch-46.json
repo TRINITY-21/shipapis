@@ -1,0 +1,1914 @@
+{
+  "batch": 46,
+  "verified": [
+    {
+      "name": "Razorpay IFSC",
+      "slug": "razorpay-ifsc",
+      "emoji": "💰",
+      "tagline": "Razorpay IFSC — Indian Financial Systems Code (Bank Branch Codes)",
+      "description": "Razorpay IFSC is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Finance.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://razorpay.com/docs/",
+      "baseUrl": "https://razorpay.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 344,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "frontend-website",
+        "version": "14.0.1508"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live razorpay-ifsc; probed https://razorpay.com/health"
+    },
+    {
+      "name": "ip.app",
+      "slug": "ip-app",
+      "emoji": "📍",
+      "tagline": "Minimal IP geolocation JSON",
+      "description": "Lightweight IP lookup returning country, region and city as JSON. No API key required.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ip.app",
+      "baseUrl": "https://ip.app",
+      "sampleEndpoint": "/",
+      "latencyMs": 299,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "46.1.3.138",
+        "ip_version": "4"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live ip-app; probed https://ip.app/"
+    },
+    {
+      "name": "ISO 3166-2 API",
+      "slug": "iso-3166-2-api",
+      "emoji": "🗺",
+      "tagline": "ISO 3166-2 API — Access all of the world's subdivision/regional ISO",
+      "description": "ISO 3166-2 API is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Geocoding.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://iso3166-2-api.vercel.app/api",
+      "baseUrl": "https://iso3166-2-api.vercel.app",
+      "sampleEndpoint": "/api/all",
+      "latencyMs": 347,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "AD": {
+          "AD-02": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-02.svg",
+            "history": null,
+            "latLng": [
+              42.5868,
+              1.6574
+            ],
+            "localOtherName": null,
+            "name": "Canillo",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-03": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-03.svg",
+            "history": null,
+            "latLng": [
+              42.536,
+              1.5836
+            ],
+            "localOtherName": null,
+            "name": "Encamp",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-04": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-04.svg",
+            "history": null,
+            "latLng": [
+              42.5442,
+              1.5164
+            ],
+            "localOtherName": null,
+            "name": "La Massana",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-05": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-05.svg",
+            "history": null,
+            "latLng": [
+              42.601,
+              1.5298
+            ],
+            "localOtherName": null,
+            "name": "Ordino",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-06": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-06.svg",
+            "history": null,
+            "latLng": [
+              42.4667,
+              1.4967
+            ],
+            "localOtherName": null,
+            "name": "Sant Julià de Lòria",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-07": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-07.svg",
+            "history": null,
+            "latLng": [
+              42.4979,
+              1.5032
+            ],
+            "localOtherName": null,
+            "name": "Andorra la Vella",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AD-08": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AD/AD-08.svg",
+            "history": null,
+            "latLng": [
+              42.4862,
+              1.6038
+            ],
+            "localOtherName": null,
+            "name": "Escaldes-Engordany",
+            "parentCode": null,
+            "type": "Parish"
+          }
+        },
+        "AE": {
+          "AE-AJ": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-AJ.svg",
+            "history": [
+              {
+                "Change": "Change of spelling of AE-AJ, AE-RK; addition of local variation of AE-FU, AE-RK, AE-UQ; update List Source.",
+                "Date Issued": "2015-11-27",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AE."
+              }
+            ],
+            "latLng": [
+              24.8075,
+              56.0695
+            ],
+            "localOtherName": "عجمان (ara), إمارة عيمان (afb)",
+            "name": "‘Ajmān",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-AZ": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-AZ.svg",
+            "history": [
+              {
+                "Change": "Error correction: Spelling correction in AE-AZ.",
+                "Date Issued": "2002-08-20",
+                "Description of Change": null,
+                "Source": "Newsletter I-3 - https://web.archive.org/web/20081218103236/http://www.iso.org/iso/iso_3166-2_newsletter_i-3_en.pdf."
+              }
+            ],
+            "latLng": [
+              24.3438,
+              55.1
+            ],
+            "localOtherName": "أبو ظبي (ara), Mārat Abū Ẓabī (ara), Abu Dhabi (eng)",
+            "name": "Abū Z̧aby",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-DU": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-DU.svg",
+            "history": null,
+            "latLng": [
+              25.2296,
+              55.2896
+            ],
+            "localOtherName": "دبي (ara), Imārat Dubayy (ara), Dubai (eng)",
+            "name": "Dubayy",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-FU": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-FU.svg",
+            "history": [
+              {
+                "Change": "Change of spelling of AE-AJ, AE-RK; addition of local variation of AE-FU, AE-RK, AE-UQ; update List Source.",
+                "Date Issued": "2015-11-27",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AE."
+              }
+            ],
+            "latLng": [
+              25.4147,
+              56.2314
+            ],
+            "localOtherName": "الفجيرة (ara), Fujairah (eng)",
+            "name": "Al Fujayrah",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-RK": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-RK.png",
+            "history": [
+              {
+                "Change": "Change of spelling of AE-AJ, AE-RK; addition of local variation of AE-FU, AE-RK, AE-UQ; update List Source.",
+                "Date Issued": "2015-11-27",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AE."
+              },
+              {
+                "Change": "Spelling correction in AE-RK.",
+                "Date Issued": "2002-05-21",
+                "Description of Change": null,
+                "Source": "Newsletter I-2 - https://web.archive.org/web/20081218103157/http://www.iso.org/iso/iso_3166-2_newsletter_i-2_en.pdf."
+              }
+            ],
+            "latLng": [
+              25.0438,
+              56.0966
+            ],
+            "localOtherName": "رأس الخيمة (ara), Ras Al Khaimah (eng)",
+            "name": "Ra’s al Khaymah",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-SH": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-SH.svg",
+            "history": null,
+            "latLng": [
+              25.2798,
+              56.2776
+            ],
+            "localOtherName": "الشارقة (ara), Imārat Aš-Šāriqah (ara), Sharjah (eng)",
+            "name": "Ash Shāriqah",
+            "parentCode": null,
+            "type": "Emirate"
+          },
+          "AE-UQ": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AE/AE-UQ.svg",
+            "history": [
+              {
+                "Change": "Change of spelling of AE-AJ, AE-RK; addition of local variation of AE-FU, AE-RK, AE-UQ; update List Source.",
+                "Date Issued": "2015-11-27",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AE."
+              }
+            ],
+            "latLng": [
+              25.5145,
+              55.7183
+            ],
+            "localOtherName": "أم القيوين (ara), Umm Al Quwain (eng)",
+            "name": "Umm al Qaywayn",
+            "parentCode": null,
+            "type": "Emirate"
+          }
+        },
+        "AF": {
+          "AF-BAL": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              36.7992,
+              67.2373
+            ],
+            "localOtherName": "بلخ (pus), بلخ (prs)",
+            "name": "Balkh",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-BAM": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              34.75,
+              67.25
+            ],
+            "localOtherName": "بامیان (prs), بامیان (pus), Bamiyan (eng), Bāmīān (pus)",
+            "name": "Bāmyān",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-BDG": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              35,
+              63.75
+            ],
+            "localOtherName": "بادغیس (pus), بادغیس (prs)",
+            "name": "Bādghīs",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-BDS": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              36.804,
+              71.3677
+            ],
+            "localOtherName": "بدخشان (pus), بدخشان (prs)",
+            "name": "Badakhshān",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-BGL": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              35.75,
+              69
+            ],
+            "localOtherName": "بغلان (pus), بغلان (prs)",
+            "name": "Baghlān",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-DAY": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Subdivisions added: AF-DAY Dāykondī. AF-PAN Panjshīr.",
+                "Date Issued": "2005-09-13",
+                "Description of Change": "Addition of 2 provinces. Update of list source.",
+                "Source": "Newsletter I-7 - https://web.archive.org/web/20081218103217/http://www.iso.org/iso/iso_3166-2_newsletter_i-7_en.pdf."
+              }
+            ],
+            "latLng": [
+              33.7251,
+              66.2197
+            ],
+            "localOtherName": "دایکندی (pus), دایکندی (prs), Daikundi (eng), Daikondi (eng), Daykondi (eng)",
+            "name": "Dāykundī",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-FRA": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              32.6071,
+              62.671
+            ],
+            "localOtherName": "فراه (pus), فراه (prs)",
+            "name": "Farāh",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AF-FYB": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              35.6481,
+              64.8809
+            ],
+            "localOtherName": "فاریاب (pus), فاریاب (prs)",
+            "name": "Fāryāb",
+            "parentCode": null,
+            "type": "Province"
+          }
+        },
+        "AG": {
+          "AG-03": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              17.1218,
+              -61.7812
+            ],
+            "localOtherName": null,
+            "name": "Saint George",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-04": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Change spelling of AG-04.",
+                "Date Issued": "2014-10-29",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AG."
+              }
+            ],
+            "latLng": [
+              17.1152,
+              -61.8583
+            ],
+            "localOtherName": null,
+            "name": "Saint John",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-05": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              17.0548,
+              -61.8602
+            ],
+            "localOtherName": null,
+            "name": "Saint Mary",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-06": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              17.0326,
+              -61.7707
+            ],
+            "localOtherName": null,
+            "name": "Saint Paul",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-07": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              17.107,
+              -61.7502
+            ],
+            "localOtherName": null,
+            "name": "Saint Peter",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-08": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              17.0664,
+              -61.7062
+            ],
+            "localOtherName": null,
+            "name": "Saint Philip",
+            "parentCode": null,
+            "type": "Parish"
+          },
+          "AG-10": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AG/AG-10.svg",
+            "history": null,
+            "latLng": [
+              17.6149,
+              -61.8544
+            ],
+            "localOtherName": null,
+            "name": "Barbuda",
+            "parentCode": null,
+            "type": "Dependency"
+          },
+          "AG-11": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Subdivisions added: AG-11 Redonda.",
+                "Date Issued": "2010-06-30",
+                "Description of Change": "Update of the administrative structure and of the list source.",
+                "Source": "Newsletter II-2 - https://www.iso.org/files/live/sites/isoorg/files/archive/pdf/en/iso_3166-2_newsletter_ii-2_2010-06-30.pdf."
+              }
+            ],
+            "latLng": [
+              17.0245,
+              -62.2936
+            ],
+            "localOtherName": null,
+            "name": "Redonda",
+            "parentCode": null,
+            "type": "Dependency"
+          }
+        },
+        "AI": {},
+        "AL": {
+          "AL-01": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-01.svg",
+            "history": null,
+            "latLng": [
+              40.6084,
+              20.1089
+            ],
+            "localOtherName": "Qarku Berat (sqi)",
+            "name": "Berat",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-02": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-02.svg",
+            "history": null,
+            "latLng": [
+              41.428,
+              19.5373
+            ],
+            "localOtherName": "Qarku i Durrësit (sqi)",
+            "name": "Durrës",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-03": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-03.svg",
+            "history": null,
+            "latLng": [
+              41.0511,
+              20.1399
+            ],
+            "localOtherName": "Qarku i Elbasanit (sqi)",
+            "name": "Elbasan",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-04": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-04.png",
+            "history": null,
+            "latLng": [
+              40.742,
+              19.5701
+            ],
+            "localOtherName": "Qarku Fier (sqi)",
+            "name": "Fier",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-05": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-05.png",
+            "history": null,
+            "latLng": [
+              40.1556,
+              20.2139
+            ],
+            "localOtherName": "Qarku i Gjirokastrës (sqi)",
+            "name": "Gjirokastër",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-06": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-06.svg",
+            "history": null,
+            "latLng": [
+              40.5859,
+              20.7361
+            ],
+            "localOtherName": "Qarku Korçë (sqi)",
+            "name": "Korçë",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-07": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-07.svg",
+            "history": null,
+            "latLng": [
+              42.1886,
+              20.377
+            ],
+            "localOtherName": "Qarku i Kukësit (sqi)",
+            "name": "Kukës",
+            "parentCode": null,
+            "type": "County"
+          },
+          "AL-08": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AL/AL-08.png",
+            "history": null,
+            "latLng": [
+              41.7932,
+              19.8891
+            ],
+            "localOtherName": "Qarku i Lezhës (sqi)",
+            "name": "Lezhë",
+            "parentCode": null,
+            "type": "County"
+          }
+        },
+        "AM": {
+          "AM-AG": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.3828,
+              44.1147
+            ],
+            "localOtherName": "Արագածոտն (hye), Aragatsotn (eng)",
+            "name": "Aragac̣otn",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-AR": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.0054,
+              44.7315
+            ],
+            "localOtherName": "Արարատ (hye), Ararat (eng)",
+            "name": "Ararat",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-AV": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.1556,
+              44.0388
+            ],
+            "localOtherName": "Արմավիր (hye), Armavir (eng)",
+            "name": "Armavir",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-ER": {
+            "flag": "https://raw.githubusercontent.com/amckenna41/iso3166-flags/main/iso3166-2-flags/AM/AM-ER.svg",
+            "history": null,
+            "latLng": [
+              40.1777,
+              44.5126
+            ],
+            "localOtherName": "Երևան (hye), Yerevan (eng), The Pink City (eng), Mother City (eng)",
+            "name": "Erevan",
+            "parentCode": null,
+            "type": "City"
+          },
+          "AM-GR": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.3031,
+              45.3757
+            ],
+            "localOtherName": "Գեղարքունիք (hye), Gegharkunik (eng)",
+            "name": "Geġark'unik'",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-KT": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.3707,
+              44.6885
+            ],
+            "localOtherName": "Կոտայք (hye), Kotayk (eng)",
+            "name": "Kotayk'",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-LO": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              41.0073,
+              44.49
+            ],
+            "localOtherName": "Լոռի (hye), Lori (eng)",
+            "name": "Loṙi",
+            "parentCode": null,
+            "type": "Region"
+          },
+          "AM-SH": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              40.9186,
+              43.8404
+            ],
+            "localOtherName": "Շիրակ (hye), Shirak (eng)",
+            "name": "Širak",
+            "parentCode": null,
+            "type": "Region"
+          }
+        },
+        "AO": {
+          "AO-BGO": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              -8.3197,
+              13.8656
+            ],
+            "localOtherName": "Bengo (kon)",
+            "name": "Bengo",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-BGU": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              -12.9105,
+              14.0357
+            ],
+            "localOtherName": "Bengela (kon), Luombaka Volupale (umb)",
+            "name": "Benguela",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-BIE": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              -12.263,
+              17.4968
+            ],
+            "localOtherName": "Biye (kon)",
+            "name": "Bié",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-CAB": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              -5.0564,
+              12.3212
+            ],
+            "localOtherName": "Kabinda (kon), Portuguese Congo (eng)",
+            "name": "Cabinda",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-CCU": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Change of spelling of AO-CCU, AO-CNO, AO-CUS, AO-LNO, AO-LSU; Addition of local variation for AO-CCU, AO-CNO, AO-CUS; Update List Source.",
+                "Date Issued": "2020-11-24",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              },
+              {
+                "Change": "Correct spelling of AO-CCU.",
+                "Date Issued": "2015-02-12",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              }
+            ],
+            "latLng": [
+              -16.0458,
+              19.5622
+            ],
+            "localOtherName": "Kuando Kubango Volupale (kon)",
+            "name": "Cuando Cubango",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-CNN": {
+            "flag": null,
+            "history": null,
+            "latLng": [
+              -16.5569,
+              15.7867
+            ],
+            "localOtherName": "Kuene (kon)",
+            "name": "Cunene",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-CNO": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Change of spelling of AO-CCU, AO-CNO, AO-CUS, AO-LNO, AO-LSU; Addition of local variation for AO-CCU, AO-CNO, AO-CUS; Update List Source.",
+                "Date Issued": "2020-11-24",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              },
+              {
+                "Change": "Correct spelling of AO-CNO and AO-CUS.",
+                "Date Issued": "2014-12-18",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              }
+            ],
+            "latLng": [
+              -9.0297,
+              15.0926
+            ],
+            "localOtherName": "Konano Kwanza Volupale (kon), North Cuanza (eng)",
+            "name": "Cuanza-Norte",
+            "parentCode": null,
+            "type": "Province"
+          },
+          "AO-CUS": {
+            "flag": null,
+            "history": [
+              {
+                "Change": "Change of spelling of AO-CCU, AO-CNO, AO-CUS, AO-LNO, AO-LSU; Addition of local variation for AO-CCU, AO-CNO, AO-CUS; Update List Source.",
+                "Date Issued": "2020-11-24",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              },
+              {
+                "Change": "Correct spelling of AO-CNO and AO-CUS.",
+                "Date Issued": "2014-12-18",
+                "Description of Change": null,
+                "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+              }
+            ],
+            "latLng": [
+              -10.7708,
+              15.0976
+            ],
+            "localOtherName": "Kuanza Sudi (kon), South Cuanza (eng)",
+            "name": "Cuanza-Sul",
+            "parentCode": null,
+            "type": "Province"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live iso-3166-2-api; probed https://iso3166-2-api.vercel.app/api/all"
+    },
+    {
+      "name": "OpenPLZ API",
+      "slug": "openplz-api",
+      "emoji": "🇩🇪",
+      "tagline": "German/Austrian/Swiss postal localities",
+      "description": "Open data API for postal codes and localities in DACH region. Search by name or postal code — keyless JSON.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://www.openplzapi.org/",
+      "baseUrl": "https://openplzapi.org",
+      "sampleEndpoint": "/de/Localities?name=Berlin",
+      "latencyMs": 237,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "postalCode": "10115",
+          "name": "Berlin",
+          "municipality": {
+            "key": "11000000",
+            "name": "Berlin, Stadt",
+            "type": "Kreisfreie Stadt"
+          },
+          "federalState": {
+            "key": "11",
+            "name": "Berlin"
+          }
+        },
+        {
+          "postalCode": "10117",
+          "name": "Berlin",
+          "municipality": {
+            "key": "11000000",
+            "name": "Berlin, Stadt",
+            "type": "Kreisfreie Stadt"
+          },
+          "federalState": {
+            "key": "11",
+            "name": "Berlin"
+          }
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live openplz-api; probed https://openplzapi.org/de/Localities?name=Berlin"
+    },
+    {
+      "name": "ISO 3166 Updates API",
+      "slug": "iso-3166-updates-api",
+      "emoji": "🗺",
+      "tagline": "ISO 3166 Updates API — Access all of the current and historical ISO 3166 ",
+      "description": "ISO 3166 Updates API is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Geocoding.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://iso3166-updates.vercel.app/api",
+      "baseUrl": "https://iso3166-updates.vercel.app",
+      "sampleEndpoint": "/api/all",
+      "latencyMs": 354,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": {
+          "AD": [
+            {
+              "Change": "Update List Source.",
+              "Date Issued": "2015-11-27",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AD."
+            },
+            {
+              "Change": "Update List Source.",
+              "Date Issued": "2014-11-03",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AD."
+            }
+          ],
+          "AE": [
+            {
+              "Change": "Change of spelling of AE-AJ, AE-RK; addition of local variation of AE-FU, AE-RK, AE-UQ; update List Source.",
+              "Date Issued": "2015-11-27",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AE."
+            },
+            {
+              "Change": "Error correction: Spelling correction in AE-AZ.",
+              "Date Issued": "2002-08-20",
+              "Description of Change": "",
+              "Source": "Newsletter I-3 - https://web.archive.org/web/20081218103236/http://www.iso.org/iso/iso_3166-2_newsletter_i-3_en.pdf."
+            }
+          ],
+          "AF": [
+            {
+              "Change": "Correction of the Code Source.",
+              "Date Issued": "2020-11-24",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AF."
+            },
+            {
+              "Change": "Correction of the romanization system label.",
+              "Date Issued": "2018-11-26",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AF."
+            }
+          ],
+          "AG": [
+            {
+              "Change": "Change spelling of AG-04.",
+              "Date Issued": "2014-10-29",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AG."
+            },
+            {
+              "Change": "Subdivisions added: AG-11 Redonda.",
+              "Date Issued": "2010-06-30",
+              "Description of Change": "Update of the administrative structure and of the list source.",
+              "Source": "Newsletter II-2 - https://www.iso.org/files/live/sites/isoorg/files/archive/pdf/en/iso_3166-2_newsletter_ii-2_2010-06-30.pdf."
+            }
+          ],
+          "AI": [
+            {
+              "Change": "Modification of remark part 2. (Remark part 2: No subdivisions relevant for this standard).",
+              "Date Issued": "2018-11-26",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AI."
+            }
+          ],
+          "AL": [
+            {
+              "Change": "Correction of the Code Source.",
+              "Date Issued": "2020-11-24",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AL."
+            },
+            {
+              "Change": "Change of subdivision category from préfecture to comté in French; deletion of all districts; update List Source.",
+              "Date Issued": "2015-11-27",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AL."
+            }
+          ],
+          "AM": [
+            {
+              "Change": "Correction of the romanization system label.",
+              "Date Issued": "2018-11-26",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AM."
+            }
+          ],
+          "AO": [
+            {
+              "Change": "Change of spelling of AO-CCU, AO-CNO, AO-CUS, AO-LNO, AO-LSU; Addition of local variation for AO-CCU, AO-CNO, AO-CUS; Update List Source.",
+              "Date Issued": "2020-11-24",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+            },
+            {
+              "Change": "Update List Source.",
+              "Date Issued": "2015-11-27",
+              "Description of Change": "",
+              "Source": "Online Browsing Platform (OBP) - https://www.iso.org/obp/ui/#iso:code:3166:AO."
+            }
+          ]
+        },
+        "metadata": {
+          "count": 911,
+          "generated": "2026-07-05T17:36:30Z"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live iso-3166-updates-api; probed https://iso3166-updates.vercel.app/api/all"
+    },
+    {
+      "name": "Traveller Map",
+      "slug": "traveller-map",
+      "emoji": "🎮",
+      "tagline": "Traveller Map — [Traveller TTRPG](https://www.mongoosepublishing.c",
+      "description": "Traveller Map is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Games & Comics.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://travellermap.com/doc/api",
+      "baseUrl": "https://travellermap.com",
+      "sampleEndpoint": "/api/credits?sx=",
+      "latencyMs": 201,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Credits": "<b>Core</b> sector was designed by Marc W. Miller and\n             appears in <cite>Atlas of the Imperium</cite> (GDW,\n             1984).",
+        "SectorX": 0,
+        "SectorY": 0,
+        "SectorName": "Core",
+        "SectorSource": "Traveller 5 Second Survey",
+        "SectorMilieu": "M1105",
+        "SectorTags": "Official OTU",
+        "SubsectorName": "Mekee"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live traveller-map; probed https://travellermap.com/api/credits?sx="
+    },
+    {
+      "name": "Bank Negara Malaysia Open Data",
+      "slug": "bank-negara-malaysia-open-data",
+      "emoji": "🏛",
+      "tagline": "Bank Negara Malaysia Open Data — Malaysia Central Bank Open Data",
+      "description": "Bank Negara Malaysia Open Data is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Government.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://apikijangportal.bnm.gov.my/",
+      "baseUrl": "https://api.bnm.gov.my",
+      "sampleEndpoint": "/api/specification/categories",
+      "latencyMs": 1049,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "servers": "https://api.bnm.gov.my/public",
+        "categories": [
+          {
+            "name": "Rates and Volumes",
+            "icon": "fa-chart-bar",
+            "enabled": true,
+            "tags": [
+              "Base Rates/BLR/Effective LR",
+              "Daily FX Turnover"
+            ]
+          },
+          {
+            "name": "Monetary and Banking",
+            "icon": "fa-university",
+            "enabled": true,
+            "tags": [
+              "1.1 : Reserve Money",
+              "1.2 : Currency in Circulation by Denomination"
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live bank-negara-malaysia-open-data; probed https://api.bnm.gov.my/api/specification/categories"
+    },
+    {
+      "name": "District of Columbia Open Data",
+      "slug": "district-of-columbia-open-data",
+      "emoji": "🏛",
+      "tagline": "District of Columbia Open Data — Contains D.C. government public datasets, includin",
+      "description": "District of Columbia Open Data is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Government.",
+      "sourceCategory": "Government",
+      "docsUrl": "http://opendata.dc.gov/pages/using-apis",
+      "baseUrl": "http://opendata.dc.gov",
+      "sampleEndpoint": "/api/v3",
+      "latencyMs": 336,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the V3 API. It is currently under construction",
+        "resources": {
+          "datasets": {
+            "routes": {
+              "collection": "https://opendata.dc.gov/api/v3/datasets",
+              "object": "https://opendata.dc.gov/api/v3/datasets{/:id}"
+            },
+            "parameters": {
+              "query": "search term",
+              "filter": "filter applied to search. Example: 'filter[tags]=airports'",
+              "page[size]": "Number of resources per page. Example: 'page[size]=25' ",
+              "page[number]": "The page number for the resources. Example: 'page[number]=2'"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live district-of-columbia-open-data; probed http://opendata.dc.gov/api/v3"
+    },
+    {
+      "name": "Rwanda Locations",
+      "slug": "rwanda-locations",
+      "emoji": "🗺",
+      "tagline": "Rwanda Locations — Rwanda Provences, Districts, Cities, Capital City,",
+      "description": "Rwanda Locations is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Geocoding.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://rapidapi.com/victorkarangwa4/api/rwanda",
+      "baseUrl": "https://rapidapi.com",
+      "sampleEndpoint": "/ping",
+      "latencyMs": 165,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ping": "pong"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live rwanda-locations; probed https://rapidapi.com/ping"
+    },
+    {
+      "name": "Open Government, Switzerland",
+      "slug": "open-government-switzerland",
+      "emoji": "🏛",
+      "tagline": "Open Government, Switzerland — Switzerland Government Open Data",
+      "description": "Open Government, Switzerland is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Government.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html",
+      "baseUrl": "https://opendata.swiss",
+      "sampleEndpoint": "/api/3/action/package_search?fq=tags:economy",
+      "latencyMs": 1109,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://ckan.opendata.swiss/api/3/action/help_show?name=package_search",
+        "success": true,
+        "result": {
+          "count": 2,
+          "facets": {},
+          "results": [
+            {
+              "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+              "author": "{\"de\": \"Schweizerisches Bundesarchiv\", \"en\": \"\", \"fr\": \"\", \"it\": \"\"}",
+              "author_email": null,
+              "conforms_to": [],
+              "contact_points": [
+                {
+                  "email": "info@bar.admin.ch",
+                  "name": "Schweizerisches Bundesarchiv"
+                }
+              ],
+              "creator_user_id": "082dec4d-1b01-4463-886e-6bb9e5b3a69a",
+              "description": {
+                "de": "Die Beständeübersicht der Archivdatenbank des Schweizerischen Bundesarchivs dient zur Orientierung innerhalb der Bestände des Bundesstaats ab 1848 (Hauptabteilung E). Sie eignet sich als Einstieg bei der Suche nach relevanten Unterlagen zu einem bestimmten Themenkomplex. ",
+                "en": "The fonds overview of the Swiss Federal Archives’ database guides users within the holdings of the Federal State since 1848 (main department E). It offers an easy starting point for a search for records on a specific topic. ",
+                "fr": "L'inventaire des fonds de la base de données de recherche des Archives fédérales suisses peut être utilisé pour s'orienter dans le cadre d'une recherche à l'intérieur des fonds de l’État fédéral depuis 1848 (division E). Cet inventaire est particulièrement utile au début d'une recherche de documents pour un thème particulier. ",
+                "it": "Il sommario della banca dati dell'Archivio federale svizzero permette all'utente di orientarsi nei fondi dello Stato federale dal 1848 (sezione principale E). Tale strumento é utile per la ricerca di documenti rilevanti che riguardano tematiche particolari. "
+              },
+              "display_name": {
+                "de": "Beständeübersicht Bundesstaat ab 1848",
+                "en": "Fonds overview: Federal State since 1848",
+                "fr": "Inventaire des fonds de l'État fédéral depuis 1848",
+                "it": "Sommario dei fondi sullo Stato federale dal 1848"
+              }
+            },
+            {
+              "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/DAILY",
+              "author": "Eidgenössisches Amt für das Handelsregister (EHRA)",
+              "author_email": null,
+              "contact_points": [
+                {
+                  "email": "zefix@bj.admin.ch",
+                  "name": "Zefix Admin"
+                }
+              ],
+              "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944",
+              "description": {
+                "fr": "__Zefix__ est l'offre accessible au public de l'__Office fédéral du registre du commerce (OFRC)__. Grâce à l'infrastructure Zefix, les données de la \"base de données centrale des entités juridiques\", du registre central, sont mises à disposition du public via Internet. Il existe différentes possibilités d'accès:\r\n\r\n* Application web Zefix (https://www.zefix.admin.ch/),\r\n* Zefix REST API (https://www.zefix.admin.ch/ZefixPublicREST/),\r\n* Zefix Mobile App (https://www.zefixapp.ch/).\r\n\r\nLes données de toutes les entités juridiques inscrites au registre du commerce ainsi que les publications quotidiennes du registre du commerce dans la Feuille officielle suisse du commerce (FOSC) peuvent être consultées via Zefix.\r\n\r\nLe Dataset proposé ici contient les données de base actualisées quotidiennement des entités juridiques actives inscrites au registre du commerce, telles que la raison sociale / le nom, le siège et l'adresse de domicile.\r\n\r\nTrois exemples de requêtes SPARQL sont disponibles dans la section \"Informations complémentaires\".",
+                "en": "__Zefix__ is the publicly accessible service of the __Federal Commercial Registry Office (FCRO)__. The Zefix infrastructure makes the data of the \"central database of legal entities\", the central register, publicly available via the internet. There are various accesses:\r\n\r\n* Zefix web application (https://www.zefix.admin.ch/),\r\n* Zefix REST API (https://www.zefix.admin.ch/ZefixPublicREST/),\r\n* Zefix Mobile App (https://www.zefixapp.ch/).\r\n\r\nThe data of all legal entities entered in the commercial register, as well as the daily commercial register publications in the Swiss Official Gazette of Commerce (SOGC) can be accessed via Zefix.\r\n\r\nThe dataset offered here contains daily updated core data of the active legal entities entered in the commercial register, such as company name / name, registered officeseat and domicile address.\r\n\r\nThree examples of SPARQL queries can be found under \"Additional information\".",
+                "de": "__Zefix__ bildet das öffentlich zugängliche Angebot des __Eidgenössischen Amtes für das Handelsregister (EHRA)__.\r\nMittels der Zefix Infrastruktur werden die Daten der \"zentralen Datenbank Rechtseinheiten\", dem Zentralregister, öffentlich über Internet zur Verfügung gestellt. Es bestehen verschiedene Zugänge:\r\n\r\n* Zefix Webapplikation (https://www.zefix.admin.ch/),\r\n* Zefix REST API (https://www.zefix.admin.ch/ZefixPublicREST/),\r\n* Zefix Mobile App (https://www.zefixapp.ch/).\r\n\r\nÜber Zefix sind die Daten von sämtlichen im Handelsregister eingetragenen Rechtseinheiten sowie die täglichen Handelsregisterpublikationen im Schweizerischen Handelsamtsblatt (SHAB) abrufbar.\r\n\r\nDas hier angebotene Dataset beinhaltet tagesaktuelle Kerndaten der aktiven, im Handelsregister eingetragenen Rechtseinheiten, wie Firma / Name, Sitz und Domiziladresse.\r\n\r\nDrei Beispiele für SPARQL-Abfragen finden sich unter \"Zusätzliche Informationen\".",
+                "it": "__Zefix__ è l'offerta accessibile al pubblico dell’__Ufficio federale del registro di commercio (UFRC)__. Grazie all'infrastruttura Zefix, i dati della \"banca dati centrale degli enti giuridici\", del registro centrale, sono resi disponibili al pubblico via Internet. Esistono varie possibilità di accesso:\r\n\r\n* Applicazione web Zefix (https://www.zefix.admin.ch/),\r\n* Zefix REST API (https://www.zefix.admin.ch/ZefixPublicREST/),\r\n* Zefix Mobile App (https://www.zefixapp.ch/).\r\n\r\nI dati di tutti gli enti giuridici iscritti nel registro di commercio come anche le pubblicazioni quotidiane del registro di commercio nel Foglio ufficiale svizzero di commercio (FUSC) sono accessibili tramite Zefix.\r\n\r\nIl Dataset qui offerto contiene i dati di base aggiornati quotidianamente degli enti giuridici attivi iscritti nel registro di commercio, come la ditta / il nome, la sede e l'indirizzo di domicilio.\r\n\r\nTre esempi di query SPARQL sono disponibili nella sezione \"Informazioni aggiuntive\"."
+              },
+              "display_name": {
+                "fr": "Zefix - Index central des raisons de commerce",
+                "de": "Zefix - Zentraler Firmenindex",
+                "en": "Zefix - Central Business Name Index",
+                "it": "Zefix - Indice centrale delle ditte"
+              },
+              "id": "e78dbdc6-d8d4-4e51-b193-ba0bc7d90254"
+            }
+          ],
+          "sort": "score desc, metadata_modified desc",
+          "search_facets": {}
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live open-government-switzerland; probed https://opendata.swiss/api/3/action/package_search?fq=tags:economy"
+    },
+    {
+      "name": "Covid-19 Datenhub",
+      "slug": "covid-19-datenhub",
+      "emoji": "🩺",
+      "tagline": "Covid-19 Datenhub — Maps, datasets, applications and more in the conte",
+      "description": "Covid-19 Datenhub is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Health.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://npgeo-corona-npgeo-de.hub.arcgis.com",
+      "baseUrl": "https://npgeo-corona-npgeo-de.hub.arcgis.com",
+      "sampleEndpoint": "/api/v3",
+      "latencyMs": 163,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the V3 API. It is currently under construction",
+        "resources": {
+          "datasets": {
+            "routes": {
+              "collection": "https://npgeo-corona-npgeo-de.hub.arcgis.com/api/v3/datasets",
+              "object": "https://npgeo-corona-npgeo-de.hub.arcgis.com/api/v3/datasets{/:id}"
+            },
+            "parameters": {
+              "query": "search term",
+              "filter": "filter applied to search. Example: 'filter[tags]=airports'",
+              "page[size]": "Number of resources per page. Example: 'page[size]=25' ",
+              "page[number]": "The page number for the resources. Example: 'page[number]=2'"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live covid-19-datenhub; probed https://npgeo-corona-npgeo-de.hub.arcgis.com/api/v3"
+    },
+    {
+      "name": "ICD-10 Codes",
+      "slug": "icd-10-codes",
+      "emoji": "🩺",
+      "tagline": "ICD-10 Codes — List of all healthcare diagnosis codes",
+      "description": "ICD-10 Codes is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Health.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://clinicaltables.nlm.nih.gov/apidoc/icd10cm/v3/doc.html",
+      "baseUrl": "https://clinicaltables.nlm.nih.gov",
+      "sampleEndpoint": "/api/icd10cm/v3/search?sf=code,name&terms=tuberc",
+      "latencyMs": 448,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        78,
+        [
+          "A15.0",
+          "A15.4"
+        ]
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live icd-10-codes; probed https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=tuberc"
+    },
+    {
+      "name": "Agentic Engineering Jobs",
+      "slug": "agentic-engineering-jobs",
+      "emoji": "💼",
+      "tagline": "Agentic Engineering Jobs — Job board for engineers building agentic systems (",
+      "description": "Agentic Engineering Jobs is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Jobs.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://agentic-engineering-jobs.com/api-reference",
+      "baseUrl": "https://agentic-engineering-jobs.com",
+      "sampleEndpoint": "/api/v1/jobs?sort=newest&quot",
+      "latencyMs": 1275,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "title": "AI Engineer",
+            "companyName": "DeepLearning.AI",
+            "companyLogoUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://deeplearning.ai&size=128",
+            "companyWebsite": "https://deeplearning.ai",
+            "description": "<p>AI is the new electricity. Millions of AI engineers are needed to transform industries with AI, particularly in the realm of generative AI, and we’re building an education platform to train them. With a mission to empower everyone to build with AI, DeepLearning.AI is an education technology company that is empowering the global workforce to build an AI-powered future. We’re a small tech company with serious credentials, exciting challenges, and wonderful teammates.<br/>DeepLearning.AI is looking for an AI Engineer to work within our newly formed Learning Experience Lab. In this role, you will leverage your expertise in software and machine learning to help us build the future of education. A passion for education is a plus in this role. Your technical skills in software development and the AI space, and your ability to communicate and work well with a team will all be critical for this role. We are headquartered in Mountain View, California and this is an in-person in-office role.<br/>This position is open to candidates based in the United States. For U.S.-based candidates, you must either already possess or be eligible to obtain authorization to work in the U.S.</p>\n<h4>Here’s what you’ll do:</h4>\n<p>Develop new AI products and features to be incorporated into platform learning experiences and content creation workflows.<br/>Work with a small team to quickly iterate and ship new products and features.<br/>Drive rapid engineering efforts to build full-stack applications using GenAI tools, enabling deep exploration of product ideas, user experiences, and technical feasibility<br/>Apply GenAI building blocks (prompt engineering, RAG, finetuning, agentic frameworks, evals, and guardrails) to real-world development.<br/>Learn quickly and proactively when it comes to new technologies in the AI space as well as technologies that are new to you.<br/>Be organized in your work, regularly communicate the status of your projects, and ask for help or feedback proactively.</p>\n<h4>Here are the skills you should have:</h4>\n<p>Technical background in software development, scalable application deployment on cloud services, and the ability to independently develop new software components and integrate them into larger projects.<br/>The ability to use AI coding tools (e.g., Claude Code, Codex, Gemini CLI) both for the purposes of writing scrappy, disposable code to get from idea to working prototype in hours or days, as well as to refine your prototype into a clean, robust codebase for scalable products.<br/>Proficiency with GenAI tools and frameworks: prompt engineering, RAG, finetuning, agentic workflows, evals, guardrails. Experience with front-end technologies like JavaScript, HTML, CSS, and modern frameworks like React, Typescript, and Tailwind. Strong back-end skills, particularly with Python. Database skills for relational, noSQL, graph, and vector databases.<br/>Technical familiarity with machine learning and AI, particularly using LLM APIs and frameworks for things like tool calling, agentic workflows, RAG, finetuning, and using popular frameworks / APIs for these things. While you may not be an expert in all these areas, you should be able to demonstrate deep technical understanding of at least a couple of these things and conceptual understanding of the rest.<br/>Strong early career experience in software development and AI / LLM projects. This could come from some combination of formal study, internships, previous work experience, and side projects.<br/>Excellent communicator and team player with strong English language skills if not a native speaker yourself.</p>\n<h4>Bonus if you have:</h4>\n<p>Background or expertise in education and / or development of educational technology.<br/>Experience in product management, user testing, and rapid iteration.</p>\n<h4>What you get working with us:</h4>\n<p>Being part of a world-class team of education and AI experts trying to change the world.<br/>Work across cultural and geographical lines alongside our offices in different parts of the world.<br/>The opportunity to be exceptionally creative with your high-impact ideas.</p>\n<h4>Our defining values:</h4>\n<p>We care deeply about our learners: We let our learner's needs guide our actions and decisions and put our mission ahead of ourselves.<br/>We are great at what we do: We strive for excellence in all dimensions, especially in the quality of the content we create and people we hire.<br/>We default to action: We are comfortable acting with limited information and taking ownership of our decisions.<br/>We ask why: We ask the hard questions, and are open to being in the wrong. We advocate for the best ideas, not our ideas.<br/>We are honest and authentic: We are transparent as an organization, over-communicate to build trust and share our failures just as we do our successes.<br/>We do this together: We help each other grow and succeed and have fun at work, even in a remote environment.<br/>At DeepLearning.AI, we are committed to providing an environment of mutual respect where equal employment opportunities are available to all applicants without regard to race, color, religion, sex, pregnancy (including childbirth, lactation, and related medical conditions), national origin, age, physical and mental disability, marital status, sexual orientation, gender identity, gender expression, genetic information (including characteristics and testing), military and veteran status, and any other characteristic protected by applicable law. DeepLearning.AI believes that diversity and inclusion among our employees are critical to our success as a company. We seek to recruit, develop, and retain the most talented people from a diverse candidate pool. Selection for employment is decided based on qualifications, merit, and business needs.</p>",
+            "location": "Mountain View, CA",
+            "city": "Mountain View",
+            "locationType": "onsite"
+          },
+          {
+            "title": "Marketing Ops AI Agent Engineer",
+            "companyName": "Saviynt",
+            "companyLogoUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://saviynt.com&size=128",
+            "companyWebsite": "https://saviynt.com",
+            "description": "<p>Saviynt's AI-powered identity platform manages and governs human and non-human access to all of an organization's applications, data, and business processes. Customers trust Saviynt to safeguard their digital assets, drive operational efficiency, and reduce compliance costs. Built for the AI age, Saviynt is today helping organizations safely accelerate their deployment and usage of AI. Saviynt is recognized as the leader in identity security, with solutions that protect and empower the world’s leading brands, Fortune 500 companies and government institutions. For more information, please visit www.saviynt.com.</p>\n<p>We’re looking for a Marketing AI Agent Engineer to help build, configure, and scale AI-powered GTM workflows across Marketing, SDR, and Revenue Operations. This role will sit at the intersection of Marketing Operations, AI automation, data orchestration, and go-to-market execution.<br/>This person will help turn our AI GTM strategy into working systems. That means building and managing AI agents that can research accounts, enrich leads, score fit, monitor buying signals, support SDR outreach, improve CRM data quality, and help activate audiences across email, ads, events, and partner motions.<br/>Reporting into the Marketing Operations and AI Strategy organization, you will be a hands-on builder responsible for connecting systems, designing agent workflows, improving automation quality, and helping Marketing move from manual execution to scalable AI-assisted GTM operations.</p>\n<h4>What You’ll Drive:</h4>\n<p>AI Agent Development &amp; Workflow Automation<br/>● Build, configure, test, and optimize AI agents that support Marketing and SDR workflows across prospecting, enrichment, scoring, routing, outreach, and reporting ● Develop agentic workflows using tools such as Claude, Clay, MCP, Snowflake, Salesforce, HubSpot, Outreach, Gong, and related GTM systems ● Translate business requirements into structured AI workflows that can operate reliably, repeatably, and at scale ● Build agents that monitor key GTM signals such as job changes, hiring velocity, funding events, web intent, content engagement, and account fit ● Create workflows that reduce manual research and give SDRs better prioritized accounts, stronger contact context, and cleaner outreach hooks<br/>GTM Signal Intelligence &amp; Prospecting Automation<br/>● Help build and scale autonomous prospecting motions that identify ICP-fit accounts and contacts based on real-time buying signals ● Support ICP fitness scoring workflows that assess inbound leads, event leads, partner leads, and prospecting lists before they move into downstream systems ● Build logic that blends signal-based prospecting with broader whitespace nurture motions ● Develop workflows that help SDRs prioritize the right accounts at the right time with the right message ● Partner with Marketing, SDR, and RevOps teams to ensure AI-driven prospecting aligns with pipeline goals, territory strategy, and campaign priorities<br/>Data Orchestration &amp; System Connectivity<br/>● Connect and normalize data across Salesforce, HubSpot, Clay, Snowflake, Outreach, Gong, LinkedIn Ads, HockeyStack, and other GTM platforms ● Build structured inputs, data models, prompts, API workflows, and JSON-based logic that allow AI agents to take action with clean context ● Support audience segmentation workflows across cold, warm, and hot account/contact cohorts ● Help operationalize Snowflake and other data sources as audience and intelligence layers for AI-powered GTM activation ● Partner with Marketing Operations, RevOps, Data, and IT teams to make sure agent workflows are secure, governed, and aligned with system architecture<br/>CRM Hygiene &amp; Data Quality Agents<br/>● Build and maintain AI-powered data quality workflows that improve the accuracy of CRM and marketing data ● Support agents for employment verification, LinkedIn URL enrichment, region/location detection, account/contact enrichment, and stale data detection ● Design workflows that catch bad records before SDRs waste time on outdated contacts or inaccurate account information ● Improve the quality of downstream workflows by ensuring agent decisions are based on clean, current, and complete data ● Partner with Salesforce and HubSpot system owners to write back useful intelligence in a structured and governed way<br/>AI-Powered SDR &amp; Marketing Activation<br/>● Build workflows that support AI-generated email sequences, personalized outreach hooks, account research summaries, and meeting preparation briefs ● Help connect outbound email, LinkedIn Ads, website intent, events, and partner motions into a more unified activation model ● Support agent workflows for event and user group planning, including geographic intelligence based on pipeline, whitespace, and ICP contact density ● Partner with SDR leadership to improve rep efficiency, reduce manual research, and increase time spent on high-value conversations ● Help create feedback loops that improve messaging, scoring, segmentation, and workflow performance over time<br/>AI Governance, Testing &amp; Optimization<br/>● Test agent outputs for accuracy, consistency, brand alignment, and business usefulness ● Build repeatable QA processes for prompts, structured inputs, workflow logic, and agent-generated outputs ● Identify where human review is required versus where automation can safely run independently ● Monitor workflow performance and recommend improvements based on adoption, output quality, conversion impact, and operational efficiency ● Partner with Security, IT, and Operations teams to ensure AI workflows follow internal governance and data handling standards</p>\n<h4>WHAT YOU BRING:</h4>\n<p>Must-Have<br/>● 4+ years of experience in Marketing Operations, Revenue Operations, GTM Systems, AI Operations, Marketing Automation, or a related technical GTM role ● Hands-on experience building workflows across GTM systems such as Salesforce, HubSpot, Clay, Outreach, Gong, LinkedIn Ads, Snowflake, or similar platforms ● Strong understanding of B2B SaaS funnel motions, including lead routing, SDR workflows, campaign attribution, pipeline creation, and account-based marketing ● Experience working with AI tools such as Claude, ChatGPT, Cursor, Claygent, or similar AI workflow platforms ● Ability to build structured prompts, workflow logic, decision trees, and reusable AI instructions that produce consistent outputs ● Familiarity with APIs, webhooks, JSON, data enrichment, field mapping, and cross-system automation ● Strong understanding of CRM data structure, including leads, contacts, accounts, campaigns, opportunities, activities, and custom fields ● Ability to translate business problems into practical technical workflows without over-engineering the solution ● Strong analytical and troubleshooting mindset with the ability to diagnose workflow failures, data issues, and process gaps ● Comfortable working cross-functionally with Marketing, SDR, RevOps, Sales, Data, IT, and Security stakeholders<br/>Nice-to-Have<br/>● Experience with Claude Managed Agents, MCP, Clay, Snowflake, HockeyStack, Gong, Outreach, or similar AI-native GTM tools ● Experience building AI agents for SDR prospecting, lead enrichment, account research, CRM hygiene, or outbound personalization ● Familiarity with Python, SQL, JavaScript, or low-code automation platforms ● Experience with vector databases, RAG workflows, Pinecone, or structured knowledge retrieval ● Experience with Salesforce administration, HubSpot operations, campaign operations, or marketing automation architecture ● Experience supporting ABM, intent-based marketing, paid audience sync, or multi-channel GTM activation ● Experience in cybersecurity, identity security, enterprise SaaS, or another complex B2B selling environment ● Comfort working in a fast-moving environment where AI capabilities, tools, and internal processes are evolving quickly<br/>You’re the Type of Person Who<br/>● Thinks like a systems builder, not just a task executor ● Gets excited about turning messy manual processes into scalable AI workflows ● Understands that great AI output depends on clean data, clear instructions, and strong process design ● Can build fast, test carefully, and improve continuously ● Knows when automation should act independently and when a human needs to stay in the loop ● Is comfortable working in the gray area between business strategy and technical execution ● Brings practical ideas, not science projects ● Can explain technical concepts clearly to non-technical stakeholders ● Wants to build the operating layer for the next generation of GTM execution<br/>Why This Role Matters<br/>● You will help build the AI operating system for Marketing and SDR execution ● You will reduce manual research, improve lead quality, and help SDRs focus on the highest-value conversations ● You will improve how Saviynt captures, scores, enriches, and activates GTM signals ● You will help connect AI, data, systems, and human execution into one scalable GTM motion ● You will play a key role in moving Marketing Operations from workflow support to AI-powered revenue acceleration</p>\n<h4>If required for this role, you will:</h4>\n<ul><li>Complete security &amp; privacy literacy and awareness training during onboarding and annually thereafter</li><li>Review (initially and annually thereafter), understand, and adhere to Information Security/Privacy Policies and Procedures such as (but not limited to):</li></ul>\n<p>&gt; Data Classification, Retention &amp; Handling Policy<br/>&gt; Incident Response Policy/Procedures<br/>&gt; Business Continuity/Disaster Recovery Policy/Procedures<br/>&gt; Mobile Device Policy<br/>&gt; Account Management Policy<br/>&gt; Access Control Policy<br/>&gt; Personnel Security Policy<br/>&gt; Privacy Policy</p>\n<p>Saviynt is an amazing place to work. We are a high-growth, Platform as a Service company focused on Identity Authority to power and protect the world at work. You will experience tremendous growth and learning opportunities through challenging yet rewarding work which directly impacts our customers, all within a welcoming and positive work environment. If you're resilient and enjoy working in a dynamic environment you belong with us!</p>\n<p>Saviynt is an equal opportunity employer and we welcome everyone to our team.  All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.</p>",
+            "location": "Remote US",
+            "city": null,
+            "locationType": "remote"
+          }
+        ],
+        "meta": {
+          "total": 1325,
+          "page": 1,
+          "per_page": 50
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live agentic-engineering-jobs; probed https://agentic-engineering-jobs.com/api/v1/jobs?sort=newest&quot"
+    },
+    {
+      "name": "OkSurf",
+      "slug": "oksurf",
+      "emoji": "📰",
+      "tagline": "OkSurf — Free Google News with OG Images",
+      "description": "OkSurf is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: News.",
+      "sourceCategory": "News",
+      "docsUrl": "https://ok.surf/",
+      "baseUrl": "https://ok.surf",
+      "sampleEndpoint": "/api/v1/news-feed",
+      "latencyMs": 485,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "Business": [
+          {
+            "link": "https://news.google.com/read/CBMihAFBVV95cUxNMElHdFA1TlVCaDBWbkR2VlpHalZvcUZ1TmlXakxGdmtseDJuYXhLZXZQckJHYXFkTXhhODVxejNKWlpSVnFfUmQ4YlZXNFhpQmpwTmRpZTJXcWZFTFA0ejlnTTFvZFNDXzdnWGtJQTJmN1NVdlAtT0xVY016RHh4RlFuZVo?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbCtx1pd28gf8WAivCC1C6ewkdqlXnOgTJkm0DJGWRDXZcMjTfHBBUTefbDBtZbiRejK4&fopt=w560-h336-rw-dcGWaICq4G",
+            "source": "5 EYEWITNESS NEWS",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://kstp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Trump Accounts for kids start on July 4th"
+          },
+          {
+            "link": "https://news.google.com/read/CBMiwwFBVV95cUxOczlzc19sNzdaMkZST2FYR1RLMjFBNU5uVFRpTW5GLUxrUjRsWFoyZmRtb0lRUmN4NV9Vd3BMMlJZQTBoR3IwVEhENTZfZGZKNFlfcjlYMW5SbkY5Qk93SlJWR3h6ZWZpcDJEbTZSc2plcHAyVDBHZG1vTGxiWk9BNzNpQVR4aVRmOGp3bEpLNDNuRk82aksxamVha3kxY05MTWpHOVRNb0VOcG5ISEFWbjREOHhmeVRrMVJiMWN1WXNaXzjSAcsBQVVfeXFMTmM0ZVUzcFNYZ1FfTG5ZMEJRTjJpMUl2ZEFTRmE1alRHaTRrQ2VOY2l3d0RLa2txdEtVN0Y1blUyUDlFaE1XSWpTcThxQUpYOE10TmFhdXpLb2s5U05nQVRXeUNNclVCb0tWdGFQdVo0M2JKN0xGckdVM3lBV0ZXeVNwUXJnV1p5ZzRYWEFXRGx6ckhvV25uMjVUbGdUYXVmSWRZc2Q4NldqMHhta3BTX21TNTRsWVYweF80MzNDbE0zMGdDT2lVU1hBcVU?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH_UKxTIAyUwJf6xum7PqED8dnbGX1VzBMx8EmxBFJPYpwIj6MguL8MVfuxxeCwz5j7BA&fopt=w560-h336-rw-dchTGgEZUK",
+            "source": "NBC 5 Chicago",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.nbcchicago.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Delta flight hit by firework while landing at Midway Airport on Fourth of July"
+          }
+        ],
+        "Entertainment": [
+          {
+            "link": "https://news.google.com/read/CBMimAFBVV95cUxQX2EyaE1jcjl0NVhyU1BSN2JEQWpoQ2paNkhTaFJjYURzMmNBU19TZE9FYmdzZEZaQW15aHRiYnZwX0h4ZVUtdzQ2a29SODZoRmVoa0Q3bVhlVXNoWm4yN0NvOHF4bVFNal83N25pQ19sVy1YczZ6bnpubURQSXVqSTRVUzdoQ0tNOHpTUkpNS2N2MGhZWWxlaw?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmJdfFyCDDo0lItP4dMikVYV8VLGjfnKRkk_FjHOyknQVWeYRiba5eeg6iunm_J5pZEws&fopt=w560-h336-rw-dcAUCO6yFosY8B",
+            "source": "AP News",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://apnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Taylor Swift and Travis Kelce’s love story, from friendship bracelets to wedding rings"
+          },
+          {
+            "link": "https://news.google.com/read/CBMixwFBVV95cUxNMmVZZzNPZTRmQkRia2Z2ZUFMNGtVM1ZZRUFWZ01xemxjVjN5dHZRMW5nOVUyc0RxWDZNLVdqaVQ0T1FHYUx0ODIyeG1PNk1vOXg1OGRMQTkzVjhRV3RONUVBdmxTajZxYW4xUFl0OXZPcGkyLUpEODh3RVJ1aktpQ01Xc2lGZVpLNDJwbFk1dEtRR2VVRlpQYVJleVVhVG9WN0VlOXVXaFR6MDl6Y05wYk5hd0N3Ql9FeDlFbGVfRHduU2NDbnFJ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWuEFxr3GNBs0_S3-14wnL-vDjKPbWxRXqyUpxXkq99Gbj8KNjIj1tMYeKdbmcFSor11A&fopt=w560-h336-rw-dcAYCO1TRnuXAB",
+            "source": "Variety",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://variety.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "'Minions & Monsters' Box Office: Sequel Has Worst Opening in Franchise, 'Supergirl' Suffers Brutal Drop"
+          }
+        ],
+        "Health": [
+          {
+            "link": "https://news.google.com/read/CBMi2wFBVV95cUxOcXVoZU1oUlhialFMTU5sWkxxTVU1RzlwWDIyZS00U2RKTVFjVzhWZDdDdXQtOUtJcmFHdUg4VlcwMm5XUHoycDREM1ZFdDRFbmRpeEw2eWpQbU91X29ZRno2czAzR0k0Qm0xSFVyMm9LWDVhZHVSTnJDeEUwV2VkcEpaR2xsem9yLVQxbHBKVk1IVGFtTjBlX0tXMEwzRlg4bFR2Y3lxdEJFZHhYQndzN3RKdjB2QzJuM2VoOHZxLUV2ZXhOdjhUZVdpRllOTFZPVzFZWDVVUjdKazQ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKimpXmfVGQ5VNYOL_ye6rn1TgtUovlu5VLulBMw-PnQq4XU4simQXjEJZ0T6kSdfCDWM&fopt=w560-h336-rw-dcBTCExJYpRBUB",
+            "source": "Lansing State Journal",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.lansingstatejournal.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Food-borne parasite infections triple in Michigan. What you should do"
+          },
+          {
+            "link": "https://news.google.com/read/CBMikAFBVV95cUxQOW4xWVlFc1dzLXBNU0VQQ3VXZ0s0QVpJT2IxRjA5OVpKNW5qbUcwdXZlTnQwYlJ1cnY0cTNNSEJvNXE2bkR3UU5lbldsRmRscF9KZ1RZUWh0Yi1Zd2Z5cFBjZUY0S1VkR19FYUNNeDBTUEh1UENBNGlKWjNzazEyNE9Dd3oyVW9rYmp4ZFEtMFc?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqEepWa3Y9zzYLjVFawrBB7EqeY2nKipjt0S3uDQSsXCeU0_3BkzkaGA7N3cWRauYIb0o&fopt=w560-h336-rw-dcmSSUjBmqki0C",
+            "source": "AP News",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://apnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Residents in eastern Congo cling to hope as a new Ebola treatment trial begins"
+          }
+        ],
+        "Science": [
+          {
+            "link": "https://news.google.com/read/CBMiqAFBVV95cUxPa0s3eEFvck5yQjl1c2lUYTJQb0cyeXlFRmRzUHhTMmFtTEQzbVBkUVRTeXNOeEc0NFN6YTJQSjdzQVpDcWdSNGF2NTg4Qjl2ekRHOHpIN2R6eWxBNGNIOXhQRXJTcENkUFV5aU9naUlzQzlUSUxmU1QtSndVUHFtcGdtWDVlZEdETUZ3b2FhallhYm9iYnZoMXQzTnBFVUJIV2lHUEJ3ajQ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROm9-lylQeAtaAOzzDS1vyeb8nq9vqp3XQ5S9cVvYTw9U4c2xn9c-QcJmnP3K3frBCvLo&fopt=w560-h336-rw-dcAXCE0KlnFjQpdEU",
+            "source": "The Verge",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.theverge.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "NASA launched an emergency mission to stop the Swift Observatory from crashing to Earth"
+          },
+          {
+            "link": "https://news.google.com/read/CBMiwwFBVV95cUxOVmpYeGo3TE0zOTlpZGYyWVlXSFNlczJrWUQ3aTN4QTgyeW4tcXZxUWV6cTF3WEQxSDRQRk5rQUFJZC1OdmhyQUMxN3RDUUV4N0xGQnpveWlDS29MVEptdDFObUhwNTBxRmRRNXg5MEJNbmxMUXFqYWVvZndFdzlMaXhtRXN4MHN6eWlTNF9KdXFMVlBUQm1WVFFlOGx2ZWxSc0RUNlpDR2VtM0hWRXdPbXlUNWpId29JS2llRjU2b0RhWnc?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZwgi-d9xtH1qiRTTvZJ1Hlal1UaoKLKPSmsiO-UOCs9DdHFaCjtOl_5A7q6SxRAlfRw&fopt=w560-h336-rw-dciSKUhhoK",
+            "source": "New York Post",
+            "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://nypost.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Astronomers discover Earth’s new ‘next-door neighbor’ — a potentially habitable planet"
+          }
+        ],
+        "Sports": [
+          {
+            "link": "https://news.google.com/read/CBMi0gFBVV95cUxNdmc3akp4NHZVYzYxaFoxQ09KXzhvQXNNT21hc3NhQmNBbHByUENuME1pNUktMGwxazdDMU9xR3dySXBRdDF5TVg0MFRRR1hHVTd6WU41VW4ySUNfc3NWYUhfV2JSbHhGR0doTEVEZF9FWEdRV3Bab2dPRDRYelQ1YjBaMUlIc3NSQ3AwR0lpWmVDNXVMVWNrSTVmSG1PSjhMNmdNRVUtcTlUdnAweEYtQmJmekFJSUNpd1VHeDNjWW1weDdscmo1bDFaS3pVN2lOa3c?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRplwY2LUS8Ln9RpT7IDChLVqNHTCKF3lAxkxs8at3deDlRcZ67d2KgcKR9v2ERPJJA80&fopt=w560-h336-rw-dcqTWIzR0I",
+            "source": "SportsLine",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.sportsline.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "England vs. Mexico odds, lines, predictions: 2026 World Cup Round of 16 picks from proven soccer expert"
+          },
+          {
+            "link": "https://news.google.com/read/CBMiwAFBVV95cUxPd3NLeTRyV282dWNObDNTdHBHRVhXNGh5OXpEdjN2Sm9YOENYaElHRTQtYzhNZUcxNGQ4LWpUTk1uaWo4N0pRRFY5MFVQTnc4UG9mQ2lKX0pDSWpyX2xmSHJMdEx1R201T001MlpUSDdXUEF0cndhVkY1N2FPZUJxUDdaTzRRdDdlenhDdjZZZG9HY2E0b0E5VW1QdTg3MUFsZTlMZkV1bC1HcG45eXk4NnVnZTJrVlFMckg4MTVtQUQ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHsTACJ0-X7mjmMLUJtbNaMFzxKRzGe-pPNWPcLTQD5fG1Ev2cGxSXyjHq1QECc3w1J7E&fopt=w560-h336-rw-dcAQGETIkL",
+            "source": "Yahoo Sports",
+            "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://sports.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "World Cup Round of 16 schedule, live updates: Brazil vs. Norway, England vs. Mexico on tap"
+          }
+        ],
+        "Technology": [
+          {
+            "link": "https://news.google.com/read/CBMiwgFBVV95cUxQTEdGRzZwNG5pQmhJTWxpZS1IdTZETFN0N2FsLUJOMEpVd0xRRS1xYmZmQm9YanFRMlNzd3IxTWNiRDFrMjdlcjRWb0FEcFlaTWFubTVVUXk1VW4xcFo5X1NHRUpVa1paM1F5OUNtTGdKNWhueUZlcGNtZGJTN1ZiTkxYc2ZFWTQyeFgzYTV6SXFCOTdscHIzcDM0Zjk3dUN4WkdkLUN2RlJzbDQ4bDJLekVIX1lqSFdrMDBQMlNuMTh0QQ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXLca5yCsTfl_1edpv90pGULZcKaIQrl3pYOs_7F3gBVVRqYg1qbrPjbWEojx2nQR7yc1LJqOqQeKG_Q",
+            "source": "The Verge",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.theverge.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Infuriating Google commercial imagines the founding fathers embracing AI"
+          },
+          {
+            "link": "https://news.google.com/read/CBMijgFBVV95cUxOc0otZGpBSmI3LW9mbzZlTXM3bmk0clJPWnh2WWJXZHVDSTNsb1NxQTNrWDVKWEZ0UmhfalVpQkV1all6V1NvLW04R3FsUnR1TkVUVzI1YWtpbHZZeTU2aTMxUjJlam5UVEdPU2ctejItNEZuUnlQZFJSTmZuSldhQjBBRlk1MXoxNmJqSWZB?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xyrv7aF0e2Saxz_MSkaQFAlshCgu4nN7XduNiXQewMwQ-rCrrbRYc1Wu57p6q1cP-lU&fopt=w560-h336-rw-dcgSQK",
+            "source": "Android Central",
+            "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.androidcentral.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "I upgraded to the new Google Home Speaker for the AI, but I'm keeping it for the sound"
+          }
+        ],
+        "US": [
+          {
+            "link": "https://news.google.com/read/CBMiiwFBVV95cUxNM2w5MmkxUGJVMGdEa2h0ZDJrMDVqS0syUnh2OWNTdzZDUEEzbWVDZURCVDRJSkhTeFllbU1xM2hqdVdWTEhhb0s0bVFpNk93WmRTVURGV0NCOGpxY3Z4UTNJTFZpY1lnalI1MEQ4SHl2M0ozT3V2Wl9SUEduQjJiN2w4UVRWQVNUU1ZN0gGQAUFVX3lxTE1NVlo1dmRIdXRWZHlsRmhtdjJkREw2Y0FGWjdnN190ZGJjN3o3RW5HYURGYk4tcXdIbFB0YkVqcGVPblJpWDY3LTBPNXpmM0lWYzZrbnhTQ0tFWEhXQnJEVy1VV3RWMm1qQmxmREl6VEZYU1U1M2VReXlobnY2RFM0am9nSmJCSXBZTWdmQ05PYQ?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_3tfUKpFar_korE818-k5-BmJWJOWGuc8MoAHO2CZN6aNGNRsISF-z2EvKrSLqsMGBhc&fopt=w560-h336-rw-dcgXIM",
+            "source": "The Hill",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://thehill.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Trump touts ‘best fireworks show, EVER’ after 250th speech, weather delays"
+          },
+          {
+            "link": "https://news.google.com/read/CBMitwFBVV95cUxQUlFCMlMxTUFza2VnSnU2eTByTXhzS3JpS3JKbnpSLXB2eno5cV82Q01JWVdCLUNaejJlbGVRMjNnX25vRTZET2h1d0FhLXk4STN0RHppbXJLSnlrc1MtanFKWkpveC05aFZPUFRLM0x0ei1QdXEtOHAwV0VnZ2FEVV9XdU1wWmpLN1A3OXVucHVLa3N2YUNjRVBoSjlvczRsRVA0VE93QTI4aGJzVDlObUtUM0FhS00?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGEMT0IKXCKthnZVU-nTvlrirhm8q4KZblOaGV_hnmEmVvkDvQN65ri80R3bcfGaUoBo&fopt=w560-h336-rw-dclQCk9BDrigQD",
+            "source": "AP News",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://apnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Despite stormy weather, America marks 250 years of independence, in photos"
+          }
+        ],
+        "World": [
+          {
+            "link": "https://news.google.com/read/CBMiwwFBVV95cUxNRmcyb0xaUjZMcUNjSDFQODFUX0Y1TDg0bDlHUkxLZE5FeWZQajJtZnRKYjRWdzZjN0RmRWcwdFN1dWtkLXdhUWFGNGJKVTFSSDJVRnV4Yy05YWJVbjh4RjJyS1YxdnBOMW9jQVp5Uk9aa1hxYmd1RndVZER6dTBSa0V2cnQxTTFscG5rY1hpV3NEMVNIeWJ0TFF4WE9XcEdoanFyVmtkenhSbXhvdnU1c3BQNEVOVmM1OHgyVmJvdGR3aWc?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4zvTCVhM_ceqnOKd1CGVg2_sA9CPI_p6Qevchk4atJThl5uJ0XxbpORb5YxH-RsYutB8&fopt=w225-h135-rw-dcATCMyKGmwY4B",
+            "source": "Reuters",
+            "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Three sons of Iran's slain leader Khamenei appear at funeral, not his successor"
+          },
+          {
+            "link": "https://news.google.com/read/CBMiswFBVV95cUxPRXlrZW5Od0Y0RDdlZ0JMRVlKcF9YNDdnMW9ySXRWTTd2MTNjdzRXcWF4WXBac2syZ1dySWI5TGdEQzJQTjQ4TVBhczdaU2VRX1NVRE5IWlVUODF1VnFBV1ZaOUFaNTdTam80ZTFudkQzMERDWUNNaGJ4V3pneGY0QXdPR0JndUI0Rm5RWUw5Yy1obFotbDVVVi1fZERGbDVWTlhldE5SWGxNZkdMbkFncnNBc9IBuAFBVV95cUxOV0dhVXAwcERUcnJCS0ZvQjh1Y0R0YTNHeDl0d2lTU3ZSYWlESTZiZThZTEN5dWZpd01ERk9lOGNkWkJQbUZhMUtJMmdYTlUxSUF5ZUNIQ2VQMnY2dnNWWUxKSjBzbGJ1Mzd0SXYyQi1wTHZjaGIwaEgybVBsbllUNXhoYk54czN0RTZ4NXZaSmhtRE9pYUxrWEhodTdrQmVMNlhMbUVTclotVG5ZdzZGZFlSa3dadHQz?hl=en-US&gl=US&ceid=US%3Aen",
+            "og": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRsCWUudisChx5hecVPfu5rBOmMzWsTPVPGmgyBLHpiRzI9C8vGEa2liQNq_t8L4ieOa0&fopt=w560-h336-rw-dcGUOQSRoK",
+            "source": "Al Jazeera",
+            "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.aljazeera.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+            "title": "Reform UK’s Farage failed to disclose funds from convicted criminal: Report"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live oksurf; probed https://ok.surf/api/v1/news-feed"
+    },
+    {
+      "name": "Internet Archive",
+      "slug": "internet-archive",
+      "emoji": "🏛",
+      "tagline": "Search the Internet Archive catalog",
+      "description": "Advancedsearch returns JSON item lists. Respect rate limits; gateway to books, audio and web captures.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://archive.readme.io/docs",
+      "baseUrl": "https://archive.org",
+      "sampleEndpoint": "/metadata/principleofrelat00eins/",
+      "latencyMs": 749,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "alternate_locations": {
+          "servers": [
+            {
+              "server": "dn710607.ca.archive.org",
+              "dir": "/0/items/principleofrelat00eins"
+            },
+            {
+              "server": "dn760109.eu.archive.org",
+              "dir": "/0/items/principleofrelat00eins"
+            }
+          ],
+          "workable": [
+            {
+              "server": "dn710607.ca.archive.org",
+              "dir": "/0/items/principleofrelat00eins"
+            },
+            {
+              "server": "dn760109.eu.archive.org",
+              "dir": "/0/items/principleofrelat00eins"
+            }
+          ]
+        },
+        "created": 1783268642,
+        "d1": "ia902907.us.archive.org",
+        "d2": "ia802907.us.archive.org",
+        "dir": "/7/items/principleofrelat00eins",
+        "files": [
+          {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1657988342",
+            "size": "11635",
+            "md5": "2182f15b8c15edd2dc53245e528e56cc",
+            "crc32": "23c2995d",
+            "sha1": "edf58264c1c386c9afe6a22bfbc967f54d41df36",
+            "format": "Item Tile"
+          },
+          {
+            "name": "principleofrelat00eins.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "principleofrelat00eins_djvu.xml",
+            "md5": "7a9b517760f9dfa6aa51c07bd8662927",
+            "mtime": "1208477003",
+            "size": "9439156",
+            "crc32": "58c7f3b"
+          }
+        ],
+        "files_count": 26,
+        "item_last_updated": 1719737772
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live archive-org; probed https://archive.org/metadata/principleofrelat00eins\\"
+    },
+    {
+      "name": "Open Data Minneapolis",
+      "slug": "open-data-minneapolis",
+      "emoji": "📊",
+      "tagline": "Open Data Minneapolis — Spatial (GIS) and non-spatial city data for Minnea",
+      "description": "Open Data Minneapolis is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Open Data.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://opendata.minneapolismn.gov/",
+      "baseUrl": "https://opendata.minneapolismn.gov",
+      "sampleEndpoint": "/api/v3",
+      "latencyMs": 161,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Welcome to the V3 API. It is currently under construction",
+        "resources": {
+          "datasets": {
+            "routes": {
+              "collection": "https://opendata.minneapolismn.gov/api/v3/datasets",
+              "object": "https://opendata.minneapolismn.gov/api/v3/datasets{/:id}"
+            },
+            "parameters": {
+              "query": "search term",
+              "filter": "filter applied to search. Example: 'filter[tags]=airports'",
+              "page[size]": "Number of resources per page. Example: 'page[size]=25' ",
+              "page[number]": "The page number for the resources. Example: 'page[number]=2'"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live open-data-minneapolis; probed https://opendata.minneapolismn.gov/api/v3"
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia",
+      "emoji": "📊",
+      "tagline": "Wikipedia — Mediawiki Encyclopedia",
+      "description": "Wikipedia is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Open Data.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+      "baseUrl": "https://en.wikipedia.org",
+      "sampleEndpoint": "/api/rest_v1/page/title/Earth",
+      "latencyMs": 407,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "items": [
+          {
+            "title": "Earth",
+            "page_id": 9228,
+            "rev": 1362232211,
+            "tid": "DUMMY",
+            "namespace": 0,
+            "user_id": 54521497,
+            "user_text": "Askingforwiki",
+            "comment": "Added links."
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live wikipedia; probed https://en.wikipedia.org/api/rest_v1/page/title/Earth"
+    },
+    {
+      "name": "World Bank",
+      "slug": "world-bank",
+      "emoji": "🌏",
+      "tagline": "World Bank open data",
+      "description": "Countries and development indicators. Append format=json; no API key required.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "baseUrl": "https://api.worldbank.org",
+      "sampleEndpoint": "/v2/country/BRA?format=json&per_page=1",
+      "latencyMs": 216,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": "1",
+          "total": 1
+        },
+        [
+          {
+            "id": "BRA",
+            "iso2Code": "BR",
+            "name": "Brazil",
+            "region": {
+              "id": "LCN",
+              "iso2code": "ZJ",
+              "value": "Latin America & Caribbean "
+            },
+            "adminregion": {
+              "id": "LAC",
+              "iso2code": "XJ",
+              "value": "Latin America & Caribbean (excluding high income)"
+            },
+            "incomeLevel": {
+              "id": "UMC",
+              "iso2code": "XT",
+              "value": "Upper middle income"
+            },
+            "lendingType": {
+              "id": "IBD",
+              "iso2code": "XF",
+              "value": "IBRD"
+            },
+            "capitalCity": "Brasilia"
+          }
+        ]
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live world-bank; probed https://api.worldbank.org/v2/country/BRA?format=json&per_page=1"
+    },
+    {
+      "name": "Unusual Units Converter",
+      "slug": "unusual-units-converter",
+      "emoji": "🔬",
+      "tagline": "Unusual Units Converter — Unit converter for standard and uncommon units",
+      "description": "Unusual Units Converter is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Science & Math.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://api.unusualunits.com/",
+      "baseUrl": "https://api.unusualunits.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 111,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "message": "Unusual Units API is running!"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live unusual-units-converter; probed https://api.unusualunits.com/health"
+    },
+    {
+      "name": "DiscGolf",
+      "slug": "discgolf",
+      "emoji": "⚽",
+      "tagline": "DiscGolf — Structured disc golf course data",
+      "description": "DiscGolf is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Sports & Fitness.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://discgolfapi.com/docs/",
+      "baseUrl": "https://io.discgolfapi.com",
+      "sampleEndpoint": "/v1/courses?country=GB&amp;limit=5&amp;offset=10%3C/code%3E%3C/pre%3E",
+      "latencyMs": 409,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "schema_version": "1.0.0",
+        "generated_at": "2026-07-02T11:59:39.931664Z",
+        "attribution": "Course data supplied by DiscGolfAPI.",
+        "attribution_required": true,
+        "license": "Free to use with attribution.",
+        "license_url": "https://discgolfapi.com/licence/",
+        "terms_url": "https://discgolfapi.com/terms/",
+        "no_warranty": "Data is provided as-is. Accuracy, completeness and availability are not guaranteed."
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live discgolf; probed https://io.discgolfapi.com/v1/courses?country=GB&amp;limit=5&amp;offset=10</code></pre>"
+    },
+    {
+      "name": "F1 API",
+      "slug": "f1-api",
+      "emoji": "🏎",
+      "tagline": "Formula 1 race schedules and results",
+      "description": "Unofficial F1 data API with seasons, races, drivers and standings. Keyless JSON for motorsport dashboards.",
+      "sourceCategory": "Sports & Fitness",
+      "docsUrl": "https://f1api.dev",
+      "baseUrl": "https://f1api.dev",
+      "sampleEndpoint": "/api/2026/10/race",
+      "latencyMs": 4394,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "api": "https://f1api.dev",
+        "url": "https://f1api.dev/api/2026/10/race",
+        "limit": 30,
+        "offset": 0,
+        "total": 22,
+        "season": 2026,
+        "races": {
+          "round": "10",
+          "date": "2026-06-28",
+          "time": "13:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/2026_Austrian_Grand_Prix",
+          "raceId": "austrian_2026",
+          "raceName": "Formula 1 Lenovo Austrian Grand Prix 2026",
+          "circuit": [
+            {
+              "circuitId": "red_bull_ring",
+              "circuitName": "Red Bull Ring",
+              "country": "Austria",
+              "city": "Spielberg",
+              "circuitLength": "4318km",
+              "corners": 10,
+              "firstParticipationYear": 1970,
+              "lapRecord": "1:05:619"
+            }
+          ],
+          "results": [
+            {
+              "position": "1",
+              "points": 25,
+              "grid": "1",
+              "time": "1:26:37.979",
+              "fastLap": "1:10.683",
+              "retired": null,
+              "driver": {
+                "driverId": "russell",
+                "number": 63,
+                "shortName": "RUS",
+                "url": "https://en.wikipedia.org/wiki/George_Russell_(racing_driver)",
+                "name": "George",
+                "surname": "Russell",
+                "nationality": "Great Britain",
+                "birthday": "15/02/1998"
+              },
+              "team": {
+                "teamId": "mercedes",
+                "teamName": "Mercedes Formula 1 Team",
+                "nationality": "Germany",
+                "firstAppareance": 1954,
+                "constructorsChampionships": 8,
+                "driversChampionships": 9,
+                "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One"
+              }
+            },
+            {
+              "position": "2",
+              "points": 18,
+              "grid": "5",
+              "time": "+1.611",
+              "fastLap": "1:10.483",
+              "retired": null,
+              "driver": {
+                "driverId": "max_verstappen",
+                "number": 33,
+                "shortName": "VER",
+                "url": "https://en.wikipedia.org/wiki/Max_Verstappen",
+                "name": "Max",
+                "surname": "Verstappen",
+                "nationality": "Netherlands",
+                "birthday": "1997-09-30"
+              },
+              "team": {
+                "teamId": "red_bull",
+                "teamName": "Red Bull Racing",
+                "nationality": "Austria",
+                "firstAppareance": 2005,
+                "constructorsChampionships": 6,
+                "driversChampionships": 8,
+                "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing"
+              }
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live f1-api; probed https://f1api.dev/api/2026/10/race"
+    },
+    {
+      "name": "Gawrshdarn",
+      "slug": "gawrshdarn",
+      "emoji": "🤠",
+      "tagline": "Random Gawrsh Gump quotes",
+      "description": "Returns random quote text as JSON. Keyless novelty API for demos.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://api.gawrshdarn.com",
+      "baseUrl": "https://api.gawrshdarn.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 156,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Gawrshdarn",
+        "description": "A playful profanity filter API that detects, censors, and replaces profanity with family-friendly alternatives.",
+        "version": "0.1.1",
+        "documentation": "https://www.gawrshdarn.com",
+        "endpoints": [
+          {
+            "method": "POST",
+            "path": "/api/detect",
+            "description": "Check if text contains profanity"
+          },
+          {
+            "method": "POST",
+            "path": "/api/filter",
+            "description": "Censor or remove profanity from text"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live gawrshdarn; probed https://api.gawrshdarn.com/"
+    },
+    {
+      "name": "Shoof Aflam",
+      "slug": "shoof-aflam",
+      "emoji": "🎬",
+      "tagline": "Shoof Aflam — Arabic streaming guide — search 14,000+ movies/ser",
+      "description": "Shoof Aflam is a reachability-verified public API (public-apis-live). We confirmed JSON on a sample GET with no key. Category: Video.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://shoofaflam.tv/api-docs/",
+      "baseUrl": "https://shoofaflam.tv",
+      "sampleEndpoint": "/api/titles.json",
+      "latencyMs": 852,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "slug": "ras-al-afaa",
+          "title_ar": "رأس الأفعى",
+          "title_en": "Ras Al-Afaa",
+          "year": 2026,
+          "type": "series",
+          "rating": 7.5,
+          "platforms": [
+            "watchit",
+            "on"
+          ],
+          "genre": "thriller"
+        },
+        {
+          "slug": "efrag",
+          "title_ar": "إفراج",
+          "title_en": "Efrag",
+          "year": 2026,
+          "type": "series",
+          "rating": 7.3,
+          "platforms": [
+            "shahid",
+            "mbc"
+          ],
+          "genre": "drama"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "public-apis-live shoof-aflam; probed https://shoofaflam.tv/api/titles.json"
+    }
+  ],
+  "skipped": []
+}

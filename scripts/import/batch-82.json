@@ -1,0 +1,3727 @@
+{
+  "batch": 82,
+  "verified": [
+    {
+      "name": "CoinRanking",
+      "slug": "coinranking",
+      "emoji": "🪙",
+      "tagline": "CoinRanking — free-tier JSON endpoint",
+      "description": "CoinRanking offers a free API tier. We verified JSON on a sample GET (Cryptocurrency). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://developers.coinranking.com/api/documentation",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins?limit=1",
+      "latencyMs": 681,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2128,
+            "totalCoins": 2102613,
+            "totalMarkets": 53348,
+            "totalExchanges": 183,
+            "totalMarketCap": "1108",
+            "total24hVolume": "33996046321"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1259417789670",
+              "price": "62805.788766269325",
+              "listedAt": 1279324800
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 1,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEyNTk0MTc3ODk2NzAsInIiOjEyNTk0MTc3ODk2NzAsInQiOjEsIm8iOiJtYXJrZXRDYXAiLCJkIjoiZGVzYyIsImMiOiJuZXh0IiwicCI6MX0",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "openrouteservice.org",
+      "slug": "openrouteservice-org",
+      "emoji": "🗺",
+      "tagline": "openrouteservice.org — free-tier JSON endpoint",
+      "description": "openrouteservice.org offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://openrouteservice.org/",
+      "baseUrl": "https://mastodon.social",
+      "sampleEndpoint": "/api/v1/accounts/114201497327006277/statuses?limit=1&exclude_replies=true",
+      "latencyMs": 1441,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "116854928541360199",
+          "created_at": "2026-07-03T07:45:05.531Z",
+          "in_reply_to_id": null,
+          "in_reply_to_account_id": null,
+          "sensitive": false,
+          "spoiler_text": "",
+          "visibility": "public",
+          "language": "en"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Open Government, Luxembourg",
+      "slug": "open-government-luxembourg",
+      "emoji": "🏛",
+      "tagline": "Open Government, Luxembourg — free-tier JSON endpoint",
+      "description": "Open Government, Luxembourg offers a free API tier. We verified JSON on a sample GET (Government). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.public.lu",
+      "baseUrl": "https://data.public.lu",
+      "sampleEndpoint": "/api/1/swagger.json",
+      "latencyMs": 1324,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "basePath": "/api/1",
+        "consumes": [
+          "application/json"
+        ],
+        "definitions": {
+          "Activity": {
+            "properties": {
+              "actor": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/UserReference"
+                  }
+                ],
+                "description": "The user who performed the action",
+                "readOnly": true
+              },
+              "created_at": {
+                "description": "When the action has been performed",
+                "format": "date-time",
+                "readOnly": true,
+                "type": "string"
+              },
+              "extras": {
+                "description": "Extras attributes as key-value pairs",
+                "type": "object"
+              },
+              "icon": {
+                "description": "The icon of the activity",
+                "type": "string"
+              },
+              "key": {
+                "description": "The key of the activity",
+                "type": "string"
+              },
+              "label": {
+                "description": "The label of the activity",
+                "type": "string"
+              },
+              "organization": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/OrganizationReference"
+                  }
+                ],
+                "description": "The organization who performed the action",
+                "readOnly": true
+              },
+              "related_to": {
+                "description": "The activity target name",
+                "type": "string"
+              }
+            },
+            "required": [
+              "icon",
+              "key"
+            ],
+            "type": "object"
+          },
+          "ActivityPage": {
+            "properties": {
+              "data": {
+                "description": "The page data",
+                "items": {
+                  "$ref": "#/definitions/Activity"
+                },
+                "type": "array"
+              },
+              "next_page": {
+                "description": "The next page URL if exists",
+                "type": "string"
+              },
+              "page": {
+                "description": "The current page",
+                "minimum": 1,
+                "type": "integer"
+              },
+              "page_size": {
+                "description": "The page size used for pagination",
+                "minimum": 0,
+                "type": "integer"
+              },
+              "previous_page": {
+                "description": "The previous page URL if exists",
+                "type": "string"
+              },
+              "total": {
+                "description": "The total paginated items",
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "page_size"
+            ],
+            "type": "object"
+          },
+          "ApiKey": {
+            "properties": {
+              "apikey": {
+                "description": "The user API Key",
+                "readOnly": true,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "Badge": {
+            "properties": {
+              "kind": {
+                "description": "Kind of badge (certified, etc), specific to each model",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "type": "object"
+          },
+          "BaseReference": {
+            "discriminator": "class",
+            "properties": {
+              "class": {
+                "description": "The object class",
+                "type": "string"
+              },
+              "id": {
+                "description": "The object unique identifier",
+                "type": "string"
+              }
+            },
+            "required": [
+              "class",
+              "id"
+            ],
+            "type": "object"
+          },
+          "CatalogSchema": {
+            "properties": {
+              "consolidation_dataset_id": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "datapackage_description": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "datapackage_name": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "datapackage_title": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "examples": {
+                "items": {
+                  "$ref": "#/definitions/CatalogSchemaExample"
+                },
+                "type": "array"
+              },
+              "external_doc": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "CatalogSchemaExample": {
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "CatalogSchemaVersion": {
+            "properties": {
+              "schema_url": {
+                "type": "string"
+              },
+              "version_name": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "host": "data.public.lu",
+        "info": {
+          "description": "uData API",
+          "title": "uData API",
+          "version": "1.0"
+        },
+        "paths": {
+          "/activity": {
+            "get": {
+              "operationId": "activity",
+              "parameters": [
+                {
+                  "default": 1,
+                  "description": "The page to fetch",
+                  "in": "query",
+                  "name": "page",
+                  "type": "integer"
+                },
+                {
+                  "default": 20,
+                  "description": "The page size to fetch",
+                  "in": "query",
+                  "name": "page_size",
+                  "type": "integer"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ActivityPage"
+                  }
+                }
+              },
+              "summary": "Fetch site activity, optionally filtered by user of org",
+              "tags": [
+                "site"
+              ]
+            }
+          },
+          "/avatars/{identifier}/{size}": {
+            "get": {
+              "operationId": "avatars",
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              },
+              "summary": "Get a deterministic avatar given an identifier at a given size",
+              "tags": [
+                "avatars"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "identifier",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "path",
+                "name": "size",
+                "required": true,
+                "type": "integer"
+              }
+            ]
+          },
+          "/contacts/": {
+            "post": {
+              "operationId": "create_contact_point",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "summary": "Creates a contact point",
+              "tags": [
+                "contacts"
+              ]
+            }
+          },
+          "/contacts/{contact_point}/": {
+            "delete": {
+              "operationId": "delete_contact_point",
+              "responses": {
+                "204": {
+                  "description": "Contact point deleted"
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Deletes a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            },
+            "get": {
+              "operationId": "get_contact_point",
+              "parameters": [
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Get a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "contact_point",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "put": {
+              "operationId": "update_contact_point",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Updates a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            }
+          },
+          "/dataservices/": {
+            "get": {
+              "operationId": "list_dataservices",
+              "parameters": [
+                {
+                  "default": 1,
+                  "description": "The page to display",
+                  "in": "query",
+                  "name": "page",
+                  "type": "integer"
+                },
+                {
+                  "default": 20,
+                  "description": "The page size",
+                  "in": "query",
+                  "name": "page_size",
+                  "type": "integer"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/DataservicePage"
+                  }
+                }
+              },
+              "summary": "List or search all dataservices",
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "post": {
+              "operationId": "create_dataservice",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28write%29"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "201": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/": {
+            "delete": {
+              "operationId": "delete_dataservice",
+              "responses": {
+                "204": {
+                  "description": "dataservice deleted"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "get": {
+              "operationId": "get_dataservice",
+              "parameters": [
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "patch": {
+              "operationId": "update_dataservice",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28write%29"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/datasets/": {
+            "parameters": [
+              {
+                "description": "The dataservice ID or slug",
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "post": {
+              "operationId": "dataservice_datasets_create",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "items": {
+                      "$ref": "#/definitions/DataserviceDatasetsAdd"
+                    },
+                    "type": "array"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Malformed object id(s) in request"
+                },
+                "403": {
+                  "description": "Forbidden"
+                },
+                "404": {
+                  "description": "Dataservice not found"
+                },
+                "410": {
+                  "description": "Dataservice has been deleted"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/datasets/{dataset}/": {
+            "delete": {
+              "operationId": "delete_dataservice_dataset_api_/dataservices/<dataservice:dataservice>/datasets/<dataset:dataset>/",
+              "responses": {
+                "404": {
+                  "description": "Dataservice not found"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "parameters": [
+              {
+                "description": "The dataservice ID or slug",
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "path",
+                "name": "dataset",
+                "required": true,
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "FieldValidationError": {
+            "description": "A validation error",
+            "schema": {
+              "$ref": "#/definitions/ValidationError"
+            }
+          },
+          "MaskError": {
+            "description": "When any error occurs on mask"
+          },
+          "ParseError": {
+            "description": "When a mask can't be parsed"
+          },
+          "PermissionDenied": {
+            "description": "Error occuring when the user does not have the required permissions",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "UnauthorizedFileType": {
+            "description": "Error occuring when the user try to upload a non-allowed file type",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "UploadError": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          },
+          "UploadProgress": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          },
+          "UploadStatus": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "FoodData Central",
+      "slug": "fooddata-central",
+      "emoji": "🩺",
+      "tagline": "FoodData Central — free-tier JSON endpoint",
+      "description": "FoodData Central offers a free API tier. We verified JSON on a sample GET (Health). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://fdc.nal.usda.gov/",
+      "baseUrl": "https://api.nal.usda.gov",
+      "sampleEndpoint": "/fdc/v1/foods/search?query=apple&pageSize=1&api_key=DEMO_KEY",
+      "latencyMs": 5948,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "totalHits": 26835,
+        "currentPage": 1,
+        "totalPages": 26835,
+        "pageList": [
+          1,
+          2
+        ],
+        "foodSearchCriteria": {
+          "query": "apple",
+          "generalSearchInput": "apple",
+          "pageNumber": 1,
+          "numberOfResultsPerPage": 50,
+          "pageSize": 1,
+          "requireAllWords": false
+        },
+        "foods": [
+          {
+            "fdcId": 2117388,
+            "description": "APPLE",
+            "dataType": "Branded",
+            "gtinUpc": "070038322238",
+            "publishedDate": "2021-10-28",
+            "brandOwner": "Associated Wholesale Grocers, Inc.",
+            "brandName": "BEST CHOICE",
+            "ingredients": "FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C)."
+          }
+        ],
+        "aggregations": {
+          "dataType": {
+            "Branded": 26698,
+            "SR Legacy": 89,
+            "Survey (FNDDS)": 42,
+            "Foundation": 6
+          },
+          "nutrients": {}
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "ELI",
+      "slug": "eli",
+      "emoji": "📝",
+      "tagline": "ELI — free-tier JSON endpoint",
+      "description": "ELI offers a free API tier. We verified JSON on a sample GET (Text Analysis). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://nlp.insightera.co.th/docs/v1.0",
+      "baseUrl": "https://nlp.insightera.co.th",
+      "sampleEndpoint": "/api/doc/doc.json",
+      "latencyMs": 2372,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "schemes": [
+          "https"
+        ],
+        "swagger": "2.0",
+        "info": {
+          "description": "NLP APIs available on InsightEra NLP Platform",
+          "title": "NLP Platform API",
+          "termsOfService": "http://swagger.io/terms/",
+          "contact": {
+            "name": "API Support",
+            "email": "dev@insightera.co.th"
+          },
+          "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+          },
+          "version": "1.0"
+        },
+        "host": "nlp.insightera.co.th",
+        "basePath": "/api",
+        "paths": {
+          "/nlp/address-extractor": {
+            "post": {
+              "description": "A service for converting a plain text address to a structural address where each part of the address are extracted and labeled. A complete list of parts which will be extracted are as follow:\n1. Name\n2. Phone number\n3. Tambol\n4. Amphoe\n5. Province\n6. Postcode\n7. Probability of an input text being an address (0.0 to 1.0)",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "nlp"
+              ],
+              "summary": "Address extractor",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Address",
+                  "name": "address",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagAddrInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagAddr"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/change-model-name": {
+            "post": {
+              "description": "Change existing model name.\n* <i>modelId</i>: An ID from training service which represent an actual model to be used.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Change model name",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelNameRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassModelNameORecord"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/delete": {
+            "post": {
+              "description": "Delete model",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Delete model",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassDeleteResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/model": {
+            "post": {
+              "description": "Retrieve model details:\n* Model name\n* Model status\n* Created date\n* Number of samples in each class",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Model detail",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassModelOutput"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/predict": {
+            "post": {
+              "description": "Predict classes of input texts using a model previously trained. In each training request, a user will receive a model ID. The ID is required for this service so that it knows which model to use for prediction. Model ID and a secret token must be matched (the same token used when trained a model) in order to continue using this service.\n* <i>modelId</i>: An ID from training service which represent an actual model to be used.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Predict",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassPredictInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassPredictOutput"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/retrain": {
+            "post": {
+              "description": "continue training a model based on an existing model. Users should provide only new information the model has never learnt before. A <i>model_id</i> must be provided otherwise the service will response an error.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Retrain",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassRetrainRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassRetrainResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/token": {
+            "get": {
+              "description": "Retrieve all models belong to a given token:\n* Model name\n* Model status\n* Created date\n* Number of sample in each class",
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Model Details by Token",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassTokenResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/train": {
+            "post": {
+              "description": "Train a classification model. The general idea begins with a user provides dataset with labels, our service uses these information to build a classification model and give back a model ID. A user then use this model ID with prediction service to have model classified users' text. Every classification models can be accessed only if users provide the same token used during training process. This means all models are protected. Only those who have access to a secret token can use the model.\n* <i>model_name</i> (optional) - if not provided, <i>model_id</i> will be used as <i>model_name</i>",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Train",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassTrainRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassTrainResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "definitions": {
+          "record.SwagAddr": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "amphoe": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          116,
+                          126
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "คลองสาน"
+                      }
+                    }
+                  },
+                  "is_address_score": {
+                    "type": "number",
+                    "example": 0.99
+                  },
+                  "name": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          3,
+                          26
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "ปุญญพัฒน์ เศรษฐ์สมบูรณ์"
+                      }
+                    }
+                  },
+                  "original_text": {
+                    "type": "string",
+                    "example": "นายปุญญพัฒน์ เศรษฐ์สมบูรณ์ 081-234-5678 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี แขวงบางลำภูล่าง เขตคลองสาน กรุงเทพมหานคร 10600 จ-ศ 10:00-19:00"
+                  },
+                  "other": {
+                    "type": "string",
+                    "example": "นาย 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี จ-ศ 10:00-19:00"
+                  },
+                  "phone": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "scope": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer"
+                          },
+                          "example": [
+                            27,
+                            39
+                          ]
+                        },
+                        "text": {
+                          "type": "string",
+                          "example": "0812345678"
+                        }
+                      }
+                    }
+                  },
+                  "postcode": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          141,
+                          146
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "10600"
+                      }
+                    }
+                  },
+                  "province": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          127,
+                          140
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "กรุงเทพมหานคร"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagAddrInput": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "example": "นายปุญญพัฒน์ เศรษฐ์สมบูรณ์ 081-234-5678 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี แขวงบางลำภูล่าง เขตคลองสาน กรุงเทพมหานคร 10600 จ-ศ 10:00-19:00"
+              }
+            }
+          },
+          "record.SwagClassDeleteResult": {
+            "type": "object",
+            "properties": {
+              "error_msg": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string",
+                "example": "ok"
+              }
+            }
+          },
+          "record.SwagClassModelInput": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+              }
+            }
+          },
+          "record.SwagClassModelNameORecord": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "model_id": {
+                    "type": "string",
+                    "example": "m-6069d024-368d-11ea-978f-2e728ce88125"
+                  },
+                  "result": {
+                    "type": "string",
+                    "example": "ok"
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagClassModelNameRecord": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-6069d024-368d-11ea-978f-2e728ce88125"
+              },
+              "model_name": {
+                "type": "string",
+                "example": "Hello world !"
+              }
+            }
+          },
+          "record.SwagClassModelOutput": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "created_at": {
+                    "type": "object",
+                    "properties": {
+                      "$date": {
+                        "type": "integer",
+                        "example": 1571134602455
+                      }
+                    }
+                  },
+                  "modelId": {
+                    "type": "string",
+                    "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+                  },
+                  "modelName": {
+                    "type": "string",
+                    "example": "education_vs_politic"
+                  },
+                  "trains": {
+                    "type": "integer",
+                    "example": 2000
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagClassPredictInput": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+              },
+              "samples": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "example": [
+                  "การศึกษาเป็นสิ่งที่จำเป็นหรือไม่..."
+                ]
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Eden",
+      "slug": "eden",
+      "emoji": "🔌",
+      "tagline": "Eden — free-tier JSON endpoint",
+      "description": "Eden offers a free API tier. We verified JSON on a sample GET (AI). Check provider docs for key requirements and limits.",
+      "sourceCategory": "AI",
+      "docsUrl": "https://www.edenai.co/",
+      "baseUrl": "https://api.edenai.run",
+      "sampleEndpoint": "/v2/user/auth/intercom/token?anon_id=${anonId}`",
+      "latencyMs": 614,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiJHthbm9uSWR9YCIsImV4cCI6MTc4MzI4NjYwNX0.V0y9rTzyOr9YyyXaw94ywNg4T4YLO5e6BIS9zGeZDI4",
+        "expires_at": 1783286605
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Gcore CDN",
+      "slug": "gcore-cdn",
+      "emoji": "🔧",
+      "tagline": "Gcore CDN — free-tier JSON endpoint",
+      "description": "Gcore CDN offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.gcore.com/cdn",
+      "baseUrl": "https://api.gcore.com",
+      "sampleEndpoint": "/streaming/ai/info&api_key=DEMO_KEY",
+      "latencyMs": 355,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status_code": 404,
+        "error": "The resource was not found"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Gcore DNS",
+      "slug": "gcore-dns",
+      "emoji": "🔧",
+      "tagline": "Gcore DNS — free-tier JSON endpoint",
+      "description": "Gcore DNS offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://docs.gcore.com/dns",
+      "baseUrl": "https://api.gcore.com",
+      "sampleEndpoint": "/streaming/ai/info&api_key=DEMO_KEY",
+      "latencyMs": 147,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status_code": 404,
+        "error": "The resource was not found"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "IPWhois",
+      "slug": "ipwhois",
+      "emoji": "🗺",
+      "tagline": "IPWhois — free-tier JSON endpoint",
+      "description": "IPWhois offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipwhois.io",
+      "baseUrl": "http://ipwho.is",
+      "sampleEndpoint": "/8.8.4.4",
+      "latencyMs": 568,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.4.4",
+        "success": true,
+        "type": "IPv4",
+        "continent": "North America",
+        "continent_code": "NA",
+        "country": "United States",
+        "country_code": "US",
+        "region": "California"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Gcore Streaming",
+      "slug": "gcore-streaming",
+      "emoji": "🎬",
+      "tagline": "Gcore Streaming — free-tier JSON endpoint",
+      "description": "Gcore Streaming offers a free API tier. We verified JSON on a sample GET (Video). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://docs.gcore.com/streaming",
+      "baseUrl": "https://api.gcore.com",
+      "sampleEndpoint": "/streaming/ai/info&api_key=DEMO_KEY",
+      "latencyMs": 180,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status_code": 404,
+        "error": "The resource was not found"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "OKEx",
+      "slug": "okex",
+      "emoji": "🪙",
+      "tagline": "OKEx — free-tier JSON endpoint",
+      "description": "OKEx offers a free API tier. We verified JSON on a sample GET (Cryptocurrency). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://okx.com/okx-api",
+      "baseUrl": "https://www.okx.com",
+      "sampleEndpoint": "/api/v5/public/instruments?instType=SPOT",
+      "latencyMs": 593,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "0",
+        "data": [
+          {
+            "alias": "",
+            "auctionEndTime": "",
+            "baseCcy": "USDT",
+            "category": "1",
+            "contTdSwTime": "",
+            "ctMult": "",
+            "ctType": "",
+            "ctVal": ""
+          },
+          {
+            "alias": "",
+            "auctionEndTime": "",
+            "baseCcy": "USDC",
+            "category": "1",
+            "contTdSwTime": "",
+            "ctMult": "",
+            "ctType": "",
+            "ctVal": ""
+          }
+        ],
+        "msg": ""
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "The IP API",
+      "slug": "the-ip-api",
+      "emoji": "🗺",
+      "tagline": "The IP API — free-tier JSON endpoint",
+      "description": "The IP API offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://theipapi.com",
+      "baseUrl": "https://ipapi.co",
+      "sampleEndpoint": "/8.8.8.8/json/",
+      "latencyMs": 3100,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "network": "8.8.8.0/24",
+        "version": "IPv4",
+        "city": "Mountain View",
+        "region": "California",
+        "region_code": "CA",
+        "country": "US",
+        "country_name": "United States"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "HasData: Structured Web Data APIs",
+      "slug": "hasdata-structured-web-data-apis",
+      "emoji": "📰",
+      "tagline": "HasData: Structured Web Data APIs — free-tier JSON endpoint",
+      "description": "HasData: Structured Web Data APIs offers a free API tier. We verified JSON on a sample GET (News). Check provider docs for key requirements and limits.",
+      "sourceCategory": "News",
+      "docsUrl": "https://hasdata.com",
+      "baseUrl": "https://api.hasdata.com",
+      "sampleEndpoint": "/apis-preview/1",
+      "latencyMs": 2816,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 1,
+        "api_category_id": 1,
+        "title": "Google SERP API",
+        "slug": "google-serp",
+        "logo_url": "https://scrape-it.cloud/assets/rms/google.svg",
+        "description": "The Google SERP API provides real-time access to structured Google search results, offering no blocks or CAPTCHAs.",
+        "price": 10,
+        "created_at": "2024-02-19T20:46:10.850+00:00"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Platzi Fake Store",
+      "slug": "platzi-fake-store",
+      "emoji": "🔌",
+      "tagline": "Platzi Fake Store — free-tier JSON endpoint",
+      "description": "Platzi Fake Store offers a free API tier. We verified JSON on a sample GET (Shopping). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Shopping",
+      "docsUrl": "https://fakeapi.platzi.com/",
+      "baseUrl": "https://api.escuelajs.co",
+      "sampleEndpoint": "/api/v1/products",
+      "latencyMs": 7519,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": 15,
+          "title": "My Product 360881",
+          "slug": "my-product-360881",
+          "price": 101,
+          "description": "It's innovative product",
+          "category": {
+            "id": 1,
+            "name": "Updated Category Name",
+            "slug": "updated-category-name",
+            "image": "https://placeimg.com/640/480/any",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T18:00:53.000Z"
+          },
+          "images": [
+            "https://placehold.co/540526x57355"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        },
+        {
+          "id": 16,
+          "title": "Classic White Tee - Timeless Style and Comfort",
+          "slug": "classic-white-tee-timeless-style-and-comfort",
+          "price": 73,
+          "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+          "category": {
+            "id": 1,
+            "name": "Updated Category Name",
+            "slug": "updated-category-name",
+            "image": "https://placeimg.com/640/480/any",
+            "creationAt": "2026-07-04T22:36:17.000Z",
+            "updatedAt": "2026-07-05T18:00:53.000Z"
+          },
+          "images": [
+            "https://i.imgur.com/Y54Bt8J.jpeg",
+            "https://i.imgur.com/SZPDSgy.jpeg"
+          ],
+          "creationAt": "2026-07-04T22:36:17.000Z"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Plaid API",
+      "slug": "plaid-api",
+      "emoji": "💰",
+      "tagline": "Plaid API — free-tier JSON endpoint",
+      "description": "Plaid API offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://plaid.com/docs/api/",
+      "baseUrl": "https://status.plaid.com",
+      "sampleEndpoint": "/api/v2/status.json",
+      "latencyMs": 1106,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "page": {
+          "id": "01KJ72XDYEXAHDV9SPTMB7YS2Y",
+          "name": "Plaid",
+          "url": "https://status.plaid.com/",
+          "updated_at": "2026-05-05T16:04:16Z"
+        },
+        "status": {
+          "description": "All Systems Operational",
+          "indicator": "none"
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "PandaScore REST API for All Videogames",
+      "slug": "pandascore-rest-api-for-all-videogames",
+      "emoji": "🎭",
+      "tagline": "PandaScore REST API for All Videogames — free-tier JSON endpoint",
+      "description": "PandaScore REST API for All Videogames offers a free API tier. We verified JSON on a sample GET (Entertainment). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://api.pandascore.co/",
+      "baseUrl": "https://api.pandascore.co",
+      "sampleEndpoint": "/",
+      "latencyMs": 486,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": "2.62.19",
+        "doc_url": "https://developers.pandascore.co"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Pendo Feedback API",
+      "slug": "pendo-feedback-api",
+      "emoji": "🗺",
+      "tagline": "Pendo Feedback API — free-tier JSON endpoint",
+      "description": "Pendo Feedback API offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://api.feedback.eu.pendo.io",
+      "baseUrl": "https://api.feedback.eu.pendo.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 355,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "OK"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Shotstack",
+      "slug": "shotstack",
+      "emoji": "🔧",
+      "tagline": "Shotstack — free-tier JSON endpoint",
+      "description": "Shotstack offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://api.shotstack.io/{version}",
+      "baseUrl": "https://api.shotstack.io",
+      "sampleEndpoint": "/",
+      "latencyMs": 3336,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "message": "OK",
+        "response": "You reached the Shotstack API! Be sure to call a valid resource. API Reference Docs: https://shotstack.io/docs/api/"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "The SMS Works API",
+      "slug": "the-sms-works-api",
+      "emoji": "💬",
+      "tagline": "The SMS Works API — free-tier JSON endpoint",
+      "description": "The SMS Works API offers a free API tier. We verified JSON on a sample GET (Social). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Social",
+      "docsUrl": "https://api.thesmsworks.co.uk/v1",
+      "baseUrl": "https://api.thesmsworks.co.uk",
+      "sampleEndpoint": "/",
+      "latencyMs": 730,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "The SMS Works is up!"
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "openrouteservice.org API",
+      "slug": "openrouteservice-org-api",
+      "emoji": "🗺",
+      "tagline": "openrouteservice.org API — free-tier JSON endpoint",
+      "description": "openrouteservice.org API offers a free API tier. We verified JSON on a sample GET (Geocoding). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://openrouteservice.org/",
+      "baseUrl": "https://mastodon.social",
+      "sampleEndpoint": "/api/v1/accounts/114201497327006277/statuses?limit=1&exclude_replies=true",
+      "latencyMs": 1421,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "116854928541360199",
+          "created_at": "2026-07-03T07:45:05.531Z",
+          "in_reply_to_id": null,
+          "in_reply_to_account_id": null,
+          "sensitive": false,
+          "spoiler_text": "",
+          "visibility": "public",
+          "language": "en"
+        }
+      ],
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Open Government, Luxembourg API",
+      "slug": "open-government-luxembourg-api",
+      "emoji": "🔧",
+      "tagline": "Open Government, Luxembourg API — free-tier JSON endpoint",
+      "description": "Open Government, Luxembourg API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://data.public.lu",
+      "baseUrl": "https://data.public.lu",
+      "sampleEndpoint": "/api/1/swagger.json",
+      "latencyMs": 1815,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "basePath": "/api/1",
+        "consumes": [
+          "application/json"
+        ],
+        "definitions": {
+          "Activity": {
+            "properties": {
+              "actor": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/UserReference"
+                  }
+                ],
+                "description": "The user who performed the action",
+                "readOnly": true
+              },
+              "created_at": {
+                "description": "When the action has been performed",
+                "format": "date-time",
+                "readOnly": true,
+                "type": "string"
+              },
+              "extras": {
+                "description": "Extras attributes as key-value pairs",
+                "type": "object"
+              },
+              "icon": {
+                "description": "The icon of the activity",
+                "type": "string"
+              },
+              "key": {
+                "description": "The key of the activity",
+                "type": "string"
+              },
+              "label": {
+                "description": "The label of the activity",
+                "type": "string"
+              },
+              "organization": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/OrganizationReference"
+                  }
+                ],
+                "description": "The organization who performed the action",
+                "readOnly": true
+              },
+              "related_to": {
+                "description": "The activity target name",
+                "type": "string"
+              }
+            },
+            "required": [
+              "icon",
+              "key"
+            ],
+            "type": "object"
+          },
+          "ActivityPage": {
+            "properties": {
+              "data": {
+                "description": "The page data",
+                "items": {
+                  "$ref": "#/definitions/Activity"
+                },
+                "type": "array"
+              },
+              "next_page": {
+                "description": "The next page URL if exists",
+                "type": "string"
+              },
+              "page": {
+                "description": "The current page",
+                "minimum": 1,
+                "type": "integer"
+              },
+              "page_size": {
+                "description": "The page size used for pagination",
+                "minimum": 0,
+                "type": "integer"
+              },
+              "previous_page": {
+                "description": "The previous page URL if exists",
+                "type": "string"
+              },
+              "total": {
+                "description": "The total paginated items",
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "page_size"
+            ],
+            "type": "object"
+          },
+          "ApiKey": {
+            "properties": {
+              "apikey": {
+                "description": "The user API Key",
+                "readOnly": true,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "Badge": {
+            "properties": {
+              "kind": {
+                "description": "Kind of badge (certified, etc), specific to each model",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind"
+            ],
+            "type": "object"
+          },
+          "BaseReference": {
+            "discriminator": "class",
+            "properties": {
+              "class": {
+                "description": "The object class",
+                "type": "string"
+              },
+              "id": {
+                "description": "The object unique identifier",
+                "type": "string"
+              }
+            },
+            "required": [
+              "class",
+              "id"
+            ],
+            "type": "object"
+          },
+          "CatalogSchema": {
+            "properties": {
+              "consolidation_dataset_id": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "datapackage_description": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "datapackage_name": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "datapackage_title": {
+                "description": "Only present if the schema is inside a datapackage",
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "examples": {
+                "items": {
+                  "$ref": "#/definitions/CatalogSchemaExample"
+                },
+                "type": "array"
+              },
+              "external_doc": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "CatalogSchemaExample": {
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "CatalogSchemaVersion": {
+            "properties": {
+              "schema_url": {
+                "type": "string"
+              },
+              "version_name": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "host": "data.public.lu",
+        "info": {
+          "description": "uData API",
+          "title": "uData API",
+          "version": "1.0"
+        },
+        "paths": {
+          "/activity": {
+            "get": {
+              "operationId": "activity",
+              "parameters": [
+                {
+                  "default": 1,
+                  "description": "The page to fetch",
+                  "in": "query",
+                  "name": "page",
+                  "type": "integer"
+                },
+                {
+                  "default": 20,
+                  "description": "The page size to fetch",
+                  "in": "query",
+                  "name": "page_size",
+                  "type": "integer"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ActivityPage"
+                  }
+                }
+              },
+              "summary": "Fetch site activity, optionally filtered by user of org",
+              "tags": [
+                "site"
+              ]
+            }
+          },
+          "/avatars/{identifier}/{size}": {
+            "get": {
+              "operationId": "avatars",
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              },
+              "summary": "Get a deterministic avatar given an identifier at a given size",
+              "tags": [
+                "avatars"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "identifier",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "path",
+                "name": "size",
+                "required": true,
+                "type": "integer"
+              }
+            ]
+          },
+          "/contacts/": {
+            "post": {
+              "operationId": "create_contact_point",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "summary": "Creates a contact point",
+              "tags": [
+                "contacts"
+              ]
+            }
+          },
+          "/contacts/{contact_point}/": {
+            "delete": {
+              "operationId": "delete_contact_point",
+              "responses": {
+                "204": {
+                  "description": "Contact point deleted"
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Deletes a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            },
+            "get": {
+              "operationId": "get_contact_point",
+              "parameters": [
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Get a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "contact_point",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "put": {
+              "operationId": "update_contact_point",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/ContactPoint"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                },
+                "404": {
+                  "description": "Contact point not found"
+                }
+              },
+              "summary": "Updates a contact point given its identifier",
+              "tags": [
+                "contacts"
+              ]
+            }
+          },
+          "/dataservices/": {
+            "get": {
+              "operationId": "list_dataservices",
+              "parameters": [
+                {
+                  "default": 1,
+                  "description": "The page to display",
+                  "in": "query",
+                  "name": "page",
+                  "type": "integer"
+                },
+                {
+                  "default": 20,
+                  "description": "The page size",
+                  "in": "query",
+                  "name": "page_size",
+                  "type": "integer"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/DataservicePage"
+                  }
+                }
+              },
+              "summary": "List or search all dataservices",
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "post": {
+              "operationId": "create_dataservice",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28write%29"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "201": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/": {
+            "delete": {
+              "operationId": "delete_dataservice",
+              "responses": {
+                "204": {
+                  "description": "dataservice deleted"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "get": {
+              "operationId": "get_dataservice",
+              "parameters": [
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "parameters": [
+              {
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "patch": {
+              "operationId": "update_dataservice",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28write%29"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Validation error"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/datasets/": {
+            "parameters": [
+              {
+                "description": "The dataservice ID or slug",
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              }
+            ],
+            "post": {
+              "operationId": "dataservice_datasets_create",
+              "parameters": [
+                {
+                  "in": "body",
+                  "name": "payload",
+                  "required": true,
+                  "schema": {
+                    "items": {
+                      "$ref": "#/definitions/DataserviceDatasetsAdd"
+                    },
+                    "type": "array"
+                  }
+                },
+                {
+                  "description": "An optional fields mask",
+                  "format": "mask",
+                  "in": "header",
+                  "name": "X-Fields",
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success",
+                  "schema": {
+                    "$ref": "#/definitions/Dataservice%20%28read%29"
+                  }
+                },
+                "400": {
+                  "description": "Malformed object id(s) in request"
+                },
+                "403": {
+                  "description": "Forbidden"
+                },
+                "404": {
+                  "description": "Dataservice not found"
+                },
+                "410": {
+                  "description": "Dataservice has been deleted"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            }
+          },
+          "/dataservices/{dataservice}/datasets/{dataset}/": {
+            "delete": {
+              "operationId": "delete_dataservice_dataset_api_/dataservices/<dataservice:dataservice>/datasets/<dataset:dataset>/",
+              "responses": {
+                "404": {
+                  "description": "Dataservice not found"
+                }
+              },
+              "tags": [
+                "dataservices"
+              ]
+            },
+            "parameters": [
+              {
+                "description": "The dataservice ID or slug",
+                "in": "path",
+                "name": "dataservice",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "in": "path",
+                "name": "dataset",
+                "required": true,
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "FieldValidationError": {
+            "description": "A validation error",
+            "schema": {
+              "$ref": "#/definitions/ValidationError"
+            }
+          },
+          "MaskError": {
+            "description": "When any error occurs on mask"
+          },
+          "ParseError": {
+            "description": "When a mask can't be parsed"
+          },
+          "PermissionDenied": {
+            "description": "Error occuring when the user does not have the required permissions",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "UnauthorizedFileType": {
+            "description": "Error occuring when the user try to upload a non-allowed file type",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "UploadError": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          },
+          "UploadProgress": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          },
+          "UploadStatus": {
+            "description": "API Upload response handler",
+            "schema": {
+              "$ref": "#/definitions/UploadStatus"
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "FoodData Central API",
+      "slug": "fooddata-central-api",
+      "emoji": "🔧",
+      "tagline": "FoodData Central API — free-tier JSON endpoint",
+      "description": "FoodData Central API offers a free API tier. We verified JSON on a sample GET (Development). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://fdc.nal.usda.gov/",
+      "baseUrl": "https://api.nal.usda.gov",
+      "sampleEndpoint": "/fdc/v1/foods/search?query=apple&pageSize=1&api_key=DEMO_KEY",
+      "latencyMs": 3848,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "totalHits": 26835,
+        "currentPage": 1,
+        "totalPages": 26835,
+        "pageList": [
+          1,
+          2
+        ],
+        "foodSearchCriteria": {
+          "query": "apple",
+          "generalSearchInput": "apple",
+          "pageNumber": 1,
+          "numberOfResultsPerPage": 50,
+          "pageSize": 1,
+          "requireAllWords": false
+        },
+        "foods": [
+          {
+            "fdcId": 2117388,
+            "description": "APPLE",
+            "dataType": "Branded",
+            "gtinUpc": "070038322238",
+            "publishedDate": "2021-10-28",
+            "brandOwner": "Associated Wholesale Grocers, Inc.",
+            "brandName": "BEST CHOICE",
+            "ingredients": "FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C)."
+          }
+        ],
+        "aggregations": {
+          "dataType": {
+            "Branded": 26698,
+            "SR Legacy": 89,
+            "Survey (FNDDS)": 42,
+            "Foundation": 6
+          },
+          "nutrients": {}
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "ELI API",
+      "slug": "eli-api",
+      "emoji": "🤖",
+      "tagline": "ELI API — free-tier JSON endpoint",
+      "description": "ELI API offers a free API tier. We verified JSON on a sample GET (Machine Learning). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://nlp.insightera.co.th/docs/v1.0",
+      "baseUrl": "https://nlp.insightera.co.th",
+      "sampleEndpoint": "/api/doc/doc.json",
+      "latencyMs": 3411,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "schemes": [
+          "https"
+        ],
+        "swagger": "2.0",
+        "info": {
+          "description": "NLP APIs available on InsightEra NLP Platform",
+          "title": "NLP Platform API",
+          "termsOfService": "http://swagger.io/terms/",
+          "contact": {
+            "name": "API Support",
+            "email": "dev@insightera.co.th"
+          },
+          "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+          },
+          "version": "1.0"
+        },
+        "host": "nlp.insightera.co.th",
+        "basePath": "/api",
+        "paths": {
+          "/nlp/address-extractor": {
+            "post": {
+              "description": "A service for converting a plain text address to a structural address where each part of the address are extracted and labeled. A complete list of parts which will be extracted are as follow:\n1. Name\n2. Phone number\n3. Tambol\n4. Amphoe\n5. Province\n6. Postcode\n7. Probability of an input text being an address (0.0 to 1.0)",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "nlp"
+              ],
+              "summary": "Address extractor",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Address",
+                  "name": "address",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagAddrInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagAddr"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/change-model-name": {
+            "post": {
+              "description": "Change existing model name.\n* <i>modelId</i>: An ID from training service which represent an actual model to be used.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Change model name",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelNameRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassModelNameORecord"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/delete": {
+            "post": {
+              "description": "Delete model",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Delete model",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassDeleteResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/model": {
+            "post": {
+              "description": "Retrieve model details:\n* Model name\n* Model status\n* Created date\n* Number of samples in each class",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Model detail",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassModelInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassModelOutput"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/predict": {
+            "post": {
+              "description": "Predict classes of input texts using a model previously trained. In each training request, a user will receive a model ID. The ID is required for this service so that it knows which model to use for prediction. Model ID and a secret token must be matched (the same token used when trained a model) in order to continue using this service.\n* <i>modelId</i>: An ID from training service which represent an actual model to be used.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Predict",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassPredictInput"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassPredictOutput"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/retrain": {
+            "post": {
+              "description": "continue training a model based on an existing model. Users should provide only new information the model has never learnt before. A <i>model_id</i> must be provided otherwise the service will response an error.",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Retrain",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassRetrainRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassRetrainResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/token": {
+            "get": {
+              "description": "Retrieve all models belong to a given token:\n* Model name\n* Model status\n* Created date\n* Number of sample in each class",
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Model Details by Token",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassTokenResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "/nlp/classification/train": {
+            "post": {
+              "description": "Train a classification model. The general idea begins with a user provides dataset with labels, our service uses these information to build a classification model and give back a model ID. A user then use this model ID with prediction service to have model classified users' text. Every classification models can be accessed only if users provide the same token used during training process. This means all models are protected. Only those who have access to a secret token can use the model.\n* <i>model_name</i> (optional) - if not provided, <i>model_id</i> will be used as <i>model_name</i>",
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "tags": [
+                "classification"
+              ],
+              "summary": "Train",
+              "parameters": [
+                {
+                  "type": "string",
+                  "default": "97051ade29a61c860f57dc9443128464",
+                  "description": "Token",
+                  "name": "token",
+                  "in": "query",
+                  "required": true
+                },
+                {
+                  "description": "Input",
+                  "name": "input",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "$ref": "#/definitions/record.SwagClassTrainRecord"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "schema": {
+                    "$ref": "#/definitions/record.SwagClassTrainResult"
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "401": {
+                  "description": "Unauthorized",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "408": {
+                  "description": "Request Timeout",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "definitions": {
+          "record.SwagAddr": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "amphoe": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          116,
+                          126
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "คลองสาน"
+                      }
+                    }
+                  },
+                  "is_address_score": {
+                    "type": "number",
+                    "example": 0.99
+                  },
+                  "name": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          3,
+                          26
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "ปุญญพัฒน์ เศรษฐ์สมบูรณ์"
+                      }
+                    }
+                  },
+                  "original_text": {
+                    "type": "string",
+                    "example": "นายปุญญพัฒน์ เศรษฐ์สมบูรณ์ 081-234-5678 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี แขวงบางลำภูล่าง เขตคลองสาน กรุงเทพมหานคร 10600 จ-ศ 10:00-19:00"
+                  },
+                  "other": {
+                    "type": "string",
+                    "example": "นาย 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี จ-ศ 10:00-19:00"
+                  },
+                  "phone": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "scope": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer"
+                          },
+                          "example": [
+                            27,
+                            39
+                          ]
+                        },
+                        "text": {
+                          "type": "string",
+                          "example": "0812345678"
+                        }
+                      }
+                    }
+                  },
+                  "postcode": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          141,
+                          146
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "10600"
+                      }
+                    }
+                  },
+                  "province": {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          127,
+                          140
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "กรุงเทพมหานคร"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagAddrInput": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "example": "นายปุญญพัฒน์ เศรษฐ์สมบูรณ์ 081-234-5678 110/1 อาคาร KX (ใกล้ๆ BTS วงเวียนใหญ่) ชั้น 14 ถ.กรุงธนบุรี แขวงบางลำภูล่าง เขตคลองสาน กรุงเทพมหานคร 10600 จ-ศ 10:00-19:00"
+              }
+            }
+          },
+          "record.SwagClassDeleteResult": {
+            "type": "object",
+            "properties": {
+              "error_msg": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string",
+                "example": "ok"
+              }
+            }
+          },
+          "record.SwagClassModelInput": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+              }
+            }
+          },
+          "record.SwagClassModelNameORecord": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "model_id": {
+                    "type": "string",
+                    "example": "m-6069d024-368d-11ea-978f-2e728ce88125"
+                  },
+                  "result": {
+                    "type": "string",
+                    "example": "ok"
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagClassModelNameRecord": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-6069d024-368d-11ea-978f-2e728ce88125"
+              },
+              "model_name": {
+                "type": "string",
+                "example": "Hello world !"
+              }
+            }
+          },
+          "record.SwagClassModelOutput": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "object",
+                "properties": {
+                  "created_at": {
+                    "type": "object",
+                    "properties": {
+                      "$date": {
+                        "type": "integer",
+                        "example": 1571134602455
+                      }
+                    }
+                  },
+                  "modelId": {
+                    "type": "string",
+                    "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+                  },
+                  "modelName": {
+                    "type": "string",
+                    "example": "education_vs_politic"
+                  },
+                  "trains": {
+                    "type": "integer",
+                    "example": 2000
+                  }
+                }
+              }
+            }
+          },
+          "record.SwagClassPredictInput": {
+            "type": "object",
+            "properties": {
+              "model_id": {
+                "type": "string",
+                "example": "m-dfcf872c-ef34-11e9-ad3b-84a93e037981"
+              },
+              "samples": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "example": [
+                  "การศึกษาเป็นสิ่งที่จำเป็นหรือไม่..."
+                ]
+              }
+            }
+          }
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "CoinRanking API",
+      "slug": "coinranking-api",
+      "emoji": "💰",
+      "tagline": "CoinRanking API — free-tier JSON endpoint",
+      "description": "CoinRanking API offers a free API tier. We verified JSON on a sample GET (Finance). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://developers.coinranking.com/api/documentation",
+      "baseUrl": "https://api.coinranking.com",
+      "sampleEndpoint": "/v2/coins",
+      "latencyMs": 431,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "stats": {
+            "total": 2135,
+            "totalCoins": 2102639,
+            "totalMarkets": 53663,
+            "totalExchanges": 183,
+            "totalMarketCap": "1109",
+            "total24hVolume": "33708982604"
+          },
+          "coins": [
+            {
+              "uuid": "Qwsogvtv82FCd",
+              "symbol": "BTC",
+              "name": "Bitcoin",
+              "color": "#f7931A",
+              "iconUrl": "https://cdn.coinranking.com/bOabBYkcX/bitcoin_btc.svg",
+              "marketCap": "1257476788352",
+              "price": "62708.9931518537",
+              "listedAt": 1279324800
+            },
+            {
+              "uuid": "razxDUgYGNAdQ",
+              "symbol": "ETH",
+              "name": "Ethereum",
+              "color": "#3C3C3D",
+              "iconUrl": "https://cdn.coinranking.com/rk4RKHOuW/eth.svg",
+              "marketCap": "214496140988",
+              "price": "1777.3484903546032",
+              "listedAt": 1438905600
+            }
+          ]
+        },
+        "pagination": {
+          "limit": 50,
+          "hasNextPage": true,
+          "hasPreviousPage": false,
+          "nextCursor": "eyJiIjpbMV0sInYiOjEzNzUwMjA4MjQsInIiOjEzNzUwMjA4MjQsInQiOjYzMTAxLCJvIjoibWFya2V0Q2FwIiwiZCI6ImRlc2MiLCJjIjoibmV4dCIsInAiOjUwfQ",
+          "previousCursor": null
+        }
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    },
+    {
+      "name": "Weather Underground API",
+      "slug": "weather-underground-api",
+      "emoji": "🌤",
+      "tagline": "Weather Underground API — free-tier JSON endpoint",
+      "description": "Weather Underground API offers a free API tier. We verified JSON on a sample GET (Weather). Check provider docs for key requirements and limits.",
+      "sourceCategory": "Weather",
+      "docsUrl": "https://www.wunderground.com/weather/api/",
+      "baseUrl": "https://api.weather.com",
+      "sampleEndpoint": "/v3/wx/forecast/daily/5day?apiKey=e1f10a1e78da46f5b10a1e78da96f525&geocode=0%2C0&units=e&language=en-US&format=json",
+      "latencyMs": 1046,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "calendarDayTemperatureMax": [
+          74,
+          73
+        ],
+        "calendarDayTemperatureMin": [
+          71,
+          71
+        ],
+        "dayOfWeek": [
+          "Sunday",
+          "Monday"
+        ],
+        "expirationTimeUtc": [
+          1783284301,
+          1783284301
+        ],
+        "moonPhase": [
+          "Waning Gibbous",
+          "Waning Gibbous"
+        ],
+        "moonPhaseCode": [
+          "WNG",
+          "WNG"
+        ],
+        "moonPhaseDay": [
+          20,
+          21
+        ],
+        "moonriseTimeLocal": [
+          "2026-07-05T22:28:37+0000",
+          "2026-07-06T23:12:27+0000"
+        ]
+      },
+      "freeTier": "Free tier — API key may be required for production",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey"
+    }
+  ],
+  "skipped": []
+}

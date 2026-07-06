@@ -1,0 +1,1899 @@
+{
+  "batch": 55,
+  "verified": [
+    {
+      "name": "OpenQR",
+      "slug": "openqr",
+      "emoji": "🔑",
+      "tagline": "OpenQR — free tier with API key",
+      "description": "OpenQR exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://openqr.uk/api",
+      "baseUrl": "https://openqr.uk",
+      "sampleEndpoint": "/v1",
+      "latencyMs": 420,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "OpenQR API",
+        "version": "1.0.0",
+        "description": "Generate QR codes and manage dynamic (editable) codes with scan analytics.",
+        "documentation": "https://openqr.uk/api",
+        "openapi": "https://openqr.uk/v1/openapi.json",
+        "mcp": "https://openqr.uk/mcp",
+        "authentication": {
+          "type": "bearer",
+          "header": "Authorization: Bearer oqr_…",
+          "get_a_key": "https://openqr.uk/api"
+        },
+        "rate_limit": {
+          "scope": "dynamic-code creation",
+          "limit_per_hour": 20,
+          "headers": [
+            "X-RateLimit-Limit",
+            "X-RateLimit-Remaining"
+          ]
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://openqr.uk/v1"
+    },
+    {
+      "name": "serpstack",
+      "slug": "serpstack",
+      "emoji": "🔑",
+      "tagline": "serpstack — free tier with API key",
+      "description": "serpstack exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://serpstack.com/",
+      "baseUrl": "https://serpstack.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 333,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://serpstack.com/healthz"
+    },
+    {
+      "name": "WebScraping.AI",
+      "slug": "webscraping-ai",
+      "emoji": "🔑",
+      "tagline": "WebScraping.AI — free tier with API key",
+      "description": "WebScraping.AI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://webscraping.ai/",
+      "baseUrl": "https://webscraping.ai",
+      "sampleEndpoint": "/api",
+      "latencyMs": 313,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": "Please upgrade to the latest SDK version: https://webscraping.ai/docs"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://webscraping.ai/api"
+    },
+    {
+      "name": "CongressInvests",
+      "slug": "congressinvests",
+      "emoji": "🔑",
+      "tagline": "CongressInvests — free tier with API key",
+      "description": "CongressInvests exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://congressinvests.com",
+      "baseUrl": "https://congressinvests.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 307,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "ready": true,
+        "loading": false,
+        "tickers": 1094,
+        "senate_tickers": 234,
+        "house_tickers": 999,
+        "loaded_at": 1780288624.6746898,
+        "age_seconds": 2985971
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://congressinvests.com/health"
+    },
+    {
+      "name": "Sugra",
+      "slug": "sugra",
+      "emoji": "🔑",
+      "tagline": "Sugra — free tier with API key",
+      "description": "Sugra exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://sugra.ai",
+      "baseUrl": "https://sugra.ai",
+      "sampleEndpoint": "/health",
+      "latencyMs": 242,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "version": "1.0.1",
+        "timestamp": "2026-07-05T18:03:26.238087+00:00",
+        "services": {
+          "sugra_finance": "ok",
+          "fred": "ok"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://sugra.ai/health"
+    },
+    {
+      "name": "FastDOL",
+      "slug": "fastdol",
+      "emoji": "🔑",
+      "tagline": "FastDOL — free tier with API key",
+      "description": "FastDOL exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.fastdol.com/docs",
+      "baseUrl": "https://api.fastdol.com",
+      "sampleEndpoint": "/v1/openapi.json",
+      "latencyMs": 690,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "openapi": "3.0.2",
+        "info": {
+          "title": "FastDOL API",
+          "description": "FastDOL aggregates employer compliance and enforcement data from every major\nUS federal source — OSHA, WHD, MSHA, EPA ECHO, NLRB, FMCSA, OFLC, SAM.gov,\nCMS, CPSC, NHTSA, SEC, USAspending, BLS — plus the UVA Corporate Prosecution\nRegistry, into one REST API keyed by a stable `employer_id`.\n\n**Authentication.** Every request takes an `X-Api-Key` header. Click\n**Authorize** and paste your key to try endpoints live below.\n\n**Base URL.** `https://api.fastdol.com` — all paths are under `/v1`.\n\n**Bulk access.** Filtered slices via the async **Bulk export** endpoint\n(≤100k rows); the entire dataset as weekly point-in-time Parquet via the\n**Snapshots** endpoints.\n",
+          "contact": {
+            "name": "FastDOL",
+            "url": "https://www.fastdol.com/",
+            "email": "ben@fastdol.com"
+          },
+          "version": "1.0.0"
+        },
+        "servers": [
+          {
+            "url": "https://api.fastdol.com",
+            "description": "Production"
+          }
+        ],
+        "paths": {
+          "/v1/employers": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "Search employers",
+              "description": "Search employers by name, EIN, zip, state, or NAICS.\n\nReturns a flat list of employer locations sorted by risk score (worst first).\nEach result includes `related_locations_count` showing how many locations\nshare the same normalized employer name — useful for national chains.",
+              "operationId": "search_employers_v1_employers_get",
+              "parameters": [
+                {
+                  "name": "name",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 200
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "Fuzzy employer name search",
+                    "title": "Name"
+                  },
+                  "description": "Fuzzy employer name search"
+                },
+                {
+                  "name": "ein",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "maxLength": 12
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "Exact EIN match",
+                    "title": "Ein"
+                  },
+                  "description": "Exact EIN match"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/parent": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "Parent-company rollup",
+              "description": "Parent company risk rollup — aggregate risk across all locations.\n\nReturns company-wide statistics (total inspections, violations, penalties,\nrisk distribution) plus a paginated list of individual locations sorted\nby risk score (worst first).\n\nPremium feature for enterprise customers evaluating national employers.",
+              "operationId": "get_parent_company_v1_employers_parent_get",
+              "parameters": [
+                {
+                  "name": "name",
+                  "in": "query",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "description": "Parent company name (e.g., 'Amazon', 'Walmart')",
+                    "title": "Name"
+                  },
+                  "description": "Parent company name (e.g., 'Amazon', 'Walmart')"
+                },
+                {
+                  "name": "state",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "Filter locations by state",
+                    "title": "State"
+                  },
+                  "description": "Filter locations by state"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/ein/{ein}": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "Look up by EIN",
+              "description": "Lookup employers by FEIN (Federal Employer Identification Number).\n\nReturns all locations matching the given EIN. Insurance professionals\nidentify employers by FEIN — this is the primary lookup for underwriting\nintegrations.\n\nEIN format: 9 digits (e.g., '943067788' or '94-3067788').",
+              "operationId": "get_employer_by_ein_v1_employers_ein__ein__get",
+              "parameters": [
+                {
+                  "name": "ein",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Ein"
+                  }
+                },
+                {
+                  "name": "state",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "State code filter",
+                    "title": "State"
+                  },
+                  "description": "State code filter"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/{employer_id}": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "Get employer profile",
+              "description": "Direct lookup by employer_id UUID.",
+              "operationId": "get_employer_v1_employers__employer_id__get",
+              "parameters": [
+                {
+                  "name": "employer_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Employer Id"
+                  }
+                },
+                {
+                  "name": "X-Api-Key",
+                  "in": "header",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "X-Api-Key"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/{employer_id}/inspections": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "List OSHA inspections",
+              "description": "Get inspection history with violation detail for an employer.\n\nMetered: one lookup per call. Previously unmetered, which made it trivial\nfor a free-tier key to scrape the entire product by combining the sitemap\nendpoint (employer IDs) with this one (full inspection history per id).",
+              "operationId": "get_inspections_v1_employers__employer_id__inspections_get",
+              "parameters": [
+                {
+                  "name": "employer_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Employer Id"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 100,
+                    "minimum": 1,
+                    "default": 20,
+                    "title": "Limit"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/{employer_id}/severe-injuries": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "List severe-injury reports",
+              "description": "Per-event OSHA Severe Injury Reports (29 CFR 1904.39) for an employer.\n\nEach row is an injury the employer self-reported within 24 hours\n-- in-patient hospitalization, amputation, or loss of an eye.\nDistinct from /employers/{id}/inspections (inspection-triggered):\nSIR is injury-triggered, so the same event may or may not have a\nrelated inspection (see inspection_activity_nr -- often NULL).\n\nMetered: one lookup per call, same as inspections / SEC enforcement.\nNewest event first.",
+              "operationId": "get_severe_injuries_v1_employers__employer_id__severe_injuries_get",
+              "parameters": [
+                {
+                  "name": "employer_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Employer Id"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 100,
+                    "minimum": 1,
+                    "default": 20,
+                    "title": "Limit"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/{employer_id}/whd-cases": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "List WHD wage cases",
+              "description": "Per-case WHD (Wage & Hour Division) enforcement records for an\nemployer.\n\nEach row is one closed case carrying backwages assessed\n(`bw_amt`) and the count of underpaid employees\n(`ee_violtd_cnt`). Covers FLSA, FMLA, MSPA, H-1B/H-2A/H-2B, CCPA,\nand any other DOL WHD-administered statute.\n\nMetered: one lookup per call, same pattern as the other detail\nendpoints. Most-recent case first.",
+              "operationId": "get_whd_cases_v1_employers__employer_id__whd_cases_get",
+              "parameters": [
+                {
+                  "name": "employer_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Employer Id"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 100,
+                    "minimum": 1,
+                    "default": 20,
+                    "title": "Limit"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/v1/employers/{employer_id}/cms-deficiencies": {
+            "get": {
+              "tags": [
+                "Employers"
+              ],
+              "summary": "List CMS nursing-home deficiencies",
+              "description": "Per-citation CMS nursing-home deficiency list for a facility.\n\nEach row is one Health Deficiency citation from CMS Care Compare --\nsurvey date, deficiency tag (F-tag), the textual description,\nscope-severity letter (A-L), whether corrected, and the inspection\ncycle (standard survey vs complaint vs infection control).\n\nLookup: resolves cms_ccn from employer_profile. Only facilities with\na populated CMS Certification Number have deficiency rosters. Other\nemployers return 200 with empty results.\n\nSeverity coloring at the UI layer follows CMS conventions:\n  A-C: isolated potential harm (mild)\n  D-F: pattern potential harm (moderate)\n  G-I: actual harm (high)\n  J-L: immediate jeopardy (critical, burnt-umber)\n\nOrdered most-recent-survey first, then severity within survey.",
+              "operationId": "get_cms_deficiencies_v1_employers__employer_id__cms_deficiencies_get",
+              "parameters": [
+                {
+                  "name": "employer_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "title": "Employer Id"
+                  }
+                },
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 200,
+                    "minimum": 1,
+                    "default": 50,
+                    "title": "Limit"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "BatchLookupItem": {
+              "properties": {
+                "name": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Name",
+                  "description": "Employer name (fuzzy match)",
+                  "examples": [
+                    "Walmart"
+                  ]
+                },
+                "ein": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ein",
+                  "description": "Exact EIN; dashes optional",
+                  "examples": [
+                    "94-3067788"
+                  ]
+                },
+                "employer_id": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Employer Id",
+                  "description": "FastDOL employer_id (UUID) for an exact match"
+                },
+                "state": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "State",
+                  "description": "2-letter state code, to narrow",
+                  "examples": [
+                    "ID"
+                  ]
+                },
+                "zip": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Zip",
+                  "description": "5-digit ZIP, to narrow",
+                  "examples": [
+                    "83669"
+                  ]
+                },
+                "city": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "City",
+                  "description": "City, to narrow"
+                }
+              },
+              "type": "object",
+              "title": "BatchLookupItem"
+            },
+            "BatchLookupRequest": {
+              "properties": {
+                "lookups": {
+                  "items": {
+                    "$ref": "#/components/schemas/BatchLookupItem"
+                  },
+                  "type": "array",
+                  "title": "Lookups",
+                  "description": "1–100 lookup items per synchronous request (use CSV upload for more)."
+                }
+              },
+              "type": "object",
+              "required": [
+                "lookups"
+              ],
+              "title": "BatchLookupRequest",
+              "example": {
+                "lookups": [
+                  {
+                    "name": "Walmart",
+                    "state": "ID",
+                    "zip": "83669"
+                  },
+                  {
+                    "name": "Amazon",
+                    "state": "CA"
+                  }
+                ]
+              }
+            },
+            "Body_upload_csv_v1_employers_upload_csv_post": {
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "format": "binary",
+                  "title": "File",
+                  "description": "CSV file with employer names and optional location fields"
+                }
+              },
+              "type": "object",
+              "required": [
+                "file"
+              ],
+              "title": "Body_upload_csv_v1_employers_upload_csv_post"
+            },
+            "CreateWebhookRequest": {
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "maxLength": 2083,
+                  "minLength": 1,
+                  "format": "uri",
+                  "title": "Url"
+                },
+                "events": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "title": "Events"
+                },
+                "label": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Label"
+                }
+              },
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "title": "CreateWebhookRequest"
+            },
+            "ExportFilters": {
+              "properties": {
+                "name": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Name",
+                  "description": "Employer name (fuzzy match)"
+                },
+                "ein": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 20
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Ein",
+                  "description": "Exact EIN"
+                },
+                "state": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 2
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "State",
+                  "description": "Single 2-letter state code"
+                },
+                "states": {
+                  "anyOf": [
+                    {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "maxItems": 60
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "States",
+                  "description": "Multiple state codes (OR)"
+                },
+                "zip": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 5
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Zip",
+                  "description": "5-digit ZIP code"
+                },
+                "naics": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 6
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Naics",
+                  "description": "Single NAICS prefix, 2-6 digits"
+                },
+                "naics_codes": {
+                  "anyOf": [
+                    {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "maxItems": 50
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Naics Codes",
+                  "description": "Multiple NAICS prefixes (OR)"
+                },
+                "parent_only": {
+                  "type": "boolean",
+                  "title": "Parent Only",
+                  "description": "Roll up to one row per parent company",
+                  "default": false
+                }
+              },
+              "type": "object",
+              "title": "ExportFilters",
+              "description": "Filter surface for bulk exports — richer than the interactive\nsearch endpoint because enterprise analysts need structured queries\n(e.g. \"top 50K employers by fatality rate with OSHA penalties >\n$100K in construction NAICS\")."
+            },
+            "ExportRequest": {
+              "properties": {
+                "format": {
+                  "type": "string",
+                  "pattern": "^(csv|json)$",
+                  "title": "Format",
+                  "description": "Output format: csv or json (NDJSON)",
+                  "default": "csv"
+                },
+                "filters": {
+                  "$ref": "#/components/schemas/ExportFilters",
+                  "description": "At least one filter is required"
+                },
+                "max_rows": {
+                  "type": "integer",
+                  "maximum": 100000,
+                  "minimum": 1,
+                  "title": "Max Rows",
+                  "description": "Row cap, 1–100,000",
+                  "default": 50000
+                },
+                "sort_by": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Sort By",
+                  "description": "One of: employer_id, fatalities, inspections, penalties, violations, whd_backwages, whd_cases"
+                },
+                "sort_dir": {
+                  "type": "string",
+                  "pattern": "^(asc|desc)$",
+                  "title": "Sort Dir",
+                  "description": "asc or desc",
+                  "default": "desc"
+                }
+              },
+              "type": "object",
+              "title": "ExportRequest",
+              "example": {
+                "filters": {
+                  "has_fatalities": true,
+                  "min_penalties": 100000,
+                  "naics_codes": [
+                    "2361",
+                    "2362"
+                  ],
+                  "states": [
+                    "CA",
+                    "TX"
+                  ]
+                },
+                "format": "csv",
+                "max_rows": 50000,
+                "sort_by": "fatalities",
+                "sort_dir": "desc"
+              }
+            },
+            "FeedbackRequest": {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type"
+                },
+                "description": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Description"
+                },
+                "contact_email": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Contact Email"
+                }
+              },
+              "type": "object",
+              "required": [
+                "type"
+              ],
+              "title": "FeedbackRequest"
+            },
+            "HTTPValidationError": {
+              "properties": {
+                "detail": {
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  },
+                  "type": "array",
+                  "title": "Detail"
+                }
+              },
+              "type": "object",
+              "title": "HTTPValidationError"
+            }
+          },
+          "securitySchemes": {
+            "ApiKeyAuth": {
+              "type": "apiKey",
+              "in": "header",
+              "name": "X-Api-Key",
+              "description": "Enterprise API key (issued by FastDOL, prefix `emp_live_`). Sent on every request."
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "Employers",
+            "description": "Search, look up, and pull the full multi-agency compliance profile and per-source detail for any US employer establishment."
+          },
+          {
+            "name": "Industry benchmarks",
+            "description": "BLS SOII industry-average injury rates (TRIR/DART) by 4-digit NAICS, for peer comparison."
+          }
+        ],
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.fastdol.com/v1/openapi.json"
+    },
+    {
+      "name": "JobDataLake",
+      "slug": "jobdatalake",
+      "emoji": "🔑",
+      "tagline": "JobDataLake — free tier with API key",
+      "description": "JobDataLake exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://www.jobdatalake.com/docs",
+      "baseUrl": "https://api.jobdatalake.com",
+      "sampleEndpoint": "/v1/jobs?q={search_term}",
+      "latencyMs": 1441,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "found": 9,
+        "page": 1,
+        "per_page": 20,
+        "jobs": [
+          {
+            "title": "Commercial Searcher",
+            "posted_at": 1780999328406,
+            "first_seen_at": 1780999328000,
+            "locations": [
+              "Santa Ana, CA",
+              "Remote"
+            ],
+            "countries": [
+              "US"
+            ],
+            "states": [
+              "CA"
+            ],
+            "remote_type": "fully_remote",
+            "job_function": "other"
+          },
+          {
+            "title": "Lead Searcher",
+            "posted_at": 1780999297485,
+            "first_seen_at": 1780999297000,
+            "locations": [
+              "Tampa, FL",
+              "Remote"
+            ],
+            "countries": [
+              "US"
+            ],
+            "states": [
+              "FL"
+            ],
+            "remote_type": "fully_remote",
+            "job_function": "other"
+          }
+        ],
+        "stats": {
+          "total_jobs": 929647,
+          "new_last_24h": 1187
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.jobdatalake.com/v1/jobs?q={search_term}"
+    },
+    {
+      "name": "DeepAI",
+      "slug": "deepai",
+      "emoji": "🔑",
+      "tagline": "DeepAI — free tier with API key",
+      "description": "DeepAI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://deepai.org/",
+      "baseUrl": "https://api.deepai.org",
+      "sampleEndpoint": "/privacy-preferences/get",
+      "latencyMs": 3728,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "analytics": true,
+        "ads": true,
+        "audiences": true,
+        "third_party": true,
+        "training": true,
+        "marketing": true,
+        "gpc_detected": false,
+        "exists": false
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.deepai.org/privacy-preferences/get"
+    },
+    {
+      "name": "MediaCraft AI",
+      "slug": "mediacraft-ai",
+      "emoji": "🔑",
+      "tagline": "MediaCraft AI — free tier with API key",
+      "description": "MediaCraft AI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://mediacraft-x402-api.onrender.com",
+      "baseUrl": "https://mediacraft-x402-api.onrender.com",
+      "sampleEndpoint": "/",
+      "latencyMs": 511,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "service": "MediaCraft AI — Pay-Per-Call API",
+        "version": "1.0.0",
+        "endpoints": {
+          "/api/v1/translate": {
+            "method": "POST",
+            "price": "$0.01",
+            "description": "EN↔CN bilingual translation with cultural adaptation"
+          },
+          "/api/v1/compliance-check": {
+            "method": "POST",
+            "price": "$0.02",
+            "description": "Full content compliance review: Chinese advertising law + platform rules + short-video content safety. Supports script/hook/caption/voiceover/title types."
+          },
+          "/api/v1/compliance-batch": {
+            "method": "POST",
+            "price": "$0.05",
+            "description": "Batch review up to 20 items at once"
+          },
+          "/api/v1/compliance-report": {
+            "method": "POST",
+            "price": "$0.05",
+            "description": "Generate formal compliance report (audit trail, defensible in enforcement)"
+          },
+          "/api/v1/seo-optimize": {
+            "method": "POST",
+            "price": "$0.01",
+            "description": "SEO title, description, and keyword optimization"
+          }
+        },
+        "docs": "/docs",
+        "health": "/health",
+        "x402": "/.well-known/x402"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://mediacraft-x402-api.onrender.com/"
+    },
+    {
+      "name": "Songlink / Odesli",
+      "slug": "songlink-odesli",
+      "emoji": "🔑",
+      "tagline": "Songlink / Odesli — free tier with API key",
+      "description": "Songlink / Odesli exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://www.notion.so/API-d0ebe08a5e304a55928405eb682f6741",
+      "baseUrl": "https://api.song.link",
+      "sampleEndpoint": "/v1-alpha.1/links?url=spotify%3Atrack%3A0Jcij1eWd5bDMU5iPbxe2i&amp;userCountry=US&amp;key=9ed95450-2b6f-4aae-a3ab-34b6bca4f786&gt;&quot",
+      "latencyMs": 2557,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "entityUniqueId": "SPOTIFY_SONG::0Jcij1eWd5bDMU5iPbxe2i",
+        "userCountry": "TR",
+        "pageUrl": "https://song.link/s/0Jcij1eWd5bDMU5iPbxe2i",
+        "entitiesByUniqueId": {
+          "AMAZON_SONG::B073SYKFJS": {
+            "id": "B073SYKFJS",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://m.media-amazon.com/images/I/418XoY1l0PL.jpg",
+            "thumbnailWidth": 500,
+            "thumbnailHeight": 500,
+            "apiProvider": "amazon"
+          },
+          "ANGHAMI_SONG::18717979": {
+            "id": "18717979",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://artwork.anghcdn.co/cover/121457007/320",
+            "thumbnailWidth": 1024,
+            "thumbnailHeight": 1024,
+            "apiProvider": "anghami"
+          },
+          "BOOMPLAY_SONG::2639007": {
+            "id": "2639007",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://source.boomplaymusic.com/group10/M00/EC/4E/990e31179fe74d50857e2c53d44e2237_464_464.jpg",
+            "thumbnailWidth": 464,
+            "thumbnailHeight": 464,
+            "apiProvider": "boomplay"
+          },
+          "DEEZER_SONG::138127073": {
+            "id": "138127073",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "http://cdn-images.dzcdn.net/images/cover/fdb6aec52b3e3ee75a47386a867e4c3b/500x500-000000-80-0-0.jpg",
+            "thumbnailWidth": 500,
+            "thumbnailHeight": 500,
+            "apiProvider": "deezer"
+          },
+          "NAPSTER_SONG::tra.246984805": {
+            "id": "tra.246984805",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://direct.rhapsody.com/imageserver/images/alb.246984790/385x385.jpeg",
+            "thumbnailWidth": 385,
+            "thumbnailHeight": 385,
+            "apiProvider": "napster"
+          },
+          "PANDORA_SONG::TR:5791220": {
+            "id": "TR:5791220",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://content-images.p-cdn.com/images/f5/6a/46/24/4dae46468b3900fbfb553c2b/_500W_500H.jpg",
+            "thumbnailWidth": 500,
+            "thumbnailHeight": 500,
+            "apiProvider": "pandora"
+          },
+          "SPOTIFY_SONG::0Jcij1eWd5bDMU5iPbxe2i": {
+            "id": "0Jcij1eWd5bDMU5iPbxe2i",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
+            "thumbnailWidth": 640,
+            "thumbnailHeight": 640,
+            "apiProvider": "spotify"
+          },
+          "TIDAL_SONG::68204971": {
+            "id": "68204971",
+            "type": "song",
+            "title": "Kitchen",
+            "artistName": "Kid Cudi",
+            "thumbnailUrl": "https://resources.tidal.com/images/2663aa6d/0fb0/463a/a51a/0858924f46af/640x640.jpg",
+            "thumbnailWidth": 640,
+            "thumbnailHeight": 640,
+            "apiProvider": "tidal"
+          }
+        },
+        "linksByPlatform": {
+          "amazonMusic": {
+            "country": "TR",
+            "url": "https://music.amazon.com/albums/B01N48U32A?trackAsin=B073SYKFJS",
+            "entityUniqueId": "AMAZON_SONG::B073SYKFJS"
+          },
+          "amazonStore": {
+            "country": "US",
+            "url": "https://amazon.com/dp/B073SYKFJS",
+            "entityUniqueId": "AMAZON_SONG::B073SYKFJS"
+          },
+          "anghami": {
+            "country": "TR",
+            "url": "https://play.anghami.com/song/18717979?refer=linktree",
+            "entityUniqueId": "ANGHAMI_SONG::18717979"
+          },
+          "boomplay": {
+            "country": "TR",
+            "url": "https://www.boomplay.com/songs/2639007",
+            "entityUniqueId": "BOOMPLAY_SONG::2639007"
+          },
+          "deezer": {
+            "country": "TR",
+            "url": "https://www.deezer.com/track/138127073",
+            "entityUniqueId": "DEEZER_SONG::138127073"
+          },
+          "napster": {
+            "country": "TR",
+            "url": "https://play.napster.com/track/tra.246984805",
+            "entityUniqueId": "NAPSTER_SONG::tra.246984805"
+          },
+          "pandora": {
+            "country": "US",
+            "url": "https://www.pandora.com/TR:5791220",
+            "entityUniqueId": "PANDORA_SONG::TR:5791220"
+          },
+          "tidal": {
+            "country": "TR",
+            "url": "https://listen.tidal.com/track/68204971",
+            "entityUniqueId": "TIDAL_SONG::68204971"
+          }
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.song.link/v1-alpha.1/links?url=spotify%3Atrack%3A0Jcij1eWd5bDMU5iPbxe2i&amp;userCountry=US&amp;key=9ed95450-2b6f-4aae-a3ab-34b6bca4f786&gt;&quot"
+    },
+    {
+      "name": "Currents",
+      "slug": "currents",
+      "emoji": "🔑",
+      "tagline": "Currents — free tier with API key",
+      "description": "Currents exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "News",
+      "docsUrl": "https://currentsapi.services/",
+      "baseUrl": "https://currentsapi.services",
+      "sampleEndpoint": "/health",
+      "latencyMs": 998,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://currentsapi.services/health"
+    },
+    {
+      "name": "Audexum",
+      "slug": "audexum",
+      "emoji": "🔑",
+      "tagline": "Audexum — free tier with API key",
+      "description": "Audexum exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Text Analysis",
+      "docsUrl": "https://audexum.com/docs",
+      "baseUrl": "https://audexum.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 147,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "model": "supertonic-3",
+        "loaded": true
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://audexum.com/health"
+    },
+    {
+      "name": "CarVector",
+      "slug": "carvector",
+      "emoji": "🔑",
+      "tagline": "CarVector — free tier with API key",
+      "description": "CarVector exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Vehicle",
+      "docsUrl": "https://carvector.io/docs",
+      "baseUrl": "https://carvector.io",
+      "sampleEndpoint": "/api?api_key=DEMO_KEY",
+      "latencyMs": 216,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "app": "deadglory-pro",
+        "version": "1.0.0",
+        "message": "Hello World"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://carvector.io/api?api_key=DEMO_KEY"
+    },
+    {
+      "name": "SpaceTradersAPI",
+      "slug": "spacetradersapi",
+      "emoji": "🔑",
+      "tagline": "SpaceTradersAPI — free tier with API key",
+      "description": "SpaceTradersAPI exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://spacetraders.io?rel=pub-apis",
+      "baseUrl": "https://api.spacetraders.io",
+      "sampleEndpoint": "/v2/",
+      "latencyMs": 1217,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "SpaceTraders is currently online and available to play",
+        "version": "v2.3.0",
+        "resetDate": "2026-07-05",
+        "description": "SpaceTraders is a headless API and fleet-management game where players can work together or against each other to trade, explore, expand, and conquer in a dynamic and growing universe. Build your own UI, write automated scripts, or just play the game from the comfort of your terminal. The game is currently in alpha and is under active development.",
+        "stats": {
+          "agents": 49,
+          "ships": 333,
+          "systems": 6980,
+          "waypoints": 200523,
+          "accounts": 4005
+        },
+        "health": {
+          "lastMarketUpdate": "2026-07-05T18:10:13.325Z"
+        },
+        "leaderboards": {
+          "mostCredits": [
+            {
+              "agentSymbol": "MAWHRIN-SKEL",
+              "credits": 1719874
+            },
+            {
+              "agentSymbol": "CHURT-LYNE",
+              "credits": 1306528
+            }
+          ],
+          "mostSubmittedCharts": []
+        },
+        "serverResets": {
+          "next": "2026-07-12T13:00:00.000Z",
+          "frequency": "weekly"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.spacetraders.io/v2\\"
+    },
+    {
+      "name": "Mixcloud",
+      "slug": "mixcloud",
+      "emoji": "🔑",
+      "tagline": "Mixcloud — free tier with API key",
+      "description": "Mixcloud exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://www.mixcloud.com/developers/",
+      "baseUrl": "https://api.mixcloud.com",
+      "sampleEndpoint": "/spartacus/party-time/",
+      "latencyMs": 4260,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "key": "/spartacus/party-time/",
+        "url": "https://www.mixcloud.com/spartacus/party-time/",
+        "name": "Party Time",
+        "tags": [
+          {
+            "key": "/genres/funky-house/",
+            "url": "https://www.mixcloud.com/genres/funky-house/",
+            "name": "Funky house"
+          },
+          {
+            "key": "/genres/funk/",
+            "url": "https://www.mixcloud.com/genres/funk/",
+            "name": "Funk"
+          }
+        ],
+        "created_time": "2009-08-02T16:55:01Z",
+        "updated_time": "2026-06-28T12:47:50Z",
+        "play_count": 9402,
+        "favorite_count": 37
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.mixcloud.com/spartacus/party-time/"
+    },
+    {
+      "name": "Battle.net",
+      "slug": "battle-net",
+      "emoji": "🔑",
+      "tagline": "Battle.net — free tier with API key",
+      "description": "Battle.net exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://develop.battle.net/documentation/guides/getting-started",
+      "baseUrl": "https://develop.battle.net",
+      "sampleEndpoint": "/health",
+      "latencyMs": 365,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "UP"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://develop.battle.net/health"
+    },
+    {
+      "name": "URLScan.io",
+      "slug": "urlscan-io",
+      "emoji": "🔑",
+      "tagline": "URLScan.io — free tier with API key",
+      "description": "URLScan.io exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Anti-Malware",
+      "docsUrl": "https://urlscan.io/about-api/",
+      "baseUrl": "https://urlscan.io",
+      "sampleEndpoint": "/api/v1/search/?q=domain:urlscan.io",
+      "latencyMs": 804,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "canonical": {
+              "task": {
+                "url": "urlscan.io/result/019f1d95-a472-71f9-bd01-4a488a624cc6"
+              },
+              "page": {
+                "url": "urlscan.io/result/019f1d95-a472-71f9-bd01-4a488a624cc6"
+              }
+            },
+            "task": {
+              "visibility": "public",
+              "method": "manual",
+              "domain": "urlscan.io",
+              "apexDomain": "urlscan.io",
+              "time": "2026-07-05T18:07:11.362Z",
+              "uuid": "019f3376-60eb-777e-9679-f133c8e2715f",
+              "url": "https://urlscan.io/result/019f1d95-a472-71f9-bd01-4a488a624cc6/"
+            },
+            "stats": {
+              "uniqIPs": 1,
+              "uniqCountries": 1,
+              "dataLength": 1128,
+              "encodedDataLength": 1367,
+              "requests": 2
+            },
+            "page": {
+              "country": "DE",
+              "server": "nginx",
+              "ip": "49.12.22.106",
+              "apexDomainAgeDays": 3587,
+              "language": "en",
+              "mimeType": "text/html",
+              "title": "429 Too Many Requests",
+              "url": "https://urlscan.io/result/019f1d95-a472-71f9-bd01-4a488a624cc6/"
+            },
+            "_id": "019f3376-60eb-777e-9679-f133c8e2715f",
+            "_score": null,
+            "sort": [
+              1783274831362,
+              "019f3376-60eb-777e-9679-f133c8e2715f"
+            ],
+            "result": "https://urlscan.io/api/v1/result/019f3376-60eb-777e-9679-f133c8e2715f/"
+          },
+          {
+            "canonical": {
+              "task": {
+                "url": "bandsworksconcerts.info/index.php"
+              },
+              "page": {
+                "url": "bandsworksconcerts.info/index.php"
+              }
+            },
+            "task": {
+              "visibility": "public",
+              "method": "manual",
+              "domain": "www.bandsworksconcerts.info",
+              "apexDomain": "bandsworksconcerts.info",
+              "time": "2026-07-05T17:49:06.250Z",
+              "uuid": "019f3364-8f09-74b4-a111-5da01e08f63b",
+              "url": "https://www.bandsworksconcerts.info/index.php?pesthouse7"
+            },
+            "stats": {
+              "uniqIPs": 27,
+              "uniqCountries": 6,
+              "dataLength": 11203379,
+              "encodedDataLength": 6900791,
+              "requests": 590
+            },
+            "page": {
+              "country": "JP",
+              "server": "nginx",
+              "ip": "157.112.187.29",
+              "apexDomainAgeDays": 2178,
+              "mimeType": "text/html",
+              "url": "https://www.bandsworksconcerts.info/index.php?pesthouse7",
+              "tlsValidDays": 89,
+              "tlsAgeDays": 18
+            },
+            "_id": "019f3364-8f09-74b4-a111-5da01e08f63b",
+            "_score": null,
+            "sort": [
+              1783273746250,
+              "019f3364-8f09-74b4-a111-5da01e08f63b"
+            ],
+            "result": "https://urlscan.io/api/v1/result/019f3364-8f09-74b4-a111-5da01e08f63b/"
+          }
+        ],
+        "total": 10000,
+        "took": 281,
+        "has_more": true
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://urlscan.io/api/v1/search/?q=domain:urlscan.io"
+    },
+    {
+      "name": "Micro User Service",
+      "slug": "micro-user-service",
+      "emoji": "🔑",
+      "tagline": "Micro User Service — free tier with API key",
+      "description": "Micro User Service exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Authentication & Authorization",
+      "docsUrl": "https://m3o.com/user",
+      "baseUrl": "https://m3o.com",
+      "sampleEndpoint": "/status",
+      "latencyMs": 150,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "healthy": true,
+        "services": [
+          {
+            "name": "News",
+            "status": true,
+            "path": "/news"
+          },
+          {
+            "name": "Blog",
+            "status": true,
+            "path": "/blog"
+          }
+        ]
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://m3o.com/status"
+    },
+    {
+      "name": "Stytch",
+      "slug": "stytch",
+      "emoji": "🔑",
+      "tagline": "Stytch — free tier with API key",
+      "description": "Stytch exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Authentication & Authorization",
+      "docsUrl": "https://stytch.com/",
+      "baseUrl": "https://stytch.com",
+      "sampleEndpoint": "/health",
+      "latencyMs": 369,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "info": true,
+        "details": true
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://stytch.com/health"
+    },
+    {
+      "name": "Coinlayer",
+      "slug": "coinlayer",
+      "emoji": "🔑",
+      "tagline": "Coinlayer — free tier with API key",
+      "description": "Coinlayer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://coinlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://api.coinlayer.com",
+      "sampleEndpoint": "/live",
+      "latencyMs": 4867,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": false,
+        "error": {
+          "code": 101,
+          "type": "missing_access_key",
+          "info": "You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]"
+        }
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.coinlayer.com/live"
+    },
+    {
+      "name": "Bitmex",
+      "slug": "bitmex",
+      "emoji": "🔑",
+      "tagline": "Bitmex — free tier with API key",
+      "description": "Bitmex exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.bitmex.com/app/apiOverview",
+      "baseUrl": "https://mainnet.fxrbb.com",
+      "sampleEndpoint": "/api/v1",
+      "latencyMs": 2185,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "BitMEX API",
+        "version": "1.2.0",
+        "timestamp": 1783275199298
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://mainnet.fxrbb.com/api/v1"
+    },
+    {
+      "name": "Blockchain",
+      "slug": "blockchain",
+      "emoji": "🔑",
+      "tagline": "Blockchain — free tier with API key",
+      "description": "Blockchain exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.blockchain.com/api",
+      "baseUrl": "https://www.blockchain.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 216,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "app_name": "blockchain-com",
+        "app_version": "test"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.blockchain.com/healthz"
+    },
+    {
+      "name": "Huobi",
+      "slug": "huobi",
+      "emoji": "🔑",
+      "tagline": "Huobi — free tier with API key",
+      "description": "Huobi exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://huobiapi.github.io/docs/spot/v1/en/",
+      "baseUrl": "https://api.huobi.pro",
+      "sampleEndpoint": "/v1/order/orders?AccessKeyId=e2xxxxxx-99xxxxxx-84xxxxxx-7xxxx&amp;order-id=1234567890&amp;SignatureMethod=HmacSHA256&amp;SignatureVersion=2&amp;Timestamp=2017-05-11T15%3A19%3A30&amp;Signature=4F65x5A2bLyMWVQj3Aqp%2BB4w%2BivaA7n5Oi2SuYtCJ9o%3D",
+      "latencyMs": 2444,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "error",
+        "err-code": "login-required",
+        "err-msg": "The account is not logged in, please log in and try again.",
+        "data": null
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://api.huobi.pro/v1/order/orders?AccessKeyId=e2xxxxxx-99xxxxxx-84xxxxxx-7xxxx&amp;order-id=1234567890&amp;SignatureMethod=HmacSHA256&amp;SignatureVersion=2&amp;Timestamp=2017-05-11T15%3A19%3A30&amp;Signature=4F65x5A2bLyMWVQj3Aqp%2BB4w%2BivaA7n5Oi2SuYtCJ9o%3D"
+    },
+    {
+      "name": "Currencylayer",
+      "slug": "currencylayer",
+      "emoji": "🔑",
+      "tagline": "Currencylayer — free tier with API key",
+      "description": "Currencylayer exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+      "baseUrl": "https://currencylayer.com",
+      "sampleEndpoint": "/healthz",
+      "latencyMs": 525,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "service": "portal",
+        "hostname": "portal-main.ip-10-128-201-196.apilayer.net",
+        "version": "d06ac150",
+        "environment": "apilayer-core-production",
+        "deploy_datetime": "2026-07-01T11:21:26Z"
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://currencylayer.com/healthz"
+    },
+    {
+      "name": "TaxID",
+      "slug": "taxid",
+      "emoji": "🔑",
+      "tagline": "TaxID — free tier with API key",
+      "description": "TaxID exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://www.taxid.dev/docs",
+      "baseUrl": "https://www.taxid.dev",
+      "sampleEndpoint": "/api/v1/rates/DE",
+      "latencyMs": 514,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "country_code": "DE",
+        "country_name": "Germany",
+        "tax_type": "vat",
+        "standard_rate": 19,
+        "reduced_rates": [
+          7
+        ],
+        "reduced_rate_categories": [
+          "Food, books and newspapers, public transport, hotel accommodation, cultural services"
+        ],
+        "super_reduced_rate": null,
+        "parking_rate": null
+      },
+      "freeTier": "Free tier — key may be required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "auth": "apiKey",
+      "notes": "apiKey probe https://www.taxid.dev/api/v1/rates/DE"
+    }
+  ],
+  "skipped": []
+}

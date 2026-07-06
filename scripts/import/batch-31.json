@@ -1,0 +1,245 @@
+{
+  "batch": 31,
+  "verified": [
+    {
+      "name": "National Grid ESO",
+      "slug": "national-grid-eso",
+      "emoji": "⚡",
+      "tagline": "Great Britain's electricity system operator open data, CKAN-style",
+      "description": "The operator formerly known as National Grid ESO (now NESO) publishes Britain's grid data through a standard CKAN API. List every dataset with a single keyless GET, then drill into wind forecasts, demand, carbon intensity and more. No key, no signup.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://www.neso.energy/data-portal",
+      "baseUrl": "https://api.neso.energy/api/3",
+      "sampleEndpoint": "/action/package_list",
+      "latencyMs": 731,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://api.neso.energy/api/3/action/help_show?name=package_list",
+        "success": true,
+        "result": [
+          "14-days-ahead-operational-metered-wind-forecasts",
+          "14-days-ahead-wind-forecasts"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "NESO Open Data Licence (OGL-based); varies per dataset",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "City, Berlin",
+      "slug": "city-berlin",
+      "emoji": "🐻",
+      "tagline": "Berlin's open data catalog via a plain CKAN API",
+      "description": "Berlin's official open data register runs on CKAN, so a single keyless GET returns the names of every published dataset. From there you can reach 3D building models, transit, demographics and thousands more city datasets. No key or account needed.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://daten.berlin.de/",
+      "baseUrl": "https://datenregister.berlin.de/api/3",
+      "sampleEndpoint": "/action/package_list",
+      "latencyMs": 1842,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://datenregister.berlin.de/api/3/action/help_show?name=package_list",
+        "success": true,
+        "result": [
+          "3d-gebaudemodelle-im-level-of-detail-1-lod-1-e2a1e24e",
+          "3d-gebaudemodelle-im-level-of-detail-2-lod-2-3c7c49af"
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Varies per dataset (many CC-BY / dl-de-by-2.0)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "FBI Wanted",
+      "slug": "fbi-wanted",
+      "emoji": "🕵️",
+      "tagline": "Live feed of the FBI's Wanted program, no key required",
+      "description": "The FBI exposes its public Wanted list as clean JSON: fugitives, missing persons, reward text, physical descriptions and photos. A keyless GET returns a paginated list of roughly 1,200 active cases. Data comes straight from fbi.gov.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.fbi.gov/wanted/api",
+      "baseUrl": "https://api.fbi.gov",
+      "sampleEndpoint": "/wanted/v1/list",
+      "latencyMs": 264,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 1199,
+        "page": 1,
+        "items": [
+          {
+            "title": "PATRICK CARLOW, SR.",
+            "uid": "cdb8134918884264bee2a5c1296c3750",
+            "person_classification": "Main",
+            "reward_text": "The FBI is offering a reward of up to $2..."
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "U.S. Government work (public domain)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Istanbul (İBB) Open Data",
+      "slug": "istanbul-ibb-open-data",
+      "emoji": "🏙️",
+      "tagline": "Istanbul Metropolitan Municipality open data, CKAN-powered",
+      "description": "The İBB (Istanbul Metropolitan Municipality) publishes city datasets through a standard CKAN API. A keyless package search returns titles, owning departments and resource counts across 500-plus datasets. Great for transit, environment and municipal statistics.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.ibb.gov.tr",
+      "baseUrl": "https://data.ibb.gov.tr/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 721,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://data.ibb.gov.tr/api/3/action/help_show?name=package_search",
+        "success": true,
+        "result": {
+          "count": 547,
+          "results": [
+            {
+              "title": "VetAkademi Kapsamında Eğitim Verilen Kişi Sayısı",
+              "name": "vetakademi-kapsaminda-egitim-verilen-kisi-sayisi",
+              "num_resources": 1
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (varies per dataset)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Government, Argentina",
+      "slug": "open-government-argentina",
+      "emoji": "🇦🇷",
+      "tagline": "Argentina's national open data portal over CKAN",
+      "description": "datos.gob.ar is Argentina's central government open data catalog, served through a standard CKAN API. A keyless package search returns dataset titles, slugs and resource counts across 1,200-plus datasets. Covers prices, budgets, geography and more.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://datos.gob.ar/",
+      "baseUrl": "https://datos.gob.ar/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1457,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 1237,
+          "results": [
+            {
+              "title": "Precios Claros - SEPA Mayorista",
+              "name": "produccion-precios-claros---sepa-mayorista",
+              "num_resources": 9
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (varies per dataset)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Government, Denmark",
+      "slug": "open-government-denmark",
+      "emoji": "🇩🇰",
+      "tagline": "Danish municipal open data through a CKAN API",
+      "description": "opendata.dk aggregates open data from Danish municipalities on a CKAN backend. A keyless package search returns dataset titles, slugs and resource counts across 600-plus datasets. Handy for local transport, planning and civic data.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.opendata.dk/",
+      "baseUrl": "https://admin.opendata.dk/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1106,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 631,
+          "results": [
+            {
+              "title": "Trafikspil - Ram Mig Ej",
+              "name": "trafikspil-ram-mig-ej",
+              "num_resources": 2
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (varies per dataset)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "District of Columbia Open Data",
+      "slug": "district-of-columbia-open-data",
+      "emoji": "🏛️",
+      "tagline": "Washington DC's GIS datasets as queryable ArcGIS JSON",
+      "description": "Washington DC serves its open datasets through public ArcGIS REST feature services. This keyless query hits the Metropolitan Police crime-incidents layer and returns structured JSON with offense, method, shift and block. Swap the layer id for other city data.",
+      "sourceCategory": "Government",
+      "docsUrl": "http://opendata.dc.gov/pages/using-apis",
+      "baseUrl": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer",
+      "sampleEndpoint": "/39/query?where=1%3D1&outFields=OFFENSE,METHOD,SHIFT,BLOCK&f=json&resultRecordCount=1&returnGeometry=false",
+      "latencyMs": 1671,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "displayFieldName": "CCN",
+        "features": [
+          {
+            "attributes": {
+              "OFFENSE": "ROBBERY",
+              "METHOD": "GUN",
+              "SHIFT": "DAY",
+              "BLOCK": "12TH STREET NE AND VARNUM STREET NE"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (DC Open Data terms)",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "Meme Maker", "reason": "Real API base is alpha-meme-maker.herokuapp.com; Heroku free dynos retired, host returns 404 (dead)." },
+    { "name": "Techy", "reason": "techy-api.vercel.app returns Vercel 'deployment not found' (dead)." },
+    { "name": "CO2 Offset", "reason": "co2offset.io/api.html redirects to a Corrently docs page; no keyless JSON GET endpoint found." },
+    { "name": "WallstreetBets", "reason": "Endpoint moved to api.tradestie.com; host timed out / unreachable on repeated probes (no 200 observed)." },
+    { "name": "PunkAPI", "reason": "api.punkapi.com no longer resolves (DNS NXDOMAIN); free API discontinued." },
+    { "name": "Rustybeer", "reason": "rustybeer.herokuapp.com returns 404 (Heroku app gone)." },
+    { "name": "Animal Crossing: New Horizons", "reason": "acnhapi.com serves a JS challenge/redirect page instead of JSON (defunct)." },
+    { "name": "Board Game Geek", "reason": "XML API only; returns XML, not JSON." },
+    { "name": "Comic Vine", "reason": "Requires an API key." },
+    { "name": "FIFA Ultimate Team", "reason": "EA Sports endpoint returns HTTP 503 (blocked)." },
+    { "name": "Forza", "reason": "forza-api.tk does not resolve/connect (.tk domain dead)." },
+    { "name": "Hytale", "reason": "hytale-api.com returns 403 (Cloudflare bot protection)." },
+    { "name": "Tronald Dump", "reason": "api.tronalddump.io is NXDOMAIN and www /random/quote returns 404 (service defunct)." },
+    { "name": "Warface (non-official)", "reason": "api.wfstats.cf returns an HTML dashboard, not JSON." },
+    { "name": "Airtel IP", "reason": "sys.airtel.lv returns 403 to non-browser clients (blocked)." },
+    { "name": "CitySDK", "reason": "citysdk-toolkit URL serves an HTML page; no keyless JSON GET endpoint." },
+    { "name": "Ducks Unlimited", "reason": "gis.ducks.org ArcGIS service path not locatable; queries returned error 400 (no verifiable data endpoint)." },
+    { "name": "Geodata.gov.gr", "reason": "geodata.gov.gr CKAN API times out / unreachable (no response)." },
+    { "name": "Hong Kong GeoData Store", "reason": "geodata.gov.hk returns HTTP 503." },
+    { "name": "IP 2 Country", "reason": "api.ip2country.info is fronted by Akamai returning 'Invalid URL' (service dead)." },
+    { "name": "IP Vigilante", "reason": "ipvigilante.com is a parked 'domain for sale' page (service discontinued)." },
+    { "name": "OnWater", "reason": "api.onwater.io returns 406 and now requires a token (needs key/signup)." },
+    { "name": "Queimadas INPE", "reason": "focos endpoint returns 404; no keyless JSON GET found." },
+    { "name": "Rwanda Locations", "reason": "Hosted on RapidAPI; requires a RapidAPI key." },
+    { "name": "Census.gov", "reason": "api.census.gov now returns 'Missing Key' for data queries (requires key)." },
+    { "name": "Interpol Red Notices", "reason": "ws-public.interpol.int returns 403 to non-browser/bot requests." },
+    { "name": "Open Government, Austria", "reason": "data.gv.at CKAN action endpoints return 404 (no working keyless JSON path found)." },
+    { "name": "Open Government, Belgium", "reason": "data.gov.be returns an HTML SPA, not JSON." },
+    { "name": "Open Government, Cyprus", "reason": "data.gov.cy CKAN action endpoints return 404." },
+    { "name": "Open Government, Czech Republic", "reason": "data.gov.cz CKAN action endpoints return 404 (SPARQL/NKOD portal, not CKAN)." },
+    { "name": "Open Government, Indonesia", "reason": "data.go.id CKAN action endpoints return 404 (portal migrated)." }
+  ]
+}

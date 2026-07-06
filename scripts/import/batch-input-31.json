@@ -1,0 +1,386 @@
+{
+  "batch": 31,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "Meme Maker",
+      "docsUrl": "https://mememaker.github.io/API/",
+      "description": "REST API for create your own meme",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Techy",
+      "docsUrl": "https://techy-api.vercel.app/",
+      "description": "JSON and Plaintext API for tech-savvy sounding phrases",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 404
+    },
+    {
+      "name": "CO2 Offset",
+      "docsUrl": "https://co2offset.io/api.html",
+      "description": "API calculates and validates the carbon footprint",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 200
+    },
+    {
+      "name": "National Grid ESO",
+      "docsUrl": "https://data.nationalgrideso.com/",
+      "description": "Open data from Great Britain’s Electricity System Operator",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Environment",
+      "docsCheck": 0
+    },
+    {
+      "name": "WallstreetBets",
+      "docsUrl": "https://dashboard.nbshare.io/apps/reddit/api/",
+      "description": "WallstreetBets Stock Comments Sentiment Analysis",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "PunkAPI",
+      "docsUrl": "https://punkapi.com/",
+      "description": "Brewdog Beer Recipes",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 0
+    },
+    {
+      "name": "Rustybeer",
+      "docsUrl": "https://rustybeer.herokuapp.com/",
+      "description": "Beer brewing tools",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 404
+    },
+    {
+      "name": "Animal Crossing: New Horizons",
+      "docsUrl": "http://acnhapi.com/",
+      "description": "API for critters, fossils, art, music, furniture and villagers",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 0
+    },
+    {
+      "name": "Board Game Geek",
+      "docsUrl": "https://boardgamegeek.com/wiki/page/BGG_XML_API2",
+      "description": "Board games, RPG and videogames",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 403
+    },
+    {
+      "name": "Comic Vine",
+      "docsUrl": "https://comicvine.gamespot.com/api/documentation",
+      "description": "Comics",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "FIFA Ultimate Team",
+      "docsUrl": "https://www.easports.com/fifa/ultimate-team/api/fut/item",
+      "description": "FIFA Ultimate Team items API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 503
+    },
+    {
+      "name": "Forza",
+      "docsUrl": "https://docs.forza-api.tk",
+      "description": "Show random image of car from Forza",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 0
+    },
+    {
+      "name": "Hytale",
+      "docsUrl": "https://hytale-api.com/",
+      "description": "Hytale blog posts and jobs",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 403
+    },
+    {
+      "name": "Tronald Dump",
+      "docsUrl": "https://www.tronalddump.io/",
+      "description": "The dumbest things Donald Trump has ever said",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Warface (non-official)",
+      "docsUrl": "https://api.wfstats.cf",
+      "description": "Official API proxy with better data structure and more features",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Airtel IP",
+      "docsUrl": "https://sys.airtel.lv/ip2country/1.1.1.1/?full=true",
+      "description": "IP Geolocation API. Collecting data from multiple sources",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 403
+    },
+    {
+      "name": "CitySDK",
+      "docsUrl": "http://www.citysdk.eu/citysdk-toolkit/",
+      "description": "Open APIs for select European cities",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Ducks Unlimited",
+      "docsUrl": "https://gis.ducks.org/datasets/du-university-chapters/api",
+      "description": "API explorer that gives a query URL with a JSON response of locations and cities",
+      "auth": "none",
+      "https": true,
+      "cors": "no",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Geodata.gov.gr",
+      "docsUrl": "https://geodata.gov.gr/en/",
+      "description": "Open geospatial data and API service for Greece",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 0
+    },
+    {
+      "name": "Hong Kong GeoData Store",
+      "docsUrl": "https://geodata.gov.hk/gs/",
+      "description": "API for accessing geo-data of Hong Kong",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 503
+    },
+    {
+      "name": "IP 2 Country",
+      "docsUrl": "https://ip2country.info",
+      "description": "Map an IP to a country",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "IP Vigilante",
+      "docsUrl": "https://www.ipvigilante.com/",
+      "description": "Free IP Geolocation API",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "OnWater",
+      "docsUrl": "https://onwater.io/",
+      "description": "Determine if a lat/lon is on water or land",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Queimadas INPE",
+      "docsUrl": "https://queimadas.dgi.inpe.br/queimadas/dados-abertos/",
+      "description": "Access to heat focus data (probable wildfire)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 404
+    },
+    {
+      "name": "Rwanda Locations",
+      "docsUrl": "https://rapidapi.com/victorkarangwa4/api/rwanda",
+      "description": "Rwanda Provences, Districts, Cities, Capital City, Sector, cells, villages and streets",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Geocoding",
+      "docsCheck": 200
+    },
+    {
+      "name": "Census.gov",
+      "docsUrl": "https://www.census.gov/data/developers/data-sets.html",
+      "description": "The US Census Bureau provides various APIs and data sets on demographics and businesses",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "City, Berlin",
+      "docsUrl": "https://daten.berlin.de/",
+      "description": "Berlin(DE) City Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 403
+    },
+    {
+      "name": "District of Columbia Open Data",
+      "docsUrl": "http://opendata.dc.gov/pages/using-apis",
+      "description": "Contains D.C. government public datasets, including crime, GIS, financial data, and so on",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 404
+    },
+    {
+      "name": "FBI Wanted",
+      "docsUrl": "https://www.fbi.gov/wanted/api",
+      "description": "Access information on the FBI Wanted program",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 403
+    },
+    {
+      "name": "Interpol Red Notices",
+      "docsUrl": "https://interpol.api.bund.dev/",
+      "description": "Access and search Interpol Red Notices",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Istanbul (İBB) Open Data",
+      "docsUrl": "https://data.ibb.gov.tr",
+      "description": "Data sets from the İstanbul Metropolitan Municipality (İBB)",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 403
+    },
+    {
+      "name": "Open Government, Argentina",
+      "docsUrl": "https://datos.gob.ar/",
+      "description": "Argentina Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, Austria",
+      "docsUrl": "https://www.data.gv.at/",
+      "description": "Austria Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Belgium",
+      "docsUrl": "https://data.gov.be/",
+      "description": "Belgium Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Cyprus",
+      "docsUrl": "https://data.gov.cy/?language=en",
+      "description": "Cyprus Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Czech Republic",
+      "docsUrl": "https://data.gov.cz/english/",
+      "description": "Czech Republic Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Government, Denmark",
+      "docsUrl": "https://www.opendata.dk/",
+      "description": "Denmark Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 0
+    },
+    {
+      "name": "Open Government, Indonesia",
+      "docsUrl": "https://data.go.id/",
+      "description": "Indonesian Government Open Data",
+      "auth": "none",
+      "https": true,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "batch": 7,
+  "verified": [
+    {
+      "name": "Not Human Search",
+      "slug": "not-human-search",
+      "emoji": "🤖",
+      "tagline": "A search engine that ranks sites by how agent-ready they are",
+      "description": "Not Human Search indexes websites and scores them on 'agentic readiness' for AI agents and MCP servers. The keyless endpoints let you pull index stats, browse category buckets, and query top-scored or matching sites as JSON. Paid API-key plans exist, but reads like search and stats stay open.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://nothumansearch.ai/openapi.yaml",
+      "baseUrl": "https://nothumansearch.ai/api/v1",
+      "sampleEndpoint": "/stats",
+      "latencyMs": 799,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": { "avg_score": 37, "top_category": "developer", "total_sites": 4308 },
+      "freeTier": "Free — no key for read endpoints (paid API-key plans offered)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "OpenAPI also exposes paid API-key and Stripe commerce endpoints; stats/search/top are keyless."
+    },
+    {
+      "name": "TensorFeed",
+      "slug": "tensorfeed",
+      "emoji": "📡",
+      "tagline": "JSON feeds of AI news, model prices, and agent activity",
+      "description": "TensorFeed publishes machine-readable feeds covering AI headlines, model and GPU pricing, service status, and agent activity. Endpoints are plain keyless JSON documents you can poll on a schedule. Handy as a single source for 'what's happening in AI' without scraping.",
+      "sourceCategory": "Machine Learning",
+      "docsUrl": "https://tensorfeed.ai/developers",
+      "baseUrl": "https://tensorfeed.ai/api",
+      "sampleEndpoint": "/agents/news.json",
+      "latencyMs": 591,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "source": "tensorfeed.ai",
+        "updated": "2026-07-05T10:26:54.910Z",
+        "count": 50,
+        "articles": [
+          {
+            "title": "Show HN: Self-healing review gate and knowledge base for Claude Code (Beta)",
+            "source": "Hacker News AI",
+            "publishedAt": "2026-07-05T09:31:52.000Z"
+          }
+        ]
+      },
+      "freeTier": "Free — no key (static JSON feed endpoints)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Aggregates third-party sources (news, model/GPU pricing, service status)."
+    },
+    {
+      "name": "Radio Browser",
+      "slug": "radio-browser",
+      "emoji": "📻",
+      "tagline": "Community directory of 59k+ internet radio stations",
+      "description": "Radio Browser is a free, community-maintained catalog of internet radio streams searchable by name, tag, country, and language. The keyless JSON API also exposes aggregate stats like total stations and hourly click counts. It runs across several mirror hosts and just asks clients to send a descriptive User-Agent.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://api.radio-browser.info/",
+      "baseUrl": "https://de1.api.radio-browser.info",
+      "sampleEndpoint": "/json/stats",
+      "latencyMs": 773,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "supported_version": 1,
+        "software_version": "0.7.44",
+        "status": "OK",
+        "stations": 59557,
+        "tags": 11544,
+        "languages": 638,
+        "countries": 241
+      },
+      "freeTier": "Free and open source — no key",
+      "rateLimit": "Unpublished (clients asked to send a descriptive User-Agent)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Community-run; multiple mirror hosts (de1/at1/etc.). Base host may vary."
+    },
+    {
+      "name": "Florida Man",
+      "slug": "florida-man",
+      "emoji": "🐊",
+      "tagline": "10,000+ real 'Florida Man' headlines as static JSON by date",
+      "description": "A tongue-in-cheek but real dataset of Florida Man news headlines, served as static JSON files on GitHub Pages. Fetch every headline for a given calendar date, a whole month, or the full index — each entry carries title, source, date, and extracted keywords. No key, no server, just files.",
+      "sourceCategory": "News",
+      "docsUrl": "https://github.com/juliayxhuang/florida-man-api#readme",
+      "baseUrl": "https://juliayxhuang.github.io/florida-man-api",
+      "sampleEndpoint": "/api/04/23.json",
+      "latencyMs": 995,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "title": "Florida Man visits Tropicana Field, home of the Tampa Bay Rays",
+          "url": "https://www.wcjb.com/2026/04/23/florida-man-visits-tropicana-field-home-tampa-bay-rays/",
+          "source": "wcjb.com",
+          "date": "2026-04-23",
+          "keywords": ["florida", "visits", "tropicana"]
+        }
+      ],
+      "freeTier": "Free — static JSON on GitHub Pages, no key",
+      "rateLimit": "Unpublished (served via GitHub Pages)",
+      "dataLicense": "MIT (repository license)",
+      "commercialUse": "yes",
+      "notes": "Static dataset; endpoints are date-partitioned JSON files (keywords array truncated in sample)."
+    },
+    {
+      "name": "Noozra",
+      "slug": "noozra",
+      "emoji": "🗞️",
+      "tagline": "Aggregated news headlines from 200+ curated RSS sources",
+      "description": "Noozra pulls headlines from a couple hundred curated RSS feeds and serves them as clean JSON. You can list recent articles, filter by category, or search by keyword. Each item includes headline, source, timestamp, image, and a short description.",
+      "sourceCategory": "News",
+      "docsUrl": "https://noozra.com/api",
+      "baseUrl": "https://noozra.com/api",
+      "sampleEndpoint": "/articles",
+      "latencyMs": 2296,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "articles": [
+          {
+            "id": "8ce12da2-46d4-4ef0-9e32-b1d6ca42a5c2",
+            "headline": "Why Andy Burnham should bring back David Miliband – the man already tipped to replace him",
+            "url": "https://www.independent.co.uk/news/uk/politics/andy-burnham-david-miliband-cabinet-labour-foreign-secretary-b3008368.html",
+            "published_at": "2026-07-05T10:15:34Z",
+            "source": "Independent News",
+            "category": "general"
+          }
+        ]
+      },
+      "freeTier": "Free tier available (pricing tiers published at /api/pricing)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (aggregated RSS headlines)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Spaceflight News",
+      "slug": "spaceflight-news",
+      "emoji": "🚀",
+      "tagline": "News, blogs, and reports about spaceflight in one JSON API",
+      "description": "The Spaceflight News API (SNAPI v4) aggregates articles, blogs, and reports from across the space industry. Results are paginated JSON with titles, summaries, source sites, and links, and can be tied to specific launches or events. No key required.",
+      "sourceCategory": "News",
+      "docsUrl": "https://spaceflightnewsapi.net",
+      "baseUrl": "https://api.spaceflightnewsapi.net/v4",
+      "sampleEndpoint": "/articles/?limit=1",
+      "latencyMs": 890,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 34986,
+        "results": [
+          {
+            "id": 38810,
+            "title": "Vast's Haven-1 continues to advance through milestones ahead of planned 2027 launch",
+            "news_site": "NASASpaceflight",
+            "published_at": "2026-07-04T22:10:06Z",
+            "url": "https://www.nasaspaceflight.com/2026/07/vast-update-070426/"
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (links/metadata for third-party news)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Microlink.io",
+      "slug": "microlink-io",
+      "emoji": "🔗",
+      "tagline": "Turn any URL into structured title, description, image, and more",
+      "description": "Microlink fetches a web page and returns its metadata — title, description, author, publisher, language, and preview image — as JSON. Pass a target URL as a query parameter and get back a normalized object plus the upstream response headers. The free tier is keyless and rate-limited; paid plans unlock more.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://microlink.io",
+      "baseUrl": "https://api.microlink.io",
+      "sampleEndpoint": "/?url=https://example.com",
+      "latencyMs": 983,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "publisher": "example.com",
+          "lang": "en",
+          "title": "Example Domain",
+          "url": "https://example.com/",
+          "description": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+        },
+        "statusCode": 200
+      },
+      "freeTier": "Free tier — no key required (Pro plans need a key)",
+      "rateLimit": "Free tier is rate-limited per day (see pricing)",
+      "dataLicense": "N/A — returns metadata extracted from the URL you pass",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "ModelPartFinder Error Codes",
+      "slug": "modelpartfinder-error-codes",
+      "emoji": "🔧",
+      "tagline": "Look up appliance error codes and the parts that fix them",
+      "description": "ModelPartFinder maps appliance and equipment error codes to plain-English explanations and suggested replacement parts. Query by brand and code to get the fault description, the affected appliance type, and recommended part SKUs with prices. Keyless JSON, one lookup per request.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://modelpartfinder.com/docs/api",
+      "baseUrl": "https://modelpartfinder.com/api/v1",
+      "sampleEndpoint": "/error-code/Whirlpool/F01",
+      "latencyMs": 1293,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ok": true,
+        "brand": "Whirlpool",
+        "code": "F01",
+        "description": "Main electronic control board failure. Replace the central control board or its connectors.",
+        "appliance": "Dryer",
+        "recommended_skus": [
+          { "sku": "WP3387747", "title": "Dryer heating element", "price_cents": 5948 }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Responses include recommended replacement-part SKUs with prices (commerce-oriented)."
+    },
+    {
+      "name": "Nobel Prize",
+      "slug": "nobel-prize",
+      "emoji": "🏅",
+      "tagline": "Official open data on Nobel Prizes and laureates since 1901",
+      "description": "The Nobel Prize's own API serves structured data about prizes, categories, and laureates going back to 1901. Each prize record includes the year, category, award amounts, and the people honored with their motivations. Multilingual labels (English, Norwegian, Swedish) come baked in, no key needed.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://www.nobelprize.org/about/developer-zone-2/",
+      "baseUrl": "https://api.nobelprize.org/2.1",
+      "sampleEndpoint": "/nobelPrizes?limit=1",
+      "latencyMs": 283,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "nobelPrizes": [
+          {
+            "awardYear": "1901",
+            "category": { "en": "Chemistry" },
+            "dateAwarded": "1901-11-12",
+            "prizeAmount": 150782,
+            "laureates": [
+              { "id": "160", "fullName": { "en": "Jacobus Henricus van 't Hoff" }, "portion": "1" }
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Scholarships",
+      "slug": "open-scholarships",
+      "emoji": "🎓",
+      "tagline": "Openly-licensed directory of US scholarships and student aid",
+      "description": "Open Scholarships is a machine-readable, CC BY 4.0 directory of US scholarships sourced from official pages. Filter by state, availability, or keyword to get structured records with sponsor, award amounts, deadlines, and eligibility. Responses ship with the required attribution string built in.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://scholarships.grudged.io",
+      "baseUrl": "https://scholarships.grudged.io/api",
+      "sampleEndpoint": "/scholarships?state=NV&availability=open",
+      "latencyMs": 3661,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total": 17,
+        "limit": 50,
+        "offset": 0,
+        "license": "CC-BY-4.0",
+        "results": [
+          {
+            "id": "us-aiaa-foundation-undergraduate-scholarships",
+            "name": "AIAA Foundation Undergraduate Scholarships",
+            "sponsor": "American Institute of Aeronautics and Astronautics",
+            "award": { "amount_max": 10000, "currency": "USD" }
+          }
+        ]
+      },
+      "freeTier": "Free — no key (CC BY 4.0; attribution required)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0",
+      "commercialUse": "yes",
+      "notes": "Response carries a required attribution string; US-focused (Nevada first)."
+    },
+    {
+      "name": "Statistics of the World",
+      "slug": "statistics-of-the-world",
+      "emoji": "📊",
+      "tagline": "Economic indicators for 218 countries from World Bank & IMF",
+      "description": "Statistics of the World bundles hundreds of economic and demographic indicators — GDP, population, inflation, and more — for countries worldwide, drawing on World Bank and IMF data. Ask for a country by ISO code and get a tidy JSON profile plus its indicator values and years. An API-key header is optional, not required.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://statisticsoftheworld.com/api-docs",
+      "baseUrl": "https://statisticsoftheworld.com/api/v1",
+      "sampleEndpoint": "/countries/USA",
+      "latencyMs": 1322,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "country": {
+          "id": "USA",
+          "iso2": "us",
+          "name": "United States",
+          "region": "North America",
+          "incomeLevel": "High income",
+          "capitalCity": "Washington D.C."
+        },
+        "indicators": [
+          {
+            "id": "NY.GNP.PCAP.PP.CD",
+            "label": "GNI per Capita, PPP (USD)",
+            "category": "Economy",
+            "value": 85980,
+            "year": "2024"
+          }
+        ]
+      },
+      "freeTier": "Free — no key (optional X-API-Key header)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data sourced from World Bank & IMF)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Umeå Open Data",
+      "slug": "umea-open-data",
+      "emoji": "🇸🇪",
+      "tagline": "Open data portal for the Swedish city of Umeå",
+      "description": "Umeå's municipal open data portal (built on OpenDataSoft) publishes datasets about the northern Swedish city, from energy consumption to geography. The Explore v2.1 API lets you browse the catalog and query records as JSON, with bilingual Swedish/English field labels. No key required.",
+      "sourceCategory": "Open Data",
+      "docsUrl": "https://opendata.umea.se/api/",
+      "baseUrl": "https://opendata.umea.se/api/explore/v2.1",
+      "sampleEndpoint": "/catalog/datasets?limit=1",
+      "latencyMs": 1896,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "total_count": 334,
+        "results": [
+          {
+            "visibility": "domain",
+            "fields": [
+              {
+                "name": "forbrukningstyp",
+                "label_en": "Consumption type:",
+                "type": "text",
+                "description_en": "Type of consumption. Possible values are 'EL' for electricity and 'FJV' for district heating"
+              }
+            ]
+          }
+        ]
+      },
+      "freeTier": "Free — open data portal, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Varies by dataset (municipal open data; see portal)",
+      "commercialUse": "unclear",
+      "notes": "OpenDataSoft (Explore v2.1) portal for the Swedish city of Umeå."
+    },
+    {
+      "name": "GitHub Contribution Chart Generator",
+      "slug": "github-contribution-chart-generator",
+      "emoji": "🟩",
+      "tagline": "Fetch anyone's GitHub contribution totals as JSON by year",
+      "description": "Behind the contribution-chart image generator sits a JSON endpoint that returns a GitHub user's yearly contribution totals and date ranges. Pass a username and get an array of years with totals — handy for building your own visualizations. It scrapes live, so responses can be slow and don't include CORS headers.",
+      "sourceCategory": "Open Source Projects",
+      "docsUrl": "https://github-contributions.vercel.app",
+      "baseUrl": "https://github-contributions.vercel.app/api/v1",
+      "sampleEndpoint": "/sallar",
+      "latencyMs": 5809,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "years": [
+          { "year": "2026", "total": 1022, "range": { "start": "2026-01-04", "end": "2026-12-26" } },
+          { "year": "2025", "total": 2503, "range": { "start": "2025-01-05", "end": "2025-12-27" } }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (derived from public GitHub profile data)",
+      "commercialUse": "unclear",
+      "notes": "No ACAO header on the JSON endpoint (corsObserved false); slow (~5s) as it scrapes live."
+    },
+    {
+      "name": "kanye.rest",
+      "slug": "kanye-rest",
+      "emoji": "🎤",
+      "tagline": "A REST API that returns random Kanye West quotes",
+      "description": "kanye.rest does exactly one thing: return a random Kanye West quote as JSON. Hit the root endpoint and you get a single 'quote' field back. Keyless, CORS-friendly, and gloriously single-purpose.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://kanye.rest",
+      "baseUrl": "https://api.kanye.rest",
+      "sampleEndpoint": "/",
+      "latencyMs": 456,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "quote": "I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying."
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Personality.fyi",
+      "slug": "personality-fyi",
+      "emoji": "🧠",
+      "tagline": "Free MBTI type data and OEJTS test items with scoring",
+      "description": "Personality.fyi is a no-auth JSON API for the 16 MBTI personality types plus the open-source OEJTS test. Look up a type by its four-letter code to get its name, cognitive style, strengths, and blind spots, or pull test items and scoring. Everything is keyless and CORS-enabled.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://personality.fyi/api",
+      "baseUrl": "https://personality.fyi/api/v1",
+      "sampleEndpoint": "/types/INTJ",
+      "latencyMs": 622,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "INTJ",
+        "name": "Architect",
+        "title": "The Architect",
+        "cognitive": "Strategic, systems-level thinking. Builds mental models and long-range plans.",
+        "strengths": ["Independent", "decisive"],
+        "url": "https://personality.fyi/type/intj"
+      },
+      "freeTier": "Free — no auth",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Zen Quotes",
+      "slug": "zen-quotes",
+      "emoji": "☯️",
+      "tagline": "Inspirational quotes as JSON, including a daily pick",
+      "description": "Zen Quotes serves a large collection of inspirational quotes through a simple keyless API. Grab a random quote, the quote of the day, or a batch, each with author and a ready-made HTML blockquote. The free tier is rate-limited and asks for an attribution link when used publicly.",
+      "sourceCategory": "Personality",
+      "docsUrl": "https://zenquotes.io/",
+      "baseUrl": "https://zenquotes.io/api",
+      "sampleEndpoint": "/today",
+      "latencyMs": 5827,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "q": "One of the advantages of being disorganized is that one is always having surprising discoveries.",
+          "a": "A.A. Milne",
+          "date": "2026-07-05"
+        }
+      ],
+      "freeTier": "Free — no key",
+      "rateLimit": "Rate-limited on the free tier (see zenquotes.io)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "ZenQuotes asks for an attribution link for public use; used /today to avoid tight per-IP throttling on /random (which timed out)."
+    },
+    {
+      "name": "Launch Library 2",
+      "slug": "launch-library-2",
+      "emoji": "🛰️",
+      "tagline": "Database of rocket launches, agencies, and space events",
+      "description": "Launch Library 2, by The Space Devs, is a detailed database of past and upcoming rocket launches, providers, pads, and related events. Query upcoming launches to get status, timing windows, launch provider, and rocket details as JSON. It's keyless, but anonymous requests are throttled to a low rate.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://thespacedevs.com/llapi",
+      "baseUrl": "https://ll.thespacedevs.com/2.2.0",
+      "sampleEndpoint": "/launch/upcoming/?limit=1",
+      "latencyMs": 1168,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 365,
+        "results": [
+          {
+            "id": "1ef27ca1-af91-48bb-b934-3da5abd9f711",
+            "name": "Falcon 9 Block 5 | Starlink Group 10-50",
+            "status": { "name": "Go for Launch", "abbrev": "Go" },
+            "net": "2026-07-05T10:50:00Z",
+            "launch_service_provider": { "name": "SpaceX", "type": "Commercial" }
+          }
+        ]
+      },
+      "freeTier": "Free — no key (The Space Devs LL2)",
+      "rateLimit": "Anonymous requests are throttled to a low rate (see docs)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "OpenAlex",
+      "slug": "openalex",
+      "emoji": "📚",
+      "tagline": "Open index of 300M+ scholarly works, authors, and venues",
+      "description": "OpenAlex is a free, CC0 catalog of the global research graph — works, authors, institutions, sources, and concepts. Query works and get rich JSON records with DOIs, titles, open-access locations, and identifiers. Basic requests work without a key; a free key raises the usage limits.",
+      "sourceCategory": "Science & Math",
+      "docsUrl": "https://docs.openalex.org/",
+      "baseUrl": "https://api.openalex.org",
+      "sampleEndpoint": "/works?per-page=1",
+      "latencyMs": 1221,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "meta": { "count": 318967691, "page": 1, "per_page": 1 },
+        "results": [
+          {
+            "id": "https://openalex.org/W3038568908",
+            "doi": "https://doi.org/10.1585/pfr.15.2402039",
+            "title": "Radiation Resistant Camera System for Monitoring Deuterium Plasma Discharges in the Large Helical Device",
+            "publication_year": 2020,
+            "language": "en"
+          }
+        ]
+      },
+      "freeTier": "Free tier (~$1/day of usage); free API key available for more",
+      "rateLimit": "Usage-metered free tier (~$1/day per docs)",
+      "dataLicense": "CC0",
+      "commercialUse": "yes",
+      "notes": "Basic queries work without a key; dataset is CC0. Response now includes a per-request cost_usd field."
+    }
+  ],
+  "skipped": [
+    { "name": "OpenSanctions", "reason": "API now requires a key — /search/default returned HTTP 401 'No API key provided.'" },
+    { "name": "Evil Insult Generator", "reason": "Endpoint returns an HTML 'HTTPS Not Available' error page over both http and https (3 attempts), not JSON; site appears misconfigured." },
+    { "name": "GitHub ReadMe Stats", "reason": "Returns SVG stat cards, not JSON; the public demo also responded HTTP 503 DEPLOYMENT_PAUSED." },
+    { "name": "Metabase", "reason": "Self-hosted BI product, not a hosted public API; any API requires your own instance and authentication — no keyless JSON GET." },
+    { "name": "Phone Specification", "reason": "Demo API host (api-mobilespecs.azharimm.dev / .site / .my.id) does not resolve via DNS; no reachable keyless endpoint within 3 attempts." },
+    { "name": "Remote Calc", "reason": "Heroku deployment is gone — https://remote-calc.herokuapp.com/calculus returns 'No such app' (Heroku free dynos discontinued)." }
+  ]
+}

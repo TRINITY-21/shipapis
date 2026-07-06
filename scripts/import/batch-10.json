@@ -1,0 +1,327 @@
+{
+  "batch": 10,
+  "verified": [
+    {
+      "name": "AnimeChan",
+      "slug": "animechan",
+      "emoji": "🍥",
+      "tagline": "Random anime quotes with character and series attribution",
+      "description": "Pulls a random line from a large library of anime quotes, each tagged with the character who said it and the show it came from. Filter by anime or character, or just grab a random quote. No key needed on the current api.animechan.io host.",
+      "sourceCategory": "Anime",
+      "docsUrl": "https://github.com/RocktimSaikia/anime-chan",
+      "baseUrl": "https://api.animechan.io/v1",
+      "sampleEndpoint": "/quotes/random",
+      "latencyMs": 1002,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "success",
+        "data": {
+          "content": "There are stars and planets floating around me. I don't think I could handle astronomy right now.",
+          "anime": {
+            "id": 260,
+            "name": "Soul Eater",
+            "altName": "Soul Eater"
+          },
+          "character": {
+            "id": 361,
+            "name": "Crona"
+          }
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Live API is now at api.animechan.io/v1; the old animechan.vercel.app host is gone."
+    },
+    {
+      "name": "Metropolitan Museum of Art",
+      "slug": "metropolitan-museum-of-art",
+      "emoji": "🖼️",
+      "tagline": "Open Access catalog of The Met's collection",
+      "description": "Query object records from the Metropolitan Museum of Art, including titles, artists, dates, departments and public-domain image links. Look up any object by ID or pull the full object-ID index. Fully keyless with open CORS.",
+      "sourceCategory": "Art & Design",
+      "docsUrl": "https://metmuseum.github.io/",
+      "baseUrl": "https://collectionapi.metmuseum.org/public/collection/v1",
+      "sampleEndpoint": "/objects/436535",
+      "latencyMs": 963,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "objectID": 436535,
+        "isPublicDomain": true,
+        "department": "European Paintings",
+        "title": "Wheat Field with Cypresses",
+        "artistDisplayName": "Vincent van Gogh",
+        "objectDate": "1889",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-42549-001.jpg"
+      },
+      "freeTier": "Free, no API key required",
+      "rateLimit": "80 requests/second (requested in docs)",
+      "dataLicense": "CC0 1.0 (Open Access data)",
+      "commercialUse": "yes",
+      "notes": ""
+    },
+    {
+      "name": "Crossref Metadata Search",
+      "slug": "crossref-metadata-search",
+      "emoji": "📚",
+      "tagline": "Scholarly metadata for tens of millions of DOIs",
+      "description": "Look up bibliographic metadata for academic works by DOI or free-text query across journal articles, books, datasets and more. Returns publisher, authors, titles, reference counts and citation links. Free public pool with no key; add a mailto for the faster polite pool.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://github.com/CrossRef/rest-api-doc",
+      "baseUrl": "https://api.crossref.org",
+      "sampleEndpoint": "/works/10.1037/0003-066X.59.1.29",
+      "latencyMs": 1199,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "message-type": "work",
+        "message": {
+          "DOI": "10.1037/0003-066x.59.1.29",
+          "type": "journal-article",
+          "title": [
+            "How the Mind Hurts and Heals the Body."
+          ],
+          "publisher": "American Psychological Association (APA)",
+          "is-referenced-by-count": 110
+        }
+      },
+      "freeTier": "Free, no key (public pool)",
+      "rateLimit": "5 requests/second, 1 concurrent (public pool, per X-Rate-Limit headers)",
+      "dataLicense": "Open Crossref metadata (much is CC0)",
+      "commercialUse": "yes",
+      "notes": ""
+    },
+    {
+      "name": "Gutendex",
+      "slug": "gutendex",
+      "emoji": "📖",
+      "tagline": "JSON search over the Project Gutenberg library",
+      "description": "A read-only web API over Project Gutenberg's public-domain book catalog. Search by author, title, language or topic and get back IDs, authors, download counts and file links. No key required.",
+      "sourceCategory": "Books",
+      "docsUrl": "https://gutendex.com/",
+      "baseUrl": "https://gutendex.com",
+      "sampleEndpoint": "/books/?search=dickens",
+      "latencyMs": 591,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "count": 230,
+        "results": [
+          {
+            "id": 564,
+            "title": "The Mystery of Edwin Drood",
+            "authors": [
+              {
+                "name": "Dickens, Charles",
+                "birth_year": 1812,
+                "death_year": 1870
+              }
+            ],
+            "download_count": 39676
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Public domain (Project Gutenberg data)",
+      "commercialUse": "unclear",
+      "notes": "The /books path needs a trailing slash; bare /books returns a 301 that then hangs."
+    },
+    {
+      "name": "Nager.Date",
+      "slug": "nager-date",
+      "emoji": "📅",
+      "tagline": "Public holidays for 100+ countries by year",
+      "description": "Returns official public and bank holidays for a given country and year, including local names, dates and whether each holiday is nationwide or regional. Also serves long weekends and supported-country lists. Keyless v3 REST endpoints with open CORS.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://date.nager.at",
+      "baseUrl": "https://date.nager.at/api/v3",
+      "sampleEndpoint": "/PublicHolidays/2024/US",
+      "latencyMs": 360,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "date": "2024-01-01",
+          "localName": "New Year's Day",
+          "name": "New Year's Day",
+          "countryCode": "US",
+          "global": true,
+          "types": [
+            "Public",
+            "Bank"
+          ]
+        }
+      ],
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Open-source project with an optional paid tier for higher SLA; the base REST API is keyless."
+    },
+    {
+      "name": "UK Bank Holidays",
+      "slug": "uk-bank-holidays",
+      "emoji": "🇬🇧",
+      "tagline": "Official UK bank holidays as JSON",
+      "description": "The UK government's machine-readable feed of bank holidays for England & Wales, Scotland and Northern Ireland. Each event carries a title, date, notes and a 'bunting' flag. Served under the Open Government Licence with no key required.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://www.gov.uk/bank-holidays.json",
+      "baseUrl": "https://www.gov.uk",
+      "sampleEndpoint": "/bank-holidays.json",
+      "latencyMs": 512,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "england-and-wales": {
+          "division": "england-and-wales",
+          "events": [
+            {
+              "title": "New Year’s Day",
+              "date": "2019-01-01",
+              "notes": "",
+              "bunting": true
+            }
+          ]
+        }
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Licence v3.0",
+      "commercialUse": "yes",
+      "notes": "Feed spans a rolling window of years; the first event in the sample is from 2019."
+    },
+    {
+      "name": "Coinlore",
+      "slug": "coinlore",
+      "emoji": "🪙",
+      "tagline": "Keyless crypto prices, market cap and rankings",
+      "description": "Returns live ticker data for thousands of cryptocurrencies, including USD price, market cap, supply figures and percent changes over 1h/24h/7d. Query the full ranked list or specific coins by ID. No key and open CORS.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://www.coinlore.com/cryptocurrency-data-api",
+      "baseUrl": "https://api.coinlore.net/api",
+      "sampleEndpoint": "/tickers/?start=0&limit=2",
+      "latencyMs": 367,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "90",
+            "symbol": "BTC",
+            "name": "Bitcoin",
+            "rank": 1,
+            "price_usd": "62670.92",
+            "percent_change_24h": "0.29",
+            "market_cap_usd": "1251591657512.90"
+          }
+        ]
+      },
+      "freeTier": "Free, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": ""
+    },
+    {
+      "name": "CryptAPI",
+      "slug": "cryptapi",
+      "emoji": "💸",
+      "tagline": "Keyless crypto payment-gateway helper API",
+      "description": "A non-custodial crypto payment processor whose read endpoints are keyless. The /{coin}/info/ call returns a coin's minimum amounts, forwarding fee and live fiat conversion rates. Designed for generating payment addresses and callbacks in commercial checkout flows.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://docs.cryptapi.io/",
+      "baseUrl": "https://api.cryptapi.io",
+      "sampleEndpoint": "/btc/info/",
+      "latencyMs": 521,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "coin": "Bitcoin",
+        "ticker": "btc",
+        "minimum_transaction_coin": "0.00008000",
+        "fee_percent": "1.000",
+        "status": "success",
+        "prices": {
+          "AED": "229881.4614952677",
+          "AUD": "90169.0549909221"
+        }
+      },
+      "freeTier": "Free API; provider takes ~1% fee per forwarded payment",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "yes",
+      "notes": "The /{coin}/info/ endpoint is keyless and returns coin config plus live fiat prices."
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Waifu.pics",
+      "reason": "API host api.waifu.pics is NXDOMAIN and the waifu.pics domain now serves an unrelated gambling site; API dead."
+    },
+    {
+      "name": "DummyImage",
+      "reason": "Returns image/png, not JSON — image generator with no JSON endpoint."
+    },
+    {
+      "name": "Icons8",
+      "reason": "img.icons8.com returns image/png binaries, not JSON."
+    },
+    {
+      "name": "Chainlink",
+      "reason": "On-chain oracle / dev docs; no keyless REST JSON GET endpoint."
+    },
+    {
+      "name": "Chainpoint",
+      "reason": "tierion.com/chainpoint is a marketing HTML page; Chainpoint network deprecated, no live keyless JSON API found."
+    },
+    {
+      "name": "Helium",
+      "reason": "api.helium.io is NXDOMAIN — legacy blockchain API decommissioned after the Solana migration."
+    },
+    {
+      "name": "Domainsdb.info",
+      "reason": "Now returns HTTP 401 'API key required'; anonymous access disabled despite the listing."
+    },
+    {
+      "name": "Non-Working Days",
+      "reason": "GitHub repo of static ICS files (icsdb); no JSON API."
+    },
+    {
+      "name": "Russian Calendar",
+      "reason": "isdayoff.ru returns content-type text/plain body '1', not JSON."
+    },
+    {
+      "name": "File.io",
+      "reason": "File sharing via POST upload; GET download needs the file link/key, no keyless JSON GET."
+    },
+    {
+      "name": "FileUp",
+      "reason": "GitHub repo for a self-hosted upload service; POST upload API, no public keyless JSON GET."
+    },
+    {
+      "name": "The Null Pointer",
+      "reason": "0x0.st is POST-based (curl -F) file/URL hosting; no keyless JSON GET endpoint."
+    },
+    {
+      "name": "1inch",
+      "reason": "Requires an API key (portal.1inch.dev); no keyless endpoint despite the listing."
+    },
+    {
+      "name": "btcnode.uk",
+      "reason": "Homepage returns HTTP 502 and endpoints return HTTP 402 (x402 micropayment required); no free keyless JSON endpoint found within attempts."
+    },
+    {
+      "name": "CoinCap",
+      "reason": "api.coincap.io is NXDOMAIN — the v2 REST API was sunset; v3 requires a key."
+    },
+    {
+      "name": "CoinStats",
+      "reason": "Public path returns HTTP 404; the API now requires an API key (openapi.coinstats.app)."
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "batch": 3,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "paralelo.bo",
+      "docsUrl": "https://paralelo.bo/api",
+      "description": "Bolivia parallel-market USD/BOB exchange rate, aggregated from P2P sources every 60s",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Currency Exchange",
+      "docsCheck": 200
+    },
+    {
+      "name": "24 Pull Requests",
+      "docsUrl": "https://24pullrequests.com/api",
+      "description": "Project to promote open source collaboration during December",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ApicAgent",
+      "docsUrl": "https://www.apicagent.com",
+      "description": "Extract device details from user-agent string",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Beeceptor",
+      "docsUrl": "https://beeceptor.com/",
+      "description": "Build a mock Rest API endpoint in seconds",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cloudflare Trace",
+      "docsUrl": "https://github.com/fawazahmed0/cloudflare-trace-api",
+      "description": "Get IP Address, Timestamp, User Agent, Country Code, IATA, HTTP Version, TLS/SSL Version & More",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "CORS Proxy",
+      "docsUrl": "https://github.com/burhanuday/cors-proxy",
+      "description": "Get around the dreaded CORS error by using this proxy as a middle man",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "DownStatus",
+      "docsUrl": "https://isitdownstatus.com",
+      "description": "Real-time status for GitHub, AWS, Discord and 90+ services",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ExtendsClass JSON Storage",
+      "docsUrl": "https://extendsclass.com/json-storage.html",
+      "description": "A simple JSON store API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Genderize.io",
+      "docsUrl": "https://genderize.io",
+      "description": "Estimates a gender from a first name",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Httpbin",
+      "docsUrl": "https://httpbin.org/",
+      "description": "A Simple HTTP Request & Response Service",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icanhazepoch",
+      "docsUrl": "https://icanhazepoch.com",
+      "description": "Get Epoch time",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Icanhazip",
+      "docsUrl": "https://major.io/icanhazip-com-faq/",
+      "description": "IP Address API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Image-Charts",
+      "docsUrl": "https://documentation.image-charts.com/",
+      "description": "Generate charts, QR codes and graph images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "ip-fast.com",
+      "docsUrl": "https://ip-fast.com/docs/",
+      "description": "IP address, country and city",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "jsDelivr",
+      "docsUrl": "https://github.com/jsdelivr/data.jsdelivr.com",
+      "description": "Package info and download stats on jsDelivr CDN",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "JSONPlaceholder",
+      "docsUrl": "https://jsonplaceholder.typicode.com",
+      "description": "Fake REST API for testing and prototyping",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Kroki",
+      "docsUrl": "https://kroki.io",
+      "description": "Creates diagrams from textual descriptions",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Nationalize.io",
+      "docsUrl": "https://nationalize.io",
+      "description": "Estimate the nationality of a first name",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "NetworkCalc",
+      "docsUrl": "https://networkcalc.com/api/docs",
+      "description": "Network calculators, including subnets, DNS, binary, and security tools",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "QR code",
+      "docsUrl": "https://www.qrtag.net/api/",
+      "description": "Create an easy to read QR code and URL shortener",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "QuickChart",
+      "docsUrl": "https://quickchart.io/",
+      "description": "Generate chart and graph images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "RSS feed to JSON",
+      "docsUrl": "https://rss-to-json-serverless-api.vercel.app",
+      "description": "Returns RSS feed in JSON format using feed URL",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Sonar",
+      "docsUrl": "https://github.com/Cgboal/SonarSearch",
+      "description": "Project Sonar DNS Enumeration API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Statically",
+      "docsUrl": "https://statically.io/",
+      "description": "A free CDN for developers",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    }
+  ]
+}

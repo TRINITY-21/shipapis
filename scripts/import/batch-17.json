@@ -1,0 +1,413 @@
+{
+  "batch": 17,
+  "verified": [
+    {
+      "name": "Open Government, UK",
+      "slug": "open-government-uk",
+      "emoji": "🇬🇧",
+      "tagline": "Query the UK's open-data catalogue over CKAN, no key needed",
+      "description": "data.gov.uk runs on CKAN, so you can hit its /api/3/action/ endpoints to search or list tens of thousands of published UK public-sector datasets. Responses are JSON and CORS is wide open. Individual dataset licences vary, though most sit under the Open Government Licence.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.gov.uk/",
+      "baseUrl": "https://data.gov.uk/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1442,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": {
+          "count": 58484,
+          "results": [
+            {
+              "id": "7fcf3cda-ff9d-44ef-b461-c1ef3b1b8c40",
+              "name": "rights-of-way8",
+              "notes": "Public Rights Of Way",
+              "num_resources": 4,
+              "organization": { "name": "wigan-metropolitan-borough-council", "title": "Wigan Metropolitan Borough Council" }
+            }
+          ]
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Licence v3.0 (varies per dataset)",
+      "commercialUse": "yes",
+      "notes": "Standard CKAN API; per-dataset licences differ, but the OGL default permits commercial reuse."
+    },
+    {
+      "name": "Open Government, Victoria State Government",
+      "slug": "open-government-victoria",
+      "emoji": "🇦🇺",
+      "tagline": "Victoria's public datasets, searchable via a CKAN JSON API",
+      "description": "The Victorian Government's open-data portal exposes a standard CKAN action API at discover.data.vic.gov.au. Ask it to list or search the state's datasets and you get clean JSON with permissive CORS. Most data defaults to CC BY 4.0 under the DataVic access policy.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://www.data.vic.gov.au/",
+      "baseUrl": "https://discover.data.vic.gov.au/api/3",
+      "sampleEndpoint": "/action/package_list?limit=3",
+      "latencyMs": 1267,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": ["100000-metre-squares", "1-50-000-amg-mapsheet-boundaries", "1999-index-of-stream-condition-scores"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0 (default; varies per dataset)",
+      "commercialUse": "yes",
+      "notes": "Portal host is discover.data.vic.gov.au; DataVic access policy defaults datasets to CC BY 4.0."
+    },
+    {
+      "name": "Open Government, West Australia",
+      "slug": "open-government-west-australia",
+      "emoji": "🗺️",
+      "tagline": "Browse Western Australia's open data through CKAN endpoints",
+      "description": "Western Australia's data catalogue answers CKAN /api/3/action/ calls at catalogue.data.wa.gov.au, returning JSON lists and metadata for state datasets (heavy on geology and mapping). No key, no signup, CORS enabled. Licensing is per-dataset, so check before you reuse.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://data.wa.gov.au/",
+      "baseUrl": "https://catalogue.data.wa.gov.au/api/3",
+      "sampleEndpoint": "/action/package_list?limit=3",
+      "latencyMs": 1355,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": ["1-10-000-000-large-igneous-provinces-dmirs-081", "1-10-000-000-large-igneous-provinces-of-western-australia", "1-1-000-000-geological-map-sheet-index-dmirs-095"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Varies per dataset",
+      "commercialUse": "unclear",
+      "notes": "Portal host is catalogue.data.wa.gov.au; licences differ per dataset, so commercial reuse is not blanket-stated."
+    },
+    {
+      "name": "Represent by Open North",
+      "slug": "represent-by-open-north",
+      "emoji": "🍁",
+      "tagline": "Map any Canadian postcode to its elected reps and districts",
+      "description": "Open North's Represent API turns a Canadian postal code or point into the electoral districts and representatives that cover it, across federal, provincial, and municipal levels. Add ?format=json for a tidy JSON response; CORS is open. It's free and keyless.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://represent.opennorth.ca/",
+      "baseUrl": "https://represent.opennorth.ca",
+      "sampleEndpoint": "/postcodes/V6A2T2/?format=json",
+      "latencyMs": 1050,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "code": "V6A2T2",
+        "city": "VANCOUVER",
+        "province": "BC",
+        "centroid": { "type": "Point", "coordinates": [-123.0997274, 49.2823154] },
+        "boundaries_centroid": [
+          { "name": "Vancouver-Mount Pleasant", "boundary_set_name": "British Columbia electoral district", "external_id": "VMP" }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (open; varies by source dataset)",
+      "commercialUse": "unclear",
+      "notes": "Append ?format=json to get JSON instead of the HTML API browser."
+    },
+    {
+      "name": "USAspending.gov",
+      "slug": "usaspending-gov",
+      "emoji": "💸",
+      "tagline": "The firehose of US federal spending, straight as JSON",
+      "description": "USAspending is the official source for how the US government spends money, and its v2 REST API serves agencies, awards, and budget figures without a key. This toptier-agencies call is a simple GET, though many deeper queries expect POST bodies. The data is US federal public-domain.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://api.usaspending.gov/",
+      "baseUrl": "https://api.usaspending.gov/api/v2",
+      "sampleEndpoint": "/references/toptier_agencies/",
+      "latencyMs": 1563,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "results": [
+          {
+            "agency_id": 1525,
+            "toptier_code": "247",
+            "abbreviation": "AAHC",
+            "agency_name": "400 Years of African-American History Commission",
+            "active_fy": "2026",
+            "agency_slug": "400-years-of-african-american-history-commission"
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "U.S. Government Work (public domain)",
+      "commercialUse": "yes",
+      "notes": "Many endpoints require POST; this references GET is keyless and returns JSON."
+    },
+    {
+      "name": "Covid Tracking Project",
+      "slug": "covid-tracking-project",
+      "emoji": "🦠",
+      "tagline": "The Covid Tracking Project's frozen US pandemic archive",
+      "description": "This is the archived v2 API from The Covid Tracking Project, serving daily US testing, hospitalization, and outcome figures as JSON. Data collection stopped on 7 March 2021, so treat it as a historical dataset rather than a live feed. It's licensed CC BY 4.0 with open CORS.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://covidtracking.com/data/api/version-2",
+      "baseUrl": "https://api.covidtracking.com",
+      "sampleEndpoint": "/v2/us/daily.json",
+      "latencyMs": 2037,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "links": { "self": "https://api.covidtracking.com/us/daily" },
+        "meta": { "build_time": "2021-06-01T07:03:25.055Z", "license": "CC-BY-4.0", "version": "2.0-beta" }
+      },
+      "freeTier": "Free — no key required (archived dataset)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0",
+      "commercialUse": "yes",
+      "notes": "Historical archive: the project ended data collection on 2021-03-07 and no longer updates."
+    },
+    {
+      "name": "Covid-19 India",
+      "slug": "covid-19-india",
+      "emoji": "🇮🇳",
+      "tagline": "Static JSON snapshots of India's Covid-19 numbers by state",
+      "description": "data.covid19india.org publishes flat JSON files with state- and district-level case, recovery, and vaccination counts for India. There are no query parameters — you just fetch the file you want. The volunteer project wound down, so the data is frozen in late 2021.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://data.covid19india.org/",
+      "baseUrl": "https://data.covid19india.org",
+      "sampleEndpoint": "/v4/min/data.min.json",
+      "latencyMs": 1816,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "AN": {
+          "delta": { "tested": 1376, "vaccinated1": 3, "vaccinated2": 13 },
+          "delta7": { "confirmed": 3, "recovered": 5, "tested": 8936 },
+          "meta": { "date": "2021-10-31", "last_updated": "2021-11-01T11:03:10+05:30" }
+        }
+      },
+      "freeTier": "Free — static JSON files (no key)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Static data files with no query params; dataset is frozen — the project stopped updating around Nov 2021."
+    },
+    {
+      "name": "Healthcare.gov",
+      "slug": "healthcare-gov",
+      "emoji": "🏥",
+      "tagline": "Healthcare.gov's marketplace content, dumped as JSON",
+      "description": "Healthcare.gov exposes its editorial content — glossary terms, articles, and guidance about the US health-insurance marketplace — as static JSON via /api. It's built for reuse and translation, with each entry carrying both English and Spanish text. No key, US-government content.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://www.healthcare.gov/developers/",
+      "baseUrl": "https://www.healthcare.gov",
+      "sampleEndpoint": "/api/index.json",
+      "latencyMs": 1907,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "tags": ["glossary"],
+          "categories": ["glossary"],
+          "title": "Affordability Exemption",
+          "es-title": "Exención de accesibilidad",
+          "url": "/glossary/affordability-exemption/",
+          "bite": "An exemption that's needed when applying for Catastrophic coverage for people 30 years or older whose coverage is unaffordable."
+        }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "U.S. Government content (CMS)",
+      "commercialUse": "yes",
+      "notes": "Content/glossary API; entries include English and Spanish text."
+    },
+    {
+      "name": "MedlinePlus Genetics",
+      "slug": "medlineplus-genetics",
+      "emoji": "🧬",
+      "tagline": "Plain-language genetics reference from the NLM, in JSON",
+      "description": "The US National Library of Medicine serves its MedlinePlus Genetics articles — conditions, genes, chromosomes, and mtDNA — as downloadable JSON files, one per topic. Fetch a condition by name and you get its summary, synonyms, and linked resources. Heads up: the CORS header only allows *.nlm.nih.gov origins.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://medlineplus.gov/about/developers/geneticsdatafilesapi/",
+      "baseUrl": "https://medlineplus.gov/download/genetics",
+      "sampleEndpoint": "/condition/alkaptonuria.json",
+      "latencyMs": 770,
+      "corsObserved": null,
+      "httpStatus": 200,
+      "sampleJson": {
+        "name": "Alkaptonuria",
+        "ghr_page": "https://medlineplus.gov/genetics/condition/alkaptonuria",
+        "text-list": [
+          { "text": { "html": "<p>Alkaptonuria is an inherited condition that causes arthritis, kidney stones, spots of dark pigmentation, and dark urine...</p>" } }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "U.S. National Library of Medicine (see NLM terms)",
+      "commercialUse": "unclear",
+      "notes": "access-control-allow-origin was present but restricted to *.nlm.nih.gov — not open to arbitrary browser origins."
+    },
+    {
+      "name": "NPPES",
+      "slug": "nppes",
+      "emoji": "🩺",
+      "tagline": "Look up any US healthcare provider by their NPI number",
+      "description": "The CMS NPPES registry API returns public records for US healthcare providers — names, addresses, and taxonomies — keyed by National Provider Identifier. Pass version=2.1 plus at least one search field (like state and city) and you get JSON back. No key, public data.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://npiregistry.cms.hhs.gov/registry/help-api",
+      "baseUrl": "https://npiregistry.cms.hhs.gov",
+      "sampleEndpoint": "/api/?version=2.1&state=CA&city=San%20Diego&limit=1",
+      "latencyMs": 838,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "result_count": 1,
+        "results": [
+          {
+            "number": "1033959770",
+            "basic": { "organization_name": "1 TRUE HEALTH - CALIFORNIA PC", "status": "A", "enumeration_date": "2024-05-30" },
+            "addresses": [{ "city": "SAN DIEGO", "state": "CA", "postal_code": "921231690", "address_purpose": "LOCATION" }]
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "U.S. Government (public NPI data)",
+      "commercialUse": "yes",
+      "notes": "Requires version=2.1 and at least one search criterion; empty queries are rejected."
+    },
+    {
+      "name": "Open Data NHS Scotland",
+      "slug": "open-data-nhs-scotland",
+      "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "tagline": "Public Health Scotland's open health data over CKAN",
+      "description": "Scotland's health open-data portal runs CKAN, so its /api/3/action/ endpoints list and search datasets on hospital activity, prescribing, demographics, and more. Responses are JSON, though this host returned no CORS header on our probe. Most datasets carry the Open Government Licence.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://www.opendata.nhs.scot",
+      "baseUrl": "https://www.opendata.nhs.scot/api/3",
+      "sampleEndpoint": "/action/package_list?limit=3",
+      "latencyMs": 775,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "result": ["18-weeks-referral-to-treatment", "27-30-month-review-statistics", "alcohol-related-hospital-statistics-scotland"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Licence (per dataset)",
+      "commercialUse": "yes",
+      "notes": "Standard CKAN API from Public Health Scotland; OGL default permits commercial reuse."
+    },
+    {
+      "name": "Genrenator",
+      "slug": "genrenator",
+      "emoji": "🎲",
+      "tagline": "Invents a nonsense music genre on every request",
+      "description": "Genrenator is a delightfully useless toy: hit its endpoint and it hands back one freshly generated, faintly plausible music-genre name as a JSON string (think 'bubblegum hands up new age'). No key needed, and CORS echoes your origin. Perfect filler for demos and jokes.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://binaryjazz.us/genrenator-api/",
+      "baseUrl": "https://binaryjazz.us",
+      "sampleEndpoint": "/wp-json/genrenator/v1/genre/",
+      "latencyMs": 884,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": "bubblegum hands up new age",
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Response body is a single generated JSON string; CORS echoed the request Origin."
+    },
+    {
+      "name": "Lyrics.ovh",
+      "slug": "lyrics-ovh",
+      "emoji": "🎤",
+      "tagline": "Fetch a song's lyrics from just artist and title",
+      "description": "Lyrics.ovh takes an artist and song title in the URL path and returns the lyrics as a single JSON field. It's keyless with open CORS, which makes it a common first stop for lyric-fetching side projects. The lyrics themselves are third-party copyrighted text, so mind reuse.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://lyricsovh.docs.apiary.io",
+      "baseUrl": "https://api.lyrics.ovh",
+      "sampleEndpoint": "/v1/Coldplay/Adventure%20of%20a%20Lifetime",
+      "latencyMs": 2854,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "lyrics": "Turn your magic on, umi, she'd say\nEverything you want's a dream away\nAnd we are legends every day\nThat's what she told me\n..."
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (lyrics are third-party copyrighted)",
+      "commercialUse": "unclear",
+      "notes": "Path is /v1/{artist}/{title}; returned lyrics text is copyrighted by third parties."
+    },
+    {
+      "name": "MusicBrainz",
+      "slug": "musicbrainz",
+      "emoji": "🎵",
+      "tagline": "The open music encyclopedia's read API, JSON on request",
+      "description": "MusicBrainz is a community-maintained database of artists, releases, and recordings, and its web service lets you look entities up by MBID (append ?fmt=json for JSON). Play nice: it asks for roughly one request per second and a descriptive User-Agent. Core data is CC0.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2",
+      "baseUrl": "https://musicbrainz.org/ws/2",
+      "sampleEndpoint": "/artist/5b11f4ce-a62d-471e-81fc-a69a8278c7da?fmt=json",
+      "latencyMs": 453,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "type": "Group",
+        "id": "5b11f4ce-a62d-471e-81fc-a69a8278c7da",
+        "name": "Nirvana",
+        "sort-name": "Nirvana",
+        "disambiguation": "1980s–1990s US grunge band",
+        "country": "US",
+        "life-span": { "begin": "1987", "end": "1994-04-05", "ended": true }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "~1 request/second per IP; descriptive User-Agent required",
+      "dataLicense": "Core data CC0; some supplementary data CC BY-NC-SA 3.0",
+      "commercialUse": "yes",
+      "notes": "Append &fmt=json for JSON; the 1 req/sec limit and User-Agent requirement are enforced."
+    },
+    {
+      "name": "Openwhyd",
+      "slug": "openwhyd",
+      "emoji": "🎧",
+      "tagline": "Curated streaming-track playlists as JSON feeds",
+      "description": "Openwhyd is an open-source music-curation platform; append ?format=json to its pages and you get JSON lists of user-posted tracks that link out to YouTube, SoundCloud, and friends. This /hot endpoint returns what's currently trending. Keyless, though no CORS header came back on our probe.",
+      "sourceCategory": "Music",
+      "docsUrl": "https://openwhyd.github.io/openwhyd/API",
+      "baseUrl": "https://openwhyd.org",
+      "sampleEndpoint": "/hot?format=json",
+      "latencyMs": 701,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "hasMore": { "skip": 20 },
+        "tracks": [
+          {
+            "_id": "6a46799f972d6f690bdc8dc6",
+            "eId": "/yt/8jtA-uYv5Aw",
+            "name": "Manon Lisa - Le Petit Pêcheur",
+            "uNm": "Médiathèques de la Communauté Urbaine d'Alençon",
+            "score": 7,
+            "trackUrl": "//youtube.com/watch?v=8jtA-uYv5Aw"
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Append ?format=json; tracks are user-curated links out to YouTube/SoundCloud etc."
+    }
+  ],
+  "skipped": [
+    { "name": "Open Government, USA", "reason": "catalog.data.gov CKAN action API returns a generic 404 (Not Found) for package_list and package_search across 3 attempts; no working keyless JSON GET could be verified." },
+    { "name": "Coronavirus", "reason": "Pipedream readme is a JS SPA that exposes no callable endpoint; a 2020-era personal workflow with no verifiable live keyless JSON GET." },
+    { "name": "Coronavirus in the UK", "reason": "Host api.coronavirus.data.gov.uk no longer resolves (DNS gone); the UK coronavirus dashboard API was decommissioned." },
+    { "name": "COVID-19 Tracker Canada", "reason": "api.covid19tracker.ca /summary and /provinces return HTTP 200 with an empty text/html body (no JSON), even with a browser User-Agent; API appears defunct." },
+    { "name": "Dataflow Kit COVID-19", "reason": "covid-19.dataflowkit.com/v1 enters an infinite redirect loop (301) and never returns JSON." },
+    { "name": "MyVaccination", "reason": "Postman documenter page is a JS SPA with no extractable base URL; no live keyless JSON endpoint could be determined (likely a defunct personal Heroku-era backend)." },
+    { "name": "Deepcode", "reason": "deepcode.ai now serves Snyk marketing HTML after acquisition; no keyless public JSON API is offered." },
+    { "name": "Gaana", "reason": "GitHub project is self-host-only (run app.py / deploy your own); no official public keyless endpoint exists." },
+    { "name": "JioSaavn", "reason": "Project is self-host-only; the only reachable instance is an unofficial third-party Vercel scraper of a commercial service, not a reliable or official endpoint to list." }
+  ]
+}

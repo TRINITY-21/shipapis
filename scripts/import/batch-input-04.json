@@ -1,0 +1,246 @@
+{
+  "batch": 4,
+  "commit": "662f982776e7d0ec046a4fa43c0efea886fd01b8",
+  "candidates": [
+    {
+      "name": "Thunder Client",
+      "docsUrl": "https://www.thunderclient.com/",
+      "description": "API testing tool",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Development",
+      "docsCheck": 200
+    },
+    {
+      "name": "Wiktionary",
+      "docsUrl": "https://en.wiktionary.org/w/api.php",
+      "description": "Collaborative dictionary data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Dictionaries",
+      "docsCheck": 200
+    },
+    {
+      "name": "Disify",
+      "docsUrl": "https://www.disify.com/",
+      "description": "Validate and detect disposable and temporary email addresses",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "Kickbox",
+      "docsUrl": "https://open.kickbox.com/",
+      "description": "Email verification API",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "mail.gw",
+      "docsUrl": "https://docs.mail.gw",
+      "description": "10 Minute Mail",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "mail.tm",
+      "docsUrl": "https://docs.mail.tm",
+      "description": "Temporary Email Service",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Email",
+      "docsCheck": 200
+    },
+    {
+      "name": "Corporate Buzz Words",
+      "docsUrl": "https://github.com/sameerkumar18/corporate-bs-generator-api",
+      "description": "REST API for Corporate Buzz Words",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Fun Fact",
+      "docsUrl": "https://api.aakhilv.me",
+      "description": "A simple HTTPS api that can randomly select and return a fact from the FFA database",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "JokeAPI",
+      "docsUrl": "https://v2.jokeapi.dev/",
+      "description": "Programmable jokes in multiple languages with filtering options",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "justmeme.wtf",
+      "docsUrl": "https://justmeme.wtf/api-docs",
+      "description": "Free meme API with 2400+ templates, search, trending, and AI generation",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "PotterDB",
+      "docsUrl": "https://docs.potterdb.com/",
+      "description": "Harry Potter universe database with characters, spells, potions and more",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Entertainment",
+      "docsCheck": 200
+    },
+    {
+      "name": "Econdb",
+      "docsUrl": "https://www.econdb.com/api/",
+      "description": "Global macroeconomic data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Helium",
+      "docsUrl": "https://heliumtrades.com/mcp-page/",
+      "description": "News with media bias scoring, balanced news synthesis, live market data, AI options pricing",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "IBANforge",
+      "docsUrl": "https://api.ibanforge.com",
+      "description": "IBAN validation and BIC/SWIFT lookup for 75+ countries with 121K+ bank entries",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "Portfolio Optimizer",
+      "docsUrl": "https://portfoliooptimizer.io/",
+      "description": "Portfolio analysis and optimization",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "SEC EDGAR Data",
+      "docsUrl": "https://www.sec.gov/edgar/sec-api-documentation",
+      "description": "API to access annual reports of public US companies",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Finance",
+      "docsCheck": 200
+    },
+    {
+      "name": "BaconMockup",
+      "docsUrl": "https://baconmockup.com/",
+      "description": "Resizable bacon placeholder images",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Foodish",
+      "docsUrl": "https://github.com/surhud004/Foodish#readme",
+      "description": "Random pictures of food dishes",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Open Brewery DB",
+      "docsUrl": "https://www.openbrewerydb.org",
+      "description": "Breweries, Cideries and Craft Beer Bottle Shops",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Food & Drink",
+      "docsCheck": 200
+    },
+    {
+      "name": "Astroworld",
+      "docsUrl": "https://api.astroworldmc.com",
+      "description": "Free Minecraft data: mobs, biomes, items, enchantments, structures, commands, versions, achievements, trades",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Autochess VNG",
+      "docsUrl": "https://github.com/didadadida93/autochess-vng-api",
+      "description": "Rest Api for Autochess VNG",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Barter.VG",
+      "docsUrl": "https://github.com/bartervg/barter.vg/wiki",
+      "description": "Provides information about Game, DLC, Bundles, Giveaways, Trading",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "CheapShark",
+      "docsUrl": "https://www.cheapshark.com/api",
+      "description": "Steam/PC Game Prices and Deals",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    },
+    {
+      "name": "Cross Universe",
+      "docsUrl": "https://crossuniverse.psychpsyo.com/apiDocs.html",
+      "description": "Cross Universe Card Data",
+      "auth": "none",
+      "https": true,
+      "cors": "yes",
+      "sourceCategory": "Games & Comics",
+      "docsCheck": 200
+    }
+  ]
+}

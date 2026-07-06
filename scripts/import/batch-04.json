@@ -1,0 +1,472 @@
+{
+  "batch": 4,
+  "verified": [
+    {
+      "name": "Wiktionary",
+      "slug": "wiktionary",
+      "emoji": "📖",
+      "tagline": "Query the crowd-built dictionary through MediaWiki's action API",
+      "description": "The English Wiktionary is served by the same MediaWiki action API that powers Wikipedia, so you can pull definitions, etymologies and translations as structured JSON. Ask for the extract, wikitext, or any prop you like via query parameters. No key, no signup — just the standard MediaWiki endpoint.",
+      "sourceCategory": "Dictionaries",
+      "docsUrl": "https://en.wiktionary.org/w/api.php",
+      "baseUrl": "https://en.wiktionary.org/w",
+      "sampleEndpoint": "/api.php?action=query&titles=hello&prop=extracts&format=json",
+      "latencyMs": 776,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "4803": {
+              "pageid": 4803,
+              "ns": 0,
+              "title": "hello",
+              "extract": "<h2>English</h2> ... Alternative forms: hullo (UK) ... First attested in 1826. (HTML trimmed)"
+            }
+          }
+        }
+      },
+      "freeTier": "Free — public MediaWiki action API",
+      "rateLimit": "No hard published cap; Wikimedia User-Agent policy and request-etiquette apply",
+      "dataLicense": "Content under CC BY-SA 4.0 / GFDL",
+      "commercialUse": "yes",
+      "notes": "Same api.php surface as Wikipedia; extracts are HTML fragments."
+    },
+    {
+      "name": "Disify",
+      "slug": "disify",
+      "emoji": "🗑️",
+      "tagline": "Flag disposable and throwaway email addresses in one GET",
+      "description": "Disify checks an email address or domain and tells you whether it is disposable, whether the domain has valid DNS/MX records, and a confidence score with the signals behind it. Handy for filtering burner addresses out of signup flows. Just append the address to the path and read the JSON.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://www.disify.com/",
+      "baseUrl": "https://www.disify.com/api",
+      "sampleEndpoint": "/email/test@mailinator.com",
+      "latencyMs": 963,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "format": true,
+        "domain": "mailinator.com",
+        "disposable": true,
+        "dns": true,
+        "whitelist": false,
+        "confidence": 100,
+        "role": false,
+        "free": false
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Kickbox",
+      "slug": "kickbox",
+      "emoji": "✉️",
+      "tagline": "Kickbox's open, keyless disposable-domain lookup",
+      "description": "Kickbox exposes a free open endpoint that answers a single yes/no question: is this address on a known disposable/temporary email domain? Pass any email and get back a tiny JSON boolean. It is a subset of Kickbox's paid verification suite, but this check needs no account.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://open.kickbox.com/",
+      "baseUrl": "https://open.kickbox.com/v1",
+      "sampleEndpoint": "/disposable/test@mailinator.com",
+      "latencyMs": 902,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "disposable": true
+      },
+      "freeTier": "Free — open disposable-address check",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Only the disposable-domain check is keyless; full email verification is a separate paid product."
+    },
+    {
+      "name": "mail.tm",
+      "slug": "mail-tm",
+      "emoji": "📨",
+      "tagline": "Spin up throwaway inboxes over a JSON:LD REST API",
+      "description": "mail.tm is a temporary-email service with a clean REST API for creating disposable mailboxes and reading messages. The /domains endpoint lists which mail domains are currently available to register against, and it needs no authentication. Responses come back as Hydra/JSON-LD collections.",
+      "sourceCategory": "Email",
+      "docsUrl": "https://docs.mail.tm",
+      "baseUrl": "https://api.mail.tm",
+      "sampleEndpoint": "/domains",
+      "latencyMs": 963,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "@context": "/contexts/Domain",
+        "@id": "/domains",
+        "@type": "hydra:Collection",
+        "hydra:totalItems": 1,
+        "hydra:member": [
+          {
+            "@type": "Domain",
+            "domain": "web-library.net",
+            "isActive": true,
+            "isPrivate": false
+          }
+        ]
+      },
+      "freeTier": "Free — temporary mailboxes",
+      "rateLimit": "Rate limited (429 on exceed); exact policy per docs.mail.tm",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Creating/reading a mailbox needs an account+token; /domains is the keyless read."
+    },
+    {
+      "name": "JokeAPI",
+      "slug": "jokeapi",
+      "emoji": "😂",
+      "tagline": "Filterable jokes with a safe-mode switch and NSFW flags",
+      "description": "JokeAPI serves single-line or two-part jokes across categories, with query flags to blacklist nsfw/racist/sexist/etc. content or force a clean safe-mode. Every response carries the flags so you know exactly what you got. No key required.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://v2.jokeapi.dev/",
+      "baseUrl": "https://v2.jokeapi.dev",
+      "sampleEndpoint": "/joke/Any?type=single&safe-mode",
+      "latencyMs": 518,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "error": false,
+        "category": "Programming",
+        "type": "single",
+        "joke": "\"We messed up the keming again guys.\"",
+        "flags": {
+          "nsfw": false,
+          "racist": false,
+          "sexist": false,
+          "explicit": false
+        },
+        "safe": true,
+        "lang": "en"
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "120 requests/minute per IP (per jokeapi.dev docs)",
+      "dataLicense": "Unverified (open-source project)",
+      "commercialUse": "unclear",
+      "notes": "Content can be offensive/NSFW without safe-mode or blacklist flags; sample used safe-mode."
+    },
+    {
+      "name": "Corporate Buzz Words",
+      "slug": "corporate-buzz-words",
+      "emoji": "💼",
+      "tagline": "Generate one fresh corporate buzz-phrase per request",
+      "description": "A tiny open-source generator that returns a single randomly assembled slice of corporate jargon, like \"Credibly Engage Transparent Technology\". Great for placeholder copy, mission-statement gags, or seeding demos. One GET, one phrase.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://github.com/sameerkumar18/corporate-bs-generator-api",
+      "baseUrl": "https://corporatebs-generator.sameerkumar.website",
+      "sampleEndpoint": "/",
+      "latencyMs": 782,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "phrase": "Credibly Engage Transparent Technology"
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (open-source)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PotterDB",
+      "slug": "potterdb",
+      "emoji": "⚡",
+      "tagline": "Harry Potter characters, spells and potions as JSON:API",
+      "description": "PotterDB is an open database of the Harry Potter universe — characters, spells, potions, books and movies — served over a paginated JSON:API. Each character record carries house, species, blood status, wands and more. No key needed; page through with page[size] and page[number].",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://docs.potterdb.com/",
+      "baseUrl": "https://api.potterdb.com/v1",
+      "sampleEndpoint": "/characters?page[size]=1",
+      "latencyMs": 539,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "id": "6ce92f2b-2bca-49e6-a696-ddde6f555066",
+            "type": "character",
+            "attributes": {
+              "name": "1980s Hogwarts Gobstones Tournament champion",
+              "house": "Hufflepuff",
+              "species": "Human",
+              "gender": "Male",
+              "blood_status": "Pure-blood or half-blood"
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (data derived from Harry Potter Fandom, CC BY-SA)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Open Brewery DB",
+      "slug": "open-brewery-db",
+      "emoji": "🍺",
+      "tagline": "Search breweries, brewpubs and bottle shops worldwide",
+      "description": "Open Brewery DB is a free directory of breweries, cideries and craft-beer bottle shops with names, types, addresses and geo-coordinates. Filter by city, state, type or name, or page through the whole set. No authentication required.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://www.openbrewerydb.org",
+      "baseUrl": "https://api.openbrewerydb.org/v1",
+      "sampleEndpoint": "/breweries?per_page=1",
+      "latencyMs": 1010,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "ae7b3174-8be8-4d53-a3a5-9b8240970eea",
+          "name": "'s",
+          "brewery_type": "brewpub",
+          "city": "Kronach",
+          "state_province": "Bayern",
+          "country": "Germany",
+          "website_url": "http://www.antla.de"
+        }
+      ],
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (open dataset)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "CheapShark",
+      "slug": "cheapshark",
+      "emoji": "🦈",
+      "tagline": "Live PC-game deals and prices across digital stores",
+      "description": "CheapShark aggregates current sale prices for PC/Steam games across dozens of storefronts and exposes them as JSON. The /deals feed returns titles with sale vs. normal price, savings percentage, store and Steam IDs, and Metacritic/Steam ratings. Keyless and CORS-friendly.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://www.cheapshark.com/api",
+      "baseUrl": "https://www.cheapshark.com/api/1.0",
+      "sampleEndpoint": "/deals?pageSize=1",
+      "latencyMs": 2447,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "title": "NBA 2K26",
+          "dealID": "GKIJ7VPpvf+rslYeeAq3F7p3nSpEFg2gYzczWDcfvwE=",
+          "storeID": "23",
+          "salePrice": "8.35",
+          "normalPrice": "69.99",
+          "savings": "88.069724",
+          "steamAppID": "3472040"
+        }
+      ],
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Foodish",
+      "slug": "foodish",
+      "emoji": "🍕",
+      "tagline": "One random food photo URL per call",
+      "description": "Foodish returns the URL of a random food photograph — pizza, dosa, biryani and more — as a one-key JSON object. It is an open-source project meant for placeholders, demos and food-themed toys. Hit the endpoint, get an image link.",
+      "sourceCategory": "Food & Drink",
+      "docsUrl": "https://github.com/surhud004/Foodish#readme",
+      "baseUrl": "https://foodish-api.com",
+      "sampleEndpoint": "/api/",
+      "latencyMs": 1097,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "image": "https://foodish-api.com/images/dosa/dosa16.jpg"
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (open-source)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "SEC EDGAR Data",
+      "slug": "sec-edgar-data",
+      "emoji": "📊",
+      "tagline": "Public-company filings and facts straight from the SEC",
+      "description": "The SEC's EDGAR data API serves filing histories and company facts for every US public company as JSON, keyed by CIK. The submissions endpoint returns a company's identity, tickers, exchanges and recent filings. It is US-government public data; the SEC requires a descriptive User-Agent and rate-limits fair use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.sec.gov/edgar/sec-api-documentation",
+      "baseUrl": "https://data.sec.gov",
+      "sampleEndpoint": "/submissions/CIK0000320193.json",
+      "latencyMs": 2519,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cik": "0000320193",
+        "name": "Apple Inc.",
+        "tickers": ["AAPL"],
+        "exchanges": ["Nasdaq"],
+        "sicDescription": "Electronic Computers",
+        "stateOfIncorporation": "CA",
+        "fiscalYearEnd": "0926"
+      },
+      "freeTier": "Free — public government data",
+      "rateLimit": "Max 10 requests/second; descriptive User-Agent required (SEC fair-access policy)",
+      "dataLicense": "Public domain (U.S. government work)",
+      "commercialUse": "yes",
+      "notes": "CIK must be zero-padded to 10 digits in the path."
+    },
+    {
+      "name": "justmeme.wtf",
+      "slug": "justmeme-wtf",
+      "emoji": "🖼️",
+      "tagline": "Meme templates: browse, search, trend and randomize",
+      "description": "justmeme.wtf offers a keyless JSON API over a large library of meme templates, with endpoints for listing, searching, trending, categories and a random pick. Each template comes back with a name, slug and image URL. CORS is open and no signup is needed.",
+      "sourceCategory": "Entertainment",
+      "docsUrl": "https://justmeme.wtf/api-docs",
+      "baseUrl": "https://justmeme.wtf/api/v1",
+      "sampleEndpoint": "/random",
+      "latencyMs": 1156,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "template": {
+          "name": "i receive you receive",
+          "slug": "311582564-i-receive-you-receive",
+          "url": "https://i.imgflip.com/4/55ian8.jpg"
+        }
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "60 requests/minute per IP (per docs)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "IBANforge",
+      "slug": "ibanforge",
+      "emoji": "🏦",
+      "tagline": "IBAN validation and BIC lookup with a free keyless demo",
+      "description": "IBANforge validates IBANs and looks up BIC/SWIFT codes across dozens of countries, backed by 121K+ BIC entries. The keyless /v1/demo endpoint returns worked examples showing the full validation shape (country, check digits, BBAN, SEPA reachability, BIC). Live queries need a free API key or an x402/USDC micropayment.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://api.ibanforge.com",
+      "baseUrl": "https://api.ibanforge.com",
+      "sampleEndpoint": "/v1/demo",
+      "latencyMs": 1294,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "message": "Demo — these results are free. Use POST /v1/iban/validate ... for your own queries.",
+        "iban_examples": [
+          {
+            "label": "UK — NatWest",
+            "iban": "GB29NWBK60161331926819",
+            "valid": true,
+            "country": { "code": "GB", "name": "United Kingdom" },
+            "sepa": { "member": true },
+            "bic": { "code": "NWBKGB2L", "bank_name": "NatWest", "city": "London" }
+          }
+        ]
+      },
+      "freeTier": "200 requests/month with a free API key; /v1/demo and /health are keyless",
+      "rateLimit": "Unpublished (200/month free quota)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Only /v1/demo and /health are keyless; validate/BIC endpoints return 402 without an API key or x402 USDC payment. Response ACAO is pinned to the vendor's own origin (not shipapis)."
+    },
+    {
+      "name": "Astroworld",
+      "slug": "astroworld",
+      "emoji": "⛏️",
+      "tagline": "Minecraft game data: mobs, items, biomes, versions and more",
+      "description": "Astroworld is a keyless REST API of Minecraft reference data — mobs, items, biomes, enchantments, structures, commands, versions and achievements. Mob records include HP, per-difficulty damage, drops, spawn conditions and behaviour notes. Filter with search/type/category params and add ?pretty=true for formatted output.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.astroworldmc.com",
+      "baseUrl": "https://api.astroworldmc.com/api/v1",
+      "sampleEndpoint": "/mobs?search=creeper",
+      "latencyMs": 534,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "success": true,
+        "count": 1,
+        "data": [
+          {
+            "name": "Creeper",
+            "id": "creeper",
+            "type": "hostile",
+            "hp": 20,
+            "damage": { "easy": 22, "normal": 43, "hard": 64 },
+            "category": "hostile"
+          }
+        ]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (Minecraft game data; Mojang content)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Barter.VG",
+      "slug": "barter-vg",
+      "emoji": "🎮",
+      "tagline": "Game, DLC, bundle and giveaway data for trading",
+      "description": "Barter.vg is a game-trading tracker whose pages expose JSON by appending /json to routes — user libraries and wishlists, item lookups, bundles and giveaways. The Steam-app lookup returns a game's trade stats: how many users have it tradable, wishlisted or in-library, plus pricing and release info. No key required.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://github.com/bartervg/barter.vg/wiki",
+      "baseUrl": "https://barter.vg",
+      "sampleEndpoint": "/steam/app/220/json",
+      "latencyMs": 398,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "id": 212,
+        "source_name": "Steam",
+        "sku": 220,
+        "title": "Half-Life 2",
+        "item_type": "Game",
+        "is_tradable": 1,
+        "tradable": 6,
+        "wishlist": 2,
+        "year": "2004"
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "The generic /browse/json feed returned HTTP 500; the /steam/app/{id}/json lookup is reliable."
+    },
+    {
+      "name": "Cross Universe",
+      "slug": "cross-universe",
+      "emoji": "🃏",
+      "tagline": "Card data for the fan-made Cross Universe TCG",
+      "description": "Cross Universe is a free fan-made trading card game, and this API returns full card data as JSON by card ID and language. Each record includes name, level, card type, attack/defense, types and structured effect text. Keyless with open CORS; the base path also serves card images.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://crossuniverse.net/apiDocs",
+      "baseUrl": "https://crossuniverse.net",
+      "sampleEndpoint": "/cardInfo/?lang=en&cardID=U00107",
+      "latencyMs": 549,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cardID": "U00107",
+        "name": "Pandemic Rat",
+        "level": 1,
+        "cardType": "unit",
+        "attack": 100,
+        "defense": 100,
+        "types": ["Dark", "Beast", "Curse"]
+      },
+      "freeTier": "Free — no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (fan project)",
+      "commercialUse": "unclear",
+      "notes": "Docs URL from the listing (crossuniverse.psychpsyo.com) now redirects to crossuniverse.net."
+    }
+  ],
+  "skipped": [
+    { "name": "Thunder Client", "reason": "Not a hosted HTTP API — it is a VS Code REST-client / API-testing extension, so there is no endpoint to probe." },
+    { "name": "mail.gw", "reason": "Endpoint https://api.mail.gw/domains returned HTTP 502 (Bad Gateway) on all 3 attempts; service appears down." },
+    { "name": "Fun Fact", "reason": "Responds with an HTML JavaScript redirect (Joken JWT bot-challenge) instead of JSON; no keyless JSON GET is reachable via curl." },
+    { "name": "Econdb", "reason": "All data endpoints return HTTP 401 'Authentication credentials were not provided' — requires an API token." },
+    { "name": "Helium", "reason": "MCP server only (heliumtrades.com); no keyless REST JSON GET endpoint, and the free tier is gated to 50 queries via the MCP protocol." },
+    { "name": "Portfolio Optimizer", "reason": "Optimization endpoints require POST with a JSON body; no keyless GET returns data (API root responds 403 Forbidden)." },
+    { "name": "BaconMockup", "reason": "Serves placeholder JPEG images (content-type image/jpeg), not JSON." },
+    { "name": "Autochess VNG", "reason": "Self-host-only project (npm run dev); no live hosted API instance to probe." }
+  ]
+}

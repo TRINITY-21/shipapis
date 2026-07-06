@@ -1,0 +1,26 @@
+# deps & build
+node_modules/
+dist/
+.wrangler/
+
+# secrets & local env (keep .env.example tracked)
+.dev.vars
+.env
+.env.local
+
+# os
+.DS_Store
+
+# import-pipeline scratch — logs + harvest/gap working files.
+# The verified batch-*.json (provenance), batch-input-*.json, and INSTRUCTIONS.md ARE committed.
+scripts/import/*.log
+scripts/import/apimap-*.json
+scripts/import/*-gap.json
+scripts/import/*-gaps.json
+scripts/import/*-scraped.json
+scripts/import/src-*
+scripts/import/probe-run.json
+scripts/import/public-apis-live.json
+
+# per-API endpoint probe cache (regenerable by the seed pipeline)
+scripts/.cache/

@@ -1,0 +1,256 @@
+{
+  "batch": 35,
+  "commit": "backlog",
+  "candidates": [
+    {
+      "name": "Open Government, Romania",
+      "docsUrl": "http://data.gov.ro/",
+      "description": "Romania Government Open Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Government",
+      "docsCheck": 200
+    },
+    {
+      "name": "Makeup",
+      "docsUrl": "http://makeup-api.herokuapp.com/",
+      "description": "Makeup Information",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Health",
+      "docsCheck": 200
+    },
+    {
+      "name": "Chronicling America",
+      "docsUrl": "http://chroniclingamerica.loc.gov/about/api/",
+      "description": "Provides access to millions of pages of historic US newspapers from the Library of Congress",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "News",
+      "docsCheck": 403
+    },
+    {
+      "name": "18F",
+      "docsUrl": "http://18f.github.io/API-All-the-X/",
+      "description": "Unofficial US Federal Government API Development",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Open Data",
+      "docsCheck": 404
+    },
+    {
+      "name": "Urban Observatory",
+      "docsUrl": "https://urbanobservatory.ac.uk",
+      "description": "The largest set of publicly available real time urban data in the UK",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Open Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Countly",
+      "docsUrl": "https://api.count.ly/reference",
+      "description": "Countly web analytics",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Open Source Projects",
+      "docsCheck": 200
+    },
+    {
+      "name": "Forismatic",
+      "docsUrl": "http://forismatic.com/en/api/",
+      "description": "Inspirational Quotes",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Personality",
+      "docsCheck": 404
+    },
+    {
+      "name": "ReSmush.it",
+      "docsUrl": "https://resmush.it/api",
+      "description": "Photo optimization",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Photography",
+      "docsCheck": 0
+    },
+    {
+      "name": "Minor Planet Center",
+      "docsUrl": "http://www.asterank.com/mpc",
+      "description": "Asterank.com Information",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "Numbers",
+      "docsUrl": "http://numbersapi.com",
+      "description": "Facts about numbers",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Science & Math",
+      "docsCheck": 200
+    },
+    {
+      "name": "MLB Records and Stats",
+      "docsUrl": "https://appac.github.io/mlb-data-api-docs/",
+      "description": "Current and historical MLB statistics",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 200
+    },
+    {
+      "name": "SuredBits",
+      "docsUrl": "https://suredbits.com/api/",
+      "description": "Query sports data, including teams, players, games, scores and statistics",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Sports & Fitness",
+      "docsCheck": 0
+    },
+    {
+      "name": "Loripsum",
+      "docsUrl": "http://loripsum.net/",
+      "description": "The \"lorem ipsum\" generator that doesn't suck",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 0
+    },
+    {
+      "name": "Metaphorsum",
+      "docsUrl": "http://metaphorpsum.com/",
+      "description": "Generate demo paragraphs giving number of words and sentences",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Test Data",
+      "docsCheck": 200
+    },
+    {
+      "name": "Postmon",
+      "docsUrl": "http://postmon.com.br",
+      "description": "An API to query Brazilian ZIP codes and orders easily, quickly and free",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Tracking",
+      "docsCheck": 200
+    },
+    {
+      "name": "Metro Lisboa",
+      "docsUrl": "http://app.metrolisboa.pt/status/getLinhas.php",
+      "description": "Delays in subway lines",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Atlanta, US",
+      "docsUrl": "http://www.itsmarta.com/app-developer-resources.aspx",
+      "description": "Marta",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Denver, US",
+      "docsUrl": "http://www.rtd-denver.com/gtfs-developer-guide.shtml",
+      "description": "RTD",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 403
+    },
+    {
+      "name": "Transport for Grenoble, France",
+      "docsUrl": "https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html",
+      "description": "Grenoble public transport",
+      "auth": "none",
+      "https": false,
+      "cors": "no",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Paris, France",
+      "docsUrl": "http://data.ratp.fr/api/v1/console/datasets/1.0/search/",
+      "description": "RATP Open Data API",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Transport for Philadelphia, US",
+      "docsUrl": "http://www3.septa.org/hackathon/",
+      "description": "SEPTA APIs",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 403
+    },
+    {
+      "name": "Transport for United States",
+      "docsUrl": "https://retro.umoiq.com/xmlFeedDocs/NextBusXMLFeed.pdf",
+      "description": "NextBus API",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Transportation",
+      "docsCheck": 200
+    },
+    {
+      "name": "Czech Television",
+      "docsUrl": "http://www.ceskatelevize.cz/xml/tv-program/",
+      "description": "TV programme of Czech TV",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "TVMaze",
+      "docsUrl": "http://www.tvmaze.com/api",
+      "description": "TV Show Data",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Video",
+      "docsCheck": 200
+    },
+    {
+      "name": "ODWeather",
+      "docsUrl": "http://api.oceandrivers.com/static/docs.html",
+      "description": "Weather and weather webcams",
+      "auth": "none",
+      "https": false,
+      "cors": "unknown",
+      "sourceCategory": "Weather",
+      "docsCheck": 404
+    }
+  ]
+}

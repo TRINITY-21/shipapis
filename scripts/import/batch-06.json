@@ -1,0 +1,454 @@
+{
+  "batch": 6,
+  "verified": [
+    {
+      "name": "ipapi.co",
+      "slug": "ipapi-co",
+      "emoji": "🌍",
+      "tagline": "IP address to city, region, country, and coordinates",
+      "description": "Point it at any IP address (or none, for the caller's own) and it hands back location, network, timezone, and currency details as clean JSON. No key needed for light use; it answers with a 429 once you cross its quota.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://ipapi.co/api/#introduction",
+      "baseUrl": "https://ipapi.co",
+      "sampleEndpoint": "/8.8.8.8/json/",
+      "latencyMs": 767,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ip": "8.8.8.8",
+        "network": "8.8.8.0/24",
+        "city": "Mountain View",
+        "region": "California",
+        "country_name": "United States",
+        "postal": "94043",
+        "latitude": 37.42301,
+        "longitude": -122.083352,
+        "timezone": "America/Los_Angeles"
+      },
+      "freeTier": "Free — quota not published; returns 429 when exceeded",
+      "rateLimit": "Unpublished (429 Quota exceeded)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Pinball Map",
+      "slug": "pinball-map",
+      "emoji": "🕹️",
+      "tagline": "Crowdsourced map of public pinball machines worldwide",
+      "description": "A community-maintained directory of where to find real, playable pinball machines, organized by region. The keyless REST API lists regions, locations, and machines as JSON; maintainers just ask for attribution and no bulk hammering.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://pinballmap.com/api/v1/docs",
+      "baseUrl": "https://pinballmap.com/api/v1",
+      "sampleEndpoint": "/regions.json",
+      "latencyMs": 1205,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "regions": [
+          {
+            "id": 80,
+            "name": "rhode-island",
+            "full_name": "Rhode Island",
+            "lat": "41.6986442",
+            "lon": "-71.630214",
+            "state": "Rhode Island",
+            "effective_radius": 35.0
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "No hard limit; heavy/bulk use may be blocked",
+      "dataLicense": "Attribution requested; license unspecified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Postali",
+      "slug": "postali",
+      "emoji": "📮",
+      "tagline": "Keyless postal-code lookup for Mexico, Colombia & Spain",
+      "description": "Resolve a postal code to its state, municipality, and neighborhoods across MX, CO, and ES with a single GET. No key, no signup, and CDN-cached JSON; a bare code with no country prefix defaults to Mexico.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://postali.app/api",
+      "baseUrl": "https://postali.app/api/v1",
+      "sampleEndpoint": "/mx/cp/06700",
+      "latencyMs": 631,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cp": "06700",
+        "estado": "Ciudad de México",
+        "municipio": "Cuauhtémoc",
+        "asentamientos": [
+          {
+            "nombre": "Roma Norte",
+            "tipo": "Colonia",
+            "ciudad": "Ciudad de México",
+            "zona": "Urbano"
+          }
+        ]
+      },
+      "freeTier": "Free — no key, no signup, no monthly limit (per site)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Postcodes.io",
+      "slug": "postcodes-io",
+      "emoji": "🇬🇧",
+      "tagline": "Free UK postcode lookup and geolocation, no key",
+      "description": "Hand it a UK postcode and get back coordinates, ward, district, constituency, and administrative geography as JSON. Open source and free, with reverse-geocoding and autocomplete endpoints alongside the basic lookup.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://postcodes.io",
+      "baseUrl": "https://api.postcodes.io",
+      "sampleEndpoint": "/postcodes/SW1A1AA",
+      "latencyMs": 544,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": 200,
+        "result": {
+          "postcode": "SW1A 1AA",
+          "country": "England",
+          "longitude": -0.141563,
+          "latitude": 51.50101,
+          "region": "London",
+          "admin_district": "Westminster",
+          "parliamentary_constituency": "Cities of London and Westminster"
+        }
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished (no key; fair use)",
+      "dataLicense": "Service MIT-licensed; postcode data license unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "SLF",
+      "slug": "slf",
+      "emoji": "🎲",
+      "tagline": "German word-game data: cities, countries, rivers by letter",
+      "description": "A static JSON dataset for the German 'Stadt, Land, Fluss' game, grouping example cities, countries, rivers, names, jobs, animals, brands, and plants under each starting letter. One keyless GET returns the whole letter-keyed object.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://github.com/slftool/slftool.github.io/blob/master/API.md",
+      "baseUrl": "https://slftool.github.io",
+      "sampleEndpoint": "/data.json",
+      "latencyMs": 448,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "a": {
+          "stadt": ["Aalen", "Aachen", "Amberg"],
+          "land": ["Albanien", "Armenien", "Andorra"],
+          "fluss": ["Aller (Deutschland)", "Amazonas (Brasilien)"],
+          "name": ["Alexander", "Alexandra", "Anette"]
+        }
+      },
+      "freeTier": "Free — static file, no key",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "A static JSON dataset for the Stadt-Land-Fluss word game, not a query API."
+    },
+    {
+      "name": "Brazil",
+      "slug": "brazil",
+      "emoji": "🇧🇷",
+      "tagline": "Community API for Brazilian public data (CEP, CNPJ, banks…)",
+      "description": "A single friendly gateway to scattered Brazilian public datasets — postal codes (CEP), companies (CNPJ), banks, DDD area codes, holidays and more. This sample resolves a CEP to its street, neighborhood, city, and state. Keyless, but the maintainers ask you not to loop through every code.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://brasilapi.com.br/",
+      "baseUrl": "https://brasilapi.com.br/api",
+      "sampleEndpoint": "/cep/v1/01001000",
+      "latencyMs": 545,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cep": "01001000",
+        "state": "SP",
+        "city": "São Paulo",
+        "neighborhood": "Sé",
+        "street": "Praça da Sé",
+        "service": "open-cep"
+      },
+      "freeTier": "Free — no key (beta)",
+      "rateLimit": "Fair use — no loops or full-range scanning",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "City, Toronto Open Data",
+      "slug": "city-toronto-open-data",
+      "emoji": "🏙️",
+      "tagline": "Toronto's open data catalog via a standard CKAN API",
+      "description": "The City of Toronto publishes its open data through a standard CKAN backend. This endpoint lists every dataset package by id; from there you can pull each package's metadata and downloadable resources. Keyless JSON, though it didn't advertise CORS headers.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://open.toronto.ca/",
+      "baseUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action",
+      "sampleEndpoint": "/package_list",
+      "latencyMs": 421,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/help_show?name=package_list",
+        "success": true,
+        "result": [
+          "10-year-cycling-network-plan-on-street-2016",
+          "2013-street-needs-assessment-results"
+        ]
+      },
+      "freeTier": "Free — no key required (CKAN)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Standard CKAN action API; no access-control-allow-origin header observed."
+    },
+    {
+      "name": "LocalGov.jp",
+      "slug": "localgov-jp",
+      "emoji": "🏯",
+      "tagline": "Structured Japanese municipal grants & subsidies data",
+      "description": "Normalizes grant and subsidy listings from 1,600+ Japanese municipalities into one searchable JSON API, each record linking back to the original government page. This search returns matching grants with issuer, prefecture, and eligibility. Currently free; an x402/USDC rail exists for future paid features.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://localgov.jp/",
+      "baseUrl": "https://localgov.jp",
+      "sampleEndpoint": "/api/grants/search?keyword=子育て",
+      "latencyMs": 1247,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "query": { "keyword": "子育て", "limit": 20 },
+        "total": 3847,
+        "items": [
+          {
+            "id": "184047_kosodate-katei-ouen-kosodate-shien-kin",
+            "title": "子育て家庭を応援します！（子育て支援金）",
+            "issuer": "南越前町",
+            "prefecture": "福井県",
+            "source_url": "https://www.town.minamiechizen.lg.jp/kurasi/102/121/index.html"
+          }
+        ]
+      },
+      "freeTier": "Free — all endpoints currently free (per llms.txt)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "CC BY 4.0 (attribution: \"via LocalGov.jp\")",
+      "commercialUse": "yes",
+      "notes": "Free routes enumerated at /.well-known/x402; optional x402/USDC payment rail reserved for future capabilities."
+    },
+    {
+      "name": "Open Government, Poland",
+      "slug": "open-government-poland",
+      "emoji": "🇵🇱",
+      "tagline": "Poland's national open-data portal as a JSON:API",
+      "description": "dane.gov.pl exposes Poland's open-data catalog through a versioned JSON:API. This endpoint pages through 25,000+ datasets with their titles, licenses, and modification dates; drill in for resources and downloads. Keyless, and many datasets carry CC0 or CC BY licenses.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://dane.gov.pl/en",
+      "baseUrl": "https://api.dane.gov.pl",
+      "sampleEndpoint": "/1.4/datasets?page=1&per_page=2",
+      "latencyMs": 1021,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "jsonapi": { "version": "1.4" },
+        "meta": { "count": 25048, "language": "pl" },
+        "data": [
+          {
+            "type": "dataset",
+            "attributes": {
+              "license_name": "CC0 1.0",
+              "modified": "2024-03-19T19:14:09Z",
+              "downloads_count": 118
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Per dataset (many CC0 1.0 / CC BY)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "OpenMercantil",
+      "slug": "openmercantil",
+      "emoji": "🏢",
+      "tagline": "Search Spanish companies and BORME event timelines",
+      "description": "Look up Spanish companies by name and get back their CIF, slug, status, and activity counts, with deeper BORME (official gazette) event timelines available per company. No auth, open CORS, JSON only.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://openmercantil.es/api/documentacion",
+      "baseUrl": "https://openmercantil.es",
+      "sampleEndpoint": "/api/v1/search?q=mercadona&limit=5",
+      "latencyMs": 541,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "query": "mercadona",
+        "count": 5,
+        "items": [
+          {
+            "slug": "mercadona-sa",
+            "name": "MERCADONA SA",
+            "cif": "A46103834",
+            "acts_count": 112,
+            "last_seen": "2026-06-09"
+          }
+        ]
+      },
+      "freeTier": "Free — anonymous, no key",
+      "rateLimit": "60 req/min, 200 req/day per IP (anonymous)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "LAPIS",
+      "slug": "lapis",
+      "emoji": "🧬",
+      "tagline": "Query aggregated SARS-CoV-2 genomic sequence data",
+      "description": "LAPIS (from CoV-Spectrum/GenSpectrum) serves aggregated statistics over open SARS-CoV-2 sequences — filter by mutation, lineage, date, or location and get counts back. This open instance needs no key and returns JSON, handy for genomic-epidemiology dashboards.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://cov-spectrum.ethz.ch/public",
+      "baseUrl": "https://lapis.cov-spectrum.org/open/v2",
+      "sampleEndpoint": "/sample/aggregated",
+      "latencyMs": 603,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [ { "count": 9429218 } ],
+        "info": {
+          "dataVersion": "1782923445",
+          "lapisVersion": "0.8.3"
+        }
+      },
+      "freeTier": "Free — no key (open instance)",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open sequence data (GenBank/Nextstrain-derived); Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Longevity World Cup",
+      "slug": "longevity-world-cup",
+      "emoji": "🏆",
+      "tagline": "Biological-age competition data with biomarkers & rankings",
+      "description": "Public leaderboard data from a biological-age contest: each athlete entry carries a division, country, and a set of blood and metabolic biomarkers. One GET returns the full athlete array as JSON, no key required.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://longevityworldcup.com/api/data/athletes",
+      "baseUrl": "https://longevityworldcup.com",
+      "sampleEndpoint": "/api/data/athletes",
+      "latencyMs": 2376,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "Name": "Joe V",
+          "Division": "Men's",
+          "Flag": "United States",
+          "CrowdAge": 65,
+          "Biomarkers": [
+            { "Date": "2026-04-10", "GluMmolL": 4.66, "CholesterolMmolL": 4.71 }
+          ]
+        }
+      ],
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Response contains personal health biomarkers and some contact emails; MediaContact field omitted from this sample."
+    },
+    {
+      "name": "Open Disease",
+      "slug": "open-disease",
+      "emoji": "🦠",
+      "tagline": "Free COVID-19 and influenza statistics, no key",
+      "description": "disease.sh aggregates COVID-19 and influenza numbers from JHU, Worldometers, and other sources into one keyless JSON API. This endpoint returns global totals — cases, deaths, recovered, tests, and per-million rates. Free to use for widgets, dashboards, or apps.",
+      "sourceCategory": "Health",
+      "docsUrl": "https://disease.sh/",
+      "baseUrl": "https://disease.sh",
+      "sampleEndpoint": "/v3/covid-19/all",
+      "latencyMs": 551,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "updated": 1783246638946,
+        "cases": 704753890,
+        "deaths": 7010681,
+        "recovered": 675619811,
+        "active": 22123398,
+        "tests": 7026505313,
+        "population": 7944935131,
+        "affectedCountries": 231
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified (sources vary; see project repo)",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "AI Dev Jobs",
+      "slug": "ai-dev-jobs",
+      "emoji": "🤖",
+      "tagline": "AI/ML engineering job listings, built for agents",
+      "description": "Aggregates AI/ML developer jobs and exposes them through open REST (plus RSS and MCP) endpoints designed for agentic access. This search returns listings with title, company, and description. Public reads are free; an optional free key gives a stable identity and higher throttle.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://aidevboard.com/openapi.yaml",
+      "baseUrl": "https://aidevboard.com/api/v1",
+      "sampleEndpoint": "/jobs?limit=1",
+      "latencyMs": 1019,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "access": { "mode": "open" },
+        "has_next": true,
+        "jobs": [
+          {
+            "id": "48720738-0f4b-483d-9739-14039ae457d0",
+            "title": "Research Engineer, Performance RL (Reinforcement Learning)",
+            "slug": "research-engineer-performance-rl-2f0da25a"
+          }
+        ]
+      },
+      "freeTier": "Free — public read endpoints open",
+      "rateLimit": "Hourly abuse throttle; optional free API key",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Arbeitnow",
+      "slug": "arbeitnow",
+      "emoji": "💼",
+      "tagline": "European & remote job board aggregator",
+      "description": "A single JSON feed of jobs aggregated from a European/remote job board, each entry carrying company, title, description, tags, location, and a remote flag. Keyless GET and paginated — good for building job widgets or feeds.",
+      "sourceCategory": "Jobs",
+      "docsUrl": "https://documenter.getpostman.com/view/18545278/UVJbJdKh",
+      "baseUrl": "https://www.arbeitnow.com/api",
+      "sampleEndpoint": "/job-board-api",
+      "latencyMs": 1546,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "data": [
+          {
+            "slug": "freelance-revops-expert-close-remote-5h-woche-hamburg-252980",
+            "company_name": "ProviPanda GmbH",
+            "title": "Freelance RevOps Expert (Close) Remote - 5h/Woche",
+            "remote": true,
+            "location": "Hamburg",
+            "tags": ["Remote", "Marketing and Communication"]
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "LatLng", "reason": "All endpoints require an API key (X-Api-Key / key param) per docs; no keyless JSON GET." },
+    { "name": "US Federal Contracts & Grants", "reason": "Data endpoints (/contracts, /grants) return 401 requiring an API key via RapidAPI despite the keyless listing; only /ping and /health are open." },
+    { "name": "Covid-19", "reason": "mmediagroup API returns HTTP 403 'Missing Authentication Token' on /v1/cases across 3 attempts (deployment down/changed)." },
+    { "name": "Covid-19 Government Response", "reason": "Oxford OxCGRT API host covidtrackerapi.bsg.ox.ac.uk is NXDOMAIN (service discontinued)." },
+    { "name": "Covid-19 JHU CSSE", "reason": "All hosted instances dead: covid19-api.nuttaphat.com has no DNS record and the Azure fallback times out." },
+    { "name": "Covid-19 Live Data", "reason": "API host covid19.mathdro.id is NXDOMAIN (dead)." },
+    { "name": "Covid-19 Philippines", "reason": "Heroku-hosted API returns 404 'No such app' (free dynos retired); no live keyless endpoint." },
+    { "name": "Open Government, Norway", "reason": "data.norge.no is a Next.js catalog UI; docsUrl exposes no documented keyless JSON GET and guessed endpoints returned 404/403 (Invalid CORS request)." },
+    { "name": "DevITjobs UK", "reason": "Only a job_feed.xml (XML) feed is public; the GraphQL API needs POST. No keyless JSON GET endpoint." }
+  ]
+}

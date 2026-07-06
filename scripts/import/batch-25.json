@@ -1,0 +1,533 @@
+{
+  "batch": 25,
+  "verified": [
+    {
+      "name": "VATComply",
+      "slug": "vatcomply",
+      "emoji": "💶",
+      "tagline": "FX rates, geolocation and VAT validation",
+      "description": "Daily exchange rates, IP geolocation and EU VAT number checks. Free tier without signup for light read-only use.",
+      "sourceCategory": "Currency Exchange",
+      "docsUrl": "https://api.vatcomply.com",
+      "baseUrl": "https://api.vatcomply.com",
+      "sampleEndpoint": "/rates?base=USD",
+      "latencyMs": 316,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "date": "2026-06-25",
+        "base": "USD",
+        "rates": {
+          "EUR": 0.881679,
+          "USD": 1,
+          "JPY": 161.849762,
+          "CZK": 21.383354,
+          "DKK": 6.590108,
+          "GBP": 0.759857,
+          "HUF": 313.463234,
+          "PLN": 3.780197
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Httpbingo",
+      "slug": "httpbingo",
+      "emoji": "🔁",
+      "tagline": "HTTP echo service with HTTP/3 (Cloudflare)",
+      "description": "Community httpbin mirror on Cloudflare with QUIC support. /json and /get return request metadata as JSON for client debugging.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://httpbingo.org",
+      "baseUrl": "https://httpbingo.org",
+      "sampleEndpoint": "/json",
+      "latencyMs": 323,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "slideshow": {
+          "author": "Yours Truly",
+          "date": "date of publication",
+          "slides": [
+            {
+              "title": "Wake up to WonderWidgets!",
+              "type": "all"
+            },
+            {
+              "items": [
+                "Why <em>WonderWidgets</em> are great",
+                "Who <em>buys</em> WonderWidgets"
+              ],
+              "title": "Overview",
+              "type": "all"
+            }
+          ],
+          "title": "Sample Slide Show"
+        }
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Kroki",
+      "slug": "kroki",
+      "emoji": "📐",
+      "tagline": "Diagrams from text — health and metadata JSON",
+      "description": "Renders Mermaid, PlantUML and more to images. The /health route returns service status as JSON; diagram POST routes return binary media.",
+      "sourceCategory": "Development",
+      "docsUrl": "https://kroki.io",
+      "baseUrl": "https://kroki.io",
+      "sampleEndpoint": "/health",
+      "latencyMs": 316,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "version": {
+          "actdiag": "3.3.0",
+          "bpmn": "18.18.0",
+          "pikchr": "7269f78c4a",
+          "nwdiag": "3.3.0",
+          "c4plantuml": "1.2026.6",
+          "rackdiag": "3.3.0",
+          "dot": "14.1.3",
+          "symbolator": "1.2.2"
+        },
+        "status": "pass"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "TCGdex",
+      "slug": "tcgdex",
+      "emoji": "🃏",
+      "tagline": "Multilingual Pokémon TCG card data",
+      "description": "Open Pokémon TCG database with cards, sets and rarities in many languages. Keyless JSON search and lookup — cache responses in production.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://api.tcgdex.net/v2/en",
+      "baseUrl": "https://api.tcgdex.net/v2/en",
+      "sampleEndpoint": "/cards?name=pikachu",
+      "latencyMs": 463,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "basep-1",
+          "localId": "1",
+          "name": "Pikachu",
+          "image": "https://assets.tcgdex.net/en/base/basep/1"
+        },
+        {
+          "id": "fut2020-1",
+          "localId": "1",
+          "name": "Pikachu on the Ball",
+          "image": "https://assets.tcgdex.net/en/swsh/fut2020/1"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "caldays",
+      "slug": "caldays",
+      "emoji": "📅",
+      "tagline": "Public holidays for 195+ countries",
+      "description": "Country and year holiday lists as JSON. No API key on the public holidays route — useful for scheduling and payroll tools.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://caldays.com/api",
+      "baseUrl": "https://caldays.com/api",
+      "sampleEndpoint": "/holidays?country=US&year=2026",
+      "latencyMs": 507,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "year": 2026,
+        "count": 206,
+        "license": "CC BY 4.0",
+        "countries": [
+          {
+            "code": "af",
+            "name": "Afghanistan"
+          },
+          {
+            "code": "al",
+            "name": "Albania"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "FreeIPAPI",
+      "slug": "freeipapi",
+      "emoji": "📍",
+      "tagline": "Free IP geolocation JSON",
+      "description": "City, region, country and timezone from an IPv4 or IPv6 address. No key on the public JSON routes.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "https://freeipapi.com/api",
+      "baseUrl": "https://freeipapi.com/api",
+      "sampleEndpoint": "/json/8.8.8.8",
+      "latencyMs": 677,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "ipVersion": 4,
+        "ipAddress": "8.8.8.8",
+        "latitude": 37.422,
+        "longitude": -122.085,
+        "countryName": "United States",
+        "countryCode": "US",
+        "capital": "Washington D.C.",
+        "phoneCodes": [
+          1
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Luchtmeetnet",
+      "slug": "luchtmeetnet",
+      "emoji": "🌿",
+      "tagline": "Luchtmeetnet — Predicted and actual air quality components for The Net…",
+      "description": "Luchtmeetnet exposes predicted and actual air quality components for The Netherlands (RIVM) We verified a keyless GET endpoint returning JSON (Environment). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://api-docs.luchtmeetnet.nl/",
+      "baseUrl": "https://api-docs.luchtmeetnet.nl",
+      "sampleEndpoint": "/api/collections/2779603/SVmsWg5g?segregateAuth&",
+      "latencyMs": 2894,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "info": {
+          "_postman_id": "c2e69c5a-36c7-4da6-8ac8-bad44ea4ee4c",
+          "name": "Luchtmeetnet 2020 OpenAPI",
+          "description": "<html><head></head><body><p>The website Luchtmeetnet is an initiative of the Ministry of Infrastructure and the Environment, the National Institute of Public Health and the Environment (RIVM), GGD Amsterdam, EPA for the greater Rotterdam area (DCMR), the Province of Limburg, EPA's middle and western Brabant (OMWB) and EPA region Arnhem (ODRA). The website displays the measured air quality on several measuring stations in the Netherlands and the calculated air quality maps.</p>\n<p>This API grants direct access to detailed information of the stations and the current measurements made there. For large historical datasets we recommend using the dataportal of RIVM (<a href=\"https://data.rivm.nl/data/luchtmeetnet/\">https://data.rivm.nl/data/luchtmeetnet/</a>) , where measured values ​​(hourly values) are downloadable per year.</p>\n<h1 id=\"release-notes\">Release notes</h1>\n<h3 id=\"februari-2020\">Februari 2020</h3>\n<p>Added Concentrations (ASCII) endpoint.</p>\n<h3 id=\"december-2018\">December 2018</h3>\n<p>Added Measurement and Organisation endpoints.</p>\n<h3 id=\"april-2018\">April 2018</h3>\n<p>Initial version.</p>\n<h1 id=\"getting-started\">Getting Started</h1>\n<p>Read the information about the applicability and the availability of data:<br><a href=\"https://www.luchtmeetnet.nl/informatie/download-data/open-data\">https://www.luchtmeetnet.nl/informatie/download-data/open-data</a></p>\n<p>Data is updated on an hourly basis. Requesting data is limited to a maximum of 100 requests per 5 minutes.</p>\n<p>The API is available at the following address: <a href=\"https://api.luchtmeetnet.nl/open_api\">https://api.luchtmeetnet.nl/open_api</a>.</p>\n<h2 id=\"authentication\">Authentication</h2>\n<p>No form of authentication is needed, the API is publicly available - fair use policy applies.</p>\n<h2 id=\"pagination\">Pagination</h2>\n<p>List calls use a paging mechanism to ensure the requested dataset will not exceed a certain size.</p>\n<h4 id=\"paged-responses\">Paged responses</h4>\n<p>The result of a paged request will consist of the following two main parts:</p>\n<p><code>data</code> - an array containing information about the requested resource</p>\n<p><code>pagination</code> - an object containing information about the paging</p>\n<pre class=\"click-to-expand-wrapper is-snippet-wrapper\"><code>\"pagination\": {\n    \"first_page\": 1,\n    \"prev_page\": 1,\n    \"page_list\": [\n        1,\n        2,\n        3,\n        4,\n        5\n    ],\n    \"current_page\": 1,\n    \"last_page\": 5,\n    \"next_page\": 2\n},\n\"data\": [\n    ...\n]\n\n</code></pre><div class=\"click-to-expand-wrapper is-table-wrapper\"><table>\n<thead>\n<tr>\n<th>parameter</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>first_page</td>\n<td>The number of the first available page for the requested resource</td>\n</tr>\n<tr>\n<td>last_page</td>\n<td>The number of the last available page for the requested resource</td>\n</tr>\n<tr>\n<td>current_page</td>\n<td>The number of the current requested page</td>\n</tr>\n<tr>\n<td>prev_page</td>\n<td>The first page before the current requested page, if it exists</td>\n</tr>\n<tr>\n<td>next_page</td>\n<td>The first page after the current requested page, if it exists</td>\n</tr>\n<tr>\n<td>page_list</td>\n<td>Array containing the five nearest selectable page numbers</td>\n</tr>\n</tbody>\n</table>\n</div><h4 id=\"navigating-paged-responses\">Navigating paged responses</h4>\n<p>To use the paging properly the following parameters are available:</p>\n<div class=\"click-to-expand-wrapper is-table-wrapper\"><table>\n<thead>\n<tr>\n<th>parameter</th>\n<th>description</th>\n<th>default</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>page</td>\n<td>Number of page to request</td>\n<td>1</td>\n</tr>\n<tr>\n<td>order_by</td>\n<td>The order at which the items requested are sorted. Needs to be one of the returned properties</td>\n<td>Depending on requested resource</td>\n</tr>\n</tbody>\n</table>\n</div><p>Paging parameters can be set through use of URL query params, e.g.:</p>\n<p><code>?page=1&amp;order_by=location</code></p>\n<h1 id=\"issues\">Issues</h1>\n<p>No known issues so far. When an issue arrises please contact DCMR.</p>\n<h1 id=\"methods\">Methods</h1>\n</body></html>",
+          "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+          "toc": [
+            {
+              "content": "Release notes",
+              "slug": "release-notes"
+            },
+            {
+              "content": "Getting Started",
+              "slug": "getting-started"
+            }
+          ],
+          "owner": "2779603",
+          "collectionId": "c2e69c5a-36c7-4da6-8ac8-bad44ea4ee4c",
+          "publishedId": "SVmsWg5g"
+        },
+        "item": [
+          {
+            "name": "Component",
+            "event": [
+              {
+                "listen": "test",
+                "script": {
+                  "id": "1199a43b-ffa1-4114-975f-b445afd2fd85",
+                  "exec": [
+                    "pm.sendRequest('https://api.luchtmeetnet.nl/open_api/components/NO2', function (err, res) {",
+                    "    if (err) {"
+                  ],
+                  "type": "text/javascript"
+                }
+              }
+            ],
+            "id": "ef73635a-0293-4352-a95f-dcd57093dd08",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": "{{base_url}}/open_api/components/NO2",
+              "description": "<p><strong>Use</strong></p>\n<p>Method to retrieve the specifics of a selected component.</p>\n<p><strong>Response</strong></p>\n<p>Returns a object containing keys and values representing the component's details.</p>\n<div class=\"click-to-expand-wrapper is-table-wrapper\"><table>\n<thead>\n<tr>\n<th>Attribute</th>\n<th>Type</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>formula</td>\n<td>String</td>\n<td>The chemistry formula of the component</td>\n</tr>\n<tr>\n<td>name</td>\n<td>Object</td>\n<td>Contains an English and Dutch name for the component</td>\n</tr>\n<tr>\n<td>description</td>\n<td>Object</td>\n<td>Contains an English and Dutch description about the component</td>\n</tr>\n<tr>\n<td>limits</td>\n<td>Array</td>\n<td>An array of limits representing the various levels set for this component</td>\n</tr>\n</tbody>\n</table>\n</div>",
+              "urlObject": {
+                "path": [
+                  "open_api",
+                  "components"
+                ],
+                "host": [
+                  "{{base_url}}"
+                ],
+                "query": [],
+                "variable": []
+              }
+            },
+            "response": [
+              {
+                "id": "5aa3de0d-47ae-4058-aac6-7fc2e61869cc",
+                "name": "Component",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [],
+                  "url": "{{url}}/open_api/components/NO2"
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "Content-Length",
+                    "value": "1998",
+                    "name": "Content-Length",
+                    "description": "The length of the response body in octets (8-bit bytes)"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "name": "Content-Type",
+                    "description": "The mime type of this content"
+                  }
+                ],
+                "cookie": [
+                  {
+                    "expires": "Tue Jan 19 2038 03:14:07 GMT+0000 (Coordinated Universal Time)",
+                    "httpOnly": false,
+                    "domain": "192.168.0.105",
+                    "path": "/",
+                    "secure": false,
+                    "value": "e817b5d4771719d19f575b5932b47fba979417724839f3a6760c44e1a880c15d107d93d7",
+                    "key": "SODAdmmYtPhQ8"
+                  }
+                ]
+              },
+              {
+                "id": "b1a36e32-216d-4fa6-a848-d5e6a7d838fe",
+                "name": "Component not found",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [],
+                  "url": "{{url}}/open_api/components/NO2x"
+                },
+                "status": "Not Found",
+                "code": 404,
+                "_postman_previewlanguage": "html",
+                "header": [
+                  {
+                    "key": "Content-Length",
+                    "value": "188",
+                    "name": "Content-Length",
+                    "description": "The length of the response body in octets (8-bit bytes)"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "text/html; charset=UTF-8",
+                    "name": "Content-Type",
+                    "description": "The mime type of this content"
+                  }
+                ],
+                "cookie": [
+                  {
+                    "expires": "Tue Jan 19 2038 03:14:07 GMT+0000 (Coordinated Universal Time)",
+                    "httpOnly": false,
+                    "domain": "192.168.0.105",
+                    "path": "/",
+                    "secure": false,
+                    "value": "e817b5d4771719d19f575b5932b47fba979417724839f3a6760c44e1a880c15d107d93d7",
+                    "key": "SODAdmmYtPhQ8"
+                  }
+                ]
+              }
+            ],
+            "_postman_id": "ef73635a-0293-4352-a95f-dcd57093dd08"
+          },
+          {
+            "name": "Components",
+            "event": [
+              {
+                "listen": "test",
+                "script": {
+                  "id": "ef091b76-131c-4068-831e-43cf513604ac",
+                  "exec": [
+                    "function dynamicSort(property) {",
+                    "    var sortOrder = 1;"
+                  ],
+                  "type": "text/javascript"
+                }
+              },
+              {
+                "listen": "prerequest",
+                "script": {
+                  "id": "6dfd3e40-f2d0-454e-8886-71e9d0456503",
+                  "exec": [
+                    ""
+                  ],
+                  "type": "text/javascript"
+                }
+              }
+            ],
+            "id": "b13c55ed-2887-40d9-b254-e7595ebf4134",
+            "protocolProfileBehavior": {
+              "disableBodyPruning": true
+            },
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": "{{base_url}}/open_api/components?page=1&order_by=formula",
+              "description": "<p><strong>Use</strong></p>\n<p>Method to retrieve a listing of known components.</p>\n<p><strong>Response</strong></p>\n<p>Returns a paged response containing the components with formula and name, for further details about working with the paging mechanisme please refer to the \"Pagination\" section at the API's introduction.</p>\n",
+              "urlObject": {
+                "path": [
+                  "open_api",
+                  "components"
+                ],
+                "host": [
+                  "{{base_url}}"
+                ],
+                "query": [
+                  {
+                    "description": {
+                      "content": "<p>page number</p>\n",
+                      "type": "text/plain"
+                    },
+                    "key": "page",
+                    "value": "1"
+                  },
+                  {
+                    "description": {
+                      "content": "<p><code>order</code>, <code>formula</code>, <code>name_nl</code> or <code>name_en</code></p>\n",
+                      "type": "text/plain"
+                    },
+                    "key": "order_by",
+                    "value": "formula"
+                  }
+                ],
+                "variable": []
+              }
+            },
+            "response": [
+              {
+                "id": "21c3fa89-a4ba-4374-86e1-44d31fffad68",
+                "name": "Components",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [],
+                  "url": {
+                    "raw": "{{url}}/open_api/components?order_by=order",
+                    "host": [
+                      "{{url}}"
+                    ],
+                    "path": [
+                      "open_api",
+                      "components"
+                    ],
+                    "query": [
+                      {
+                        "key": "order_by",
+                        "value": "order"
+                      }
+                    ]
+                  }
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "Content-Length",
+                    "value": "1267",
+                    "name": "Content-Length",
+                    "description": "The length of the response body in octets (8-bit bytes)"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "name": "Content-Type",
+                    "description": "The mime type of this content"
+                  }
+                ],
+                "cookie": [
+                  {
+                    "expires": "Tue Jan 19 2038 03:14:07 GMT+0000 (Coordinated Universal Time)",
+                    "httpOnly": false,
+                    "domain": "192.168.0.105",
+                    "path": "/",
+                    "secure": false,
+                    "value": "e817b5d4771719d19f575b5932b47fba979417724839f3a6760c44e1a880c15d107d93d7",
+                    "key": "SODAdmmYtPhQ8"
+                  }
+                ]
+              }
+            ],
+            "_postman_id": "b13c55ed-2887-40d9-b254-e7595ebf4134"
+          }
+        ],
+        "event": [
+          {
+            "listen": "prerequest",
+            "script": {
+              "id": "2db3a194-861d-4e8c-beb5-c97fcf115dbe",
+              "type": "text/javascript",
+              "exec": [
+                ""
+              ]
+            }
+          },
+          {
+            "listen": "test",
+            "script": {
+              "id": "b5799a77-24e6-4a9a-8b21-b9540eb86968",
+              "type": "text/javascript",
+              "exec": [
+                ""
+              ]
+            }
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api-docs.luchtmeetnet.nl/api/collections/2779603/SVmsWg5g?segregateAuth&#x3D;true&amp;versionTag&#x3D;latest"
+    },
+    {
+      "name": "Indian Mutual Fund",
+      "slug": "indian-mutual-fund",
+      "emoji": "💰",
+      "tagline": "Indian Mutual Fund — Get complete history of India Mutual Funds Data",
+      "description": "Indian Mutual Fund exposes get complete history of India Mutual Funds Data We verified a keyless GET endpoint returning JSON (Finance). Check the provider docs for rate limits and terms before production use.",
+      "sourceCategory": "Finance",
+      "docsUrl": "https://www.mfapi.in/",
+      "baseUrl": "https://api.mfapi.in",
+      "sampleEndpoint": "/mf",
+      "latencyMs": 3115,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "schemeCode": 100027,
+          "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
+          "isinGrowth": null,
+          "isinDivReinvestment": null
+        },
+        {
+          "schemeCode": 100028,
+          "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quaterly Dividend",
+          "isinGrowth": null,
+          "isinDivReinvestment": null
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Auto-probed https://api.mfapi.in/mf"
+    }
+  ],
+  "skipped": []
+}

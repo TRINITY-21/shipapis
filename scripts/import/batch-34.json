@@ -1,0 +1,358 @@
+{
+  "batch": 34,
+  "verified": [
+    {
+      "name": "Church Calendar",
+      "slug": "church-calendar",
+      "emoji": "⛪",
+      "tagline": "Catholic liturgical day, season and feast lookups as JSON",
+      "description": "Returns the Roman Catholic liturgical calendar for any date: the season, week number, weekday and the day's celebrations with their liturgical colour and rank. Multiple language calendars are available in the path. Served over plain HTTP only.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "http://calapi.inadiutorium.cz/",
+      "baseUrl": "http://calapi.inadiutorium.cz/api/v0",
+      "sampleEndpoint": "/en/calendars/general-en/today",
+      "latencyMs": 712,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "date": "2026-07-05",
+        "season": "ordinary",
+        "season_week": 14,
+        "celebrations": [
+          { "title": "14th Sunday in Ordinary Time", "colour": "green", "rank": "Sunday", "rank_num": 2.6 }
+        ],
+        "weekday": "sunday"
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "HTTP only (no TLS on api host)."
+    },
+    {
+      "name": "Hebrew Calendar",
+      "slug": "hebrew-calendar",
+      "emoji": "🕎",
+      "tagline": "Convert Gregorian dates to the Hebrew calendar as JSON",
+      "description": "Hebcal's converter turns any Gregorian date into its Hebrew-calendar equivalent, returning the Hebrew year, month and day plus the Hebrew-script date and any Torah portion or holiday that falls on it. Pass cfg=json to get structured output. The wider Hebcal API also covers Shabbat and holiday times.",
+      "sourceCategory": "Calendar",
+      "docsUrl": "https://www.hebcal.com/home/developer-apis",
+      "baseUrl": "https://www.hebcal.com",
+      "sampleEndpoint": "/converter?cfg=json&gy=2026&gm=7&gd=5&g2h=1",
+      "latencyMs": 961,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "gy": 2026,
+        "gm": 7,
+        "gd": 5,
+        "hy": 5786,
+        "hm": "Tamuz",
+        "hd": 20,
+        "hebrew": "כ׳ בְּתַמּוּז תשפ״ו",
+        "events": ["Parashat Matot-Masei"]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Magic The Gathering",
+      "slug": "magic-the-gathering",
+      "emoji": "🃏",
+      "tagline": "Query Magic: The Gathering cards and sets, no key needed",
+      "description": "A keyless REST API over the complete Magic: The Gathering card database. Filter cards by name, type, set, colour, rarity and more, getting back mana cost, rules text, artist, printings and format legality. Every request returns clean JSON.",
+      "sourceCategory": "Games & Comics",
+      "docsUrl": "https://docs.magicthegathering.io/",
+      "baseUrl": "https://api.magicthegathering.io/v1",
+      "sampleEndpoint": "/cards?name=Black%20Lotus",
+      "latencyMs": 1972,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "cards": [
+          {
+            "name": "Black Lotus",
+            "manaCost": "{0}",
+            "type": "Artifact",
+            "rarity": "Rare",
+            "setName": "Unlimited Edition",
+            "text": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+            "artist": "Christopher Rush"
+          }
+        ]
+      },
+      "freeTier": "Free — no key required",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Zippopotam.us",
+      "slug": "zippopotam-us",
+      "emoji": "📮",
+      "tagline": "Postal code to place, coordinates and region, keyless",
+      "description": "Look up a postal code in any of dozens of supported countries and get back the place name, state/region and latitude/longitude. The path is simply the country code and postcode. No key, no signup, JSON out.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "http://www.zippopotam.us",
+      "baseUrl": "https://api.zippopotam.us",
+      "sampleEndpoint": "/us/90210",
+      "latencyMs": 758,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "country": "United States",
+        "country abbreviation": "US",
+        "post code": "90210",
+        "places": [
+          { "place name": "Beverly Hills", "longitude": "-118.4065", "latitude": "34.0901", "state": "California", "state abbreviation": "CA" }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Harry Potter Characters",
+      "slug": "harry-potter-characters",
+      "emoji": "🧙",
+      "tagline": "Harry Potter character data with houses, wands and images",
+      "description": "Returns the cast of the Harry Potter world with species, house, ancestry, wand details, patronus, actor and a portrait image URL. Filters exist for students, staff and individual houses. The original Heroku host is retired; the live service now runs on Render.",
+      "sourceCategory": "Video",
+      "docsUrl": "https://hp-api.onrender.com/",
+      "baseUrl": "https://hp-api.onrender.com",
+      "sampleEndpoint": "/api/characters",
+      "latencyMs": 611,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
+          "name": "Harry Potter",
+          "species": "human",
+          "gender": "male",
+          "house": "Gryffindor",
+          "dateOfBirth": "31-07-1980",
+          "wizard": true,
+          "actor": "Daniel Radcliffe"
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "Candidate's herokuapp.com host is dead; verified live at hp-api.onrender.com."
+    },
+    {
+      "name": "Nexchange",
+      "slug": "nexchange",
+      "emoji": "🔁",
+      "tagline": "Supported currencies and pairs for a crypto exchange API",
+      "description": "The public endpoints of the n.exchange automated crypto-exchange list every supported currency with its limits, network, decimals and withdrawal fee, plus which trading pairs it participates in. This currency listing needs no key or auth. Order creation elsewhere in the API is a separate, authenticated flow.",
+      "sourceCategory": "Cryptocurrency",
+      "docsUrl": "https://nexchange2.docs.apiary.io/",
+      "baseUrl": "https://api.n.exchange",
+      "sampleEndpoint": "/en/api/v1/currency/",
+      "latencyMs": 708,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": [
+        {
+          "code": "IDR",
+          "name": "IDR",
+          "is_crypto": false,
+          "minimal_amount": "0.01000000",
+          "maximal_amount": "1.00000000",
+          "withdrawal_fee": "0.00000000",
+          "decimals": 8
+        }
+      ],
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "GrünstromIndex",
+      "slug": "grunstromindex",
+      "emoji": "🌱",
+      "tagline": "Hourly green-power forecast for German postcodes",
+      "description": "The Corrently GSI (Grünstromindex) endpoint forecasts the share of renewable electricity for a German postal code hour by hour, alongside wind/solar values, a CO2 estimate and an indicative energy price. Pass a zip code and get a JSON forecast array. Usage is governed by a fair-use policy, with paid tiers for higher limits.",
+      "sourceCategory": "Environment",
+      "docsUrl": "https://gruenstromindex.de/",
+      "baseUrl": "https://api.corrently.io/v2.0",
+      "sampleEndpoint": "/gsi/prediction?zip=70173",
+      "latencyMs": 818,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "support": "If you have any question please contact dev@stromdao.com or visit https://premium.corrently.de/",
+        "documentation": "https://corrently.io/books/grunstromindex",
+        "forecast": [
+          { "epochtime": 1783263600, "eevalue": 90, "ewind": 2, "esolar": 65, "gsi": 85.5, "co2_avg": 242.5 }
+        ]
+      },
+      "freeTier": "Free under fair-use policy",
+      "rateLimit": "Fair-use (paid tiers for higher limits)",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "PostcodeData.nl",
+      "slug": "postcodedata-nl",
+      "emoji": "🇳🇱",
+      "tagline": "Dutch postcode + house number to street and coordinates",
+      "description": "Resolves a Dutch postcode and house number into the street, city, municipality, province and both RD and WGS84 (lat/lon) coordinates. Pass type=json for structured output. Served over plain HTTP only.",
+      "sourceCategory": "Geocoding",
+      "docsUrl": "http://api.postcodedata.nl/v1/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json",
+      "baseUrl": "http://api.postcodedata.nl/v1",
+      "sampleEndpoint": "/postcode/?postcode=1211EP&streetnumber=60&ref=domeinnaam.nl&type=json",
+      "latencyMs": 299,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "status": "ok",
+        "details": [
+          {
+            "street": "Stationsstraat",
+            "city": "Hilversum",
+            "province": "Noord-Holland",
+            "postcode": "1211 EP",
+            "lat": "52.2269378842251",
+            "lon": "5.1780191356884"
+          }
+        ]
+      },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear",
+      "notes": "HTTP only (no TLS); a ref parameter is required."
+    },
+    {
+      "name": "Open Government, Canada",
+      "slug": "open-government-canada",
+      "emoji": "🍁",
+      "tagline": "Search Canada's open-data catalogue via the CKAN API",
+      "description": "The Government of Canada's open-data portal exposes a standard CKAN API, so you can search and page through tens of thousands of federal datasets and read their full metadata as JSON. No key is required for reads. Data is published under the Open Government Licence – Canada.",
+      "sourceCategory": "Government",
+      "docsUrl": "http://open.canada.ca/en",
+      "baseUrl": "https://open.canada.ca/data/api/3",
+      "sampleEndpoint": "/action/package_search?rows=1",
+      "latencyMs": 1068,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://open.canada.ca/data/api/3/action/help_show?name=package_search",
+        "success": true,
+        "result": { "count": 47469 }
+      },
+      "freeTier": "Free / open data",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Government Licence – Canada",
+      "commercialUse": "yes"
+    },
+    {
+      "name": "City, Gdynia",
+      "slug": "city-gdynia",
+      "emoji": "🏙️",
+      "tagline": "Gdynia (PL) open-data catalogue over a CKAN API",
+      "description": "The Polish city of Gdynia publishes its open data through a standard CKAN API, listing datasets that cover live public-transport arrivals, routes, timetables and more. The package_list endpoint returns dataset slugs as JSON with no key. Individual datasets are fetched by name from the same API.",
+      "sourceCategory": "Government",
+      "docsUrl": "http://otwartedane.gdynia.pl/en/api_doc.html",
+      "baseUrl": "https://otwartedane.gdynia.pl/api/3",
+      "sampleEndpoint": "/action/package_list",
+      "latencyMs": 747,
+      "corsObserved": false,
+      "httpStatus": 200,
+      "sampleJson": {
+        "help": "https://otwartedane.gdynia.pl/api/3/action/help_show?name=package_list",
+        "success": true,
+        "result": [
+          "aktualne-czasy-przejazdu-dla-poszczegolnych-sekcji",
+          "aktualne-dane-o-komunikatach-wyswietlanych-na-tablicach-przystankowych"
+        ]
+      },
+      "freeTier": "Free / open data",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    },
+    {
+      "name": "Data.parliament.uk",
+      "slug": "data-parliament-uk",
+      "emoji": "🏛️",
+      "tagline": "UK Parliament linked-data: bills, members, votes and more",
+      "description": "The UK Parliament Linked Data API serves datasets on bills, members, divisions, attendance and petitions. Append .json to any resource path to get JSON, with paging controlled by query parameters. Content is available under the Open Parliament Licence.",
+      "sourceCategory": "Government",
+      "docsUrl": "https://explore.data.parliament.uk/?learnmore=Members",
+      "baseUrl": "https://lda.data.parliament.uk",
+      "sampleEndpoint": "/bills.json?_pageSize=1",
+      "latencyMs": 552,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": {
+        "format": "linked-data-api",
+        "version": "0.2",
+        "result": {
+          "_about": "http://eldaddp.azurewebsites.net/bills.json?_pageSize=1",
+          "definition": "http://eldaddp.azurewebsites.net/meta/bills.json"
+        }
+      },
+      "freeTier": "Free / open data",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Open Parliament Licence",
+      "commercialUse": "yes",
+      "notes": "Legacy Linked Data API (lda.data.parliament.uk); still live."
+    },
+    {
+      "name": "PurgoMalum",
+      "slug": "purgomalum",
+      "emoji": "🧼",
+      "tagline": "Profanity filter as a service, keyless JSON in and out",
+      "description": "Pass any text and PurgoMalum returns it with profanity and obscenity removed or masked, using a built-in word list you can extend. The JSON service returns a simple result field. No key, no signup, GET only.",
+      "sourceCategory": "Data Validation",
+      "docsUrl": "http://www.purgomalum.com",
+      "baseUrl": "https://www.purgomalum.com",
+      "sampleEndpoint": "/service/json?text=bloody%20hell",
+      "latencyMs": 727,
+      "corsObserved": true,
+      "httpStatus": 200,
+      "sampleJson": { "result": "bloody hell" },
+      "freeTier": "Free — limits not published",
+      "rateLimit": "Unpublished",
+      "dataLicense": "Unverified",
+      "commercialUse": "unclear"
+    }
+  ],
+  "skipped": [
+    { "name": "owo", "reason": "Link obfuscator is POST-only to create links; GET /api returns 404, no keyless JSON data endpoint." },
+    { "name": "Breaking Bad", "reason": "DNS no longer resolves (breakingbadapi.com dead)." },
+    { "name": "Catalogopolis", "reason": "DNS no longer resolves (api.catalogopolis.xyz dead)." },
+    { "name": "Catch The Show", "reason": "Heroku app is gone (404, free Heroku dynos retired)." },
+    { "name": "Game of Thrones Quotes", "reason": "api host persistently returns HTTP 429, main host 404; no 200 ever observed." },
+    { "name": "Motivational Quotes", "reason": "Heroku app is gone (404, free Heroku dynos retired)." },
+    { "name": "Stream", "reason": "GraphQL endpoint requires a POST query; no keyless GET JSON." },
+    { "name": "What The Commit", "reason": "Returns plain text (e.g. 'Some shit.'), not JSON." },
+    { "name": "Colormind", "reason": "Color-scheme generation is POST-only; no keyless GET JSON endpoint." },
+    { "name": "ColourLovers", "reason": "Returns HTTP 403 to automated requests (blocked)." },
+    { "name": "Steem", "reason": "Blockchain JSON-RPC requires POST bodies; no keyless GET JSON." },
+    { "name": "British National Bibliography", "reason": "Server unreachable (connection refused/timeout; British Library outage)." },
+    { "name": "markerapi", "reason": "Host times out and the trademark API requires username/password." },
+    { "name": "Czech Namedays Calendar", "reason": "Now returns HTTP 402 Payment Required." },
+    { "name": "LectServe", "reason": "No JSON endpoints — all .json paths 404, site serves HTML only." },
+    { "name": "SHOUTCLOUD", "reason": "ALL-CAPS service is POST-only; no keyless GET JSON." },
+    { "name": "Chinese Character Web", "reason": "Server returns HTTP 500 on all documented endpoints (database errors)." },
+    { "name": "Chuck Norris Database", "reason": "api.icndb.com now returns an HTML placeholder page (service defunct)." },
+    { "name": "Jservice", "reason": "Returns HTML instead of JSON (service down)." },
+    { "name": "GeoNames", "reason": "Requires a registered free username parameter on every request (signup)." },
+    { "name": "BCLaws", "reason": "API returns XML, not JSON." },
+    { "name": "City, Prague Open Data", "reason": "Portal serves an HTML single-page app; no CKAN JSON API at /api/3." },
+    { "name": "Food Standards Agency", "reason": "Requires a mandatory x-api-version header; a plain keyless GET returns 404." },
+    { "name": "INEI", "reason": "Microdata download portal, not a JSON REST API." },
+    { "name": "Open Government, Colombia", "reason": "DANE site offers no keyless JSON REST API." },
+    { "name": "Cep.la", "reason": "Returns HTML/404 for CEP lookups; no keyless JSON endpoint found." }
+  ]
+}
