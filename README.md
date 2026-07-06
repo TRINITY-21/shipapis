@@ -86,17 +86,6 @@ fetch-candidates  →  probe-verify (real HTTP GET, keyless + JSON only)  →  a
 
 Descriptions are original (rewritten from provider docs, never copied). Metadata (`freeTier`, `rateLimit`, `dataLicense`) is filled honestly from the provider's own terms, or left `Unpublished` rather than guessed.
 
-## How it stays on Cloudflare's free tier
-
-The interesting engineering is the read/write budget:
-
-- **Edge caching** on SSR pages → most traffic never hits the Worker or D1.
-- **Per-isolate catalog memo** → the catalog is built from D1 at most once per minute per isolate.
-- **Materialized health series** → the hot read path reads ~1k rows instead of joining 90 days of rollups.
-- **12h probe cadence** → each endpoint is checked ~2×/day, keeping writes an order of magnitude under the limit.
-
-Result: storage ~1%, writes ~10%, reads a fraction of the free daily allowances.
-
 
 ## Contributing
 
@@ -106,4 +95,4 @@ Know a great keyless API? Suggest it at [`/submit`](https://shipapis.dev/submit)
 
 Code is released under the [MIT License](./LICENSE). The directory metadata is rebuilt from the MIT-licensed [public-apis](https://github.com/public-apis/public-apis) list and other public directories, with **original** descriptions.
 
-<div align="center"><a href="https://shipapis.dev">shipapis.dev</a></div>
+<div align="center"> <a href="https://shipapis.dev">shipapis.dev</a></div>
