@@ -80,6 +80,36 @@ const catCount = {}
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48)
 
+// Secret redaction: sample payloads are scraped VERBATIM from provider docs/responses and can embed
+// real third-party credentials (an OpenRouter sk-or-v1 key once slipped in and blocked a push). Strip
+// anything matching a known key format before it lands in the committed seed. Patterns require long
+// consecutive tokens, so hyphenated slugs like "sk-spacex-launch-health" are deliberately NOT matched.
+let redactedCount = 0
+const SECRET_RX = [
+  /sk-or-v1-[a-f0-9]{40,}/gi, // OpenRouter
+  /sk-ant-[a-zA-Z0-9-]{80,}/g, // Anthropic
+  /sk-proj-[a-zA-Z0-9_-]{40,}/g, // OpenAI project keys
+  /sk-[a-zA-Z0-9]{40,}/g, // OpenAI classic (no hyphens ⇒ won't hit slugs)
+  /(?:sk|rk)_live_[a-zA-Z0-9]{20,}/g, // Stripe secret / restricted
+  /gh[pousr]_[A-Za-z0-9]{36,}/g, // GitHub tokens
+  /AKIA[0-9A-Z]{16}/g, // AWS access key id
+  /AIza[0-9A-Za-z_-]{35}/g, // Google API key
+  /xox[baprs]-[0-9A-Za-z-]{20,}/g, // Slack tokens
+  /-----BEGIN [A-Z ]*PRIVATE KEY-----/g, // PEM private keys
+]
+const redactStr = (s) => {
+  if (typeof s !== 'string') return s
+  let out = s
+  for (const rx of SECRET_RX) out = out.replace(rx, () => { redactedCount++; return '[REDACTED]' })
+  return out
+}
+const redactDeep = (v) => {
+  if (typeof v === 'string') return redactStr(v)
+  if (Array.isArray(v)) return v.map(redactDeep)
+  if (v && typeof v === 'object') return Object.fromEntries(Object.entries(v).map(([k, val]) => [k, redactDeep(val)]))
+  return v
+}
+
 for (const f of files) {
   let parsed
   try { parsed = JSON.parse(readFileSync(IMPORT_DIR + f, 'utf8')) } catch (e) {
@@ -119,8 +149,8 @@ for (const f of files) {
       slug,
       name: v.name,
       emoji: v.emoji || '🔌',
-      tagline: (v.tagline || '').slice(0, 80),
-      description: v.description || '',
+      tagline: redactStr((v.tagline || '').slice(0, 80)),
+      description: redactStr(v.description || ''),
       category: cat,
       docsUrl: v.docsUrl,
       baseUrl: v.baseUrl.replace(/\/+$/, ''),
@@ -131,14 +161,14 @@ for (const f of files) {
       cors,
       commercialUse: ['yes', 'no', 'unclear'].includes(v.commercialUse) ? v.commercialUse : 'unclear',
       dataLicense: v.dataLicense || 'Unverified',
-      freeTier: v.freeTier || 'Free — limits not published',
-      rateLimit: v.rateLimit || 'Unpublished',
+      freeTier: redactStr(v.freeTier || 'Free — limits not published'),
+      rateLimit: redactStr(v.rateLimit || 'Unpublished'),
       requiresCard: false,
       status: 'unmonitored',
       addedAt: '2026-07-05',
       lastCheckedMin: 0,
       baseLatency: latency,
-      sample: v.sampleJson,
+      sample: redactDeep(v.sampleJson),
       shapeChanges: [],
     }))
   }
@@ -164,5 +194,6 @@ console.log(`batches read : ${files.length}`)
 console.log(`verified     : ${totalVerified}  (agents also skipped ${totalSkipped} upstream)`)
 console.log(`dropped dup  : ${droppedDup}   dropped invalid: ${droppedBad}`)
 console.log(`imported     : ${specs.length} APIs → +${usedNewCats.length} new categories`)
+console.log(`redacted     : ${redactedCount} secret-like token(s) stripped from sample payloads`)
 console.log(`by category  : ${Object.entries(catCount).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c} ${n}`).join(', ')}`)
 console.log(`wrote ${OUT}`)

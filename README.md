@@ -14,6 +14,7 @@
   <img src="https://img.shields.io/badge/auth-keyless-a3e635" alt="Keyless">
   <img src="https://img.shields.io/badge/catalog-1%2C000%2B%20APIs-a3e635" alt="1,000+ APIs">
   <a href="https://shipapis.dev/data/status.json"><img src="https://img.shields.io/badge/status-live-a3e635" alt="Live status"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-a3e635" alt="MIT License"></a>
 </p>
 
 ---
@@ -106,6 +107,6 @@ Know a great keyless API? Suggest it at [`/submit`](https://shipapis.dev/submit)
 
 ## License
 
-The directory metadata is rebuilt from the MIT-licensed [public-apis](https://github.com/public-apis/public-apis) list and other public directories, with **original** descriptions. Add a `LICENSE` file for the code (MIT recommended).
+Code is released under the [MIT License](./LICENSE). The directory metadata is rebuilt from the MIT-licensed [public-apis](https://github.com/public-apis/public-apis) list and other public directories, with **original** descriptions.
 
 <div align="center"><sub>Built on Cloudflare's $0 tier · <a href="https://shipapis.dev">shipapis.dev</a></sub></div>
