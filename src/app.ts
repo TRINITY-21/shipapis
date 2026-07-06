@@ -13,8 +13,6 @@ import type { Env } from './workers/env'
 export function createApp() {
   const app = new Hono<{ Bindings: Env }>()
 
-  registerMcp(app)
-
   /* Edge-cache successful GET/HEAD responses so repeat traffic is served from Cloudflare's cache
      without invoking this Worker or reading D1 — the biggest lever for staying inside the free
      tier (100k req/day, 5M D1-reads/day). Health refreshes on the ~15-min cron, so a short shared
@@ -55,6 +53,10 @@ export function createApp() {
   app.use('/sitemap.xml', machineHeaders)
   app.use('/feed.json', machineHeaders)
   app.use('/feed.xml', machineHeaders)
+
+  // Registered AFTER the middleware above so /mcp is wrapped by withCatalog (the D1 read path) and
+  // machineHeaders (CORS + no-store) — Hono only applies middleware to routes registered after it.
+  registerMcp(app)
 
   registerApiV1(app)
   app.route('/', agentSurfaces)
