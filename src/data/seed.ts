@@ -258,7 +258,7 @@ export const categories: Category[] = [
   { slug: 'geo', name: 'Geo & Maps', emoji: '🗺', blurb: 'Geocoding, IP location and country data. Rate limits documented, not guessed.' },
   { slug: 'science', name: 'Science & Space', emoji: '🔭', blurb: 'Space, physics and research data from agencies and observatories.' },
   { slug: 'animals', name: 'Animals', emoji: '🐕', blurb: 'The classics — every image endpoint verified to still return an actual dog.' },
-  { slug: 'fun', name: 'Fun & Games', emoji: '🎮', blurb: 'Game data, jokes and trivia for demos, teaching and toy projects.' },
+  { slug: 'fun', name: 'Fun', emoji: '😄', blurb: 'Jokes, quotes, memes and trivia — the delightful throwaway stuff for demos and toy projects.' },
   { slug: 'data', name: 'Open Data', emoji: '📚', blurb: 'Books, countries, encyclopedic and public datasets with stable schemas.' },
   { slug: 'developer', name: 'Developer Tools', emoji: '🔧', blurb: 'Utilities you wire into everything else — IPs, avatars, placeholders, QR.' },
   ...importedCategories,
@@ -508,7 +508,7 @@ export const apis: ApiEntry[] = [
     tagline: 'The Pokémon dataset every tutorial is built on.',
     description:
       'PokéAPI serves the full Pokémon universe — species, moves, types, sprites — as deeply linked JSON. It is the most-taught API on the internet and holds up under that traffic remarkably well. Fully static-cached, so latency is excellent worldwide.',
-    category: 'fun',
+    category: 'games',
     docsUrl: 'https://pokeapi.co/docs/v2',
     baseUrl: 'https://pokeapi.co/api/v2',
     sampleEndpoint: '/pokemon/pikachu',
@@ -861,7 +861,7 @@ export const apis: ApiEntry[] = [
     tagline: 'Song lyrics over SOAP/REST, from a gentler internet.',
     description:
       'ChartLyrics offered lyric search back when SOAP was still a reasonable word to say out loud. The API now returns 404 on all documented routes and the domain serves a parking page. Archived with its last known shape. Rest easy.',
-    category: 'fun',
+    category: 'media',
     docsUrl: 'http://www.chartlyrics.com/api.aspx',
     baseUrl: 'http://api.chartlyrics.com',
     sampleEndpoint: '/apiv1.asmx/SearchLyricDirect',

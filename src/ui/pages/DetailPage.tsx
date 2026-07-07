@@ -72,19 +72,23 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
     >
       <div class="wrap detail-page">
         <header class="detail-head">
-          <ApiGlyph api={api} displayPx={56} />
-          <div class="detail-title">
-            <h1>{api.name}</h1>
-            <p class="tagline">{api.tagline}</p>
-            <div class="line">
-              <a class="cat-pill" href={`/c/${cat.slug}`}>{cat.emoji} {cat.name}</a>
-              <StatusBadge status={api.status} checkTier={api.checkTier} />
-              {probed && <Checked min={api.lastCheckedMin} />}
+          <div class="detail-main">
+            <div class="detail-headline">
+              <ApiGlyph api={api} displayPx={56} />
+              <h1>{api.name}</h1>
             </div>
-            <div class="line line-chips">
-              <Chips api={api} />
+            <div class="detail-title">
+              <p class="tagline">{api.tagline}</p>
+              <div class="line">
+                <a class="cat-pill" href={`/c/${cat.slug}`}>{cat.emoji} {cat.name}</a>
+                <StatusBadge status={api.status} checkTier={api.checkTier} />
+                {probed && <Checked min={api.lastCheckedMin} />}
+              </div>
+              <div class="line line-chips">
+                <Chips api={api} />
+              </div>
+              <p class="detail-desc">{api.description}</p>
             </div>
-            <p class="detail-desc">{api.description}</p>
           </div>
           <div class="detail-aside">
             <span class="score-block">

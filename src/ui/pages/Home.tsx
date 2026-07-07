@@ -53,7 +53,7 @@ export const Home: FC = () => {
             <div class="mast-copy">
               <h1 class="hero-h">
                 the free-api directory<br />
-                <span class="alive">that's actually alive</span><span class="cursor" aria-hidden="true" />
+                <span class="alive">with a pulse</span><span class="cursor" aria-hidden="true" />
               </h1>
               <p class="hero-lead">
                 Free public APIs — weather, photos, exchange rates and more — with live health checks,
@@ -137,7 +137,7 @@ export const Home: FC = () => {
               <div class="aotd-top">
                 <ApiGlyph api={aotd} displayPx={56} />
                 <div class="aotd-title">
-                  <h3>{aotd.name}</h3>
+                  <h3><a href={`/api/${aotd.slug}`}>{aotd.name}</a></h3>
                   <p>{aotd.tagline}</p>
                 </div>
                 <div class="aotd-score">

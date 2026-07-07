@@ -4,7 +4,7 @@ import { catBySlug } from '../../data/catalog'
 import type { ApiEntry } from '../../data/seed'
 import { apiLogoSrc } from '../lib/api-logo'
 
-type ApiLike = Pick<ApiEntry, 'baseUrl' | 'docsUrl'>
+type ApiLike = Pick<ApiEntry, 'baseUrl' | 'docsUrl'> & { emoji?: string }
 
 /** Fetch size for crisp display on 1x–2x screens (capped at proxy max 128). */
 export const logoFetchPx = (displayPx: number) => Math.min(128, Math.max(32, Math.ceil(displayPx * 2)))
@@ -34,6 +34,7 @@ export const ApiGlyph: FC<{
 
   return (
     <span class={boxClass} data-api-glyph aria-hidden="true">
+      {entry.emoji ? <span class="glyph-fb">{entry.emoji}</span> : null}
       {src && (
         <img
           class="glyph-img"
@@ -43,6 +44,7 @@ export const ApiGlyph: FC<{
           height={box}
           loading="lazy"
           decoding="async"
+          onload="this.closest('[data-api-glyph]')?.classList.add('glyph-ok')"
           onerror="this.closest('[data-api-glyph]')?.classList.add('glyph-miss')"
         />
       )}

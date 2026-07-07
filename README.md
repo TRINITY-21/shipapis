@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./.github/banner.svg" alt="shipapis — the free-api directory that's actually alive" width="820">
+  <img src="./.github/banner.svg" alt="shipapis — the free-api directory with a pulse" width="820">
 </div>
 
 <p align="center">
@@ -93,6 +93,5 @@ Know a great keyless API? Suggest it at [`/submit`](https://shipapis.dev/submit)
 
 ## License
 
-Code is released under the [MIT License](./LICENSE). The directory metadata is rebuilt from the MIT-licensed [public-apis](https://github.com/public-apis/public-apis) list and other public directories, with **original** descriptions.
-
+Code is released under the [MIT License](./LICENSE). 
 <div align="center"> <a href="https://shipapis.dev">shipapis.dev</a></div>

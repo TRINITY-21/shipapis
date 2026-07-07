@@ -60,7 +60,7 @@
   --r-m: 3px;
   --r-l: 4px;
   --pad-page: clamp(20px, 4vw, 48px);
-  --w-page: 1360px;   /* one surface width — pages must not shift under the nav (two-tier retired) */
+  --w-page: 1200px;   /* one surface width — pages must not shift under the nav (two-tier retired) */
 
   /* motion */
   --t-fast: 140ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -376,8 +376,9 @@ input[type='search']::-webkit-search-cancel-button { -webkit-appearance: none; }
 
 /* GitHub star button — a pill with the mark + label that lights up accent on hover; icon-only on mobile */
 .gh-btn {
+  display: inline-flex;
+  align-items: center;
   width: auto;
-  grid-auto-flow: column;
   gap: 7px;
   padding: 0 11px;
   border: 1px solid var(--border-strong);
@@ -393,7 +394,8 @@ input[type='search']::-webkit-search-cancel-button { -webkit-appearance: none; }
 }
 .gh-btn:hover svg { transform: scale(1.1); }
 @media (max-width: 640px) {
-  .gh-btn { width: 32px; padding: 0; }
+  /* icon-only square; .nav-actions prefix keeps this ahead of the tablet width:auto rule */
+  .nav-actions .gh-btn { width: 40px; height: 40px; padding: 0; gap: 0; justify-content: center; flex: none; }
   .gh-btn .gh-star { display: none; }
 }
 
@@ -862,6 +864,8 @@ a.row:hover { background: var(--bg-hover); }
   z-index: 1;
   background: var(--bg-inset);
   image-rendering: auto;
+  opacity: 0; /* emoji fallback shows until the favicon genuinely loads */
+  transition: opacity 0.12s ease;
 }
 
 .detail-head .glyph .glyph-img,
@@ -875,9 +879,11 @@ a.row:hover { background: var(--bg-hover); }
   background: transparent;
 }
 
-[data-api-glyph].glyph-miss .glyph-img {
-  display: none;
-}
+[data-api-glyph].glyph-ok .glyph-img { opacity: 1; } /* favicon loaded → overlay the emoji */
+[data-api-glyph].glyph-miss .glyph-img { display: none; }
+
+/* Emoji fallback — shown when a site has no retrievable favicon (the favicon overlays it once loaded). */
+.glyph-fb { line-height: 1; z-index: 0; }
 
 /* ---------- Status & chips ---------- */
 
@@ -1180,6 +1186,7 @@ a.row:hover { background: var(--bg-hover); }
 .aotd-top .glyph { width: 56px; height: 56px; font-size: 28px; background: var(--bg); }
 .aotd-title { min-width: 0; }
 .aotd-title h3 { font-size: 21px; font-weight: 700; letter-spacing: -0.025em; }
+.aotd-title h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .aotd-title p { color: var(--text-2); font-size: 14px; margin-top: 2px; }
 .aotd-score {
   margin-left: auto;
@@ -1203,6 +1210,21 @@ a.row:hover { background: var(--bg-hover); }
   margin-top: 6px;
 }
 .aotd-foot .bars-legend { margin-top: 9px; }
+
+/* Mobile: keep the glyph + title on the left and the health ring on the right. */
+@media (max-width: 560px) {
+  .aotd-top {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "glyph title score";
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 16px;
+  }
+  .aotd-top .glyph { grid-area: glyph; }
+  .aotd-title { grid-area: title; }
+  .aotd-score { grid-area: score; margin-left: 0; align-items: center; }
+}
 
 /* ---------- Category index — dot leaders, like a manual's TOC ---------- */
 
@@ -1482,8 +1504,9 @@ a.row:hover { background: var(--bg-hover); }
     box-shadow: none;
   }
   .signal-field input {
-    height: 48px;
-    padding: 0 14px;
+    flex: none;
+    height: 60px;
+    padding: 0 16px;
     font-size: 16px;
     border: 1px solid var(--border-strong);
     border-radius: var(--r-m);
@@ -1495,7 +1518,7 @@ a.row:hover { background: var(--bg-hover); }
   }
   .signal-submit {
     width: 100%;
-    height: 48px;
+    height: 60px;
     border-left: none;
     border-radius: var(--r-m);
   }
@@ -1776,8 +1799,8 @@ a.row:hover { background: var(--bg-hover); }
 @media (max-width: 640px) {
   .signal-head h2 {
     white-space: normal;
-    font-size: clamp(20px, 5.5vw, 26px);
-    max-width: 14ch;
+    font-size: clamp(27px, 8vw, 34px);
+    max-width: 16ch;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1880,6 +1903,12 @@ a.row:hover { background: var(--bg-hover); }
 .nl-row input:focus { border-color: var(--accent-live); box-shadow: 0 0 0 3px var(--accent-dim); }
 .nl-row input::placeholder { color: var(--text-3); }
 .footer .newsletter { margin-top: 22px; max-width: 340px; }
+/* Mobile: stack the email form full-width with a comfortable tap target. */
+@media (max-width: 560px) {
+  .nl-row { flex-direction: column; gap: 10px; }
+  .nl-row input { flex: none; width: 100%; height: 60px; font-size: 16px; }
+  .nl-row .btn { width: 100%; justify-content: center; min-height: 60px; padding: 0 16px; }
+}
 
 /* homepage band — same ruled two-column grammar as the dev strip */
 .nl-strip {
@@ -1967,7 +1996,11 @@ a.row:hover { background: var(--bg-hover); }
   border-bottom: 1px solid var(--border);
 }
 .detail-head .glyph { width: 56px; height: 56px; font-size: 28px; flex: none; margin-top: 2px; }
-.detail-title h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.035em; line-height: 1.12; }
+.detail-main { flex: 1; min-width: 0; }
+/* Logo + title share a line; tagline/tags/desc sit below, indented to line up under the title. */
+.detail-headline { display: flex; align-items: center; gap: 20px; }
+.detail-headline h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.035em; line-height: 1.12; min-width: 0; }
+.detail-title { padding-left: 76px; margin-top: 6px; }
 .detail-title .tagline {
   margin-top: 6px;
   color: var(--text-2);
@@ -2410,9 +2443,14 @@ a.row:hover { background: var(--bg-hover); }
 }
 
 @media (max-width: 700px) {
+  /* Compare title: let "A vs B" flow as normal text instead of huge stacked flex items. */
+  .page-head-cmp h1 { display: block; font-size: 20px; line-height: 1.3; letter-spacing: -0.02em; }
+  .page-head-cmp h1 .dim { margin: 0 4px; }
   .cmp-row { grid-template-columns: 96px minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
   .cmp-row > .k { overflow-wrap: anywhere; }
-  .cmp-api { flex-wrap: wrap; }
+  /* Drop the redundant "API" label — the top-left cell stays blank, cards top-align to each other. */
+  .cmp-top > .k { visibility: hidden; }
+  .cmp-api { flex-direction: column; align-items: flex-start; gap: 10px; }
   .cmp-api .score { display: none; }
   .cmp::before { left: calc(50% + 54px); } /* 96px label + 12px gaps */
   .cmp .bars { gap: 1px; }
@@ -2702,6 +2740,25 @@ a.row:hover { background: var(--bg-hover); }
 }
 .nav-menu a:last-child { border-bottom: none; }
 .nav-menu a[aria-current='page'] { color: var(--text); }
+/* Action triggers inside the mobile hamburger menu (search, theme) — match the menu links. */
+.nav-menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 4px;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  color: var(--text-2);
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.nav-menu button:last-child { border-bottom: none; }
+.nav-menu button svg { color: var(--text-3); flex: none; }
+.nav-menu button:hover { color: var(--text); }
 
 /* ---------- Utilities ---------- */
 
@@ -2761,16 +2818,26 @@ a.row:hover { background: var(--bg-hover); }
   .nav-links { display: none; }
   .brand { border-right: none; padding-right: 0; margin-right: 0; }
   #menu-btn { display: grid; }
-  .search-pill span, .search-pill kbd { display: none; }
-  .search-pill { width: 40px; height: 40px; justify-content: center; padding: 0; }
+  /* tablet keeps search + theme toggle in the bar; they only fold into the menu on mobile (≤560px) */
   .icon-btn { width: 40px; height: 40px; }
-  .nav-actions .btn-accent { padding: 7px 11px; font-size: 10.5px; }
+  .search-pill { height: 40px; } /* match the 40px icon buttons + Star pill */
+  .gh-btn { width: auto; flex-shrink: 0; }
+  .nav-actions .btn-accent { min-height: 40px; padding: 0 12px; font-size: 10.5px; } /* match the 40px icon buttons */
   .prompt input, .palette-input input, .sf-field input, .sf-pick .pick-trigger { font-size: 16px; }
   .row-api { grid-template-columns: minmax(150px, 1.5fr) 76px 84px 92px; }
   .row-api > :nth-child(2), .row-api > :nth-child(5), .row-api > :nth-child(6) { display: none; }
   .row-sub { display: flex; }
   .row-cat { display: none; } /* the row-sub line carries the category here */
-  .footer-inner { grid-template-columns: 1fr 1fr; gap: 36px 32px; }
+  /* category health strip — 3×2 grid so six KPIs don't wrap 5+1 on tablet */
+  .cat-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-top: none; }
+  .cat-stats .ms {
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    margin-right: 0;
+    padding: 12px 16px 14px;
+  }
+  .cat-stats .ms:nth-child(3n) { border-right: none; }
+  .footer-inner { grid-template-columns: repeat(3, 1fr); gap: 36px 28px; }
   .footer-id { grid-column: 1 / -1; }
   /* keep the epitaph — it's the emotional hook — and restack it under the name */
   .gy-row { grid-template-columns: minmax(0, 1fr) 130px; row-gap: 4px; }
@@ -2783,9 +2850,12 @@ a.row:hover { background: var(--bg-hover); }
 @media (max-width: 560px) {
   .nav-inner { gap: 14px; }
   .nav-actions { gap: 8px; }
-  .nav-actions .btn-accent { padding: 7px 10px; font-size: 10.5px; }
+  .search-pill, #theme-toggle { display: none; } /* fold into the hamburger menu on mobile */
+  .nav-actions .btn-accent { min-height: 40px; padding: 0 11px; font-size: 10.5px; }
   .nav-submit-long { display: none; }
   .nav-submit-short { display: inline; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .footer-id { grid-column: auto; }
   .mast-meta .k + .k { display: none; }
   .mast-copy { padding-top: 40px; }
   .row-api { grid-template-columns: minmax(140px, 1.6fr) 84px 92px; }
@@ -2808,17 +2878,24 @@ a.row:hover { background: var(--bg-hover); }
   .m-only { display: block; }
   .m-hide { display: none; }
   .detail-head { flex-wrap: wrap; padding-top: 28px; padding-bottom: 22px; }
+  .detail-title { padding-left: 0; } /* tagline/tags/desc go full width under the logo+title line */
+  /* Full-width Run live + Docs on top; badge on the left with the score ring filling the right. */
   .detail-aside {
     margin-left: 0;
     width: 100%;
     max-width: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "actions actions"
+      "badge   score";
+    gap: 18px 20px;
     justify-items: stretch;
+    align-items: start;
   }
-  .score-block { align-items: center; }
-  .detail-badge { align-items: center; }
-  .detail-actions { flex-direction: row; min-width: 0; }
-  .detail-actions .btn { flex: 1; }
+  .detail-actions { grid-area: actions; flex-direction: column; min-width: 0; width: 100%; }
+  .detail-actions .btn { flex: none; width: 100%; }
+  .detail-badge { grid-area: badge; align-items: flex-start; border-top: none; padding-top: 0; }
+  .score-block { grid-area: score; align-items: center; }
   .uptime-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .uptime-summary.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .uptime-summary .cell:nth-child(2) { border-right: none; }
@@ -3017,12 +3094,20 @@ a.row:hover { background: var(--bg-hover); }
 }
 
 @media (max-width: 560px) {
-  .ep-row-main { flex-direction: column; align-items: flex-start; }
-  .ep-copy { margin-left: 0; }
+  /* Mobile: GET / PROBED on the left, COPY URL on the right, path + description below. */
+  .ep-row-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .ep-path { order: 2; flex: 0 0 100%; width: 100%; }
+  .ep-desc { padding-left: 0; } /* full-width, sits below the row on mobile */
+  .ep-copy { margin-left: auto; }
   .ep-export { flex-direction: column; align-items: stretch; }
   .ep-export .btn { width: 100%; justify-content: center; }
-  .detail-aside { grid-template-columns: 1fr; }
-  .detail-actions { flex-direction: column; width: 100%; }
+  /* detail-aside layout handled in the max-width:640 block (actions full-width, badge + ring row) */
 }
 
 /* ---------- Endpoints panel — detail page route catalog ---------- */

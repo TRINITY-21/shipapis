@@ -318,7 +318,7 @@ const CATEGORY_INTENT: Record<string, string[]> = {
   photo: ['media'], picture: ['media'], video: ['media'], art: ['media'],
   book: ['books'], dictionary: ['books'], word: ['books'], definition: ['books'], translate: ['books'],
   space: ['science'], nasa: ['science'], astronomy: ['science'], satellite: ['science'], planet: ['science'],
-  game: ['games'], anime: ['games'], pokemon: ['games'], trivia: ['games'],
+  game: ['games'], anime: ['anime'], manga: ['anime'], pokemon: ['games'], trivia: ['fun'],
   joke: ['fun'], quote: ['fun'], meme: ['fun'],
   email: ['developer', 'social'], sms: ['social'], phone: ['social'], jobs: ['social'],
   country: ['data'], countries: ['data'], news: ['data'], government: ['gov'],

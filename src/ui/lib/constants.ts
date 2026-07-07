@@ -58,8 +58,6 @@ export type NavItem = { href: string; label: string; title?: string }
 export const PRIMARY_NAV: NavItem[] = [
   { href: '/browse', label: 'APIs' },
   { href: '/start', label: 'New to APIs' },
-  { href: '/agents', label: 'Agents', title: 'Developer tools: JSON API, MCP server, datasets' },
+  { href: '/agents', label: 'Developers & Agents', title: 'Developer tools: JSON API, MCP server, datasets' },
   { href: '/graveyard', label: 'Graveyard' },
-  { href: '/state', label: 'Report', title: 'The State of Free APIs — live data report' },
-  { href: '/changelog', label: 'Changelog' },
 ]

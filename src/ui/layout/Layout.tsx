@@ -1,10 +1,10 @@
 import type { Child, FC } from 'hono/jsx'
 import { catalogCounts } from '../../data/catalog'
+import { Logo } from '../components/Logo'
 import { DEFAULT_DESC, FAVICON, PRIMARY_NAV, SITE, THEME_BOOT } from '../lib/constants'
 import { jsonLdStr } from '../lib/format'
 import { navAriaCurrent } from '../lib/nav'
 import { buildApiIndex } from '../lib/palette'
-import { Logo } from '../components/Logo'
 
 export const Layout: FC<{
   title: string
@@ -117,7 +117,7 @@ export const Layout: FC<{
               </svg>
               <span class="gh-star">Star</span>
             </a>
-            <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme" aria-pressed="false">
+            <button id="theme-toggle" class="icon-btn" data-theme-toggle title="Toggle theme" aria-label="Toggle theme" aria-pressed="false">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                 <circle cx="12" cy="12" r="4" />
                 <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" />
@@ -125,7 +125,7 @@ export const Layout: FC<{
             </button>
             <a class="btn btn-accent" href="/submit">
               <span class="nav-submit-long">Submit an API</span>
-              <span class="nav-submit-short">Submit an API</span>
+              <span class="nav-submit-short">Submit API</span>
             </a>
             <button id="menu-btn" class="icon-btn" title="Menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -135,11 +135,25 @@ export const Layout: FC<{
           </div>
         </div>
         <div class="nav-menu" id="nav-menu">
+          <button type="button" class="nav-menu-search" data-palette-open aria-label="Search APIs">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            Search APIs
+          </button>
           {PRIMARY_NAV.map(({ href, label, title }) => (
             <a href={href} aria-current={navAriaCurrent(path, href)} title={title}>
               {label}
             </a>
           ))}
+          <button type="button" class="nav-menu-theme" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" />
+            </svg>
+            Toggle theme
+          </button>
         </div>
       </header>
       <main id="main">{children}</main>
@@ -173,6 +187,7 @@ export const Layout: FC<{
             <a href="/state">State report</a>
             <a href="/browse?sort=reliable">Most reliable</a>
             <a href="/signals">Signal log</a>
+            <a href="/changelog">Changelog</a>
             <a href="/graveyard">Graveyard</a>
             <a href="/methodology">Methodology</a>
           </div>

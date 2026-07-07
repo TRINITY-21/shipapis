@@ -2,11 +2,13 @@ import type { FC } from 'hono/jsx'
 import type { ApiEntry } from '../../data/seed'
 import { ApiGlyph } from '../components/ApiGlyph'
 import { BarsLegend } from '../components/BarsLegend'
+import { Faq } from '../components/Faq'
 import { ScoreRing } from '../components/ScoreRing'
 import { StatusBadge } from '../components/StatusBadge'
 import { UptimeBars } from '../components/UptimeBars'
 import { Layout } from '../layout/Layout'
-import { breadcrumbLd } from '../lib/seo'
+import { compareFaqItems } from '../lib/faq'
+import { breadcrumbLd, faqLd } from '../lib/seo'
 import { scoreRingProps } from '../lib/score-ring'
 import { CMP_META } from './compare-meta'
 
@@ -19,6 +21,7 @@ export const ComparePage: FC<{ a: ApiEntry; b: ApiEntry }> = ({ a, b }) => {
     if (!isFinite(na) || !isFinite(nb) || na === nb) return -1
     return (dir === 'good-high' ? na > nb : na < nb) ? 0 : 1
   }
+  const faq = compareFaqItems(a, b)
   return (
     <Layout
       title={`${a.name} vs ${b.name} — live health compared · shipapis`}
@@ -26,10 +29,10 @@ export const ComparePage: FC<{ a: ApiEntry; b: ApiEntry }> = ({ a, b }) => {
       path={`/compare/${a.slug}/${b.slug}`}
       /* /compare/a/b and /compare/b/a are the same sheet mirrored — canonical is slug-alphabetical */
       canonical={`/compare/${[a.slug, b.slug].sort().join('/')}`}
-      jsonLd={breadcrumbLd([['Home', '/'], [`${a.name} vs ${b.name}`]])}
+      jsonLd={[breadcrumbLd([['Home', '/'], [`${a.name} vs ${b.name}`]]), faqLd(faq)]}
     >
       <div class="wrap">
-        <div class="page-head">
+        <div class="page-head page-head-cmp">
           <h1>
             {a.name} <span class="dim">vs</span> {b.name}
           </h1>
@@ -67,9 +70,10 @@ export const ComparePage: FC<{ a: ApiEntry; b: ApiEntry }> = ({ a, b }) => {
             )
           })}
         </div>
-        <div class="cmp-legend mb-64">
+        <div class="cmp-legend">
           <BarsLegend />
         </div>
+        <Faq heading={`${a.name} vs ${b.name}: common questions`} items={faq} />
       </div>
     </Layout>
   )

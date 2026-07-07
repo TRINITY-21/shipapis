@@ -61,6 +61,87 @@ export function categoryFaqItems(cat: Category, list: ApiEntry[]): FaqItem[] {
   return items
 }
 
+/** Compare-page FAQ: answers the "A vs B — which is faster / keyless / free" queries for a pair. */
+export function compareFaqItems(a: ApiEntry, b: ApiEntry): FaqItem[] {
+  const items: FaqItem[] = []
+  const aMon = isMonitored(a)
+  const bMon = isMonitored(b)
+  const keyless = (x: ApiEntry) => x.auth === 'none' || x.auth === 'userAgent'
+  const browserOk = (x: ApiEntry) => x.cors === 'yes' && x.https
+
+  // Reliability — only claim numbers for APIs actually on our probe schedule.
+  if (aMon && bMon) {
+    const ua = Number(uptimePct(a))
+    const ub = Number(uptimePct(b))
+    const lead = ua === ub ? null : ua > ub ? a : b
+    items.push({
+      q: `Which is more reliable, ${a.name} or ${b.name}?`,
+      a: lead
+        ? `On our scheduled checks, ${lead.name} leads on measured uptime — ${a.name} at ${uptimePct(a)}% versus ${b.name} at ${uptimePct(b)}% over 90 days. These are our own probe results, not provider claims; the uptime bars above show the day-by-day record for both.`
+        : `Both are neck-and-neck — ${a.name} and ${b.name} each measure ${uptimePct(a)}% uptime over 90 days on our probe schedule. Reliability here is verified from our own scheduled checks; use the 30-day bars above to see which has been steadier lately.`,
+    })
+  } else {
+    const probed = aMon ? a : bMon ? b : null
+    items.push({
+      q: `Which is more reliable, ${a.name} or ${b.name}?`,
+      a: probed
+        ? `Only ${probed.name} is on our probe schedule so far (${uptimePct(probed)}% uptime over 90 days). The other is catalogued but not yet live-checked, so we can't compare measured reliability head-to-head — check the uncovered API's own status page for now.`
+        : `Neither ${a.name} nor ${b.name} is on our live probe schedule yet, so we don't publish measured uptime for either. Compare the auth, CORS and free-tier fields above, and check each provider's own status page for current reliability.`,
+    })
+  }
+
+  // Latency — same monitoring gate.
+  if (aMon && bMon && a.p50 > 0 && b.p50 > 0) {
+    const faster = a.p50 === b.p50 ? null : a.p50 < b.p50 ? a : b
+    items.push({
+      q: `Which is faster, ${a.name} or ${b.name}?`,
+      a: faster
+        ? `${faster.name} has the lower median latency in our checks — ${a.name} responds in ${a.p50} ms versus ${b.name} at ${b.p50} ms (P50). Tail latency (P95) is in the table above; for most workloads the median is the number that shapes how the API feels.`
+        : `They're evenly matched on speed — both ${a.name} and ${b.name} post a ${a.p50} ms median (P50) in our checks. Look at the P95 row above if worst-case latency matters more than the typical response for your use case.`,
+    })
+  }
+
+  // API key.
+  items.push({
+    q: `Do ${a.name} and ${b.name} need an API key?`,
+    a:
+      keyless(a) && keyless(b)
+        ? `Neither needs a paid key — ${a.name} is ${a.auth === 'userAgent' ? 'keyless but wants an identifying User-Agent header' : 'callable with no signup'}, and ${b.name} is ${b.auth === 'userAgent' ? 'keyless with a required User-Agent header' : 'callable with no signup'}. Both are quick to prototype with; rate limits still apply.`
+        : keyless(a) !== keyless(b)
+          ? `${keyless(a) ? a.name : b.name} needs no key, while ${keyless(a) ? b.name : a.name} requires ${
+              (keyless(a) ? b : a).auth === 'oauth' ? 'OAuth' : 'a free API key'
+            }. If you want to start calling without signup, reach for ${keyless(a) ? a.name : b.name} first.`
+          : `Both ask you to authenticate — ${a.name} uses ${a.auth === 'oauth' ? 'OAuth' : 'an API key'} and ${b.name} uses ${b.auth === 'oauth' ? 'OAuth' : 'an API key'}. Each key is free to obtain; the Auth and Card-required rows above spell out the signup terms.`,
+  })
+
+  // Browser / CORS.
+  items.push({
+    q: `Can I call ${a.name} and ${b.name} from the browser?`,
+    a:
+      browserOk(a) && browserOk(b)
+        ? `Yes — both ${a.name} and ${b.name} send CORS headers over HTTPS, so front-end code can fetch either directly with no backend proxy. That makes them easy to swap in a client-side app while you compare responses.`
+        : browserOk(a) !== browserOk(b)
+          ? `Only ${browserOk(a) ? a.name : b.name} is browser-friendly — it returns CORS headers over HTTPS. ${browserOk(a) ? b.name : a.name} needs a server-side call or proxy, so factor that into which one fits a front-end project.`
+          : `Neither sends browser-friendly CORS headers reliably, so call ${a.name} and ${b.name} from a server or proxy rather than client-side. The CORS and HTTPS rows above show exactly what we detected for each.`,
+  })
+
+  // Commercial use.
+  items.push({
+    q: `Are ${a.name} and ${b.name} free for commercial use?`,
+    a: (() => {
+      const phrase = (x: ApiEntry) =>
+        x.commercialUse === 'yes'
+          ? 'allows commercial use on its free tier'
+          : x.commercialUse === 'no'
+            ? 'is personal/non-commercial only'
+            : 'has unclear commercial terms'
+      return `${a.name} ${phrase(a)}, and ${b.name} ${phrase(b)}. We track service terms and the data license as separate fields — see the Commercial use and Data license rows above, and confirm both before shipping either in a paid product.`
+    })(),
+  })
+
+  return items
+}
+
 /** Detail-page FAQ: answers the "is X free / keyless / up" queries for a single API. */
 export function apiFaqItems(api: ApiEntry, catName: string): FaqItem[] {
   const probed = isMonitored(api)

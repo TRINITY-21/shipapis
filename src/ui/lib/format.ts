@@ -17,6 +17,15 @@ export const lastCheckShort = (min: number) => {
   return `${Math.round(min / 1440)}d`
 }
 
+/** Relative "checked … ago" phrase — collapses to h/d past the first hour so it never reads
+ *  "2650 min ago". Mirrors lastCheckShort's thresholds but keeps a readable sentence. */
+export const checkedAgo = (min: number) => {
+  if (min < 1) return 'just now'
+  if (min < 60) return `${Math.round(min)} min ago`
+  if (min < 1440) return `${Math.round(min / 60)}h ago`
+  return `${Math.round(min / 1440)}d ago`
+}
+
 /** Minimal JSON syntax highlighting → trusted HTML string (input is our own seed data). */
 export function hlJson(value: unknown): string {
   const json = esc(JSON.stringify(value, null, 2))

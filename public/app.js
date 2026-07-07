@@ -15,10 +15,10 @@
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   }
 
-  /* client-side JSON highlighter — mirrors the SSR one */
-  function hlJson(value) {
-    var json = escHtml(JSON.stringify(value, null, 2))
-    return json.replace(
+  /* client-side JSON highlighter — mirrors the SSR one. hlJsonStr takes an already-stringified
+     JSON string (so we can highlight a trimmed slice); hlJson stringifies a value first. */
+  function hlJsonStr(jsonStr) {
+    return escHtml(jsonStr).replace(
       /("(?:\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(?:true|false|null)\b|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/g,
       function (m) {
         var cls = 'j-num'
@@ -27,6 +27,34 @@
         return '<span class="' + cls + '">' + m + '</span>'
       }
     )
+  }
+  function hlJson(value) {
+    return hlJsonStr(JSON.stringify(value, null, 2))
+  }
+
+  /* Render a live-probe response body. Parse the WHOLE response first, then pretty-print and
+     highlight it — trimming the FORMATTED output by whole lines so we never cut a token or fall
+     back to a raw single-line blob. Non-JSON bodies (HTML, plain text) show trimmed raw text. */
+  function renderJsonBody(bodyEl, text, maxChars) {
+    var value, isJson = true
+    try { value = JSON.parse(text) } catch (e) { isJson = false }
+    if (isJson) {
+      var pretty = JSON.stringify(value, null, 2)
+      if (pretty.length <= maxChars) { bodyEl.innerHTML = hlJsonStr(pretty); return }
+      var lines = pretty.split('\n'), keep = [], used = 0
+      for (var i = 0; i < lines.length && used + lines[i].length + 1 <= maxChars; i++) {
+        keep.push(lines[i]); used += lines[i].length + 1
+      }
+      bodyEl.innerHTML = hlJsonStr(keep.join('\n')) +
+        '\n<span class="j-punc">… truncated · showing ' + keep.length + ' of ' +
+        lines.length.toLocaleString() + ' lines (' + text.length.toLocaleString() + ' chars total)</span>'
+    } else {
+      var shown = text.length > maxChars ? text.slice(0, maxChars) : text
+      bodyEl.textContent = shown
+      if (text.length > maxChars) {
+        bodyEl.innerHTML += '\n<span class="j-punc">… truncated (' + text.length.toLocaleString() + ' chars total)</span>'
+      }
+    }
   }
 
   /* ---------- delegated clicks: copy · tabs · theme · menu ---------- */
@@ -64,12 +92,14 @@
     t = e.target.closest('[role="tab"]')
     if (t) { activateTab(t); return }
 
-    t = e.target.closest('#theme-toggle')
+    t = e.target.closest('[data-theme-toggle]')
     if (t) {
       var toLight = document.documentElement.getAttribute('data-theme') !== 'light'
       if (toLight) document.documentElement.setAttribute('data-theme', 'light')
       else document.documentElement.removeAttribute('data-theme')
-      t.setAttribute('aria-pressed', String(toLight))
+      // Keep every theme toggle in sync (top bar + the one in the mobile menu).
+      var toggles = document.querySelectorAll('[data-theme-toggle]')
+      for (var ti = 0; ti < toggles.length; ti++) toggles[ti].setAttribute('aria-pressed', String(toLight))
       try { localStorage.setItem('shipapis-theme', toLight ? 'light' : '') } catch (err) {}
       return
     }
@@ -439,15 +469,7 @@
               '<span class="k ' + cls + '">HTTP ' + res.status + '</span>' +
               '<span class="k">' + ms + ' MS</span>' +
               '<span class="k muted">FETCHED FROM YOUR BROWSER · JUST NOW</span>'
-            var shown = text.length > 4000 ? text.slice(0, 4000) : text
-            try {
-              bodyEl.innerHTML = hlJson(JSON.parse(shown))
-            } catch (err) {
-              bodyEl.textContent = shown
-            }
-            if (text.length > 4000) {
-              bodyEl.innerHTML += '\n<span class="j-punc">… truncated (' + text.length.toLocaleString() + ' chars total)</span>'
-            }
+            renderJsonBody(bodyEl, text, 8000)
           })
         })
         .catch(function (err) {
@@ -502,8 +524,7 @@
         statusEl.innerHTML =
           '<span class="k ' + (ok ? 'ok' : 'bad') + '">' + label + '</span>' +
           (ok ? '' : '<span class="k muted">A CORS BLOCK HERE DOESN\'T DISQUALIFY IT — WE VERIFY BEFORE LISTING</span>')
-        var shown = body.length > 2000 ? body.slice(0, 2000) : body
-        try { bodyEl.innerHTML = hlJson(JSON.parse(shown)) } catch (err) { bodyEl.textContent = shown }
+        renderJsonBody(bodyEl, body, 3000)
         data.browser_probe = (ok ? 'passed · ' : 'failed · ') + label.toLowerCase()
         var json = JSON.stringify(data, null, 2)
         var next = $('#submit-next')
@@ -619,6 +640,13 @@
 
   function openPalette(invoker) {
     if (!overlay) return
+    // Close the mobile hamburger menu if the palette was opened from inside it (the in-menu search).
+    var nm = $('#nav-menu')
+    if (nm && nm.classList.contains('open')) {
+      nm.classList.remove('open')
+      var mb = $('#menu-btn')
+      if (mb) mb.setAttribute('aria-expanded', 'false')
+    }
     lastInvoker = invoker || document.activeElement
     overlay.classList.add('open')
     pInput.value = ''

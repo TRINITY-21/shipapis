@@ -2,7 +2,7 @@ import type { FC } from 'hono/jsx'
 
 import { categoryBySlug, uptimePct, type ApiEntry } from '../../../data/seed'
 import { facetTokens, searchText } from '../../lib/browse'
-import { fmtAdded } from '../../lib/format'
+import { checkedAgo, fmtAdded } from '../../lib/format'
 import { ApiGlyph } from '../ApiGlyph'
 import { StatusBadge } from '../StatusBadge'
 import { UptimeBars } from '../UptimeBars'
@@ -37,7 +37,7 @@ export const ApiRow: FC<{ api: ApiEntry; added?: boolean }> = ({ api, added }) =
       <span class="num"><b>{uptimePct(api)}%</b></span>
       <span class="num">{api.p50 > 0 ? `${api.p50} ms` : '—'}</span>
       <span class="num">{api.auth === 'none' ? 'none' : api.auth}</span>
-      <span class="num">{api.lastCheckedMin}m ago</span>
+      <span class="num">{checkedAgo(api.lastCheckedMin)}</span>
     </a>
   )
 }

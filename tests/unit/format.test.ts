@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  checkedAgo,
   chipTone,
   dayLabel,
   daysSinceAdded,
@@ -65,6 +66,26 @@ describe('lastCheckShort', () => {
   it('rounds to days at a day or more', () => {
     expect(lastCheckShort(1440)).toBe('1d')
     expect(lastCheckShort(2880)).toBe('2d')
+  })
+})
+
+describe('checkedAgo', () => {
+  it('reads "just now" under a minute', () => {
+    expect(checkedAgo(0)).toBe('just now')
+    expect(checkedAgo(0.5)).toBe('just now')
+  })
+  it('keeps minutes under an hour', () => {
+    expect(checkedAgo(5)).toBe('5 min ago')
+    expect(checkedAgo(59)).toBe('59 min ago')
+  })
+  it('collapses to hours under a day', () => {
+    expect(checkedAgo(60)).toBe('1h ago')
+    expect(checkedAgo(90)).toBe('2h ago')
+  })
+  it('collapses to days beyond 24h — never "2650 min ago"', () => {
+    expect(checkedAgo(2650)).toBe('2d ago')
+    expect(checkedAgo(1440)).toBe('1d ago')
+    expect(checkedAgo(2650)).not.toContain('min')
   })
 })
 
