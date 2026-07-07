@@ -19,7 +19,7 @@ export const OgHomeCard: FC = () => {
           <span>shipapis</span>
         </div>
         <h1>
-          the free-api directory<br />
+          <span class="hero-h-line">the free-api directory</span><br />
           <span class="alive">with a pulse</span><span class="cursor og-cursor" aria-hidden="true" />
         </h1>
       </div>

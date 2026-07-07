@@ -52,7 +52,7 @@ export const Home: FC = () => {
           <div class="mast-grid">
             <div class="mast-copy">
               <h1 class="hero-h">
-                the free-api directory<br />
+                <span class="hero-h-line">the free-api directory</span><br />
                 <span class="alive">with a pulse</span><span class="cursor" aria-hidden="true" />
               </h1>
               <p class="hero-lead">

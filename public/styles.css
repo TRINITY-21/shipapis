@@ -462,6 +462,7 @@ input[type='search']::-webkit-search-cancel-button { -webkit-appearance: none; }
   line-height: 1.14;
 }
 .hero-h .alive { color: var(--accent); font-style: normal; }
+.hero-h-line { white-space: nowrap; }
 .cursor {
   display: inline-block;
   width: 0.46em;
@@ -2823,7 +2824,10 @@ a.row:hover { background: var(--bg-hover); }
   .search-pill { height: 40px; } /* match the 40px icon buttons + Star pill */
   .gh-btn { width: auto; flex-shrink: 0; }
   .nav-actions .btn-accent { min-height: 40px; padding: 0 12px; font-size: 10.5px; } /* match the 40px icon buttons */
-  .prompt input, .palette-input input, .sf-field input, .sf-pick .pick-trigger { font-size: 16px; }
+  /* iOS Safari auto-zooms into any focused control with font-size < 16px and never zooms back
+     out — keep every form control at 16px so the page can't get stuck zoomed in on phones. */
+  .prompt input, .palette-input input, .sf-field input, .sf-field select, .sf-pick .pick-trigger,
+  .signal-field input, .nl-strip .nl-row input { font-size: 16px; }
   .row-api { grid-template-columns: minmax(150px, 1.5fr) 76px 84px 92px; }
   .row-api > :nth-child(2), .row-api > :nth-child(5), .row-api > :nth-child(6) { display: none; }
   .row-sub { display: flex; }
@@ -2858,6 +2862,7 @@ a.row:hover { background: var(--bg-hover); }
   .footer-id { grid-column: auto; }
   .mast-meta .k + .k { display: none; }
   .mast-copy { padding-top: 40px; }
+  .hero-h { font-size: clamp(22px, 6.8vw, 27px); }
   .row-api { grid-template-columns: minmax(140px, 1.6fr) 84px 92px; }
   .row-api > :nth-child(3) { display: none; }
   .uptime-summary { flex-wrap: wrap; gap: 16px 22px; }

@@ -624,9 +624,10 @@
       return
     }
     pList.innerHTML = items.map(function (a, i) {
-      var icon = a.iconHost
-        ? '<img class="glyph-img" src="/icons/' + encodeURIComponent(a.iconHost) + '?sz=32&v=3" alt="" width="22" height="22" loading="lazy" decoding="async" onerror="this.closest(\'[data-api-glyph]\')?.classList.add(\'glyph-miss\')" />'
-        : ''
+      var fb = a.emoji ? '<span class="glyph-fb">' + a.emoji + '</span>' : ''
+      var icon = fb + (a.iconHost
+        ? '<img class="glyph-img" src="/icons/' + encodeURIComponent(a.iconHost) + '?sz=32&v=3" alt="" width="22" height="22" loading="lazy" decoding="async" onload="this.closest(\'[data-api-glyph]\')?.classList.add(\'glyph-ok\')" onerror="this.closest(\'[data-api-glyph]\')?.classList.add(\'glyph-miss\')" />'
+        : '')
       return (
         '<a class="palette-item' + (i === pSel ? ' sel' : '') + '" role="option" id="pal-opt-' + i + '" aria-selected="' + (i === pSel) + '" href="/api/' + a.slug + '">' +
         '<span class="glyph" data-api-glyph aria-hidden="true">' + icon + '</span>' +
