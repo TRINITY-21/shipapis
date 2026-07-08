@@ -227,7 +227,7 @@ export const Layout: FC<{
           <span class="footer-live"><b>●</b>&nbsp; {catalogCounts().monitored} PROBED · {catalogCounts().total} CATALOGUED</span>
           <span>© 2026 shipapis</span>
           <span>data <a href="/terms">CC-BY-4.0</a></span>
-          <span>no tracking scripts, no cookies</span>
+          <span>cookieless analytics, no ad trackers</span>
           <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a>
         </div>
       </footer>
@@ -277,6 +277,8 @@ export const Layout: FC<{
       </div>
       <script id="api-index" type="application/json" dangerouslySetInnerHTML={{ __html: buildApiIndex() }} />
       <script src="/app.js" defer />
+      {/* Cloudflare Web Analytics — cookieless, no client-side state; the beacon token is public by design. */}
+      <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={'{"token": "efb68a7bc53942bfb1ebb54c11e63714"}'} />
     </body>
   </html>
 )

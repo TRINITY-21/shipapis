@@ -2489,8 +2489,19 @@ a.row:hover { background: var(--bg-hover); }
   box-shadow: 0 0 0 3px var(--accent-dim);
 }
 .sf-field input::placeholder { color: var(--text-3); }
-.submit-next { margin-top: 24px; }
-.submit-next p { font-size: 14px; color: var(--text-2); max-width: 60ch; }
+.sf-turnstile { min-height: 65px; }
+.sf-fallback { margin-left: 14px; }
+.submit-result {
+  font-size: 13.5px;
+  color: var(--text-2);
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--bg-inset);
+}
+.submit-result.ok { border-color: color-mix(in srgb, var(--st-healthy) 45%, var(--rule)); }
+.submit-result.bad { border-color: color-mix(in srgb, var(--st-degraded) 45%, var(--rule)); }
+.submit-result a { color: var(--accent); }
 
 @media (max-width: 700px) {
   .sf-grid { grid-template-columns: 1fr; }

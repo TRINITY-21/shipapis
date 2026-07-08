@@ -5,7 +5,7 @@ import { breadcrumbLd } from '../lib/seo'
 export const PrivacyPage: FC = () => (
   <Layout
     title="Privacy — what we collect (very little) · shipapis"
-    desc="The shipapis privacy policy in plain language: no accounts, no cookies, no tracking scripts, no ads, no sale of data. Server logs and aggregate counters — that's it."
+    desc="The shipapis privacy policy in plain language: no accounts, no cookies, no ads, no sale of data. Cookieless analytics, server logs and aggregate counters — that's it."
     path="/privacy"
     jsonLd={breadcrumbLd([['Home', '/'], ['Privacy']])}
   >
@@ -18,8 +18,8 @@ export const PrivacyPage: FC = () => (
       <div class="panel mt-24 prose">
         <span class="k">The short version</span>
         <p>
-          No accounts, no cookies, no tracking scripts, no ads, no sale of data. We run a directory,
-          not an audience business.
+          No accounts, no cookies, no ads, no sale of data. The only analytics is Cloudflare's
+          cookieless, privacy-first Web Analytics. We run a directory, not an audience business.
         </p>
       </div>
 
@@ -31,16 +31,18 @@ export const PrivacyPage: FC = () => (
           service — Cloudflare processes these as our infrastructure provider.
         </p>
         <p>
-          <b>Aggregate counters.</b> We count requests to pages and API endpoints in aggregate,
-          without cookies or fingerprinting, to understand what's used.
+          <b>Cookieless analytics.</b> We use Cloudflare Web Analytics — a privacy-first, cookieless
+          beacon that counts page views and performance in aggregate. It sets no cookies, does no
+          cross-site tracking, and builds no profile of you.
         </p>
         <p>
           <b>Your theme choice.</b> Light/dark preference is stored in your browser's localStorage.
           It never leaves your device.
         </p>
         <p>
-          <b>Submissions.</b> If you submit an API, you email us the submission JSON — we keep that
-          email to process the listing.
+          <b>Submissions.</b> If you submit an API, we store what you send — the API details and,
+          only if you choose to give it, your email — to review the listing and reply. A Cloudflare
+          Turnstile check guards the form; it's a privacy-preserving CAPTCHA, not an ad tracker.
         </p>
       </div>
 

@@ -488,18 +488,68 @@
     })
   })
 
-  /* ---------- submit page: live validation probe ---------- */
+  /* ---------- submit page: live browser probe, then POST to the queue ---------- */
 
   var sform = $('#submit-form')
   if (sform) {
     var probeGen = 0
     var probeCtl = null
+    var resultEl = $('#submit-result')
+    var hasWidget = !!$('.cf-turnstile', sform)
+
+    function turnstileToken() {
+      var el = sform.querySelector('[name="cf-turnstile-response"]')
+      return el ? el.value : ''
+    }
+    function resetTurnstile() {
+      if (window.turnstile) { try { window.turnstile.reset() } catch (e) {} }
+    }
+    function showResult(kind, html) {
+      if (!resultEl) return
+      resultEl.hidden = false
+      resultEl.className = 'submit-result mt-16 ' + kind
+      resultEl.innerHTML = html
+      resultEl.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' })
+    }
+
+    function sendSubmission(data, goBtn) {
+      showResult('pending', '<span class="k">SUBMITTING…</span>')
+      fetch('/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then(function (res) { return res.json().then(function (b) { return { ok: res.ok, b: b } }, function () { return { ok: res.ok, b: {} } }) })
+        .then(function (r) {
+          if (goBtn) goBtn.disabled = false
+          if (r.ok && r.b && r.b.ok) {
+            showResult('ok', '<span class="k ok">✓ SUBMITTED</span> ' + escHtml(r.b.message || 'In the review queue — re-verified before it lists.'))
+            sform.reset()
+          } else {
+            showResult('bad', '<span class="k bad">✕ NOT SUBMITTED</span> ' + escHtml((r.b && r.b.error) || 'Something went wrong.') +
+              ' <span class="k muted">— or email <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a></span>')
+          }
+          resetTurnstile()
+        })
+        .catch(function () {
+          if (goBtn) goBtn.disabled = false
+          showResult('bad', '<span class="k bad">✕ NETWORK ERROR</span> <span class="k muted">please retry, or email <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a></span>')
+          resetTurnstile()
+        })
+    }
+
     sform.addEventListener('submit', function (e) {
       e.preventDefault()
-      if (probeCtl) probeCtl.abort() /* a resubmit supersedes any in-flight probe */
-      var gen = ++probeGen
       var data = {}
       new FormData(sform).forEach(function (v, k) { data[k] = String(v).trim() })
+
+      if (hasWidget && !turnstileToken()) {
+        showResult('bad', '<span class="k bad">✕</span> <span class="k muted">complete the challenge above, then submit again</span>')
+        return
+      }
+
+      if (probeCtl) probeCtl.abort() /* a resubmit supersedes any in-flight probe */
+      var gen = ++probeGen
       var out = $('.try-out', sform)
       var statusEl = $('.try-status', out)
       var bodyEl = $('.try-body', out)
@@ -517,26 +567,18 @@
       var timer = setTimeout(function () { ctl.abort() }, 8000)
       var t0 = performance.now()
 
-      function probeDone(label, ok, body) {
+      /* Show the browser-probe result, then POST the submission (probe outcome attached — a CORS
+         block never blocks the submission; our checker verifies server-side before listing). */
+      function afterProbe(label, ok, body) {
         if (gen !== probeGen) return /* superseded by a newer probe */
-        if (goBtn) goBtn.disabled = false
         bodyEl.classList.remove('skeleton')
         statusEl.innerHTML =
           '<span class="k ' + (ok ? 'ok' : 'bad') + '">' + label + '</span>' +
           (ok ? '' : '<span class="k muted">A CORS BLOCK HERE DOESN\'T DISQUALIFY IT — WE VERIFY BEFORE LISTING</span>')
         renderJsonBody(bodyEl, body, 3000)
         data.browser_probe = (ok ? 'passed · ' : 'failed · ') + label.toLowerCase()
-        var json = JSON.stringify(data, null, 2)
-        var next = $('#submit-next')
-        $('#submission-json').textContent = json
-        $('#submission-copy').setAttribute('data-copy', json)
-        $('#submit-mail').setAttribute(
-          'href',
-          'mailto:hello@shipapis.dev?subject=' + encodeURIComponent('API submission: ' + data.name) +
-            '&body=' + encodeURIComponent(json)
-        )
-        next.hidden = false
-        next.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' })
+        data['cf-turnstile-response'] = turnstileToken()
+        sendSubmission(data, goBtn)
       }
 
       fetch(url, { signal: ctl.signal })
@@ -544,13 +586,13 @@
           return res.text().then(function (text) {
             clearTimeout(timer)
             var ms = Math.round(performance.now() - t0)
-            probeDone('HTTP ' + res.status + ' · ' + ms + ' MS', res.ok, text)
+            afterProbe('HTTP ' + res.status + ' · ' + ms + ' MS', res.ok, text)
           })
         })
         .catch(function (err) {
           clearTimeout(timer)
           if (gen === probeGen) {
-            probeDone(err.name === 'AbortError' ? 'TIMEOUT AFTER 8S' : 'BLOCKED — CORS OR NETWORK', false, String(err))
+            afterProbe(err.name === 'AbortError' ? 'TIMEOUT AFTER 8S' : 'BLOCKED — CORS OR NETWORK', false, String(err))
           }
         })
     })

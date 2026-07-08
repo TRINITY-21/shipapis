@@ -66,7 +66,7 @@ export function registerPages(app: Hono<{ Bindings: Env }>) {
   // instead of leaving a duplicate 200 (the canonical already points here, but a 301 is stronger).
   app.get('/developers', (c) => c.redirect('/agents', 301))
   app.get('/methodology', (c) => c.html(<MethodologyPage />))
-  app.get('/submit', (c) => c.html(<SubmitPage />))
+  app.get('/submit', (c) => c.html(<SubmitPage siteKey={c.env.TURNSTILE_SITEKEY} />))
   app.get('/about', (c) => c.html(<AboutPage />))
   app.get('/privacy', (c) => c.html(<PrivacyPage />))
   app.get('/terms', (c) => c.html(<TermsPage />))

@@ -8,6 +8,7 @@ import { registerIcons } from './routes/icons'
 import { registerMcp } from './routes/mcp'
 import { registerOgCard } from './routes/og-card'
 import { registerPages } from './routes/pages'
+import { registerSubmit } from './routes/submit'
 import type { Env } from './workers/env'
 
 export function createApp() {
@@ -62,6 +63,7 @@ export function createApp() {
   registerApiV1(app)
   app.route('/', agentSurfaces)
   registerIcons(app)
+  registerSubmit(app)
   registerPages(app)
   registerBadge(app)
   registerOgCard(app)

@@ -5,7 +5,7 @@ import { PickMenu } from '../components/PickMenu'
 import { Layout } from '../layout/Layout'
 import { breadcrumbLd } from '../lib/seo'
 
-export const SubmitPage: FC = () => (
+export const SubmitPage: FC<{ siteKey?: string }> = ({ siteKey }) => (
   <Layout
     title="Submit a free API — live-validated before it queues · shipapis"
     desc="Submit a free public API to the shipapis directory. Your endpoint is probed live before it queues and verified again before listing."
@@ -72,38 +72,47 @@ export const SubmitPage: FC = () => (
               ariaLabel="Auth type"
             />
           </label>
+          <label class="sf-field">
+            <span class="k">Your email · optional</span>
+            <input name="email" type="email" placeholder="you@ship.dev — only if you want a reply" autocomplete="email" />
+          </label>
           <label class="sf-field sf-wide">
             <span class="k">Notes · optional</span>
             <input name="notes" type="text" placeholder="rate limits, license, anything we should know" autocomplete="off" />
           </label>
         </div>
-        <div class="actions mt-16">
-          <button type="submit" class="btn btn-accent">▶ Validate — live probe from your browser</button>
+
+        {/* Honeypot — off-screen, not for humans. A filled value is silently dropped server-side. */}
+        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+          <label>
+            Company
+            <input name="company" type="text" tabindex={-1} autocomplete="off" />
+          </label>
         </div>
+
+        {siteKey ? (
+          <div class="sf-turnstile mt-16" data-sitekey={siteKey}>
+            <div class="cf-turnstile" data-sitekey={siteKey} data-theme="auto" />
+          </div>
+        ) : null}
+
+        <div class="actions mt-16">
+          <button type="submit" class="btn btn-accent">▶ Validate & submit</button>
+          <span class="k muted sf-fallback">
+            or email <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a>
+          </span>
+        </div>
+
         <div class="codeblock try-out mt-16" hidden>
           <div class="try-status" aria-live="polite" />
           <pre>
             <code class="try-body" />
           </pre>
         </div>
-        <div id="submit-next" class="submit-next" hidden>
-          <p>
-            Submissions queue opens with the public beta — until then this goes straight to a human,
-            probe result attached:
-          </p>
-          <div class="codeblock mt-8">
-            <button type="button" class="copy" id="submission-copy" data-copy="">COPY</button>
-            <pre>
-              <code id="submission-json" />
-            </pre>
-          </div>
-          <div class="actions mt-16">
-            <a class="btn btn-accent" id="submit-mail" href="mailto:hello@shipapis.dev">
-              Email it<Chev /> hello@shipapis.dev
-            </a>
-          </div>
-        </div>
+
+        <div id="submit-result" class="submit-result mt-16" role="status" aria-live="polite" hidden />
       </form>
     </div>
+    {siteKey ? <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer /> : null}
   </Layout>
 )

@@ -12,6 +12,11 @@
   "routes": [
     { "pattern": "shipapis.dev", "custom_domain": true }
   ],
+  // Turnstile sitekey is public (rendered into the /submit widget). The matching secret is NOT here —
+  // it lives in the encrypted secret store (wrangler secret put TURNSTILE_SECRET_KEY).
+  "vars": {
+    "TURNSTILE_SITEKEY": "0x4AAAAAADx63yswQhUgQ1Yz"
+  },
   "observability": {
     "enabled": true
   },
