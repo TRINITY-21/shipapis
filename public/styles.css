@@ -1908,6 +1908,29 @@ a.row:hover { background: var(--bg-hover); }
 }
 .nl-row input:focus { border-color: var(--accent-live); box-shadow: 0 0 0 3px var(--accent-dim); }
 .nl-row input::placeholder { color: var(--text-3); }
+/* post-subscribe confirmation — replaces the .nl-row so it's clear you're on the list */
+.nl-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  margin-top: 12px;
+  padding: 9px 14px;
+  border-radius: var(--r-m);
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-live);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+  line-height: 1.4;
+  animation: nl-pop 0.22s ease-out;
+}
+.nl-done svg { color: var(--accent-live); flex: none; }
+@keyframes nl-pop { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
 .footer .newsletter { margin-top: 22px; max-width: 340px; }
 /* Mobile: stack the email form full-width with a comfortable tap target. */
 @media (max-width: 560px) {
