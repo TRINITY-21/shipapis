@@ -51,8 +51,9 @@ export function createApp() {
   app.use('/agents.md', machineHeaders)
   app.use('/robots.txt', machineHeaders)
   app.use('/sitemap.xml', machineHeaders)
-  app.use('/feed.json', machineHeaders)
   app.use('/feed.xml', machineHeaders)
+  app.use('/graveyard.xml', machineHeaders)
+  app.use('/changes.xml', machineHeaders)
 
   // Registered AFTER the middleware above so /mcp is wrapped by withCatalog (the D1 read path) and
   // machineHeaders (CORS + no-store) — Hono only applies middleware to routes registered after it.

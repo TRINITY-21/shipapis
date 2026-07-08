@@ -77,19 +77,29 @@ describe('text/xml agent surfaces', () => {
     expect(text.length).toBeGreaterThan(100)
   })
 
-  it('robots.txt allows crawling and points at the sitemap', async () => {
+  it('robots.txt allows crawling, welcomes AI crawlers, and points at the sitemap', async () => {
     const { res, text } = await getText('/robots.txt')
     expect(res.status).toBe(200)
-    expect(text).toContain('User-agent:')
+    expect(text).toContain('User-agent: *')
+    // AI answer-engine crawlers are explicitly named (some only honor their own record).
+    for (const bot of ['GPTBot', 'OAI-SearchBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended']) {
+      expect(text, bot).toContain(`User-agent: ${bot}`)
+    }
     expect(text).toContain('Sitemap: https://shipapis.dev/sitemap.xml')
   })
 
-  it('sitemap.xml is a well-formed urlset', async () => {
+  it('sitemap.xml is a well-formed urlset with real per-URL lastmod', async () => {
     const { res, text } = await getText('/sitemap.xml')
     expect(res.status).toBe(200)
     expect(res.headers.get('content-type')).toContain('xml')
     expect(text).toContain('<urlset')
     expect(text).toContain('https://shipapis.dev/api/')
+    expect(text).toContain('https://shipapis.dev/c/')
+    // Data-tracking pages carry an ISO lastmod (data-derived, not a uniform fake stamp).
+    expect(text).toMatch(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/)
+    // Compare pages are gated to monitored pairs, so the sitemap never explodes into thin templates.
+    const compareCount = (text.match(/\/compare\//g) ?? []).length
+    expect(compareCount).toBeLessThan(2000)
   })
 
   it('feed.xml is an RSS/XML feed', async () => {

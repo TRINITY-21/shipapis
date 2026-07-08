@@ -7,6 +7,7 @@ export const PrivacyPage: FC = () => (
     title="Privacy — what we collect (very little) · shipapis"
     desc="The shipapis privacy policy in plain language: no accounts, no cookies, no tracking scripts, no ads, no sale of data. Server logs and aggregate counters — that's it."
     path="/privacy"
+    jsonLd={breadcrumbLd([['Home', '/'], ['Privacy']])}
   >
     <div class="wrap">
       <div class="page-head">

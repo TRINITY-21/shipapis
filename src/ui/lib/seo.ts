@@ -18,6 +18,8 @@ export const ORG_LD = {
   name: 'shipapis',
   url: SITE,
   email: 'hello@shipapis.dev',
+  // Other canonical presences — ties this entity together for the knowledge graph / AI citations.
+  sameAs: ['https://github.com/TRINITY-21/shipapis'],
   description: 'An independent directory of free public APIs with live health checks on probed endpoints. No paid placement, published methodology.',
 }
 

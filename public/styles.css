@@ -974,6 +974,7 @@ a.row:hover { background: var(--bg-hover); }
 
 /* facet tags — sharp, functional */
 .facets { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 18px 0 22px; }
+.facets-scroll { display: contents; }
 
 /* category pick menu — facet chip trigger + ruled panel; sits at the toolbar's right edge */
 .facet-menu { position: relative; margin-left: auto; flex: none; }
@@ -1840,8 +1841,8 @@ a.row:hover { background: var(--bg-hover); }
 }
 .footer-inner {
   display: grid;
-  grid-template-columns: minmax(280px, 1.35fr) repeat(3, minmax(150px, 1fr));
-  gap: 48px;
+  grid-template-columns: minmax(260px, 1.2fr) repeat(4, minmax(136px, 1fr));
+  gap: 40px;
   align-items: start;
   /* longhand only — a padding shorthand here would wipe .wrap's horizontal padding and
      shift the footer out of alignment with the content column */
@@ -1862,6 +1863,10 @@ a.row:hover { background: var(--bg-hover); }
   transition: color var(--t-fast);
 }
 .footer-col a:hover { color: var(--text); }
+/* muted per-category count in the footer Top-categories column */
+.footer-cat-n { color: var(--text-3); font-size: 11px; }
+.footer-col a:hover .footer-cat-n { color: var(--text-2); }
+.footer-cat-all { color: var(--text-3); }
 
 /* legal strip — the footer's own meta rule; telemetry lives here, not in the identity column */
 .footer-legal {
@@ -2489,6 +2494,8 @@ a.row:hover { background: var(--bg-hover); }
 
 @media (max-width: 700px) {
   .sf-grid { grid-template-columns: 1fr; }
+  /* long CTA label can't fit one line on phones — go full-width and let it wrap */
+  .actions .btn { width: 100%; justify-content: center; text-align: center; white-space: normal; min-height: 48px; }
 }
 
 /* ---------- Keyboard help (?) — floats like the palette ---------- */
@@ -2841,7 +2848,35 @@ a.row:hover { background: var(--bg-hover); }
     padding: 12px 16px 14px;
   }
   .cat-stats .ms:nth-child(3n) { border-right: none; }
-  .footer-inner { grid-template-columns: repeat(3, 1fr); gap: 36px 28px; }
+  /* facet chips scroll on one line; category dropdown full-width on its own row below.
+     block (not flex column) so the scroll strip sizes by normal block flow — a flex-item
+     scroll container with nowrap content ignores the stretch clamp and blows out page width. */
+  .facets { display: block; margin: 18px 0 22px; }
+  .facets-scroll {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+    margin: 0 calc(-1 * var(--pad-page));
+    padding-left: var(--pad-page);
+    padding-right: var(--pad-page);
+  }
+  .facets-scroll::-webkit-scrollbar { display: none; }
+  .facets-scroll .facet { white-space: nowrap; flex: none; }
+  .facet-menu {
+    margin-top: 10px;
+    width: 100%;
+    flex: none;
+  }
+  .facet-menu .pick-trigger.facet {
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .facet-menu .pick-panel { left: 0; right: 0; width: auto; max-width: none; }
+  .footer-inner { grid-template-columns: repeat(2, 1fr); gap: 36px 28px; }
   .footer-id { grid-column: 1 / -1; }
   /* keep the epitaph — it's the emotional hook — and restack it under the name */
   .gy-row { grid-template-columns: minmax(0, 1fr) 130px; row-gap: 4px; }
@@ -2852,8 +2887,9 @@ a.row:hover { background: var(--bg-hover); }
 }
 
 @media (max-width: 560px) {
-  .nav-inner { gap: 14px; }
-  .nav-actions { gap: 8px; }
+  .nav-inner { gap: 12px; flex-wrap: nowrap; min-width: 0; }
+  .nav-start { min-width: 0; }
+  .nav-actions { gap: 8px; flex: none; }
   .search-pill, #theme-toggle { display: none; } /* fold into the hamburger menu on mobile */
   .nav-actions .btn-accent { min-height: 40px; padding: 0 11px; font-size: 10.5px; }
   .nav-submit-long { display: none; }
@@ -2865,18 +2901,12 @@ a.row:hover { background: var(--bg-hover); }
   .hero-h { font-size: clamp(22px, 6.8vw, 27px); }
   .row-api { grid-template-columns: minmax(140px, 1.6fr) 84px 92px; }
   .row-api > :nth-child(3) { display: none; }
-  .uptime-summary { flex-wrap: wrap; gap: 16px 22px; }
   .cat-stats { display: grid; grid-template-columns: 1fr 1fr; border-top: none; }
   .cat-stats .ms { border-top: 1px solid var(--border); border-right: none; margin-right: 0; padding: 12px 0 10px; }
   .cat-stats .ms:nth-child(odd) { border-right: 1px solid var(--border); padding-right: 18px; }
   .cat-stats .ms:nth-child(even) { padding-left: 18px; }
   .cat-stats .ms:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: none; padding-left: 0; }
   .cat-stats .ms b { font-size: 18px; }
-  /* facet toolbar becomes one scrollable strip; the dropdown stays in the flow */
-  .facets { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
-  .facets::-webkit-scrollbar { display: none; }
-  .facets .facet { white-space: nowrap; flex: none; }
-  .facet-menu { margin-left: 0; }
   .quick { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; }
   .quick::-webkit-scrollbar { display: none; }
   .quick a { white-space: nowrap; flex: none; }
@@ -2901,7 +2931,7 @@ a.row:hover { background: var(--bg-hover); }
   .detail-actions .btn { flex: none; width: 100%; }
   .detail-badge { grid-area: badge; align-items: flex-start; border-top: none; padding-top: 0; }
   .score-block { grid-area: score; align-items: center; }
-  .uptime-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .uptime-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
   .uptime-summary.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .uptime-summary .cell:nth-child(2) { border-right: none; }
   .uptime-summary.cols-3 .cell:nth-child(2) { border-right: 1px solid var(--border); }
@@ -2921,6 +2951,12 @@ a.row:hover { background: var(--bg-hover); }
   }
   .detail-nav a { white-space: nowrap; flex: none; }
   .ep-desc { padding-left: 0; }
+}
+
+/* very narrow phones (≤360px): brand + GitHub + Submit + menu no longer fit one bar,
+   so drop the secondary GitHub star (still reachable in the footer) */
+@media (max-width: 360px) {
+  .nav-actions .gh-btn { display: none; }
 }
 
 /* ---------- Agent layer (agent-first hero block + detail paste panel) ---------- */

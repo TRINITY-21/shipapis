@@ -406,23 +406,23 @@ User-agent: *
 Allow: /
 Disallow: /og-card/
 
+# AI answer engines, assistants and training crawlers — retrieval and training both welcome.
+# (One ruleset shared across the user-agents below; some AI bots only read their own record.)
 User-agent: GPTBot
-Allow: /
-Disallow: /og-card/
-
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
 User-agent: ClaudeBot
-Allow: /
-Disallow: /og-card/
-
 User-agent: Claude-User
-Allow: /
-Disallow: /og-card/
-
+User-agent: anthropic-ai
 User-agent: PerplexityBot
-Allow: /
-Disallow: /og-card/
-
+User-agent: Perplexity-User
 User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: Meta-ExternalAgent
+User-agent: cohere-ai
+User-agent: DuckAssistBot
+User-agent: CCBot
 Allow: /
 Disallow: /og-card/
 
@@ -434,22 +434,47 @@ Sitemap: ${SITE}/sitemap.xml
 )
 
 agentSurfaces.get('/sitemap.xml', (c) => {
-  const staticPaths = ['/', '/start', '/browse', '/changelog', '/state', '/graveyard', '/signals', '/agents', '/methodology', '/submit', '/about', '/privacy', '/terms']
   const apiLastmod = (a: ApiEntry) => {
     const dates = [a.addedAt, ...(a.diedAt ? [a.diedAt] : []), ...a.shapeChanges.map((s) => s.date)]
     return dates.sort().at(-1)!
   }
-  // Same-category compare pages, slug-alphabetical — matches each page's canonical, so no dup entries.
+  const apis = catApis()
+  // Real, data-derived lastmod only — uniform fake stamps are apimap's tell. Global freshness = the
+  // most recent change anywhere; category freshness = the newest change among its members.
+  const latest = apis.map(apiLastmod).sort().at(-1)
+  const deadLatest = catDeadApis().map((a) => a.diedAt!).sort().at(-1)
+  const catLastmod = (slug: string) => catApisInCategory(slug).map(apiLastmod).sort().at(-1)
+  const loc = (path: string, lastmod?: string) =>
+    `<url><loc>${SITE}${path}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`
+
+  // Pages whose content tracks the live catalog carry a real lastmod; static info pages carry none
+  // (a lastmod we can't honestly source is worse than omitting it).
+  const dynamicPaths: Array<readonly [string, string | undefined]> = [
+    ['/', latest],
+    ['/browse', latest],
+    ['/state', latest],
+    ['/signals', latest],
+    ['/changelog', latest],
+    ['/graveyard', deadLatest],
+  ]
+  const staticPaths = ['/start', '/agents', '/methodology', '/submit', '/about', '/privacy', '/terms']
+
+  // Compare pages are submitted ONLY when we hold health data for BOTH APIs (and they share a
+  // category — the loop enforces that). Between two unmonitored rows the sheet is a near-empty
+  // template; shipping ~40k of those is the publicapis.io thin-page trap (MASTERPLAN §5.2). The
+  // routes stay reachable for internal "VS" links — they're just kept out of the index until they
+  // carry real signal. Slug-alphabetical matches each page's canonical, so no dup entries.
   const comparePaths = categories.flatMap((cat) => {
-    const slugs = catApisInCategory(cat.slug).map((a) => a.slug).sort()
+    const slugs = catApisInCategory(cat.slug).filter(isMonitored).map((a) => a.slug).sort()
     return slugs.flatMap((a, i) => slugs.slice(i + 1).map((b) => `/compare/${a}/${b}`))
   })
-  // Real lastmod only where we actually know it (API records) — uniform fake stamps are apimap's tell.
+
   const urls = [
-    ...staticPaths.map((p) => `<url><loc>${SITE}${p}</loc></url>`),
-    ...categories.map((cat) => `<url><loc>${SITE}/c/${cat.slug}</loc></url>`),
-    ...catApis().map((a) => `<url><loc>${SITE}/api/${a.slug}</loc><lastmod>${apiLastmod(a)}</lastmod></url>`),
-    ...comparePaths.map((p) => `<url><loc>${SITE}${p}</loc></url>`),
+    ...dynamicPaths.map(([p, lm]) => loc(p, lm)),
+    ...staticPaths.map((p) => loc(p)),
+    ...categories.map((cat) => loc(`/c/${cat.slug}`, catLastmod(cat.slug))),
+    ...apis.map((a) => loc(`/api/${a.slug}`, apiLastmod(a))),
+    ...comparePaths.map((p) => loc(p)),
   ]
   return c.body(
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>`,

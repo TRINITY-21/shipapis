@@ -7,6 +7,7 @@ export const TermsPage: FC = () => (
     title="Terms — use the data, mind the caveats · shipapis"
     desc="shipapis terms in plain language: catalog and health data are CC-BY-4.0, the meta-API is free and no-auth, and health scores are measurements — not promises."
     path="/terms"
+    jsonLd={breadcrumbLd([['Home', '/'], ['Terms']])}
   >
     <div class="wrap">
       <div class="page-head">

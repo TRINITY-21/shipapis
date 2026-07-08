@@ -28,7 +28,12 @@ export function registerPages(app: Hono<{ Bindings: Env }>) {
   app.get('/browse', (c) => {
     const sort = c.req.query('sort')
     const facet = c.req.query('facet')
-    if (!sort && !facet) return c.redirect('/browse?facet=monitored', 302)
+    if (!sort && !facet) {
+      // Default view is probed-only, but a deep-linked ?q= (the WebSite SearchAction target and any
+      // shared search URL) must survive the redirect so app.js can apply it client-side.
+      const q = c.req.query('q')
+      return c.redirect(q ? `/browse?facet=monitored&q=${encodeURIComponent(q)}` : '/browse?facet=monitored', 302)
+    }
     return c.html(<BrowsePage sort={sort} facet={facet} />)
   })
 
@@ -57,7 +62,9 @@ export function registerPages(app: Hono<{ Bindings: Env }>) {
   app.get('/state', (c) => c.html(<StatePage />))
   app.get('/start', (c) => c.html(<StartPage />))
   app.get('/agents', (c) => c.html(<DevelopersPage />))
-  app.get('/developers', (c) => c.html(<DevelopersPage />))
+  // /developers is the pre-rename URL — 301 so any old inbound links consolidate onto /agents
+  // instead of leaving a duplicate 200 (the canonical already points here, but a 301 is stronger).
+  app.get('/developers', (c) => c.redirect('/agents', 301))
   app.get('/methodology', (c) => c.html(<MethodologyPage />))
   app.get('/submit', (c) => c.html(<SubmitPage />))
   app.get('/about', (c) => c.html(<AboutPage />))

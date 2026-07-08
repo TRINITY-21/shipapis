@@ -1,4 +1,5 @@
 import type { FC } from 'hono/jsx'
+import { isMonitored } from '../../data/catalog'
 import type { ApiEntry } from '../../data/seed'
 import { ApiGlyph } from '../components/ApiGlyph'
 import { BarsLegend } from '../components/BarsLegend'
@@ -22,6 +23,10 @@ export const ComparePage: FC<{ a: ApiEntry; b: ApiEntry }> = ({ a, b }) => {
     return (dir === 'good-high' ? na > nb : na < nb) ? 0 : 1
   }
   const faq = compareFaqItems(a, b)
+  // Only worth indexing when the sheet compares real measurements: both APIs monitored AND in the
+  // same category (a cross-category or unmonitored-vs-unmonitored compare is a thin template — the
+  // publicapis.io penalty trap). Still fully rendered for humans; just kept out of the index.
+  const indexable = a.category === b.category && isMonitored(a) && isMonitored(b)
   return (
     <Layout
       title={`${a.name} vs ${b.name} — live health compared · shipapis`}
@@ -29,6 +34,7 @@ export const ComparePage: FC<{ a: ApiEntry; b: ApiEntry }> = ({ a, b }) => {
       path={`/compare/${a.slug}/${b.slug}`}
       /* /compare/a/b and /compare/b/a are the same sheet mirrored — canonical is slug-alphabetical */
       canonical={`/compare/${[a.slug, b.slug].sort().join('/')}`}
+      noindex={!indexable}
       jsonLd={[breadcrumbLd([['Home', '/'], [`${a.name} vs ${b.name}`]]), faqLd(faq)]}
     >
       <div class="wrap">

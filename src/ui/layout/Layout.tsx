@@ -1,5 +1,6 @@
 import type { Child, FC } from 'hono/jsx'
 import { catalogCounts } from '../../data/catalog'
+import { categoryCounts } from '../../data/shapes'
 import { Logo } from '../components/Logo'
 import { DEFAULT_DESC, FAVICON, PRIMARY_NAV, SITE, THEME_BOOT } from '../lib/constants'
 import { jsonLdStr } from '../lib/format'
@@ -39,7 +40,10 @@ export const Layout: FC<{
       {noindex ? (
         <meta name="robots" content="noindex, nofollow" />
       ) : (
-        <link rel="canonical" href={`${SITE}${canonical ?? path}`} />
+        <>
+          <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+          <link rel="canonical" href={`${SITE}${canonical ?? path}`} />
+        </>
       )}
       <meta name="theme-color" content="#f6f7f8" media="(prefers-color-scheme: light)" />
       <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)" />
@@ -190,6 +194,18 @@ export const Layout: FC<{
             <a href="/changelog">Changelog</a>
             <a href="/graveyard">Graveyard</a>
             <a href="/methodology">Methodology</a>
+          </div>
+          <div class="footer-col">
+            <span class="k">Top categories</span>
+            {categoryCounts()
+              .sort((a, b) => b.apis - a.apis)
+              .slice(0, 7)
+              .map((c) => (
+                <a href={`/c/${c.slug}`}>
+                  {c.name} <span class="footer-cat-n">{c.apis}</span>
+                </a>
+              ))}
+            <a href="/browse" class="footer-cat-all">All APIs →</a>
           </div>
           <div class="footer-col">
             <span class="k">Developers</span>

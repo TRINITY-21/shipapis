@@ -20,18 +20,20 @@ export const FacetRow: FC<{ count: number; active?: string; cats?: boolean }> = 
   ]
   return (
     <div class="facets" role="group" aria-label="Filters">
-      <button class={`facet${hasActive ? '' : ' on'}`} data-facet="all" aria-pressed={hasActive ? 'false' : 'true'}>
-        All · {count}
-      </button>
-      {FACET_DEFS.map(([token, label]) => (
-        <button
-          class={`facet${token === active ? ' on' : ''}`}
-          data-facet={token}
-          aria-pressed={token === active ? 'true' : 'false'}
-        >
-          {label}
+      <div class="facets-scroll">
+        <button class={`facet${hasActive ? '' : ' on'}`} data-facet="all" aria-pressed={hasActive ? 'false' : 'true'}>
+          All · {count}
         </button>
-      ))}
+        {FACET_DEFS.map(([token, label]) => (
+          <button
+            class={`facet${token === active ? ' on' : ''}`}
+            data-facet={token}
+            aria-pressed={token === active ? 'true' : 'false'}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
       {cats && (
         <PickMenu
           id="cat-menu"

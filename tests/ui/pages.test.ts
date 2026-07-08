@@ -109,8 +109,23 @@ describe('routing & error pages', () => {
     }
   })
 
-  it('serves /developers as an alias of /agents', async () => {
+  it('301-redirects the pre-rename /developers onto /agents', async () => {
     const res = await req('/developers')
-    expect(res.status).toBe(200)
+    expect(res.status).toBe(301)
+    expect(res.headers.get('location')).toBe('/agents')
+  })
+
+  it('preserves a deep-linked ?q= through the /browse default redirect (SearchAction target)', async () => {
+    const res = await req('/browse?q=weather')
+    expect(res.status).toBe(302)
+    const loc = res.headers.get('location') ?? ''
+    expect(loc).toContain('facet=monitored')
+    expect(loc).toContain('q=weather')
+  })
+
+  it('redirects a not-yet-rendered OG card to the site card instead of 404ing', async () => {
+    const res = await req('/og/api-does-not-exist.png')
+    expect(res.status).toBe(302)
+    expect(res.headers.get('location')).toBe('/og/home.png')
   })
 })
