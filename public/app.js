@@ -15,6 +15,27 @@
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   }
 
+  /* GA4 custom events — no-op when gtag isn't loaded (local / GA_MEASUREMENT_ID unset).
+     Fire only conversion signals: submit · try console · copy. Never send emails or free text. */
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return
+    try { window.gtag('event', name, params || {}) } catch (err) { /* analytics must never break UX */ }
+  }
+
+  function pageApiSlug() {
+    var m = location.pathname.match(/^\/api\/([^/]+)/)
+    return m ? m[1] : undefined
+  }
+
+  function copyKind(el) {
+    var explicit = el.getAttribute('data-track')
+    if (explicit) return explicit
+    if (el.classList.contains('copy-md')) return 'badge_markdown'
+    if (el.classList.contains('copyable')) return 'base_url'
+    if (el.classList.contains('ep-copy')) return 'endpoint_url'
+    return 'snippet'
+  }
+
   /* client-side JSON highlighter — mirrors the SSR one. hlJsonStr takes an already-stringified
      JSON string (so we can highlight a trimmed slice); hlJson stringifies a value first. */
   function hlJsonStr(jsonStr) {
@@ -80,11 +101,16 @@
 
     t = e.target.closest('[data-copy]')
     if (t) {
-      navigator.clipboard.writeText(t.getAttribute('data-copy')).then(function () {
+      var copyPayload = t.getAttribute('data-copy')
+      navigator.clipboard.writeText(copyPayload).then(function () {
         var old = t.textContent
         t.classList.add('did')
         t.textContent = 'COPIED'
         setTimeout(function () { t.classList.remove('did'); t.textContent = old }, 1400)
+        var params = { kind: copyKind(t), length: copyPayload ? copyPayload.length : 0 }
+        var slug = pageApiSlug()
+        if (slug) params.api_slug = slug
+        track('copy', params)
       })
       return
     }
@@ -470,15 +496,28 @@
               '<span class="k">' + ms + ' MS</span>' +
               '<span class="k muted">FETCHED FROM YOUR BROWSER · JUST NOW</span>'
             renderJsonBody(bodyEl, text, 8000)
+            track('try_console', {
+              api_slug: pageApiSlug(),
+              ok: res.ok,
+              status: res.status,
+              latency_ms: ms,
+            })
           })
         })
         .catch(function (err) {
           clearTimeout(timer)
-          var why = err.name === 'AbortError'
+          var timedOut = err.name === 'AbortError'
+          var why = timedOut
             ? 'TIMEOUT AFTER 8S'
             : 'BLOCKED — LIKELY CORS OR NETWORK. THE CURL SNIPPET WILL STILL WORK.'
           statusEl.innerHTML = '<span class="k bad">FAILED</span><span class="k muted">' + why + '</span>'
           bodyEl.textContent = String(err)
+          track('try_console', {
+            api_slug: pageApiSlug(),
+            ok: false,
+            error: timedOut ? 'timeout' : 'cors_or_network',
+            latency_ms: Math.round(performance.now() - t0),
+          })
         })
         .finally(function () {
           bodyEl.classList.remove('skeleton')
@@ -525,15 +564,23 @@
           if (r.ok && r.b && r.b.ok) {
             showResult('ok', '<span class="k ok">✓ SUBMITTED</span> ' + escHtml(r.b.message || 'In the review queue — re-verified before it lists.'))
             sform.reset()
+            track('api_submit', {
+              ok: true,
+              auth: data.auth || 'none',
+              category: data.category || undefined,
+              browser_probe: data.browser_probe ? (data.browser_probe.indexOf('passed') === 0 ? 'passed' : 'failed') : undefined,
+            })
           } else {
             showResult('bad', '<span class="k bad">✕ NOT SUBMITTED</span> ' + escHtml((r.b && r.b.error) || 'Something went wrong.') +
               ' <span class="k muted">— or email <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a></span>')
+            track('api_submit', { ok: false })
           }
           resetTurnstile()
         })
         .catch(function () {
           if (goBtn) goBtn.disabled = false
           showResult('bad', '<span class="k bad">✕ NETWORK ERROR</span> <span class="k muted">please retry, or email <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a></span>')
+          track('api_submit', { ok: false, error: 'network' })
           resetTurnstile()
         })
     }
@@ -625,10 +672,20 @@
         .then(function (res) { return res.json().then(function (b) { return { ok: res.ok, b: b } }, function () { return { ok: res.ok, b: {} } }) })
         .then(function (r) {
           if (btn) btn.disabled = false
-          if (r.ok && r.b && r.b.ok) { say('✓ ' + (r.b.message || "You're on the list.")); form.reset() }
-          else { say((r.b && r.b.error) || 'Hmm — please try again.') }
+          if (r.ok && r.b && r.b.ok) {
+            say('✓ ' + (r.b.message || "You're on the list."))
+            form.reset()
+            track('newsletter_subscribe', { ok: true, source: form.id || 'newsletter' })
+          } else {
+            say((r.b && r.b.error) || 'Hmm — please try again.')
+            track('newsletter_subscribe', { ok: false })
+          }
         })
-        .catch(function () { if (btn) btn.disabled = false; say('Network error — please try again.') })
+        .catch(function () {
+          if (btn) btn.disabled = false
+          say('Network error — please try again.')
+          track('newsletter_subscribe', { ok: false, error: 'network' })
+        })
     })
   })
 

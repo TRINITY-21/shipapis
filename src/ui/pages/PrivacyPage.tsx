@@ -37,11 +37,11 @@ export const PrivacyPage: FC = () => (
           no profile of you.
         </p>
         <p>
-          <b>Google Analytics 4.</b> We load Google's gtag.js to measure page views and basic
-          engagement (which pages get used). Google may set cookies / identifiers under Google's
-          privacy policy and process data as described there. We configure{' '}
-          <code>anonymize_ip</code> where GA still respects it. We do not use Google Ads or remarketing
-          from this site.
+          <b>Google Analytics 4.</b> We load Google's gtag.js to measure page views and a few product
+          actions (submit an API, try-console run, copy snippet, newsletter subscribe) — never emails
+          or free-text content. Google may set cookies / identifiers under Google's privacy policy and
+          process data as described there. We configure <code>anonymize_ip</code> where GA still
+          respects it. We do not use Google Ads or remarketing from this site.
         </p>
         <p>
           <b>Your theme choice.</b> Light/dark preference is stored in your browser's localStorage.

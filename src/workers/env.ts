@@ -7,4 +7,8 @@ export interface Env {
   TURNSTILE_SECRET_KEY?: string
   /** Public GA4 measurement ID (G-…). When unset, no analytics tag is emitted. */
   GA_MEASUREMENT_ID?: string
+  /** Resend API key (secret). When unset, subscribe/unsubscribe skip the email side (local/tests). */
+  RESEND_API_KEY?: string
+  /** Resend audience id (var) — the "signal" broadcast list; contacts are synced here on subscribe. */
+  RESEND_AUDIENCE_ID?: string
 }

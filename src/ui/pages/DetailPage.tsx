@@ -7,11 +7,11 @@ import { BarsLegend } from '../components/BarsLegend'
 import { Checked } from '../components/Checked'
 import { Chev } from '../components/Chev'
 import { Chips } from '../components/Chips'
+import { Faq } from '../components/Faq'
 import { ScoreRing } from '../components/ScoreRing'
 import { Sparkline } from '../components/Sparkline'
 import { StatusBadge } from '../components/StatusBadge'
 import { UptimeBars } from '../components/UptimeBars'
-import { Faq } from '../components/Faq'
 import { EndpointsPanel } from '../components/detail/EndpointsPanel'
 import { SNIPPETS } from '../components/detail/snippets'
 import { Layout } from '../layout/Layout'
@@ -119,7 +119,7 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                 alt={`shipapis health badge: ${api.healthScore < 0 ? '—' : api.healthScore} · ${api.status}`}
                 height={20}
               />
-              <button class="copy-md" data-copy={badgeMd}>COPY MARKDOWN</button>
+              <button class="copy-md" data-copy={badgeMd} data-track="badge_markdown">COPY MARKDOWN</button>
             </div>
           </div>
         </header>
@@ -257,7 +257,7 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                 </span>
               </div>
               <div class="codeblock">
-                <button class="copy" data-copy={JSON.stringify(api.sample, null, 2)}>COPY</button>
+                <button class="copy" data-copy={JSON.stringify(api.sample, null, 2)} data-track="sample_json">COPY</button>
                 <pre>
                   <code dangerouslySetInnerHTML={{ __html: `<span class="j-punc">GET</span> <span class="j-key">${esc(sampleUrl)}</span>\n\n${hlJson(api.sample)}` }} />
                 </pre>
@@ -293,7 +293,7 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                     id={`pane-${i}`}
                     aria-labelledby={`tab-${i}`}
                   >
-                    <button class="copy" data-copy={s.code}>COPY</button>
+                    <button class="copy" data-copy={s.code} data-track={`snippet_${s.label.toLowerCase()}`}>COPY</button>
                     <pre>
                       <code>{s.code}</code>
                     </pre>
@@ -384,7 +384,7 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                 <span class="k muted">paste into chat</span>
               </div>
               <div class="codeblock agent-ctx">
-                <button class="copy" data-copy={agentCtx}>COPY</button>
+                <button class="copy" data-copy={agentCtx} data-track="agent_context">COPY</button>
                 <pre>
                   <code>{agentCtx}</code>
                 </pre>
@@ -420,7 +420,7 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                   <span class="k">This page, as JSON</span>
                 </div>
                 <div class="codeblock">
-                  <button class="copy" data-copy={metaCurl}>COPY</button>
+                  <button class="copy" data-copy={metaCurl} data-track="meta_api_curl">COPY</button>
                   <pre>
                     <code dangerouslySetInnerHTML={{ __html: `<span class="j-punc">$</span> ${esc(metaCurl)}` }} />
                   </pre>

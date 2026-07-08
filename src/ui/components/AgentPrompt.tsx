@@ -7,7 +7,7 @@ export const AgentPrompt: FC = () => (
   <div class="agent-block">
     <span class="k">For Cursor, Claude & coding agents · paste into CLAUDE.md / AGENTS.md</span>
     <div class="codeblock">
-      <button class="copy" data-copy={AGENT_PROMPT}>COPY</button>
+      <button class="copy" data-copy={AGENT_PROMPT} data-track="agent_prompt">COPY</button>
       <pre>
         <code>{AGENT_PROMPT}</code>
       </pre>

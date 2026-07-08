@@ -79,7 +79,7 @@ export const DevelopersPage: FC = () => {
         <div class="panel mt-24" id="mcp">
           <span class="k">MCP server · for Claude Code, Cursor & friends — <b style="color:var(--accent)">LIVE at /mcp</b></span>
           <div class="codeblock">
-            <button class="copy" data-copy={mcp}>COPY</button>
+            <button class="copy" data-copy={mcp} data-track="mcp_snippet">COPY</button>
             <pre>
               <code dangerouslySetInnerHTML={{ __html: hlJson(JSON.parse(mcp)) }} />
             </pre>
@@ -90,7 +90,7 @@ export const DevelopersPage: FC = () => {
           </p>
           <p class="mt-16" style="font-size:13px;color:var(--text-2)">One-liner for Claude Code:</p>
           <div class="codeblock mt-8">
-            <button class="copy" data-copy="claude mcp add --transport http shipapis https://shipapis.dev/mcp">COPY</button>
+            <button class="copy" data-copy="claude mcp add --transport http shipapis https://shipapis.dev/mcp" data-track="mcp_install">COPY</button>
             <pre>
               <code>claude mcp add --transport http shipapis https://shipapis.dev/mcp</code>
             </pre>

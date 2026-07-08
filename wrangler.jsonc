@@ -18,7 +18,8 @@
   // you create the GA4 property. Leave unset and the gtag block is omitted (CF beacon still ships).
   "vars": {
     "TURNSTILE_SITEKEY": "0x4AAAAAADx63yswQhUgQ1Yz",
-    "GA_MEASUREMENT_ID": "G-99YE54T6LE"
+    "GA_MEASUREMENT_ID": "G-99YE54T6LE",
+    "RESEND_AUDIENCE_ID": "aa24a458-ca8b-48e0-8a70-463faec3b79e"
   },
   "observability": {
     "enabled": true

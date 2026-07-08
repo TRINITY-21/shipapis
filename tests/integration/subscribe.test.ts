@@ -39,3 +39,21 @@ describe('newsletter form', () => {
     expect(text).toContain('name="company"') // honeypot
   })
 })
+
+describe('/unsubscribe', () => {
+  it('400s a GET with no e/t params (shows the invalid-link page)', async () => {
+    const { res, text } = await getText('/unsubscribe')
+    expect(res.status).toBe(400)
+    expect(text).toContain("didn't work")
+  })
+
+  it('400s a GET with e/t but no verifiable token (no DB in tests)', async () => {
+    const res = await req('/unsubscribe?e=x%40y.com&t=abc')
+    expect(res.status).toBe(400)
+  })
+
+  it('supports one-click POST (RFC 8058) — 400 without a valid token', async () => {
+    const res = await req('/unsubscribe?e=x%40y.com&t=abc', { method: 'POST' })
+    expect(res.status).toBe(400)
+  })
+})
