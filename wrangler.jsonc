@@ -8,6 +8,10 @@
   "assets": {
     "directory": "./public"
   },
+  // Apex custom domain (Cloudflare Registrar zone). Creates the proxied DNS record + cert on deploy.
+  "routes": [
+    { "pattern": "shipapis.dev", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   },
@@ -16,13 +20,12 @@
   "triggers": {
     "crons": ["*/15 * * * *", "0 2 * * *"]
   },
-  // Local dev works as-is (miniflare keys off the name). Before the first REMOTE deploy:
-  // `wrangler d1 create shipapis` and paste the real uuid over the placeholder (migrations/README.md).
+  // Local dev works as-is (miniflare keys off the name). Remote D1 created 2026-07-08 (region EEUR).
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "shipapis",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "4d2c0e24-83ea-4e0e-84b0-6bb0ca693ae1",
       "migrations_dir": "migrations"
     }
   ]
