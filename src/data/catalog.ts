@@ -65,7 +65,10 @@ export function catalogCounts() {
   const all = currentCatalog().apis
   const monitored = all.filter(isMonitored)
   const scheduled = all.filter(isOnProbeSchedule)
-  const queued = all.filter((a) => isOnProbeSchedule(a) && a.status === 'unmonitored')
+  // Queued = on the probe schedule but not yet monitored. Prefer !isMonitored over
+  // `status === 'unmonitored'` alone: after the first check, monitored_since is set while status
+  // can stay "unmonitored" until the nightly rollup — those rows are probed, not waiting.
+  const queued = all.filter((a) => isOnProbeSchedule(a) && !isMonitored(a))
   const listedOnly = all.filter((a) => a.checkTier === 'listed')
   const routesDocumented = all.reduce((n, a) => n + a.endpoints.length, 0)
   return {
@@ -74,6 +77,7 @@ export function catalogCounts() {
     monitored: monitored.length,
     queued: queued.length,
     listedOnly: listedOnly.length,
+    // Catalogued = not yet probed for health (queued + listed-only). Never double-count probed rows.
     catalogued: queued.length + listedOnly.length,
     routesDocumented,
     healthy: all.filter((a) => a.status === 'healthy').length,
@@ -92,7 +96,8 @@ export function catGlobalStats() {
     scheduled: scheduled.length,
     monitored: probed.length,
     routesDocumented: all.reduce((n, a) => n + a.endpoints.length, 0),
-    checks24h: scheduled.length * 96,
+    // ~2 checks/API/day (COOLDOWN_MIN = 720). Not ×96 (that assumed a 15-min per-API cadence).
+    checks24h: scheduled.length * 2,
     medianLatency: p50s[Math.floor(p50s.length / 2)] ?? 0,
     diedThisMonth: all.filter((a) => a.status === 'dead').length,
     sweepMin,

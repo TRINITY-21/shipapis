@@ -43,6 +43,7 @@ describe('/data ladder', () => {
     expect(res.status).toBe(200)
     expect(body.monitoring.data_tier).toBe('dev-seed')
     expect(body.monitoring.catalog).toHaveProperty('by_status')
+    expect(body.monitoring.planned_cadence.per_api).toMatch(/12 hours/)
   })
 
   it('category slices resolve and validate the filename', async () => {
@@ -129,6 +130,20 @@ describe('machine-readable specs', () => {
 })
 
 describe('machine headers & CORS', () => {
+  it('sets baseline security headers on HTML', async () => {
+    const res = await req('/')
+    expect(res.headers.get('x-content-type-options')).toBe('nosniff')
+    expect(res.headers.get('referrer-policy')).toBe('strict-origin-when-cross-origin')
+    expect(res.headers.get('x-frame-options')).toBe('SAMEORIGIN')
+    expect(res.headers.get('strict-transport-security')).toContain('max-age=')
+  })
+
+  it('serves the IndexNow ownership key file', async () => {
+    const { res, text } = await getText('/shipapis-indexnow-7f3c9a2e.txt')
+    expect(res.status).toBe(200)
+    expect(text.trim()).toBe('shipapis-indexnow-7f3c9a2e')
+  })
+
   it('sets an open CORS header on machine routes', async () => {
     const res = await req('/data/index.json')
     expect(res.headers.get('access-control-allow-origin')).toBe('*')

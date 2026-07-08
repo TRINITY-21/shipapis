@@ -18,10 +18,11 @@ describe('catalog counts (seed scope)', () => {
     expect(c.routesDocumented).toBeGreaterThan(0)
   })
 
-  it('exposes global stats', () => {
+  it('exposes global stats with honest check cadence (~2/day)', async () => {
     const s = catGlobalStats()
     expect(s.tracked).toBe(seedApis.length)
     expect(s.medianLatency).toBeGreaterThanOrEqual(0)
+    expect(s.checks24h).toBe(s.scheduled * 2)
   })
 })
 
@@ -32,10 +33,12 @@ describe('isMonitored / isOnProbeSchedule', () => {
     expect(isMonitored(api)).toBe(true)
   })
 
-  it('treats an unmonitored import as scheduled but not yet monitored', () => {
-    const api = makeApi({ status: 'unmonitored', auth: 'apiKey', sampleEndpoint: '/d?api_key=YOUR_API_KEY' })
-    expect(isOnProbeSchedule(api)).toBe(true)
-    expect(isMonitored(api)).toBe(false)
+  it('treats a first-probed row as monitored even while status is still unmonitored', () => {
+    const api = makeApi({ status: 'unmonitored', monitoredSince: '2026-07-08', auth: 'none' })
+    // makeApi goes through build() which forces monitoredSince null — overlay the field.
+    const probed = { ...api, monitoredSince: '2026-07-08T11:00:00.000Z', status: 'unmonitored' as const }
+    expect(isOnProbeSchedule(probed)).toBe(true)
+    expect(isMonitored(probed)).toBe(true)
   })
 
   it('treats a listed-only record as neither scheduled nor monitored', () => {

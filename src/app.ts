@@ -2,9 +2,11 @@ import { Hono } from 'hono'
 import { trimTrailingSlash } from 'hono/trailing-slash'
 import { agentSurfaces, machineHeaders } from './agents/agent-surfaces'
 import { withCatalog } from './data/catalog'
+import { securityHeaders } from './middleware/security-headers'
 import { registerApiV1 } from './routes/api-v1'
 import { registerBadge } from './routes/badge'
 import { registerIcons } from './routes/icons'
+import { registerIndexNow } from './routes/indexnow'
 import { registerMcp } from './routes/mcp'
 import { registerOgCard } from './routes/og-card'
 import { registerPages } from './routes/pages'
@@ -15,6 +17,16 @@ import { withRequestConfig } from './workers/request-config'
 
 export function createApp() {
   const app = new Hono<{ Bindings: Env }>()
+
+  /* www → apex: 301 any www.shipapis.dev request to the bare domain, so there's one canonical host. */
+  app.use('*', async (c, next) => {
+    const url = new URL(c.req.url)
+    if (url.hostname === 'www.shipapis.dev') {
+      url.hostname = 'shipapis.dev'
+      return c.redirect(url.toString(), 301)
+    }
+    await next()
+  })
 
   /* Edge-cache successful GET/HEAD responses so repeat traffic is served from Cloudflare's cache
      without invoking this Worker or reading D1 — the biggest lever for staying inside the free
@@ -31,6 +43,8 @@ export function createApp() {
       c.res.headers.set('Cache-Control', 'public, s-maxage=120, stale-while-revalidate=600')
     }
   })
+
+  app.use('*', securityHeaders)
 
   /* /api//slug → /api/slug — collapse duplicate slashes before routing (301 canonical). */
   app.use('*', async (c, next) => {
@@ -71,6 +85,7 @@ export function createApp() {
   registerIcons(app)
   registerSubmit(app)
   registerSubscribe(app)
+  registerIndexNow(app)
   registerPages(app)
   registerBadge(app)
   registerOgCard(app)

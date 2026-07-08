@@ -128,7 +128,11 @@ agentSurfaces.get('/data/status.json', (c) => {
         dataTier() === 'dev-seed'
           ? 'Synthetic development data — the production checker lands with the D1 milestone. Do not cite health numbers yet; this field flips to "monitored" when they are real.'
           : 'Live monitoring data.',
-      planned_cadence: { sweep: 'every 15 minutes', per_api: 'roughly every 90–120 minutes at catalog scale' },
+      planned_cadence: {
+        sweep: 'every 15 minutes (batch heartbeat)',
+        per_api: 'at most every 12 hours (~2 checks/day once the catalog has a first probe)',
+        batch_size: 45,
+      },
       coverage,
       catalog: { total: coverage.total, by_status: by },
       agent_start: {

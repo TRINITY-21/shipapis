@@ -278,6 +278,7 @@ export async function runSweep(env: Env): Promise<{ checked: number }> {
     `update apis set
        last_checked_at = ?,
        monitored_since = coalesce(monitored_since, ?),
+       status = case when status = 'unmonitored' then 'new' else status end,
        agent_access = coalesce(?, agent_access),
        cors_verified = case when ? is not null then ? else cors_verified end,
        https = coalesce(?, https),

@@ -8,9 +8,11 @@
   "assets": {
     "directory": "./public"
   },
-  // Apex custom domain (Cloudflare Registrar zone). Creates the proxied DNS record + cert on deploy.
+  // Custom domains (Cloudflare Registrar zone). Apex serves the site; www is attached only so the
+  // Worker can 301 it to the apex (the redirect lives in src/app.ts). Both create proxied DNS + cert.
   "routes": [
-    { "pattern": "shipapis.dev", "custom_domain": true }
+    { "pattern": "shipapis.dev", "custom_domain": true },
+    { "pattern": "www.shipapis.dev", "custom_domain": true }
   ],
   // Turnstile sitekey is public (rendered into the /submit widget). The matching secret is NOT here —
   // it lives in the encrypted secret store (wrangler secret put TURNSTILE_SECRET_KEY).
@@ -24,7 +26,7 @@
   "observability": {
     "enabled": true
   },
-  // Cron #1: 15-min sweep (each endpoint re-tested at most every 90 min — cooldown in the query).
+  // Cron #1: 15-min sweep heartbeat (BATCH=45); each endpoint re-checked at most every 12h (COOLDOWN_MIN).
   // Cron #2: 02:00 UTC rollup + retention + health/lifecycle recompute. 2 of the 5 free crons used.
   "triggers": {
     "crons": ["*/15 * * * *", "0 2 * * *"]

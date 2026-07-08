@@ -1474,7 +1474,7 @@ export const statusChanges: StatusChange[] = [
 
 export const globalStats = (() => {
   const live = liveApis()
-  const checks24h = live.length * 96 // */15 cron × 45-batch → ~96 windows/day at catalog scale
+  const checks24h = live.length * 2 // ~2 checks/API/day (12h cooldown) — not ×96 (that overclaimed)
   const medianLatency = (() => {
     const p50s = live.filter((a) => a.p50 > 0).map((a) => a.p50).sort((x, y) => x - y)
     return p50s[Math.floor(p50s.length / 2)] ?? 0
