@@ -1931,6 +1931,11 @@ a.row:hover { background: var(--bg-hover); }
 }
 .nl-done svg { color: var(--accent-live); flex: none; }
 @keyframes nl-pop { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+/* homepage "signal" band: bigger + centered to match the .signal-field it replaces */
+.signal-form .nl-done { max-width: 440px; margin: 0 auto; min-height: 56px; font-size: 13.5px; }
+/* injected feedback line for forms without a .k label (the signal band) */
+.nl-msg { margin-top: 12px; text-align: center; font-family: var(--mono); font-size: 12.5px; color: var(--text-3); }
+.nl-msg.bad { color: var(--st-degraded); }
 .footer .newsletter { margin-top: 22px; max-width: 340px; }
 /* Mobile: stack the email form full-width with a comfortable tap target. */
 @media (max-width: 560px) {

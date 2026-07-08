@@ -113,6 +113,8 @@ export const SignalSection: FC = () => {
             surface something real. Not a drip campaign.
           </p>
           <form class="newsletter signal-form" id="newsletter-home">
+            {/* Honeypot — off-screen; a filled value is dropped server-side. */}
+            <input class="hp-field" type="text" name="company" tabindex={-1} autocomplete="off" aria-hidden="true" />
             <div class="signal-field">
               <input
                 type="email"

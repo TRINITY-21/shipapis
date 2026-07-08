@@ -648,51 +648,62 @@
   /* ---------- newsletter — subscribe capture (POST /subscribe → D1) ---------- */
 
   $$('form.newsletter').forEach(function (form) {
+    // Feedback target: the section's .k label when there is one (footer), else a message line we
+    // inject (the homepage "signal" band has its heading outside the form). Input row we swap on
+    // success is either .nl-row (footer) or .signal-field (homepage band).
     var label = $('.k', form)
     var labelText = label ? label.textContent : ''
     var restore = null
+    function say(kind, msg) {
+      if (label) {
+        label.textContent = msg
+        if (restore) clearTimeout(restore)
+        restore = setTimeout(function () { label.textContent = labelText }, 4000)
+        return
+      }
+      var m = $('.nl-msg', form)
+      if (!m) { m = document.createElement('p'); m.setAttribute('role', 'status'); form.appendChild(m) }
+      m.className = 'nl-msg ' + kind
+      m.textContent = msg
+    }
+    function confirmOnList() {
+      if (restore) clearTimeout(restore)
+      if (label) label.textContent = labelText
+      var msgEl = $('.nl-msg', form); if (msgEl) msgEl.remove()
+      var row = $('.nl-row', form) || $('.signal-field', form)
+      if (!row) return
+      var done = document.createElement('div')
+      done.className = 'nl-done'
+      done.setAttribute('role', 'status')
+      done.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>You\'re on the list — check your inbox</span>'
+      row.replaceWith(done)
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault()
       var email = form.email.value.trim()
       if (!email) return
       var btn = $('button[type="submit"]', form)
       if (btn) btn.disabled = true
-      if (restore) clearTimeout(restore)
-      if (label) label.textContent = 'Subscribing…'
-      function say(msg) {
-        if (!label) return
-        label.textContent = msg
-        restore = setTimeout(function () { label.textContent = labelText }, 4000)
-      }
+      say('', 'Subscribing…')
       fetch('/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, company: form.company ? form.company.value.trim() : '', source: 'footer' }),
+        body: JSON.stringify({ email: email, company: form.company ? form.company.value.trim() : '', source: form.id || 'newsletter' }),
       })
         .then(function (res) { return res.json().then(function (b) { return { ok: res.ok, b: b } }, function () { return { ok: res.ok, b: {} } }) })
         .then(function (r) {
           if (r.ok && r.b && r.b.ok) {
-            // Swap the input+button row for a persistent confirmation so it's unmistakable they're on the list.
-            if (restore) clearTimeout(restore)
-            if (label) label.textContent = labelText
-            var row = $('.nl-row', form)
-            if (row) {
-              var done = document.createElement('div')
-              done.className = 'nl-done'
-              done.setAttribute('role', 'status')
-              done.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>You\'re on the list — check your inbox</span>'
-              row.replaceWith(done)
-            }
+            confirmOnList() // persistent "on the list" state replaces the input for both forms
             track('newsletter_subscribe', { ok: true, source: form.id || 'newsletter' })
             return
           }
           if (btn) btn.disabled = false
-          say((r.b && r.b.error) || 'Hmm — please try again.')
+          say('bad', (r.b && r.b.error) || 'Hmm — please try again.')
           track('newsletter_subscribe', { ok: false })
         })
         .catch(function () {
           if (btn) btn.disabled = false
-          say('Network error — please try again.')
+          say('bad', 'Network error — please try again.')
           track('newsletter_subscribe', { ok: false, error: 'network' })
         })
     })
