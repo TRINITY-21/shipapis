@@ -14,8 +14,11 @@
   ],
   // Turnstile sitekey is public (rendered into the /submit widget). The matching secret is NOT here —
   // it lives in the encrypted secret store (wrangler secret put TURNSTILE_SECRET_KEY).
+  // GA_MEASUREMENT_ID (G-…) is public by design — set via `wrangler secret put` or vars below after
+  // you create the GA4 property. Leave unset and the gtag block is omitted (CF beacon still ships).
   "vars": {
-    "TURNSTILE_SITEKEY": "0x4AAAAAADx63yswQhUgQ1Yz"
+    "TURNSTILE_SITEKEY": "0x4AAAAAADx63yswQhUgQ1Yz",
+    "GA_MEASUREMENT_ID": "G-99YE54T6LE"
   },
   "observability": {
     "enabled": true

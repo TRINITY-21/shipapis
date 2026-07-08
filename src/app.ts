@@ -9,7 +9,9 @@ import { registerMcp } from './routes/mcp'
 import { registerOgCard } from './routes/og-card'
 import { registerPages } from './routes/pages'
 import { registerSubmit } from './routes/submit'
+import { registerSubscribe } from './routes/subscribe'
 import type { Env } from './workers/env'
+import { withRequestConfig } from './workers/request-config'
 
 export function createApp() {
   const app = new Hono<{ Bindings: Env }>()
@@ -42,7 +44,11 @@ export function createApp() {
   })
 
   app.use(trimTrailingSlash())
-  app.use('*', async (c, next) => withCatalog(c.env.DB, () => next()))
+  app.use('*', async (c, next) =>
+    withRequestConfig({ gaMeasurementId: c.env.GA_MEASUREMENT_ID }, () =>
+      withCatalog(c.env.DB, () => next()),
+    ),
+  )
 
   app.use('/data/*', machineHeaders)
   app.use('/api/v1/*', machineHeaders)
@@ -64,6 +70,7 @@ export function createApp() {
   app.route('/', agentSurfaces)
   registerIcons(app)
   registerSubmit(app)
+  registerSubscribe(app)
   registerPages(app)
   registerBadge(app)
   registerOgCard(app)

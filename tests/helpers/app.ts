@@ -4,13 +4,13 @@
 import { app } from '../../src/app'
 
 const SITE = 'https://shipapis.dev'
-const ENV = { DB: undefined } as never
+const DEFAULT_ENV = { DB: undefined } as never
 const CTX = { waitUntil: () => {}, passThroughOnException: () => {} } as never
 
 /** Fetch a path through the app. Never follows redirects (so 301/302 are observable). */
-export function req(path: string, init?: RequestInit): Promise<Response> {
+export function req(path: string, init?: RequestInit, env: Record<string, unknown> = DEFAULT_ENV): Promise<Response> {
   const url = path.startsWith('http') ? path : `${SITE}${path}`
-  return app.fetch(new Request(url, init), ENV, CTX)
+  return app.fetch(new Request(url, init), env as never, CTX)
 }
 
 export async function getJson<T = any>(path: string, init?: RequestInit): Promise<{ res: Response; body: T }> {
@@ -19,8 +19,12 @@ export async function getJson<T = any>(path: string, init?: RequestInit): Promis
   return { res, body }
 }
 
-export async function getText(path: string, init?: RequestInit): Promise<{ res: Response; text: string }> {
-  const res = await req(path, init)
+export async function getText(
+  path: string,
+  init?: RequestInit,
+  env?: Record<string, unknown>,
+): Promise<{ res: Response; text: string }> {
+  const res = await req(path, init, env)
   return { res, text: await res.text() }
 }
 

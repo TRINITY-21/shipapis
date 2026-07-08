@@ -5,4 +5,6 @@ export interface Env {
   TURNSTILE_SITEKEY?: string
   /** Turnstile secret (encrypted secret store). When unset, submit skips verification (local/tests). */
   TURNSTILE_SECRET_KEY?: string
+  /** Public GA4 measurement ID (G-…). When unset, no analytics tag is emitted. */
+  GA_MEASUREMENT_ID?: string
 }

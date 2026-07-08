@@ -2489,6 +2489,8 @@ a.row:hover { background: var(--bg-hover); }
   box-shadow: 0 0 0 3px var(--accent-dim);
 }
 .sf-field input::placeholder { color: var(--text-3); }
+/* off-screen honeypot input (newsletter + any form reusing it) */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 .sf-turnstile { min-height: 65px; }
 .sf-fallback { margin-left: 14px; }
 .submit-result {

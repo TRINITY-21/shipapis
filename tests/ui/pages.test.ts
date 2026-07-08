@@ -94,6 +94,34 @@ describe('detail page specifics', () => {
   })
 })
 
+describe('analytics tags', () => {
+  it('always ships the Cloudflare Web Analytics beacon', async () => {
+    const { text } = await getText('/')
+    expect(text).toContain('static.cloudflareinsights.com/beacon.min.js')
+    expect(text).toContain('efb68a7bc53942bfb1ebb54c11e63714')
+  })
+
+  it('omits GA4 when GA_MEASUREMENT_ID is unset (test env)', async () => {
+    const { text } = await getText('/')
+    expect(text).not.toContain('googletagmanager.com/gtag/js')
+    expect(text).not.toContain('gtag(')
+  })
+
+  it('emits GA4 gtag when GA_MEASUREMENT_ID is a valid G- id', async () => {
+    const { text } = await getText('/', undefined, { DB: undefined, GA_MEASUREMENT_ID: 'G-TESTMEASURE1' })
+    expect(text).toContain('googletagmanager.com/gtag/js?id=G-TESTMEASURE1')
+    expect(text).toContain("gtag('config','G-TESTMEASURE1'")
+    // CF beacon still present alongside GA4
+    expect(text).toContain('static.cloudflareinsights.com/beacon.min.js')
+  })
+
+  it('discloses both analytics tools on /privacy', async () => {
+    const { text } = await getText('/privacy')
+    expect(text).toContain('Cloudflare Web Analytics')
+    expect(text).toContain('Google Analytics 4')
+  })
+})
+
 describe('routing & error pages', () => {
   it('redirects /browse without params to the default facet', async () => {
     const res = await req('/browse')

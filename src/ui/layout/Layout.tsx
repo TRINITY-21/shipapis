@@ -1,11 +1,21 @@
 import type { Child, FC } from 'hono/jsx'
 import { catalogCounts } from '../../data/catalog'
 import { categoryCounts } from '../../data/shapes'
+import { gaMeasurementId } from '../../workers/request-config'
 import { Logo } from '../components/Logo'
 import { DEFAULT_DESC, FAVICON, PRIMARY_NAV, SITE, THEME_BOOT } from '../lib/constants'
 import { jsonLdStr } from '../lib/format'
 import { navAriaCurrent } from '../lib/nav'
 import { buildApiIndex } from '../lib/palette'
+
+/** GA4 gtag boot — only emitted when GA_MEASUREMENT_ID looks like a real G- id. */
+function gaSnippet(id: string): string {
+  return `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${id}',{anonymize_ip:true});`
+}
+
+function safeGaId(raw: string | undefined): string | undefined {
+  return raw && /^G-[A-Z0-9]+$/i.test(raw) ? raw : undefined
+}
 
 export const Layout: FC<{
   title: string
@@ -30,8 +40,10 @@ export const Layout: FC<{
   noindex,
   jsonLd,
   children,
-}) => (
-  <html lang="en">
+}) => {
+  const gaId = safeGaId(gaMeasurementId())
+  return (
+    <html lang="en">
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -171,6 +183,8 @@ export const Layout: FC<{
             <p class="footer-pledge comment">we don't sell placement. the data decides.</p>
             <form class="newsletter" id="newsletter">
               <span class="k">The signal · email, occasionally</span>
+              {/* Honeypot — off-screen; a filled value is dropped server-side. */}
+              <input class="hp-field" type="text" name="company" tabindex={-1} autocomplete="off" aria-hidden="true" />
               <div class="nl-row">
                 <input
                   type="email"
@@ -227,7 +241,9 @@ export const Layout: FC<{
           <span class="footer-live"><b>●</b>&nbsp; {catalogCounts().monitored} PROBED · {catalogCounts().total} CATALOGUED</span>
           <span>© 2026 shipapis</span>
           <span>data <a href="/terms">CC-BY-4.0</a></span>
-          <span>cookieless analytics, no ad trackers</span>
+          <span>
+            analytics: GA4 + Cloudflare · <a href="/privacy">privacy</a>
+          </span>
           <a href="mailto:hello@shipapis.dev">hello@shipapis.dev</a>
         </div>
       </footer>
@@ -277,8 +293,15 @@ export const Layout: FC<{
       </div>
       <script id="api-index" type="application/json" dangerouslySetInnerHTML={{ __html: buildApiIndex() }} />
       <script src="/app.js" defer />
-      {/* Cloudflare Web Analytics — cookieless, no client-side state; the beacon token is public by design. */}
+      {/* Cloudflare Web Analytics — cookieless beacon; token is public by design. */}
       <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={'{"token": "efb68a7bc53942bfb1ebb54c11e63714"}'} />
+      {gaId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+          <script dangerouslySetInnerHTML={{ __html: gaSnippet(gaId) }} />
+        </>
+      )}
     </body>
   </html>
-)
+  )
+}

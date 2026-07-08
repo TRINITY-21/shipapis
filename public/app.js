@@ -598,21 +598,37 @@
     })
   }
 
-  /* ---------- newsletter — mailto until the subscribe endpoint lands ---------- */
+  /* ---------- newsletter — subscribe capture (POST /subscribe → D1) ---------- */
 
   $$('form.newsletter').forEach(function (form) {
+    var label = $('.k', form)
+    var labelText = label ? label.textContent : ''
+    var restore = null
     form.addEventListener('submit', function (e) {
       e.preventDefault()
       var email = form.email.value.trim()
       if (!email) return
-      location.href = 'mailto:hello@shipapis.dev?subject=' + encodeURIComponent('subscribe · the signal') +
-        '&body=' + encodeURIComponent('Add me to the list: ' + email)
       var btn = $('button[type="submit"]', form)
-      if (btn) {
-        var old = btn.textContent
-        btn.innerHTML = 'CHECK YOUR MAIL APP <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>'
-        setTimeout(function () { btn.textContent = old }, 3500)
+      if (btn) btn.disabled = true
+      if (restore) clearTimeout(restore)
+      if (label) label.textContent = 'Subscribing…'
+      function say(msg) {
+        if (!label) return
+        label.textContent = msg
+        restore = setTimeout(function () { label.textContent = labelText }, 4000)
       }
+      fetch('/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, company: form.company ? form.company.value.trim() : '', source: 'footer' }),
+      })
+        .then(function (res) { return res.json().then(function (b) { return { ok: res.ok, b: b } }, function () { return { ok: res.ok, b: {} } }) })
+        .then(function (r) {
+          if (btn) btn.disabled = false
+          if (r.ok && r.b && r.b.ok) { say('✓ ' + (r.b.message || "You're on the list.")); form.reset() }
+          else { say((r.b && r.b.error) || 'Hmm — please try again.') }
+        })
+        .catch(function () { if (btn) btn.disabled = false; say('Network error — please try again.') })
     })
   })
 
