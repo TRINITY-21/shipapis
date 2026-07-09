@@ -27,9 +27,11 @@
     "enabled": true
   },
   // Cron #1: 15-min sweep heartbeat (BATCH=45); each endpoint re-checked at most every 12h (COOLDOWN_MIN).
-  // Cron #2: 02:00 UTC rollup + retention + health/lifecycle recompute. 2 of the 5 free crons used.
+  // Cron #2: rollup + retention + health/lifecycle recompute every 6h (00/06/12/18 UTC). runRollup is
+  // idempotent (rolls up the last 2 UTC days with REPLACE), so today's uptime bar stays ≤6h fresh
+  // instead of only materializing once at 02:00 (when the new UTC day is still nearly empty). 2 of 5 crons.
   "triggers": {
-    "crons": ["*/15 * * * *", "0 2 * * *"]
+    "crons": ["*/15 * * * *", "0 */6 * * *"]
   },
   // Local dev works as-is (miniflare keys off the name). Remote D1 created 2026-07-08 (region EEUR).
   "d1_databases": [
