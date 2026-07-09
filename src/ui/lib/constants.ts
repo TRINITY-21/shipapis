@@ -15,9 +15,6 @@ export const STATUS_LABEL: Record<LifecycleStatus, string> = {
   unmonitored: 'UNMONITORED',
 }
 
-/** Deterministic date label for uptime bar index (89 = today). Local dev uses a fixed anchor. */
-export const ANCHOR = Date.UTC(2026, 6, 4)
-
 export const FACET_DEFS: ReadonlyArray<readonly [string, string]> = [
   ['monitored', 'Probed by us'],
   ['auth-none', 'No key'],

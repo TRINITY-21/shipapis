@@ -1,5 +1,4 @@
 import type { ApiEntry } from '../../data/seed'
-import { ANCHOR } from './constants'
 
 export const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -43,8 +42,15 @@ export function hlJson(value: unknown): string {
   )
 }
 
+/** UTC midnight of the current day. The newest uptime bar (index 89) is "today", matching the
+ *  data axis in loadCatalog, which builds uptime90 against real `now`. */
+const todayAnchor = () => {
+  const n = new Date()
+  return Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate())
+}
+
 export function dayLabel(idx: number): string {
-  const d = new Date(ANCHOR - (89 - idx) * 86400000)
+  const d = new Date(todayAnchor() - (89 - idx) * 86400000)
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })
 }
 
@@ -55,9 +61,9 @@ export const fmtAdded = (iso: string) =>
 
 export const todayLabel = () => fmtAdded(new Date().toISOString().slice(0, 10))
 
-/** Days since an API was added, against the same fixed dev anchor the charts use. */
+/** Whole days since an API was added, measured in UTC against the current day (same anchor the charts use). */
 export const daysSinceAdded = (api: ApiEntry) =>
-  Math.floor((ANCHOR - Date.parse(`${api.addedAt}T00:00:00Z`)) / 86400000)
+  Math.floor((todayAnchor() - Date.parse(`${api.addedAt}T00:00:00Z`)) / 86400000)
 
 /** CSS class for chip booleans / yes-no-unknown fields. */
 export const chipTone = (v: boolean | string, good: string[] = ['yes', 'true']) => {

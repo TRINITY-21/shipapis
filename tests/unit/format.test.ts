@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   checkedAgo,
   chipTone,
@@ -105,12 +105,23 @@ describe('hlJson', () => {
 })
 
 describe('dayLabel', () => {
-  it('maps index 89 to the fixed anchor date (Jul 4)', () => {
+  beforeEach(() => {
+    vi.useFakeTimers()
+    vi.setSystemTime(Date.UTC(2026, 6, 4))
+  })
+  afterEach(() => vi.useRealTimers())
+
+  it('maps index 89 to today (UTC)', () => {
     expect(dayLabel(89)).toBe('Jul 4')
   })
-  it('counts backwards from the anchor', () => {
+  it('counts backwards from today', () => {
     expect(dayLabel(88)).toBe('Jul 3')
     expect(dayLabel(79)).toBe('Jun 24')
+  })
+  it('advances with the real calendar rather than a frozen anchor', () => {
+    vi.setSystemTime(Date.UTC(2026, 6, 9))
+    expect(dayLabel(89)).toBe('Jul 9')
+    expect(dayLabel(88)).toBe('Jul 8')
   })
 })
 
@@ -122,7 +133,13 @@ describe('fmtAdded', () => {
 })
 
 describe('daysSinceAdded', () => {
-  it('measures whole days against the anchor', () => {
+  beforeEach(() => {
+    vi.useFakeTimers()
+    vi.setSystemTime(Date.UTC(2026, 6, 4))
+  })
+  afterEach(() => vi.useRealTimers())
+
+  it('measures whole days against today (UTC)', () => {
     expect(daysSinceAdded(makeApi({ addedAt: '2026-07-01' }))).toBe(3)
     expect(daysSinceAdded(makeApi({ addedAt: '2026-07-04' }))).toBe(0)
   })
