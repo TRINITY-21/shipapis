@@ -1,7 +1,7 @@
 import type { Child, FC } from 'hono/jsx'
 import { catalogCounts } from '../../data/catalog'
 import { categoryCounts } from '../../data/shapes'
-import { gaMeasurementId } from '../../workers/request-config'
+import { analyticsEnabled, gaMeasurementId } from '../../workers/request-config'
 import { Logo } from '../components/Logo'
 import { DEFAULT_DESC, FAVICON, PRIMARY_NAV, SITE, THEME_BOOT } from '../lib/constants'
 import { jsonLdStr } from '../lib/format'
@@ -42,6 +42,7 @@ export const Layout: FC<{
   children,
 }) => {
   const gaId = safeGaId(gaMeasurementId())
+  const analytics = analyticsEnabled() // prod host only — no beacon/GA4 on localhost or previews
   return (
     <html lang="en">
     <head>
@@ -293,12 +294,18 @@ export const Layout: FC<{
       </div>
       <script id="api-index" type="application/json" dangerouslySetInnerHTML={{ __html: buildApiIndex() }} />
       <script src="/app.js" defer />
-      {/* Cloudflare Web Analytics — cookieless beacon; token is public by design. */}
-      <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={'{"token": "efb68a7bc53942bfb1ebb54c11e63714"}'} />
-      {gaId && (
+      {/* Analytics render on the production host only (see analyticsEnabled) — never on
+          localhost or *.workers.dev previews, so dev browsing can't inflate the real numbers. */}
+      {analytics && (
         <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-          <script dangerouslySetInnerHTML={{ __html: gaSnippet(gaId) }} />
+          {/* Cloudflare Web Analytics — cookieless beacon; token is public by design. */}
+          <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={'{"token": "efb68a7bc53942bfb1ebb54c11e63714"}'} />
+          {gaId && (
+            <>
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+              <script dangerouslySetInnerHTML={{ __html: gaSnippet(gaId) }} />
+            </>
+          )}
         </>
       )}
     </body>

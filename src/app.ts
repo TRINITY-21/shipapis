@@ -13,7 +13,7 @@ import { registerPages } from './routes/pages'
 import { registerSubmit } from './routes/submit'
 import { registerSubscribe } from './routes/subscribe'
 import type { Env } from './workers/env'
-import { withRequestConfig } from './workers/request-config'
+import { shouldEmitAnalytics, withRequestConfig } from './workers/request-config'
 
 export function createApp() {
   const app = new Hono<{ Bindings: Env }>()
@@ -58,11 +58,13 @@ export function createApp() {
   })
 
   app.use(trimTrailingSlash())
-  app.use('*', async (c, next) =>
-    withRequestConfig({ gaMeasurementId: c.env.GA_MEASUREMENT_ID }, () =>
+  app.use('*', async (c, next) => {
+    // Analytics: prod host only, and never in `wrangler dev` (LOCAL_DEV in .dev.vars).
+    const analytics = shouldEmitAnalytics(new URL(c.req.url).hostname, c.env.LOCAL_DEV === '1')
+    return withRequestConfig({ gaMeasurementId: c.env.GA_MEASUREMENT_ID, analytics }, () =>
       withCatalog(c.env.DB, () => next()),
-    ),
-  )
+    )
+  })
 
   app.use('/data/*', machineHeaders)
   app.use('/api/v1/*', machineHeaders)

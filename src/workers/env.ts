@@ -11,4 +11,7 @@ export interface Env {
   RESEND_API_KEY?: string
   /** Resend audience id (var) — the "signal" broadcast list; contacts are synced here on subscribe. */
   RESEND_AUDIENCE_ID?: string
+  /** Set to "1" in .dev.vars only. `wrangler dev` presents the custom-domain host locally, so this
+   *  flag is the only reliable signal that we're in local dev — it suppresses the analytics tags. */
+  LOCAL_DEV?: string
 }

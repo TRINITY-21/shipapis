@@ -95,10 +95,33 @@ describe('detail page specifics', () => {
 })
 
 describe('analytics tags', () => {
-  it('always ships the Cloudflare Web Analytics beacon', async () => {
-    const { text } = await getText('/')
+  it('ships the Cloudflare Web Analytics beacon on the production host', async () => {
+    const { text } = await getText('/') // helper requests https://shipapis.dev
     expect(text).toContain('static.cloudflareinsights.com/beacon.min.js')
     expect(text).toContain('efb68a7bc53942bfb1ebb54c11e63714')
+  })
+
+  it('emits NO analytics (beacon or GA4) on non-production hosts, even with GA configured', async () => {
+    const { text } = await getText('http://localhost:8787/', undefined, {
+      DB: undefined,
+      GA_MEASUREMENT_ID: 'G-TESTMEASURE1',
+    })
+    expect(text).not.toContain('static.cloudflareinsights.com/beacon.min.js')
+    expect(text).not.toContain('efb68a7bc53942bfb1ebb54c11e63714')
+    expect(text).not.toContain('googletagmanager.com/gtag/js')
+    expect(text).not.toContain('gtag(')
+  })
+
+  it('suppresses analytics on the production host when LOCAL_DEV is set (wrangler dev)', async () => {
+    // `wrangler dev` rewrites the request host to the custom domain, so LOCAL_DEV is the only signal.
+    const { text } = await getText('/', undefined, {
+      DB: undefined,
+      GA_MEASUREMENT_ID: 'G-TESTMEASURE1',
+      LOCAL_DEV: '1',
+    })
+    expect(text).not.toContain('static.cloudflareinsights.com/beacon.min.js')
+    expect(text).not.toContain('googletagmanager.com/gtag/js')
+    expect(text).not.toContain('gtag(')
   })
 
   it('omits GA4 when GA_MEASUREMENT_ID is unset (test env)', async () => {
