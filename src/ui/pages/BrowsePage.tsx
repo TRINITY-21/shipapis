@@ -14,9 +14,12 @@ export const BrowsePage: FC<{ sort?: string; facet?: string }> = ({ sort, facet 
   const list = browseSorted(catApis(), sort)
   const activeSort = SORT_DEFS.some(([key]) => key === sort) ? (sort as string) : ''
   const showingProbed = facet === 'monitored'
-  // Sort links preserve an active ?facet= so switching views never drops the filter.
+  // Sort links preserve an active ?facet= so switching views never drops the filter. 'monitored' is
+  // the default /browse view, so it's implied rather than spelled out — one URL per view, no
+  // ?facet=monitored twin for Google to crawl and canonicalise away.
   const sortHref = (key: string) => {
-    const params = [key && `sort=${key}`, facet && `facet=${encodeURIComponent(facet)}`].filter(Boolean).join('&')
+    const carried = facet && facet !== 'monitored' ? `facet=${encodeURIComponent(facet)}` : ''
+    const params = [key && `sort=${key}`, carried].filter(Boolean).join('&')
     return params ? `/browse?${params}` : '/browse'
   }
   return (
@@ -39,14 +42,14 @@ export const BrowsePage: FC<{ sort?: string; facet?: string }> = ({ sort, facet 
               <>
                 <b class="num">{counts.monitored}</b> APIs probed with live health data.{' '}
                 <b class="num">{counts.scheduled}</b> on our probe schedule total.{' '}
-                <a href="/browse">Show all {counts.total} catalogued</a>.
+                <a href="/browse?facet=all">Show all {counts.total} catalogued</a>.
               </>
             ) : (
               <>
                 <b class="num">{counts.total}</b> free public APIs — <b class="num">{counts.scheduled}</b> on our
                 probe schedule (<b class="num">{counts.monitored}</b> probed, <b class="num">{counts.queued}</b>{' '}
                 queued), <b class="num">{counts.listedOnly}</b> listed only.{' '}
-                <a href="/browse?facet=monitored">See probed only</a>.
+                <a href="/browse">See probed only</a>.
               </>
             )}
           </p>

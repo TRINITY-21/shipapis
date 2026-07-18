@@ -67,7 +67,7 @@ export const Home: FC = () => {
               </div>
               <span id="sr-count" class="sr-only" aria-live="polite" />
               <nav class="quick" aria-label="Common filters">
-                <a class="facet" href="/browse?facet=monitored">Probed by us</a>
+                <a class="facet" href="/browse">Probed by us</a>
                 <a class="facet" href="/browse?facet=auth-none">No key</a>
                 <a class="facet" href="/browse?facet=auth-apiKey">Free key</a>
                 <a class="facet" href="/browse?facet=cors">Browser OK</a>
@@ -101,7 +101,7 @@ export const Home: FC = () => {
               ))}
               <a class="k signals-more" href="/signals">VIEW ALL SIGNALS<Chev /></a>
               <div class="signals-stats">
-                <a class="ms" href="/browse?facet=monitored" title={`${stats.scheduled} of ${stats.tracked} APIs are on our health-check schedule; ${stats.monitored} have live probe data`}>
+                <a class="ms" href="/browse" title={`${stats.scheduled} of ${stats.tracked} APIs are on our health-check schedule; ${stats.monitored} have live probe data`}>
                   <b class="num">
                     <span data-count={stats.scheduled}>{stats.scheduled}</span>
                     <span class="stat-denom"> / {stats.tracked}</span>

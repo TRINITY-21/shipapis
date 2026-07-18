@@ -106,7 +106,7 @@ export const StatePage: FC = () => {
                         : s === 'dead'
                           ? '/graveyard'
                           : s === 'healthy' || s === 'new' || s === 'resurrected'
-                            ? '/browse?facet=monitored'
+                            ? '/browse'
                             : s === 'degraded' || s === 'dying'
                               ? '/signals'
                               : undefined
@@ -170,7 +170,7 @@ export const StatePage: FC = () => {
               ))}
             </StateBlock>
             <StateBlock title="Change &amp; mortality">
-              <StatBar label="Probed by us" n={monitored} total={total} color="var(--st-healthy)" href="/browse?facet=monitored" />
+              <StatBar label="Probed by us" n={monitored} total={total} color="var(--st-healthy)" href="/browse" />
               <StatBar label="Catalogued only" n={counts.catalogued} total={total} color="var(--st-unmonitored)" href="/browse" />
               <StatBar label="Schema changes" n={changes.length} total={total} color="var(--st-degraded)" href="/changelog" />
               <StatBar label="Declared dead" n={dead} total={total} color="var(--st-dead)" href="/graveyard" />

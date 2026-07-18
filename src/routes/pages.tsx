@@ -27,13 +27,11 @@ export function registerPages(app: Hono<{ Bindings: Env }>) {
 
   app.get('/browse', (c) => {
     const sort = c.req.query('sort')
-    const facet = c.req.query('facet')
-    if (!sort && !facet) {
-      // Default view is probed-only, but a deep-linked ?q= (the WebSite SearchAction target and any
-      // shared search URL) must survive the redirect so app.js can apply it client-side.
-      const q = c.req.query('q')
-      return c.redirect(q ? `/browse?facet=monitored&q=${encodeURIComponent(q)}` : '/browse?facet=monitored', 302)
-    }
+    // Probed-only is the default view, served AT /browse rather than redirected to
+    // /browse?facet=monitored — every browse variant canonicalises to /browse, so that target has to
+    // be a 200. Pointing a canonical at a redirect leaves Google with no indexable browse URL.
+    // ?facet=all opts out; a deep-linked ?q= is read client-side and needs nothing from us.
+    const facet = c.req.query('facet') ?? 'monitored'
     return c.html(<BrowsePage sort={sort} facet={facet} />)
   })
 

@@ -18,7 +18,7 @@ export const HonestyBanner: FC<{ path?: string }> = ({ path }) => {
               {path !== '/browse' && (
                 <>
                   {' '}
-                  (<a href="/browse?facet=monitored">see probed</a>)
+                  (<a href="/browse">see probed</a>)
                 </>
               )}
             </>

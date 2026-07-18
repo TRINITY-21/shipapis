@@ -208,7 +208,7 @@ export const StartPage: FC = () => {
                 <a href="/browse?facet=auth-none">No key</a> ·{' '}
                 <a href="/browse?facet=auth-apiKey">Free key</a> ·{' '}
                 <a href="/browse?facet=cors">Browser OK</a> ·{' '}
-                <a href="/browse?facet=monitored">Probed by us</a>
+                <a href="/browse">Probed by us</a>
               </p>
             </div>
             <div class="start-callout">
@@ -239,7 +239,7 @@ export const StartPage: FC = () => {
               <p class="start-lead">
                 <b>{counts.monitored}</b> APIs are actively probed today; <b>{counts.total - counts.monitored}</b>{' '}
                 more are catalogued with docs links while we expand coverage. Filter for{' '}
-                <a href="/browse?facet=monitored">probed</a> when you want numbers backed by checks.
+                <a href="/browse">probed</a> when you want numbers backed by checks.
               </p>
             </div>
             <StartMonitorDiagram />

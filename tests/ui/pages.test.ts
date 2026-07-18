@@ -146,10 +146,17 @@ describe('analytics tags', () => {
 })
 
 describe('routing & error pages', () => {
-  it('redirects /browse without params to the default facet', async () => {
-    const res = await req('/browse')
-    expect(res.status).toBe(302)
-    expect(res.headers.get('location')).toContain('facet=monitored')
+  it('serves the default probed view AT /browse — the canonical target must be a 200, not a redirect', async () => {
+    const { res, text } = await getText('/browse')
+    expect(res.status).toBe(200)
+    expect(text).toContain('APIs probed by us.')
+    expect(text).toContain('<link rel="canonical" href="https://shipapis.dev/browse"')
+  })
+
+  it('opts out of the default facet with ?facet=all', async () => {
+    const { res, text } = await getText('/browse?facet=all')
+    expect(res.status).toBe(200)
+    expect(text).toContain('Browse the catalog.')
   })
 
   it('404s an unknown category, api and arbitrary path with the NotFound page', async () => {
@@ -166,12 +173,10 @@ describe('routing & error pages', () => {
     expect(res.headers.get('location')).toBe('/agents')
   })
 
-  it('preserves a deep-linked ?q= through the /browse default redirect (SearchAction target)', async () => {
-    const res = await req('/browse?q=weather')
-    expect(res.status).toBe(302)
-    const loc = res.headers.get('location') ?? ''
-    expect(loc).toContain('facet=monitored')
-    expect(loc).toContain('q=weather')
+  it('serves a deep-linked ?q= directly (SearchAction target) — app.js reads it from location.search', async () => {
+    const { res, text } = await getText('/browse?q=weather')
+    expect(res.status).toBe(200)
+    expect(text).toContain('APIs probed by us.')
   })
 
   it('redirects a not-yet-rendered OG card to the site card instead of 404ing', async () => {
