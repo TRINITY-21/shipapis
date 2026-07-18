@@ -1,5 +1,6 @@
 import type { Hono } from 'hono'
 import { categoryBySlug } from '../data/seed'
+import { sendSubmissionReceived } from '../lib/submission-email'
 import type { Env } from '../workers/env'
 
 const AUTH_TYPES = ['none', 'apiKey', 'oauth', 'userAgent'] as const
@@ -96,6 +97,18 @@ export function registerSubmit(app: Hono<{ Bindings: Env }>) {
         .run()
     } catch {
       return c.json({ ok: false, error: "Couldn't save your submission — please try again." }, 500)
+    }
+
+    // Acknowledge by email when we have an address. Fired after the row is safely written and via
+    // waitUntil so a slow mail provider never delays the submitter's response — and never fails the
+    // submission, which is already saved either way.
+    if (email) {
+      const ack = sendSubmissionReceived(c.env, email, { name, endpointUrl, docsUrl })
+      try {
+        c.executionCtx.waitUntil(ack)
+      } catch {
+        /* no execution context (tests) — the promise still resolves, we just don't extend the request */
+      }
     }
 
     return c.json({ ok: true, status: 'queued', message: 'Submitted — it enters the review queue and is re-verified before listing.' })

@@ -60,6 +60,9 @@ interface MockRows {
   health?: unknown[]
   series?: unknown[]
   daily?: unknown[]
+  /** Rows with origin='submission' — APIs approved in the admin console, which live only in D1. */
+  native?: unknown[]
+  nativeEndpoints?: unknown[]
 }
 
 function mockD1(rows: MockRows): D1Database {
@@ -67,6 +70,11 @@ function mockD1(rows: MockRows): D1Database {
     const stmt = {
       bind: () => stmt,
       all: async () => {
+        // Order matters: the origin='submission' queries also say "from apis", so they must be
+        // matched before the broad health query.
+        if (sql.includes("origin = 'submission'")) {
+          return { results: (sql.includes('from endpoints') ? rows.nativeEndpoints : rows.native) ?? [] }
+        }
         if (sql.includes('health_series')) return { results: rows.series ?? [] }
         if (sql.includes('from apis')) return { results: rows.health ?? [] }
         if (sql.includes('checks_daily')) return { results: rows.daily ?? [] }

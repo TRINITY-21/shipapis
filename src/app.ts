@@ -3,6 +3,7 @@ import { trimTrailingSlash } from 'hono/trailing-slash'
 import { agentSurfaces, machineHeaders } from './agents/agent-surfaces'
 import { withCatalog } from './data/catalog'
 import { securityHeaders } from './middleware/security-headers'
+import { registerAdmin } from './routes/admin'
 import { registerApiV1 } from './routes/api-v1'
 import { registerBadge } from './routes/badge'
 import { registerIcons } from './routes/icons'
@@ -88,6 +89,9 @@ export function createApp() {
   registerSubmit(app)
   registerSubscribe(app)
   registerIndexNow(app)
+  // Before registerPages so the console's routes are matched by their own handlers, and after the
+  // withCatalog middleware above so the overview can read catalog counts.
+  registerAdmin(app)
   registerPages(app)
   registerBadge(app)
   registerOgCard(app)

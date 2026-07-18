@@ -249,20 +249,24 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
               )}
             </section>
 
-            <section class="detail-block" id="sample">
-              <div class="detail-block-head">
-                <span class="k">{probed ? 'Live response sample' : 'Example response'}</span>
-                <span class="k muted">
-                  {probed ? 'captured by our last successful check' : 'from provider docs — not verified by us'}
-                </span>
-              </div>
-              <div class="codeblock">
-                <button class="copy" data-copy={JSON.stringify(api.sample, null, 2)} data-track="sample_json">COPY</button>
-                <pre>
-                  <code dangerouslySetInnerHTML={{ __html: `<span class="j-punc">GET</span> <span class="j-key">${esc(sampleUrl)}</span>\n\n${hlJson(api.sample)}` }} />
-                </pre>
-              </div>
-            </section>
+            {/* Console-approved APIs carry no captured response until the checker probes them.
+                Showing the block empty would imply a payload we don't have — omit it instead. */}
+            {api.sample != null && (
+              <section class="detail-block" id="sample">
+                <div class="detail-block-head">
+                  <span class="k">{probed ? 'Live response sample' : 'Example response'}</span>
+                  <span class="k muted">
+                    {probed ? 'captured by our last successful check' : 'from provider docs — not verified by us'}
+                  </span>
+                </div>
+                <div class="codeblock">
+                  <button class="copy" data-copy={JSON.stringify(api.sample, null, 2)} data-track="sample_json">COPY</button>
+                  <pre>
+                    <code dangerouslySetInnerHTML={{ __html: `<span class="j-punc">GET</span> <span class="j-key">${esc(sampleUrl)}</span>\n\n${hlJson(api.sample)}` }} />
+                  </pre>
+                </div>
+              </section>
+            )}
 
             <section class="detail-block" id="try">
               <div class="detail-block-head">
@@ -405,7 +409,9 @@ export const DetailPage: FC<{ api: ApiEntry }> = ({ api }) => {
                         <b>{s.name}</b>
                         <span class="k num">{s.healthScore < 0 ? '—' : s.healthScore}</span>
                       </a>
-                      <a class="vs" href={`/compare/${api.slug}/${s.slug}`} aria-label={`Compare ${api.name} with ${s.name}`}>
+                      {/* slug-alphabetical = ComparePage's canonical; linking the mirror instead
+                          would send crawlers to a URL that only canonicalises back here */}
+                      <a class="vs" href={`/compare/${[api.slug, s.slug].sort().join('/')}`} aria-label={`Compare ${api.name} with ${s.name}`}>
                         VS
                       </a>
                     </div>

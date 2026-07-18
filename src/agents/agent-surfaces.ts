@@ -409,6 +409,7 @@ agentSurfaces.get('/robots.txt', (c) =>
 User-agent: *
 Allow: /
 Disallow: /og-card/
+Disallow: /admin
 
 # AI answer engines, assistants and training crawlers — retrieval and training both welcome.
 # (One ruleset shared across the user-agents below; some AI bots only read their own record.)

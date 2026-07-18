@@ -112,6 +112,18 @@ export function catGlobalStats() {
 let catalogMemo: { at: number; catalog: Catalog } | null = null
 const CATALOG_MEMO_TTL_MS = 60_000
 
+/**
+ * Drop the memoized catalog so the next request rebuilds from D1.
+ *
+ * Called after the admin console approves a submission: without it the operator can click through
+ * to a freshly published API and get a 404 for up to a minute, because this isolate is still
+ * serving the pre-approval catalog. Only clears the CURRENT isolate — other isolates still expire
+ * on their own TTL, so the catalog is globally consistent within CATALOG_MEMO_TTL_MS either way.
+ */
+export function invalidateCatalogMemo() {
+  catalogMemo = null
+}
+
 /** Run `fn` with a catalog built from D1 (or the seed fallback) in async-local scope. */
 export async function withCatalog<T>(db: D1Database | undefined, fn: () => T | Promise<T>): Promise<T> {
   const now = Date.now()
@@ -279,11 +291,160 @@ async function loadCatalog(db: D1Database | undefined): Promise<Catalog> {
       }
     })
 
+    // APIs approved in the admin console live only in D1 — they were never in the seed module, so
+    // the seedApis.map above cannot see them. Append them here, or approving a submission would
+    // write a row that never surfaces on the site.
+    // Seed always wins a slug collision. approveSubmission rejects taken slugs, so this shouldn't
+    // trigger — but appending blindly would let a stray D1 row silently replace a curated seed
+    // entry (the map below is last-write-wins), and losing real catalog data to a duplicate is a
+    // far worse failure than ignoring one row.
+    const seedSlugs = new Set(apisOut.map((a) => a.slug))
+    const native = (await loadNativeApis(db, healthBySlug, seriesBySlug, now)).filter((a) => !seedSlugs.has(a.slug))
+    const apis = native.length ? [...apisOut, ...native] : apisOut
+
     const dataTier: Catalog['dataTier'] = rows.some((r) => r.monitored_since) ? 'monitored' : 'dev-seed'
-    return { apis: apisOut, bySlug: new Map(apisOut.map((a) => [a.slug, a])), dataTier }
+    return { apis, bySlug: new Map(apis.map((a) => [a.slug, a])), dataTier }
   } catch {
     return SEED_CATALOG // any D1 hiccup → the app still serves, on seed data
   }
+}
+
+interface NativeRow {
+  id: number
+  slug: string
+  name: string
+  emoji: string
+  tagline: string
+  description_md: string
+  category_slug: string
+  docs_url: string | null
+  base_url: string | null
+  auth_type: ApiEntry['auth']
+  check_tier: ApiEntry['checkTier']
+  https: number
+  requires_card: number
+  data_license: string | null
+  added_at: string
+  tombstoned_at: string | null
+  epitaph: string | null
+}
+interface NativeEndpointRow {
+  api_id: number
+  method: string
+  url_template: string
+  description: string | null
+  active: number
+}
+
+/**
+ * Catalog rows that exist only in D1 — i.e. submissions approved in the admin console.
+ *
+ * Kept as a separate, `origin`-indexed query rather than widening the main health SELECT: that one
+ * scans every API on every isolate refresh, and D1's free tier bills scanned rows. This one touches
+ * only the handful of console-approved rows. A pre-migration database has no `origin` column, so the
+ * whole thing is guarded — an older DB simply yields no native rows, exactly as before.
+ */
+async function loadNativeApis(
+  db: D1Database,
+  healthBySlug: Map<string, HealthRow>,
+  seriesBySlug: Map<string, string>,
+  now: Date,
+): Promise<ApiEntry[]> {
+  let rows: NativeRow[] = []
+  try {
+    const res = await db
+      .prepare(
+        `select a.id, a.slug, a.name, a.emoji, a.tagline, a.description_md, c.slug as category_slug,
+                a.docs_url, a.base_url, a.auth_type, a.check_tier, a.https, a.requires_card,
+                a.data_license, a.added_at, a.tombstoned_at, a.epitaph
+         from apis a join categories c on c.id = a.category_id
+         where a.origin = 'submission'`,
+      )
+      .all<NativeRow>()
+    rows = res.results ?? []
+  } catch {
+    return [] // no `origin` column yet — nothing was ever approved through the console
+  }
+  if (!rows.length) return []
+
+  const byApi = new Map<number, NativeEndpointRow[]>()
+  const eps = await db
+    .prepare(
+      `select e.api_id, e.method, e.url_template, e.description, e.active
+       from endpoints e join apis a on a.id = e.api_id where a.origin = 'submission'`,
+    )
+    .all<NativeEndpointRow>()
+  for (const e of eps.results ?? []) {
+    const list = byApi.get(e.api_id)
+    if (list) list.push(e)
+    else byApi.set(e.api_id, [e])
+  }
+
+  return rows.map((r): ApiEntry => {
+    const h = healthBySlug.get(r.slug)
+    const ser = seriesBySlug.get(r.slug)
+    const s = ser ? parseSeries(ser) : null
+    const base = (r.base_url ?? '').replace(/\/+$/, '')
+    // Endpoint URLs are stored absolute; the UI wants a path relative to base_url.
+    const toPath = (url: string) => (base && url.startsWith(base) ? url.slice(base.length) || '/' : url)
+    const endpoints = (byApi.get(r.id) ?? []).map((e) => ({
+      method: e.method as ApiEntry['endpoints'][number]['method'],
+      path: toPath(e.url_template),
+      description: e.description ?? '',
+      monitored: e.active === 1,
+    }))
+    const monitoredEp = endpoints.find((e) => e.monitored) ?? endpoints[0]
+    const status = h?.status ?? 'unmonitored'
+    return {
+      slug: r.slug,
+      name: r.name,
+      emoji: r.emoji || '🔌',
+      tagline: r.tagline,
+      description: r.description_md,
+      category: r.category_slug,
+      docsUrl: r.docs_url ?? '',
+      baseUrl: r.base_url ?? '',
+      sampleEndpoint: monitoredEp?.path ?? '/',
+      endpoints,
+      auth: r.auth_type,
+      checkTier: r.check_tier,
+      https: h?.monitored_since ? Boolean(h.https) : Boolean(r.https),
+      cors: h?.cors_verified != null ? corsFromVerified(h.cors_verified) : 'unknown',
+      agentAccess: h?.agent_access ?? 'unknown',
+      commercialUse: h?.commercial_use ?? 'unclear',
+      dataLicense: r.data_license ?? '',
+      freeTier: h?.free_tier_notes?.trim() || '',
+      rateLimit: h?.rate_limit_notes?.trim() || '',
+      requiresCard: Boolean(r.requires_card),
+      status,
+      // -1 is the "not scored yet" sentinel every score surface guards on. A just-approved API has
+      // no checks behind it, so it must render as — and not as a fabricated 0.
+      healthScore: status === 'dead' ? 0 : h?.health_score ?? -1,
+      monitoredSince: h?.monitored_since ?? null,
+      uptime90: s?.u ?? [],
+      latency48: s?.l ?? [],
+      p50: s?.p50 ?? 0,
+      p95: s?.p95 ?? 0,
+      lastCheckedMin: h?.last_checked_at
+        ? Math.max(0, Math.round((now.getTime() - Date.parse(h.last_checked_at)) / 60_000))
+        : 0,
+      addedAt: r.added_at,
+      // No captured response yet — the detail page renders the sample block only when this is
+      // non-null, so a fresh approval shows no fabricated payload.
+      sample: null,
+      shapeChanges: [],
+      ...(r.tombstoned_at ? { diedAt: r.tombstoned_at } : {}),
+      ...(r.epitaph ? { epitaph: r.epitaph } : {}),
+      metaProvenance: {
+        auth: 'documented',
+        cors: h?.cors_verified != null ? 'probed' : 'pending',
+        commercialUse: (h?.commercial_use ?? 'unclear') === 'unclear' ? 'pending' : 'documented',
+        https: h?.monitored_since ? 'probed' : 'documented',
+        freeTier: h?.free_tier_notes?.trim() ? 'documented' : 'pending',
+        rateLimit: h?.rate_limit_notes?.trim() ? 'documented' : 'pending',
+      },
+    }
+  })
 }
 
 // re-export the pure builder for callers that only need it (keeps import graph shallow)

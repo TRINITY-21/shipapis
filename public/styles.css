@@ -3930,3 +3930,421 @@ a.row:hover { background: var(--bg-hover); }
   .faq-list { gap: 18px; }
   .faq-a { font-size: 13.5px; }
 }
+
+/* ============================================================================
+   ADMIN CONSOLE
+   Same tokens as the public site — same palette, type scale, 2–4px radii — but
+   arranged as a working surface rather than a marketing one: a fixed rail, dense
+   tables, and calm chrome that never competes with the data. Scoped under .adm so
+   nothing here can leak onto a public page.
+   ========================================================================== */
+
+.adm {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+
+  /* The console leans on muted text far harder than the public site does — column headers, field
+     hints, timestamps, stat captions — and most of it is 10–12px, which WCAG holds to 4.5:1. The
+     global --text-3 lands at 3.96:1 on --bg-raised (dark) and 3.9:1 on white (light), so it's
+     re-pointed here at the lightest/darkest value that clears AA on the card surfaces. Scoped to
+     .adm, so the public site's scale is untouched. */
+  --text-3: #868c96;
+}
+/* #6b7280 clears AA on white cards but lands at 4.39:1 on the --bg-inset sidebar; this holds on both. */
+[data-theme='light'] .adm { --text-3: #646a74; }
+.adm .k {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.adm .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+/* Bare links inherit; anything with a class (.adm-btn, .adm-tab, .adm-nav-item…) owns its own
+   colour. Without :not([class]) this selector is (0,1,1) and silently beats every single-class
+   component rule — which is how white text ended up on the lime primary button. */
+.adm a:not([class]) { color: inherit; }
+.adm-mono { font-family: var(--mono); font-size: 12.5px; }
+.adm-dim { color: var(--text-2); }
+.adm-muted { color: var(--text-3); }
+.adm-tiny { font-size: 11px; }
+.adm-break { word-break: break-all; }
+.adm-warn-text { color: var(--st-degraded); }
+
+/* --- shell ---------------------------------------------------------------- */
+
+.adm-shell { display: grid; grid-template-columns: 232px minmax(0, 1fr); min-height: 100vh; }
+
+.adm-side {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 12px;
+  background: var(--bg-inset);
+  border-right: 1px solid var(--border);
+}
+.adm-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 18px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.adm-brand-tag {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  background: var(--accent-dim);
+  border-radius: var(--r-s);
+  padding: 2px 5px;
+}
+.adm-nav { display: flex; flex-direction: column; gap: 2px; }
+.adm-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--r-m);
+  border: 1px solid transparent;
+  background: none;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13.5px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+.adm-nav-item:hover { background: var(--bg-hover); color: var(--text); }
+.adm-nav-item.on {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+  color: var(--text);
+  font-weight: 550;
+}
+.adm-nav-glyph { width: 14px; text-align: center; color: var(--text-3); font-size: 12px; }
+.adm-nav-item.on .adm-nav-glyph { color: var(--accent-live); }
+.adm-nav-label { flex: 1; }
+.adm-pill {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--st-degraded);
+  /* Page background as the ink: --st-degraded is a light amber in dark mode and a dark amber in
+     light mode, so a fixed dark ink passes in one theme and fails (3.7:1) in the other. Tracking
+     --bg inverts with the theme and clears AA in both. */
+  color: var(--bg);
+}
+.adm-side-foot { margin-top: auto; display: flex; flex-direction: column; gap: 2px; }
+.adm-side-foot form { margin: 0; }
+.adm-nav-quiet { font-size: 12.5px; color: var(--text-3); }
+.adm-logout { width: 100%; }
+
+.adm-main { padding: 28px var(--pad-page) 72px; min-width: 0; }
+.adm-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+.adm-head h1 { font-size: 21px; font-weight: 600; letter-spacing: -0.02em; }
+.adm-head-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+/* --- stats ---------------------------------------------------------------- */
+
+.adm-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.adm-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 16px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--r-l);
+  /* One hairline of colour carries the tone — no filled cards shouting for attention. */
+  border-left: 2px solid var(--border-strong);
+}
+.adm-stat-ok { border-left-color: var(--st-healthy); }
+.adm-stat-warn { border-left-color: var(--st-degraded); }
+.adm-stat-value { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+.adm-stat-sub { font-size: 12px; color: var(--text-3); }
+
+/* --- cards ---------------------------------------------------------------- */
+
+.adm-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--r-l);
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.adm-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.adm-card-head h2 { font-size: 14.5px; font-weight: 600; letter-spacing: -0.01em; }
+.adm-card-hint { font-size: 12.5px; color: var(--text-3); margin-top: 3px; max-width: 68ch; }
+.adm-card-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.adm-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+.adm-grid-2 > .adm-card { margin-bottom: 0; }
+.adm-grid-side { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
+
+/* --- tables --------------------------------------------------------------- */
+
+.adm-table-scroll { overflow-x: auto; }
+.adm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.adm-table th {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.adm-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.adm-table tbody tr:last-child td { border-bottom: 0; }
+.adm-table-rows tbody tr { transition: background var(--t-fast); }
+.adm-table-rows tbody tr:hover { background: var(--bg-hover); }
+.adm-cell-main { display: flex; flex-direction: column; gap: 2px; }
+.adm-cell-main b { font-weight: 600; }
+.adm-cell-action { text-align: right; white-space: nowrap; }
+.adm-when { display: flex; flex-direction: column; gap: 1px; }
+.adm-when-date { font-size: 12px; }
+.adm-when-rel { font-size: 11px; color: var(--text-3); }
+.adm-note { padding: 11px 18px; font-size: 12.5px; color: var(--text-3); border-top: 1px solid var(--border); }
+
+/* --- chips ---------------------------------------------------------------- */
+
+.adm-chip {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: var(--r-s);
+  border: 1px solid var(--border-strong);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.adm-chip-ok { color: var(--st-healthy); border-color: color-mix(in srgb, var(--st-healthy) 40%, transparent); background: color-mix(in srgb, var(--st-healthy) 9%, transparent); }
+.adm-chip-warn { color: var(--st-degraded); border-color: color-mix(in srgb, var(--st-degraded) 40%, transparent); background: color-mix(in srgb, var(--st-degraded) 9%, transparent); }
+.adm-chip-bad { color: var(--st-dead); border-color: color-mix(in srgb, var(--st-dead) 40%, transparent); background: color-mix(in srgb, var(--st-dead) 9%, transparent); }
+.adm-chip-info { color: var(--st-new); border-color: color-mix(in srgb, var(--st-new) 40%, transparent); background: color-mix(in srgb, var(--st-new) 9%, transparent); }
+.adm-chip-muted { color: var(--text-3); }
+
+/* The light palette's --st-* colours are tuned for text on the page background; on a chip's tinted
+   pill they land at 4.1–4.5:1, just under AA at 10px. These are the same hues, darkened enough to
+   clear it. Dark mode already passes comfortably and is left alone. */
+[data-theme='light'] .adm-chip-ok { color: #036445; }
+[data-theme='light'] .adm-chip-warn { color: #8a3f07; }
+[data-theme='light'] .adm-chip-bad { color: #991b1b; }
+[data-theme='light'] .adm-chip-info { color: #1a3fa8; }
+
+/* --- key/value ------------------------------------------------------------ */
+
+.adm-kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+.adm-kv > div { padding: 14px 18px; border-right: 1px solid var(--border); }
+.adm-kv > div:last-child { border-right: 0; }
+.adm-kv dt { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-3); margin-bottom: 5px; }
+.adm-kv dd { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+.adm-kv-stack { display: block; }
+.adm-kv-stack > div { border-right: 0; border-bottom: 1px solid var(--border); padding: 11px 18px; }
+.adm-kv-stack > div:last-child { border-bottom: 0; }
+.adm-kv-stack dd { font-size: 13px; font-weight: 400; }
+
+/* --- buttons -------------------------------------------------------------- */
+
+.adm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 550;
+  color: var(--text);
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-m);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+.adm-btn:hover { background: var(--bg-hover); border-color: var(--rule); }
+.adm-btn-sm { padding: 5px 10px; font-size: 12px; }
+.adm-btn-block { width: 100%; justify-content: center; padding: 10px; }
+.adm-btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+.adm-btn-primary:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+.adm-btn-danger { color: var(--st-dead); border-color: color-mix(in srgb, var(--st-dead) 45%, transparent); }
+.adm-btn-danger:hover { background: color-mix(in srgb, var(--st-dead) 10%, transparent); }
+
+/* --- tabs / search -------------------------------------------------------- */
+
+.adm-tabs { display: flex; gap: 2px; padding: 3px; background: var(--bg-inset); border: 1px solid var(--border); border-radius: var(--r-m); flex-wrap: wrap; }
+.adm-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  font-size: 12.5px;
+  color: var(--text-2);
+  text-decoration: none;
+  border-radius: var(--r-s);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+.adm-tab:hover { color: var(--text); }
+.adm-tab.on { background: var(--bg-raised); color: var(--text); font-weight: 550; box-shadow: 0 1px 2px rgba(0,0,0,0.16); }
+.adm-tab-n { font-size: 11px; color: var(--text-3); }
+.adm-search { display: flex; gap: 6px; }
+.adm-search input { width: 190px; }
+
+/* --- forms ---------------------------------------------------------------- */
+
+.adm-form { padding: 18px; }
+.adm-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
+.adm-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.adm-field-wide { grid-column: 1 / -1; }
+.adm-field-narrow { max-width: 110px; }
+.adm-field small { font-size: 11.5px; color: var(--text-3); }
+.adm input[type='text'],
+.adm input[type='url'],
+.adm input[type='search'],
+.adm input[type='password'],
+.adm input:not([type]),
+.adm select,
+.adm textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--text);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-m);
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.adm textarea { font-family: var(--mono); font-size: 12.5px; line-height: 1.6; resize: vertical; }
+.adm input:focus, .adm select:focus, .adm textarea:focus {
+  outline: none;
+  border-color: var(--accent-live);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+.adm-check { display: flex; align-items: center; gap: 9px; font-size: 13.5px; color: var(--text-2); }
+.adm-check input { width: auto; }
+.adm-form-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.adm-form-foot p { font-size: 12.5px; max-width: 56ch; }
+.adm-inline-form { display: flex; gap: 8px; padding: 16px 18px; flex-wrap: wrap; }
+.adm-grow { flex: 1; min-width: 180px; }
+.adm-back { display: inline-block; margin-bottom: 14px; font-size: 12.5px; color: var(--text-2); text-decoration: none; }
+.adm-back:hover { color: var(--text); }
+
+/* --- alerts / empty ------------------------------------------------------- */
+
+.adm-alert {
+  padding: 11px 14px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  border: 1px solid var(--border-strong);
+  border-left-width: 2px;
+  border-radius: var(--r-m);
+  background: var(--bg-raised);
+}
+.adm-alert-good { border-left-color: var(--st-healthy); }
+.adm-alert-bad { border-left-color: var(--st-dead); }
+.adm-empty { padding: 44px 18px; text-align: center; }
+.adm-empty b { display: block; font-size: 14.5px; font-weight: 600; margin-bottom: 5px; }
+.adm-empty p { font-size: 13px; color: var(--text-3); }
+
+/* --- login ---------------------------------------------------------------- */
+
+.adm-auth-body { display: grid; place-items: center; min-height: 100vh; padding: 24px; }
+.adm-auth { width: 100%; max-width: 380px; }
+.adm-auth-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 28px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--r-l);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+}
+.adm-auth-brand { display: flex; align-items: center; gap: 10px; }
+.adm-auth-brand b { display: block; font-size: 15px; font-weight: 600; letter-spacing: -0.015em; }
+.adm-auth-lede { font-size: 12.5px; line-height: 1.6; color: var(--text-3); }
+.adm-auth-foot { text-align: center; }
+
+/* --- responsive ----------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .adm-shell { grid-template-columns: 1fr; }
+  .adm-side {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .adm-brand { padding: 0 8px 0 0; }
+  .adm-nav { flex-direction: row; }
+  .adm-side-foot { margin-top: 0; flex-direction: row; }
+  .adm-nav-label { white-space: nowrap; }
+  .adm-grid-side { grid-template-columns: 1fr; }
+  .adm-main { padding-top: 20px; }
+}
+@media (max-width: 620px) {
+  .adm-form-grid { grid-template-columns: 1fr; }
+  .adm-field-narrow { max-width: none; }
+  .adm-head { align-items: flex-start; flex-direction: column; }
+  .adm-search input { width: 100%; }
+}

@@ -20,6 +20,38 @@ function call(key: string, path: string, method: string, body?: unknown) {
   })
 }
 
+export interface OutboundEmail {
+  from: string
+  to: string
+  subject: string
+  html: string
+  text: string
+  headers?: Record<string, string>
+}
+
+/**
+ * Send one email. Shared by the newsletter welcome and the submission notices.
+ *
+ * Returns whether it was actually sent so callers can log honestly — but never throws: an email
+ * failure must not roll back the thing it was announcing. No key bound (local/tests) → no-op.
+ */
+export async function resendSend(env: ResendEnv, msg: OutboundEmail): Promise<boolean> {
+  if (!env.RESEND_API_KEY) return false
+  try {
+    const res = await call(env.RESEND_API_KEY, '/emails', 'POST', {
+      from: msg.from,
+      to: [msg.to],
+      subject: msg.subject,
+      html: msg.html,
+      text: msg.text,
+      ...(msg.headers ? { headers: msg.headers } : {}),
+    })
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
 /** Add (or re-activate) a contact in the Resend audience so broadcasts reach them. */
 export async function resendAddContact(env: ResendEnv, email: string): Promise<void> {
   if (!env.RESEND_API_KEY || !env.RESEND_AUDIENCE_ID) return
