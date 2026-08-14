@@ -69817,16 +69817,16 @@ export const importedSpecs: ApiSpec[] = [
     "slug": "human-design-hub",
     "name": "Human Design Hub",
     "emoji": "🔑",
-    "tagline": "Human Design Hub — free tier with API key",
-    "description": "Human Design Hub exposes a free-tier JSON API. Register for an API key if required; we verified a public or demo endpoint.",
+    "tagline": "Human Design bodygraph charts — free tier with API key",
+    "description": "Human Design Hub generates bodygraph charts as JSON. The chart endpoint is POST /v2/simple-bodygraph with an X-API-Key header and a JSON body; we probe the public /health endpoint, which needs no key.",
     "category": "fun",
     "docsUrl": "https://humandesignhub.app/en/docs",
     "baseUrl": "https://api.humandesignhub.app",
-    "sampleEndpoint": "/v2/simple-bodygraph",
+    "sampleEndpoint": "/health",
     "auth": "apiKey",
     "checkTier": "endpoint",
     "https": true,
-    "cors": "no",
+    "cors": "yes",
     "commercialUse": "unclear",
     "dataLicense": "Unverified",
     "freeTier": "Free tier — API key required",
@@ -69835,46 +69835,23 @@ export const importedSpecs: ApiSpec[] = [
     "status": "unmonitored",
     "addedAt": "2026-07-05",
     "lastCheckedMin": 0,
-    "baseLatency": 5342,
+    "baseLatency": 574,
     "sample": {
-      "detail": "API Key is required. Include 'X-API-Key' header."
+      "status": "ok",
+      "version": "3.4.4"
     },
     "shapeChanges": [],
     "endpoints": [
       {
         "method": "GET",
-        "path": "/v2/simple-bodygraph",
-        "description": "Human Design Hub — free tier with API key",
+        "path": "/health",
+        "description": "Health check — public, no key required.",
         "monitored": true
       },
       {
-        "method": "GET",
-        "path": "/v2",
-        "description": "V2 — documented GET route.",
-        "monitored": false
-      },
-      {
-        "method": "GET",
-        "path": "/v2/1",
-        "description": "V2 details by ID (example: 1).",
-        "monitored": false
-      },
-      {
-        "method": "GET",
-        "path": "/v2?limit=10",
-        "description": "V2 — documented GET route.",
-        "monitored": false
-      },
-      {
-        "method": "GET",
-        "path": "/v2/search?q=test",
-        "description": "Search by query parameters.",
-        "monitored": false
-      },
-      {
-        "method": "GET",
-        "path": "/v2/",
-        "description": "V2 — documented GET route.",
+        "method": "POST",
+        "path": "/v2/simple-bodygraph",
+        "description": "Generate a simple bodygraph (JSON body, X-API-Key header).",
         "monitored": false
       }
     ]
